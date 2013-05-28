@@ -1,0 +1,10 @@
+<signature>
+stretchHeight
+</signature>
+Can GUI elements of this style be stretched vertically for better layout?
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.stretchHeight = true;
+	}
+END EX

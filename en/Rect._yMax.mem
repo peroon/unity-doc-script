@@ -1,0 +1,5 @@
+<signature>
+yMax
+</signature>
+Bottom coordinate of the rectangle.
+Changing this value will preserve top side of rectangle (so ::ref::height will change as well).

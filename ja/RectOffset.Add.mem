@@ -1,0 +1,4 @@
+<signature>
+Add(Rect)
+</signature>
+Rectオブジェクトにボーダーのオフセットを追加する。

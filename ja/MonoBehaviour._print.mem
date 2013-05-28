@@ -1,0 +1,5 @@
+<signature>
+print(object)
+</signature>
+コンソールにログを出す。扱いは[[Debug.Log]]関数と同じなので、使いやすい方を使用してください。
+SA: Debug.Log, Debug.LogWarning, Debug.LogError.

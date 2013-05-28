@@ -1,0 +1,11 @@
+<signature>
+stretchWidth
+</signature>
+水平に伸ばすことができるかを設定する
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			GUI.skin.customStyles[0].stretchWidth = true;
+	}
+END EX

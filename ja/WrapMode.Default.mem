@@ -1,0 +1,4 @@
+前もって設定していた状態を使用する。
+If you haven't changed wrapMode on [[AnimationClip]] or on [[Animation]], 何も設定していない場合はOnceになる
+
+SA: [[WrapMode]] for me details.

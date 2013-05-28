@@ -1,0 +1,16 @@
+<signature>
+playerLimit
+</signature>
+プレイヤーの最大数を返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Requests info from the master server and prints
+	// the gameType of each host
+
+	function Start() {
+		var hostData : HostData[] = MasterServer.PollHostList();
+		for(var element : HostData in hostData) {
+			Debug.Log(element.gameName + " max spots: " + element.playerLimit);
+		}
+	}
+END EX

@@ -1,0 +1,8 @@
+<signature>
+ClearParticles()
+</signature>
+パーティクルシステムからすべてのパーティクルを削除する
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.ClearParticles();
+END EX

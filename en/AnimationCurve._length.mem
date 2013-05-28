@@ -1,0 +1,4 @@
+<signature>
+length
+</signature>
+The number of keys in the curve. (RO)

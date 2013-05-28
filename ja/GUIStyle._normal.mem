@@ -1,0 +1,13 @@
+<signature>
+normal
+</signature>
+通常時の設定
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the text color that customStyles[0] is using
+
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			Debug.Log(GUI.skin.customStyles[0].normal.textColor);
+	}
+END EX

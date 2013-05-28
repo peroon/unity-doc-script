@@ -1,0 +1,4 @@
+<signature>
+ClearRemoteNotifications()
+</signature>
+受信したリモート通知を削除する

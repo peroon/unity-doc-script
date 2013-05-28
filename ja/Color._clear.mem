@@ -1,0 +1,9 @@
+<signature>
+clear
+</signature>
+RGBA を (0, 0, 0, 0) にする
+CONVERTEXAMPLE
+BEGIN EX
+	// clear the color of this transform's material
+	transform.renderer.material.color = Color.clear;
+END EX

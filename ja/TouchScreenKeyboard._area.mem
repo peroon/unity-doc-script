@@ -1,0 +1,5 @@
+<signature>
+area
+</signature>
+キーボードで覆われているスクリーンの戻りの位置。
+AndroidではRectの0

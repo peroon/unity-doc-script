@@ -1,0 +1,15 @@
+<signature>
+GetComponentInChildren(Type)
+</signature>
+親子関係のゲームオブジェクトから、深さ優先探索でコンポーネントを取得します。自分自身も含まれることに注意してください。
+Only active components are returned.
+CONVERTEXAMPLE
+BEGIN EX
+	var script : ScriptName;
+	script = gameObject.GetComponentInChildren(ScriptName);
+	script.DoSomething ();
+END EX
+<signature>
+GetComponentInChildren<T>()
+</signature>
+Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.

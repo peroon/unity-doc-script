@@ -1,0 +1,4 @@
+<signature>
+DeleteKey(string)
+</signature>
+キーと対応する値を削除する

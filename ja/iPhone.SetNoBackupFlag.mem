@@ -1,0 +1,5 @@
+<signature>
+SetNoBackupFlag(string)
+</signature>
+iCloud/iTunes のバックアップから除外するかの設定
+As a side-effect, if it was located in Caches folder, it won't be deleted by OS.

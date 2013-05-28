@@ -1,0 +1,12 @@
+<signature>
+subMeshCount
+</signature>
+サブメッシュの数を返す。すべてのメッシュは切り離された三角形のリストを所持。
+SA: ::ref::GetTriangles, ::ref::SetTriangles.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start() {
+		var mesh : Mesh = GetComponent(MeshFilter).mesh;
+		Debug.Log("Submeshes: " + mesh.subMeshCount);
+	}
+END EX

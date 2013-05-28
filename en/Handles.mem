@@ -1,0 +1,4 @@
+Custom 3D GUI controls and drawing in the scene view.
+Handles are the 3D controls that Unity uses to manipulate items in the scene view. There are a number of built-in Handle GUIs, such as the familiar tools to position, scale and rotate an object via the Transform component. However, it is also possible to define your own Handle GUIs to use with custom component editors. Such GUIs can be a very useful way to edit procedurally-generated scene content, "invisible" items and groups of related objects, such as waypoints and location markers.
+
+You can also supplement the 3D Handle GUI in the scene with 2D buttons and other controls overlaid on the scene view. This is done by enclosing standard Unity GUI calls in a Handles.BeginGUI / EndGUI pair within the //OnSceneGUI// function. You can use HandleUtility.GUIPointToWorldRay and HandleUtility.WorldToGUIPoint to convert coordinates between 2D GUI and 3D world coordinates.

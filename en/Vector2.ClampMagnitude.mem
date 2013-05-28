@@ -1,0 +1,4 @@
+<signature>
+ClampMagnitude(Vector2,float)
+</signature>
+Returns a copy of /vector/ with its magnitude clamped to /maxLength/.

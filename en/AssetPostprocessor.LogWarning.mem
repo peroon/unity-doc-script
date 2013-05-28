@@ -1,0 +1,21 @@
+<signature>
+LogWarning(string)
+LogWarning(string,Object)
+</signature>
+Logs an import warning to the console.
+Pass an asset as the second argument to link the warning to the asset in the editor.
+
+SA: Debug.LogWarning.
+BEGIN EX
+	// Compress all the imported audio files and 
+	// report a warning when the importer sound is 2D.
+
+	class PreprocessAudioSettings extends AssetPostprocessor {
+			function OnPreprocessAudio() {
+				var importer : AudioImporter = assetImporter;
+				importer.format  = AudioImporterFormat.Compressed;
+				if(!importer.threeD)
+					LogWarning(assetPath + " is a 2D sound");
+			}
+	}
+END EX

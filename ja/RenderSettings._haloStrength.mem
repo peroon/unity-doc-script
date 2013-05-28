@@ -1,0 +1,10 @@
+<signature>
+haloStrength
+</signature>
+ライトハローの大きさを設定する。
+For any light, the size of the halo is this value multiplied by Light.range.
+BEGIN EX
+	// Make all halos used by lights be half the size of Light.range
+	RenderSettings.haloStrength = 0.5;
+END EX
+SA: [[wiki:class-RenderSettings|Render Settings manager]].

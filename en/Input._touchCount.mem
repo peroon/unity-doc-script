@@ -1,0 +1,12 @@
+<signature>
+touchCount
+</signature>
+Number of touches. Guaranteed not to change throughout the frame. (RO)
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		if (Input.touchCount > 0) {
+			print(Input.touchCount);
+		}
+	}
+END EX

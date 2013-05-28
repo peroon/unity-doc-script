@@ -1,0 +1,4 @@
+<signature>
+asymptoteSlip
+</signature>
+漸近線の座標の滑りを返す（デフォルトは2）

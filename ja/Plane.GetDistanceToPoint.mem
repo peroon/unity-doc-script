@@ -1,0 +1,6 @@
+<signature>
+GetDistanceToPoint(Vector3)
+</signature>
+指定したポイントから、平面との距離を返します。
+The value returned is positive if the point is on the side of the plane into which the plane's 
+normal is facing, and negative otherwise.

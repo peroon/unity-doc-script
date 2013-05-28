@@ -1,0 +1,4 @@
+<signature>
+heightmapWidth
+</signature>
+サンプル中の地形の幅を返す（読み込み専用）

@@ -1,0 +1,14 @@
+<signature>
+UnregisterHost()
+</signature>
+マスターサーバーからこのサーバーの登録を解除する。
+該当するものがない場合は何も起こりません。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if (GUILayout.Button ("Disconnect")) {
+			Network.Disconnect();
+			MasterServer.UnregisterHost();
+		}
+	}
+END EX

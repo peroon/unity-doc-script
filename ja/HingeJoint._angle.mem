@@ -1,0 +1,6 @@
+元の位置からの相対的な今の角度（読み込み専用）
+The rest angle between the bodies is always zero at the beginning of the simulation.
+CONVERTEXAMPLE
+BEGIN EX
+	print(hingeJoint.angle);
+END EX

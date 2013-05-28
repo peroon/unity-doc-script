@@ -1,0 +1,1 @@
+Instructs the build pipeline not to try and validate a type or member for the flash platform.

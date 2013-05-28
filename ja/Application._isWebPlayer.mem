@@ -1,0 +1,11 @@
+<signature>
+isWebPlayer
+</signature>
+Web Player でプレイしているか確認する（読み取り専用）
+Returns true if the game is being run from the Unity web player.
+CONVERTEXAMPLE
+BEGIN EX
+	if (Application.isWebPlayer) {
+		print("We are running this from inside of the web player!");
+	}
+END EX

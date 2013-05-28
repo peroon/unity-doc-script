@@ -1,0 +1,7 @@
+<signature>
+CreateFromFile(string)
+</signature>
+ファイルからアセットバンドルを作成する
+Only uncompressed asset bundles are supported by this function. This is the fastest way to load an asset bundle.
+@param path アセットバンドルにするファイルのパス
+SA: WWW.assetBundle, WWW.LoadFromCacheOrDownload.

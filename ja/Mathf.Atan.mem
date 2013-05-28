@@ -1,0 +1,8 @@
+<signature>
+Atan(float)
+</signature>
+Atan 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Atan(0.5));
+END EX

@@ -1,0 +1,2 @@
+関節を表現する基本クラスです。
+SA: [[CharacterJoint]], [[HingeJoint]], [[SpringJoint]], [[FixedJoint]], [[ConfigurableJoint]].

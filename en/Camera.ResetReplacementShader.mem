@@ -1,0 +1,5 @@
+<signature>
+ResetReplacementShader()
+</signature>
+Remove shader replacement from camera.
+Call this to end the effect of setting ::ref::SetReplacementShader.

@@ -1,0 +1,7 @@
+<signature>
+GetProceduralTexture(string)
+</signature>
+プロパティ名を指定してTexture2D型のプロパティを取得する
+Used for Procedural properties of type Texture.
+
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralTexture.

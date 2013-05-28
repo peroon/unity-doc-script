@@ -1,0 +1,28 @@
+<signature>
+SelectionGrid(int,string[],int,GUILayoutOption[])
+SelectionGrid(int,Texture[],int,GUILayoutOption[])
+SelectionGrid(int,GUIContent[],int,GUILayoutOption[])
+SelectionGrid(int,string[],int,GUIStyle,GUILayoutOption[])
+SelectionGrid(int,Texture[],int,GUIStyle,GUILayoutOption[])
+SelectionGrid(int,GUIContent[],int,GUIStyle,GUILayoutOption[])
+</signature>
+グリッドを作成します。
+{img GUILayoutSelectionGrid.png}\\
+''Selection grid in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	var selGridInt : int = 0;
+	var selStrings : String[] = ["Grid 1", "Grid 2", "Grid 3", "Grid 4"];
+
+	function OnGUI () {
+		selGridInt = GUILayout.SelectionGrid (selGridInt, selStrings, 2);
+	}
+END EX
+@param selected 各配列のインデックスに対応している
+@param texts 表示する文字列の配列
+@param images 表示する画像の配列
+@param contents 表示するGUIContentオブジェクトの配列
+@param xCount 横に並べる数
+@param style スタイル
+@param options 幅・高さ
+@return 選択されたボタンのインデックス

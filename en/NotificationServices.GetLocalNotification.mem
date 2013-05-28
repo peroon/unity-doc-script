@@ -1,0 +1,4 @@
+<signature>
+GetLocalNotification(int)
+</signature>
+Returns an object representing a specific local notification. (RO)

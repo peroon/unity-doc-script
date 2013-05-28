@@ -1,0 +1,4 @@
+<signature>
+DrawCursor(Rect,GUIContent,int,int)
+</signature>
+Draw this GUIStyle with selected content.

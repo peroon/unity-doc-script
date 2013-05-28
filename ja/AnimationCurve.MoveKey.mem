@@ -1,0 +1,7 @@
+<signature>
+MoveKey(int,Keyframe)
+</signature>
+指定の位置にキーを移動する。
+指定したindex引数のキーフレームを、key引数の位置へ移動します。
+This is the desired behaviour for dragging keyframes in a curve editor.
+移動した後、移動先のキーフレームのindex を返します。

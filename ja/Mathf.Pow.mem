@@ -1,0 +1,8 @@
+<signature>
+Pow(float,float)
+</signature>
+指数
+CONVERTEXAMPLE
+BEGIN EX
+	print(Mathf.Pow(6, 1.8));
+END EX

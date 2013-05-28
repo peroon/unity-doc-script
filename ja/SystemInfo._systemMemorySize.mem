@@ -1,0 +1,7 @@
+<signature>
+systemMemorySize
+</signature>
+システムメモリの量を返す（読み込み専用）
+This is the approximate amount of system memory in megabytes.
+
+SA: SystemInfo.graphicsMemorySize.

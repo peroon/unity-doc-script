@@ -1,0 +1,8 @@
+<signature>
+SetFloat(string,float)
+</signature>
+キーとFloat型の値を設定する
+CONVERTEXAMPLE
+BEGIN EX
+	PlayerPrefs.SetFloat("Player Score", 10.0);
+END EX

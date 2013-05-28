@@ -1,0 +1,7 @@
+<signature>
+GetTriangles(int)
+</signature>
+サブメッシュの三角形リストを返す。
+A submesh is simply a separate triangle list. メッシュレンダラーで複数のマテリアルを使用するとき、サブメッシュも複数ある場合があります。
+
+SA: ::ref::subMeshCount.

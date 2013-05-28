@@ -1,0 +1,9 @@
+<signature>
+bounceThreshold
+</signature>
+2つの衝突オブジェクトが設定値以下の相対速度であれば、バウンドしない。必ず正の値を設定（デフォルトは2）
+This value is usually changed in @@Edit->Project Settings->Physics@@ inspector instead of from scripts.
+CONVERTEXAMPLE
+BEGIN EX
+	Physics.bounceThreshold = 1;
+END EX

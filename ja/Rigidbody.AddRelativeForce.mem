@@ -1,0 +1,27 @@
+<signature>
+AddRelativeForce(Vector3,ForceMode)
+</signature>
+座標に対し、相対的に力を加える。
+As a result the rigidbody will start moving.
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the rigidbody forward along its own z-axis
+
+	function FixedUpdate () {
+		rigidbody.AddRelativeForce (Vector3.forward * 10);
+	}
+END EX
+<signature>
+AddRelativeForce(float,float,float,ForceMode)
+</signature>
+座標に対し、相対的に力を加える。
+As a result the rigidbody will start moving.
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the rigidbody forward along its own z-axis
+
+	function FixedUpdate () {
+		rigidbody.AddRelativeForce (0, 0, 10);
+	}
+END EX
+If you want to apply a force over several frames you should apply it inside FixedUpdate instead of Update.

@@ -1,0 +1,4 @@
+<signature>
+guid
+</signature>
+The GUID for this player, used when connecting with NAT punchthrough.

@@ -1,0 +1,2 @@
+GUIオブジェクトに表示されている、GUITextコンポーネントやGUITextureコンポーネントなどの基本クラスです。
+This class holds the base functionality for any GUI elements.

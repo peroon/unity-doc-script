@@ -1,0 +1,6 @@
+<signature>
+EndChangeCheck()
+</signature>
+Ends a change check started with BeginChangeCheck ().
+SA: ::ref::BeginChangeCheck.
+@return True if GUI.changed was set to true, otherwise false.

@@ -1,0 +1,11 @@
+<signature>
+OnDestroy()
+</signature>
+オブジェクトが破棄される直前に呼び出されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnDestroy () {
+		print("Script was destroyed");
+	}
+END EX
+OnDestroy cannot be a co-routine.

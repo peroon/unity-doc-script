@@ -1,0 +1,9 @@
+パーティクルを発生させるかの有効／無効
+CONVERTEXAMPLE
+BEGIN EX
+	// Emit particles for 3 seconds
+	particleEmitter.emit = true;
+	yield WaitForSeconds(3);
+	// Then stop
+	particleEmitter.emit = false;
+END EX

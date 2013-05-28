@@ -1,0 +1,4 @@
+<signature>
+SetStaticEditorFlags(GameObject,StaticEditorFlags)
+</signature>
+Sets the StaticEditorFlags.

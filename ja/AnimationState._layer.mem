@@ -1,0 +1,8 @@
+アニメーションのレイヤー。主にアニメーションを組み合わせた際のウェイト操作をするときに使用する。
+Distributed first. Lower layer animations only receive blend weights if the higher layers didn't use up all blend weights.
+CONVERTEXAMPLE
+BEGIN EX
+	// Puts the walk and run animation in layer 1
+	animation["Walk"].layer = 1;
+	animation["Run"].layer = 1;
+END EX

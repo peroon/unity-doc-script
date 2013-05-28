@@ -1,0 +1,6 @@
+中心となる軸を設定する。
+The Axis is defined in local space.
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.axis = Vector3.up;
+END EX

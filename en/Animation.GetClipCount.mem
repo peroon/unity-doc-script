@@ -1,0 +1,4 @@
+<signature>
+GetClipCount()
+</signature>
+Get the number of clips currently assigned to this animation.

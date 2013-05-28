@@ -1,0 +1,5 @@
+<signature>
+messageOptions
+</signature>
+関数読み出し時のオプションを格納する。
+If options are set to SendMessageOptions.RequireReceiver (default), an error is printed when the message is not picked up by any component.

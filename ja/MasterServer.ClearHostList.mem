@@ -1,0 +1,23 @@
+<signature>
+ClearHostList()
+</signature>
+PollHostList関数に格納されている情報をすべて削除します。
+Useful if you want to update the list and want to make sure you don't use the older data.
+CONVERTEXAMPLE
+BEGIN EX
+	function Awake() {
+		// Make sure list is empty and request a new list
+		MasterServer.ClearHostList();
+		MasterServer.RequestHostList("MyUniqueGameType");
+	}
+
+	function Update() {
+		// If any hosts were received, display game name, the clear host list again
+		if (MasterServer.PollHostList().Length != 0) {
+			var hostData : HostData[] = MasterServer.PollHostList();
+			for (var i : int = 0; i < hostData.Length; i++)
+				Debug.Log("Game name: " + hostData[i].gameName);
+			MasterServer.ClearHostList();
+		}
+	}
+END EX

@@ -1,0 +1,2 @@
+Asynchronous load request from an [[AssetBundle]].
+SA: AssetBundle.LoadAsync, [[AsyncOperation]].

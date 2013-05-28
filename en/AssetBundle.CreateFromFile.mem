@@ -1,0 +1,7 @@
+<signature>
+CreateFromFile(string)
+</signature>
+Loads an asset bundle from a disk.
+Only uncompressed asset bundles are supported by this function. This is the fastest way to load an asset bundle.
+@param path Path of the file on disk
+SA: WWW.assetBundle, WWW.LoadFromCacheOrDownload.

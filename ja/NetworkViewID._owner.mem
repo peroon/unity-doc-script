@@ -1,0 +1,4 @@
+<signature>
+owner
+</signature>
+NetworkPlayerオブジェクトを所有している、NetworkViewオブジェクト。サーバーの場合が多い

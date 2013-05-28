@@ -1,0 +1,5 @@
+<signature>
+ToFloatArray(float[])
+</signature>
+Float配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewFloatArray, AndroidJNI.SetFloatArrayElement.

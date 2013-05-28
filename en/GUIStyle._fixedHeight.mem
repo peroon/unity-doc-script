@@ -1,0 +1,12 @@
+<signature>
+fixedHeight
+</signature>
+If non-0, any GUI elements rendered with this style will have the height specified here.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the value of fixedHeight.
+	
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.fixedHeight);
+	}
+END EX

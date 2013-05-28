@@ -1,0 +1,8 @@
+<signature>
+Cos(float)
+</signature>
+Cos 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Cos(3));
+END EX

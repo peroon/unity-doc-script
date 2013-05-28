@@ -1,0 +1,4 @@
+<signature>
+DrawWithTextSelection(Rect,GUIContent,int,int,int)
+</signature>
+Draw this GUIStyle with selected content.

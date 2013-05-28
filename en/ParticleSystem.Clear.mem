@@ -1,0 +1,6 @@
+<signature>
+Clear()
+Clear(bool)
+</signature>
+Remove all particles in the particle system.
+@param withChildren Clear all child particle systems as well.

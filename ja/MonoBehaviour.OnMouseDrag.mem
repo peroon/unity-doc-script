@@ -1,0 +1,19 @@
+<signature>
+OnMouseDrag()
+</signature>
+ユーザーが[[GUIElement]] や[[Collider]] オブジェクトをクリックしたまま、マウスを移動したときに呼び出される。
+OnMouseDrag is called every frame while the mouse is down.
+CONVERTEXAMPLE
+BEGIN EX
+	// Darken the material color while user holds down the mouse.
+
+	function OnMouseDrag () {
+		renderer.material.color -= Color.white * Time.deltaTime;
+	}
+END EX
+This function is not called on objects that belong to Ignore Raycast layer.
+
+コルーチン可能
+この関数が呼び出されるためには、オブジェクトがコライダーをアタッチしているか、GUI エレメントである必要があります。
+
+__IMPORTANT:__ This function has no effect on iPhone.

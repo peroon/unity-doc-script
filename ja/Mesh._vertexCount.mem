@@ -1,0 +1,8 @@
+メッシュの頂点の数を返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var mesh : Mesh = GetComponent(MeshFilter).sharedMesh;
+		print(mesh.vertexCount);
+	}
+END EX

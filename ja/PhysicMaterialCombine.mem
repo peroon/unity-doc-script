@@ -1,0 +1,2 @@
+物理マテリアルの組み合わせ方法を選択します。
+SA: PhysicMaterial.frictionCombine, PhysicMaterial.bounceCombine.

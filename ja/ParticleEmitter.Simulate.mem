@@ -1,0 +1,5 @@
+<signature>
+Simulate(float)
+</signature>
+設定した時間でパーティクルシステムのシミュレーションを行う
+This is useful for pre-warming particle emitters.

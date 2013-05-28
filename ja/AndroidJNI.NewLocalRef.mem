@@ -1,0 +1,5 @@
+<signature>
+NewLocalRef(IntPtr)
+</signature>
+obj引数と同じオブジェクトを参照する、新しいローカル参照を作成する。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

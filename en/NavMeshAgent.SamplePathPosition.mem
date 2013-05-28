@@ -1,0 +1,35 @@
+<signature>
+SamplePathPosition(int,float,NavMeshHit)
+</signature>
+Sample a position along the current path.
+This function looks ahead a specified distance along the current path. Details of the mesh at that position are then returned in a ::ref::NavMeshHit object. This could be used, for example, to check the type of surface that lies ahead before the character gets there - a character could raise his gun above his head if he is about to wade through water, say.
+CONVERTEXAMPLE
+BEGIN EX
+	var target: Transform;
+	var mesh: NavMesh;
+
+	private var agent: NavMeshAgent;
+	private var waterLayer: int;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+		waterLayer = mesh.GetNavMeshLayerFromName("Water");
+		agent.SetDestination(target.position);
+	}
+
+	function Update() {
+		var hit: NavMeshHit;
+		
+		// Check all layers one unit ahead.
+		if (!agent.SamplePathPosition(-1, 1.0, hit)) {
+			if (hit.mask & waterLayer) {
+				// Water detected along the path...
+			}
+		}
+	}
+
+END EX
+@param passableMask A mask specifying which NavMesh layers can be passed when tracing the path.
+@param maxDistance Terminate scanning the path at this distance.
+@param hit Holds the properties of the resulting location.
+@return True If terminated before reaching position at maxDistance. Otherwise returns false.

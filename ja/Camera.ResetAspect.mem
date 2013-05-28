@@ -1,0 +1,9 @@
+<signature>
+ResetAspect()
+</signature>
+aspect変数で設定したものをリセットする
+aspect変数で設定したものをリセットします。
+CONVERTEXAMPLE
+BEGIN EX
+	camera.ResetAspect();
+END EX

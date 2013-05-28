@@ -1,0 +1,4 @@
+<signature>
+repeatInterval
+</signature>
+The calendar interval at which to reschedule the notification.

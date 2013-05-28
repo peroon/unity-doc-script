@@ -1,0 +1,5 @@
+<signature>
+renderQueue
+</signature>
+シェーダーのキューをレンダリングする（読み込み専用）
+SA: Material.renderQueue, [[wiki:SL-SubshaderTags|RenderQueue tag]].

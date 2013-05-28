@@ -1,0 +1,4 @@
+<signature>
+ExpandHeight(bool)
+</signature>
+falseを設定すると、高さが自動調整されなくなる

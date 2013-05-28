@@ -1,0 +1,12 @@
+<signature>
+OnPlayerDisconnected(NetworkPlayer)
+</signature>
+サーバーからプレイヤーが切断されたときに呼び出される。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnPlayerDisconnected(player : NetworkPlayer) {
+		Debug.Log("Clean up after player " +  player);
+		Network.RemoveRPCs(player);
+		Network.DestroyPlayerObjects(player);
+	}
+END EX

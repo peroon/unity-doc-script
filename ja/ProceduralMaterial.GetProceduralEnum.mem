@@ -1,0 +1,7 @@
+<signature>
+GetProceduralEnum(string)
+</signature>
+プロパティ名を指定してEnum型のプロパティを取得する
+Enum型として扱う値をProceduralPropertyDescription.enumOption変数に登録して使用します。
+
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralEnum.

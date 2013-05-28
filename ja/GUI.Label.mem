@@ -1,0 +1,39 @@
+<signature>
+Label(Rect,string)
+Label(Rect,Texture)
+Label(Rect,GUIContent)
+Label(Rect,string,GUIStyle)
+Label(Rect,Texture,GUIStyle)
+Label(Rect,GUIContent,GUIStyle)
+</signature>
+ラベルを作成します。テキストや画像を表示します。
+Labels have no user interaction, do not catch mouse clicks and are always rendered in normal style. If you want to make a control that responds visually to user input, use a ::ref::Box control.
+
+Example: Draw the classic Hello World! string:
+
+{img GUILabel.png}\\
+''Text label on the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI () {
+		GUI.Label (Rect (10, 10, 100, 20), "Hello World!");
+	}
+END EX
+Example: Draw a texture on-screen. Labels are also used to display textures, instead of a string, simply pass in a texture:
+
+{img GUILabelTexture.png}\\
+''Texture Label.''
+CONVERTEXAMPLE
+BEGIN EX
+	var textureToDisplay : Texture2D;
+	
+	function OnGUI () {
+		GUI.Label (Rect (10, 40, textureToDisplay.width, textureToDisplay.height),
+			textureToDisplay);
+	}
+END EX
+@param position 表示位置
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル

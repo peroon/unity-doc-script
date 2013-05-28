@@ -1,0 +1,5 @@
+<signature>
+MenuFunction2(object)
+</signature>
+Callback function with user data, called when a menu item is selected.
+SA: GenericMenu.MenuFunction.

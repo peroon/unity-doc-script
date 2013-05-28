@@ -1,0 +1,16 @@
+<signature>
+UnEscapeURL(string)
+UnEscapeURL(string,Encoding)
+</signature>
+Converts URL-friendly escape sequences back to normal text.
+Certain text characters have special meanings when present in URLs. If you need to include those characters in URL parameters then you must represent them with escape sequences. This function takes a string containing these escape sequences and converts them back to normal text.
+CONVERTEXAMPLE
+BEGIN EX
+function Start () {
+	// Plain name is "Fish & Chips".
+	var plainName = WWW.UnEscapeURL('Fish+%26+Chips');
+}
+END EX
+SA: EscapeURL.
+@param s A string containing escaped characters.
+@param e The text encoding to use.

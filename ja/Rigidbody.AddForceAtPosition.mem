@@ -1,0 +1,14 @@
+<signature>
+AddForceAtPosition(Vector3,Vector3,ForceMode)
+</signature>
+オブジェクト上の力と回転する力を適用し、位置によって力を加える。
+position引数で、力と回転する力を適用したような表現になります。爆発などの処理に適しています。 
+When applying explosions it is best to apply forces over several frames instead of just one.
+Note that when /position/ is far away from the center of the rigidbody the applied torque will be unrealistically large.
+CONVERTEXAMPLE
+BEGIN EX
+	function ApplyForce (body : Rigidbody) {
+		var direction : Vector3 = body.transform.position - transform.position;
+		body.AddForceAtPosition(direction.normalized, transform.position);
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+CancelAction()
+</signature>
+実行中の広告をキャンセルする。

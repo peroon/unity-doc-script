@@ -1,0 +1,9 @@
+<signature>
+force
+</signature>
+3 方向に力を加える
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the rigidbody upwards in world coordinates
+	constantForce.force = Vector3.up * 10;
+END EX

@@ -1,0 +1,27 @@
+<signature>
+AddRelativeTorque(Vector3,ForceMode)
+</signature>
+Rigidbodyオブジェクトの持つ座標に対し、相対的に回転する力を加える。
+As a result the rigidbody will start spinning around the /torque/ axis.
+CONVERTEXAMPLE
+BEGIN EX
+	// Spins the rigidbody around its own y-axis
+
+	function FixedUpdate () {
+		rigidbody.AddRelativeTorque (Vector3.up * 10);
+	}
+END EX
+<signature>
+AddRelativeTorque(float,float,float,ForceMode)
+</signature>
+Rigidbodyオブジェクトの持つ座標に対し、相対的に回転する力を加える。
+As a result the rigidbody will start spinning around the /torque/ axis.
+CONVERTEXAMPLE
+BEGIN EX
+	// Spins the rigidbody around its own y-axis
+
+	function FixedUpdate () {
+		rigidbody.AddRelativeTorque (0, 10, 0);
+	}
+END EX
+If you want to apply a force over several frames you should apply it inside FixedUpdate instead of Update.

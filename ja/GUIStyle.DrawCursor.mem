@@ -1,0 +1,4 @@
+<signature>
+DrawCursor(Rect,GUIContent,int,int)
+</signature>
+文字入力の際に表示されるカーソルを描画する

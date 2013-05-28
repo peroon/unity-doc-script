@@ -1,0 +1,16 @@
+<signature>
+PlayOneShot(AudioClip,float)
+</signature>
+一度だけ再生する。
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	// Play impact audio clip at volume 0.7
+	var impact : AudioClip;
+	function OnCollisionEnter () {
+		audio.PlayOneShot(impact, 0.7);
+	}
+END EX
+SA: AudioSource.Play.
+@param clip 再生させるクリップ
+@param volumeScale オーディオのボリューム。デフォルトは1

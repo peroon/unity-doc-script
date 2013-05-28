@@ -1,0 +1,5 @@
+<signature>
+autorotateToLandscapeRight
+</signature>
+右へ自動回転するかを設定する
+This setting is taken into account when ::ref::orientation is set to ScreenOrientation::pref::AutoRotation.

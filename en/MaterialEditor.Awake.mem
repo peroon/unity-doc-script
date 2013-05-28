@@ -1,0 +1,4 @@
+<signature>
+Awake()
+</signature>
+Called when the Editor is woken up.

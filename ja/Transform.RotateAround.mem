@@ -1,0 +1,16 @@
+<signature>
+RotateAround(Vector3,Vector3,float)
+</signature>
+中心となる位置を設定して、オブジェクトを回転させる関数です。
+これを使用すると、回転
+によってオブジェクトの位置と角度が変化しま
+CONVERTEXAMPLE
+BEGIN EX
+	function Update() {
+		// Spin the object around the world origin at 20 degrees/second.
+		transform.RotateAround (Vector3.zero, Vector3.up, 20 * Time.deltaTime);
+	}
+END EX
+<signature>
+RotateAround(Vector3,float)
+</signature>

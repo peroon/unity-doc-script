@@ -1,0 +1,5 @@
+<signature>
+color
+</signature>
+パーティクルのカラー
+Alpha channel of the color is used to fade out particles.

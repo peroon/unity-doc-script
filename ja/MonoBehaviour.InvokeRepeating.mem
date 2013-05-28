@@ -1,0 +1,19 @@
+<signature>
+InvokeRepeating(string,float,float)
+</signature>
+Invoke関数を一定間隔で呼び出す。
+設定したメソッドをtime 秒後に呼び出し、その後はrepeatRate 秒間隔で呼び出します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Starting in 2 seconds.
+	// a projectile will be launched every 0.3 seconds
+
+	var projectile : Rigidbody;
+
+	InvokeRepeating("LaunchProjectile", 2, 0.3);
+
+	function LaunchProjectile () {
+		var instance : Rigidbody = Instantiate(projectile);
+		instance.velocity = Random.insideUnitSphere * 5;
+	}
+END EX

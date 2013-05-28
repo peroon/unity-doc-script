@@ -1,0 +1,4 @@
+<signature>
+activeTerrain
+</signature>
+アクティブになっている地形を返す

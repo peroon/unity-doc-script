@@ -1,0 +1,9 @@
+<signature>
+relativeForce
+</signature>
+Rigidbodyオブジェクトの座標を基準にして、相対的な力を加える
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the rigidbody forward
+	constantForce.relativeForce = Vector3.forward * 10;
+END EX

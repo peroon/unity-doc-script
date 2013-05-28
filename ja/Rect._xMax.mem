@@ -1,0 +1,5 @@
+<signature>
+xMax
+</signature>
+最大のX の値。
+Changing this value will preserve left side of rectangle (so ::ref::width will change as well).

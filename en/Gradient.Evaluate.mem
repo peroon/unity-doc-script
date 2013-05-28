@@ -1,0 +1,5 @@
+<signature>
+Evaluate(float)
+</signature>
+Calculate color at a given time.
+@param time Time of the key (0 - 1).

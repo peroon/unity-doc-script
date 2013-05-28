@@ -1,0 +1,5 @@
+<signature>
+spring
+</signature>
+0 より大きい場合、limit変数の制限は緩くなる
+{ 0, infinity }.

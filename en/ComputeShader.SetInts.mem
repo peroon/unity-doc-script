@@ -1,0 +1,7 @@
+<signature>
+SetInts(string,int[])
+</signature>
+Set multiple consecutive integer parameters at once.
+This function can be used to set int vector, int array or int vector array
+values. For example, int4 myArray[4] in the compute shader
+can be filled by passing 16 integers.

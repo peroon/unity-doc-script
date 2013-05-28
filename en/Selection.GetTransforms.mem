@@ -1,0 +1,23 @@
+<signature>
+GetTransforms(SelectionMode)
+</signature>
+Allows for fine grained control of the selection type using the [[SelectionMode]] bitmask.
+BEGIN EX
+class CreateParentForTransforms extends ScriptableObject {
+    @MenuItem ("Example/Create Parent For Selection _p")
+    static function MenuInsertParent() {
+        var selection: Transform[] =  Selection.GetTransforms(
+        SelectionMode.TopLevel | SelectionMode.Editable);
+        var newParent: GameObject = new GameObject("Parent");
+
+        for (var t in selection)
+            t.parent = newParent.transform;
+    }
+    // Disable the menu if there is nothing selected
+    @MenuItem ("Example/Create Parent For Selection _p", true)
+    static function ValidateSelection() {
+        return Selection.activeGameObject != null;
+    }
+}
+END EX
+@param mode Options for refining the selection.

@@ -1,0 +1,4 @@
+<signature>
+hasAction
+</signature>
+アラートが表示されているかどうか。表示されている場合true（読み込み専用）。

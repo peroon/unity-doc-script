@@ -1,0 +1,5 @@
+<signature>
+HasProceduralProperty(string)
+</signature>
+Checks if the Procedural Material has a property of a given name.
+SA: ::ref::GetProceduralPropertyDescriptions.

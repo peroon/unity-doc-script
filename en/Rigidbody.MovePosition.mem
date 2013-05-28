@@ -1,0 +1,15 @@
+<signature>
+MovePosition(Vector3)
+</signature>
+Moves the rigidbody to /position/.
+Changing the position of a Rigidbody object by setting its transform.position value will cause it to "teleport" directly to the new position (ie, it doesn't move through any intermediate positions along the way). Any other Rigidbodies lying between the old position and the new one will be unaffected by the movement. Also, any colliders at the target position will react immediately with the moved rigidbody on the next update.
+
+If you use MovePosition instead, the physics engine will trace a straight line path between the object's old position and the new one and behave as though it rapidly moved along that path between updates. Objects lying along the path will be pushed aside if necessary. This often gives a more acceptable result than changing transform.position. However, if the movements are small and frequent then the two techniques behave very similarly.
+CONVERTEXAMPLE
+BEGIN EX
+	private var speed : Vector3 = Vector3 (3, 0, 0);
+	function FixedUpdate () {
+		rigidbody.MovePosition(rigidbody.position + speed * Time.deltaTime);
+	}
+END EX
+@param position The new position for the Rigidbody object.

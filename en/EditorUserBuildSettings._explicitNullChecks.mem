@@ -1,0 +1,4 @@
+<signature>
+explicitNullChecks
+</signature>
+Are null references actively checked?

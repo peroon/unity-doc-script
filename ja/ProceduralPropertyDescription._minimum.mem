@@ -1,0 +1,5 @@
+<signature>
+minimum
+</signature>
+最小値を設定する
+For Vector types this applies to all the vector components.

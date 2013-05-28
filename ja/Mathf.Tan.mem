@@ -1,0 +1,8 @@
+<signature>
+Tan(float)
+</signature>
+Tan 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Tan(0.5));
+END EX

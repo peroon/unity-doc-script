@@ -1,0 +1,24 @@
+<signature>
+rigidbody
+</signature>
+The [[Rigidbody]] of the collider that was hit. If the collider is not attached to a rigidbody then it is /null/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Apply a force to a clicked rigidbody object.
+	
+	// The force applied to an object when hit.
+	var hitForce: float;
+
+	function Update() {
+		if (Input.GetMouseButtonDown(0)) {
+			var hit: RaycastHit;
+			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			if (Physics.Raycast(ray, hit)) {
+				if (hit.rigidbody != null)
+					hit.rigidbody.AddForce(ray.direction * hitForce);
+			}
+		}
+	}
+END EX
+SA: Physics.Raycast, Physics.Linecast, Physics.RaycastAll.

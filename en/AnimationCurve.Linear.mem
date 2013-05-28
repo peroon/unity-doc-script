@@ -1,0 +1,4 @@
+<signature>
+Linear(float,float,float,float)
+</signature>
+A straight Line starting at /timeStart/, /valueStart/ and ending at /timeEnd/, /valueEnd/.

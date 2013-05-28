@@ -1,0 +1,5 @@
+テキストのアンカーを設定する
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.anchor = TextAnchor.MiddleCenter;
+END EX

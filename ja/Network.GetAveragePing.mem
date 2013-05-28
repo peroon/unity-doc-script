@@ -1,0 +1,17 @@
+<signature>
+GetAveragePing(NetworkPlayer)
+</signature>
+プレイヤーの平均ping時間を返します。
+プレイヤーが見つからない場合は、－1を返します。
+pingは自動的に数秒おきに送信されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUILayout.Label("Player ping values");
+		for (var i : int = 0; i < Network.connections.Length; i++) {
+			GUILayout.Label("Player " + 
+				Network.connections[i] + " - " + 
+				Network.GetAveragePing(Network.connections[i]) + " ms");
+		}
+	}
+END EX

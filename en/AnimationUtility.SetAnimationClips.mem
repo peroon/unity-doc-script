@@ -1,0 +1,4 @@
+<signature>
+SetAnimationClips(Animation,AnimationClip[])
+</signature>
+Sets the array of AnimationClips to be referenced in the Animation component.

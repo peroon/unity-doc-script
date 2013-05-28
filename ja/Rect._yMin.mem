@@ -1,0 +1,5 @@
+<signature>
+yMin
+</signature>
+最小のY の値。
+Changing this value will preserve bottom side of rectangle (so ::ref::height will change as well).

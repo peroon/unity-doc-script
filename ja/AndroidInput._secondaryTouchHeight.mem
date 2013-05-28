@@ -1,0 +1,4 @@
+<signature>
+secondaryTouchHeight
+</signature>
+タッチパッドの高さを返す（読み込み専用）

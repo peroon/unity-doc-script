@@ -1,0 +1,2 @@
+衝突が発生した接触点の情報を操作します。
+Contact points are stored in [[Collision]] structure. SA: [[Collision]], Collider.OnCollisionEnter, Collider.OnCollisionStay, Collider.OnCollisionExit.

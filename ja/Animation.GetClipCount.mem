@@ -1,0 +1,4 @@
+<signature>
+GetClipCount()
+</signature>
+アニメーションの数を返す。

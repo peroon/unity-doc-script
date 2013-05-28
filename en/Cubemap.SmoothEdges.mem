@@ -1,0 +1,9 @@
+<signature>
+SmoothEdges()
+SmoothEdges(int)
+</signature>
+Performs smoothing of near edge regions.
+Helps to compensate lack of linear interpolation across the edges of cubemap in GPU.
+
+Usually you will want to call this function for the cubemap which is going to be used for glossy reflections.
+@param smoothRegionWidthInPixels Pixel distance at edges over which to apply smoothing.

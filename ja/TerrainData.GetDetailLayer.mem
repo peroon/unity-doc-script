@@ -1,0 +1,26 @@
+<signature>
+GetDetailLayer(int,int,int,int,int)
+</signature>
+特定のポイントでの、詳細オブジェクトの密度が格納されている2 次元配列を返す
+The Terrain system uses detail layer density maps. Each map is essentially a grayscale image where each pixel value denotes the number of detail objects that will be procedurally placed terrain area. That corresponds to the pixel. Since several different detail types may be used, the map is arranged into "layers" - the array indices of the layers are determined by the order of the detail types defined in the Terrain inspector (ie, when the Paint Details tool is selected).
+BEGIN EX
+	// Set all pixels in a detail map below a certain threshold to zero.
+	function DetailMapCutoff(t: Terrain, threshold: float) {
+		// Get all of layer zero.
+		var map = t.terrainData.GetDetailLayer(0, 0, t.terrainData.detailWidth, t.terrainData.detailHeight, 0);
+		
+		// For each pixel in the detail map...
+		for (var y = 0; y < t.terrainData.detailHeight; y++) {
+			for (var x = 0; x < t.terrainData.detailWidth; x++) {
+				// If the pixel value is below the threshold then
+				// set it to zero.
+				if (map[x, y] < threshold) {
+					map[x, y] = 0.0;
+				}
+			}
+		}
+		
+		// Assign the modified map back.
+		t.terrainData.SetDetailLayer(0, 0, 0, map);
+	}
+END EX

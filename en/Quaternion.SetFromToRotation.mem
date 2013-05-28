@@ -1,0 +1,4 @@
+<signature>
+SetFromToRotation(Vector3,Vector3)
+</signature>
+Creates a rotation which rotates from /fromDirection/ to /toDirection/.

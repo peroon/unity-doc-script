@@ -1,0 +1,14 @@
+<signature>
+MultiplyPoint(Vector3)
+</signature>
+行列から位置に変換する（一般）。
+行列を使ってVector3型の変換をします。
+単なる変換である場合は、速度的な面でMultiplyPoint3x4関数を使用してください。射影の変換処理もする場合に、この関数を使
+用します。
+
+SA: ::ref::MultiplyPoint3x4, ::ref::MultiplyVector.
+CONVERTEXAMPLE
+BEGIN EX
+	// Find our current location in the camera's projection space.
+	var pt = Camera.main.projectionMatrix.MultiplyPoint(transform.position);
+END EX

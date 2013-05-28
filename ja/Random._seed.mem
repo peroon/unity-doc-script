@@ -1,0 +1,4 @@
+<signature>
+seed
+</signature>
+乱数を生成する初期値を設定する。

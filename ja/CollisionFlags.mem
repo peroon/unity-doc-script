@@ -1,0 +1,2 @@
+CharacterController.Move関数において、キャラクターコライダーが他のオブジェクトに衝突した面を表示するために使用されます。
+It gives you a broad overview of where your character collided with any other objects.

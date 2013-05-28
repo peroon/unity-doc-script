@@ -1,0 +1,19 @@
+<signature>
+activeTransform
+</signature>
+Returns the active transform. (The one shown in the inspector).
+This will never return prefabs or non-modifyable objects.
+BEGIN EX
+class SelectionActiveTransform extends ScriptableObject {
+    @MenuItem ("Example/Duplicate at Origin _d")
+    static function DuplicateSelected() {
+        Instantiate(Selection.activeTransform, Vector3.zero, Quaternion.identity);
+    }
+
+    //The menu item will be disabled if nothing, is selected.
+    @MenuItem ("Example/Duplicate at Origin _d", true)
+    static function ValidateSelection() {
+        return Selection.activeTransform != null;
+    }
+}
+END EX

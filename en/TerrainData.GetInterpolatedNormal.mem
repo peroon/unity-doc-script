@@ -1,0 +1,5 @@
+<signature>
+GetInterpolatedNormal(float,float)
+</signature>
+Get an interpolated normal at a given location.
+The /x/ and /y/ values are normalized coordinates in the range 0..1.

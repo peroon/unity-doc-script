@@ -1,0 +1,8 @@
+<signature>
+volume
+</signature>
+ゲームの音量を設定する。 (0.0 ～ 1.0)
+CONVERTEXAMPLE
+BEGIN EX
+	AudioListener.volume = 0.5;
+END EX

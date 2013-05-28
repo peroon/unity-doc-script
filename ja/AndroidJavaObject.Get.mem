@@ -1,0 +1,13 @@
+<signature>
+Get<FieldType>(string)
+</signature>
+staticでないフィールドの値を取得する
+フィールドの型はジェネリックス型です。
+BEGIN EX
+	// Create a android.os.Message object, and retrieve the default value of the field 'what'.
+	function Start() {
+		var jo = new AndroidJavaObject("android.os.Message");
+		var valueString = jo.Get.<int>("what");
+	}
+END EX
+@param fieldName フィールド名

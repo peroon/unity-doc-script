@@ -1,0 +1,5 @@
+<signature>
+height
+</signature>
+ピクセル単位のスクリーンの高さを返す（読み込み専用）
+This is the actual height of the player window (in fullscreen it is also the current resolution).

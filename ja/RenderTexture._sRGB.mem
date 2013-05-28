@@ -1,0 +1,5 @@
+<signature>
+sRGB
+</signature>
+sRGB の読み込み／書き込みが可能かどうかを返す。
+SA: [[ColorSpace]].

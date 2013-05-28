@@ -1,0 +1,2 @@
+The detail prototype will be rendered as billboards that are always facing the camera.
+Grass will take normals from terrain directly underneath it, so that the shading matches the terrain.

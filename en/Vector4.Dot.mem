@@ -1,0 +1,5 @@
+<signature>
+Dot(Vector4,Vector4)
+</signature>
+Dot Product of two vectors.
+Returns /lhs/ @@.@@ /rhs/.

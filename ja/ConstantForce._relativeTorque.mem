@@ -1,0 +1,9 @@
+<signature>
+relativeTorque
+</signature>
+Rigidbodyオブジェクトの座標を基準にして、トルクに相対的な力を加える
+CONVERTEXAMPLE
+BEGIN EX
+	// Rotates the object around the its own x-axis
+	constantForce.relativeTorque = Vector3.right * 2;
+END EX

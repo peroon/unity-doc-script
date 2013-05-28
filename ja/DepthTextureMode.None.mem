@@ -1,0 +1,2 @@
+深度テクスチャを生成しない（デフォルト）
+SA: Camera.depthTextureMode.

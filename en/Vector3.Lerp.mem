@@ -1,0 +1,49 @@
+<signature>
+Lerp(Vector3,Vector3,float)
+</signature>
+Linearly interpolates between two vectors.
+Interpolates between /from/ and /to/ by the fraction /t/. This is most commonly
+used to find a point some fraction of the way along a line between two
+endpoints (eg, to move an object gradually between those points).
+This fraction is clamped to the range [0...1].
+When /t/ = 0 returns /from/.
+When /t/ = 1 returns /to/.
+When /t/ = 0.5 returns the point midway between /from/ and /to/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Transforms to act as start and end markers for the journey.
+	var startMarker: Transform;
+	var endMarker: Transform;
+	
+	// Movement speed in units/sec.
+	var speed = 1.0;
+	
+	// Time when the movement started.
+	private var startTime: float;
+	
+	// Total distance between the markers.
+	private var journeyLength: float;
+	
+	var target : Transform;
+	var smooth = 5.0;
+	
+	function Start() {
+		// Keep a note of the time the movement started.
+		startTime = Time.time;
+		
+		// Calculate the journey length.
+		journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
+	}
+	
+	// Follows the target position like with a spring
+	function Update () {
+		// Distance moved = time * speed.
+		var distCovered = (Time.time - startTime) * speed;
+		
+		// Fraction of journey completed = current distance divided by total distance.
+		var fracJourney = distCovered / journeyLength;
+		
+		// Set our position as a fraction of the distance between the markers.
+		transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
+	}
+END EX

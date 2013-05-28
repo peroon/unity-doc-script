@@ -1,0 +1,13 @@
+Hz でのローパスのカットオフ周波数。10 から22000 の間で設定（デフォルトは5000）
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the cuttoutFrequency from 10 to 22000 following a Sinus function
+	// Attach this to an audio source with a LowPassFilter to listen it working.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioLowPassFilter)
+
+	function Update() {
+		GetComponent(AudioLowPassFilter).cutoffFrequency = (Mathf.Sin(Time.time)*11010 + 11000);
+	}
+END EX

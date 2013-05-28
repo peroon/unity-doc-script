@@ -1,0 +1,5 @@
+<signature>
+deviceModel
+</signature>
+デバイスのモデルを返す（読み込み専用）
+Possible examples: @@iPhone3,1@@ or @@iPod4,1@@.

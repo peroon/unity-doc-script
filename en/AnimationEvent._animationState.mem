@@ -1,0 +1,5 @@
+<signature>
+animationState
+</signature>
+The animation state that fired this event (RO).
+Returns null when the method is called outside of an animation event callback.

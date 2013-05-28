@@ -1,0 +1,5 @@
+<signature>
+deviceUniqueIdentifier
+</signature>
+一意のデバイスIDを返す。すべてのデバイスに対して一意であることが保証されている(読み取り専用)
+On iOS devices this does not call into any iOS API.

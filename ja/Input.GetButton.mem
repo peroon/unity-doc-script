@@ -1,0 +1,24 @@
+<signature>
+GetButton(string)
+</signature>
+特定のInput Manager で設定した情報を/buttonName/引数で取得する。
+押している間、trueを返す。
+
+Use this only when implementing action like events IE: shooting a weapon.\\
+Use Input.GetAxis for any kind of movement behaviour.
+CONVERTEXAMPLE
+BEGIN EX
+	// Instantiates a projectile every 0.5 seconds,
+	// if the Fire1 button (default is Ctrl) is pressed.
+
+	var projectile : GameObject;
+	var fireRate : float = 0.5;
+	private var nextFire : float = 0.0;
+	function Update () {
+		if (Input.GetButton ("Fire1") && Time.time > nextFire) {
+			nextFire = Time.time + fireRate;
+			var clone : GameObject = 
+				Instantiate(projectile, transform.position, transform.rotation) as GameObject;
+		}
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+GetLayerCost(int)
+</signature>
+すべてのエージェントがレイヤーの平面上を横切るためのコストを取得

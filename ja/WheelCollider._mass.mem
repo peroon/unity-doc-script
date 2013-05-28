@@ -1,0 +1,5 @@
+ホイールの質量。0 より大きい必要がある
+CONVERTEXAMPLE
+BEGIN EX
+	collider.mass = 1;
+END EX

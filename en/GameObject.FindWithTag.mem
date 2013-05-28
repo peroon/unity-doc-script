@@ -1,0 +1,21 @@
+<signature>
+FindWithTag(string)
+</signature>
+Returns one active [[GameObject]] tagged /tag/. Returns @@null@@ if no GameObject was found.
+Tags must be declared in the tag manager before using them. A @@UnityException@@ will be thrown if the tag does not exist or an empty string or @@null@@ is passed as the tag.
+CONVERTEXAMPLE
+BEGIN EX
+	var respawnPrefab : GameObject;
+	var respawn: GameObject;
+	
+	// Instantiates respawnPrefab at the location 
+	// of the game object with tag "Respawn"
+     // This example assumes that a game object is tagged with "Respawn"
+	function Start()
+	{
+		if (respawn==null)
+			respawn = GameObject.FindWithTag ("Respawn");
+		Instantiate (respawnPrefab, respawn.transform.position, respawn.transform.rotation);
+	}
+END EX
+@param tag The tag to search for.

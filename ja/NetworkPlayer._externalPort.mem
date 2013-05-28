@@ -1,0 +1,5 @@
+<signature>
+externalPort
+</signature>
+ネットワークインタフェースの外部ポートを返す
+This will only be populated after some external connection has been made.

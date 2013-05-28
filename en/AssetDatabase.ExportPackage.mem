@@ -1,0 +1,8 @@
+<signature>
+ExportPackage(string[],string)
+ExportPackage(string,string)
+ExportPackage(string,string,ExportPackageOptions)
+ExportPackage(string[],string,ExportPackageOptions)
+</signature>
+Exports the assets identified by __assetPathNames__ to a unitypackage file in __fileName__.
+SA: ExportPackageOptions for information on how you can affect what gets exported.

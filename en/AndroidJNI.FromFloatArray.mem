@@ -1,0 +1,5 @@
+<signature>
+FromFloatArray(IntPtr)
+</signature>
+Convert a Java array of <tt>float</tt> to a managed array of System.Single.
+SA: AndroidJNI.GetFloatArrayElement, AndroidJNI.GetArrayLength.

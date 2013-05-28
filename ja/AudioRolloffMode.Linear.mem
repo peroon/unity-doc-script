@@ -1,0 +1,11 @@
+一定以上距離が離れた際に音を小さくする。
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the rolloff of the audio source attached to
+	// this script to linear.
+
+	@script RequireComponent(AudioSource)
+	function Start() {
+		audio.rolloffMode = AudioRolloffMode.Linear;
+	}
+END EX

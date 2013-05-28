@@ -1,0 +1,10 @@
+<signature>
+levelCount
+</signature>
+利用可能なレベルの数を返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Loads a random level
+
+	Application.LoadLevel (Random.Range(0, Application.levelCount-1));
+END EX

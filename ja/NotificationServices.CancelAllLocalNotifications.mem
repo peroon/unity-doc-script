@@ -1,0 +1,4 @@
+<signature>
+CancelAllLocalNotifications()
+</signature>
+すべてのローカル通知スケジュールをキャンセルする

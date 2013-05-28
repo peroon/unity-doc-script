@@ -1,0 +1,6 @@
+<signature>
+GetInterpolatedLightProbe(Vector3,Renderer,float[])
+</signature>
+指定した位置に、ライトプローブの球面関数の係数を設定する。ライトプローブは、ベイクされたライトプローブから補間される。
+For the scene. The coefficients represent a 3-band RGB spherical harmonics probe, with a total of 27 floats laid out: rgbrgbrgb...
+Renderer is only needed to speed up the search for the current tetrahedron, as it caches the index of the tetrahedron it was in the last frame.

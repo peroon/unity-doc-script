@@ -1,0 +1,6 @@
+<signature>
+lifetime
+</signature>
+パーティクルの生き残る残り時間
+This is the time in seconds for how long this particle will remain alive.
+When the lifetime drops below zero the Particle will be killed.

@@ -1,0 +1,16 @@
+<signature>
+toggle
+</signature>
+Toggleオブジェクトの設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	// Modifies only the toggle style of the current GUISkin
+
+	var style : GUIStyle;
+	private var val : boolean = false;
+
+	function OnGUI() {
+		GUI.skin.toggle = style;
+		val = GUILayout.Toggle(val,"A Toggle control");
+	}
+END EX

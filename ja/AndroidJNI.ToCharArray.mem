@@ -1,0 +1,5 @@
+<signature>
+ToCharArray(char[])
+</signature>
+Char配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewCharArray, AndroidJNI.SetCharArrayElement.

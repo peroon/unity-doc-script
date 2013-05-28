@@ -1,0 +1,9 @@
+<signature>
+pixelOffset
+</signature>
+The pixel offset of the text.
+The text is offset from its original position by this amount.
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.pixelOffset = Vector2 (10, 10);
+END EX

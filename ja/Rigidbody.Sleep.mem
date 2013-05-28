@@ -1,0 +1,10 @@
+<signature>
+Sleep()
+</signature>
+強制的にRigidbodyオブジェクトをスリープモードにする。
+A common use is to call this from Awake in order to make a rigidbody sleep at startup.
+See [[wiki:RigidbodySleeping|Rigidbody Sleeping]] for more information.
+CONVERTEXAMPLE
+BEGIN EX
+	rigidbody.Sleep();
+END EX

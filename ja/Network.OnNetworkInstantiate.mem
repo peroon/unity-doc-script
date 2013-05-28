@@ -1,0 +1,14 @@
+<signature>
+OnNetworkInstantiate(NetworkMessageInfo)
+</signature>
+Network.Instantiate関数で生成されたオブジェクトに対して、呼び出されます。
+This is useful for disabling or enabling components for objects which have been instantiated
+and their behavior depends on if they are locally or remotely owned.
+
+Note: The networkView attribute inside the [[NetworkMessageInfo]] is not used inside OnNetworkInstantiate.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnNetworkInstantiate (info : NetworkMessageInfo) {
+		Debug.Log("New object instantiated by " + info.sender);
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+length
+</signature>
+キーの数を返す（読み取り専用）。

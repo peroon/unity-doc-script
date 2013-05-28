@@ -1,0 +1,5 @@
+<signature>
+ClearCurves()
+</signature>
+Clears all curves from the clip.
+SA: ::ref::SetCurve function, [[AnimationCurve]] class.

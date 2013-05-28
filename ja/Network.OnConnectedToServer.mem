@@ -1,0 +1,11 @@
+<signature>
+OnConnectedToServer()
+</signature>
+サーバーに接続したとき、クライアント側で呼び出されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnConnectedToServer() {
+		Debug.Log("Connected to server");
+		// Send local player name to server ...
+	}
+END EX

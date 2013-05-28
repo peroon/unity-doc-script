@@ -1,0 +1,12 @@
+<signature>
+fixedWidth
+</signature>
+If non-0, any GUI elements rendered with this style will have the width specified here.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the value of fixedWidth.
+	
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.fixedWidth);
+	}
+END EX

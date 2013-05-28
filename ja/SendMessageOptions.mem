@@ -1,0 +1,2 @@
+SendMessage関数の受信について選択します。
+This is used by SendMessage & BroadcastMessage in [[GameObject]] & [[Component]].

@@ -1,0 +1,12 @@
+<signature>
+DecreaseLevel(bool)
+</signature>
+現在のクオリティレベルを下げる。
+CONVERTEXAMPLE
+BEGIN EX
+	QualitySettings.DecreaseLevel(false);
+END EX
+::ref::IncreaseLevel and ::ref::DecreaseLevel functions only apply anti-aliasing if applyExpensiveChanges is true.
+
+SA: ::ref::IncreaseLevel, [[wiki:class-QualitySettings|Quality Settings]].
+@param applyExpensiveChanges trueの場合、アンチエイリアス処理など処理時間がかかるものを実行する。デフォルトはfalse

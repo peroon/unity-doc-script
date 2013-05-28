@@ -1,0 +1,1 @@
+RigidbodyオブジェクトがアタッチされDynamicでない場合、Fixed変数での更新設定となる。そうでなければDynamicとなる。

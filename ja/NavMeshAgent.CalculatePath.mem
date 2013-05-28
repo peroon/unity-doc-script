@@ -1,0 +1,25 @@
+<signature>
+CalculatePath(Vector3,NavMeshPath)
+</signature>
+エージェントが目標値までにたどり着く道程を計算し、path引数に格納します。
+This function can be used to plan a path ahead of time to avoid a delay
+in gameplay when the path is needed. Another use is to check if a target position is reachable before moving the agent.
+CONVERTEXAMPLE
+BEGIN EX
+	var target: Transform;
+
+	private var agent: NavMeshAgent;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+		var path: NavMeshPath;
+		agent.CalculatePath(target.position, path);
+		
+		if (path.status == NavMeshPathStatus.PathPartial) {
+			// The target cannot be reached...
+		}
+	}
+END EX
+@param targetPosition 目標値
+@param path 計算されたパスが格納される
+@return True if a path is found.

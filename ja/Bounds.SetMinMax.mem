@@ -1,0 +1,5 @@
+<signature>
+SetMinMax(Vector3,Vector3)
+</signature>
+ボックスの最小値と最大値を設定する
+また、同時に変更することで、個別に変更するより高速になります。

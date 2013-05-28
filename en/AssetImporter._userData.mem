@@ -1,0 +1,5 @@
+<signature>
+userData
+</signature>
+Get or set any user data.
+This can be usefull during asset post processing if you want to associate eg. a model with an auxillary xml file to control some parts of the importing or you can put your xml data directly in to the userData field.

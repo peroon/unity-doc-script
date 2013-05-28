@@ -1,0 +1,2 @@
+ネットワークに接続する際に返ってくるエラー内容です。[[MonoBehaviour.OnFailedToConnect|OnFailedToConnect]] in case the error was not immediate.
+Also used by the [[MasterServer]] in [[MonoBehaviour.OnFailedToConnectToMasterServer|OnFailedToConnectToMasterServer]].

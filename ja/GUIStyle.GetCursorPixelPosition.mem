@@ -1,0 +1,4 @@
+<signature>
+GetCursorPixelPosition(Rect,GUIContent,int)
+</signature>
+文字列のインデックスを指定し、ピクセル単位の位置を返す

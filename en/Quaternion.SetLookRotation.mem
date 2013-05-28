@@ -1,0 +1,13 @@
+<signature>
+SetLookRotation(Vector3)
+SetLookRotation(Vector3,Vector3)
+</signature>
+Creates a rotation with the specified /forward/ and /upwards/ directions.
+The result is applied to this quaternion
+If used to orient a Transform, the Z axis will be aligned with /forward/
+and the Y axis with /upwards/, assuming these vectors are orthogonal.
+Logs an error if the forward direction is zero.
+
+SA: ::ref::LookRotation.
+@param view The direction to look in.
+@param up The vector that defines in which direction up is.

@@ -1,0 +1,5 @@
+弾力を設定する。範囲は0 から1
+CONVERTEXAMPLE
+BEGIN EX
+	collider.bounciness = 1;
+END EX

@@ -1,0 +1,23 @@
+<signature>
+GetComponentsInChildren(Type,bool)
+</signature>
+親子関係の子に当たるゲームオブジェクトから、該当するすべてのコンポーネントを取得する
+Only active components are returned.
+CONVERTEXAMPLE
+BEGIN EX
+	// Disable the spring on all HingeJoints 
+	// in this game object and all its child game objects
+	var hingeJoints : Component[];
+	hingeJoints = GetComponentsInChildren (HingeJoint);
+	for (var joint : HingeJoint in hingeJoints) {
+		joint.useSpring = false;
+	}
+END EX
+<signature>
+GetComponentsInChildren<T>(bool)
+</signature>
+Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.
+<signature>
+GetComponentsInChildren<T>()
+</signature>
+Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.

@@ -1,0 +1,11 @@
+<signature>
+heightmapPixelError
+</signature>
+状態が悪いとき、LODに切り替えるときの地形のピクセルの概算を返す
+A higher value reduces the number of polygons drawn.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Terrain.activeTerrain.heightmapPixelError = 10;
+	}
+END EX

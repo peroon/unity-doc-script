@@ -1,0 +1,8 @@
+<signature>
+Exp(float)
+</signature>
+累乗
+CONVERTEXAMPLE
+BEGIN EX
+	print(Mathf.Exp(6));
+END EX

@@ -1,0 +1,18 @@
+<signature>
+Play(ulong)
+</signature>
+再生する。The delay parameter is deprecated, please use the newer PlayDelayed function instead which specifies the delay in seconds.
+__Note:__ To obtain sample accuracy with an [[AudioClip]] with a different samplerate (than 44.1 khz) you have
+to do the math yourselves. Delaying an audiosource with an attached [[AudioClip]] with samplerate of,
+say, 32 khz, with 16k samples(.5 sec) is done by Play(22050). ((44100/32000) * 16000 = 22050).
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	function Start() {
+		audio.Play();
+		// Delay a clip by 1 sec (44100 samples)
+		audio.Play(44100);
+	}
+END EX
+SA: ::ref::Stop, ::ref::Pause, ::ref::clip functions.
+@param delay ディレイを設定。基準はサンプルレートによって変わる。44100Hzであれば、1 秒遅らせるには44100 を設定すればよい。

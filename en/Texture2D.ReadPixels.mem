@@ -1,0 +1,47 @@
+<signature>
+ReadPixels(Rect,int,int)
+ReadPixels(Rect,int,int,bool)
+</signature>
+Read screen pixels into the saved texture data.
+This will copy a rectangular pixel area from the currently active [[RenderTexture]] or the view (specified by the /source/ parameter) into the position defined
+by /destX/ and /destY/. Both coordinates use pixel space - (0,0) is lower left.
+
+If /recalculateMipMaps/ is set to true, the mip maps of the texture will also be updated. If /recalculateMipMaps/ is set to false, you must call ::ref::Apply to recalculate them.
+
+This function works only on /ARGB32/ and /RGB24/ texture formats.
+The texture also has to have __Read/Write Enabled__ flag set in the import settings.
+ReadPixels is unsupported on Flash.
+CONVERTEXAMPLE
+BEGIN EX
+	// This script should be attached to a camera. 
+
+	// Grab the camera's view when this variable is true.
+	var grab: boolean;
+
+	// The "display" is the object whose texture will be set
+	// to the captured image.
+	var display: Renderer;
+
+
+	function OnPostRender() {
+		if (grab) {
+			// Make a new texture of the right size and
+			// read the camera image into it.
+			var tex = new Texture2D(128, 128);
+			tex.ReadPixels(new Rect(0, 0, 128, 128), 0, 0);
+			tex.Apply();
+			
+			// Set the display texture to the newly captured image.
+			display.material.mainTexture = tex;
+			
+			// Reset the grab variable to avoid making multiple
+			// captures.
+			grab = false;
+		}
+	}
+END EX
+SA: ::ref::EncodeToPNG.
+@param source Rectangular region of the view to read from.
+@param destX Horizontal pixel position in the texture to place the pixels that are read.
+@param destY Vertical pixel position in the texture to place the pixels that are read.
+@param recalculateMipMaps Should the texture's mipmaps be recalculated after reading?

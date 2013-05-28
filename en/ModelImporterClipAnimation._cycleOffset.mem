@@ -1,0 +1,4 @@
+<signature>
+cycleOffset
+</signature>
+Offset to the cycle of a looping animation, if a different time in it is desired to be the start.

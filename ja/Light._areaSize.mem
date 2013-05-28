@@ -1,0 +1,6 @@
+エリアライトのサイズ。エディターのみ変更可能。
+SA: [[wiki:class-Light|Light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	light.areaSize = Vector2(5, 2);
+END EX

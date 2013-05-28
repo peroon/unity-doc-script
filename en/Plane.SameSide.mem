@@ -1,0 +1,4 @@
+<signature>
+SameSide(Vector3,Vector3)
+</signature>
+Are two points on the same side of the plane?

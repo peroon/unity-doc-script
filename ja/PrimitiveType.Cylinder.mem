@@ -1,0 +1,8 @@
+シリンダー
+SA: GameObject.CreatePrimitive.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var cylinder : GameObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+	}
+END EX

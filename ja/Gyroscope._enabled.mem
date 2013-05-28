@@ -1,0 +1,16 @@
+<signature>
+enabled
+</signature>
+ジャイロスコープの状態を設定または返す
+CONVERTEXAMPLE
+BEGIN EX
+    var enableTilt: boolean;
+
+	function OnGUI() {
+		if (Input.gyro.enabled) {
+			GUILayout.Toggle(enableTilt, "Enable tilt control");
+		}
+		
+		// Other GUI elements...
+	}
+END EX

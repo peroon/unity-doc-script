@@ -1,0 +1,14 @@
+<signature>
+isMouse
+</signature>
+マウスのイベントかを返す（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects any mouse event
+	function OnGUI() {
+		var e : Event = Event.current;
+		if (e.isMouse){
+			Debug.Log("Detected a mouse event!");
+		}
+	}
+END EX

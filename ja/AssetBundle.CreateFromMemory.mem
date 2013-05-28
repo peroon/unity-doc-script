@@ -1,0 +1,5 @@
+<signature>
+CreateFromMemory(byte[])
+</signature>
+非同期メモリ領域からアセットバンドルを作成する。
+SA: [[AssetBundleCreateRequest]].

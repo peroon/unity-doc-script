@@ -1,0 +1,33 @@
+<signature>
+normal
+</signature>
+衝突した際の面の角度を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Calculate the reflection of a "laser beam" off a clicked object.
+	
+	// The object from which the beam is fired. The incoming beam will
+	// not be visible if the camera is used for this!
+	var gunObj: Transform;
+	
+	
+	function Update () {
+		if (Input.GetMouseButton(0)) {
+			var hit: RaycastHit;
+			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			if (Physics.Raycast(ray, hit)) {
+				// Find the line from the gun to the point that was clicked.
+				var incomingVec = hit.point - gunObj.position;
+				
+				// Use the point's normal to calculate the reflection vector.
+				var reflectVec = Vector3.Reflect(incomingVec, hit.normal);
+				
+				// Draw lines to show the incoming "beam" and the reflection.
+				Debug.DrawLine(gunObj.position, hit.point, Color.red);
+				Debug.DrawRay(hit.point, reflectVec, Color.green);
+			}
+		}
+	}
+END EX
+SA: Physics.Raycast, Physics.Linecast, Physics.RaycastAll.

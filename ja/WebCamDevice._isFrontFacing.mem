@@ -1,0 +1,4 @@
+<signature>
+isFrontFacing
+</signature>
+カメラの向いている方向。スクリーン側を向いている場合、trueを返す

@@ -1,0 +1,9 @@
+<signature>
+DrawTextureWithTexCoords(Rect,Texture,Rect,bool)
+</signature>
+画像の座標やタイルの変更を行いたい場合、この関数を使用して描画を行います。
+SA: GUI.color, GUI.contentColor.
+@param position 表示位置
+@param image 表示する画像
+@param texCoords テクスチャの位置。普段はRect(0,0,1,1)の場合が多い
+@param alphaBlend アルファチャンネルを扱うかの設定。デフォルトはtrue

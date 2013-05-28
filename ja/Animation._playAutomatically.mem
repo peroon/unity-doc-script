@@ -1,0 +1,5 @@
+trueだと自動的にデフォルトのアニメーションを再生する。
+CONVERTEXAMPLE
+BEGIN EX
+	animation.playAutomatically = true;
+END EX

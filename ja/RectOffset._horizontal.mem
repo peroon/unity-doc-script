@@ -1,0 +1,4 @@
+<signature>
+horizontal
+</signature>
+左辺から右辺の最短距離を返す（読み込み専用）。

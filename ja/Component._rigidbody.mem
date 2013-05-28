@@ -1,0 +1,8 @@
+<signature>
+rigidbody
+</signature>
+Rigidbody情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	rigidbody.AddForce(1, 1, 1);
+END EX

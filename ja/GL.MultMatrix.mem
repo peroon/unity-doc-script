@@ -1,0 +1,8 @@
+<signature>
+MultMatrix(Matrix4x4)
+</signature>
+指定したものと現在のモデルビュー行列を乗算する
+Equivalent to @@glMultMatrix(mat)@@ in OpenGL; in other graphics APIs the
+corresponding functionality is emulated.
+
+保存／復元して投影パラメーターを上書きするためには、PushMatrix関数とPopMatrix関数を使用してください。

@@ -1,0 +1,11 @@
+標準の4 × 4 の変換行列を扱います。
+変換行列は、任意の線形3D 変換（回転、大きさ、剪断など）や透視変換を行うことができます。スクリプト側で行列を使用することは、滅多にありません。; most
+often using [[Vector3]]s, [[Quaternion]]s and functionality of [[Transform]] class is more straightforward.カメラの投影を設定するような特殊なケースで使用されます。
+
+Consult any graphics textbook for in depth explanation of transformation matrices.
+
+In Unity, Matrix4x4 is used by several [[Transform]], [[Camera]], [[Material]] and [[GL]] functions.
+
+Matrices in unity are column major. Data is accessed as: row + (column*4). Matrices can be
+indexed like 2D arrays but in an expression like mat[a, b], /a/ refers to the row index, while /b/ refers
+to the column index (note that this is the opposite way round to Cartesian coordinates).

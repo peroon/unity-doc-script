@@ -1,0 +1,2 @@
+Class for handling 3D Textures, Use this to create [[wiki:class-Texture3D|3D texture assets]].
+3D textures are commonly used as lookup tables by shaders.

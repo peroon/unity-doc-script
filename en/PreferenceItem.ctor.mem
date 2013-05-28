@@ -1,0 +1,4 @@
+<signature>
+ctor(string)
+</signature>
+Creates a section in the Preferences Window called /name/ and invokes the static function following it for the section's GUI.

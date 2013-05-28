@@ -1,0 +1,5 @@
+<signature>
+mesh
+</signature>
+結合するメッシュを設定する
+SA: Mesh.CombineMeshes, ::ref::subMeshIndex, ::ref::transform.

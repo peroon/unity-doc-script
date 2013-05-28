@@ -1,0 +1,6 @@
+<signature>
+GetLayerCost(int)
+</signature>
+レイヤーの平面上を横切るためのコストを設定
+@param layer Layer index.
+@return Current cost of specified layer.

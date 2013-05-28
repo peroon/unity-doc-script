@@ -1,0 +1,4 @@
+<signature>
+GetCursorPixelPosition(Rect,GUIContent,int)
+</signature>
+Get the pixel position of a given string index.

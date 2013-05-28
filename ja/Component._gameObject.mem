@@ -1,0 +1,8 @@
+<signature>
+gameObject
+</signature>
+ゲームオブジェクト情報を返す。常にアタッチされている
+CONVERTEXAMPLE
+BEGIN EX
+	print (gameObject.name);
+END EX

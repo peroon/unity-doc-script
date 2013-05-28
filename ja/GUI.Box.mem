@@ -1,0 +1,21 @@
+<signature>
+Box(Rect,string)
+Box(Rect,Texture)
+Box(Rect,GUIContent)
+Box(Rect,string,GUIStyle)
+Box(Rect,Texture,GUIStyle)
+Box(Rect,GUIContent,GUIStyle)
+</signature>
+ボックスを作成します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a box of the size of the screen.
+	function OnGUI() {
+		 GUI.Box(Rect(0,0,Screen.width,Screen.height),"This is a title");
+	}
+END EX
+@param position 表示位置
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル

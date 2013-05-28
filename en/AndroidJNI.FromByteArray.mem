@@ -1,0 +1,5 @@
+<signature>
+FromByteArray(IntPtr)
+</signature>
+Convert a Java array of <tt>byte</tt> to a managed array of System.Byte.
+SA: AndroidJNI.GetByteArrayElement, AndroidJNI.GetArrayLength.

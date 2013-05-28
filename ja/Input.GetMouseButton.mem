@@ -1,0 +1,19 @@
+<signature>
+GetMouseButton(int)
+</signature>
+特定のマウスの情報を取得する。押している間、trueを返す。
+button 引数は0 が左クリック、1 が右クリック、2 が中クリックになります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects clicks from the mouse and prints a message
+	// depending on the click detected.
+
+	function Update() {
+		if(Input.GetMouseButton(0))
+			Debug.Log("Pressed left click.");
+		if(Input.GetMouseButton(1))
+			Debug.Log("Pressed right click.");
+		if(Input.GetMouseButton(2))
+			Debug.Log("Pressed middle click.");
+	}
+END EX

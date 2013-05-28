@@ -1,0 +1,4 @@
+<signature>
+DeleteAll()
+</signature>
+すべてのキーと値を削除する

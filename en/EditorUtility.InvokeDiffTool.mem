@@ -1,0 +1,7 @@
+<signature>
+InvokeDiffTool(string,string,string,string,string,string)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Invoke the diff tool.

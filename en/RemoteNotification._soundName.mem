@@ -1,0 +1,4 @@
+<signature>
+soundName
+</signature>
+The name of the sound file to play when an alert is displayed. (RO)

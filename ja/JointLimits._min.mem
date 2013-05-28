@@ -1,0 +1,12 @@
+<signature>
+min
+</signature>
+下限を設定する。
+関節の角度や位置がそれを下回ると力は働かなくなる
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the minimum hinge angle to be 20 degrees
+	var limits = hingeJoint.limits;
+	limits.min = 20;
+	hingeJoint.limits = limits;
+END EX

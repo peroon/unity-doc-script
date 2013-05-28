@@ -1,0 +1,7 @@
+重力を適用するか設定する
+CONVERTEXAMPLE
+BEGIN EX
+	// Dont use gravity on this cloth regardless if is Interactive or Skinned.
+
+	transform.GetComponent(Cloth).useGravity = false;
+END EX

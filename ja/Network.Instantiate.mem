@@ -1,0 +1,32 @@
+<signature>
+Instantiate(Object,Vector3,Quaternion,int)
+</signature>
+オブジェクトをインスタンス化します。
+この関数でインスタンス化されたものは、すべてのクライアントに適用されます。 Synchronization is automatically set up so there is no
+extra work involved. The position, rotation and network group number are given as parameters. Note that in the example below there must
+be something set to the playerPrefab in the Editor. You can read more about instantiations in the object reference Object.Instantiate.
+
+内部的にバッファリングされたRPCを呼び出しているので、Network.RemoveRPCs関数を利用することもできます。その場合は、オーバーライド関数であるOnNetworkInstantiate内に記述します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Immediately instantiate new connected player's character
+	// when successfully connected to the server.
+
+	var playerPrefab : Transform;
+	function OnConnectedToServer () {
+		Network.Instantiate(playerPrefab, transform.position, transform.rotation, 0);
+	}
+END EX
+Example of removing an instantiation from the RPC buffer:
+CONVERTEXAMPLE
+BEGIN EX
+	// Immediately destroy and remove RPC for network instantiated object
+	// (script attached to prefab)
+	function OnNetworkInstantiate(info: NetworkMessageInfo) {
+		Debug.Log(networkView.viewID + " spawned");
+		if (Network.isServer) {
+			Network.RemoveRPCs(networkView.viewID);
+			Network.Destroy(gameObject);
+		}
+	}
+END EX

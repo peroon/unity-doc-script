@@ -1,0 +1,9 @@
+カプセルの向く方向を返す
+0 -> Capsule height is along the x-axis.
+1 -> Capsule height is along the y-axis.
+2 -> Capsule height is along the z-axis.
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the capsule height be along the x-axis
+	collider.direction = 0;
+END EX

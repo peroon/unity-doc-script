@@ -1,0 +1,9 @@
+<signature>
+DrawFrustum(Vector3,float,float,float,float)
+</signature>
+Draw a camera frustum using the currently set Gizmos.matrix for it's location and rotation.
+@param center The apex of the truncated pyramid.
+@param fov Vertical field of view (ie, the angle at the apex).
+@param maxRange Distance of the frustum's far plane.
+@param minRange Distance of the frustum's near plane.
+@param aspect Width/height ratio.

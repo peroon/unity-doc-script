@@ -1,0 +1,5 @@
+<signature>
+isDone
+</signature>
+動作が終了したか確認する（読み込み専用）。
+SA: ::ref::progress.

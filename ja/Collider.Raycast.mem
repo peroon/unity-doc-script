@@ -1,0 +1,22 @@
+<signature>
+Raycast(Ray,RaycastHit,float)
+</signature>
+このコライダーのみを判断するレイを飛ばす
+Same as above using /ray.origin/ and /ray.direction/ instead of /origin/ and /direction/.
+BEGIN EX
+	// pragma below is needed due to a UnityJS issue
+	#pragma strict
+
+	function Update(){
+	    var ray : Ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+	    var hit : RaycastHit;
+	    if (collider.Raycast (ray, hit, 100.0)) {
+	        Debug.DrawLine (ray.origin, hit.point);
+	    }
+	}
+END EX
+@param ray 光線のようなもの
+@param hitInfo レイがヒットしたときにオブジェクト情報が格納される(SA:[[RaycastHit]]).
+@param distance 適用する距離
+@return 飛ばしたレイがコライダーにヒットした際に、trueを返します。特定のオブジェクトにの
+み反応を行いたい場合などに使用します。

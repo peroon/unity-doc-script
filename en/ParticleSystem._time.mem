@@ -1,0 +1,2 @@
+Playback position in seconds.
+Use this to read current playback time or to seek to a new playback time.

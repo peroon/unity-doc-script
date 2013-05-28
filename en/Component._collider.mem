@@ -1,0 +1,8 @@
+<signature>
+collider
+</signature>
+The [[Collider]] attached to this [[GameObject]] (null if there is none attached).
+CONVERTEXAMPLE
+BEGIN EX
+	collider.material.dynamicFriction = 1;
+END EX

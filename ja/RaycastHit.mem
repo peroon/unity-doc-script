@@ -1,0 +1,2 @@
+レイを飛ばした際に、衝突したオブジェクトの情報を得るために使用されます。
+SA: Physics.Raycast, Physics.Linecast, Physics.RaycastAll.

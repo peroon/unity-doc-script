@@ -1,0 +1,6 @@
+<signature>
+bounciness
+</signature>
+ジョイントが限度に達するときの跳ね返る大きさを設定する
+Bounciness determines how much to bounce off an limit.
+range { 0, 1 }.

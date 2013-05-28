@@ -1,0 +1,4 @@
+<signature>
+UnregisterForRemoteNotifications()
+</signature>
+リモート通知の登録を解除する

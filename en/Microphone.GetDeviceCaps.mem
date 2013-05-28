@@ -1,0 +1,7 @@
+<signature>
+GetDeviceCaps(string,int,int)
+</signature>
+Get the frequency capabilities of a device.
+If minFreq and maxFreq is 0, any frequency is supported.
+@param deviceName The name of the device. Passing null or an empty string will pick the default device. Get device names with [[Microphone.devices|Microphone.devices]].
+@param out MaxFreq.

@@ -1,0 +1,5 @@
+<signature>
+offMeshLink
+</signature>
+リンクのタイプが手動の場合OffMeshLinkオブジェクトが格納される（読み込み専用）
+Automatically generated Jump and drop links will return null.

@@ -1,0 +1,9 @@
+<signature>
+red
+</signature>
+赤を返す。RGBA は (1, 0, 0, 1)
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a red color to this transform's material
+	transform.renderer.material.color = Color.red;
+END EX

@@ -1,0 +1,4 @@
+<signature>
+size
+</signature>
+地形のワールド座標単位での大きさを返す

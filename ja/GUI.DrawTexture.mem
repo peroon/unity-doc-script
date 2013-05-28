@@ -1,0 +1,28 @@
+<signature>
+DrawTexture(Rect,Texture,ScaleMode,bool,float)
+</signature>
+テクスチャを描画する
+SA: GUI.color, GUI.contentColor.
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a texture in the left corner of the screen.
+	// The texture is drawn in a window 60x60 pixels.
+	// The source texture is given an aspect ratio of 10x1
+	// and scaled to fit in the 60x60 rectangle.  Because
+	// the aspect ratio is preserved, the texture will fit
+	// inside a 60x10 pixel area of the screen rectangle.
+	var aTexture : Texture;
+
+	function OnGUI() {
+		if(!aTexture){
+			Debug.LogError("Assign a Texture in the inspector.");
+			return;
+		}
+		GUI.DrawTexture(Rect(10,10,60,60), aTexture, ScaleMode.ScaleToFit, true, 10.0f);
+	}
+END EX
+@param position 表示位置
+@param image 表示する画像
+@param scaleMode 表示範囲が画像の大きさと異なる場合、どう処理するかを決定する。デフォルトでは表示範囲いっぱいに表示する
+@param alphaBlend アルファチャンネルを扱うかの設定。デフォルトはtrue
+@param imageAspect 画像のアスペクト比を設定。デフォルトは0で、画像の縦横比を使用

@@ -1,0 +1,4 @@
+<signature>
+Set3Points(Vector3,Vector3,Vector3)
+</signature>
+3 点の位置を設定して、平面を作成します。このときの3 点の位置は、上部から見て時計回りで設定されます。

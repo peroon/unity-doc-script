@@ -1,0 +1,4 @@
+<signature>
+GetSecondaryTouch(int)
+</signature>
+Returns object representing status of a specific touch on a secondary touchpad (Does not allocate temporary variables).

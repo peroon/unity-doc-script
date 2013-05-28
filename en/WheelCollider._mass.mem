@@ -1,0 +1,5 @@
+The mass of the wheel. Must be larger than zero.
+CONVERTEXAMPLE
+BEGIN EX
+	collider.mass = 1;
+END EX

@@ -1,0 +1,22 @@
+<signature>
+CalculatePath(Vector3,Vector3,int,NavMeshPath)
+</signature>
+Calculate a path between two points and store the resulting path.
+This function can be used to plan a path ahead of time to avoid a delay
+in gameplay when the path is needed. Another use is to check if a target position is reachable before moving the agent.
+CONVERTEXAMPLE
+BEGIN EX
+	var mesh: NavMesh;
+	var target: Transform;
+
+	private var path: NavMeshPath;
+
+	function Start () {
+		mesh.CalculatePath(transform.position, target.position, -1, path);
+	}
+END EX
+@param sourcePosition The initial postion of the path requested.
+@param targetPosition The final position of the path requested.
+@param passableMask A mask specifying which NavMesh layers can be passed when calculating a path.
+@param path The resulting path.
+@return True if a path is found.

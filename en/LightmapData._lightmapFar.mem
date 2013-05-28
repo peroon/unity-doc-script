@@ -1,0 +1,5 @@
+<signature>
+lightmapFar
+</signature>
+Lightmap storing the full incoming light.
+SA: [[LightmapSettings]] class, Renderer.lightmapIndex property.

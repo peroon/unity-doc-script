@@ -1,0 +1,4 @@
+<signature>
+deltaPosition
+</signature>
+The position delta since last change.

@@ -1,0 +1,25 @@
+Apple iAd フレームワークにあるADBannerViewクラスのラッパーです。iPhone/iPad/iPod Touch のみに対応しています。
+バナー広告を表示するために使用されます。
+BEGIN EX
+private var banner : ADBannerView = null;
+	
+function ShowBanner() {
+    while (!banner.loaded && banner.error == null)
+        yield;
+        
+    if (banner.error == null)
+        banner.Show();
+    else banner = null;
+}
+
+function OnGUI() {
+    GUI.enabled = (banner == null ? true : false);
+    
+    if (GUILayout.Button("Show Banner")) {
+        banner = new ADBannerView();
+        banner.autoSize = true;
+        banner.autoPosition = ADPosition.Bottom;
+        StartCoroutine(ShowBanner());
+    }
+}
+END EX

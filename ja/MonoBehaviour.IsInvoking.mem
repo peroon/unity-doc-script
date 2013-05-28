@@ -1,0 +1,25 @@
+<signature>
+IsInvoking(string)
+</signature>
+設定したメソッド名がinvoke関数で呼び出されている、または保留されているかを確認する
+CONVERTEXAMPLE
+BEGIN EX
+	// Instantiates a project after 2 seconds when Space key was pressed
+	// and it will only call the function after the function has ended its execution
+
+	var projectile : Rigidbody;
+
+	function Update() { 
+		if(Input.GetKeyDown(KeyCode.Space) && !IsInvoking("LaunchProjectile"))
+			Invoke("LaunchProjectile", 2);
+	}
+
+	function LaunchProjectile () {
+		var instance : Rigidbody = Instantiate(projectile);
+		instance.velocity = Random.insideUnitSphere * 5;
+	}
+END EX
+<signature>
+IsInvoking()
+</signature>
+Is any invoke pending on this MonoBehaviour?

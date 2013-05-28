@@ -1,0 +1,8 @@
+<signature>
+Acos(float)
+</signature>
+Acos 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Acos(0.5));
+END EX

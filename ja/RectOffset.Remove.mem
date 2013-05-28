@@ -1,0 +1,4 @@
+<signature>
+Remove(Rect)
+</signature>
+Rectオブジェクトのボーダーのオフセットを削除する。

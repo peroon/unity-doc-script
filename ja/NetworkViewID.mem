@@ -1,0 +1,3 @@
+ネットワークビューの一意のID です。
+It is imporatant that this is a unique number accross all clients and that they can generate
+these numbers themselves, or else network synchronization will break.

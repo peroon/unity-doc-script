@@ -1,0 +1,20 @@
+<signature>
+Stop()
+</signature>
+アニメーションを停止する。
+Stopping an animation also Rewinds it to the Start.
+CONVERTEXAMPLE
+BEGIN EX
+	// Stop all animations
+	animation.Stop();
+END EX
+<signature>
+Stop(string)
+</signature>
+アニメーションを停止する。
+Stopping an animation also Rewinds it to the Start.
+CONVERTEXAMPLE
+BEGIN EX
+	// Stop the walk animation
+	animation.Stop("walk");
+END EX

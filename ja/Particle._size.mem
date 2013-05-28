@@ -1,0 +1,7 @@
+<signature>
+size
+</signature>
+パーティクルのサイズを返す
+This is particle's size in meters in world space.
+
+SA: [[wiki:comp-ParticlesLegacy|Particles documentation]].

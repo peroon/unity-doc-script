@@ -1,0 +1,13 @@
+WheelColliderクラスによって取得できる、ホイールの問い合わせ先になるクラスです。
+WheelColliderクラスの摩擦はスリップによるタイヤの摩擦モデルを使用していて、標準の物理演算とは別に計算されています。これによって、現実的な動作を行うことができますが、PhysicMaterialクラスの設定は無視されます。
+
+The way to simulate different ground materials is to query [[WheelCollider]] for its collision
+information (see WheelCollider.GetGroundHit). Usually you get the other ::ref::collider the wheel
+is hitting, and modify wheel's WheelCollider::pref::forwardFriction and WheelCollider::pref::sidewaysFriction
+based on ground's Collider::pref::material.
+
+The other members of WheelHit structure are usually queried for information purposes or special
+effects. E.g. a "slipping tire" sound can be played if ::ref::forwardSlip or ::ref::sidewaysSlip
+exceed some threshold.
+
+SA: WheelCollider.GetGroundHit.

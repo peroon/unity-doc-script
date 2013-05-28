@@ -1,0 +1,3 @@
+Delegate called each time [[AudioClip]] changes read position.
+SA: AudioClip::ref::Create.
+@param position New position in the audio clip.

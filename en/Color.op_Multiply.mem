@@ -1,0 +1,27 @@
+<signature>
+Multiply(Color,Color)
+</signature>
+Multiplies two colors together. Each component is multiplied separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// white * gray = gray
+	var grayColor: Color = Color.gray * Color.white;
+END EX
+<signature>
+Multiply(Color,float)
+</signature>
+Multiplies color /a/ by the float /b/. Each color component is scaled separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// gray * 2 = White
+	var whiteColor: Color = Color.gray * 2;
+END EX
+<signature>
+Multiply(float,Color)
+</signature>
+Multiplies color /a/ by the float /b/. Each color component is scaled separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// 2 * gray = White
+	var whiteColor: Color = 2 * Color.gray;
+END EX

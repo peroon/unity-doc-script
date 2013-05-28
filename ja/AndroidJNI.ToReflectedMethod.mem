@@ -1,0 +1,5 @@
+<signature>
+ToReflectedMethod(IntPtr,IntPtr,bool)
+</signature>
+メソッドIDから<tt>java.lang.reflect.Method</tt>や<tt>java.lang.reflect.Constructor</tt>オブジェクトを導き、変換する。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

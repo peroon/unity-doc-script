@@ -1,0 +1,12 @@
+<signature>
+Scale(Vector3)
+</signature>
+大きさに関する行列を作成する。
+v 引数を設定した場合、配置は次のようになります。
+BEGIN EX NOCHECK
+	v.x 0   0   0
+	0   v.y 0   0
+	0   0   v.z 0
+	0   0   0   1
+END EX
+TODO.

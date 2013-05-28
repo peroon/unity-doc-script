@@ -1,0 +1,17 @@
+<signature>
+verticalScrollbarUpButton
+</signature>
+VerticalScrollbarオブジェクトのUpButton の設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	// Modifies only the vertical scrollbar 
+	// up button of the current GUISkin
+
+	var hSbarValue : float;
+	var style : GUIStyle;
+
+	function OnGUI () {
+		GUI.skin.verticalScrollbarUpButton = style;
+		hSbarValue = GUILayout.VerticalScrollbar (hSbarValue, 1.0, 0.0, 10.0);
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+GetRawClass()
+</signature>
+生のJava クラスを取得する。

@@ -1,0 +1,7 @@
+アニメーションを組み合わせるときのブレンドモードを設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the leanLeft animation to blend additively
+
+	animation["leanLeft"].blendMode = AnimationBlendMode.Additive;
+END EX

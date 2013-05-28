@@ -1,0 +1,25 @@
+<signature>
+MoveTowards(Vector3,Vector3,float)
+</signature>
+Moves a point /current/ in a straight line towards a /target/ point.
+The value returned by this function is a point /maxDistanceDelta/ units closer to a /target/
+point along a line between /current/ and /target/. If the target is closer than /maxDistanceDelta/
+then the returned value will be equal to target (ie, the movement will not overshoot the target).
+Negative values of /maxDistanceDelta/ can be used to push the point away from the target.
+CONVERTEXAMPLE
+BEGIN EX
+	// The target marker.
+	var target: Transform;
+	
+	// Speed in units per sec.
+	var speed: float;
+	
+	
+	function Update () {
+		// The step size is equal to speed times frame time.
+		var step = speed * Time.deltaTime;
+		
+		// Move our position a step closer to the target.
+		transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+	}
+END EX

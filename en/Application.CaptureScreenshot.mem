@@ -1,0 +1,19 @@
+<signature>
+CaptureScreenshot(string)
+CaptureScreenshot(string,int)
+</signature>
+Captures a screenshot at path /filename/ as a PNG file.
+If the file exists already, it will be overwritten.
+This function does nothing if used from inside the web player.  On mobile platforms the filename is appended to the persistent data path.
+
+When /superSize/ parameter is larger than 1, a larger resolution screenshot will be
+produced. For example, passing 4 will make the screenshot be 4x4 larger than it normally
+would. This is useful to produce screenshots for printing.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnMouseDown() {
+		Application.CaptureScreenshot("Screenshot.png");
+	}
+END EX
+@param filename Pathname to save the screenshot file to.
+@param superSize Factor by which to increase resolution.

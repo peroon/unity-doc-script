@@ -1,0 +1,5 @@
+<signature>
+CreateFromMemory(byte[])
+</signature>
+Asynchronously create an AssetBundle from a memory region.
+SA: [[AssetBundleCreateRequest]].

@@ -1,0 +1,25 @@
+<signature>
+OnRenderObject()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+OnRenderObject is called after camera has rendered the scene.
+This can be used to render your own objects using Graphics.DrawMeshNow or other functions.
+This function is similar to ::ref::OnPostRender, except OnRenderObject is called on any object
+that has a script with the function; no matter if it's attached to a Camera or not.
+CONVERTEXAMPLE
+BEGIN EX
+	var mainMesh: Mesh;
+	var miniMapMesh: Mesh;
+
+	function OnRenderObject() {
+		// Render different meshes for the object depending on whether
+		// the main camera or minimap camera is viewing.
+		if (Camera.current.name == "MiniMapcam") {
+			Graphics.DrawMeshNow(miniMapMesh, transform.position, transform.rotation);
+		} else {
+			Graphics.DrawMeshNow(mainMesh, transform.position, transform.rotation);
+		}
+	}
+	END EX

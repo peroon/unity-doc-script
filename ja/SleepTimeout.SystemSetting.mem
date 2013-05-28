@@ -1,0 +1,5 @@
+<signature>
+SystemSetting
+</signature>
+端末側で設定されているタイムアウト時間を使用する
+Useful when restoring back to the state the system was in before running your app.

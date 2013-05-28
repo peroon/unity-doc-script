@@ -1,0 +1,11 @@
+現実世界のロールオフをする場合に使用する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the rolloff of the audio source attached to
+	// this script to Logarithmic.
+
+	@script RequireComponent(AudioSource)
+	function Start() {
+		audio.rolloffMode = AudioRolloffMode.Logarithmic;
+	}
+END EX

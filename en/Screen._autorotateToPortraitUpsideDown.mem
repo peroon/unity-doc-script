@@ -1,0 +1,5 @@
+<signature>
+autorotateToPortraitUpsideDown
+</signature>
+Allow auto-rotation to portrait, upside down?
+This setting is taken into account when ::ref::orientation is set to ScreenOrientation::pref::AutoRotation.

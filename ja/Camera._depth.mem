@@ -1,0 +1,10 @@
+カメラのレンダリングの順序
+カメラが複数ある場合の、カメラのレンダリングの順序。高い値ほど上に描画される。
+
+SA: [[wiki:class-Camera|camera component]], Camera.rect property.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set this camera to render after the main camera
+
+	camera.depth = Camera.main.depth + 1;
+END EX

@@ -1,0 +1,2 @@
+Rigidbodyオブジェクトの動きを制限させる際に使用します。
+SA: [[Rigidbody.constraints]].

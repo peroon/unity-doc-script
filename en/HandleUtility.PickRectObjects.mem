@@ -1,0 +1,12 @@
+<signature>
+PickRectObjects(Rect)
+</signature>
+Pick GameObjects that lie within a specified screen rectangle.
+This is useful for implementing multi-select tools that allow the user to drag a rectangle around the desired objects.
+@param rect An screen rectangle specified with pixel coordinates.
+<signature>
+PickRectObjects(Rect,bool)
+</signature>
+<txttag>
+UNDOC
+</txttag>

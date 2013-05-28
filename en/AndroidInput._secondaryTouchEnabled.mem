@@ -1,0 +1,4 @@
+<signature>
+secondaryTouchEnabled
+</signature>
+Property indicating whether the system provides secondary touch input.

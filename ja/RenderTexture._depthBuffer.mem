@@ -1,0 +1,5 @@
+<signature>
+depthBuffer
+</signature>
+深さバッファを取得する（読み込み専用）。
+SA: [[RenderBuffer]], ::ref::colorBuffer, [[Graphics.SetRenderTarget]].

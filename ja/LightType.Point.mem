@@ -1,0 +1,7 @@
+ポイントライト。
+SA: Light.type, [[wiki:class-Light|light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the light a point light
+	light.type = LightType.Point;
+END EX

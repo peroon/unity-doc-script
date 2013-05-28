@@ -1,0 +1,2 @@
+イベントが再度描画されたとき
+All other events are processed first, then the repaint event is sent.

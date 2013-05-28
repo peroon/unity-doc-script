@@ -1,0 +1,10 @@
+<signature>
+stretchWidth
+</signature>
+Can GUI elements of this style be stretched horizontally for better layouting?
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.stretchWidth = true;
+	}
+END EX

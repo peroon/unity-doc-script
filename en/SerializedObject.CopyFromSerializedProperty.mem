@@ -1,0 +1,4 @@
+<signature>
+CopyFromSerializedProperty(SerializedProperty)
+</signature>
+Copies a value from a SerializedProperty to the same serialized property on this serialized object.

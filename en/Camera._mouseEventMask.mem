@@ -1,0 +1,16 @@
+<txttag>
+UNDOC
+</txttag>
+The event mask used by the camera.
+Just as the camera's /cullingMask/ determines if the camera is able to see the [[GameObject]], the /mouseEventMask/ determines whether the [[GameObject]] is able to receive mouse events.
+Only objects visible by the camera and whos /layerMask/ falls within the camera's /mouseEventMask/ will be able to receive OnMouse* series of events.
+Setting this mask to zero will improve performance and is recommended if you don't use OnMouse* series of events.
+See [[wiki:Layers|Layers]] for more information.
+SA: MonoBehaviour::ref::OnMouseEnter
+SA: MonoBehaviour::ref::OnMouseExit
+SA: MonoBehaviour::ref::OnMouseOver
+SA: MonoBehaviour::ref::OnMouseDown
+SA: MonoBehaviour::ref::OnMouseOver
+SA: MonoBehaviour::ref::OnMouseUp
+SA: MonoBehaviour::ref::OnMouseDrag
+SA: MonoBehaviour::ref::OnMouseUpAsButton.

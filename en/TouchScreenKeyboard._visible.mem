@@ -1,0 +1,4 @@
+<signature>
+visible
+</signature>
+Returns true whenever any keyboard is completely visible on the screen.

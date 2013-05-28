@@ -1,0 +1,14 @@
+<signature>
+SetPixels(Color[])
+</signature>
+This function takes a color array and changes the pixel colors of the 3D texture.
+Call ::ref::Apply to actually upload the changed.
+@param colors The colors to set the pixels to.
+<signature>
+SetPixels(Color[],int)
+</signature>
+Sets pixel colors of a 3D texture.
+This function takes a color array and changes the pixel colors of the 3D texture.
+Call ::ref::Apply to actually upload the changed.
+@param colors The colors to set the pixels to.
+@param miplevel The mipmap level to be affected by the new colors.

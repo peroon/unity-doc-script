@@ -1,0 +1,7 @@
+ブレーキをかける。トルクが正の値でなくてはいけない
+CONVERTEXAMPLE
+BEGIN EX
+	// brake the wheel
+
+	collider.brakeTorque = 1000;
+END EX

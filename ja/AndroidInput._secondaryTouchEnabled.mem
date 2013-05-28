@@ -1,0 +1,4 @@
+<signature>
+secondaryTouchEnabled
+</signature>
+セカンダリタッチを許可するかを確認する（読み込み専用）

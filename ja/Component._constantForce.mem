@@ -1,0 +1,8 @@
+<signature>
+constantForce
+</signature>
+ConstantForce情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	constantForce.relativeForce = Vector3(0, 0, 1);
+END EX

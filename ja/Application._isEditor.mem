@@ -1,0 +1,11 @@
+<signature>
+isEditor
+</signature>
+エディター上でプレイしているかを確認する（読み取り専用）。
+Returns true if the game is being run from the Unity editor; false if run from any deployment target.
+CONVERTEXAMPLE
+BEGIN EX
+	if (Application.isEditor) {
+		print("We are running this from inside of the editor!");
+	}
+END EX

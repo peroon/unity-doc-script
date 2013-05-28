@@ -1,0 +1,11 @@
+<signature>
+collider
+</signature>
+コライダー情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Paint red the collider we hit.
+	function OnControllerColliderHit(hit : ControllerColliderHit) {
+		hit.collider.renderer.material.color = Color.red;
+	}
+END EX

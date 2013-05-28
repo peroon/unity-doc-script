@@ -1,0 +1,6 @@
+<txttag>
+UNDOC
+</txttag>
+The iPhoneInput class acts as the interface into the iPhone's unique Input systems.
+Most other input related functionality (multi-touch screen and accelerometer) can be accessed
+via [[Input]] class.

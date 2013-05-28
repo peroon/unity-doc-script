@@ -1,0 +1,2 @@
+パーティクルにアニメーションを追加するときに使用します。（旧パーティクルクラスで使用します）
+This class is a script interface for a [[wiki:class-ParticleAnimator|particle animator]] component.

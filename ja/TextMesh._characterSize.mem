@@ -1,0 +1,5 @@
+文字の大きさを返す
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).characterSize = 10;
+END EX

@@ -1,0 +1,6 @@
+角速度。設定している値以下になるとRigidbodyオブジェクトはスリープモードになる（デフォルト値0.14）{ 0, infinity }。
+TODO.
+CONVERTEXAMPLE
+BEGIN EX
+	rigidbody.sleepAngularVelocity = 0.1;
+END EX

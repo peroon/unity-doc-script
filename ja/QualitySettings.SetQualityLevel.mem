@@ -1,0 +1,27 @@
+<signature>
+SetQualityLevel(int,bool)
+</signature>
+クオリティレベルを設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI ()
+	{
+		var names = QualitySettings.names;
+		GUILayout.BeginVertical ();
+		for (var i = 0; i < names.Length; i++)
+		{
+			if (GUILayout.Button (names[i]))
+				QualitySettings.SetQualityLevel (i, true);
+		}
+		GUILayout.EndVertical ();
+	}
+END EX
+より高いレベルへ変更させると、変更処理に時間がかかります。ゲームメニュー画面での変更の際は問題ないですが、ゲーム中に頻繁にクオリティレベルを変更する際には、applyExpensiveChanges 引数をfalseにし、処理の軽減を行うことをお勧めします。
+
+When building a player quality levels that are not used for that platform are stripped.
+You should not expect a given quality setting to be at a given index. It's best to query
+the available quality settings and use the returned index.
+
+SA: ::ref::GetQualityLevel.
+@param index Quality index to set.
+@param applyExpensiveChanges trueの場合、アンチエイリアス処理など処理時間がかかるものを実行する。デフォルトはtrue

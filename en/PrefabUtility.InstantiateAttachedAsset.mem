@@ -1,0 +1,4 @@
+<signature>
+InstantiateAttachedAsset(Object)
+</signature>
+Instantiate an asset that is referenced by a prefab and use it on the prefab instance.

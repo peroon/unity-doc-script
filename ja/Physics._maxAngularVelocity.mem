@@ -1,0 +1,12 @@
+<signature>
+maxAngularVelocity
+</signature>
+角速度の最大値を設定する。必ず正の値を設定（デフォルトは7）
+The angular velocity of rigidbodies is clamped to maxAngularVelocity to avoid numerical instability with fast rotating bodies.
+Because this may prevent intentional fast rotations on objects such as wheels, you can override this value per rigidbody using Rigidbody.maxAngularVelocity.
+
+This value is usually changed in @@Edit->Project Settings->Physics@@ inspector instead of from scripts.
+CONVERTEXAMPLE
+BEGIN EX
+	Physics.maxAngularVelocity = 10;
+END EX

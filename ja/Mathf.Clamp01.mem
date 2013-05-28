@@ -1,0 +1,12 @@
+<signature>
+Clamp01(float)
+</signature>
+0 から1 の値を返します。value 引数が0 以下であれば0、1 以上であれば1 になります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the position of the transform to be that of the time
+	// but never less than 0 or more than 1
+	function Update () {
+		transform.position = Vector3(Mathf.Clamp01(Time.time), 0, 0);
+	}
+END EX

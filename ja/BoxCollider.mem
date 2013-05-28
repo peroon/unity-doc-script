@@ -1,0 +1,2 @@
+立方体のコライダーです。
+SA: [[SphereCollider]], [[CapsuleCollider]], [[PhysicMaterial]], [[Rigidbody]].

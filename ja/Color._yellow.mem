@@ -1,0 +1,9 @@
+<signature>
+yellow
+</signature>
+黄色を返す。RGBA は (1, 235/255, 4/255, 1)
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a yellow color to this transform's material
+	transform.renderer.material.color = Color.yellow;
+END EX

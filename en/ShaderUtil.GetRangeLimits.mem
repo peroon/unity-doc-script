@@ -1,0 +1,7 @@
+<signature>
+GetRangeLimits(Shader,int,int)
+</signature>
+Get Limits for a range property at index propertyIdx of Shader s.
+@param defminmax Which value to get: 0 = default, 1 = min, 2 = max.
+@param s The shader to check against.
+@param propertyIdx The property index to use.

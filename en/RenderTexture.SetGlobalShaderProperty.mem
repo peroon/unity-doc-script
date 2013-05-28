@@ -1,0 +1,4 @@
+<signature>
+SetGlobalShaderProperty(string)
+</signature>
+Assigns this RenderTexture as a global shader property named /propertyName/.

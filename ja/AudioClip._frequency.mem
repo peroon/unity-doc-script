@@ -1,0 +1,6 @@
+サンプリング周波数（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the frequency of the attached audio in Hz
+	Debug.Log(audio.clip.frequency);
+END EX

@@ -1,0 +1,8 @@
+<signature>
+localBounds
+</signature>
+ローカル座標でのバウンズを返す
+It is precomputed on import for imported models based on animations associated with that model, which means that
+the bounding box might be much bigger than the mesh itself. It is recomputed every time when
+::ref::updateWhenOffscreen is enabled, but in this case it would be exactly the size of the mesh at that frame.
+SA: ::ref::updateWhenOffscreen.

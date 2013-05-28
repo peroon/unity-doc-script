@@ -1,0 +1,4 @@
+<signature>
+Linear(float,float,float,float)
+</signature>
+時間と値の始めと終わりを設定する。直線の動き。

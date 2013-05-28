@@ -1,0 +1,4 @@
+<signature>
+Set(float,float,float)
+</signature>
+各成分の値を設定する

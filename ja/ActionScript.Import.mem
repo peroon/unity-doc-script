@@ -1,0 +1,10 @@
+<signature>
+Import(string)
+</signature>
+パッケージ名からActionScript をインポートする。
+CONVERTEXAMPLE
+BEGIN EX
+	import UnityEngine.Flash;
+	
+	ActionScript.Import("flash.utils.Dictionary");
+END EX

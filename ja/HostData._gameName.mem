@@ -1,0 +1,17 @@
+<signature>
+gameName
+</signature>
+ゲーム名を返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Requests info from the master server and prints
+	// the game name of each host
+
+	function Start() {
+		var hostData : HostData[] = MasterServer.PollHostList();
+		Debug.Log("Games found: ");
+		for(var element : HostData in hostData) {
+			Debug.Log(element.gameName);
+		}
+	}
+END EX

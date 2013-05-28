@@ -1,0 +1,22 @@
+<signature>
+OnSerializeNetworkView(BitStream,NetworkMessageInfo)
+</signature>
+ネットワークビューによって使われる値の直列化をカスタマイズしたいときに使用する。
+ネットワークビューで監視しているスクリプトの変数の同期をとるために使用します。書き込みを行うのは、自分自身のオブジェクトだけになります。他のクライアントでのオブジェクトは読み込みにしてください。
+CONVERTEXAMPLE
+BEGIN EX
+	// This objects health information
+
+	var currentHealth : int = 0;
+	
+	function OnSerializeNetworkView(stream : BitStream, info : NetworkMessageInfo) {
+		if (stream.isWriting) {
+			var healthC : int = currentHealth;
+			stream.Serialize(healthC);
+		} else {
+			var healthZ : int = 0;
+			stream.Serialize(healthZ);
+			currentHealth = healthZ;
+		}	
+	}
+END EX

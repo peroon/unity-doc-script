@@ -1,0 +1,16 @@
+<signature>
+CheckSphere(Vector3,float)
+CheckSphere(Vector3,float,int)
+</signature>
+Returns true if there are any colliders overlapping the sphere defined by /position/ and /radius/ in world coordinates.
+CONVERTEXAMPLE
+BEGIN EX
+	var sphereRadius: float;
+	
+	function WarningNoise() {
+		// Play a noise if an object is nearby.
+		if (Physics.CheckSphere(transform.position, sphereRadius)) {
+			audio.Play();
+		}
+	}
+END EX

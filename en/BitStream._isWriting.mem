@@ -1,0 +1,5 @@
+<signature>
+isWriting
+</signature>
+Is the BitStream currently being written? (RO)
+SA: Network.OnSerializeNetworkView, ::ref::isReading.

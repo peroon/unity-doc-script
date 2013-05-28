@@ -1,0 +1,4 @@
+<signature>
+SqrDistance(Vector3)
+</signature>
+The smallest squared distance between the point and this bounding box.

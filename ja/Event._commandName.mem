@@ -1,0 +1,17 @@
+<signature>
+commandName
+</signature>
+「Command/Windows+K」のように「Command」「Windows」キーを押しなが
+らのアクションネームを返す
+"Copy", "Cut", "Paste", "Delete", "FrameSelected", "Duplicate", "SelectAll" and so on.
+Sent only in the editor.
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects commands executed and prints them.
+	function OnGUI() {
+		var e : Event = Event.current;
+		if(e.commandName != "") {
+			Debug.Log("Command recognized: " + e.commandName);	
+		}	
+	}
+END EX

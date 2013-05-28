@@ -1,0 +1,4 @@
+<signature>
+minWidth
+</signature>
+Minimum width of the grass billboards (if render mode is GrassBillboard).

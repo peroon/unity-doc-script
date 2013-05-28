@@ -1,0 +1,17 @@
+<signature>
+PlayOneShot(AudioClip)
+PlayOneShot(AudioClip,float)
+</signature>
+Plays an [[AudioClip]], and scales the [[AudioSource]] volume by volumeScale.
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	// Play impact audio clip at volume 0.7
+	var impact : AudioClip;
+	function OnCollisionEnter () {
+		audio.PlayOneShot(impact, 0.7);
+	}
+END EX
+SA: AudioSource.Play.
+@param clip The clip being played.
+@param volumeScale The scale of the volume (0-1).

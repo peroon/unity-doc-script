@@ -1,0 +1,5 @@
+<signature>
+genuineCheckAvailable
+</signature>
+アプリケーションの整合性が確認できる場合はtrueを返す。
+Otherwise returns false.

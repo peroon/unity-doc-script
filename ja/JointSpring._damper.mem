@@ -1,0 +1,8 @@
+<signature>
+damper
+</signature>
+バネの振幅を軽減する力。
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.spring.damper = 3;
+END EX

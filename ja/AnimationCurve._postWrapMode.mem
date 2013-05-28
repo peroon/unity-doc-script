@@ -1,0 +1,4 @@
+<signature>
+postWrapMode
+</signature>
+最後のキーフレーム後のラップモードを返す。

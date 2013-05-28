@@ -1,0 +1,11 @@
+別のrigidbodyオブジェクトを接続する。
+If not set, the joint connects the object to the world.
+CONVERTEXAMPLE
+BEGIN EX
+	// Connects the joint to the world instead of another rigidbody
+	hingeJoint.connectedBody = null;
+	
+	// Connects the joint to another body
+	var otherBody : Rigidbody;
+	hingeJoint.connectedBody = otherBody;
+END EX

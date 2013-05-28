@@ -1,0 +1,43 @@
+<signature>
+LoadAll(string,Type)
+</signature>
+Resourcesフォルダ内にあるフォルダ・ファイルのパスを設定し、すべてのアセットを取得する。
+If /path/ refers to a folder, all assets in the folder will be returned.
+If /path/ refers to a file, only that asset will be returned.
+Only objects of /type/ will be returned.
+パスは「Resources」フォルダから相対的なパスになります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Loads all assets in the "Resources/Textures" folder
+	// Then picks a random one from the list.
+	// Note: Random.Range in this case returns [low,high)
+	// range, i.e. the high value is not inclusive.
+
+	function Start (){
+		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
+		var textures : Object[] = Resources.LoadAll("Textures", Texture2D);
+		var texture : Texture2D  = textures[Random.Range(0, textures.Length)];
+		go.renderer.material.mainTexture = texture;
+	}
+END EX
+<signature>
+LoadAll(string)
+</signature>
+Resourcesフォルダ内にあるフォルダ・ファイルのパスを設定し、すべてのアセットを取得する。
+If /path/ refers to a folder, all assets in the folder will be returned.
+If /path/ refers to a file, only that asset will be returned.
+パスは「Resources」フォルダから相対的なパスになります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Loads all assets in the "Resources/Textures" folder
+	// Then picks a random one from the list.
+	// Note: Random.Range in this case returns [low,high)
+	// range, i.e. the high value is not inclusive.
+
+	function Start (){
+		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
+		var textures : Object[] = Resources.LoadAll("Textures");
+		var texture : Texture2D  = textures[Random.Range(0, textures.Length)];
+		go.renderer.material.mainTexture = texture;
+	}
+END EX

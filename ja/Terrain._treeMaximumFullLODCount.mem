@@ -1,0 +1,13 @@
+<signature>
+treeMaximumFullLODCount
+</signature>
+すべてのLODでの描画される木の最大数を返す
+This is an easy setting to prevent too many trees being rendered at too high resolution in dense forests.
+Since there will be no fade if /treeMaximumFullLODCount/ is exceeded you should tweak the /treeBillboardDistance/ to 
+not include unnecessary trees that are not being seen but, still rendered.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Terrain.activeTerrain.treeMaximumFullLODCount = 200;
+	}
+END EX

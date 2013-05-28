@@ -1,0 +1,11 @@
+<signature>
+GetAspectRect(float)
+GetAspectRect(float,GUIStyle)
+GetAspectRect(float,GUILayoutOption[])
+GetAspectRect(float,GUIStyle,GUILayoutOption[])
+</signature>
+特定のアスペクト比を持つ、レイアウトスペースを取得します。
+@param aspect アスペクト比
+@param style スタイル
+@param options 幅・高さ
+@return The rect for the control.

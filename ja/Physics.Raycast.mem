@@ -1,0 +1,85 @@
+<signature>
+Raycast(Vector3,Vector3,float,int)
+</signature>
+シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得する
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		var fwd = transform.TransformDirection (Vector3.forward);
+		if (Physics.Raycast (transform.position, fwd, 10)) {
+			print ("There is something in front of the object!");
+		}
+	}
+END EX
+__Notes:__ This function will return false if you cast a ray from
+inside a sphere to the outside; this in an intended behaviour.
+If you move colliders from scripting or by animation, there needs to be at
+least one FixedUpdate executed so that the physics library can update it's data
+structures, before a Raycast will hit the collider at it's new position.
+@param origin The starting point of the ray in world coordinates.
+@param direction 方向
+@param distance 距離
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@return True when the ray intersects any collider, otherwise false.
+<signature>
+Raycast(Vector3,Vector3,RaycastHit,float,int)
+</signature>
+Casts a ray against all colliders in the scene and returns detailed information on what was hit.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		var hit : RaycastHit;
+		if (Physics.Raycast (transform.position, -Vector3.up, hit)) {
+			var distanceToGround = hit.distance;
+		}
+	}
+END EX
+CONVERTEXAMPLE
+BEGIN EX
+	// Raycast up to 100 meters down
+
+	function Update () {
+		var hit : RaycastHit;
+		if (Physics.Raycast (transform.position, -Vector3.up, hit, 100.0)) {
+			var distanceToGround = hit.distance;
+		}
+	}
+END EX
+@param origin 原点
+@param direction 方向
+@param distance 距離
+@param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@return True when the ray intersects any collider, otherwise false.
+<signature>
+Raycast(Ray,float,int)
+</signature>
+Same as above using /ray.origin/ and /ray.direction/ instead of /origin/ and /direction/.
+CONVERTEXAMPLE
+BEGIN EX
+	var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+	if (Physics.Raycast (ray, 100)) {
+		print ("Hit something");
+	}
+END EX
+@param ray 使用するレイを設定する
+@param distance 方向
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@return True when the ray intersects any collider, otherwise false.
+<signature>
+Raycast(Ray,RaycastHit,float,int)
+</signature>
+Same as above using /ray.origin/ and /ray.direction/ instead of /origin/ and /direction/.
+CONVERTEXAMPLE
+BEGIN EX
+	var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+	var hit : RaycastHit;
+	if (Physics.Raycast (ray, hit, 100)) {
+		Debug.DrawLine (ray.origin, hit.point);
+	}
+END EX
+@param ray 使用するレイを設定する
+@param distance 方向
+@param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@return True when the ray intersects any collider, otherwise false.

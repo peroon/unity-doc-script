@@ -1,0 +1,23 @@
+<signature>
+Play()
+</signature>
+ムービーを再生する。
+多くのCPU パワーを消費してしまい、またシーンを変更するかStop関数を呼び出さない限り、実行を続けます。
+
+ムービーテクスチャは、オーディオクリップなどと同じ動作をしているわけではありません。特定のインスタンスではなく、アセットから再生します。
+複数のマテリアルで同じMovieTextureオブジェクトを設定していて、Play関数を呼び出すと、すべてのインスタンスで再生が行われます。
+
+MovieTextures are a pro-only feature.
+
+SA: ::ref::Stop,  ::ref::audioClip.
+CONVERTEXAMPLE
+BEGIN EX
+	// Assigns a movie texture to the current material and plays it.
+
+	var movTexture : MovieTexture;
+
+	function Start () {
+		renderer.material.mainTexture = movTexture;
+		movTexture.Play();
+	}
+END EX

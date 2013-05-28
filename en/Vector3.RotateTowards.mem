@@ -1,0 +1,30 @@
+<signature>
+RotateTowards(Vector3,Vector3,float,float)
+</signature>
+Rotates a vector /current/ towards /target/.
+This function is similar to ::ref::MoveTowards except that the vector is treated as a direction rather
+than a position. The /current/ vector will be rotated round toward the /target/ direction by an angle
+of /maxRadiansDelta/, although it will land exactly on the target rather than overshoot. If the magnitudes
+of /current/ and /target/ are different then the magnitude of the result will be linearly interpolated during
+the rotation. If a negative value is used for /maxRadiansDelta/, the vector will rotate away from  /target/
+until it is pointing in exactly the opposite direction, then stop.
+CONVERTEXAMPLE
+BEGIN EX
+	// The target marker.
+	var target: Transform;
+	
+	// Angular speed in radians per sec.
+	var speed: float;
+	
+	function Update () {
+		var targetDir = target.position - transform.position;
+		
+	    // The step size is equal to speed times frame time.
+	    var step = speed * Time.deltaTime;
+	    
+	    var newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0);
+	    Debug.DrawRay(transform.position, newDir, Color.red);
+	    // Move our position a step closer to the target.
+	    transform.rotation = Quaternion.LookRotation(newDir);
+	}
+END EX

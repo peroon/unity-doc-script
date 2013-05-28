@@ -1,0 +1,4 @@
+<signature>
+OnDisable()
+</signature>
+Called when the editor is disabled, if overridden please call the base OnDisable() to ensure that the material inspector is set up properly.

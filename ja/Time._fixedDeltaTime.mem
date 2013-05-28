@@ -1,0 +1,9 @@
+<signature>
+fixedDeltaTime
+</signature>
+FixedUpdate関数が呼び出される間隔の時間を返す（デフォルトは0.02）
+For reading the delta time it is recommended to use Time.deltaTime instead because it automatically
+returns the right delta time if you are inside a MonoBehaviour::pref::FixedUpdate function or
+MonoBehaviour::pref::Update function.
+
+Note that the /fixedDeltaTime/ interval is with respect to the in-game time affected by ::ref::timeScale.

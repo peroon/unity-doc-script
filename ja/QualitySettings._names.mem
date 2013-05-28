@@ -1,0 +1,9 @@
+<signature>
+names
+</signature>
+現在利用できる、クオリティ名のリストを取得する。
+CONVERTEXAMPLE
+BEGIN EX
+	var names : String[];
+	names = QualitySettings.names;
+END EX

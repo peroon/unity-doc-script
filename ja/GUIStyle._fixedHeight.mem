@@ -1,0 +1,13 @@
+<signature>
+fixedHeight
+</signature>
+0でない場合、このスタイルでレンダリングされるすべてのGUI要素は、ここで指定した高さを持つことになる
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the value of fixedHeight of customStyles[0]
+	
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			Debug.Log(GUI.skin.customStyles[0].fixedHeight);
+	}
+END EX

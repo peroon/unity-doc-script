@@ -1,0 +1,8 @@
+<signature>
+WorldToGUIPoint(Vector3)
+</signature>
+Convert world space point to a 2D GUI position.
+Uses the current camera to calculate the projection.
+
+SA: ::ref::GUIPointToWorldRay, ::ref::RaySnap.
+@param world Point in world space.

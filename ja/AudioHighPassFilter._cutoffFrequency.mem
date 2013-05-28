@@ -1,0 +1,13 @@
+Hz でのハイパスのカットオフ周波数。10 から22000の間で設定（デフォルトは5000）
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the cuttoutFrequency from 10 to 22000 following a Sinus function
+	// Attach this to an audio source with a HighPassFilter to listen it working.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioHighPassFilter)
+
+	function Update() {
+		GetComponent(AudioHighPassFilter).cutoffFrequency = (Mathf.Sin(Time.time)*11010 + 11000);
+	}
+END EX

@@ -1,0 +1,4 @@
+減衰しながら、設定したディレイの後に、音を繰り返す表現をします。
+The repetitions based on the Decay Ratio.
+
+__Note:__ This filter is only available on the PRO version.

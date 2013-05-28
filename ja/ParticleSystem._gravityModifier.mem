@@ -1,0 +1,2 @@
+Physics.gravity変数で定義されている重力の大きさが設定される
+SA: Physics.gravity.

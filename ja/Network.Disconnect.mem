@@ -1,0 +1,17 @@
+<signature>
+Disconnect(int)
+</signature>
+接続をすべて閉じてシャットダウンする
+The /timeout/ parameter indicates how much time in milliseconds the network interface gets to signal to others that it is disconnecting.
+The network state, like security and password, is also reset.
+
+timeout引数を0に設定した場合、クライアントに切断の通知が送信される前にシャットダウンしてしまい、思わぬ不具合が出てしまう場合があるので注意しましょう。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if (GUILayout.Button ("Disconnect")) {
+			Network.Disconnect();
+			MasterServer.UnregisterHost();
+		}
+	}
+END EX

@@ -1,0 +1,12 @@
+<signature>
+GetScreenRect(Camera)
+</signature>
+スクリーン上でのGUI要素のRectオブジェクトを取得する
+If no /camera/ is given a camera filling the entire game window will be assumed.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var r : Rect = guiTexture.GetScreenRect ();
+		Debug.Log ("This gui element is " + r.width + " pixel wide.");
+	}
+END EX

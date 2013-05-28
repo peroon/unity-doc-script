@@ -1,0 +1,2 @@
+パーティクルがカメラの速度によって、どのくらい引き伸ばされるかを設定する
+Use this to make particles become large if the viewing camera has a large speed.

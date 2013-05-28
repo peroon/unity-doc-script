@@ -1,0 +1,30 @@
+<signature>
+SendMessageUpwards(string)
+SendMessageUpwards(string,object)
+SendMessageUpwards(string,SendMessageOptions)
+SendMessageUpwards(string,object,SendMessageOptions)
+</signature>
+Calls the method named /methodName/ on every [[MonoBehaviour]] in this game object and on every ancestor of the behaviour.
+The receiving method can choose to ignore the argument by having zero arguments.
+If the /options/ parameter is set to SendMessageOptions.RequireReceiver an error is printed when the message is not picked up by any component.
+
+Note that messages will not be sent to inactive objects (ie, those that have been deactivated in the editor or with the GameObject::ref::SetActive function).
+CONVERTEXAMPLE
+BEGIN EX
+	// Calls the function ApplyDamage with a value of 5
+	SendMessageUpwards ("ApplyDamage", 5.0);
+	
+	// Every script attached to the game object 
+	// that has a ApplyDamage function will be called.
+	function ApplyDamage (damage : float) {
+		print (damage);
+	}
+END EX
+@param methodName Name of method to call.
+@param value Optional parameter value for the method.
+@param options Should an error be raised if the method does not exist on the target object?
+<signature>
+</signature>
+<txttag>
+UNDOC
+</txttag>

@@ -1,0 +1,25 @@
+<signature>
+CombineMeshes(CombineInstance[],bool,bool)
+</signature>
+メッシュに複数のメッシュを組み合わせる。
+メッシュを結合することで、最適化につながります。
+If /mergeSubMeshes/ is true, all the meshes will be combined to a single submesh. Otherwise each mesh will
+go into a different submesh. If all meshes share the same material, set this to true.
+If /useMatrices/ is false, the transform matrices in [[CombineInstance]] structs will be ignored.
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(MeshFilter)
+	@script RequireComponent(MeshRenderer)
+	function Start () {
+		var meshFilters = GetComponentsInChildren(MeshFilter);
+		var combine : CombineInstance[] = new CombineInstance[meshFilters.Length];
+		for (var i = 0; i < meshFilters.Length; i++){
+			combine[i].mesh = meshFilters[i].sharedMesh;
+			combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
+			meshFilters[i].gameObject.active = false;
+		}
+		transform.GetComponent(MeshFilter).mesh = new Mesh();
+		transform.GetComponent(MeshFilter).mesh.CombineMeshes(combine);
+		transform.gameObject.active = true;
+	}
+END EX

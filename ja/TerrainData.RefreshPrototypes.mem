@@ -1,0 +1,5 @@
+<signature>
+RefreshPrototypes()
+</signature>
+Terrainオブジェクトで利用可能な、プロトタイプの値をすべてリロードする
+This can be used in editor scripts to update the terrain when the prototype assets change, much like the Terrain > Refresh Tree and Detail Prototypes menu command.

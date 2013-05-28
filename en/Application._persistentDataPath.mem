@@ -1,0 +1,10 @@
+<signature>
+persistentDataPath
+</signature>
+Contains the path to a persistent data directory (RO).
+The value is a directory path where data expected to be kept between runs can be stored. When publishing on iOS and Android, persistentDataPath will point to a public directory on the device. Files in this location won't be erased with each update of the App. However, you should bear in mind that this is not foolproof against users' actions. For example, removing the SD Card would make data stored on it inaccessible. Note that when you build the app, a GUID will be generated based on the Bundle Identifier, and this GUID will be part of persistentDataPath. If you keep the same Bundle Identifier in future versions then the app will continue accessing the same location on every update.
+CONVERTEXAMPLE
+BEGIN EX
+	// print the path to the persistent data folder
+	print (Application. persistentDataPath);
+END EX

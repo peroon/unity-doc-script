@@ -1,0 +1,6 @@
+<signature>
+lastData
+</signature>
+最後に取得した情報が格納されている。
+Before accessing this property, make sure location service was started
+via @@Input.location.Start()@@.

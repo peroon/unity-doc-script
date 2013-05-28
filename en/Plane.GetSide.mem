@@ -1,0 +1,4 @@
+<signature>
+GetSide(Vector3)
+</signature>
+Is a point on the positive side of the plane?

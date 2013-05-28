@@ -1,0 +1,15 @@
+<signature>
+frameCount
+</signature>
+呼び出された合計フレーム数を返す（読み取り専用）
+CONVERTEXAMPLE
+BEGIN EX
+	// Makes sure that RecalculateValue only performs
+	// some operations once per frame and no more.
+	static private var lastRecalculation = -1;
+	static function RecalculateValue () {
+		if (lastRecalculation == Time.frameCount)
+			return;
+		ProcessData.AndDoSomeCalculations();
+	}
+END EX

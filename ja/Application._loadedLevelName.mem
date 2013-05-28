@@ -1,0 +1,8 @@
+<signature>
+loadedLevelName
+</signature>
+最後にロードされたレベルの名前を返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	print (Application.loadedLevelName);
+END EX

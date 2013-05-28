@@ -1,0 +1,10 @@
+<signature>
+SweepTestAll(Vector3)
+SweepTestAll(Vector3,float)
+</signature>
+Like [[Rigidbody.SweepTest]], but returns all hits.
+The sweep may return multiple hits against the same collider if more then one of the rigidbody's attached colliders would hit it.
+
+Note that this function only works when a primitive collider type (sphere, cube or capsule) is attached to the rigidbody object - mesh colliders will not work, although they can be detected in the scene by the sweep.
+@param direction Direction to sweep the Rigidbody object.
+@param distance Length of the sweep.

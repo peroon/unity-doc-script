@@ -1,0 +1,5 @@
+ワールド座標による質量の中心値（読み込みのみ）。
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(rigidbody.worldCenterOfMass);
+END EX

@@ -1,0 +1,2 @@
+The list of currently connected Displays. Contains at least one (main) display.
+It will be automatically updated should the display be connected/disconnected.

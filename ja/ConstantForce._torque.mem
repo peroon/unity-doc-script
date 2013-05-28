@@ -1,0 +1,9 @@
+<signature>
+torque
+</signature>
+トルクに力を加える
+CONVERTEXAMPLE
+BEGIN EX
+	// Rotates the object around the world y-axis
+	constantForce.torque = Vector3.up * 2;
+END EX

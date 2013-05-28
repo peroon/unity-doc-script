@@ -1,0 +1,6 @@
+親のTransformオブジェクトから見た相対的なオブジェクトの大きさ
+CONVERTEXAMPLE
+BEGIN EX
+	 // Widen the object by 0.1
+	transform.localScale += Vector3(0.1,0,0);
+END EX

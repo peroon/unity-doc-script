@@ -1,0 +1,4 @@
+<signature>
+Add(Rect)
+</signature>
+Add the border offsets to a /rect/.

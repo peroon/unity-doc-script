@@ -1,0 +1,5 @@
+タブでのスペースの間隔を設定する
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).tabSize = 5;
+END EX

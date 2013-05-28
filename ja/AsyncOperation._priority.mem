@@ -1,0 +1,7 @@
+<signature>
+priority
+</signature>
+非同期でロードする際の優先順位を設定する。
+When multiple asynchronous operations are queued up, the operation with the
+higher priority will be executed first. Once an operation has been started on
+the background thread, changing the priority will have no effect anymore.

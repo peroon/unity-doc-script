@@ -1,0 +1,14 @@
+<signature>
+GetTextureScale(string)
+</signature>
+プロパティ名から画像の大きさを取得します。
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTextureScale property, ::ref::SetTextureScale.
+CONVERTEXAMPLE
+BEGIN EX
+	print(renderer.material.GetTextureScale("_MainTex"));
+END EX

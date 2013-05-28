@@ -1,0 +1,4 @@
+<signature>
+repeatCalendar
+</signature>
+The calendar type (Gregorian, Chinese, etc) to use for rescheduling the notification.

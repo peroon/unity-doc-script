@@ -1,0 +1,4 @@
+<signature>
+SetNormalAndPosition(Vector3,Vector3)
+</signature>
+正規化されたベクトルの法線と位置を設定します。

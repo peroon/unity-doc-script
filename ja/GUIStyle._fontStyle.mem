@@ -1,0 +1,6 @@
+<signature>
+fontStyle
+</signature>
+使用するフォントスタイルを設定する（ダイナミックフォント専用）
+If this is set to a value other then normal, the font style set in the font importer is overriden with a custom style.
+This is only supported for fonts set to use dynamic font rendering. Other fonts will always render in normal style.

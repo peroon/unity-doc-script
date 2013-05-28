@@ -1,0 +1,4 @@
+<signature>
+alertBody
+</signature>
+アラートが通知されたときに表示するメッセージ。

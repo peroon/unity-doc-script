@@ -1,0 +1,2 @@
+ループを使用するかどうか。trueの場合は使用する
+If you disable looping on a playing particle system, it will stop after the end of the current loop.

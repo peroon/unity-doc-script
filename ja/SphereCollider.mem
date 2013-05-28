@@ -1,0 +1,2 @@
+球体のコライダーです。
+SA: [[BoxCollider]], [[CapsuleCollider]], [[PhysicMaterial]], [[Rigidbody]].

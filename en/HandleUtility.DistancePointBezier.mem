@@ -1,0 +1,5 @@
+<signature>
+DistancePointBezier(Vector3,Vector3,Vector3,Vector3,Vector3)
+</signature>
+Calculate distance between a point and a Bezier curve.
+SA: Handles.DrawBezier function.

@@ -1,0 +1,6 @@
+<signature>
+nameHash
+</signature>
+The unique name of the Transition.
+Format is "CURRENT_STATE -> NEXT_STATE" 
+The hash is generated using Animator::StringToHash.

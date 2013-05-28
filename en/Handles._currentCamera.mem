@@ -1,0 +1,5 @@
+<signature>
+currentCamera
+</signature>
+Setup viewport and stuff for a current camera.
+The camera used for deciding where 3D handles end up.

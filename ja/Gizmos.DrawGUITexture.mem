@@ -1,0 +1,13 @@
+<signature>
+DrawGUITexture(Rect,Texture,Material)
+DrawGUITexture(Rect,Texture,int,int,int,int,Material)
+</signature>
+スクリーン座標にテクスチャを描画する
+CONVERTEXAMPLE
+BEGIN EX
+	var myTexture : Texture;
+
+	function OnDrawGizmos () {
+	 	Gizmos.DrawGUITexture(Rect(10, 10, 20, 20), myTexture);
+	}
+END EX

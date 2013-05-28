@@ -1,0 +1,5 @@
+<signature>
+collider
+</signature>
+コライダー情報を返す（読み込み専用）
+To find all colliders that were hit in detail you have to iterate the contact points (::ref::contacts property).

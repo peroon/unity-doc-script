@@ -1,0 +1,4 @@
+<signature>
+doesSceneHaveManualPortals
+</signature>
+Does the scene contain any occlusion portals that were added manually rather than automatically?

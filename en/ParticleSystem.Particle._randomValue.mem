@@ -1,0 +1,5 @@
+<signature>
+randomValue
+</signature>
+The random value of the particle.
+This value is used to interpolate between the two curves when random between curves is used.

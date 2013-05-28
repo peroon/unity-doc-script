@@ -1,0 +1,4 @@
+A base class of all colliders.
+SA: [[BoxCollider]], [[SphereCollider]], [[CapsuleCollider]], [[MeshCollider]], [[PhysicMaterial]], [[Rigidbody]].
+
+If the object with the Collider needs to be moved during gameplay then you should also attach a Rigidbody component to the object. The Rigidbody can be set to be kinematic if you don't want the object to have physical interaction with other objects.

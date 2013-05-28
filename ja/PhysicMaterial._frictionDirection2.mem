@@ -1,0 +1,10 @@
+異方性の方向を設定する。このベクトルがゼロでない場合、異方性摩擦が有効になっている
+DynamicFriction2 and staticFriction2 will be applied along frictionDirection2.
+The direction of anisotropy is relative to the colliders local coordinate system.
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the collider slippery when going forward but not when going sideways
+	collider.physicMaterial.frictionDirection2 = Vector3.forward;
+	collider.physicMaterial.dynamicFriction2 = 0;
+	collider.physicMaterial.dynamicFriction = 1;
+END EX

@@ -1,0 +1,6 @@
+<signature>
+transform
+</signature>
+Transform情報を返す（読み込み専用）
+If we collided against a collider with a [[Rigidbody]], the transform will be the transform attached to the rigidbody.
+If we collided against a collider without a rigidbody, the transform will be the transform attached to the collider.

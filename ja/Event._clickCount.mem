@@ -1,0 +1,14 @@
+<signature>
+clickCount
+</signature>
+同じ位置で何回マウスクリックをされているかを返す
+Used in EventType.MouseDown event; use this to differentiate between a single and double clicks.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		var e : Event = Event.current;
+		if (e.isMouse) {
+			Debug.Log("Mouse clicks: " + e.clickCount);
+		}
+	}
+END EX

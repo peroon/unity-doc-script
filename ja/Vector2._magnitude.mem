@@ -1,0 +1,10 @@
+<signature>
+magnitude
+</signature>
+ベクトルの長さを返す（読み込み専用）
+The length of the vector is square root of @@(x*x+y*y)@@.
+
+If you only need to compare magnitudes of some vectors, you can compare squared magnitudes of them
+using ::ref::sqrMagnitude (computing squared magnitudes is faster).
+
+SA: ::ref::sqrMagnitude.

@@ -1,0 +1,15 @@
+<signature>
+GetDSPBufferSize(int,int)
+</signature>
+サンプル中のミキサーのバッファサイズを取得する。
+この関数を使用すると、オーディオシステムが一度リセットされます。そのときにすべてのオーディオが停止することに注意してください。
+For mobiles (iOS devices and Android) the is also settable from the menu 'Audio Settings->Mobile DSP Buffer size'.
+The software mixer mixes to a ringbuffer. ブロック内のすべてのbufferLength 引数から得られるサンプルのサウンドデータをミックスし、全体のリングバッファを構成するブロックをnumBuffers 引数で選択します。
+これらの値を調整することにより、極めて低いレイテンシ性能、または安定性につながるかもしれません。
+Warning! The 'buffersize' is generally best left alone. Making the granularity smaller will just increase CPU usage (cache misses and DSP network overhead).
+Making it larger affects how often you hear commands update such as volume/pitch/pan changes.
+Anything above 20ms will be noticable and sound parameter changes will be obvious instead of smooth.
+Unity chooses the most optimal size by default for best stability, depending on the output type, and if the drivers are emulated or not (for example DirectSound is emulated using waveOut on NT).
+基本的にbufferSize 引数は変更させないことをお勧めします。CPU 使用率の増加へとつながります。
+@param bufferLength リングバッファ内の各バッファの長さ
+@param numBuffers バッファの数

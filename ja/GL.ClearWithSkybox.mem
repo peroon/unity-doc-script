@@ -1,0 +1,11 @@
+<signature>
+ClearWithSkybox(bool,Camera)
+</signature>
+カメラのスカイボックスのレンダーバッファをクリアします
+This draws skybox into the screen or the active [[RenderTexture]].
+If the passed camera does not have custom [[Skybox]] component,
+the global skybox from [[RenderSettings]] will be used.
+
+SA: [[GL.Clear]].
+@param clearDepth デプスバッファをクリアするかどうか
+@param camera カメラからスカイボックスと射影パラメーターを取得する

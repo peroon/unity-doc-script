@@ -1,0 +1,32 @@
+<signature>
+RepeatButton(Rect,string)
+RepeatButton(Rect,Texture)
+RepeatButton(Rect,GUIContent)
+RepeatButton(Rect,string,GUIStyle)
+RepeatButton(Rect,Texture,GUIStyle)
+RepeatButton(Rect,GUIContent,GUIStyle)
+</signature>
+ボタンを作成します。ボタンを押している間、trueを返し続けます。
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws 2 buttons, one with an image, and other with a text
+	// And print a message when they got clicked.
+	var btnTexture : Texture;
+	function OnGUI() {
+		if (!btnTexture) {
+			Debug.LogError("Please assign a texture on the inspector");
+			return;
+		}
+		if (GUI.RepeatButton(Rect(10,10,50,50),btnTexture))
+			Debug.Log("Clicked the button with an image");
+
+		if (GUI.RepeatButton(Rect(10,70,50,30),"Click"))
+			Debug.Log("Clicked the button with text");
+	}
+END EX
+@param position 表示位置
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像ツールチップ
+@param style スタイル
+@return True when the users clicks the button.

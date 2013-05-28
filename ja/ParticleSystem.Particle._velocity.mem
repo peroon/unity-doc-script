@@ -1,0 +1,7 @@
+<signature>
+velocity
+</signature>
+パーティクルの速度
+The particle will move by the /velocity/ every frame.
+The velocity is also used by the [[ParticleSystemRenderer]] if ''Stretch Particles'' is
+set to ParticleSystemRenderMode.Stretch.

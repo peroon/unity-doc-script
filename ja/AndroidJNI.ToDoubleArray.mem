@@ -1,0 +1,5 @@
+<signature>
+ToDoubleArray(double[])
+</signature>
+Double配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewDoubleArray, AndroidJNI.SetDoubleArrayElement.

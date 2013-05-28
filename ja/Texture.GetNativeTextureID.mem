@@ -1,0 +1,11 @@
+<signature>
+GetNativeTextureID()
+</signature>
+テクスチャへのネイティブのハンドルを取得する
+ネイティブのグラフィックスレベルに応じて処理を行うために、この関数でIDを取得します。ネイティブプラグインからテクスチャの操作を有効にするために使用します
+[[wiki:NativePluginInterface|native code plugins]].
+
+この関数はOpenGL ESデバイスでのみサポートされてい
+ます。
+
+SA: ::ref::GetNativeTexturePtr function, [[wiki:NativePluginInterface|Native code plugins]].

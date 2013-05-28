@@ -1,0 +1,5 @@
+有効の場合はエミッターは移動するが、既に放出されたパーティクルは移動しない。無効の場合両方移動する
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.useWorldSpace = true;
+END EX

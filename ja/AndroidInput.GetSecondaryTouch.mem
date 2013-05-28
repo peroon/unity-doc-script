@@ -1,0 +1,4 @@
+<signature>
+GetSecondaryTouch(int)
+</signature>
+タッチパッドでのセカンダリタッチの情報を取得する。

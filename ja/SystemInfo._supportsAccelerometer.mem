@@ -1,0 +1,4 @@
+<signature>
+supportsAccelerometer
+</signature>
+加速度センサーを利用できるかを返す

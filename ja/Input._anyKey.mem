@@ -1,0 +1,13 @@
+<signature>
+anyKey
+</signature>
+何かキーを押している間、trueを返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects if any key has been pressed.
+
+	function Update() {
+		if(Input.anyKey)
+			Debug.Log("A key or mouse click has been detected");
+	}
+END EX

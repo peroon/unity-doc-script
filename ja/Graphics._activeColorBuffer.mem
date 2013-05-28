@@ -1,0 +1,5 @@
+<signature>
+activeColorBuffer
+</signature>
+現在アクティブなカラーバッファ（読み取り専用）
+SA: [[RenderBuffer]], [[Graphics.activeDepthBuffer]], [[Graphics.SetRenderTarget]].

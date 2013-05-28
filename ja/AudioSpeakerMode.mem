@@ -1,0 +1,4 @@
+[[AudioSettings.speakerMode]]で使用されます。
+Your project's default speaker mode can be set in the [[class-AudioManager|Audiomanager]] through __Edit->Project Settings->Audio__.
+
+SA: [[AudioSettings|AudioSettings]], [[class-AudioManager|Audio Manager]].

@@ -1,0 +1,5 @@
+<signature>
+QueryStateObject(Type,int)
+</signature>
+コントロールIDから既存の状態オブジェクトを取得する
+特定のコントロールIDで、オブジェクトが生成されているかを確認します。されていない場合、nullを返します。

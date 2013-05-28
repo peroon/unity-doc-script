@@ -1,0 +1,10 @@
+表示させ始める距離を設定する
+The projector will not affect anything that is nearer than this distance.
+SA: [[wiki:class-Projector|projector component]].
+CONVERTEXAMPLE
+BEGIN EX
+	function Start() {
+		var proj : Projector = GetComponent(Projector);
+		proj.nearClipPlane = 0.5;
+	}
+END EX

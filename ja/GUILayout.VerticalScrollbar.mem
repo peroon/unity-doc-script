@@ -1,0 +1,37 @@
+<signature>
+VerticalScrollbar(float,float,float,float,GUILayoutOption[])
+VerticalScrollbar(float,float,float,float,GUIStyle,GUILayoutOption[])
+</signature>
+垂直のスクロールバーを作成します。
+Scrollbars are what you use to scroll through a document. Most likely, you want to use scrollViews instead.
+
+{img GUILayoutVerticalScrollbar.png}\\
+''Vertical Scrollbar in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	var vSbarValue : float;
+
+	function OnGUI () {
+		vSbarValue = GUILayout.VerticalScrollbar(vSbarValue, 1.0, 10.0, 0.0);
+	}
+END EX
+<b>Finding extra elements:</b><br>
+The styles of the buttons at then end of the scrollbar are searched for in the current skin by adding "upbutton" and "downbutton" to the style name. 
+The name of the scrollbar thumb (the thing you drag) is found by appending "thumb" to the style name.
+BEGIN EX
+	var scrollPos : float = 0.5;
+	// This will use the following style names to determine the size / placement of the buttons
+	// MyVerticalScrollbarupbutton    - Name of style used for the up button.
+	// MyVerticalScrollbardownbutton - Name of style used for the down button.
+	// MyVerticalScrollbarthumb         - Name of style used for the draggable thumb.
+	function OnGUI() {
+		scrollPos = GUILayout.HorizontalScrollbar (scrollPos, 1, 0, 100, "MyVerticalScrollbar");
+	}
+END EX
+@param value 現在値
+@param size バーの長さ
+@param topValue 最小値
+@param bottomValue 最大値
+@param style スタイル
+@param options 幅・高さ
+@return The modified value. This can be changed by the user by dragging the scrollbar, or clicking the arrows at the end.

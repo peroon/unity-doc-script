@@ -1,0 +1,4 @@
+<signature>
+remoteNotifications
+</signature>
+リモートでの通知を表すオブジェクトのリスト（読み込み専用）

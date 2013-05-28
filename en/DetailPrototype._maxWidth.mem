@@ -1,0 +1,4 @@
+<signature>
+maxWidth
+</signature>
+Maximum width of the grass billboards (if render mode is GrassBillboard).

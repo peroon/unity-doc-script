@@ -1,0 +1,12 @@
+<signature>
+SetSendingEnabled(int,bool)
+</signature>
+特定のネットワークグループ番号での、メッセージとRPC コールの送信の有効／無効を設定する
+This can be set when you know you are not sending anything useful to other clients, such as before
+you have loaded you level completely.
+The [[wiki:net-NetworkLevelLoad|Network level loading]] page has an example of how to use this function.
+<signature>
+SetSendingEnabled(NetworkPlayer,int,bool)
+</signature>
+グループからRPC呼び出しの有効／無効を設定します。
+When used on a client, the only [[NetworkPlayer]] possible is the server.

@@ -1,0 +1,28 @@
+<signature>
+Connect(string,int,string)
+</signature>
+指定したホスト（IPアドレスまたはドメイン名）のサーバーポートに接続する
+The parameters are the /IP/ address of the host. Either a dotted IP address or a domain name.
+/remotePort/, which specifies the port on the remote machine to connect to.
+/password/, which is an optional password for the server. The password has to match the Network.incomingPassword set on the server.
+CONVERTEXAMPLE
+BEGIN EX
+	function ConnectToServer () {
+		Network.Connect("127.0.0.1", 25000);
+	}
+END EX
+<signature>
+Connect(string[],int,string)
+</signature>
+This function is exactly like Network.Connect but can accept an array of IP addresses.
+It can be used when the host information from a master server returns multiple internal IP addresses, then the IP data structure can be
+passed directly into this connect function. It actually connects to the first IP which responds to a ping (i.e. is connectable).
+<signature>
+Connect(string,string)
+</signature>
+Connect to a server GUID. NAT punchthrough can only be performed this way.
+The host GUID value is exposed locally through the [[NetworkPlayer]] structure. The master server also provides this in the [[HostData]] structure.
+<signature>
+Connect(HostData,string)
+</signature>
+Connect to the host represented by a [[HostData]] structure returned by the Master Server.

@@ -1,0 +1,4 @@
+<signature>
+CalcHeight(GUIContent,float)
+</signature>
+How tall this element will be when rendered with /content/ and a specific /width/.

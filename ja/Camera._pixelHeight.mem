@@ -1,0 +1,8 @@
+<signature>
+pixelHeight
+</signature>
+ピクセル単位でのカメラの高さ（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	print ("Camera is " + camera.pixelHeight + " pixels high");
+END EX

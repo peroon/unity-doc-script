@@ -1,0 +1,18 @@
+<signature>
+OverlapSphere(Vector3,float)
+OverlapSphere(Vector3,float,int)
+</signature>
+Returns an array with all colliders touching or inside the sphere.
+NOTE: Currently this only checks against the bounding volumes of the colliders not against the actual colliders.
+CONVERTEXAMPLE
+BEGIN EX
+	// Call a damage function on all objects caught in the
+	// radius of an explosion.
+	function ExplosionDamage(center: Vector3, radius: float) {
+		var hitColliders = Physics.OverlapSphere(center, radius);
+		
+		for (var i = 0; i < hitColliders.Length; i++) {
+			hitColliders[i].SendMessage("AddDamage");
+		}
+	}
+END EX

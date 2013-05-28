@@ -1,0 +1,12 @@
+コーラスのミリ秒単位でのディレイを返す。0.1 から100の間で設定する（デフォルトでは40 ミリ秒）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Dont use delay on the filter.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioChorusFilter)
+
+	function Start() {
+		GetComponent(AudioChorusFilter).delay = 0.1;
+	}
+END EX

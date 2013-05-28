@@ -1,0 +1,4 @@
+ゲームデータのセーブ、ロードなどを行います。
+スタンドアローンのMacOSXでは、~/Library/Preferencesフォルダにunity.[company name].[product name].plistという形で保存されます。.plistファイルは、Unityのエディター上でも読み込むことができます。
+スタンドアローンのWindows では、HKCU\Software\[company name]\[product name]に保存されます。
+Web Playerでは、バイナリファイルがMac OS X が~/Library/Preferences/Unity/Web Playerに、Windows が%APPDATA%\Unity\WebPlayerPrefsに保存されます。Web Player でのファイルサイズは、1Mまでと制限されているので注意しましょう。1M以上保存しようとすると、[[PlayerPrefsException]]エラーをスローします。

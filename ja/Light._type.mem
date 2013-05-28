@@ -1,0 +1,8 @@
+ライトの種類を設定する。
+LightType.Spot, LightType.Directional, LightType.Pointが設定可能。
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the light a spot light
+	light.type = LightType.Spot;
+END EX
+SA: [[wiki:class-Light|Light component]].

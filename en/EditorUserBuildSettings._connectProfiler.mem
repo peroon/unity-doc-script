@@ -1,0 +1,4 @@
+<signature>
+connectProfiler
+</signature>
+Start the player with a connection to the profiler.

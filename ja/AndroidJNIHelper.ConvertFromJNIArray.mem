@@ -1,0 +1,6 @@
+<signature>
+ConvertFromJNIArray<ArrayType>(IntPtr)
+</signature>
+IntPtr型のJava 配列からArray配列を作成する。
+SA: AndroidJNIHelper.ConvertToJNIArray.
+@param array IntPtr型の配列

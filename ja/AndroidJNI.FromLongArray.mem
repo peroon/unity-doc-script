@@ -1,0 +1,5 @@
+<signature>
+FromLongArray(IntPtr)
+</signature>
+IntPtr型をLong配列へ変換する。
+SA: AndroidJNI.GetLongArrayElement, AndroidJNI.GetArrayLength.

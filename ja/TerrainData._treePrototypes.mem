@@ -1,0 +1,5 @@
+<signature>
+treePrototypes
+</signature>
+この変数はインスペクターで使用できる。木のプロトタイプのリストを返す
+If you change any value here, you should call TerrainData.RefreshPrototypes so the changes take effect.

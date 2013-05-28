@@ -1,0 +1,12 @@
+<signature>
+imagePosition
+</signature>
+How image and text of the [[GUIContent]] is combined.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints how image and text is placed.
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.imagePosition);
+	}
+END EX

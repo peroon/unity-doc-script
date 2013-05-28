@@ -1,0 +1,4 @@
+<signature>
+enabledRemoteNotificationTypes
+</signature>
+The types of notifications the application accepts.

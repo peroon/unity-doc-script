@@ -1,0 +1,23 @@
+<signature>
+TextField(string,GUILayoutOption[])
+TextField(string,int,GUILayoutOption[])
+TextField(string,GUIStyle,GUILayoutOption[])
+TextField(string,int,GUIStyle,GUILayoutOption[])
+</signature>
+文字を入力できるテキストフィールドを作成します。
+{img GUILayoutTextField.png}\\
+''Text field in the GameView.''
+CONVERTEXAMPLE
+BEGIN EX
+	var stringToEdit : String = "Hello World";
+
+	function OnGUI () {
+		// Make a text field that modifies stringToEdit.
+		stringToEdit = GUILayout.TextField (stringToEdit, 25);
+	}
+END EX
+@param text 表示する文字列
+@param maxLength 最大文字数
+@param style スタイル
+@param options 幅・高さを設定する
+@return 編集されたも文字列

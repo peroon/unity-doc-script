@@ -1,0 +1,5 @@
+<signature>
+shadowProjection
+</signature>
+Directional Light の影の投影を設定する。
+SA: [[wiki:class-QualitySettings|Quality Settings]].

@@ -1,0 +1,4 @@
+<signature>
+url
+</signature>
+WWWリクエストのURLを返す（読み取り専用）

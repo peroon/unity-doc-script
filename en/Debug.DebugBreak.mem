@@ -1,0 +1,7 @@
+<signature>
+DebugBreak()
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Breaks into the attached debugger, if present.

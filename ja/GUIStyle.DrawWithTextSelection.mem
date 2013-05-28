@@ -1,0 +1,4 @@
+<signature>
+DrawWithTextSelection(Rect,GUIContent,int,int,int)
+</signature>
+文字入力されているテキストで、設定した範囲の箇所を選択状態にする

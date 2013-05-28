@@ -1,0 +1,4 @@
+<signature>
+deviceToken
+</signature>
+NotificationServices.RegisterForRemoteNotificationTypes関数を呼び出した後に、Appleのプッシュサービスから受信したデバイストークンを取得する（読み込み専用）

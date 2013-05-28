@@ -1,0 +1,10 @@
+<signature>
+Create()
+</signature>
+実際にRenderTextureオブジェクトを生成する。
+レンダーテクスチャのコンストラクタだけでは作成されません。デフォルトでは、この関数で作成されたテクスチャはactive変数の中に格納され
+ます。
+Calling @@Create@@ lets you create it up front. @@Create@@ does nothing
+if the texture is already created.
+
+SA: ::ref::Release, ::ref::IsCreated functions.

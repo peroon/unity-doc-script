@@ -1,0 +1,5 @@
+<signature>
+AddForceAtPosition(Vector3,Vector3,float,ForceMode)
+</signature>
+位置と半径を設定し、その範囲内にある布のメッシュのすべての頂点に力を加える。
+SA: [[Cloth.externalAcceleration]], [[Cloth.randomAcceleration]].

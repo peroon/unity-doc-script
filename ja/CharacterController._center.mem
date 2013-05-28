@@ -1,0 +1,8 @@
+オブジェクトのTransformオブジェクトの中心位置からみた相対的な位置（デフォルトは（0, 0, 0））
+CONVERTEXAMPLE
+BEGIN EX
+	// Move the center of the capsule up.
+	var controller : CharacterController;
+	controller = GetComponent(CharacterController);
+	controller.center = Vector3 (0, 1, 0);
+END EX

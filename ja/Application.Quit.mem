@@ -1,0 +1,15 @@
+<signature>
+Quit()
+</signature>
+アプリを終了する。エディターやWeb Player では無視される。
+__IMPORTANT:__ エディター、Web Player、iOS、Androidではこの関数を使うことはできません。
+Consult Apple's Technical Q&A qa1561 page for further details: http://developer.apple.com/iphone/library/qa/qa2008/qa1561.html.
+CONVERTEXAMPLE
+BEGIN EX
+	// Quits the player when the user hits escape
+	function Update () {
+		if (Input.GetKey ("escape")) {
+			Application.Quit();
+		}
+	}
+END EX

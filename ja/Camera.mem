@@ -1,0 +1,8 @@
+ゲームのプレイ画面を表示するカメラを扱います。
+ゲーム画面（スクリーンサイズ）はピクセル単位で定義されています。シーンの左下が(0,0)で、右上が最大値となります。
+
+また、ビューポートも左下が(0, 0) で、右上が(1, 1) となります。
+
+A world space point is defined in global coordinates (eg. Transform.position).
+
+SA: [[wiki:class-Camera|camera component]].

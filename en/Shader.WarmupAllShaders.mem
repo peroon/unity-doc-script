@@ -1,0 +1,17 @@
+<signature>
+WarmupAllShaders()
+</signature>
+Fully load all shaders to prevent future performance hiccups.
+Usually graphics drivers do not actually prepare shaders until they are first needed.
+However when some object is first rendered with a previously unused shader, there
+can be a hiccup because the driver is compiling/optimizing the shader. This can be quite
+noticeable on mobile platforms.
+
+Calling this function will perform dummy one-invisible-triangle rendering
+with all permutations of all currently loaded shaders. This can take some time but helps
+to avoid hiccups in the future.
+
+Please be aware that this function will only warmup shaders that are currently loaded. 
+If you use Resources.Load to load shaders, you will need to call WarmupAllShaders again.
+Also, different fog modes are implemented through shader patching, 
+so if you change fog mode at runtime, you need to do so before calling WarmupAllShaders.

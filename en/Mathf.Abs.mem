@@ -1,0 +1,18 @@
+<signature>
+Abs(float)
+</signature>
+Returns the absolute value of /f/.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 10.5
+	print(Mathf.Abs(-10.5));
+END EX
+<signature>
+Abs(int)
+</signature>
+Returns the absolute value of /value/.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 10
+	print(Mathf.Abs(-10));
+END EX

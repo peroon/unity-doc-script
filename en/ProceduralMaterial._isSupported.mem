@@ -1,0 +1,4 @@
+<signature>
+isSupported
+</signature>
+Checks if the Procedural Materials are supported on the current platform.

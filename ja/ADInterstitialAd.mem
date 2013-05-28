@@ -1,0 +1,2 @@
+Apple iADフレームワークのADInterstitialAdクラスのラッパーです。iPad のみ利用可能です。
+It provides full-screen advertisements that your iPad application can display to the user.

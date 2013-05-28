@@ -1,0 +1,19 @@
+<signature>
+SetTextureScale(string,Vector2)
+</signature>
+プロパティ名で画像の大きさを設定します。
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTextureScale property, ::ref::GetTextureScale.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		// Animates main texture scale in a funky way!
+		var scaleX : float = Mathf.Cos (Time.time) * 0.5 + 1;
+		var scaleY : float = Mathf.Sin (Time.time) * 0.5 + 1;
+		renderer.material.SetTextureScale ("_MainTex", Vector2(scaleX,scaleY));
+	}
+END EX

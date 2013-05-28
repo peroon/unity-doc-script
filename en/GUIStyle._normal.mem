@@ -1,0 +1,12 @@
+<signature>
+normal
+</signature>
+Rendering settings for when the component is displayed normally.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the text color that button is using.
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.normal.textColor);
+	}
+END EX

@@ -1,0 +1,3 @@
+The size of LOD object in local space.
+If you wish to bias on a per group basis modify this value.
+It is the same as changing the LOD Bias in the quality settings.

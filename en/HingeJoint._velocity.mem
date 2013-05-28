@@ -1,0 +1,5 @@
+The angular velocity of the joint in degrees per second.
+CONVERTEXAMPLE
+BEGIN EX
+	print(hingeJoint.velocity);
+END EX

@@ -1,0 +1,8 @@
+<signature>
+audio
+</signature>
+AudioSource情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	audio.Play();
+END EX

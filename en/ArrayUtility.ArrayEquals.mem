@@ -1,0 +1,5 @@
+<signature>
+ArrayEquals<T>(T[],T[])
+</signature>
+Compares two arrays.
+@return True if both have the same number of elements and the contents are equal.

@@ -1,0 +1,19 @@
+<signature>
+Reset()
+</signature>
+値をデフォルトにリセットする。
+インスペクターの「Script」欄のコンテキストメニューで「Reset」を選択するとこの関数が呼び出されます。
+エディター上で使用する関数となります。Reset is most commonly used to give good default values in the inspector.
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets target to a default value.
+	// This could be used in a follow camera.
+
+	var target : GameObject;
+
+	function Reset () {
+		// Only set target if it is not assigned yet.
+		if (!target)
+			target = GameObject.FindWithTag ("Player");
+	}
+END EX

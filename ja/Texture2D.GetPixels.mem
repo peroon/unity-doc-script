@@ -1,0 +1,54 @@
+<signature>
+GetPixels(int)
+</signature>
+ピクセルのカラー配列を設定する
+This function returns an array of pixel colors of the whole
+mip level of the texture.
+
+The returned array is a flattened 2D array, where pixels are laid out left to right,
+bottom to top (i.e. row after row). Array size is width by height of the mip level used.
+The default mip level is zero (the base texture) in which case the size is just the size of the texture.
+In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
+and similarly for height.
+
+The texture must have the __Read/Write Enabled__ flag set in the import settings, otherwise this function will fail.
+
+Using /GetPixels/ can be faster than calling ::ref::GetPixel repeatedly, especially
+for large textures. In addition, /GetPixels/ can access individual mipmap levels.
+CONVERTEXAMPLE
+BEGIN EX
+	// Get a rectangular area of a texture and place it into a new
+	// texture the size of the rectangle.
+	
+	// Source texture and the rectangular area we want to extract.
+	var sourceTex: Texture2D;
+	var sourceRect: Rect;
+	
+	
+	function Start () {
+		// The values in the Rect structure are floats, so round them
+		// down to the nearest integer.
+		var x = Mathf.FloorToInt(sourceRect.x);
+		var y = Mathf.FloorToInt(sourceRect.x);
+		var width = Mathf.FloorToInt(sourceRect.width);
+		var height = Mathf.FloorToInt(sourceRect.height);
+		
+		// Get the pixel block and place it into a new texture.
+		var pix = sourceTex.GetPixels(x, y, width, height);
+		var destTex = new Texture2D(width, height);
+		destTex.SetPixels(pix);
+		destTex.Apply();
+		
+		// Set the current object's texture to show the
+		// extracted rectangle.
+		renderer.material.mainTexture = destTex;
+	}
+END EX
+SA: ::ref::SetPixels, ::ref::mipmapCount.
+<signature>
+GetPixels(int,int,int,int,int)
+</signature>
+ピクセルカラーの配列を返します。
+This function is an extended version of /GetPixels/ above; it does not return the whole
+mip level but only /blockWidth/ by /blockHeight/ region starting at ''x,y''.
+The block must fit into the used mip level. The returned array is ''blockWidth*blockHeight'' size.

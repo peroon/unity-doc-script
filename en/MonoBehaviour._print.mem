@@ -1,0 +1,5 @@
+<signature>
+print(object)
+</signature>
+Logs message to the Unity Console. This function is identical to [[Debug.Log]].
+SA: Debug.Log, Debug.LogWarning, Debug.LogError.

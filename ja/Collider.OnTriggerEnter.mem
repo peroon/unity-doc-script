@@ -1,0 +1,15 @@
+<signature>
+OnTriggerEnter(Collider)
+</signature>
+トリガー状態のオブジェクトに衝突したときに呼び出されます。
+This message is sent to the trigger collider and the rigidbody (if any) that the trigger collider belongs
+to, and to the rigidbody (or the collider if there is no rigidbody) that touches the trigger.
+Note that trigger events are only sent if one of the colliders also has a rigidbody attached.
+CONVERTEXAMPLE
+BEGIN EX
+	// Destroy everything that enters the trigger
+
+	function OnTriggerEnter (other : Collider) {
+		Destroy(other.gameObject);
+	}
+END EX

@@ -1,0 +1,9 @@
+<signature>
+green
+</signature>
+緑を返す。RGBA は (0, 1, 0, 1)
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a green color to this transform's material
+	transform.renderer.material.color = Color.green;
+END EX

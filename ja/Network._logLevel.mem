@@ -1,0 +1,11 @@
+<signature>
+logLevel
+</signature>
+ネットワークメッセージのログレベルを設定する（デフォルトはOf)
+For a description of the different log levels have a look at the [[NetworkLogLevel]] enum.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Network.logLevel = NetworkLogLevel.Full;
+	}
+END EX

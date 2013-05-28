@@ -1,0 +1,28 @@
+<signature>
+FindClosestEdge(Vector3,NavMeshHit,int)
+</signature>
+Locate the closest NavMesh edge from a point on the NavMesh.
+The returned ::ref::NavMeshHit object contains the position
+and details of the nearest point on the nearest edge of the
+navmesh. Since an edge typically corresponds to a wall or
+other large object, this could be used to make a character
+take cover as close to the wall as possible.
+CONVERTEXAMPLE
+BEGIN EX
+	var mesh: NavMesh;
+	var player: Transform;
+
+	// Move a marker object to show a position of cover
+	// that the player should head for.
+	function IndicateCoverPosition() {
+		var hit: NavMeshHit;
+		
+		if (mesh.FindClosestEdge(player.position, hit, -1)) {
+			transform.position = hit.position;
+		}
+	}
+END EX
+@param sourcePosition The origin of the distance query.
+@param hit Holds the properties of the resulting location.
+@param passableMask A mask specifying which NavMesh layers can be passed when finding the nearest edge.
+@return True if a nearest edge is found.

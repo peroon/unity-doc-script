@@ -1,0 +1,4 @@
+<signature>
+gameObject
+</signature>
+The [[GameObject]] whose collider we are colliding with. (RO).

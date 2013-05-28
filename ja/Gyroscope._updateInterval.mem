@@ -1,0 +1,10 @@
+<signature>
+updateInterval
+</signature>
+秒単位のジャイロスコープの間隔を設定／取得する
+CONVERTEXAMPLE
+BEGIN EX
+    function Start () {
+		Input.gyro.updateInterval = 0.01;
+	}
+END EX

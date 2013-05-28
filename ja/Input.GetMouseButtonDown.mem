@@ -1,0 +1,21 @@
+<signature>
+GetMouseButtonDown(int)
+</signature>
+特定のマウスの情報を取得する。押された瞬間、trueを返す。
+You need to call this function from the MonoBehaviour::pref::Update function, since the state gets reset each frame.
+It will not return true until the user has released the mouse button and pressed it again.
+button 引数は0 が左クリック、1 が右クリック、2 が中クリックになります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects clicks from the mouse and prints a message
+	// depending on the click detected.
+
+	function Update() {
+		if(Input.GetMouseButtonDown(0))
+			Debug.Log("Pressed left click.");
+		if(Input.GetMouseButtonDown(1))
+			Debug.Log("Pressed right click.");
+		if(Input.GetMouseButtonDown(2))
+			Debug.Log("Pressed middle click.");
+	}
+END EX

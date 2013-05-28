@@ -1,0 +1,7 @@
+<signature>
+supportsImageEffects
+</signature>
+イメージエフェクトがサポートされているかを返す（読み込み専用）
+Returns /true/ if graphics card supports image postprocessing effects.
+
+SA: [[wiki:comp-ImageEffects|Image Effects]].

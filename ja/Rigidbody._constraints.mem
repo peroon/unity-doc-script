@@ -1,0 +1,10 @@
+XYZ軸それぞれの物理演算による、位置や回転の影響を受けるか／受けないか。
+By default this is RigidbodyConstraints.FreezeNone, allowing rotation and movement along all axes.
+In some cases, you may want to constrain a Rigidbody to only move or rotate along some axes, for 
+example when developing 2D games. You can use the bitwise OR operator to combine multiple
+constraints.
+CONVERTEXAMPLE
+BEGIN EX
+	// Freeze the rotation around x-Axis
+	rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+END EX

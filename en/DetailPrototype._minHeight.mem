@@ -1,0 +1,4 @@
+<signature>
+minHeight
+</signature>
+Minimum height of the grass billboards (if render mode is GrassBillboard).

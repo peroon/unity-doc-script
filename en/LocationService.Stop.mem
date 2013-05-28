@@ -1,0 +1,4 @@
+<signature>
+Stop()
+</signature>
+Stops location service updates. This could be useful for saving battery life.

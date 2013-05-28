@@ -1,0 +1,17 @@
+<signature>
+DrawBezier(Vector2,Vector2,Vector2,Vector2,int,Color)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+<signature>
+DrawBezier(Vector2,Vector2,Vector2,Vector2,int,Color,Texture)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Draw an anti-aliased bezier curve.
+TODO: Quick and dirty implementation - doesn't get clipped. Could be a lot faster.
+@param from The point to draw toTangent.
+@param thickness Pixel width of the beziuer.
+@param tex Optional texture to use along. if left undefined, one will be calculated on-the-fly for making the bezier's edges soft. So there!

@@ -1,0 +1,6 @@
+<signature>
+GetNextAnimationClipState(int)
+</signature>
+Gets the list of AnimationInfo currently played by the next state.
+Only valid when during a transition.
+@param layerIndex The layer's index.

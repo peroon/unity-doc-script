@@ -1,0 +1,8 @@
+<signature>
+NegativeInfinity
+</signature>
+負の無限大を表現する（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(Mathf.NegativeInfinity);
+END EX

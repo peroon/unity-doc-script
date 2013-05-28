@@ -1,0 +1,4 @@
+<signature>
+ClampMagnitude(Vector2,float)
+</signature>
+ベクトルの長さを制限する

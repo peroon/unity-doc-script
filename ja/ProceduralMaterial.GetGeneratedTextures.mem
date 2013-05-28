@@ -1,0 +1,4 @@
+<signature>
+GetGeneratedTextures()
+</signature>
+生成されたテクスチャを取得する

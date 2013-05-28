@@ -1,0 +1,8 @@
+<signature>
+ctor(Type)
+ctor(Type,bool)
+</signature>
+Defines which object type the custom editor class can edit.
+SA: [[Editor]] class.
+@param inspectedType Type that this editor can edit.
+@param editorForChildClasses If true, child classes of inspectedType will also show this editor. Defaults to false.

@@ -1,0 +1,10 @@
+<signature>
+height
+</signature>
+高さ
+CONVERTEXAMPLE
+BEGIN EX
+	var rect = Rect (0, 0, 10, 10);
+	print(rect.height);
+	rect.height = 20;
+END EX

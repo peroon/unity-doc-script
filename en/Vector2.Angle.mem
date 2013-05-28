@@ -1,0 +1,4 @@
+<signature>
+Angle(Vector2,Vector2)
+</signature>
+Returns the angle in degrees between /from/ and /to/.

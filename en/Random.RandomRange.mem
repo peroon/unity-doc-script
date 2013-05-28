@@ -1,0 +1,12 @@
+<signature>
+RandomRange(float,float)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+<signature>
+RandomRange(int,int)
+</signature>
+<txttag>
+UNDOC
+</txttag>

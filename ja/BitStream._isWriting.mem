@@ -1,0 +1,5 @@
+<signature>
+isWriting
+</signature>
+書き込んでいるかを確認する（読み込み専用）
+SA: Network.OnSerializeNetworkView, ::ref::isReading.

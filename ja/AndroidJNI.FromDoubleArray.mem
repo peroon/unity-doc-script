@@ -1,0 +1,5 @@
+<signature>
+FromDoubleArray(IntPtr)
+</signature>
+IntPtr型をDouble配列へ変換する。
+SA: AndroidJNI.GetDoubleArrayElement, AndroidJNI.GetArrayLength.

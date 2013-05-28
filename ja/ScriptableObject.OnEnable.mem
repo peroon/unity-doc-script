@@ -1,0 +1,11 @@
+<signature>
+OnEnable()
+</signature>
+オブジェクトが有効状態になったときに、一度だけ呼び出されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnEnable () {
+		print("script was enabled");
+	}
+END EX
+OnEnable cannot be a co-routine.

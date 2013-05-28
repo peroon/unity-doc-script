@@ -1,0 +1,5 @@
+<signature>
+lightmaps
+</signature>
+ライトマップの配列を返す。
+SA: [[LightmapData]] class, Renderer.lightmapIndex property.

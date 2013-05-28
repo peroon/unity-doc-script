@@ -1,0 +1,20 @@
+影のようなものを実装できます。
+The Projector can be used to project any material onto the scene - just like a real world projector.
+The properties exposed by this class are an exact match for the values in the Projector's inspector.
+
+It can be used to implement blob or projected shadows. You could also project an animated texture or
+a render texture that films another part of the scene. The projector will render all objects in
+its view frustum with the provided material.
+
+基本はインスペクターで設定しますが、スクリプト側で設
+定する場合は、GetComponent関数を使います。
+CONVERTEXAMPLE
+BEGIN EX
+function Start() {
+	// Get the projector
+	var proj : Projector = GetComponent (Projector);
+	// Use it
+	proj.nearClipPlane = 0.5;
+}
+END EX
+SA: [[wiki:class-Projector|projector component]].

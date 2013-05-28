@@ -1,0 +1,4 @@
+カプセル形のコライダーです。
+Capsules are cylinders with a half-sphere at each end.
+
+SA: [[BoxCollider]], [[SphereCollider]], [[PhysicMaterial]], [[Rigidbody]].

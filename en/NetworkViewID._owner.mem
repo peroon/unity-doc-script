@@ -1,0 +1,4 @@
+<signature>
+owner
+</signature>
+The [[NetworkPlayer]] who owns the [[NetworkView]]. Could be the server.

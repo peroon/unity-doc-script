@@ -1,0 +1,5 @@
+<signature>
+functionName
+</signature>
+関数名をセットする。
+This is the same as calling gameObject.SendMessage(animationEvent.functionName, animationEvent).

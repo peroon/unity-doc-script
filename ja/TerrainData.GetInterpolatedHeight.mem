@@ -1,0 +1,4 @@
+<signature>
+GetInterpolatedHeight(float,float)
+</signature>
+特定の(x,y)の地形からの補間された高さを返す

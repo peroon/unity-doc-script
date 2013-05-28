@@ -1,0 +1,9 @@
+<signature>
+ambientLight
+</signature>
+Color of the scene's ambient light.
+BEGIN EX
+	// Make the ambient lighting red
+	RenderSettings.ambientLight = Color.red;
+END EX
+SA: [[wiki:class-RenderSettings|Render Settings manager]].

@@ -1,0 +1,18 @@
+<signature>
+Lerp(float,float,float)
+</signature>
+from引数からto 引数へ移動します。t 引数は0 から1 までの値を設定することができます。t 引数が0.5 であれば、from 引数とto 引数の中間地点となります。
+When /t/ = 0 returns /from/.
+When /t/ = 1 return /to/.
+When /t/ = 0.5 returns the average of /a/ and /b/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Fades from minimum to maximum in one second
+
+	var minimum = 10.0;
+	var maximum = 20.0;
+
+	function Update () {
+		transform.position = Vector3(Mathf.Lerp(minimum, maximum, Time.time), 0, 0);
+	}
+END EX

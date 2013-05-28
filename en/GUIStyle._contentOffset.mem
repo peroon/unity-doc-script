@@ -1,0 +1,12 @@
+<signature>
+contentOffset
+</signature>
+Pixel offset to apply to the content of this GUIstyle.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the value of contentOffset.
+	
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.contentOffset);
+	}
+END EX

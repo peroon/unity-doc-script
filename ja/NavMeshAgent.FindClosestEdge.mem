@@ -1,0 +1,36 @@
+<signature>
+FindClosestEdge(NavMeshHit)
+</signature>
+最も近いナビメッシュの辺を取得する
+The returned ::ref::NavMeshHit object contains the position
+and details of the nearest point on the nearest edge of the
+Navmesh. Since an edge typically corresponds to a wall or
+other large object, this could be used to make a character
+take cover as close to the wall as possible.
+CONVERTEXAMPLE
+BEGIN EX
+private var agent: NavMeshAgent;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+	}
+
+
+	function Update() {
+		// Move to the nearest wall when the mouse is clicked.
+		if (Input.GetMouseButtonDown(0)) {
+			TakeCover();
+		}
+	}
+
+
+	function TakeCover() {
+		var hit: NavMeshHit;
+		
+		if (agent.FindClosestEdge(hit)) {
+			agent.SetDestination(hit.position);
+		}
+	}
+END EX
+@param hit ナビメッシュオブジェクトのヒット情報を格納する
+@return True if a nearest edge is found.

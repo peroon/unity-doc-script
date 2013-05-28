@@ -1,0 +1,5 @@
+<signature>
+AddDisabledItem(GUIContent)
+</signature>
+Add a disabled item to the menu.
+SA: GenericMenu.AddItem, GenericMenu.AddSeparator.

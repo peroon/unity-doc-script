@@ -1,0 +1,5 @@
+リミットを使用するか設定する
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.useLimits = true;
+END EX

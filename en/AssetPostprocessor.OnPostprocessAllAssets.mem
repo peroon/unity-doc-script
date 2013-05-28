@@ -1,0 +1,31 @@
+<signature>
+OnPostprocessAllAssets(string[],string[],string[],string[])
+</signature>
+<txttag>
+CSNONE
+</txttag>
+This is called after importing of any number of assets is complete (when the Assets progress bar has reached the end).
+This call can occur after a manual reimport, or any time you move an asset or folder of assets to a new location in the Project View. All string arrays are filepaths relative to the Project's root Assets folder. /importedAssets/ contains paths of all assets used in the operation. Each consecutive index of /movedAssets/ and /movedFromAssetPaths/ will always refer to the same asset.
+
+If you perform a bulk operation on several individual assets instead of a folder containing those assets, this function will be called once per asset with each individual asset as the only item in the various arrays.
+
+Note that this function must be declared /static/ - it will not be called correctly if declared as an instance function.
+BEGIN EX
+	class MyAllPostprocessor extends AssetPostprocessor {
+
+		static function OnPostprocessAllAssets (
+			importedAssets : String[],
+			deletedAssets : String[],
+			movedAssets : String[],
+			movedFromAssetPaths : String[]) {
+			for (var str in importedAssets)
+				Debug.Log("Reimported Asset: " + str);
+
+			for (var str in deletedAssets)
+				Debug.Log("Deleted Asset: " + str);
+
+			for (var i=0;i<movedAssets.Length;i++)
+				Debug.Log("Moved Asset: " + movedAssets[i] + " from: " + movedFromAssetPaths[i]);
+		}
+	}
+END EX

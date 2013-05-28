@@ -1,0 +1,4 @@
+<signature>
+CalcMinMaxWidth(GUIContent,float,float)
+</signature>
+最小値と最大値を計算する

@@ -1,0 +1,23 @@
+<signature>
+OnApplicationPause(bool)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent to all game objects when the player pauses.
+OnApplicationPause can be a co-routine, simply use the yield statement in the function. If it is implemented as a coroutine, it will be evaluated twice during the initial frame: first as an early notification and second time during the normal coroutine update step.
+CONVERTEXAMPLE
+BEGIN EX
+    var paused: boolean;
+
+	function OnGUI() {
+		// Show a message if the game is paused.
+		if (paused) {
+			GUI.Label(new Rect(100, 100, 50, 30), "Game paused");
+		}
+	}
+
+	function OnApplicationPause(pauseStatus: boolean) {
+		paused = pauseStatus;
+	}
+END EX

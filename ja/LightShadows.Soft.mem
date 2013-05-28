@@ -1,0 +1,8 @@
+ぼやけた影を付ける。
+SA: [[wiki:class-Light|light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Set light to cast 4x filtered soft shadows (disc)
+
+	light.shadows = LightShadows.Soft;
+END EX

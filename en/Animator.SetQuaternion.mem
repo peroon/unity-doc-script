@@ -1,0 +1,12 @@
+<signature>
+SetQuaternion(string,Quaternion)
+</signature>
+Sets the value of a quaternion parameter.
+@param name The name of the parameter.
+@param value The new value for the parameter.
+<signature>
+SetQuaternion(int,Quaternion)
+</signature>
+Sets the value of a quaternion parameter.
+@param id Of the parameter. The id is generated using Animator::StringToHash.
+@param value The new value for the parameter.

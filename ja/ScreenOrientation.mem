@@ -1,0 +1,4 @@
+スクリーンの向きを選択します。
+Currently this is only relevant on mobile devices.
+
+SA: Screen.orientation.

@@ -1,0 +1,15 @@
+<signature>
+button
+</signature>
+Buttonオブジェクトの設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	// Modifies only the button style of the current GUISkin
+
+	var style : GUIStyle;
+
+	function OnGUI() {
+		GUI.skin.button = style;
+		GUILayout.Button("This is a button.");
+	}
+END EX

@@ -1,0 +1,5 @@
+<signature>
+stringValue
+</signature>
+Value of a string property.
+SA: ::ref::propertyType, SerializedPropertyType.String.

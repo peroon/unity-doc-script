@@ -1,0 +1,2 @@
+毎フレームのパーティクルの速度を設定（デフォルトは1）
+A value of 1 gives no damping, while smaller values makes them slow down.

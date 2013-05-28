@@ -1,0 +1,12 @@
+<signature>
+onActive
+</signature>
+Rendering settings for when the element is turned on and pressed down.
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the text color of button to yellow when an
+	// element is turned on and pressed down.
+	function OnGUI() {
+		GUI.skin.button.onActive.textColor = Color.yellow;
+	}
+END EX

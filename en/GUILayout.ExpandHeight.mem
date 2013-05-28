@@ -1,0 +1,4 @@
+<signature>
+ExpandHeight(bool)
+</signature>
+Option passed to a control to allow or disallow vertical expansion.

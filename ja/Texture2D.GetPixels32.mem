@@ -1,0 +1,43 @@
+<signature>
+GetPixels32(int)
+</signature>
+Color32形式のピクセルのカラー配列を設定する
+This function returns an array of pixel colors of the whole
+mip level of the texture.
+
+The returned array is a flattened 2D array, where pixels are laid out left to right,
+bottom to top (i.e. row after row). Array size is width by height of the mip level used.
+The default mip level is zero (the base texture) in which case the size is just the size of the texture.
+In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
+and similarly for height.
+
+The texture must have the __Read/Write Enabled__ flag set in the import settings, otherwise this function will fail.
+
+Using /GetPixels32/ can be faster than calling ::ref::GetPixel repeatedly, especially
+for large textures. In addition, /GetPixels32/ can access individual mipmap levels.
+CONVERTEXAMPLE
+BEGIN EX
+	// Rotate an image 180 degrees by reversing the order
+	// of the pixels.
+	
+	// Source texture.
+	var sourceTex: Texture2D;	
+	
+	
+	function Start () {
+		// Get the pixel block and reverse the array to
+		// rotate the image.
+		var pix = sourceTex.GetPixels32();
+		System.Array.Reverse(pix);
+		
+		// Copy the reversed image data to a new texture.
+		var destTex = new Texture2D(sourceTex.width, sourceTex.height);
+		destTex.SetPixels32(pix);
+		destTex.Apply();
+		
+		// Set the current object's texture to show the
+		// rotated image.
+		renderer.material.mainTexture = destTex;
+	}
+END EX
+SA: ::ref::SetPixels, ::ref::mipmapCount.

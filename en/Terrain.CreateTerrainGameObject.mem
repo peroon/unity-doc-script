@@ -1,0 +1,4 @@
+<signature>
+CreateTerrainGameObject(TerrainData)
+</signature>
+Creates a Terrain including collider from [[TerrainData]].

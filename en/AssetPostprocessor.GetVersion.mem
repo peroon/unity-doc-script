@@ -1,0 +1,24 @@
+<signature>
+GetVersion()
+</signature>
+Returns the version of the asset postprocessor.
+When the script is recompiled, if a version change is detected, the assets associated with this asset postprocessor will be reimported.
+BEGIN EX
+	class TexturePostProcessor : AssetPostprocessor
+	{
+		// Bump this number to make textures reimport after modifying the post processor below.
+		private uint m_Version = 0;
+		public override uint GetVersion() {return m_Version;}
+
+		public void OnPostprocessTexture(Texture2D tex)
+		{
+			Color[] pix = tex.GetPixels();
+			for (int i = 0; i < pix.Length; i++)
+			{
+				pix[i] = pix[i] * 0.5f;
+			}
+			tex.SetPixels(pix);
+			tex.Apply(true, true);
+		}
+	}
+END EX

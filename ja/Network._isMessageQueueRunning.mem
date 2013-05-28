@@ -1,0 +1,6 @@
+<signature>
+isMessageQueueRunning
+</signature>
+ネットワークメッセージの処理を有効／無効を設定する
+If this is disabled no [[RPC]] call execution or network view synchronization takes place.
+The [[wiki:net-NetworkLevelLoad|Network level loading]] page has an example of how to use this function.

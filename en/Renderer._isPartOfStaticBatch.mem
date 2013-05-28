@@ -1,0 +1,4 @@
+<signature>
+isPartOfStaticBatch
+</signature>
+Has this renderer been statically batched with any other renderers?

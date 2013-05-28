@@ -1,0 +1,4 @@
+<signature>
+extremumSlip
+</signature>
+極値点の滑りを返す（デフォルトは1）

@@ -1,0 +1,20 @@
+<signature>
+Minus(Vector4,Vector4)
+</signature>
+Subtracts one vector from another.
+Subtracts each component of /b/ from /a/.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints (-5.0,-3.0,-1.0,1.0)
+	print (Vector4(1,2,3,4) - Vector4(6,5,4,3));
+END EX
+<signature>
+Minus(Vector4)
+</signature>
+Negates a vector.
+Each component in the result is negated.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints (-1.0,-2.0,-3.0,-4.0)
+	print (-Vector4(1,2,3,4));
+END EX

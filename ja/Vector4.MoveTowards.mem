@@ -1,0 +1,6 @@
+<signature>
+MoveTowards(Vector4,Vector4,float)
+</signature>
+2 点間の特定の位置を返す。
+本質的にはLerp関数と同じ扱いになります。Lerp関数との違いは、距離で位置を返すことです。また、決して目標値を超えることはありません。
+Negative values of /maxDistanceDelta/ pushes the vector away from /target/.

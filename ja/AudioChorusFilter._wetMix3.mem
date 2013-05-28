@@ -1,0 +1,14 @@
+第三コーラスのタップボリューム（デフォルトは0.5）。このタップは第二タップより90度位相が異なる。
+CONVERTEXAMPLE
+BEGIN EX
+	// Produce random mixes with the Chorus filter.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioChorusFilter)
+
+	function Update() {
+		GetComponent(AudioChorusFilter).wetMix1 = Mathf.Sin(Time.time)*0.5 + 0.5;
+		GetComponent(AudioChorusFilter).wetMix2 = Mathf.Cos(Time.time)*0.5 + 0.5;
+		GetComponent(AudioChorusFilter).wetMix3 = Random.Range(0.0,1.0);;
+	}
+END EX

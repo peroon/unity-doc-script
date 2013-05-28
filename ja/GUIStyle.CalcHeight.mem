@@ -1,0 +1,4 @@
+<signature>
+CalcHeight(GUIContent,float)
+</signature>
+特定の幅を設定したときの高さを計算する

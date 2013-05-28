@@ -1,0 +1,9 @@
+<signature>
+AngleAxis(float,Vector3)
+</signature>
+軸の周りを設定した値分回転するrotation を作成する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the transforms rotation to rotate 30 degrees around the y-axis
+	transform.rotation = Quaternion.AngleAxis(30, Vector3.up);
+END EX

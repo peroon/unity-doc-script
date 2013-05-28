@@ -1,0 +1,9 @@
+オーディオが2D か3D かを設定する。
+（2D は0、3D は1）
+CONVERTEXAMPLE
+BEGIN EX
+	// Hear the audio clip in both channels (2D)
+	function Start() {
+		audio.panLevel = 0;
+	}
+END EX

@@ -1,0 +1,6 @@
+<signature>
+SetParticles(Particle[],int)
+</signature>
+パーティクルの配列と描画する数を設定する
+Setting the lifetime of a particle to a negative value will result in Shuriken removing the particle.
+SA: ::ref::GetParticles.

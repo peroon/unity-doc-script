@@ -1,0 +1,21 @@
+<signature>
+InitializeSecurity()
+</signature>
+セキュリティ情報を初期化します。
+サーバーを初期化する前に、この関数を呼び出します。セキュリティに関することなので、クライアント側では決して呼び出さないようにしてください。
+
+Once your online game reaches a certain popularity people will try to cheat. You will need to account for this both at the game layer and at the network layer.
+Unity handles the network layer by providing secure connections if you wish to use them.
+* Uses AES encryption. Prevents unauthorized reads and blocks replay attacks
+* Adds CRCs so that data tampering can be detected.
+* Uses randomized, encrypted SYNCookies to prevent unauthorized logins.
+* Uses RSA encryption to protect the AES key.
+Most games will want to use secure connections.
+これによりセキュアな接続を行うことができますが、1パケットあたり15バイト追加されるので、遅延の原因になるかもしれません。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Network.InitializeSecurity();
+		Network.InitializeServer(32, 25000);
+	}
+END EX

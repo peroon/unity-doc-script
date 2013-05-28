@@ -1,0 +1,17 @@
+<signature>
+OnCollisionStay(Collision)
+</signature>
+colliderやrigidbodyオブジェクトが他のcolliderやrigidbodyオブジェクトに触れ続けているときに毎フレーム呼び出される。
+In contrast to OnTriggerStay, OnCollisionStay is passed the [[Collision]] class and not a Collider.
+The [[Collision]] class contains information about contact points, impact velocity etc.
+If you don't use collisionInfo in the function, leave out the collisionInfo parameter as this avoids unneccessary calculations.
+衝突するオブジェクトは、Rigidbodyクラスを付加する必要があります。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnCollisionStay(collisionInfo : Collision) {
+		// Debug-draw all contact points and normals
+		for (var contact : ContactPoint in collisionInfo.contacts) {
+			Debug.DrawRay(contact.point, contact.normal, Color.white);
+		}
+	}
+END EX

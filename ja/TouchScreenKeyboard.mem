@@ -1,0 +1,10 @@
+スマートフォンのキーボードインタフェースです。様々なキーボードタイプを扱うことができます。
+This interface allows to display different types of the keyboard: ASCII,
+Numbers, URL, Email, and others.
+
+キーボードの外観で、ユーザーインタフェースの部分が隠れたりする場合があるの
+で、注意しましょう。
+
+@@TouchScreenKeyboard.visible@@ and @@TouchScreenKeyboard.area@@ should be
+used to determine if the keyboard is being shown (activated) and what
+portion of the screen is using.

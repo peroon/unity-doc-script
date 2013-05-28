@@ -1,0 +1,4 @@
+<signature>
+CancelLocalNotification(LocalNotification)
+</signature>
+指定したローカル通知スケジュールをキャンセルする

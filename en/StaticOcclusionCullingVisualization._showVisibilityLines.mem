@@ -1,0 +1,4 @@
+<signature>
+showVisibilityLines
+</signature>
+If set to true, visualization of portals is enabled.

@@ -1,0 +1,5 @@
+<signature>
+applyRootMotion
+</signature>
+Should root motion be applied?
+Root motion is the effect where an object's entire mesh moves away from its starting point but that motion is created by the animation itself rather than by changing the Transform position. Note that /applyRootMotion/ has no effect when the script implements an MonoBehaviour::ref::OnAnimatorMove function.

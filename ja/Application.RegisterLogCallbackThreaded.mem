@@ -1,0 +1,10 @@
+<signature>
+RegisterLogCallbackThreaded(LogCallback)
+</signature>
+異なるスレッドからログメッセージに呼び出されるデリゲートを登録する
+本質的にはRegisterLogCallback関数と動作は同じです。違いは、別スレッドで行われるという点です。
+
+__Note:__ You should *only* use this function if you know what you
+are doing, else just use Application.RegisterLogCallback.
+
+SA: [[Application.LogCallback]], [[Application.RegisterLogCallback]], [[LogType]].

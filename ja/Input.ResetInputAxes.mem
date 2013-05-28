@@ -1,0 +1,9 @@
+<signature>
+ResetInputAxes()
+</signature>
+軸入力されて設定された値を、すべてリセットする。
+This can be useful when respawning the player and you don't want any input from keys that might still be held down.
+CONVERTEXAMPLE
+BEGIN EX
+	Input.ResetInputAxes();
+END EX

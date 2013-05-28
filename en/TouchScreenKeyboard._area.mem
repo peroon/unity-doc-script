@@ -1,0 +1,5 @@
+<signature>
+area
+</signature>
+Returns portion of the screen which is covered by the keyboard.
+Returns zero-Rect on Android.

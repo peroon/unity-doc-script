@@ -1,0 +1,4 @@
+<signature>
+lockRootRotation
+</signature>
+Enable to make root rotation be baked into the movement of the bones. Disable to make root rotation be stored as root motion.

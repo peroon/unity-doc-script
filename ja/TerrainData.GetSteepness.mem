@@ -1,0 +1,5 @@
+<signature>
+GetSteepness(float,float)
+</signature>
+地形のあるポイントの勾配を取得する
+The /x/ and /y/ values are normalized coordinates in the range 0..1.

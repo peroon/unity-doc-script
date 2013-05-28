@@ -1,0 +1,29 @@
+<signature>
+active
+</signature>
+The active render texture.
+All rendering goes into the active RenderTexture.
+If the active RenderTexture is /null/ everything is rendered in the main window.
+
+When a RenderTexture becomes active its hardware rendering context is automatically created if
+it hasn't been created already.
+CONVERTEXAMPLE
+BEGIN EX
+// Get the contents of a RenderTexture into a Texture2D.
+function GetRTPixels(rt: RenderTexture) {
+	// Keep a note of the currently active RenderTexture.
+	var currentActiveRT = RenderTexture.active;
+	
+	// Set the supplied RenderTexture as the active one.
+	RenderTexture.active = rt;
+	
+	// Create a new Texture2D and read the RenderTexture image
+	// into it.
+	var tex = new Texture2D(rt.width, rt.height);
+	tex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
+	
+	// Set the previously active RenderTexture back before returning.
+	RenderTexture.active = currentActiveRT;
+	return tex;
+}
+END EX

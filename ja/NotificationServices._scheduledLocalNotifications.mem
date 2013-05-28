@@ -1,0 +1,4 @@
+<signature>
+scheduledLocalNotifications
+</signature>
+ローカルで予約されているすべてのスケジュールを返す

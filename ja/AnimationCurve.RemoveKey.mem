@@ -1,0 +1,4 @@
+<signature>
+RemoveKey(int)
+</signature>
+キーを削除する。

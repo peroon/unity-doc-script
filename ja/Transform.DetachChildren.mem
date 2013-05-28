@@ -1,0 +1,11 @@
+<signature>
+DetachChildren()
+</signature>
+親子の関係を切り離す
+親だけ削除し、子を残したい場合などに使用します。
+CONVERTEXAMPLE
+BEGIN EX
+	transform.DetachChildren();
+	Destroy(gameObject);
+END EX
+SA: Transform.parent to detach/change the parent of a single transform.

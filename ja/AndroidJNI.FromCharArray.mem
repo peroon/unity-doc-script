@@ -1,0 +1,5 @@
+<signature>
+FromCharArray(IntPtr)
+</signature>
+IntPtr型をChar配列へ変換する。
+SA: AndroidJNI.GetCharArrayElement, AndroidJNI.GetArrayLength.

@@ -1,0 +1,53 @@
+<signature>
+MultiplyPoint3x4(Vector3)
+</signature>
+行列から位置に変換する（最速）
+行列を使ってVector3型の変換をします。単純な変換であれば、この関数が最速になります。射影処理をしたい場合は、/MultiplyPoint/関数を使用します。
+
+SA: ::ref::MultiplyPoint, ::ref::MultiplyVector.
+CONVERTEXAMPLE
+BEGIN EX
+	// Stretch a mesh at an arbitrary angle around the X axis.
+	
+	// Angle and amount of stretching.
+	var rotAngle: float;
+	var stretch: float;
+	
+	
+	private var mf: MeshFilter;
+	private var origVerts: Vector3[];
+	private var newVerts: Vector3[];
+	
+	
+	function Start () {
+		// Get the Mesh Filter component, save its original vertices
+		// and make a new vertex array for processing.
+		mf = GetComponent.<MeshFilter>();
+		origVerts = mf.mesh.vertices;
+		newVerts = new Vector3[origVerts.Length];
+	}
+	
+	
+	function Update () {
+		// Create a rotation matrix from a Quaternion.
+		var rot = Quaternion.Euler(rotAngle, 0, 0);
+		var m = Matrix4x4.TRS(Vector3.zero, rot, Vector3.one);
+		
+		// Get the inverse of the matrix (ie, to undo the rotation).
+		var inv = m.inverse;
+		
+		// For each vertex...
+		for (var i = 0; i < origVerts.Length; i++) {
+			// Rotate the vertex and scale it along its new Y axis.
+			var pt = m.MultiplyPoint3x4(origVerts[i]);
+			pt.y *= stretch;
+			
+			// Return the vertex to its original rotation (but with the
+			// scaling still applied).
+			newVerts[i] = inv.MultiplyPoint3x4(pt);
+		}
+		
+		// Copy the transformed vertices back to the mesh.
+		mf.mesh.vertices = newVerts;
+	}
+END EX

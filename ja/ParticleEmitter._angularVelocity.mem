@@ -1,0 +1,5 @@
+パーティクルの放出する速度を返す
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.angularVelocity = 100;
+END EX

@@ -1,0 +1,50 @@
+<signature>
+GetWindow(Type)
+GetWindow(Type,bool)
+GetWindow(Type,bool,string)
+GetWindow(Type,bool,string,bool)
+</signature>
+Returns the first EditorWindow of type /t/ which is currently on the screen.
+If there is none, creates and shows new window and returns the instance of it.
+
+{img GetWindowEx.png}\\
+''Simple Empty non-dockable window.''
+BEGIN EX
+	// Simple script that creates a new non-dockable window
+	
+	import UnityEditor;
+	
+	class GetWindowEx extends EditorWindow {	
+		@MenuItem("Example/Display simple Window")
+		static function Initialize() {
+			var window : GetWindowEx = EditorWindow.GetWindow(GetWindowEx, true, "My Empty Window");
+		}
+	}
+END EX
+@param t The type of the window. Must derive from EditorWindow.
+@param utility Set this to true, to create a floating utility window, false to create a normal window.
+@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
+<signature>
+GetWindow<T>()
+GetWindow<T>(bool)
+GetWindow<T>(bool,string)
+GetWindow<T>(string)
+GetWindow<T>(string,bool)
+GetWindow<T>(bool,string,bool)
+</signature>
+Returns the first EditorWindow of type /T/ which is currently on the screen.
+If there is none, creates and shows new window and returns the instance of it.
+@param T The type of the window. Must derive from EditorWindow.
+@param utility Set this to true, to create a floating utility window, false to create a normal window.
+@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
+<signature>
+GetWindow<T>(Type[])
+GetWindow<T>(string,Type[])
+GetWindow<T>(string,bool,Type[])
+</signature>
+Returns the first EditorWindow of type /T/ which is currently on the screen.
+If there is none, creates and shows new window and returns the instance of it.
+The created window will attempt to be docked next to the first founds specified window type.
+@param T The type of the window. Must derive from EditorWindow.
+@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
+@param desiredDockNextTo An array of EditorWindow types that the window will attempt to dock onto.

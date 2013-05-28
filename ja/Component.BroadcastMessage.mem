@@ -1,0 +1,21 @@
+<signature>
+BroadcastMessage(string,object,SendMessageOptions)
+</signature>
+親子関係で子に当たるゲームオブジェクトへ向けてSendMessage関数を送る
+The receiving method can choose to ignore /parameter/ by having zero arguments.
+
+デフォルトの状態だと、SendMessage関数で指定したメソッドがないとエラーを吐く。メソッドがなくてもいい場合は、DontRequireReceiverを指定する
+CONVERTEXAMPLE
+BEGIN EX
+	/// Calls the function ApplyDamage with a value of 5
+	BroadcastMessage ("ApplyDamage", 5.0);
+	
+	// Every script attached to the game object and all its children
+	// that has a ApplyDamage function will be called.
+	function ApplyDamage (damage : float) {
+		print (damage);
+	}
+END EX
+<signature>
+BroadcastMessage(string,SendMessageOptions)
+</signature>

@@ -1,0 +1,4 @@
+<signature>
+GetSide(Vector3)
+</signature>
+平面の表がどちらを向いているかを判断します。

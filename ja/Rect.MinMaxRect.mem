@@ -1,0 +1,4 @@
+<signature>
+MinMaxRect(float,float,float,float)
+</signature>
+最小／最大の値かRectクラスを作成する。

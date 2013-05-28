@@ -1,0 +1,2 @@
+The system cancelled tracking for the touch.
+This might happen if, for example, the user puts the device to her face or simultaneously applies more touches than the system can track (the exact number varies with different platforms). This is the final phase of a touch.

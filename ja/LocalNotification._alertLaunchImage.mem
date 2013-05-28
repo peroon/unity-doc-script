@@ -1,0 +1,4 @@
+<signature>
+alertLaunchImage
+</signature>
+ユーザーがアクションボタンをタップするとき、アプリ起動時の画像を識別する。

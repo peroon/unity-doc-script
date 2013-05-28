@@ -1,0 +1,23 @@
+<signature>
+VerticalSlider(float,float,float,GUILayoutOption[])
+VerticalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
+</signature>
+垂直のスライダーを作成します。
+{img GUILayoutVerticalSlider.png}\\
+''Vertical slider in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a vertical slider control that goes from  10 (top) to 0 (bottom)
+	var vSliderValue : float = 0.0;
+
+	function OnGUI () {
+		vSliderValue = GUILayout.VerticalSlider (vSliderValue, 10.0, 0.0);
+	}
+END EX
+@param value 現在値
+@param topValue 最小値
+@param bottomValue 最大値
+@param slider スライドさせるバーのスタイル
+@param thumb スライドさせる範囲のスタイル
+@param options 幅・高さ
+@return ユーザによって設定された値

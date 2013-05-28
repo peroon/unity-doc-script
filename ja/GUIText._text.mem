@@ -1,0 +1,8 @@
+<signature>
+text
+</signature>
+テキストを設定する
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.text = "Hello";
+END EX

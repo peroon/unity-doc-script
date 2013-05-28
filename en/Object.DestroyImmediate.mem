@@ -1,0 +1,13 @@
+<signature>
+DestroyImmediate(Object)
+DestroyImmediate(Object,bool)
+</signature>
+Destroys the object /obj/ immediately. You are strongly recommended to use Destroy instead.
+This function should only be used when writing editor code since the delayed destruction
+will never be invoked in edit mode.
+In game code you should use Object.Destroy instead. Destroy is always delayed (but
+executed within the same frame).
+Use this function with care since it can destroy assets permanently!
+Also note that you should never iterate through arrays and destroy the elements you are iterating over.  This will cause serious problems (as a general programming practice, not just in Unity).
+@param obj Object to be destroyed.
+@param allowDestroyingAssets Set to true to allow assets to be destoyed.

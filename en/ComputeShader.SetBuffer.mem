@@ -1,0 +1,5 @@
+<signature>
+SetBuffer(int,string,ComputeBuffer)
+</signature>
+This function can either set an input or output compute buffer.
+SA: ::ref::FindKernel, [[ComputeBuffer]].

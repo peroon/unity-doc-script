@@ -1,0 +1,12 @@
+コーラスのHz での変調率。0 から20 の間で設定（デフォルトは0.8Hz）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the rate on the chorus filter to 15hz.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioChorusFilter)
+
+	function Start() {
+		GetComponent(AudioChorusFilter).rate = 15;
+	}
+END EX

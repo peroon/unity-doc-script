@@ -1,0 +1,18 @@
+<signature>
+GetControlID(FocusType)
+GetControlID(int,FocusType)
+GetControlID(GUIContent,FocusType)
+GetControlID(FocusType,Rect)
+GetControlID(int,FocusType,Rect)
+GetControlID(GUIContent,FocusType,Rect)
+</signature>
+Get a unique ID for a control.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints a not used ID that can be assigned to a control
+
+	function OnGUI() {
+		// Gets a ID for a control that cannot receive keyboard focus (A button)
+		Debug.Log("Available id: " + GUIUtility.GetControlID(FocusType.Passive));
+	}
+END EX

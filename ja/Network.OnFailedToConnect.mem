@@ -1,0 +1,11 @@
+<signature>
+OnFailedToConnect(NetworkConnectionError)
+</signature>
+サーバーの接続に失敗したとき、クライアント側で呼び出されます。
+The reason why it fails is passed in as a [[NetworkConnectionError]] enum.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnFailedToConnect(error: NetworkConnectionError) {
+		Debug.Log("Could not connect to server: "+ error);
+	}
+END EX

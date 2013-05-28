@@ -1,0 +1,14 @@
+<signature>
+root
+</signature>
+階層の一番上（最上位の親）のTransformオブジェクト
+(This never returns null, if this Transform doesn't have a parent it returns itself.)
+CONVERTEXAMPLE
+BEGIN EX
+	// Is a collision between two objects in different hierarchies?
+	function OnCollisionEnter(collision : Collision) {
+		if ( collision.transform.root != transform.root ) {
+			print("The colliding objects are not in the same hierarchy");
+		}
+	}
+END EX

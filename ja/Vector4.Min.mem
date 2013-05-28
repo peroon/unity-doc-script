@@ -1,0 +1,11 @@
+<signature>
+Min(Vector4,Vector4)
+</signature>
+2 つのベクトルの最小成分からベクトルを返す
+SA: ::ref::Max function.
+CONVERTEXAMPLE
+BEGIN EX
+	var a : Vector4 = Vector4 (1, 2, 3, 5);
+	var b : Vector4 = Vector4 (4, 3, 2, 0);
+	print (Vector4.Min(a,b)); // prints (1.0,2.0,2.0,0.0)
+END EX

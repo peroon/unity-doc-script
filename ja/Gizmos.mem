@@ -1,0 +1,5 @@
+シーンビューで、視覚的にデバッグなどの補助を与えるために使用されます。
+すべてのGizmosクラスの描画は、オーバーライド関数のOnDrawGizmosまたはOnDrawGizmosSelectedのどちらかで行う必要があります。
+
+OnDrawGizmos関数は、すべてのフレームで呼び出されます。
+OnDrawGizmosSelected関数は、スクリプトをアタッチしているオブジェクトが選択されている場合に呼び出されます。

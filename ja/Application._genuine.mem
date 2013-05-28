@@ -1,0 +1,5 @@
+<signature>
+genuine
+</signature>
+アプリケーションが構成された後、何らかの変更があった場合にfalseを返す
+Otherwise returns true.

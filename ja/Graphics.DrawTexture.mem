@@ -1,0 +1,28 @@
+<signature>
+DrawTexture(Rect,Texture,Material)
+DrawTexture(Rect,Texture,int,int,int,int,Material)
+DrawTexture(Rect,Texture,Rect,int,int,int,int,Material)
+DrawTexture(Rect,Texture,Rect,int,int,int,int,Color,Material)
+</signature>
+設定した座標にテクスチャを描画する
+テクスチャを描画します。これはOnGUIオブジェクト内で、EventType型がRepaintのときに呼び出されます。Graphics.DrawTexture関数より、GUI.DrawTexture関数を使用することをお勧めします。
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a texture on the screen at 10, 10 with 100 width, 100 height.
+
+	var aTexture : Texture;
+
+	function OnGUI() {
+		if(Event.current.type.Equals(EventType.Repaint))
+			Graphics.DrawTexture(Rect(10, 10, 100, 100), aTexture);
+	}
+END EX
+@param screenRect テクスチャを表示する位置。左上が(0, 0) になる
+@param texture [[Texture]] to draw.
+@param sourceRect テクスチャの領域。左下が(0, 0) になる
+@param leftBorder Number of pixels from the left that are not affected by scale.
+@param rightBorder Number of pixels from the left that are not affected by scale.
+@param topBorder Number of pixels from the right that are not affected by scale.
+@param bottomBorder Number of pixels from the bottom that are not affected by scale.
+@param color [[Color]] that modulates the output. The neutral value is (0.5, 0.5, 0.5, 0.5). Set as vertex color for the shader.
+@param mat 使用するマテリアル。nullの場合、デフォルトのマテリアルが使用される

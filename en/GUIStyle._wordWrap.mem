@@ -1,0 +1,11 @@
+<signature>
+wordWrap
+</signature>
+Should the text be wordwrapped?
+This will cause any text contrained to be wordwrapped to fit within the width of a control.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.wordWrap = true;
+	}
+END EX

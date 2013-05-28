@@ -1,0 +1,15 @@
+<signature>
+userAcceleration
+</signature>
+Returns the acceleration that the user is giving to the device.
+The significance of this value is that the effect of gravity (which is also detected by the accelerometer) has been removed to leave just the acceleration from the user's movements.
+CONVERTEXAMPLE
+BEGIN EX
+	var forceVec: Vector3;
+
+	function FixedUpdate() {
+		// Apply forces to an object to match the side-to-side acceleration
+		// the user is giving to the device.
+		rigidbody.AddForce(Input.gyro.userAcceleration.x * forceVec);
+	}
+END EX

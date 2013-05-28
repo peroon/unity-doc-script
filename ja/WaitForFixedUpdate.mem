@@ -1,0 +1,7 @@
+FixedUpdate関数が呼び出されるまで待ちます。
+SA: MonoBehaviour::pref::FixedUpdate.
+WaitForFixedUpdate can only be used with a /yield/ statement in coroutines.
+CONVERTEXAMPLE
+BEGIN EX
+yield new WaitForFixedUpdate ();
+END EX

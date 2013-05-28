@@ -1,0 +1,5 @@
+テキストを太字にします。
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.fontStyle = FontStyle.Bold;
+END EX

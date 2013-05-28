@@ -1,0 +1,5 @@
+<signature>
+GetRow(int)
+</signature>
+行部分の値を返す。
+i 行目の値をVector4型で取得します。i 引数の範囲は0 から3 になります。

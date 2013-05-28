@@ -1,0 +1,15 @@
+コンポーネントメニューに項目を追加することができます。
+ワークフローを改善するためのスクリプトを追加した際、コンポーネントメニューに項目を追加する場合に使用します。重要：再起動が必要です。
+BEGIN EX
+// Javascript example
+@script AddComponentMenu ("Transform/Follow Transform")
+class FollowTransform extends MonoBehaviour {
+}
+END EX
+BEGIN EX NOCHECK
+// C# example:
+[AddComponentMenu("Transform/Follow Transform")]
+public class FollowTransform : MonoBehaviour
+{
+}
+END EX

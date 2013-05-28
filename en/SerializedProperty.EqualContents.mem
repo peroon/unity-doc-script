@@ -1,0 +1,4 @@
+<signature>
+EqualContents(SerializedProperty,SerializedProperty)
+</signature>
+See if contained serialized properties are equal.

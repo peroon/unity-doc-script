@@ -1,0 +1,14 @@
+<signature>
+OnCollisionExit(Collision)
+</signature>
+オブジェクトとの衝突から離れた瞬間に呼び出されます。
+In contrast to OnTriggerExit, OnCollisionExit is passed the [[Collision]] class and not a Collider.
+The [[Collision]] class contains information about contact points, impact velocity etc.
+If you don't use collisionInfo in the function, leave out the collisionInfo parameter as this avoids unneccessary calculations.
+Note that collision events are only sent if one of the colliders also has a non-kinematic rigidbody attached.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnCollisionExit(collisionInfo : Collision) {
+		print("No longer in contact with " + collisionInfo.transform.name);
+	}
+END EX

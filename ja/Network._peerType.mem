@@ -1,0 +1,15 @@
+<signature>
+peerType
+</signature>
+ピア型の状態を返す（切断、接続、サーバー、クライアントなど)
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if (Network.peerType == NetworkPeerType.Disconnected)
+			GUILayout.Label("Not Connected");
+		else if (Network.peerType == NetworkPeerType.Connecting)
+			GUILayout.Label("Connecting");
+		else
+			GUILayout.Label("Network started");
+	}
+END EX

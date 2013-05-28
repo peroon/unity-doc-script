@@ -1,0 +1,4 @@
+<signature>
+MinMaxRect(float,float,float,float)
+</signature>
+Creates a rectangle from min/max coordinate values.

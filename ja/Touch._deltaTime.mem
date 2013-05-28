@@ -1,0 +1,4 @@
+<signature>
+deltaTime
+</signature>
+1つ前にタッチしたところからの時間の変動値を返す

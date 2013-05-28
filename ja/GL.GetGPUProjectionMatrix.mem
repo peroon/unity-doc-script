@@ -1,0 +1,5 @@
+<signature>
+GetGPUProjectionMatrix(Matrix4x4,bool)
+</signature>
+カメラの射影行列から、GPU の射影行列を計算し、取得する
+Unityで射影行列を扱う際は、OpenGLの規則に従って記述してください。また、一部のプラットフォームでネイティブAPIに合うように、ビット変換を行う必要があります。それを可能にするのがこの関数です。この射影行列でRenderTextureクラスにレンダリングする場合は、renderIntoTexture 引数をtrueにする必要があります。

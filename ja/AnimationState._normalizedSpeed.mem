@@ -1,0 +1,8 @@
+正規化されたアニメーションの再生速度。
+This is most commonly used to synchronize playback speed when blending between two animations.
+In most cases it is easier and better to use animation.SyncLayer instead.
+CONVERTEXAMPLE
+BEGIN EX
+	// Sync run and walk speed
+	animation["Run"].normalizedSpeed = animation["Walk"].speed;
+END EX

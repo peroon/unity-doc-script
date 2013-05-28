@@ -1,0 +1,14 @@
+<signature>
+hover
+</signature>
+マウスが上に乗っているときの設定
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the text color that customStyles[0] is using
+	// when the mouse is hovering over a control
+
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			Debug.Log(GUI.skin.customStyles[0].hover.textColor);
+	}
+END EX

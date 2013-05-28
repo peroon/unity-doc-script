@@ -1,0 +1,26 @@
+<signature>
+ActivateCurrentOffMeshLink(bool)
+</signature>
+現在のOffMeshLinkオブジェクトを有効／無効にする
+This function activates or deactivates the off-mesh link
+where the agent is currently waiting. This is useful for
+granting access to newly discovered areas of the game world or
+simulating the creation or removal of an obstacle to an area.
+CONVERTEXAMPLE
+BEGIN EX
+	private var agent: NavMeshAgent;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+	}
+	
+	// Allow all agents to have access to an area once it has officially
+	// been "discovered".
+	function OpenDiscoveredArea(areasDiscovered: Hashtable) {
+		if (agent.isOnOffMeshLink) {
+			if (areasDiscovered.ContainsKey(agent.currentOffMeshLinkData.offMeshLink.name)) {
+				agent.ActivateCurrentOffMeshLink(true);
+			}	
+		}
+	}
+END EX

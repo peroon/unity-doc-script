@@ -1,0 +1,31 @@
+<signature>
+sqrMagnitude
+</signature>
+Returns the squared length of this vector (RO).
+The magnitude of a vector /v/ is calculated as Mathf.Sqrt(Vector3.Dot(v, v)). However, the
+Sqrt calculation is quite complicated and takes longer to execute than the normal arithmetic
+operations. 
+Calculating the squared magnitude instead of using the ::ref::magnitude property is much faster -
+the calculation is basically the same only without the slow Sqrt call. If you are using
+magnitudes simply to compare distances, then you can just as well compare squared magnitudes against
+the squares of distances since the comparison will give the same result.
+
+SA: ::ref::magnitude.
+CONVERTEXAMPLE
+BEGIN EX
+	// detects when the other transform is closer than closeDistance
+	// this is faster than using Vector3.magnitude
+
+	var other : Transform;
+	var closeDistance = 5.0;
+	
+	function Update() {
+		if (other) {
+			var offset = other.position - transform.position;
+			var sqrLen = offset.sqrMagnitude;
+			// square the distance we compare with
+			if( sqrLen < closeDistance*closeDistance )
+				print ("The other transform is close to me!");
+		}
+	}
+END EX

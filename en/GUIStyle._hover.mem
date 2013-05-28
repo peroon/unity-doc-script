@@ -1,0 +1,13 @@
+<signature>
+hover
+</signature>
+Rendering settings for when the mouse is hovering over the control.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the text color that button is using
+	// when the mouse is hovering over a control
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.hover.textColor);
+	}
+END EX

@@ -1,0 +1,17 @@
+<signature>
+RegisterHost(string,string,string)
+</signature>
+マスターサーバーにサーバーを登録します。
+マスターサーバーのアドレス情報が変更されない場合は、デフォルトであるUnity Technologies 社が用意したマスターサーバーを使用します。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if (GUILayout.Button ("Start Server")) {
+			// Use NAT punchthrough if no public IP present
+			var useNat = !Network.HavePublicAddress();
+			Network.InitializeServer(32, 25002, useNat);
+			MasterServer.RegisterHost("MyUniqueGameType", 
+				"JohnDoes game", "l33t game for all");
+		}
+	}
+END EX

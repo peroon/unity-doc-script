@@ -1,0 +1,33 @@
+<signature>
+Blit(Texture,RenderTexture)
+Blit(Texture,RenderTexture,Material,int)
+</signature>
+Texture型のデータをRenderTexrureへコピーする
+This is mostly used for implementing [[wiki:comp-ImageEffects|image effects]],
+and requires Unity Pro.
+
+Blit sets /dest/ to be RenderTexture::pref::active render texture, sets /source/ as
+@@_MainTex@@ property on the material, and draws a full-screen quad.
+
+SA: Graphics.BlitMultiTap, [[wiki:comp-ImageEffects|image effects]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Copies aTexture to rTex and displays it in all cameras.
+
+	var aTexture : Texture;
+	var rTex : RenderTexture;
+
+	function Start() {
+		if(!aTexture || !rTex)
+			Debug.LogError("A texture or a render texture are missing, assign them.");
+	}
+
+	function Update () {
+		Graphics.Blit (aTexture, rTex);
+	}
+END EX
+@param source コピー元の画像
+@param dest コピー先のRenderTextureオブジェクト。nullの場合、直接画
+面に転送する
+@param mat コピーに使用するマテリアル
+@param pass マテリアルの描画するパス。デフォルトは－ 1で、すべてのパスを描画する

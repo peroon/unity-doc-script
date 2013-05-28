@@ -1,0 +1,4 @@
+<signature>
+registrationError
+</signature>
+NotificationServices.RegisterForRemoteNotificationTypes関数によるリモート通知の登録で発生する可能性のあるエラーを返す（読み込み専用）

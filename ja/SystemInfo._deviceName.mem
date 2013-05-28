@@ -1,0 +1,4 @@
+<signature>
+deviceName
+</signature>
+デバイス名を返す（読み込み専用）

@@ -1,0 +1,4 @@
+<signature>
+intParameter
+</signature>
+Int型のパラメーターを格納する。

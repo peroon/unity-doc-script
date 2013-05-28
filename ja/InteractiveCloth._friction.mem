@@ -1,0 +1,8 @@
+摩擦を設定する。
+Must be between zero and one.
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the cloth slide on any surface
+
+	transform.GetComponent(InteractiveCloth).friction = 0;
+END EX

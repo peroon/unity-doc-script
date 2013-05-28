@@ -1,0 +1,10 @@
+<signature>
+ctor(Vector3,Vector3)
+</signature>
+Creates a ray starting at /origin/ along /direction/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Create a ray from the transform position along the transform's z-axis
+
+	var ray = new Ray (transform.position, transform.forward);
+END EX

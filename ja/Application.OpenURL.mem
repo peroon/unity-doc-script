@@ -1,0 +1,11 @@
+<signature>
+OpenURL(string)
+</signature>
+Web ブラウザでURL の場所を開く。
+ブラウザで指定したURL を開きます。スタンドアローン、iOS、Androidでは、新しくWebブラウザが立ち上がります。Web Player では、プレイしている現在のページが遷移するので注意してください。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Application.OpenURL ("http://unity3d.com/");
+	}
+END EX

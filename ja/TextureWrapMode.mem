@@ -1,0 +1,4 @@
+画像のラップモードを選択します。
+You can either Tile the texture (Repeat) or map a single texture on the object (Clamp)
+
+SA: Texture.wrapMode, [[wiki:class-Texture2D|texture assets]].

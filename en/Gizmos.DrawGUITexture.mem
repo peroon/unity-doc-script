@@ -1,0 +1,29 @@
+<signature>
+DrawGUITexture(Rect,Texture)
+DrawGUITexture(Rect,Texture,Material)
+DrawGUITexture(Rect,Texture,int,int,int,int)
+DrawGUITexture(Rect,Texture,int,int,int,int,Material)
+</signature>
+Draw a texture in the scene.
+The chosen texture is drawn in 3D space on a "screen" defined by the XY plane (ie,
+the plane where the Z coordinate is zero). The values of the texture rectangle are given in scene
+units. The optional border values specify an inset from each edge within the rectangle in scene units; the texture
+is drawn inside the inset rectangle and the edge pixels are repeated outwards. This is a useful quick way
+to create a large background region around the main texture when its edges are of a single colour.
+
+This function can be useful for creating GUI backgrounds in conjunction with a camera
+pointing directly at the texture.
+BEGIN EX
+	var myTexture : Texture;
+
+	function OnDrawGizmos () {
+	 	Gizmos.DrawGUITexture(Rect(10, 10, 20, 20), myTexture);
+	}
+END EX
+@param screenRect The size and position of the texture on the "screen" defined by the XY plane.
+@param texture The texture to be displayed.
+@param mat An optional material to apply the texture.
+@param leftBorder Inset from the rectangle's left edge.
+@param rightBorder Inset from the rectangle's right edge.
+@param topBorder Inset from the rectangle's top edge.
+@param bottomBorder Inset from the rectangle's bottom edge.

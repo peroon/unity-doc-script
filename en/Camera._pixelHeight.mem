@@ -1,0 +1,8 @@
+<signature>
+pixelHeight
+</signature>
+How tall is the camera in pixels (RO).
+CONVERTEXAMPLE
+BEGIN EX
+	print ("Camera is " + camera.pixelHeight + " pixels high");
+END EX

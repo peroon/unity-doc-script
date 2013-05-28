@@ -1,0 +1,9 @@
+<signature>
+GetString(string,string)
+</signature>
+キーからString型の値を取得する
+If it doesn't exist, it will return /defaultValue/.
+CONVERTEXAMPLE
+BEGIN EX
+	print (PlayerPrefs.GetString("Player Name"));
+END EX

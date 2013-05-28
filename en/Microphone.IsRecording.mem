@@ -1,0 +1,5 @@
+<signature>
+IsRecording(string)
+</signature>
+Query if a device is currently recording.
+@param deviceName The name of the device. Passing null or an empty string will pick the default device. Get device names with [[Microphone.devices|Microphone.devices]].

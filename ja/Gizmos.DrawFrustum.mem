@@ -1,0 +1,4 @@
+<signature>
+DrawFrustum(Vector3,float,float,float,float)
+</signature>
+錐台を描画する

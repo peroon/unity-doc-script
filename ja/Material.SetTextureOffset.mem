@@ -1,0 +1,21 @@
+<signature>
+SetTextureOffset(string,Vector2)
+</signature>
+プロパティ名で画像のオフセットを設定します。
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTextureOffset property, ::ref::GetTextureOffset.
+CONVERTEXAMPLE
+BEGIN EX
+	// Scroll main texture based on time
+
+	var scrollSpeed : float = 0.5;
+
+	function Update () {
+		var offset : float = Time.time * scrollSpeed;
+		renderer.material.SetTextureOffset ("_MainTex", Vector2(offset,0));
+	}
+END EX

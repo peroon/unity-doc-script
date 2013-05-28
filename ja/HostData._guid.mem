@@ -1,0 +1,16 @@
+<signature>
+guid
+</signature>
+NATパンチスルーとの接続時に必要なホストのGUIDを返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Requests info from the master server and prints
+	// the GUID
+
+	function Start() {
+		var hostData : HostData[] = MasterServer.PollHostList();
+		for(var element : HostData in hostData) {
+			Debug.Log(element.gameName + " guid: " + element.guid + "\n");
+		}
+	}
+END EX

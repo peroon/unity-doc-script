@@ -1,0 +1,5 @@
+<signature>
+CreateJNIArgArray(object[])
+</signature>
+AndroidJNIオブジェクトでCallMethod関数を介して呼び出されるとき、引数リストとして使用される配列を作成する。
+@param args 引数として渡す配列

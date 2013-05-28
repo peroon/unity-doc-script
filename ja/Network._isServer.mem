@@ -1,0 +1,13 @@
+<signature>
+isServer
+</signature>
+ピアのタイプがサーバーである場合は、trueを返す
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if (Network.isServer)
+			GUILayout.Label("Running as a server");
+		else if (Network.isClient)
+			GUILayout.Label("Running as a client");
+	}
+END EX

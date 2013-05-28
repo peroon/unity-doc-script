@@ -1,0 +1,2 @@
+オブジェクトが通った痕跡を表現する際に使用します。
+This class is a script interface for a [[wiki:class-TrailRenderer|trail renderer]] component.

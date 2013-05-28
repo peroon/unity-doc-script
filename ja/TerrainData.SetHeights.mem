@@ -1,0 +1,4 @@
+<signature>
+SetHeights(int,int,float[,])
+</signature>
+ハイトマップのサンプルの配列を設定する

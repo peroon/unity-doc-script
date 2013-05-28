@@ -1,0 +1,29 @@
+<signature>
+BeginVertical(GUILayoutOption[])
+BeginVertical(GUIStyle,GUILayoutOption[])
+BeginVertical(string,GUIStyle,GUILayoutOption[])
+BeginVertical(Texture,GUIStyle,GUILayoutOption[])
+BeginVertical(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+要素を垂直に並べる、開始位置を作成する
+All controls rendered inside this element will be placed vertically below each other. The group must be closed with a call to EndVertical.
+
+{img GUILayoutVertical.png}\\
+''Vertical Layout.''
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI () {	
+		// Starts a vertical group
+		GUILayout.BeginVertical ("box");
+
+		GUILayout.Button ("I'm the top button");
+		GUILayout.Button ("I'm the bottom button");
+		
+		GUILayout.EndVertical();
+	}
+END EX
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さ

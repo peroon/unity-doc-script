@@ -1,0 +1,2 @@
+StretchParticles変数がStretchedのときのパーティクルを、速さによって引き伸ばされたように表示する
+Use this to make particles get longer as their speed increases.

@@ -1,0 +1,4 @@
+<signature>
+vertical
+</signature>
+上辺から下辺の最短距離を返す（読み込み専用）。

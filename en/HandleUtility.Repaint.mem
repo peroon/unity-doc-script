@@ -1,0 +1,4 @@
+<signature>
+Repaint()
+</signature>
+Repaint the current view.

@@ -1,0 +1,6 @@
+The near clipping plane distance.
+CONVERTEXAMPLE
+BEGIN EX
+	camera.nearClipPlane = 0.1;
+END EX
+SA: [[wiki:class-Camera|camera component]].

@@ -1,0 +1,14 @@
+<signature>
+Authorize(string,string,long,string)
+</signature>
+Web Playerのみで使用する関数になります。
+Web Player のキャッシュを有効にする（ライセンスが必要）
+ If you have a dedicated cache license, call this function at WebPlayer application startup with the license information provided to you.
+Starting with the release of Unity 3.2, all WebPlayer applications have access to a 50 MiB shared cache; calling the Authorize() function is not necessary.
+Unity 3.4 以降では、この関数を使用せずにWebPlayerでは50MB、スタンドアローン、iOS、Android では4GB のキャッシュを使用できます。
+Web Player で50MB 以上のキャッシュを使用したい場合、Unity Technologies社に連絡し申請をしなければなりません。そしてこの関数で認証をしなければ、50MB以上のキャッシュを使用することができません。
+@param string Signature The authentification signature provided by Unity.
+@param int Size The number of bytes allocated to this cache.
+<signature>
+Authorize(string,string,long,int,string)
+</signature>

@@ -1,0 +1,4 @@
+<signature>
+supportsAccelerometer
+</signature>
+Is an accelerometer available on the device?

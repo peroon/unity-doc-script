@@ -1,0 +1,2 @@
+すべてのテクスチャの異方性フィルタリングを強制的に有効にする。
+SA: QualitySettings.anisotropicFiltering.

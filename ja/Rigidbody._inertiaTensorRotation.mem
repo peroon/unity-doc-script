@@ -1,0 +1,8 @@
+慣性テンソルの回転角度。
+If you don't set intertia tensor rotation from a script it will be calculated automatically from all colliders attached to the rigidbody.
+CONVERTEXAMPLE
+BEGIN EX
+	// Resets the inertia tensor to be the coordinate system of the transform
+
+	rigidbody.inertiaTensorRotation = Quaternion.identity;
+END EX

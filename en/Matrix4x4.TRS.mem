@@ -1,0 +1,48 @@
+<signature>
+TRS(Vector3,Quaternion,Vector3)
+</signature>
+Creates a translation, rotation and scaling matrix.
+The returned matrix is such that places things at position /pos/,
+oriented in rotation /q/ and scaled by /s/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Translate, rotate and scale a mesh. Try varying
+	// the parameters in the inspector while running
+	// to see the effect they have.
+	
+	var translation: Vector3;
+	var eulerAngles: Vector3;
+	var scale = Vector3(1, 1, 1);
+	
+	
+	private var mf: MeshFilter;
+	private var origVerts: Vector3[];
+	private var newVerts: Vector3[];
+	
+	
+	function Start () {
+		// Get the Mesh Filter component, save its original vertices
+		// and make a new vertex array for processing.
+		mf = GetComponent.<MeshFilter>();
+		origVerts = mf.mesh.vertices;
+		newVerts = new Vector3[origVerts.Length];
+	}
+	
+	
+	function Update () {
+		// Set a Quaternion from the specified Euler angles.
+		var rotation = Quaternion.Euler(eulerAngles.x, eulerAngles.y, eulerAngles.z);
+		
+		// Set the translation, rotation and scale parameters.
+		var m = Matrix4x4.TRS(translation, rotation, scale);
+		
+		// For each vertex...
+		for (var i = 0; i < origVerts.Length; i++) {
+			// Apply the matrix to the vertex.
+			newVerts[i] = m.MultiplyPoint3x4(origVerts[i]);
+		}
+		
+		// Copy the transformed vertices back to the mesh.
+		mf.mesh.vertices = newVerts;
+	}
+END EX

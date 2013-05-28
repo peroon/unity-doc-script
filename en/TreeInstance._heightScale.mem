@@ -1,0 +1,4 @@
+<signature>
+heightScale
+</signature>
+Height scale of this instance (compared to the prototype's size).

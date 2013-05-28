@@ -1,0 +1,2 @@
+ディスプレイの解像度を設定します。
+Resolution structures are returned by Screen.resolutions property.

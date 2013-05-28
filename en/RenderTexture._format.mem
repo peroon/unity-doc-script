@@ -1,0 +1,5 @@
+<signature>
+format
+</signature>
+The format of the render texture.
+SA: [[RenderTextureFormat]].

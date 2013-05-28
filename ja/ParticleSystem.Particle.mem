@@ -1,0 +1,2 @@
+パーティクルを扱うインタフェースです。
+SA: ParticleSystem, ParticleSystem.GetParticles, ParticleSystem.SetParticles.

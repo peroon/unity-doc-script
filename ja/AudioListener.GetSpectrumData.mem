@@ -1,0 +1,12 @@
+<signature>
+GetSpectrumData(int,int,FFTWindow)
+</signature>
+リスナーのスペクトルデータのブロックを返す
+リスナーのスペクトルデータをfloat型の配列で返します。配列の長さは2 のべき乗である必要があります（最小64、最大8192）。
+Note, the more complex window type, the better the quality, but reduced speed.
+<signature>
+GetSpectrumData(float[],int,FFTWindow)
+</signature>
+リスナーのスペクトルデータのブロックを返す
+リスナーのスペクトルデータをfloat型の配列で返します。配列の長さは2 のべき乗である必要があります（最小64、最大8192）。
+Note, the more complex window type, the better the quality, but reduced speed.

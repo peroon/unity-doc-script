@@ -1,0 +1,2 @@
+ログのタイプを表します。Application.RegisterLogCallback関数で使用されます。
+SA: Application.RegisterLogCallback.

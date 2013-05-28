@@ -1,0 +1,3 @@
+最大距離を設定する
+The distanced that will be maintained, will be kept between minDistance and maxDistance.
+Both values are relative to the distance between the center of masses when the scene was first loaded.

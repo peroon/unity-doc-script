@@ -1,0 +1,8 @@
+<signature>
+Asin(float)
+</signature>
+Returns the arc-sine of /f/ - the angle in radians whose sine is /f/.
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Asin(0.5));
+END EX

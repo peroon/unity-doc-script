@@ -1,0 +1,4 @@
+<signature>
+enabled
+</signature>
+コンパスの有効／無効の設定。コンパスを更新する際にはInput.location.Start関数を呼び出す

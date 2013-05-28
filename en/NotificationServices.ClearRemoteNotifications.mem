@@ -1,0 +1,4 @@
+<signature>
+ClearRemoteNotifications()
+</signature>
+Discards of all received remote notifications.

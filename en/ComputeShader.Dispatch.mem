@@ -1,0 +1,7 @@
+<signature>
+Dispatch(int,int,int,int)
+</signature>
+Execute a compute shader.
+This functions "runs" the compute shader, with the given work size as
+indicated by threadsX, threadsY, threadsZ parameters.
+SA: ::ref::FindKernel, [[wiki:Compute Shaders|Compute Shaders]].

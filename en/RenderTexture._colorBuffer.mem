@@ -1,0 +1,5 @@
+<signature>
+colorBuffer
+</signature>
+Color buffer of the render texture (RO).
+SA: [[RenderBuffer]], ::ref::depthBuffer, [[Graphics.SetRenderTarget]].

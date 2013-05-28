@@ -1,0 +1,4 @@
+<signature>
+actionInProgress
+</signature>
+Is the banner currently executing a user-triggered action? (RO)

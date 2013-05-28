@@ -1,0 +1,23 @@
+<signature>
+HorizontalSlider(float,float,float,GUILayoutOption[])
+HorizontalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
+</signature>
+水平のスライダーを作成します。
+{img GUILayoutHorizontalSlider.png}\\
+''Horizontal slider in the GameView.''
+CONVERTEXAMPLE
+BEGIN EX
+	var hSliderValue : float = 0.0;
+
+	function OnGUI () {
+		hSliderValue = GUILayout.HorizontalSlider (hSliderValue, 0.0, 10.0);
+                GUILayout.Label("This text makes just space");
+	}
+END EX
+@param value 現在値
+@param leftValue 最小値
+@param rightValue 最大値
+@param slider スライドさせるバーのスタイル
+@param thumb スライドさせる範囲のスタイル
+@param options 幅・高さ
+@return The value that has been set by the user.

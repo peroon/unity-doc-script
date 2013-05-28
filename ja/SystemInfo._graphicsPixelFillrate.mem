@@ -1,0 +1,14 @@
+<signature>
+graphicsPixelFillrate
+</signature>
+グラフィックデバイスのおおよそのピクセルフィルレートを返す（読み込み専用）
+Returns pixel fill-rate in megapixels/second, or -1 if fillrate
+of the device is not known.
+
+SA: SystemInfo.graphicsShaderLevel.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints "3800" on GeForce 8600M GT (3800 MPix/s)
+
+	print (SystemInfo.graphicsPixelFillrate);
+END EX

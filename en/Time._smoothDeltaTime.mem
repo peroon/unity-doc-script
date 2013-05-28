@@ -1,0 +1,4 @@
+<signature>
+smoothDeltaTime
+</signature>
+A smoothed out Time.deltaTime (RO).

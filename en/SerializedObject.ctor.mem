@@ -1,0 +1,10 @@
+<signature>
+ctor(Object)
+</signature>
+Create SerializedObject for inspected object.
+SA: ::ref::Update.
+<signature>
+ctor(Object[])
+</signature>
+Create SerializedObject for inspected object.
+SA: ::ref::Update.

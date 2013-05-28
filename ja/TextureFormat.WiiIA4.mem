@@ -1,0 +1,2 @@
+Wii専用のテクスチャフォーマット。明度4ビット。アルファ4 ビット
+SA: Texture2D.format, [[wiki:class-Texture2D|texture assets]].

@@ -1,0 +1,13 @@
+<signature>
+Stop()
+</signature>
+停止する。
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	function Start()
+	{
+		audio.Stop();
+	}
+END EX
+SA: ::ref::Play, ::ref::Pause functions.

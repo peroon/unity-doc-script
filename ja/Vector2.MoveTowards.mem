@@ -1,0 +1,5 @@
+<signature>
+MoveTowards(Vector2,Vector2,float)
+</signature>
+2点間の位置を返す。
+2点間における距離の差分の範囲内で設定する本質的にはLerp関数と同じ扱いになります。Lerp関数との違いは、距離で位置を返すことです。また、決して目標値を超えることはありません。

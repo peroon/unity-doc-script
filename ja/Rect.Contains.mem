@@ -1,0 +1,15 @@
+<signature>
+Contains(Vector2)
+Contains(Vector3)
+</signature>
+ポイントがRectオブジェクト内に入っている場合、trueを返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// prints inside when mouse is in lower left corner
+
+	function Update () {
+		var rect = Rect (0, 0, 150, 150);
+		if (rect.Contains(Input.mousePosition))
+			print("Inside");
+	}
+END EX

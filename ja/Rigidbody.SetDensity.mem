@@ -1,0 +1,9 @@
+<signature>
+SetDensity(float)
+</signature>
+密度の値をセットし、質量を変化させる。
+This is useful to set the mass to a value which scales with the size of the colliders.
+CONVERTEXAMPLE
+BEGIN EX
+	rigidbody.SetDensity(1.5);
+END EX

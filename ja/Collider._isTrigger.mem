@@ -1,0 +1,9 @@
+衝突の際のトリガーの有効／無効を設定する
+A trigger doesn't collide with rigid bodies.
+Instead it sends ::ref::OnTriggerEnter, ::ref::OnTriggerExit and ::ref::OnTriggerStay message
+when a rigidbody enters or exits the trigger.
+CONVERTEXAMPLE
+BEGIN EX
+	// Turns the attached to collider into a trigger.
+	collider.isTrigger = true;
+END EX

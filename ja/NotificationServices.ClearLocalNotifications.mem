@@ -1,0 +1,4 @@
+<signature>
+ClearLocalNotifications()
+</signature>
+受信したローカル通知を削除する

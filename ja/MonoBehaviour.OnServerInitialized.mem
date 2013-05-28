@@ -1,0 +1,10 @@
+<signature>
+OnServerInitialized()
+</signature>
+Network.InitializeServer関数が呼び出され完了したときに呼び出される。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnServerInitialized() {
+		Debug.Log("Server initialized and ready");
+	}
+END EX

@@ -1,0 +1,16 @@
+<signature>
+OnTriggerStay(Collider)
+</signature>
+Triggerオブジェクトに他のColliderオブジェクトが留まっているときに毎フレーム呼び出される。
+This message is sent to the trigger and the collider that touches the trigger.
+Note that trigger events are only sent if one of the colliders also has a rigid body attached.
+CONVERTEXAMPLE
+BEGIN EX
+	// Applies an upwards force to all rigidbodies that enter the trigger.
+
+	function OnTriggerStay (other : Collider) {
+		if (other.attachedRigidbody)
+			other.attachedRigidbody.AddForce(Vector3.up * 10);
+	}
+END EX
+コルーチン可能

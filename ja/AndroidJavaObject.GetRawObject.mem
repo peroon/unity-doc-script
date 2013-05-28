@@ -1,0 +1,4 @@
+<signature>
+GetRawObject()
+</signature>
+生のJava オブジェクトを取得する。

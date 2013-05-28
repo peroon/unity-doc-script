@@ -1,0 +1,5 @@
+<signature>
+actualRenderingPath
+</signature>
+実際使われているレンダリングパス(読み取り専用)
+SA: ::ref::renderingPath, [[RenderingPath]].

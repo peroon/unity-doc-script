@@ -1,0 +1,14 @@
+<signature>
+GetAxisRaw(string)
+</signature>
+特定のInput Manager で設定した情報を、/axisName/引数で取得する。
+－1から1まで値を返します。
+Since input is not smoothed, keyboard input will always be either -1, 0 or 1.
+This is useful if you want to do all smoothing of keyboard input processing yourself.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		var speed : float = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+		transform.Rotate (0, speed, 0);	
+	}
+END EX

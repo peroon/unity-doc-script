@@ -1,0 +1,4 @@
+<signature>
+Clear<T>(T[])
+</signature>
+Clears the array.

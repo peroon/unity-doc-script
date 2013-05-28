@@ -1,0 +1,2 @@
+Export package option. Multiple options can be combined together using the | operator.
+SA: AssetDatabase.ExportPackage.

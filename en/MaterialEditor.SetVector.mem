@@ -1,0 +1,6 @@
+<signature>
+SetVector(string,Vector4)
+</signature>
+Set the value of a given vector property.
+@param propertyName Name of the vector property.
+@param value Vector to set.

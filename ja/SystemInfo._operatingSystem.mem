@@ -1,0 +1,10 @@
+<signature>
+operatingSystem
+</signature>
+OS 名とバージョンを返す（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints "Windows XP Service Pack 3 (5.1.2600)" on Windows XP SP3
+
+	print (SystemInfo.operatingSystem);
+END EX

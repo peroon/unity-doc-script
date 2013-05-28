@@ -1,0 +1,8 @@
+<signature>
+SetString(string,string)
+</signature>
+Sets the value of the preference identified by /key/.
+CONVERTEXAMPLE
+BEGIN EX
+	PlayerPrefs.SetString("Player Name", "Foobar");
+END EX

@@ -1,0 +1,20 @@
+<signature>
+GetButtonUp(string)
+</signature>
+特定のInput Manager で設定した情報を/buttonName/引数で取得する。
+You need to call this function from the MonoBehaviour::pref::Update function, since the state gets reset each frame.	
+ボタンから指を話したとき、trueを返す。
+
+Use this only when implementing action like events IE: shooting a weapon.\\
+Use Input.GetAxis for any kind of movement behaviour.
+CONVERTEXAMPLE
+BEGIN EX
+	// Instantiates a projectile whenever the user hits the Fire1 Button.
+
+	var projectile : GameObject;
+	function Update () {
+		if (Input.GetButtonUp ("Fire1")) {
+			Instantiate (projectile, transform.position, transform.rotation);
+		}
+	}
+END EX

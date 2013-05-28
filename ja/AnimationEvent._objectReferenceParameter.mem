@@ -1,0 +1,4 @@
+<signature>
+objectReferenceParameter
+</signature>
+基準となるObject型のパラメーターを格納する。

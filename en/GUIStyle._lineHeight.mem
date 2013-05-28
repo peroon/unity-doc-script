@@ -1,0 +1,12 @@
+<signature>
+lineHeight
+</signature>
+The height of one line of text with this style, measured in pixels. (RO)
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the lineHeight value.
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.lineHeight);
+	}
+END EX

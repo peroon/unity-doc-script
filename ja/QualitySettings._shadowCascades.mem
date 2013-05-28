@@ -1,0 +1,5 @@
+<signature>
+shadowCascades
+</signature>
+Directional Light に使用するカスケードの数を設定する。
+SA: [[wiki:class-QualitySettings|Quality Settings]].

@@ -1,0 +1,5 @@
+アンカーを返す
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).anchor = TextAnchor.MiddleCenter;
+END EX

@@ -1,0 +1,4 @@
+<signature>
+debug
+</signature>
+有効にするとAndroidJNIHelperオブジェクト経由でログを呼び出す。

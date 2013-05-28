@@ -1,0 +1,5 @@
+<signature>
+Reset()
+</signature>
+Move to first property of the object.
+SA: ::ref::Next, ::ref::NextVisible.

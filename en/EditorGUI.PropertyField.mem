@@ -1,0 +1,13 @@
+<signature>
+PropertyField(Rect,SerializedProperty)
+PropertyField(Rect,SerializedProperty,GUIContent)
+PropertyField(Rect,SerializedProperty,bool)
+PropertyField(Rect,SerializedProperty,GUIContent,bool)
+</signature>
+Make a field for [[SerializedProperty]].
+SA: [[SerializedProperty]], [[SerializedObject]].
+@param position Where to show the property field.
+@param property The SerializedProperty to make a field for.
+@param label Optional label to use. If not specified the label of the property itself is used. Use GUIContent.none to not display a label at all.
+@param includeChildren If /true/ the property including children is drawn; otherwise only the control itself (such as only a foldout but nothing below it).
+@return True if the property has children and is expanded and includeChildren was set to false; otherwise false.

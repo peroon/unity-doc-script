@@ -1,0 +1,8 @@
+<signature>
+particleEmitter
+</signature>
+ParticleEmitter情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.emit = true;
+END EX

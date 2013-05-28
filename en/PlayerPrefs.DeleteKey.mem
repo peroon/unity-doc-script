@@ -1,0 +1,4 @@
+<signature>
+DeleteKey(string)
+</signature>
+Removes /key/ and its corresponding value from the preferences.

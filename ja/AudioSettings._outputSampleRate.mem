@@ -1,0 +1,5 @@
+<signature>
+outputSampleRate
+</signature>
+ミキサーの出力レートを取得する。
+Note that setting a new samplerate will reset the audio system (all audio will stop).

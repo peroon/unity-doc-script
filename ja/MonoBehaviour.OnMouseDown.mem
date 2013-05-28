@@ -1,0 +1,20 @@
+<signature>
+OnMouseDown()
+</signature>
+ユーザーがマウスのボタンをクリックしたときに呼び出される。
+This event is sent to all scripts of the [[Collider]] or [[GUIElement]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Loads the level named "SomeLevel" as a response
+	// to the user clicking on the object
+
+	function OnMouseDown () {
+		Application.LoadLevel ("SomeLevel");
+	}
+END EX
+This function is not called on objects that belong to Ignore Raycast layer.
+
+コルーチン可能
+この関数が呼び出されるためには、オブジェクトがコライダーをアタッチしているか、GUI エレメントである必要があります。
+
+__IMPORTANT:__ This function has no effect on iPhone.

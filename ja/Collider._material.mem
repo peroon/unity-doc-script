@@ -1,0 +1,12 @@
+<signature>
+material
+</signature>
+コライダーが使用しているマテリアルの情報を返す
+If material is shared by colliders,
+it will duplicate the material and assign it to the collider.
+CONVERTEXAMPLE
+BEGIN EX
+	// Makes the collider act like ice.
+	collider.material.dynamicFriction = 0;
+	collider.material.staticFriction = 0;
+END EX

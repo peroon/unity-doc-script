@@ -1,0 +1,59 @@
+<signature>
+GetPixelBilinear(float,float)
+</signature>
+Returns filtered pixel color at normalized coordinates (u, v).
+Coordinates /u/ and /v/ go from 0.0 to 1.0, just like UV coordinates in meshes.
+If coordinates are out of bounds (larger than 1.0 or smaller than 0.0),
+they will be clamped or repeated based on the texture's wrap mode.
+
+Returned pixel color is bilinearly filtered.
+
+The texture must have the __Read/Write Enabled__ flag set in the import settings, otherwise this function will fail.
+CONVERTEXAMPLE
+BEGIN EX
+	// "Warp" a texture by squashing its pixels to one side.
+	// This involves sampling the image at non-integer pixel
+	// positions to ensure a smooth effect.
+	
+	// Source image.
+	var sourceTex: Texture2D;
+	
+	// Amount of "warping".
+	var warpFactor = 1.0;
+	
+	private var destTex: Texture2D;
+	private var destPix: Color[];
+	
+	
+	function Start () {
+		// Set up a new texture with the same dimensions as the original.
+		destTex = new Texture2D(sourceTex.width, sourceTex.height);
+		destPix = new Color[destTex.width * destTex.height];
+		
+		// For each pixel in the destination texture...
+		for (var y = 0; y < destTex.height; y++) {
+			for (var x = 0; x < destTex.width; x++) {
+				// Calculate the fraction of the way across the image
+				// that this pixel positon corresponds to.
+				var xFrac = x * 1.0 / (destTex.width - 1);
+				var yFrac = y * 1.0 / (destTex.height - 1);
+				
+				// Take the fractions (0..1)and raise them to a power to apply
+				// the distortion.
+				var warpXFrac = Mathf.Pow(xFrac, warpFactor);
+				var warpYFrac = Mathf.Pow(yFrac, warpFactor);
+				
+				// Get the non-integer pixel positions using GetPixelBilinear.
+				destPix[y * destTex.width + x] = sourceTex.GetPixelBilinear(warpXFrac, warpYFrac);
+			}
+		}
+		
+		// Copy the pixel data to the destination texture and apply the change.
+		destTex.SetPixels(destPix);
+		destTex.Apply();
+		
+		// Set our object's texture to the newly warped image.
+		renderer.material.mainTexture = destTex;
+	}
+END EX
+SA: ::ref::GetPixel.

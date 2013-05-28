@@ -1,0 +1,5 @@
+<signature>
+Stop(bool)
+</signature>
+現在のパスに沿ってエージェントの動きを止める
+@param stopUpdates falseの場合、減速しながら停止を行う。デフォルトはfalse

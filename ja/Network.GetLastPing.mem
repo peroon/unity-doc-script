@@ -1,0 +1,17 @@
+<signature>
+GetLastPing(NetworkPlayer)
+</signature>
+プレイヤーの最後に返されたping時間を返します。
+プレイヤーが見つけられない場合、－ 1を返します。
+pingは自動的に数秒おきに送信されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUILayout.Label("Player ping values");
+		for (var i : int = 0; i < Network.connections.Length; i++) {
+			GUILayout.Label("Player " + 
+				Network.connections[i] + " - " + 
+				Network.GetLastPing(Network.connections[i]) + " ms");
+		}
+	}
+END EX

@@ -1,0 +1,6 @@
+<signature>
+End(string)
+</signature>
+録音を停止する。
+@param deviceName マイクのデバイス名。空（""）やnullの場合、デフォルトのデバ
+イスが使用される。

@@ -1,0 +1,9 @@
+<signature>
+relativeForce
+</signature>
+The force - relative to the rigid bodies coordinate system - applied every frame.
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the rigidbody forward
+	constantForce.relativeForce = Vector3.forward * 10;
+END EX

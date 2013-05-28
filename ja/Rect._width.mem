@@ -1,0 +1,10 @@
+<signature>
+width
+</signature>
+幅
+CONVERTEXAMPLE
+BEGIN EX
+	var rect = Rect (0, 0, 10, 10);
+	print(rect.width);
+	rect.width = 20;
+END EX

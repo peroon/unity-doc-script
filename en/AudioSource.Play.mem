@@ -1,0 +1,22 @@
+<signature>
+Play()
+Play(ulong)
+</signature>
+Plays the ::ref::clip with an optional certain delay.
+The delay parameter is deprecated, please use the newer PlayDelayed function instead which specifies the delay in seconds.
+
+__Note:__ To obtain sample accuracy with an [[AudioClip]] with a different samplerate (than 44.1 khz) you have to do the math yourselves. Delaying an audiosource with an attached [[AudioClip]] with samplerate of,
+say, 32 khz, with 16k samples(.5 sec) is done by Play(22050). ((44100/32000) * 16000 = 22050).
+
+__Note:__ The AudioSource::ref::PlayScheduled API will give you more accurate control over when the audio clip is played.
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	function Start() {
+		audio.Play();
+		// Delay a clip by 1 sec (44100 samples)
+		audio.Play(44100);
+	}
+END EX
+SA: ::ref::Stop, ::ref::Pause, ::ref::clip and ::ref::PlayScheduled functions.
+@param delay Delay in number of samples, assuming a 44100Hz sample rate (meaning that Play(44100) will delay the playing by exactly 1 sec).

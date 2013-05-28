@@ -1,0 +1,4 @@
+<signature>
+lockRootHeightY
+</signature>
+Enable to make vertical root motion be baked into the movement of the bones. Disable to make vertical root motion be stored as root motion.

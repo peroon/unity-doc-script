@@ -1,0 +1,8 @@
+<signature>
+damper
+</signature>
+The damper force uses to dampen the spring.
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.spring.damper = 3;
+END EX

@@ -1,0 +1,5 @@
+<signature>
+GetIgnoreLayerCollision(int,int)
+</signature>
+Are collisions between /layer1/ and /layer2/ being ignored?
+Returns the value set by [[Physics.IgnoreLayerCollision]] or in the Physics inspector.

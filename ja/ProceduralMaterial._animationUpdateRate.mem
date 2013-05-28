@@ -1,0 +1,5 @@
+<signature>
+animationUpdateRate
+</signature>
+アニメーションの更新レートを設定／取得する
+An animated substance is a Procedural Material containing a $time input which is automatically generated.

@@ -1,0 +1,2 @@
+The current velocity of the [[NavMeshAgent]] component.
+Setting the velocity is not constrained by the maximum ::ref::acceleration.

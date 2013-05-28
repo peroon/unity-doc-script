@@ -1,0 +1,4 @@
+<signature>
+Intersects(Bounds)
+</signature>
+設定したバウンズと交差しているか確認します。

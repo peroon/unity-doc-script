@@ -1,0 +1,4 @@
+<signature>
+NotEqual(Rect,Rect)
+</signature>
+Returns true if the rectangles are different.

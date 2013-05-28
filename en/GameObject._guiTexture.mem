@@ -1,0 +1,8 @@
+<signature>
+guiTexture
+</signature>
+The [[GUITexture]] attached to this GameObject (RO). (null if there is none attached).
+CONVERTEXAMPLE
+BEGIN EX
+	guiTexture.color = Color.blue;
+END EX

@@ -1,0 +1,7 @@
+<signature>
+GetTextureOffset(string,bool,bool)
+</signature>
+Get the value of a given texture offset for a given texture property.
+@param propertyName Name of the texture property that you wish to examine the offset of.
+@param hasMixedValueX Does the x offset have multiple values?
+@param hasMixedValueY Does the y offset have multiple values?

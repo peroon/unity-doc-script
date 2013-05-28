@@ -1,0 +1,8 @@
+<signature>
+GetDeviceCaps(string,int,int)
+</signature>
+デバイスの周波数の性能を取得する。
+マイクデバイスが対応している、最小／最大の周波数を返します。
+@param deviceName マイクのデバイス名。空（""）やnullの場合、デフォルトのデバ
+イスが使用される。
+@param out 最大周波数

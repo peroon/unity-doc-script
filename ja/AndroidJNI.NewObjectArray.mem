@@ -1,0 +1,5 @@
+<signature>
+NewObjectArray(int,IntPtr,IntPtr)
+</signature>
+<tt>clazz</tt>クラスを持つオブジェクトを作成する。すべての要素が最初<tt>obj</tt>引数に設定される。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

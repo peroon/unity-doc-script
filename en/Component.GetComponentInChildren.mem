@@ -1,0 +1,16 @@
+<signature>
+GetComponentInChildren(Type)
+</signature>
+Returns the component of Type /type/ in the [[GameObject]] or any of its children using depth first search.
+Only active components are returned.
+CONVERTEXAMPLE
+BEGIN EX
+	var script : ScriptName; 
+	script = GetComponentInChildren(ScriptName);
+	script.DoSomething ();
+END EX
+@param t The type of Component to retrieve.
+<signature>
+GetComponentInChildren<T>()
+</signature>
+Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.

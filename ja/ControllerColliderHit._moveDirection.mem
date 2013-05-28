@@ -1,0 +1,11 @@
+<signature>
+moveDirection
+</signature>
+ヒットしたCharacterControllerオブジェクトの中心点の方向を返す
+This can be used to find a reasonable direction to apply forces to touched rigidbodies.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnControllerColliderHit(hit : ControllerColliderHit) {
+		Debug.Log(hit.moveDirection);
+	}
+END EX

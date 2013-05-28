@@ -1,0 +1,6 @@
+<signature>
+CreateJavaRunnable(AndroidJavaRunnable)
+</signature>
+Runnableインタフェースを実装したUnityJavaRunnableオブジェクトを作成する。
+SA: AndroidJavaRunnable.
+@param runnable java.lang.Runnableを表すデリゲートを設定する。

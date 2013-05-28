@@ -1,0 +1,7 @@
+<signature>
+IndentedRect(Rect)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Apply the indentLevel to a control rect.

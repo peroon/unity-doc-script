@@ -1,0 +1,9 @@
+<signature>
+black
+</signature>
+Solid black. RGBA is (0, 0, 0, 1).
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a black color to this transform's material
+	transform.renderer.material.color = Color.black;
+END EX

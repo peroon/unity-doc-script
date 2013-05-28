@@ -1,0 +1,40 @@
+<signature>
+Destroy(NetworkViewID)
+</signature>
+ViewIDに関連付けられたオブジェクトを破棄する
+The object is destroyed locally and remotely.
+
+Note that this does not remove any RPCs accociated with the object or NetworkViewID, these have to be explicitly removed
+with the [[Network.RemoveRPCs]] method.
+CONVERTEXAMPLE
+BEGIN EX
+	var timer : float = 0;
+	function Awake () {
+		timer = Time.time;
+	}
+	// Network destroy the object which has this script
+	// it must have a NetworkView attached
+	function Update() {
+		if (Time.time - timer > 2) {
+			Network.Destroy(GetComponent(NetworkView).viewID);
+		}
+	}
+END EX
+<signature>
+Destroy(GameObject)
+</signature>
+ネットワークオブジェクトを削除します。
+The object is destroyed locally and remotely.
+CONVERTEXAMPLE
+BEGIN EX
+	var timer : float = 0;
+	function Awake () {
+		timer = Time.time;
+	}
+	// Network destroy the object which has this script
+	function Update() {
+		if (Time.time - timer > 2) {
+			Network.Destroy(gameObject);
+		}
+	}
+END EX

@@ -1,0 +1,20 @@
+平行投影時のカメラのビューポートサイズを設定する
+This is half of the vertical size of the viewing volume. Horizontal viewing
+size varies depending on viewport's aspect ratio.
+Orthographic size is ignored when camera is not orthographic (see ::ref::orthographic).
+SA: [[wiki:class-Camera|camera component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the camera's ortho size to 5
+
+	camera.orthographic = true;
+	camera.orthographicSize = 5;
+END EX
+TODO.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the main camera's ortho size to 5
+
+	Camera.main.orthographic = true;
+	Camera.main.orthographicSize = 5;
+END EX

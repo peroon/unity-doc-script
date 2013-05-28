@@ -1,0 +1,9 @@
+<signature>
+GetFloat(string,float)
+</signature>
+キーからFloat型の値を取得する
+If it doesn't exist, it will return /defaultValue/.
+CONVERTEXAMPLE
+BEGIN EX
+	print (PlayerPrefs.GetFloat("Player Score"));
+END EX

@@ -1,0 +1,5 @@
+<signature>
+bodyPosition
+</signature>
+The position of the body center of mass.
+The position is local to the gameobject.

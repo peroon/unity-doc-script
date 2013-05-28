@@ -1,0 +1,29 @@
+<signature>
+BeginHorizontal(GUILayoutOption[])
+BeginHorizontal(GUIStyle,GUILayoutOption[])
+BeginHorizontal(string,GUIStyle,GUILayoutOption[])
+BeginHorizontal(Texture,GUIStyle,GUILayoutOption[])
+BeginHorizontal(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+要素を垂直に並べる、開始位置を作成する
+All controls rendered inside this element will be placed horiztonally next to each other. The group must be closed with a call to EndHorizontal.
+
+{img GUILayoutHorizontal.png}\\
+''Horizontal Layout.''
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI () {	
+		// Starts a horizontal group
+		GUILayout.BeginHorizontal ("box");
+
+		GUILayout.Button ("I'm the first button");
+		GUILayout.Button ("I'm to the right");
+		
+		GUILayout.EndHorizontal ();
+	}
+END EX
+@param text 幅・高さ
+@param image スタイル
+@param content 表示する文字列
+@param style 表示する画像
+@param options 表示する文字列、画像、ツールチップ

@@ -1,0 +1,23 @@
+<signature>
+Cross(Vector3,Vector3)
+</signature>
+Cross Product of two vectors.
+The cross product of two vectors results in a third vector which is perpendicular
+to the two input vectors. The result's magnitude is equal to the magnitudes of the
+two inputs multiplied together and then multiplied by the sine of the angle between
+the inputs. You can determine the direction of the result vector using the "left hand rule".
+
+{img LeftHandRuleDiagram.png}\\
+''The left hand rule applied to Cross(a, b).''
+CONVERTEXAMPLE
+BEGIN EX
+	// Get the normal to a triangle from the three corner points, a, b and c.
+	function GetNormal(a: Vector3, b: Vector3, c: Vector3) {
+		// Find vectors corresponding to two of the sides of the triangle.
+		var side1 = b - a;
+		var side2 = c - a;
+		
+		// Cross the vectors to get a perpendicular vector, then normalize it.
+		return Vector3.Cross(side1, side2).normalized;
+	}
+END EX

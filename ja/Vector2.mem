@@ -1,0 +1,4 @@
+2 次元座標を扱います。
+This structure is used in some places to represent 2D positions and vectors (e.g. texture
+coordinates in a [[Mesh]] or texture offsets in [[Material]]). In the majority of other cases a Vector3
+is used.

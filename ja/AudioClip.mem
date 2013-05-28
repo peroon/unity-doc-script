@@ -1,0 +1,5 @@
+オーディオのデータが格納されています。
+AudioClipクラスはogg やaif のような圧縮したものか、無圧縮のオーディオファイルを保持しています。
+オーディオを再生するためにはAudioSourceクラスを使用する必要があります
+
+SA: [[class-AudioClip|AudioClip component]] in the Components Reference.

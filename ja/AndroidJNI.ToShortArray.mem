@@ -1,0 +1,5 @@
+<signature>
+ToShortArray(short[])
+</signature>
+Short配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewShortArray, AndroidJNI.SetShortArrayElement.

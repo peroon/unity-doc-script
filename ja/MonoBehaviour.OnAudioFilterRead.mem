@@ -1,0 +1,22 @@
+<signature>
+OnAudioFilterRead()
+</signature>
+DSP チェーンにカスタムフィルターを挿入する際に使用する。
+The filter is inserted in the same order as the MonoBehaviour script is shown in the inspector. 
+OnAudioFilterRead is called everytime a chunk of audio is routed thru the filter (プラットフォームにもよりますが、この関数はフィルターが送信される20ms に一度呼び出されます。).
+data 引数の配列にはオーディオソースやクリップのフィルターからの音声が含まれています。If this is the first filter in the chain and a clip isn't attached to the audio source this filter will be 'played'. That way you can use the filter as the audio clip, procedurally generating audio.
+
+この関数が実装されている場合、インスペクター上にVUメーターが表示されます。フィルターの処理時間が測定され、可視化されます。The process time of the filter is also measured and the spent milliseconds will show up next to the VU Meter (it turns red if the filter is taking up too much time, so the mixer will starv audio data).
+Also note, that OnAudioFilterRead is called on a different thread from the main thread (namely the audio thread) so calling into many Unity functions from this function is not allowed ( a warning will show up ).
+
+SA: [[wiki:class-AudioEffect|Audio Filters]].
+BEGIN EX
+	// This custom filter controls the gain by filtering the samples by multiplying each sample with a <i>gain</i> parameter.  
+
+	public var gain : float;
+
+	function OnAudioFilterRead(var data:float[], var channels:int) {
+		for (var i = 0; i < data.Length; ++i)
+			data[i] = data[i] * gain;			
+	}
+END EX

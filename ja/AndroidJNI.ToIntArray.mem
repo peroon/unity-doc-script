@@ -1,0 +1,5 @@
+<signature>
+ToIntArray(int[])
+</signature>
+Int配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewIntArray, AndroidJNI.SetIntArrayElement.

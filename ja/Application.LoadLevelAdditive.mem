@@ -1,0 +1,15 @@
+<signature>
+LoadLevelAdditive(int)
+LoadLevelAdditive(string)
+</signature>
+レベルを加算的にロードする（ゲームオブジェクトの持ち越し）。
+Unlike ::ref::LoadLevel, LoadLevelAdditive does not destroy objects in the current level. 今のシーンに別のシーンを追加します。この加算ロードは、全体のオブジェクト数が比較的多い場合に複数回に分け、処理を軽減させることができます。
+CONVERTEXAMPLE
+BEGIN EX
+	// Loads the level with index 1
+	Application.LoadLevel (1);
+
+	// Add items from the level named "MoreStuff".
+	Application.LoadLevelAdditive ("MoreStuff");
+END EX
+SA: [[AsyncOperation]], Application.backgroundLoadingPriority, Application.LoadLevelAdditiveAsync, Application.LoadLevel, Application.LoadLevelAsync.

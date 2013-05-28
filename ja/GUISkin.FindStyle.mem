@@ -1,0 +1,16 @@
+<signature>
+FindStyle(string)
+</signature>
+GUIStyle名でGUIStyleオブジェクトを検索する。ない場合はnullを返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Checks if a style name exists
+
+	var aStyleName : String = "A Style I have";
+	
+	function OnGUI() {
+		if(GUI.skin.FindStyle(aStyleName) == null) {
+			Debug.LogWarning("No style named \"" + aStyleName + "\" could be found");
+		}
+	}
+END EX

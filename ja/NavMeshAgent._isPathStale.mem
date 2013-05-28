@@ -1,0 +1,3 @@
+現在のパスの状態。終了、到達不可、無効などの状態を返す(読み取り専用)
+When true, the path may no longer be valid or optimal.
+This flag will be set if: there are any changes to the ::ref::walkableMask, if any [[OffMeshLink]] is enabled or disabled, or if the costs for the NavMeshLayers have been changed.

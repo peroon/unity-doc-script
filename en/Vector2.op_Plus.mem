@@ -1,0 +1,10 @@
+<signature>
+Plus(Vector2,Vector2)
+</signature>
+Adds two vectors.
+Adds corresponding components together.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints (3.0,5.0)
+	print (Vector2(1,2) + Vector2(2,3));
+END EX

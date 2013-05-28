@@ -1,0 +1,12 @@
+<signature>
+NextPowerOfTwo(int)
+</signature>
+値以上の最も近い2 のべき乗を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 8
+	Debug.Log(Mathf.NextPowerOfTwo(7));
+	
+	// prints 256
+	Debug.Log(Mathf.NextPowerOfTwo(139));
+END EX

@@ -1,0 +1,19 @@
+<signature>
+CopyCount(ComputeBuffer,ComputeBuffer,int)
+</signature>
+Set buffer data.
+Compute buffer data can be filled from an aribrary array of value types (simple types like ints or floats;
+or struct types like Vector3 or Color).
+Read buffer data.
+
+Reads buffer data into an aribrary array of value types (simple types like ints or floats;
+or struct types like Vector3 or Color). Note that reading data back from the buffer
+can be quite slow, as the CPU will have to wait for GPU to finish any pending operations and read
+the data back to system memory.
+Copy counter value of append/consume buffer into another buffer.
+
+CopyCount takes an append or consume buffer as /src/, and copies its "counter"
+value into /dst/ buffer at given byte offset.
+
+This is most commonly used in conjunction with Graphics.DrawProceduralIndirect,
+to render arbitrary number of primitives without reading their count back to the CPU.

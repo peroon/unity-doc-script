@@ -1,0 +1,9 @@
+ライトによって頂点が光るようになる。処理が軽くなる。
+This option is good for background or distant lighting.
+SA: [[wiki:class-Light|light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Set light's render mode to vertex-lit
+
+	light.renderMode = LightRenderMode.ForceVertex;
+END EX

@@ -1,0 +1,6 @@
+<signature>
+fixedTime
+</signature>
+ゲーム開始から最新のFixedUpdate関数が呼び出された、時間経過を返す（読み取り専用）
+Fixed time is updated in regular intervals (equal to ::ref::fixedDeltaTime) until 
+::ref::time property is reached.

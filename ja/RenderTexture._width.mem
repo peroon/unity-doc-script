@@ -1,0 +1,6 @@
+<signature>
+width
+</signature>
+ピクセル単位のテクスチャの幅。
+Note that unlike Texture.width property, this is both read and write -
+setting a value changes size.

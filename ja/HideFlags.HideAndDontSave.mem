@@ -1,0 +1,2 @@
+HideInHierarchy変数とDontSave変数を組み合わせたもの
+This is most commonly used for objects which are created by scripts and are purely under their control.

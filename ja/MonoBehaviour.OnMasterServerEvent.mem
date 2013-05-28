@@ -1,0 +1,23 @@
+<signature>
+OnMasterServerEvent(MasterServerEvent)
+</signature>
+マスターサーバーからのイベントを受け取ったときに、クライアントやサーバーで呼び出される。
+サーバーが接続されたかどうかや接続されたゲーム名を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Network.InitializeServer(32, 25000);
+	}
+		
+	function OnServerInitialized() {
+		MasterServer.RegisterHost( "MyGameVer1.0.0_42"
+			, "My Game Instance"
+			, "This is a comment and place to store data");
+	}
+		
+	function OnMasterServerEvent(msEvent: MasterServerEvent) {
+		if (msEvent == MasterServerEvent.RegistrationSucceeded) {
+			Debug.Log("Server registered");
+		}
+	}
+END EX

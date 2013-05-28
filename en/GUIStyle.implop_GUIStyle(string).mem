@@ -1,0 +1,4 @@
+<signature>
+implop_GUIStyle(string)
+</signature>
+Get a named GUI style from the current skin.

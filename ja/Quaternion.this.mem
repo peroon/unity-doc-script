@@ -1,0 +1,9 @@
+<signature>
+this(int)
+</signature>
+イデックスによってx,y,z,wにアクセスする。
+CONVERTEXAMPLE
+BEGIN EX
+	var p : Quaternion;
+	p[3] = 0.5; // the same as p.w = 0.5
+END EX

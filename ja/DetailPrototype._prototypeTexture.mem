@@ -1,0 +1,4 @@
+<signature>
+prototypeTexture
+</signature>
+DetailPrototypeオブジェクトで使用するテクスチャを返す

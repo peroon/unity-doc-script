@@ -1,0 +1,8 @@
+<signature>
+Simulate(float,bool,bool)
+</signature>
+パーティクルシステムのシミュレートを行います。
+SA: ::ref::Play, ::ref::Pause functions.
+@param t 現在の状態からのt秒後の状態をシミュレートする
+@param withChildren 子となっているパーティクルも適用するかどうか。デフォルトはtrue
+@param restart Restart and start from the beginning.

@@ -1,0 +1,2 @@
+ワールド座標からローカル座標へ変換した行列を返す（読み込み専用）。
+This property MUST be used instead of Transform.worldToLocalMatrix, if you're setting shader parameters.

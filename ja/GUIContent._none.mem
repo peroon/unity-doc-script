@@ -1,0 +1,11 @@
+<signature>
+none
+</signature>
+空GUIContentオブジェクトを作成する
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a button without any text.
+	function OnGUI () {
+		GUI.Button (Rect (0, 0, 100, 20), GUIContent.none);
+	}
+END EX

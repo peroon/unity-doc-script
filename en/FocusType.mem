@@ -1,0 +1,1 @@
+Used by GUIUtility.GetControlID to inform the UnityGUI system if a given control can get keyboard focus.

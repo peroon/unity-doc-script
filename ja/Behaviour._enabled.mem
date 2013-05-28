@@ -1,0 +1,6 @@
+毎フレーム更新するかどうかを設定
+インスペクター上ではチェックボックスとして表示されます
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(PlayerScript).enabled = false;
+END EX

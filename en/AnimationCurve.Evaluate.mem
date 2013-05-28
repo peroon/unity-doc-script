@@ -1,0 +1,4 @@
+<signature>
+Evaluate(float)
+</signature>
+Evaluate the curve at /time/.

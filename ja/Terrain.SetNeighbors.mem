@@ -1,0 +1,6 @@
+<signature>
+SetNeighbors(Terrain,Terrain,Terrain,Terrain)
+</signature>
+隣接する地形との間の接続を設定する
+This ensures LOD matches up on neighboring terrains.
+Note that it is not enough to call this function on one Terrain, you need to set the neighbors of each terrain.

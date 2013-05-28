@@ -1,0 +1,5 @@
+<signature>
+FromFloatArray(IntPtr)
+</signature>
+IntPtr型をFloat配列へ変換する。
+SA: AndroidJNI.GetFloatArrayElement, AndroidJNI.GetArrayLength.

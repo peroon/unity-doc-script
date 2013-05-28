@@ -1,0 +1,5 @@
+<signature>
+GetClassName(Object)
+</signature>
+Class name of an object.
+SA: ObjectNames.GetInspectorTitle.

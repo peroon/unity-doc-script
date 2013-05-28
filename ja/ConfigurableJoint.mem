@@ -1,0 +1,3 @@
+直線運動や回転制御など、Jointクラスに対し基盤となるクラスです。
+これだけですべてのJointクラスの機能は使えますが、設定が複雑なので、用意されているSpringJointクラスなどを使用することをお勧めします。
+It gives you control over motors, drives and joint limits for each rotation axis and and linear degree of freedom.

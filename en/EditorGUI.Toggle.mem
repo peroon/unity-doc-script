@@ -1,0 +1,39 @@
+<signature>
+Toggle(Rect,bool)
+Toggle(Rect,string,bool)
+Toggle(Rect,bool,GUIStyle)
+Toggle(Rect,string,bool,GUIStyle)
+Toggle(Rect,GUIContent,bool)
+Toggle(Rect,GUIContent,bool,GUIStyle)
+</signature>
+Make a toggle.
+{img EditorGUIToggle.png}\\
+''Toggle control in an Editor Window.''
+BEGIN EX
+	// Use a toggle button to show/hide a button that can close the window.
+	
+	class EditorGUIToggle extends EditorWindow {
+	
+		var showClose : boolean = true;
+	
+		@MenuItem("Examples/EditorGUI Toggle usage")
+		static function Init() {
+			var window = GetWindow(EditorGUIToggle);
+			window.Show();
+		}
+		
+		function OnGUI() {
+			showClose = EditorGUI.Toggle(Rect(0,5,position.width,20),
+						"Show Close Button",
+						showClose);
+			if(showClose)
+				if(GUI.Button(Rect(0, 25, position.width, 100),"Close Window!"))
+					this.Close();
+		}
+	}
+END EX
+@param position Rectangle on the screen to use for the toggle.
+@param label Optional label in front of the toggle.
+@param value The shown state of the toggle.
+@param style Optional [[GUIStyle]].
+@return The selected state of the toggle.

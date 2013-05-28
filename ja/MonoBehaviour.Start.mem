@@ -1,0 +1,21 @@
+<signature>
+Start()
+</signature>
+Update関数が呼び出される直前に一度だけ呼び出される
+Start is only called once in the lifetime of the behaviour.
+The difference between Awake and Start is that Start is only called if the script instance is enabled.
+This allows you to delay any initialization code, until it is really needed.
+すべてのゲームオブジェクトのAwake関数は呼び出されていることが保証されているので、オブジェクト参照先の情報取得はこの関数で行います。
+
+The Start function is called after all Awake functions on all script instances have been called.
+CONVERTEXAMPLE
+BEGIN EX
+	// Initializes the target variable.
+	// target is private and thus not editable in the inspector
+
+	private var target : GameObject;
+
+	function Start () {
+		target = GameObject.FindWithTag ("Player");
+	}
+END EX

@@ -1,0 +1,13 @@
+<signature>
+magneticHeading
+</signature>
+磁気による北極からの相対角度。（読み取り専用）
+値は常に画面の上部を基準にして測定する。
+
+The heading of magnetic north is not exactly the same as true geographical north - to get the exact heading, use the ::ref::trueHeading property.
+BEGIN EX
+    function Update () {
+		// Orient an object to point to magnetic north.
+		transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading, 0);
+	}
+END EX

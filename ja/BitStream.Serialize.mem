@@ -1,0 +1,15 @@
+<signature>
+Serialize(bool)
+Serialize(char)
+Serialize(short)
+Serialize(int)
+Serialize(float,float)
+Serialize(Quaternion,float)
+Serialize(Vector3,float)
+Serialize(NetworkPlayer)
+Serialize(NetworkViewID)
+</signature>
+様々なタイプの変数をシリアライズする
+シリアライズをサポートしているのはbool、char、short、int、float、Quaternion、vector3、NetworkPlayerID型になります。
+
+Note that Serialize(char) serializes one byte, so it will only work properly for characters in 0..255 range.

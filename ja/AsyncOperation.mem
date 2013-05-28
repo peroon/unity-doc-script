@@ -1,0 +1,5 @@
+非同期動作のコルーチンで使用します。
+You can __yield__ until asynchronous operation continues, or manually check whether it's done
+(::ref::isDone) or progress (::ref::progress).
+
+SA: Application.LoadLevelAsync, Application.LoadLevelAdditiveAsync, AssetBundle.LoadAsync.

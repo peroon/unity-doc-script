@@ -1,0 +1,21 @@
+<signature>
+GetTexture(string)
+</signature>
+プロパティネームから対応するテクスチャを取得する。
+Many shaders use more than one texture. Use GetTexture to get the /propertyName/ texture.
+
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTexture property, ::ref::SetTexture.
+BEGIN EX
+	function Start () {
+		var tex : Texture = renderer.material.GetTexture ("_BumpMap");
+		if (tex)
+			print ("My bumpmap is " + tex.name);
+		else
+			print ("I have no bumpmap!");
+	}
+END EX

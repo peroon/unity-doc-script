@@ -1,0 +1,39 @@
+<signature>
+BeginScrollView(Rect,Vector2,Rect)
+BeginScrollView(Rect,Vector2,Rect,bool,bool)
+BeginScrollView(Rect,Vector2,Rect,GUIStyle,GUIStyle)
+BeginScrollView(Rect,Vector2,Rect,bool,bool,GUIStyle,GUIStyle)
+</signature>
+スクロールビューの開始位置を作成する
+ScrollViews let you make a smaller area on-screen look 'into' a much larger area, using scrollbars placed on the sides of the ScrollView.
+CONVERTEXAMPLE
+BEGIN EX
+	// The position on of the scrolling viewport
+	var scrollPosition : Vector2 = Vector2.zero;
+
+	function OnGUI () {
+		// An absolute-positioned example: We make a scrollview that has a really large client
+		// rect and put it in a small rect on the screen.
+		scrollPosition = GUI.BeginScrollView (Rect (10,300,100,100),
+			scrollPosition, Rect (0, 0, 220, 200));
+		
+		// Make four buttons - one in each corner. The coordinate system is defined
+		// by the last parameter to BeginScrollView.
+		GUI.Button (Rect (0,0,100,20), "Top-left");
+		GUI.Button (Rect (120,0,100,20), "Top-right");
+		GUI.Button (Rect (0,180,100,20), "Bottom-left");
+		GUI.Button (Rect (120,180,100,20), "Bottom-right");
+		
+		// End the scroll view that we began above.
+		GUI.EndScrollView ();
+	}
+END EX
+@param position 表示位置
+@param scrollPosition スクロールの現在の位置
+@param viewRect スクロールビューの全体のRect範囲。position 以上で
+あれば、スクロールバーを操作して表示する
+@param alwayShowHorizontal 常に水平のスクロールバーを表示させるかどうか
+@param alwayShowVertical 常に垂直のスクロールバーを表示させるかどうか
+@param horizontalScrollbar 水平のスクロールバーの[[GUIStyle]]クラスを設定
+@param verticalScrollbar 垂直のスクロールバーの[[GUIStyle]]クラスを設定
+@return The modified scrollPosition. Feed this back into the variable you pass in, as shown in the example.

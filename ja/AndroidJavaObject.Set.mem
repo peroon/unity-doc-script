@@ -1,0 +1,14 @@
+<signature>
+Set<FieldType>(string,FieldType)
+</signature>
+staticでないフィールドに値を設定する
+フィールドの型はジェネリックス型です。
+BEGIN EX
+	// Create a android.text.format.Time object, and set the 'allDay' field to true.
+	function Start() {
+		var jo = new AndroidJavaObject("android.text.format.Time");
+		var valueString = jo.Set.<bool>("allDay", true);
+	}
+END EX
+@param fieldName フィールド名
+@param val 値

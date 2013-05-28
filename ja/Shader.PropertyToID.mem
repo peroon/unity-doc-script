@@ -1,0 +1,10 @@
+<signature>
+PropertyToID(string)
+</signature>
+プロパティネームから一意のID を取得する
+プロパティ名からユニークなを取得します。_MainTexや_Colorなどのシェーダープロパティ名は、ゲーム全体で同じユニークな整数値が割り当てられています。
+
+Each name of shader property (for example, @@_MainTex@@ or @@_Color@@) is assigned an unique
+integer number in Unity, that stays the same for the whole game.
+
+SA: [[MaterialPropertyBlock]].

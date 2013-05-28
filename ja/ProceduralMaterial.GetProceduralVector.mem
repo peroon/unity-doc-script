@@ -1,0 +1,7 @@
+<signature>
+GetProceduralVector(string)
+</signature>
+プロパティ名を指定してVector型のプロパティを取得する
+Vector4型を返しますが、扱える値はVector2、Vector3、Vector4型になります。
+
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralVector.

@@ -1,0 +1,5 @@
+<signature>
+GetData(Array)
+</signature>
+Read data values from the buffer into an array.
+@param data An array to receive the data.

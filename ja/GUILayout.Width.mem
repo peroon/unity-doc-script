@@ -1,0 +1,13 @@
+<signature>
+Width(float)
+</signature>
+固定幅を設定する
+{img GUILayoutWidth.png}\\
+''Fixed width for a GUI Control.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a  button with a  fixed width
+	function OnGUI() {
+		GUILayout.Button("A Button with fixed width", GUILayout.Width(300));
+	}
+END EX

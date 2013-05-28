@@ -1,0 +1,4 @@
+<signature>
+label
+</signature>
+Style used for the labelled on all EditorGUI overloads that take a prefix label.

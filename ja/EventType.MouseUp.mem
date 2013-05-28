@@ -1,0 +1,2 @@
+マウスをクリックし指を離したとき
+This event gets sent when any mouse button is released. Use Event.button to determine which button was pressed down.

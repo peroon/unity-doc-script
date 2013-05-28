@@ -1,0 +1,7 @@
+<signature>
+GetProceduralColor(string)
+</signature>
+プロパティ名を指定してColor型のプロパティを取得する
+型のタイプColor3とColor4の2種類があります。
+
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralColor.

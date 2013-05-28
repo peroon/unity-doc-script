@@ -1,0 +1,28 @@
+An exception thrown by the [[PlayerPrefs]] class in a  web player build.
+The exception is thrown when writing to a preference file exceeds the allotted storage space.  The storage space is 1MB for a web player.  This exception is not thrown on other platforms.
+BEGIN EX NOCHECK
+#pragma strict
+
+function Start () {
+
+	// create a one megabyte character string
+	var s16 : String = "0123456789abcdef";
+
+	var s1024 : String;
+	for (var j : int = 0; j < 64; j++)
+		s1024 += s16;
+	
+	var s1024x1024 : String;
+	for (var i : int = 0; i < 1024; i++)
+		s1024x1024 += s1024;
+	
+	// try to save the string (it will fail in a webplayer build)
+	try {
+		PlayerPrefs.SetString("fail", s1024x1024);
+	}
+	// handle the error
+	catch (err) {
+			Debug.Log("Got: " + err);
+	}
+}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+handlePosition
+</signature>
+The position of the tool handle in world space.

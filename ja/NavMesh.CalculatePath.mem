@@ -1,0 +1,22 @@
+<signature>
+CalculatePath(Vector3,Vector3,int,NavMeshPath)
+</signature>
+2点間の位置を計算して、ナビメッシュオブジェクト上で移動できる範囲のパスを作成します。
+This function can be used to plan a path ahead of time to avoid a delay
+in gameplay when the path is needed. Another use is to check if a target position is reachable before moving the agent.
+CONVERTEXAMPLE
+BEGIN EX
+	var mesh: NavMesh;
+	var target: Transform;
+
+	private var path: NavMeshPath;
+
+	function Start () {
+		mesh.CalculatePath(transform.position, target.position, -1, path);
+	}
+END EX
+@param sourcePosition 特定の位置
+@param targetPosition 目標値
+@param passableMask ナビメッシュレイヤーとして指定できるマスク
+@param path 計算された結果のパスが格納される
+@return True if a path is found.

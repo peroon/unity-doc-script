@@ -1,0 +1,5 @@
+<signature>
+main
+</signature>
+タグがMainCameraと設定されているカメラを取得する（読み込み専用）
+Returns /null/ if there is no such camera in the scene.

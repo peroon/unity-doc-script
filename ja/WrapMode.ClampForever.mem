@@ -1,0 +1,5 @@
+通常の再生が行われた後、最後のフレームのアニメーションが再生され続ける
+When playing backwards it will reach the first frame and will keep playing that.
+This is useful for additive animations, which should never be stopped when they reach the maximum.
+
+SA: AnimationState::ref::wrapMode, AnimationState::ref::time, AnimationState::ref::speed properties.

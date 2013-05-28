@@ -1,0 +1,6 @@
+コライダーの有効／無効を設定する
+This is shown as the small checkbox in the inspector of the Colliders.
+CONVERTEXAMPLE
+BEGIN EX
+	collider.enabled = false;
+END EX

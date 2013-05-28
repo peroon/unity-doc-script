@@ -1,0 +1,5 @@
+<signature>
+ResetPath()
+</signature>
+Clears the current path. Note that this agent will not start looking for a new path until SetDestination is called.
+__Notes:__ If this agent is occupying an OffMeshLink it will complete the link immediately.

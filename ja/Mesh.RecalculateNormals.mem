@@ -1,0 +1,14 @@
+<signature>
+RecalculateNormals()
+</signature>
+三角形と頂点からメッシュの法線を再計算する。
+メッシュをスクリプト側で作成や変更する場合、この関数を呼び出します。法線は共有している頂点から作成されますが、UV によるものの頂点は共有されていません。
+この関数はそのような頂点でも滑らかではないですが、作成できます。
+バンプマップを使用したシェーダーは、自動的に法線は生成されませんが、バンプマップ用の独自の法線を設定することができます。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var mesh : Mesh = GetComponent(MeshFilter).mesh;
+		mesh.RecalculateNormals();
+	}
+END EX

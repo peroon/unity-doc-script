@@ -1,0 +1,8 @@
+public変数は通常、インスペクター上に表示されますが、この属性を利用することで非表示にすることができます。
+CONVERTEXAMPLE
+BEGIN EX
+// Make the variable p not show up in the inspector
+// but be serialized.
+@HideInInspector
+var p = 5;
+END EX

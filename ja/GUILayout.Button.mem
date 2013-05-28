@@ -1,0 +1,34 @@
+<signature>
+Button(Texture,GUILayoutOption[])
+Button(string,GUILayoutOption[])
+Button(GUIContent,GUILayoutOption[])
+Button(Texture,GUIStyle,GUILayoutOption[])
+Button(string,GUIStyle,GUILayoutOption[])
+Button(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+シングルレスのボタンを作成する。クリックするとtrueを返す
+{img GUILayoutButton.png}\\
+''Buttons in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a button with an image and a button with text
+	var tex : Texture;
+	function OnGUI() {
+		if(!tex) {
+			Debug.LogError("No texture found, please assign a texture on the inspector");
+		}
+
+		if(GUILayout.Button (tex)) {
+			Debug.Log("Clicked the image");
+		}
+		if(GUILayout.Button ("I am a regular Automatic Layout Button")) {
+			Debug.Log("Clicked Button");
+		}
+	}
+END EX
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さを設定する
+@return /true/ when the users clicks the button.

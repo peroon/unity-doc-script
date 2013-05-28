@@ -1,0 +1,4 @@
+<signature>
+lightmapColor
+</signature>
+計算されたライトマップのカラーを返す

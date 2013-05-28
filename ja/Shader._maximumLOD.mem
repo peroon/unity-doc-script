@@ -1,0 +1,2 @@
+シェーダーのLOD を返す
+SA: [[SL-ShaderLOD|Shader Level of Detail]], Shader.globalMaximumLOD.

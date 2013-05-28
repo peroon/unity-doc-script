@@ -1,0 +1,4 @@
+<signature>
+player
+</signature>
+ローカルのNetworkPlayerクラスのインスタンスを取得する

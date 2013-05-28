@@ -1,0 +1,6 @@
+カラーを設定する
+CONVERTEXAMPLE
+BEGIN EX
+	// change the color of the texture to green
+	guiTexture.color = Color.green;
+END EX

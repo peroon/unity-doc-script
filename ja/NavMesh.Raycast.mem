@@ -1,0 +1,32 @@
+<signature>
+Raycast(Vector3,Vector3,NavMeshHit,int)
+</signature>
+sourcePosition引数とtargetPosition引数間でレイを飛ばし、ナビメッシュオブジェクトにヒットした場合、􀁩􀁧􀁪􀁚を返します。同時にナビメッシュ情報も取得します。
+This function follows the path of a "ray" between the specified source
+and target positions on the navmesh. If an obstruction is 
+encountered along the line then a true value is returned and
+the position and other details of the obstructing object are stored
+in the /hit/ parameter. This can be used to check if there is a clear
+shot or line of sight between a character and a target object.
+This function is preferable to the similar ::ref::Physics.Raycast
+because the line tracing is performed in a simpler way using the navmesh and has a lower processing overhead.
+CONVERTEXAMPLE
+BEGIN EX
+	var mesh: NavMesh;
+	var target: Transform;
+
+	function Update () {
+		var hit: NavMeshHit;
+		
+		// Note the negative test condition! Using -1 for the mask 
+		// indicates all layers are to be used.
+		if (!mesh.Raycast(transform.position, target.position, hit, -1)) {
+			// Target is "visible" from our position.
+		}
+	}
+END EX
+@param sourcePosition 特定の位置
+@param targetPosition 目標値
+@param hit sourcePosition とtargetPosition 間でヒットしたナビメッシュオブジェクト情報
+@param passableMask ナビメッシュレイヤーとして指定できるマスク
+@return True if the ray is terminated before reaching target position. Otherwise returns false.

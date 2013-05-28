@@ -1,0 +1,4 @@
+<signature>
+supportsVibration
+</signature>
+バイブレーションを利用できるかを返す

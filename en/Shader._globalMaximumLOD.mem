@@ -1,0 +1,5 @@
+<signature>
+globalMaximumLOD
+</signature>
+Shader LOD level for all shaders.
+SA: [[SL-ShaderLOD|Shader Level of Detail]], Shader.maximumLOD.

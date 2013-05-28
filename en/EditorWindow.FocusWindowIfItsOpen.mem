@@ -1,0 +1,12 @@
+<signature>
+FocusWindowIfItsOpen(Type)
+</signature>
+Focuses the first found EditorWindow of specified type if it is open.
+If there is no open window of such type, nothing happens.
+@param t The type of the window. Must derive from EditorWindow.
+<signature>
+FocusWindowIfItsOpen<T>()
+</signature>
+Focuses the first found EditorWindow of type /T/ if it is open.
+If there is no open window of such type, nothing happens.
+@param T The type of the window. Must derive from EditorWindow.

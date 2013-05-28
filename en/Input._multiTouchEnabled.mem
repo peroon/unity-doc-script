@@ -1,0 +1,4 @@
+<signature>
+multiTouchEnabled
+</signature>
+Property indicating whether the system handles multiple touches.

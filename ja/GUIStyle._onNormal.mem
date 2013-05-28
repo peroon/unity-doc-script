@@ -1,0 +1,11 @@
+<signature>
+onNormal
+</signature>
+通常時でGUI要素がtrue状態のときの設定
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			GUI.skin.customStyles[0].onNormal.textColor = Color.red;		
+	}
+END EX

@@ -1,0 +1,8 @@
+設定した範囲内でランダムなパーティクルの角速度を返す
+A random value in the range of  [-rndAngularVelocity, rndAngularVelocity] will be applied to all new particles,
+in addition to ParticleEmitter.angularVelocity
+SA: ::ref::angularVelocity.
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.rndAngularVelocity = 10;
+END EX

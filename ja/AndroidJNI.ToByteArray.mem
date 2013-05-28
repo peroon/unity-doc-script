@@ -1,0 +1,5 @@
+<signature>
+ToByteArray(byte[])
+</signature>
+Byte配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewByteArray, AndroidJNI.SetByteArrayElement.

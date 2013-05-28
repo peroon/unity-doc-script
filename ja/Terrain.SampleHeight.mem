@@ -1,0 +1,10 @@
+<signature>
+SampleHeight(Vector3)
+</signature>
+ワールド座標で特定の位置の高さを返す
+CONVERTEXAMPLE
+BEGIN EX
+	function LateUpdate () {
+		transform.position.y = Terrain.activeTerrain.SampleHeight(transform.position);
+	}
+END EX

@@ -1,0 +1,8 @@
+<signature>
+guiTexture
+</signature>
+GUITexture情報を返す（読み取り専用）
+CONVERTEXAMPLE
+BEGIN EX
+	guiTexture.color = Color.blue;
+END EX

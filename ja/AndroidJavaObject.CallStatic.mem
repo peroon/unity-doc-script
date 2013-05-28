@@ -1,0 +1,27 @@
+<signature>
+CallStatic(string,object[])
+</signature>
+staticのJava メソッドを呼び出す
+TODO.
+BEGIN EX
+	// Create a android.os.Binder object and call statich method flushPendingCommands().
+	function Start() {
+		var jo = new AndroidJavaObject("android.os.Binder");
+		jo.CallStatic("flushPendingCommands");
+	}
+END EX
+@param methodName メソッド名
+@param args 引数として渡す値
+<signature>
+CallStatic<ReturnType>(string,object[])
+</signature>
+staticのJava メソッドを呼び出す
+BEGIN EX
+	// Create a java.lang.String object, and call static method valueOf(float value).
+	function Start() {
+		var jo = new AndroidJavaObject("java.lang.String");
+		var valueString = jo.CallStatic.<string>("valueOf", 42.f);
+	}
+END EX
+@param methodName メソッド名
+@param args 引数として渡す値

@@ -1,0 +1,11 @@
+<signature>
+detailObjectDistance
+</signature>
+詳細オブジェクトが表示される距離を設定する
+SA: ::ref::detailObjectDensity.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		Terrain.activeTerrain.detailObjectDistance = 40;
+	}
+END EX

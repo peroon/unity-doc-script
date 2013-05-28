@@ -1,0 +1,5 @@
+<signature>
+SmoothTangents(int,float)
+</signature>
+キーフレームの接線をスムーズにする。
+0 で均等。

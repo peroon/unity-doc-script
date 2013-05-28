@@ -1,0 +1,4 @@
+<signature>
+min
+</signature>
+ボックスの最小値。常にcenter変数からextents変数を引いた値となる

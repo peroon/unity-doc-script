@@ -1,0 +1,9 @@
+<signature>
+PlayMovieURL(string,Color,int,int)
+PlayMovieURL(string,Color,iPhoneMovieControlMode,iPhoneMovieScalingMode)
+PlayMovieURL(string,Color,iPhoneMovieControlMode)
+PlayMovieURL(string,Color)
+</signature>
+<txttag>
+UNDOC
+</txttag>

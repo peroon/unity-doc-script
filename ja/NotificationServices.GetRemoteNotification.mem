@@ -1,0 +1,4 @@
+<signature>
+GetRemoteNotification(int)
+</signature>
+特定のリモート通知を表すオブジェクトを返す（読み込み専用）

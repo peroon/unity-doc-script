@@ -1,0 +1,5 @@
+<signature>
+coefficients
+</signature>
+布がスキンメッシュとどのように相互作用するかを設定するために使う、布のスキン係数を設定する
+See the SkinnedCloth component reference for a description how these are used, and how to set them up in the Unity editor.

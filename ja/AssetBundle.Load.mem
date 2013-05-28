@@ -1,0 +1,9 @@
+<signature>
+Load(string)
+</signature>
+指定する名前のオブジェクトをロードする
+<signature>
+Load(string,Type)
+</signature>
+/string/ オブジェクト名からオブジェクトをロードします。
+/type/ GameObject、Transform、Rigidbodyなど型を指定する。

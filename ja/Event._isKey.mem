@@ -1,0 +1,14 @@
+<signature>
+isKey
+</signature>
+キーボードのイベントかを返す（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	// Detects any keyboard event
+	function OnGUI() {
+		var e : Event = Event.current;
+		if (e.isKey){
+			Debug.Log("Detected a keyboard event!");
+		}
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+GetHeights(int,int,int,int)
+</signature>
+Get an array of heightmap samples..

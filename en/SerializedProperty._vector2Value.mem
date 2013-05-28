@@ -1,0 +1,5 @@
+<signature>
+vector2Value
+</signature>
+Value of a 2D vector property.
+SA: ::ref::propertyType, SerializedPropertyType.Vector2, [[Vector2]].

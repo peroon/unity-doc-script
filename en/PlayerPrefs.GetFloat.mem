@@ -1,0 +1,10 @@
+<signature>
+GetFloat(string)
+GetFloat(string,float)
+</signature>
+Returns the value corresponding to /key/ in the preference file if it exists.
+If it doesn't exist, it will return /defaultValue/.
+CONVERTEXAMPLE
+BEGIN EX
+	print (PlayerPrefs.GetFloat("Player Score"));
+END EX

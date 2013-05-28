@@ -1,0 +1,5 @@
+<signature>
+ResetPath()
+</signature>
+現在のパスを削除します。SetPath関数やSetDestination関数を使用して新しいパスが設定されるまで動かなくなります。
+__Notes:__ If this agent is occupying an OffMeshLink it will complete the link immediately.

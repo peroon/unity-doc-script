@@ -1,0 +1,10 @@
+<signature>
+Approximately(float,float)
+</signature>
+類似している2 つのFloat型の値を比較する。
+浮動小数点を含む等号演算子（==）は正確に動作しない場合があります。比較を正確に行いたい場合に、この関数を使用します。
+CONVERTEXAMPLE
+BEGIN EX
+	if (Mathf.Approximately(1.0, 10.0/10.0))
+		print ("same");
+END EX

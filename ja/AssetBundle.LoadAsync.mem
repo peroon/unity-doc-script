@@ -1,0 +1,7 @@
+<signature>
+LoadAsync(string,Type)
+</signature>
+非同期で指定する名前のオブジェクトをロードする
+Unity Proライセンスが必要
+
+SA: [[AssetBundleRequest]].

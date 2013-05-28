@@ -1,0 +1,8 @@
+<signature>
+zero
+</signature>
+Vector3(0, 0, 0)と同じ意味
+CONVERTEXAMPLE
+BEGIN EX
+	transform.position = Vector3.zero;
+END EX

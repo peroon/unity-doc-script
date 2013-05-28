@@ -1,0 +1,14 @@
+<signature>
+GetStatic<FieldType>(string)
+</signature>
+staticのフィールドの値を取得する
+フィールドの型はジェネリックス型です。
+BEGIN EX
+	// Create an object of user provided class org.example.StaticFields,
+	// and get the string value of field 'globalName'.
+	function Start() {
+		var jo = new AndroidJavaObject("org.example.StaticFields");
+		var globalName = jo.Get.<string>("globalName");
+	}
+END EX
+@param fieldName フィールド名

@@ -1,0 +1,7 @@
+<signature>
+GetColumn(int)
+</signature>
+列部分の値を返す。
+i 列目の値をVector4型で取得します。i 引数の範囲は0 から3 になります。
+
+SA: ::ref::SetColumn.

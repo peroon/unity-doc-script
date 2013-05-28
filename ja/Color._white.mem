@@ -1,0 +1,9 @@
+<signature>
+white
+</signature>
+白を返す。RGBA は (1, 1, 1, 1)
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a white color to this transform's material
+	transform.renderer.material.color = Color.white;
+END EX

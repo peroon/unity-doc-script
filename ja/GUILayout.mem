@@ -1,0 +1,2 @@
+自動でRect情報を取得するGUIインタフェースです。基本的な扱いはGUIクラスと同じになります。
+\\SA: [[wiki:gui-Layout|GUI Layout tutorial]].

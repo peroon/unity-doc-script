@@ -1,0 +1,12 @@
+<signature>
+RecalculateBounds()
+</signature>
+頂点からメッシュのバウンディングボリュームを再計算する。
+メッシュをスクリプト側で作成や変更する場合、この関数を呼び出します。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var mesh : Mesh = GetComponent(MeshFilter).mesh;
+		mesh.RecalculateBounds();
+	}
+END EX

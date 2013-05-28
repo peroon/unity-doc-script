@@ -1,0 +1,5 @@
+有効にすると、パーティクルがランダムの角度で放出される
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.rndRotation = true;
+END EX

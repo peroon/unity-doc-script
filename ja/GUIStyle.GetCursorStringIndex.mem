@@ -1,0 +1,5 @@
+<signature>
+GetCursorStringIndex(Rect,GUIContent,Vector2)
+</signature>
+ピクセル単位で、位置から文字列のインデックスを返します。
+This does not respect any images inside content.

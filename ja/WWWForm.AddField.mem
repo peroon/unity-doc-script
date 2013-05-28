@@ -1,0 +1,11 @@
+<signature>
+AddField(string,string,Encoding)
+</signature>
+フォームに簡単なフィールドを追加する
+Adds field /fieldName/ with a given string value.
+<signature>
+AddField(string,int)
+</signature>
+フォームに簡単なフィールドを追加する
+Adds field /fieldName/ with a given integer value. A conveinience for calling
+AddField(fieldName, i.ToString).

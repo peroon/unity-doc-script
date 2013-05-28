@@ -1,0 +1,9 @@
+<signature>
+GetQualityLevel()
+</signature>
+現在のクオリティレベルを取得する。
+CONVERTEXAMPLE
+BEGIN EX
+	var qualityLevel = QualitySettings.GetQualityLevel ();
+END EX
+SA: ::ref::SetQualityLevel.

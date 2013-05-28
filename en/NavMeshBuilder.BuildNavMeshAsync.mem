@@ -1,0 +1,4 @@
+<signature>
+BuildNavMeshAsync()
+</signature>
+Build the Navmesh Asyncronously.

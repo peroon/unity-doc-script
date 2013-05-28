@@ -1,0 +1,7 @@
+<signature>
+current
+</signature>
+レンダリングされているカメラ。エディター上のシーンビューカメラを取得したい場合に使用する(読み取り専用)
+Most of the time you will want to use Camera.main instead.
+Use this function only when implementing one of the following events:
+MonoBehaviour.OnRenderImage, MonoBehaviour.OnPreRender, MonoBehaviour.OnPostRender.

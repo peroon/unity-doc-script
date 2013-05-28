@@ -1,0 +1,8 @@
+<signature>
+NameToLayer(string)
+</signature>
+レイヤー名を指定して、レイヤーのインデックスを返す。
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(LayerMask.NameToLayer("TransparentFX"));
+END EX

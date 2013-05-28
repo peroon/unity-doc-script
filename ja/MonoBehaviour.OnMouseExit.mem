@@ -1,0 +1,21 @@
+
+<signature>
+OnMouseExit()
+</signature>
+マウスが、[[GUIElement]] や[[Collider]]オブジェクトから外に出たときに呼び出される。
+OnMouseExit balances out OnMouseEnter.
+CONVERTEXAMPLE
+BEGIN EX
+	// Assigns a white color to the material 
+	// attached to this mesh.
+
+	function OnMouseExit () {
+		renderer.material.color = Color.white;
+	}
+END EX
+This function is not called on objects that belong to Ignore Raycast layer.
+
+コルーチン可能
+この関数が呼び出されるためには、オブジェクトがコライダーをアタッチしているか、GUI エレメントである必要があります。
+
+__IMPORTANT:__ This function has no effect on iPhone.

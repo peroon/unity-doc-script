@@ -1,0 +1,2 @@
+キャラクターの関節の主な軸の下限値を設定する
+The limit is relative to the angle the two rigidbodies started the simulation out with.

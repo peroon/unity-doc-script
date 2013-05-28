@@ -1,0 +1,2 @@
+Shader LOD level for this shader.
+SA: [[SL-ShaderLOD|Shader Level of Detail]], Shader.globalMaximumLOD.

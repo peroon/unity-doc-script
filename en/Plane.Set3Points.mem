@@ -1,0 +1,4 @@
+<signature>
+Set3Points(Vector3,Vector3,Vector3)
+</signature>
+Sets a plane using three points that lie within it.  The points go around clockwise as you look down on the top surface of the plane.

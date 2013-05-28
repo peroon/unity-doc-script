@@ -1,0 +1,20 @@
+<signature>
+SendMessageUpwards(string,object,SendMessageOptions)
+</signature>
+親子関係の親に当たるゲームオブジェクトへ向けてSendMessage関数を送る
+The receiving method can choose to ignore the argument by having zero arguments.
+デフォルトの状態だと、SendMessage関数に指定したメソッドがないとエラーを吐く。メソッドがなくてもいい場合は、DontRequireReceiverを指定する
+CONVERTEXAMPLE
+BEGIN EX
+	// Calls the function ApplyDamage with a value of 5
+	SendMessageUpwards ("ApplyDamage", 5.0);
+	
+	// Every script attached to the game object 
+	// that has a ApplyDamage function will be called.
+	function ApplyDamage (damage : float) {
+		print (damage);
+	}
+END EX
+<signature>
+SendMessageUpwards(string,SendMessageOptions)
+</signature>

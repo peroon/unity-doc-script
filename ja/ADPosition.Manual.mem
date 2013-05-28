@@ -1,0 +1,1 @@
+自動で位置を設定せず、@@ADBannerView.position@@変数で位置を設定する。

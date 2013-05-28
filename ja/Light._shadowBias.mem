@@ -1,0 +1,6 @@
+シャドウマッピングのバイアスを設定する。
+SA: ::ref::shadows property.
+CONVERTEXAMPLE
+BEGIN EX
+	light.shadowBias = 0.2;
+END EX

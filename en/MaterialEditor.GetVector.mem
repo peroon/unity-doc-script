@@ -1,0 +1,6 @@
+<signature>
+GetVector(string,bool)
+</signature>
+Get the value of a given vector shader property.
+@param propertyName Name of the vector property.
+@param hasMixedValue Does this property have multiple values?

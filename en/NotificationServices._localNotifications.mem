@@ -1,0 +1,4 @@
+<signature>
+localNotifications
+</signature>
+The list of objects representing received local notifications. (RO)

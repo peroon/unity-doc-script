@@ -1,0 +1,13 @@
+<signature>
+CheckCapsule(Vector3,Vector3,float)
+CheckCapsule(Vector3,Vector3,float,int)
+</signature>
+Returns true if there are any colliders overlapping the capsule defined by the axis going from /start/ and /end/ and having /radius/ in world coordinates.
+CONVERTEXAMPLE
+BEGIN EX
+		// Given the start and end waypoints of a corridor, check if there is enough
+	// room for an object of a certain width to pass through.
+	function CorridorIsWideEnough(startPt: Vector3, endPt: Vector3, width: float) {
+		return Physics.CheckCapsule(startPt, endPt, width);
+	}
+END EX

@@ -1,0 +1,7 @@
+描画する画像を設定する
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign someTexture to the guiTexture
+	var someTexture : Texture2D;
+	guiTexture.texture = someTexture;
+END EX

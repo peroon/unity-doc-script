@@ -1,0 +1,13 @@
+<signature>
+PlayClipAtPoint(AudioClip,Vector3,float)
+</signature>
+指定の座標でクリップを再生する。再生が終了した後は、自動的に削除される。
+CONVERTEXAMPLE
+BEGIN EX
+	@script RequireComponent(AudioSource)
+	// Plays the clip at position
+	public var clip : AudioClip; //make sure you assign an actual clip here in the inspector
+	function Start(){
+		audio.PlayClipAtPoint(clip, Vector3 (5, 1, 2));
+	}
+END EX

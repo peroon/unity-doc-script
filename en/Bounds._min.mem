@@ -1,0 +1,4 @@
+<signature>
+min
+</signature>
+The minimal point of the box. This is always equal to ''center-extents''.

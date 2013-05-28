@@ -1,0 +1,22 @@
+<signature>
+OnWillRenderObject()
+</signature>
+オブジェクトが可視状態のとき、カメラごとに一度呼び出される。
+MonoBehaviourクラスを無効にしている場合は呼び出されません。
+
+The function is called during the culling process just before rendering each culled object.
+
+For usage in a proper context, see the script /Water.cs/ in ''Assets->Import Package->Water(Pro Only)''
+
+Note that Camera.current will be set to the camera that will render the object.
+BEGIN EX
+	function OnWillRenderObject() {
+		// Tint the object red for identification if it is
+		// being shown on the overhead mini-map view.
+		if (Camera.current.name == "MiniMapcam") {
+			renderer.material.color = Color.red;
+		} else {
+			renderer.material.color = Color.white;
+		}
+	}
+END EX

@@ -1,0 +1,10 @@
+<signature>
+onFocused
+</signature>
+Rendering settings for when the element has keyboard and is turned on.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.onFocused.textColor = Color.green;
+	}
+END EX

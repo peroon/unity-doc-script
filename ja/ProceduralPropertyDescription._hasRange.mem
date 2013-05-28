@@ -1,0 +1,5 @@
+<signature>
+hasRange
+</signature>
+trueの場合、FlaotとVector型のプロパティは指定された範囲内の値に制限される
+For Vector types this applies to all the vector components.

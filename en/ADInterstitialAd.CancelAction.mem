@@ -1,0 +1,4 @@
+<signature>
+CancelAction()
+</signature>
+Cancels an executing advertisement.

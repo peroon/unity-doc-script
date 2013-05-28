@@ -1,0 +1,4 @@
+<signature>
+maximumLODLevel
+</signature>
+LOD の最大レベルを設定する。すべてのLODグループに適用される。

@@ -1,0 +1,4 @@
+<signature>
+Evaluate(float)
+</signature>
+設定する時間の値を返す。

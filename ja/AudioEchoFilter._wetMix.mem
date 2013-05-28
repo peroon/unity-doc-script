@@ -1,0 +1,14 @@
+出力に渡すエコー信号の音量。0 から1 の間で設定（デフォルトは1）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Mixes both Echo generated sound and the original audio source
+	// if you set the wetMix to 0 you will not have Echo sounds.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioEchoFilter)
+
+	function Start() {
+		GetComponent(AudioEchoFilter).wetMix = 1.0;
+		GetComponent(AudioEchoFilter).dryMix = 1.0;
+	}
+END EX

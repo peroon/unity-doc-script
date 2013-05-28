@@ -1,0 +1,9 @@
+<signature>
+currentResolution
+</signature>
+現在の画面の解像度を返す（読み込み専用）
+If the player is running in window mode, this returns the current resolution of the desktop.
+CONVERTEXAMPLE
+BEGIN EX
+	print(Screen.currentResolution);
+END EX

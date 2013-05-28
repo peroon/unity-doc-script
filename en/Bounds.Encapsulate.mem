@@ -1,0 +1,8 @@
+<signature>
+Encapsulate(Vector3)
+</signature>
+Grows the Bounds to include the /point/.
+<signature>
+Encapsulate(Bounds)
+</signature>
+Grow the bounds to encapsulate the bounds.

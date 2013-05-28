@@ -1,0 +1,4 @@
+<signature>
+cacheSize
+</signature>
+Set & get the Procedural cache budget.

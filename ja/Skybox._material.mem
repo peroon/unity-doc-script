@@ -1,0 +1,5 @@
+<signature>
+material
+</signature>
+スカイボックスで使用するマテリアルを設定する
+SA: [[wiki:class-Skybox|skybox component]].

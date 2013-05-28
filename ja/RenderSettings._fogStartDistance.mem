@@ -1,0 +1,7 @@
+<signature>
+fogStartDistance
+</signature>
+フォグが発生する距離を設定する。
+Fog start and end distances are used by FogMode::pref::Linear fog mode.
+
+SA: RenderSettings.fogEndDistance, RenderSettings.fogMode, [[wiki:class-RenderSettings|Render Settings manager]].

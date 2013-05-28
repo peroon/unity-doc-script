@@ -1,0 +1,6 @@
+<signature>
+Pause(bool)
+</signature>
+パーティクルシステムの一時停止を行います。
+SA: ::ref::Play, ::ref::Stop functions.
+@param withChildren Pause all child particle systems as well.

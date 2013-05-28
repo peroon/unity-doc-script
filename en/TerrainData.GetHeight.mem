@@ -1,0 +1,4 @@
+<signature>
+GetHeight(int,int)
+</signature>
+Gets the height at a certain point x,y.

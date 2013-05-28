@@ -1,0 +1,5 @@
+<signature>
+ClearCurves()
+</signature>
+クリップからすべての加速コントロールを削除する。
+SA: ::ref::SetCurve function, [[AnimationCurve]] class.

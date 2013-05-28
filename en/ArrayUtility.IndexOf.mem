@@ -1,0 +1,5 @@
+<signature>
+IndexOf<T>(T[],T)
+</signature>
+Index of first element with value ''value''.
+@return The zero-based index of the element, if found; otherwise -1.

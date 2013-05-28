@@ -1,0 +1,4 @@
+<signature>
+Intersects(Bounds)
+</signature>
+Does another bounding box intersect with this bounding box?

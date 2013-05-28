@@ -1,0 +1,5 @@
+<signature>
+lightmaps
+</signature>
+Lightmap array.
+SA: [[LightmapData]] class, Renderer.lightmapIndex property.

@@ -1,0 +1,7 @@
+<signature>
+SupportsRenderTextureFormat(RenderTextureFormat)
+</signature>
+Is render texture format supported?
+Returns /true/ if graphics card supports given [[RenderTextureFormat]].
+
+SA: [[wiki:class-RenderTexture|Render Texture assets]], [[RenderTexture]] class.

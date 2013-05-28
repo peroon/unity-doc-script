@@ -1,0 +1,7 @@
+<signature>
+LoadAsync(string,Type)
+</signature>
+Asynchronously loads object with /name/ of a given /type/ from the bundle.
+Asynchronous loading requires __Unity Pro__.
+
+SA: [[AssetBundleRequest]].

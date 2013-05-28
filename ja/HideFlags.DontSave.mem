@@ -1,0 +1,13 @@
+オブジェクトがシーンに保存されない。また、新しいシーンを読んでも、オブジェクトが破棄されない
+It is your responsibility to cleanup the object manually using DestroyImmediate, otherwise it will leak.
+CONVERTEXAMPLE
+BEGIN EX
+	// Instantiates a Plane everytime the game starts and never destroys it
+	// even if you stop your game preview
+	// NOTE: Watch out, this can cause LEAKS
+
+	function Start() {
+		var notDestructable : GameObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
+		notDestructable.hideFlags = HideFlags.DontSave;
+	}
+END EX

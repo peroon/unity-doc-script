@@ -1,0 +1,4 @@
+<signature>
+modifiers
+</signature>
+どの修飾子キーが押されたかを返す

@@ -1,0 +1,5 @@
+<signature>
+GetParticles(Particle[])
+</signature>
+空の配列にパーティクルをコピーします。戻り値としてパーティクルの数を返します。
+SA: ::ref::SetParticles.

@@ -1,0 +1,4 @@
+<signature>
+defaultSoundName
+</signature>
+デフォルトのサウンド名を取得（読み込み専用）。

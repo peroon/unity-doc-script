@@ -1,0 +1,8 @@
+<signature>
+spring
+</signature>
+バネの力。
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.spring.spring = 10;
+END EX

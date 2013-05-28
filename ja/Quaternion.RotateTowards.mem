@@ -1,0 +1,24 @@
+<signature>
+RotateTowards(Quaternion,Quaternion,float)
+</signature>
+設定した値へ回転させる。
+The /from/ quaternion is rotated towards /to/ by an angular step of /maxDegreesDelta/ (but note
+that the rotation will not overshoot).
+Negative values of /maxDegreesDelta/ will move away from /to/ until the rotation
+is exactly the opposite direction.
+CONVERTEXAMPLE
+BEGIN EX
+		// The object whose rotation we want to match.
+	var target: Transform;
+	
+	// Angular speed in degrees per sec.
+	var speed: float;
+	
+	function Update () {    
+	    // The step size is equal to speed times frame time.
+	    var step = speed * Time.deltaTime;
+	    
+	    // Rotate our transform a step closer to the target's.
+	    transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, step);
+	}
+END EX

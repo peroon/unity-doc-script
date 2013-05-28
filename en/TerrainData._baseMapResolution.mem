@@ -1,0 +1,4 @@
+<signature>
+baseMapResolution
+</signature>
+Resolution of the base map used for rendering far patches on the terrain.

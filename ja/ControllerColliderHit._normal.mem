@@ -1,0 +1,12 @@
+<signature>
+normal
+</signature>
+ワールド座標でのヒットした面の法線を返す
+CONVERTEXAMPLE
+BEGIN EX
+	// print the point's normal we impacted
+	function OnControllerColliderHit(hit : ControllerColliderHit) {
+		Debug.Log("Normal vector we collided at: " + hit.normal);
+	}
+END EX
+TODO.

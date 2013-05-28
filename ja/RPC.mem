@@ -1,0 +1,5 @@
+RPC 関数を実装するための属性です。
+Given an @RPC (javascript) or [RPC] attribute (C#) any function can be called remotely through Unity 
+Networking. The function must exist on both sending and recieving party.
+
+SA: NetworkView.RPC.

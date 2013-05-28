@@ -1,0 +1,20 @@
+<signature>
+active
+</signature>
+Rendering settings for when the control is pressed down.
+CONVERTEXAMPLE
+BEGIN EX
+	// Assigns a texture to button for when the control
+	// is pressed down
+
+	var aTexture : Texture2D;
+
+	function OnGUI() {
+	 	if(!aTexture) {
+			Debug.LogError("Assign a texture on the editor first");
+			return;
+		}
+		
+		GUI.skin.button.active.background = aTexture;		
+	}
+END EX

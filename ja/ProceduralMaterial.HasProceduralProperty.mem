@@ -1,0 +1,5 @@
+<signature>
+HasProceduralProperty(string)
+</signature>
+指定した名前のプロパティがあるかを返す
+SA: ::ref::GetProceduralPropertyDescriptions.

@@ -1,0 +1,21 @@
+<signature>
+TextField(Rect,string)
+TextField(Rect,string,int)
+TextField(Rect,string,GUIStyle)
+TextField(Rect,string,int,GUIStyle)
+</signature>
+文字を入力する場所を作成する
+CONVERTEXAMPLE
+BEGIN EX
+	var stringToEdit : String = "Hello World";
+
+	function OnGUI () {
+		// Make a text field that modifies stringToEdit.
+		stringToEdit = GUI.TextField (Rect (10, 10, 200, 20), stringToEdit, 25);
+	}
+END EX
+@param position 表示位置
+@param text 表示する文字列
+@param maxLength 最大文字数
+@param style スタイル
+@return 編集された文字列

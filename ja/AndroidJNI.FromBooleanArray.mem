@@ -1,0 +1,5 @@
+<signature>
+FromBooleanArray(IntPtr)
+</signature>
+IntPtr型をBoolean配列へ変換する。
+SA: AndroidJNI.GetBooleanArrayElement, AndroidJNI.GetArrayLength.

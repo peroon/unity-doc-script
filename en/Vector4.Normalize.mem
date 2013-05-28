@@ -1,0 +1,16 @@
+<signature>
+Normalize(Vector4)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+<signature>
+Normalize()
+</signature>
+Makes this vector have a ::ref::magnitude of 1.
+Note that this function will change the current vector. If you
+want to keep the current vector unchanged, use ::ref::normalized variable.
+
+If this vector is too small to be normalized it will be set to zero.
+
+SA: ::ref::normalized variable.

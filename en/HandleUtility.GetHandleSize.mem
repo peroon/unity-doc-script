@@ -1,0 +1,5 @@
+<signature>
+GetHandleSize(Vector3)
+</signature>
+Get world space size of a manipulator handle at given position.
+Uses the current camera to calculate suitable size.

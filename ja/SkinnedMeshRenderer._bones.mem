@@ -1,0 +1,5 @@
+<signature>
+bones
+</signature>
+スキンメッシュのバウンズを返す
+See the code example for Mesh.bindposes for further details.

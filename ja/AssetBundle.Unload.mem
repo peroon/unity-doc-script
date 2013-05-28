@@ -1,0 +1,12 @@
+<signature>
+Unload(bool)
+</signature>
+バンドル内のすべてのアセットをアンロードする。
+Unload frees all the memory associated with the objects inside the bundle.
+
+When /unloadAllLoadedObjects/ is false, compressed file data for assets inside the bundle will be unloaded, but any actual objects already loaded
+from this bundle will be kept intact. Of course you won't be able to load any more objects from this bundle.
+
+/unloadAllLoadedObjects/がtrueの場合、既にロードされたオブジェクトも含めて破棄される。
+
+objects in your scene referencing those assets, the references to them will become missing.

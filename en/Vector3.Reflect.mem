@@ -1,0 +1,21 @@
+<signature>
+Reflect(Vector3,Vector3)
+</signature>
+Reflects a vector off the plane defined by a normal.
+The /inNormal/ vector defines a plane (a plane's normal is the vector that is perpendicular to
+its surface). the /inDirection/ vector is treated as a directional arrow coming in to the plane.
+The returned value is a vector of equal magnitude to /inDirection/ but with its direction reflected.
+
+{img Vec3ReflectDiagram.png}\\
+''Reflection of a vector off a plane.''
+CONVERTEXAMPLE
+BEGIN EX
+	var originalObject : Transform;
+	var reflectedObject : Transform;
+
+	function Update () {
+		// Makes the reflected object appear opposite of the original object,
+		// mirrored along the z-axis of the world
+		reflectedObject.position = Vector3.Reflect (originalObject.position, Vector3.right);
+	}
+END EX

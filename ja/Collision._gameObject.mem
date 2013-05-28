@@ -1,0 +1,4 @@
+<signature>
+gameObject
+</signature>
+ゲームオブジェクトの情報を返す（読み込み専用）

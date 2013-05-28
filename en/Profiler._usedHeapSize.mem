@@ -1,0 +1,5 @@
+<signature>
+usedHeapSize
+</signature>
+Heap size used by the program.
+@return Size of the used heap in bytes, (or 0 if the profiler is disabled).

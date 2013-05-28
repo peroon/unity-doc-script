@@ -1,0 +1,12 @@
+オブジェクトを「Hierarchy」に表示しない。また、アセットの中にあれば、プロジェクトビューに表示しない
+CONVERTEXAMPLE
+BEGIN EX
+	// Creates 5 planes and hides them from the Hierarchy in the Editor.
+
+	function Start() {
+		for(var i : int = 0; i < 5; i++) {
+			var createdGO : GameObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
+			createdGO.hideFlags = HideFlags.HideInHierarchy;
+		}
+	}
+END EX

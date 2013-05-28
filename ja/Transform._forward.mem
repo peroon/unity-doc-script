@@ -1,0 +1,22 @@
+<signature>
+forward
+</signature>
+ローカル座標のZ軸
+CONVERTEXAMPLE
+BEGIN EX
+	// Set's the rigidbody velocity to be 
+	// along the blue axis of the transform
+
+	rigidbody.velocity = transform.forward * 10;
+END EX
+Another example:
+CONVERTEXAMPLE
+BEGIN EX
+	// Computes the angle between the target transform and this object
+	var angleBetween = 0.0;
+	var target : Transform;
+	function Update () {
+		var targetDir = target.position - transform.position;
+		angleBetween = Vector3.Angle (transform.forward, targetDir);
+	}
+END EX

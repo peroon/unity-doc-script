@@ -1,0 +1,11 @@
+<signature>
+anisotropicFiltering
+</signature>
+グローバルでの異方性フィルタリングモードを設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Disable all anisotropic filtering
+
+	QualitySettings.anisotropicFiltering = AnisotropicFiltering.Disable;
+END EX
+SA: [[AnisotropicFiltering]].

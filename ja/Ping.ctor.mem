@@ -1,0 +1,6 @@
+<signature>
+ctor(string)
+</signature>
+指定したIPアドレスへのpingを実行する
+This does not perform DNS lookups on host names so it only
+accepts IP addresses in dot notation.

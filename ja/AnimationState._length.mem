@@ -1,0 +1,6 @@
+アニメーションの秒数。
+CONVERTEXAMPLE
+BEGIN EX
+	// Print the length of the walk animation in seconds
+	print (animation["Walk"].length);
+END EX

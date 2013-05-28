@@ -1,0 +1,28 @@
+<signature>
+objects
+</signature>
+The actual unfiltered selection from the Scene.
+Only objects from the Scene or Hierarchy will be returned, not from the Project View. You can also assign objects to the selection.
+
+SA: Selection.instanceIDs.
+
+{img SelectAllOfTag.png}\\
+''Scriptable Wizard that lets you select GameObjects by their tag.''
+BEGIN EX
+class SelectAllOfTag extends ScriptableWizard {
+    var tagName = "ExampleTag";
+
+    @MenuItem ("Example/Select All of Tag...")
+    static function SelectAllOfTagWizard() {
+        ScriptableWizard.DisplayWizard(
+            "Select All of Tag...",
+            SelectAllOfTag,
+            "Make Selection");
+    }
+
+    function OnWizardCreate() {
+        var gos: GameObject[] = GameObject.FindGameObjectsWithTag(tagName);
+        Selection.objects = gos;
+    }
+}
+END EX

@@ -1,0 +1,12 @@
+<signature>
+text
+</signature>
+The text contents of the .txt file as a string. (RO)
+CONVERTEXAMPLE
+BEGIN EX
+	var asset : TextAsset;
+
+	function Start () {
+		print(asset.text);
+	}
+END EX

@@ -1,0 +1,2 @@
+StretchParticles変数がStretchedのとき、カメラの移動量によって引き伸ばされたように表示する
+Use this to make particles become large if the viewing camera has a large speed.

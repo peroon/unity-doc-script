@@ -1,0 +1,7 @@
+<signature>
+SetTextureScale(string,Vector2,int)
+</signature>
+Set the scale of a given texture property.
+@param propertyName Name of the texture property that you wish to modify the scale of.
+@param value Scale to set.
+@param coord Set the x or y component of the scale (0 for x, 1 for y).

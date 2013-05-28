@@ -1,0 +1,13 @@
+<signature>
+identity
+</signature>
+単位行列を返す（読み込み専用）。
+This is a matrix that effectively does nothing when applied.
+It has 1s in the main diagonal and 0s in all other elements:
+BEGIN EX NOCHECK
+	1  0  0  0
+	0  1  0  0
+	0  0  1  0
+	0  0  0  1
+END EX
+TODO.

@@ -1,0 +1,5 @@
+<signature>
+subMeshIndex
+</signature>
+Submesh index of the mesh.
+SA: Mesh.CombineMeshes, ::ref::mesh, ::ref::transform.

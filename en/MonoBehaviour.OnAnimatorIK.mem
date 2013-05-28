@@ -1,0 +1,30 @@
+<signature>
+OnAnimatorIK(int)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Callback for setting up animation IK (inverse kinematics).
+OnAnimatorIK() is called by the Animator Component right before it calls its internal IK system.  
+This callback should be used to setup the positions of the IK Goal and their respective weights. .\\
+BEGIN EX
+		using UnityEngine;
+		using System;
+		[RequireComponent(typeof(Animator))]  
+		public class Example: MonoBehaviour {
+			protected Animator animator; 
+			void Start () 
+			{
+				animator = GetComponent<Animator>();
+			}
+			
+			void OnAnimatorIK(int layerIndex)
+			{
+				animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot,leftFootWeightPosition);
+				animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot,leftFootWeightRotation);     
+				animator.SetIKPosition(AvatarIKGoal.LeftFoot,leftFootObj.position);                    
+				animator.SetIKRotation(AvatarIKGoal.LeftFoot,leftFootObj.rotation);
+			}
+		}
+END EX
+@param layerIndex The index of the layer on which the IK solver is called.

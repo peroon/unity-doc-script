@@ -1,0 +1,13 @@
+<signature>
+isMine
+</signature>
+オブジェクトによって制御される、ネットワークのビューかを判断する
+CONVERTEXAMPLE
+BEGIN EX
+	function OnNetworkInstantiate (info : NetworkMessageInfo) {
+		if (networkView.isMine)
+			Debug.Log("New object instanted by me");
+		else
+			Debug.Log("New object instantiated by " + info.sender);
+	}
+END EX

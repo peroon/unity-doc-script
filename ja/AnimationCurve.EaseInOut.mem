@@ -1,0 +1,8 @@
+<signature>
+EaseInOut(float,float,float,float)
+</signature>
+時間と値の始めと終わりを設定する。ゆっくり開始、ゆっくり終了。
+/timeStart/ 始点の時間、
+/valueStart/ 始点の値、
+/timeEnd/ 終点の時間、
+/valueEnd/ 終点の値

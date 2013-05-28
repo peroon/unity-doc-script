@@ -1,0 +1,4 @@
+リモートによる通知設定はiPhone/iPad/iPod Touch のみの機能です。
+リモートによる通知は、アプリがインストールされているデバイスに通知すると、Apple Push Notification サービスによって送信されることになります。
+
+このクラスはNotificationServicesクラスで使用されます。

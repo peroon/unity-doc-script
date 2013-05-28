@@ -1,0 +1,21 @@
+<signature>
+Box(Rect,string)
+Box(Rect,Texture)
+Box(Rect,GUIContent)
+Box(Rect,string,GUIStyle)
+Box(Rect,Texture,GUIStyle)
+Box(Rect,GUIContent,GUIStyle)
+</signature>
+Make a graphical box.
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a box of the size of the screen.
+	function OnGUI() {
+		 GUI.Box(Rect(0,0,Screen.width,Screen.height),"This is a title");
+	}
+END EX
+@param position Rectangle on the screen to use for the box.
+@param text Text to display on the box.
+@param image [[Texture]] to display on the box.
+@param content Text, image and tooltip for this box.
+@param style The style to use. If left out, the /box/ style from the current [[GUISkin]] is used.

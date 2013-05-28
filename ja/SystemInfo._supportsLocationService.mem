@@ -1,0 +1,7 @@
+<signature>
+supportsLocationService
+</signature>
+ロケーションサービス（GPS）が利用できるかを返す
+This property does not provide a detailed
+information on what kind of sensor can be used, it can use all kinds of
+underlying technology with varying accuracy.

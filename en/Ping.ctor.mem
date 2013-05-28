@@ -1,0 +1,6 @@
+<signature>
+ctor(string)
+</signature>
+Perform a ping to the supplied target IP address.
+This does not perform DNS lookups on host names so it only
+accepts IP addresses in dot notation.

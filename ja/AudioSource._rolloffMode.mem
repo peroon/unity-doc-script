@@ -1,0 +1,7 @@
+距離によって減衰する方法を設定／取得する。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start() {
+		audio.rolloffMode = AudioRolloffMode.Linear;
+	}
+END EX

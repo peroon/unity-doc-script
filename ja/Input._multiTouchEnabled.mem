@@ -1,0 +1,4 @@
+<signature>
+multiTouchEnabled
+</signature>
+マルチタッチを処理するかどうかを返す。

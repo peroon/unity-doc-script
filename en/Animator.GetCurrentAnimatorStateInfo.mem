@@ -1,0 +1,5 @@
+<signature>
+GetCurrentAnimatorStateInfo(int)
+</signature>
+Gets the current State information on a specified AnimatorController layer.
+@param layerIndex The layer's index.

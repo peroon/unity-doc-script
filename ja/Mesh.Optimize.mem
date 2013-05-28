@@ -1,0 +1,14 @@
+<signature>
+Optimize()
+</signature>
+表示用のメッシュを最適化する。
+この関数による処理は時間がかかってしまうかもしれませんが、表示するジオメトリが早くなります。
+You should use it if you generate a mesh from scratch procedurally and you want to trade better runtime performance against higher load time. 三角形からストリップを作成し、最適化を行います。内部的には、モデルやローカルにキャッシュされた三角形の頂点を最適化した、3 つのストリップを使用します。
+既にインポートされたモデルは、この処理を行うことは推奨されません。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var mesh : Mesh = GetComponent(MeshFilter).mesh;
+		mesh.Optimize();
+	}
+END EX

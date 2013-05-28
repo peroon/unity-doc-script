@@ -1,0 +1,4 @@
+<signature>
+heightmapHeight
+</signature>
+Height of the terrain in samples (RO).

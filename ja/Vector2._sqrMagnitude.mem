@@ -1,0 +1,9 @@
+<signature>
+sqrMagnitude
+</signature>
+ベクトルの2 乗の長さを返す（読み込み専用）
+Calculating the squared magnitude instead of the ::ref::magnitude is much faster.
+Often if you are comparing magnitudes of two vectors you can just compare
+their squared magnitudes.
+
+SA: ::ref::magnitude.

@@ -1,0 +1,4 @@
+<signature>
+prefab
+</signature>
+Retrieves the actual GameObect used by the tree.

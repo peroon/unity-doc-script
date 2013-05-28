@@ -1,0 +1,4 @@
+<signature>
+statusBarHidden
+</signature>
+Should status bar be hidden. Shared between iOS & Android platforms.

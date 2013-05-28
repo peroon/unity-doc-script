@@ -1,0 +1,6 @@
+<signature>
+ctor(Color,float)
+</signature>
+Gradient color key.
+@param color Color of key.
+@param time Time of the key (0 - 1).

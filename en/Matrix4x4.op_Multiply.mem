@@ -1,0 +1,9 @@
+<signature>
+Multiply(Matrix4x4,Matrix4x4)
+</signature>
+Multiplies two matrices.
+The returned result is /lhs/ * /rhs/.
+<signature>
+Multiply(Matrix4x4,Vector4)
+</signature>
+Transforms a [[Vector4]] by a matrix.

@@ -1,0 +1,8 @@
+<signature>
+Expand(float)
+</signature>
+Expand the bounds by increasing its /size/ by /amount/ along each side.
+<signature>
+Expand(Vector3)
+</signature>
+Expand the bounds by increasing its /size/ by /amount/ along each side.

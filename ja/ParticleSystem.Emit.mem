@@ -1,0 +1,17 @@
+<signature>
+Emit(int)
+</signature>
+設定した数のパーティクルを放出する。パーティクルシステムが再生されていない場合は再生する
+<signature>
+Emit(Vector3,Vector3,float,float,Color32)
+</signature>
+決まった数のパーティクルを放出させます。
+@param position The position of the particle.
+@param velocity The velocity of the particle.
+@param size The size of the particle.
+@param lifetime The remaining lifetime of the particle.
+@param color The color of the particle.
+<signature>
+Emit(Particle)
+</signature>
+Emit a single particle.

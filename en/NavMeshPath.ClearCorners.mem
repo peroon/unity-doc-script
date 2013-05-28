@@ -1,0 +1,4 @@
+<signature>
+ClearCorners()
+</signature>
+Erase all corner points from path.

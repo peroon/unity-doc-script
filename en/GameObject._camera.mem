@@ -1,0 +1,9 @@
+<signature>
+camera
+</signature>
+The [[Camera]] attached to this GameObject (RO). (null if there is none attached).
+CONVERTEXAMPLE
+BEGIN EX
+	var other : GameObject; 
+	other.camera.fieldOfView = 45;
+END EX

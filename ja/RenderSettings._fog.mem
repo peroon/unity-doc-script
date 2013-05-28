@@ -1,0 +1,9 @@
+<signature>
+fog
+</signature>
+フォグを有効にするかを設定する。
+BEGIN EX
+	// Enable fog
+	RenderSettings.fog = true;
+END EX
+SA: RenderSettings.fogMode, [[wiki:class-RenderSettings|Render Settings manager]].

@@ -1,0 +1,4 @@
+<signature>
+SetFloat(string,float)
+</signature>
+Set a float parameter.

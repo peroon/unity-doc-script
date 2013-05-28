@@ -1,0 +1,2 @@
+1テクセル4ビットの圧縮されたテクスチャフォーマット。アルファは現在サポートされていない
+SA: Texture2D.format, [[wiki:class-Texture2D|texture assets]].

@@ -1,0 +1,4 @@
+<signature>
+zero
+</signature>
+Shorthand for writing @@Vector4(0,0,0,0)@@.

@@ -1,0 +1,4 @@
+<signature>
+BuildNavMesh()
+</signature>
+Build the Navmesh.

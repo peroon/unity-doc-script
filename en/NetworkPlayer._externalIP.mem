@@ -1,0 +1,5 @@
+<signature>
+externalIP
+</signature>
+Returns the external IP address of the network interface.
+This will only be populated after some external connection has been made.

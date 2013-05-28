@@ -1,0 +1,5 @@
+<signature>
+xMax
+</signature>
+Right coordinate of the rectangle.
+Changing this value will preserve left side of rectangle (so ::ref::width will change as well).

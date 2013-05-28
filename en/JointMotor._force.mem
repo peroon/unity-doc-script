@@ -1,0 +1,8 @@
+<signature>
+force
+</signature>
+The motor will apply a force.
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.motor.force = 100;
+END EX

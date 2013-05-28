@@ -1,0 +1,14 @@
+有効の場合はワールド座標、無効の場合はローカル座標になる。
+This means the object's position is ignored, and the lines are rendered around world origin.
+CONVERTEXAMPLE
+BEGIN EX
+	// Creates a line renderer at the origin with 2 colors.
+
+	function Start() {
+		var lineRenderer : LineRenderer;
+		lineRenderer = gameObject.AddComponent(LineRenderer);
+		lineRenderer.useWorldSpace = false;
+		lineRenderer.material = new Material (Shader.Find("Particles/Additive"));
+		lineRenderer.SetColors(Color.red, Color.yellow);
+	}
+END EX

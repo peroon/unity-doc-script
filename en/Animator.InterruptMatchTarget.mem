@@ -1,0 +1,6 @@
+<signature>
+InterruptMatchTarget()
+InterruptMatchTarget(bool)
+</signature>
+Interrupts the automatic target matching.
+CompleteMatch will make the gameobject match the target completely at the next frame.

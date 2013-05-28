@@ -1,0 +1,5 @@
+<signature>
+lightmapNear
+</signature>
+Lightmap storing only the indirect incoming light.
+SA: [[LightmapSettings]] class, Renderer.lightmapIndex property.

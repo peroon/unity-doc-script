@@ -1,0 +1,9 @@
+<signature>
+gray
+</signature>
+灰色を返す。RGBA は (0.5, 0.5, 0.5, 1)
+CONVERTEXAMPLE
+BEGIN EX
+	// Assign a gray color to this transform's material
+	transform.renderer.material.color = Color.gray;
+END EX

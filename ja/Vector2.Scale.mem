@@ -1,0 +1,14 @@
+<signature>
+Scale(Vector2,Vector2)
+</signature>
+同じような大きさのものと乗算したものを返す
+2 つのベクトルの積を返します。
+CONVERTEXAMPLE
+BEGIN EX
+	// prints (2.0,6.0)
+	print (Vector2.Scale (Vector2(1,2), Vector2(2,3)));
+END EX
+<signature>
+Scale(Vector2)
+</signature>
+Multiplies every component of this vector by the same component of /scale/.

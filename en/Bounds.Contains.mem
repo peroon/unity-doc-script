@@ -1,0 +1,4 @@
+<signature>
+Contains(Vector3)
+</signature>
+Is /point/ contained in the bounding box?

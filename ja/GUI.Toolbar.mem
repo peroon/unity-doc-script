@@ -1,0 +1,25 @@
+<signature>
+Toolbar(Rect,int,string[])
+Toolbar(Rect,int,Texture[])
+Toolbar(Rect,int,GUIContent[])
+Toolbar(Rect,int,string[],GUIStyle)
+Toolbar(Rect,int,Texture[],GUIStyle)
+Toolbar(Rect,int,GUIContent[],GUIStyle)
+</signature>
+ツールバーを作成します。
+CONVERTEXAMPLE
+BEGIN EX
+	var toolbarInt : int = 0;
+	var toolbarStrings : String[] = ["Toolbar1", "Toolbar2", "Toolbar3"];
+
+	function OnGUI () {
+		toolbarInt = GUI.Toolbar (Rect (25, 25, 250, 30), toolbarInt, toolbarStrings);
+	}
+END EX
+@param position 表示位置
+@param selected 各配列のインデックスに対応している
+@param texts 表示する文字列の配列
+@param images 表示する画像の配列
+@param contents 表示するGUIContentオブジェクトの配列
+@param style スタイル
+@return 選択されたボタンのインデックス

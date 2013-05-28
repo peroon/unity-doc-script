@@ -1,0 +1,9 @@
+<signature>
+renderer
+</signature>
+The [[Renderer]] attached to this GameObject (RO). (null if there is none attached).
+CONVERTEXAMPLE
+BEGIN EX
+	var other : GameObject; 
+	other.renderer.material.color = Color.green;
+END EX

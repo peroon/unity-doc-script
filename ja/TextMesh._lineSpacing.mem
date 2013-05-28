@@ -1,0 +1,5 @@
+スペースの間隔を返す
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).lineSpacing = 10;
+END EX

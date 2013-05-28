@@ -1,0 +1,15 @@
+<signature>
+SetStatic<FieldType>(string,FieldType)
+</signature>
+staticのフィールドに値を設定する
+フィールドの型はジェネリックス型です。
+BEGIN EX
+	// Create an object of user provided class org.example.StaticFields,
+	// and set the value of field 'globalName'.
+	function Start() {
+		var jo = new AndroidJavaObject("org.example.StaticFields");
+		jo.Set.<string>("globalName", "this_is_the_name");
+	}
+END EX
+@param fieldName フィールド名
+@param val 値

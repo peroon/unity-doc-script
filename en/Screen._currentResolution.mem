@@ -1,0 +1,9 @@
+<signature>
+currentResolution
+</signature>
+The current screen resolution (RO).
+If the player is running in window mode, this returns the current resolution of the desktop.
+CONVERTEXAMPLE
+BEGIN EX
+	print(Screen.currentResolution);
+END EX

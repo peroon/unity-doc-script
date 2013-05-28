@@ -1,0 +1,8 @@
+<signature>
+right
+</signature>
+Vector3(1, 0, 0)と同じ意味
+CONVERTEXAMPLE
+BEGIN EX
+	transform.position += Vector3.right * Time.deltaTime;
+END EX

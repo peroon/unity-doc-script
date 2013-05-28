@@ -1,0 +1,12 @@
+<signature>
+attitude
+</signature>
+デバイスの傾き具合を返す
+CONVERTEXAMPLE
+BEGIN EX
+	// Rotate the object to match the device's orientation
+	// in space.
+	function Update () {
+		transform.rotation = Input.gyro.attitude;
+	}
+END EX

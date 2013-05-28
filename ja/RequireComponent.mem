@@ -1,0 +1,22 @@
+自動でコンポーネントを追加する場合に使用する属性です。
+この属性の付いたスクリプトをゲームオブジェクトにアタッチすると、設定したコンポーネントも自動でアタッチされるようになります。
+This is useful to avoid setup errors.
+For example a script might require that a rigid body is always added to the same game object.
+Using RequireComponent this will be done automatically, thus you can never get the setup wrong.
+BEGIN EX NOCHECK
+// Mark the PlayerScript as requiring a rigidbody in the game object.
+@script RequireComponent(Rigidbody)
+
+function FixedUpdate() {
+	rigidbody.AddForce(Vector3.up);
+}
+END EX
+C# Example:
+BEGIN EX NOCHECK
+[RequireComponent (typeof (Rigidbody))]
+public class PlayerScript : MonoBehaviour {
+	void FixedUpdate()  {
+		rigidbody.AddForce(Vector3.up);
+	}
+}
+END EX

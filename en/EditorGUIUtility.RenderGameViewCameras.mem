@@ -1,0 +1,7 @@
+<signature>
+RenderGameViewCameras(Rect,bool,bool)
+RenderGameViewCameras(Rect,Rect,bool,bool)
+</signature>
+Render all ingame cameras.
+@param cameraRect The device coordinates to render all game cameras into.
+@param gizmos Show gizmos as well.

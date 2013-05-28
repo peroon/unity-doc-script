@@ -1,0 +1,4 @@
+<signature>
+HasKey(string)
+</signature>
+Returns true if /key/ exists in the preferences.

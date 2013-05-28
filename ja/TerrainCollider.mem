@@ -1,0 +1,2 @@
+ハイトマップベースのコライダーです。
+SA: [[SphereCollider]], [[CapsuleCollider]], [[PhysicMaterial]], [[Rigidbody]].

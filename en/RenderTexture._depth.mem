@@ -1,0 +1,4 @@
+<signature>
+depth
+</signature>
+The precision of the render texture's depth buffer in bits (0, 16, 24 are supported).

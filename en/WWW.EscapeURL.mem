@@ -1,0 +1,16 @@
+<signature>
+EscapeURL(string)
+EscapeURL(string,Encoding)
+</signature>
+Escapes characters in a string to ensure they are URL-friendly.
+Certain text characters have special meanings when present in URLs. If you need to include those characters in URL parameters then you must represent them with escape sequences. It is recommended that you use this function on any text supplied by a user before passing the text as a URL parameter. This will ensure that a malicious user can't manipulate the contents of the URL to attack the webserver.
+CONVERTEXAMPLE
+BEGIN EX
+function Start () {
+	// Escaped name is "Fish+%26+Chips'.
+	var escName = WWW.EscapeURL('Fish & Chips');
+}
+END EX
+SA: UnEscapeURL.
+@param s A string with characters to be escaped.
+@param e The text encoding to use.

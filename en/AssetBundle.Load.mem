@@ -1,0 +1,8 @@
+<signature>
+Load(string)
+</signature>
+Loads object with /name/ from the bundle.
+<signature>
+Load(string,Type)
+</signature>
+Loads object with /name/ of a given /type/ from the bundle.

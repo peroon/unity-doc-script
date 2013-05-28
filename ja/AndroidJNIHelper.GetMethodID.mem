@@ -1,0 +1,35 @@
+<signature>
+GetMethodID(IntPtr,string,string,bool)
+</signature>
+特定のシグネチャと名前に一致するメソッドのJava クラスを読み込む。
+The signature comparison is done to allow sub-/base-classes of a class types.
+If no signature is provided the first method with the correct name will be returned.
+
+SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetConstructorID, 
+AndroidJNIHelper.GetFieldID.
+@param javaClass Java クラスオブジェクト
+@param methodName メソッド名
+@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチャ。
+@param isStatic staticかどうか。デフォルトは<tt>false</tt>
+<signature>
+GetMethodID(IntPtr,string,object[],bool)
+</signature>
+Get a JNI method ID based on calling arguments.
+Generic parameter represents the method return type, and the regular method assumes 'void' return type.
+Scans a particular Java class for a method matching a signature based on passed arguments.
+The signature comparison is done to allow for sub-/base-classes of the class types.
+@param javaClass Java クラスオブジェクト
+@param methodName メソッド名
+@param args 引数として渡される値の配列
+@param isStatic staticかどうか。デフォルトは<tt>false</tt>
+<signature>
+GetMethodID<ReturnType>(IntPtr,string,object[],bool)
+</signature>
+Get a JNI method ID based on calling arguments.
+Generic parameter represents the method return type, and the regular method assumes 'void' return type.
+Scans a particular Java class for a method matching a signature based on passed arguments.
+The signature comparison is done to allow for sub-/base-classes of the class types.
+@param javaClass Java クラスオブジェクト
+@param methodName メソッド名
+@param args 引数として渡される値の配列
+@param isStatic staticかどうか。デフォルトは<tt>false</tt>

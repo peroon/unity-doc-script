@@ -1,0 +1,5 @@
+<signature>
+step
+</signature>
+ステップサイズを設定する。0以外を設定
+For Vector types this applies to all the vector components.

@@ -1,0 +1,5 @@
+<signature>
+userNameHash
+</signature>
+The user-specidied name of the Transition.
+The hash is generated using Animator::StringToHash.

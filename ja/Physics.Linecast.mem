@@ -1,0 +1,20 @@
+<signature>
+Linecast(Vector3,Vector3,int)
+</signature>
+始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用します。センサーのような扱いができます。
+CONVERTEXAMPLE
+BEGIN EX
+	var target : Transform;
+	function Update () {
+		if (!Physics.Linecast (transform.position, target.position)) {
+			ProcessData.AndDoSomeCalculations();
+		}
+	}
+END EX
+[[wiki:Layers|Layer mask]] is used to selectively ignore colliders when casting a ray.
+<signature>
+Linecast(Vector3,Vector3,RaycastHit,int)
+</signature>
+始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用します。センサーのような扱いができます。
+If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
+[[wiki:Layers|Layer mask]] is used to selectively ignore colliders when casting a ray.

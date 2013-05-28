@@ -1,0 +1,5 @@
+<signature>
+nameHash
+</signature>
+Name of the State.
+The hash is generated using Animator::StringToHash. The string to pass should include the parent layer's name.  For example, if you have a @@Run@@ state in the @@Base Layer@@ the string to generate the hash will be @@Base Layer.Run@@.

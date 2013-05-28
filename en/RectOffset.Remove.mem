@@ -1,0 +1,4 @@
+<signature>
+Remove(Rect)
+</signature>
+Remove the border offsets from a /rect/.

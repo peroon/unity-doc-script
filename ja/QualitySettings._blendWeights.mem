@@ -1,0 +1,12 @@
+<signature>
+blendWeights
+</signature>
+ブレンドの重みを返す。
+1、2、4 ボーンのいずれかに設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set Blend weights to one bone.
+
+	QualitySettings.blendWeights = BlendWeights.OneBone;
+END EX
+SA: [[wiki:class-QualitySettings|Quality Settings]].

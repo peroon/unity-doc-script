@@ -1,0 +1,11 @@
+<signature>
+Expression<T>(string,object[])
+</signature>
+メソッド名・変数名と引数として渡す値を設定する。戻り値あり。
+CONVERTEXAMPLE
+BEGIN EX
+	import UnityEngine.Flash;
+	
+	var value = 42;
+	var asObject = ActionScript.Expression.<Object>("{value: {0}}", value);
+END EX

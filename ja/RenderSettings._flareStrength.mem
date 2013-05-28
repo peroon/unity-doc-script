@@ -1,0 +1,8 @@
+<signature>
+flareStrength
+</signature>
+シーン内のすべてのフレアの強さを設定する。
+BEGIN EX
+	RenderSettings.flareStrength = 0.2;
+END EX
+SA: [[wiki:class-RenderSettings|Render Settings manager]], [[wiki:class-LensFlare|LensFlare component]].

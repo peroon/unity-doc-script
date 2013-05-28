@@ -1,0 +1,5 @@
+<signature>
+progress
+</signature>
+進捗状況を表示する（読み込み専用）。
+SA: ::ref::isDone.

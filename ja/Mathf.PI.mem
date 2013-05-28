@@ -1,0 +1,13 @@
+<signature>
+PI
+</signature>
+円周率を返す（3.14159265358979...）（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	var radius : float = 5;
+
+	function Start() {
+		var perimeter : float = 2 * Mathf.PI * radius;
+		Debug.Log("The perimeter of the circle is: " + perimeter);
+	}
+END EX

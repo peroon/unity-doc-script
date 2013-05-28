@@ -1,0 +1,7 @@
+<signature>
+color
+</signature>
+パーティクルのカラーを返す
+Alpha channel of the color is used to fade out particles.
+
+SA: [[wiki:comp-ParticlesLegacy|Particles documentation]].

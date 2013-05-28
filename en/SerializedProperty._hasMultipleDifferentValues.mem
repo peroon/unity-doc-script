@@ -1,0 +1,5 @@
+<signature>
+hasMultipleDifferentValues
+</signature>
+Does this property represent multiple different values due to multi-object editing? (RO)
+SA: SerializedObject.SetIsDifferentCacheDirty.

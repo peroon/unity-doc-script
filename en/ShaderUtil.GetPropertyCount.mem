@@ -1,0 +1,5 @@
+<signature>
+GetPropertyCount(Shader)
+</signature>
+Get the number of properties in Shader s.
+@param s The shader to check against.

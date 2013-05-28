@@ -1,0 +1,10 @@
+<signature>
+temporaryCachePath
+</signature>
+一時的なデータ、キャッシュのディレクトリパスを返す（読み取り専用）。
+The value is a directory path where temporary data can be stored.
+CONVERTEXAMPLE
+BEGIN EX
+	// print the path to the temporary data folder
+	print (Application. temporaryCachePath);
+END EX

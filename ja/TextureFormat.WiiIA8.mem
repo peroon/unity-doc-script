@@ -1,0 +1,2 @@
+Wii専用のテクスチャフォーマット。明度8ビット。アルファ8 ビット
+SA: Texture2D.format, [[wiki:class-Texture2D|texture assets]].

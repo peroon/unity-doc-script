@@ -1,0 +1,5 @@
+<signature>
+StopAnimationMode()
+</signature>
+Stops animation mode, as used by the animation editor.
+SA: ::ref::StartAnimationMode, ::ref::InAnimationMode.

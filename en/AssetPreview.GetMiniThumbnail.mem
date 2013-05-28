@@ -1,0 +1,4 @@
+<signature>
+GetMiniThumbnail(Object)
+</signature>
+Returns the thumbnail for an object (like the ones you see in the project view).

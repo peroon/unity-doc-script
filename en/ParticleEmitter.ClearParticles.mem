@@ -1,0 +1,8 @@
+<signature>
+ClearParticles()
+</signature>
+Removes all particles from the particle emitter.
+CONVERTEXAMPLE
+BEGIN EX
+	particleEmitter.ClearParticles();
+END EX

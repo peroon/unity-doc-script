@@ -1,0 +1,5 @@
+テキストを整列させる設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.alignment = TextAlignment.Left;
+END EX

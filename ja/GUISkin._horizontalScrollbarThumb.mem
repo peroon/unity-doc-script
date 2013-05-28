@@ -1,0 +1,15 @@
+<signature>
+horizontalScrollbarThumb
+</signature>
+HorizontalScrollbarオブジェクトのthumb（つまみ部分）の設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	// Modifies only the horizontal scrollbar thumb of the current GUISkin
+	var hSbarValue : float;
+	var style : GUIStyle;
+
+	function OnGUI () {
+		GUI.skin.horizontalScrollbarThumb = style;
+		hSbarValue = GUILayout.HorizontalScrollbar (hSbarValue, 1.0, 0.0, 10.0);
+	}
+END EX

@@ -1,0 +1,5 @@
+<signature>
+ToObjectArray(IntPtr[])
+</signature>
+Object配列をIntPtr型へ変換する。
+SA: AndroidJNI.NewObjectArray, AndroidJNI.SetObjectArrayElement.

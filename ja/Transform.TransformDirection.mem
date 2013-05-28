@@ -1,0 +1,26 @@
+<signature>
+TransformDirection(Vector3)
+</signature>
+ローカル座標からワールド座標へ変換したベクトルの向きを返します。
+大きさや位置は含まれません。
+CONVERTEXAMPLE
+BEGIN EX
+	// Calculate the x-axis relative to the camera
+	var cam : Transform = Camera.main.transform;
+	var cameraRelativeRight : Vector3 = cam.TransformDirection (Vector3.right);
+	// Apply a force relative to the camera's x-axis
+	rigidbody.AddForce (cameraRelativeRight * 10);
+END EX
+<signature>
+TransformDirection(float,float,float)
+</signature>
+Transforms direction /x/, /y/, /z/ from local space to world space.
+大きさや位置は含まれません。
+CONVERTEXAMPLE
+BEGIN EX
+	// Calculate the x-axis relative to the camera
+	var cam : Transform = Camera.main.transform;
+	var cameraRelativeRight : Vector3 = cam.TransformDirection (1, 0, 0);
+	// Apply a force relative to the camera's x-axis
+	rigidbody.AddForce (cameraRelativeRight * 10);
+END EX

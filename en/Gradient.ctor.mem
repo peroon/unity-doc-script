@@ -1,0 +1,5 @@
+<signature>
+ctor()
+</signature>
+Create a new Gradient object.
+The Gradient's keys can be manipulated using its ::ref::SetKeys function.

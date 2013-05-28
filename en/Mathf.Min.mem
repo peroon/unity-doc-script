@@ -1,0 +1,20 @@
+<signature>
+Min(float,float)
+Min(float[])
+</signature>
+Returns the smallest of two or more values.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 1.2
+	print(Mathf.Min(1.2, 2.4));
+END EX
+<signature>
+Min(int,int)
+Min(int[])
+</signature>
+Returns the smallest of two or more values.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 1
+	print(Mathf.Min(1, 2));
+END EX

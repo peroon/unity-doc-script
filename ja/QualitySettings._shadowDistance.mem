@@ -1,0 +1,5 @@
+<signature>
+shadowDistance
+</signature>
+影の描画距離を設定する。
+SA: [[wiki:class-QualitySettings|Quality Settings]].

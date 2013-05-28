@@ -1,0 +1,12 @@
+<signature>
+type
+</signature>
+実行されたイベントEventType型を参照
+SA: [[EventType]], [[wiki:GUI Scripting Guide|GUI Scripting Guide]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the current event detected.
+	function OnGUI () {
+		Debug.Log("Current event detected: " + Event.current.type);
+	}
+END EX

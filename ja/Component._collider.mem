@@ -1,0 +1,8 @@
+<signature>
+collider
+</signature>
+Collider情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	collider.material.dynamicFriction = 1;
+END EX

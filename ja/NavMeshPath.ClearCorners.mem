@@ -1,0 +1,4 @@
+<signature>
+ClearCorners()
+</signature>
+パスからすべてのコーナーポイントを削除する

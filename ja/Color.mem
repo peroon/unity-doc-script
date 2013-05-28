@@ -1,0 +1,7 @@
+RGBA カラーの表現をします。
+Unityでは、各色の成分を0 から1 のFloat型で表すことが
+できます。
+
+Components (::ref::r,::ref::g,::ref::b) define a color in RGB color space. Alpha component (::ref::a)
+defines transparency - alpha of one is completely opaque, alpha of zero is completely
+transparent.

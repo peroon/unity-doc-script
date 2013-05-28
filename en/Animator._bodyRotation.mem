@@ -1,0 +1,5 @@
+<signature>
+bodyRotation
+</signature>
+The rotation of the body center of mass.
+The rotation is local to the gameobject.

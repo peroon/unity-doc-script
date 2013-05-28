@@ -1,0 +1,8 @@
+<signature>
+light
+</signature>
+Light情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	light.range = 10;
+END EX

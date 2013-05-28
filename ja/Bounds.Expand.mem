@@ -1,0 +1,8 @@
+<signature>
+Expand(float)
+</signature>
+設定した量によってサイズを大きくする
+<signature>
+Expand(Vector3)
+</signature>
+設定した値をバウンズに足します。設定した分だけ拡大したり、縮小されたりします。

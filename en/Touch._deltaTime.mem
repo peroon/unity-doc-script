@@ -1,0 +1,4 @@
+<signature>
+deltaTime
+</signature>
+Amount of time passed since last change.

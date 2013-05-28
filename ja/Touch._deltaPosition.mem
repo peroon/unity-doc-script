@@ -1,0 +1,4 @@
+<signature>
+deltaPosition
+</signature>
+1つ前にタッチしたところからの位置の変動値を返す

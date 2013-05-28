@@ -1,0 +1,20 @@
+<signature>
+SendMessage(string,object,SendMessageOptions)
+</signature>
+1つのゲームオブジェクトに向けて設定したメソッド名に該当する関数を呼び出す
+The receiving method can choose to ignore the argument by having zero arguments.
+デフォルトの状態だと、SendMessage関数で指定したメソッドがないとエラーを吐く。メソッドがなくてもいい場合は、DontRequireReceiverを指定する
+CONVERTEXAMPLE
+BEGIN EX
+	// Calls the function ApplyDamage with a value of 5
+	SendMessage ("ApplyDamage", 5.0);
+	
+	// Every script attached to the game object 
+	// that has a ApplyDamage function will be called.
+	function ApplyDamage (damage : float) {
+		print (damage);
+	}
+END EX
+<signature>
+SendMessage(string,SendMessageOptions)
+</signature>

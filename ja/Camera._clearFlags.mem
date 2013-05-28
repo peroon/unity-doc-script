@@ -1,0 +1,7 @@
+背景の描画方法を設定する
+Can be CameraClearFlags.Skybox, CameraClearFlags.SolidColor, CameraClearFlags.Depth or CameraClearFlags.Nothing.
+CONVERTEXAMPLE
+BEGIN EX
+	// Clear with background color (ignore any skyboxes)
+	camera.clearFlags = CameraClearFlags.SolidColor;
+END EX

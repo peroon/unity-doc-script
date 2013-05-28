@@ -1,0 +1,2 @@
+1ピクセル4ビットのアルファが適用されている、圧縮されたテクスチャフォーマット（iOS 専用）
+SA: Texture2D.format, [[wiki:class-Texture2D|texture assets]].

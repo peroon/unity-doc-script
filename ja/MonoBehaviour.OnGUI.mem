@@ -1,0 +1,14 @@
+<signature>
+OnGUI()
+</signature>
+GUIオブジェクトの描画とイベントのハンドリングのために呼び出される。
+この関数はマウスクリックなど、イベントを起こす限り1 フレームに何回も呼び出されることになります。For more information on GUI events see the [[Event]] reference.
+If the MonoBehaviour's enabled property is set to false, OnGUI() will not be called.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI () {
+		if (GUI.Button (Rect (10,10,150,100), "I am a button"))
+			print ("You clicked the button!");
+	}
+END EX
+For more information, see the [[wiki:GUI Scripting Guide|GUI Scripting Guide]].

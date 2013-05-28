@@ -1,0 +1,8 @@
+<signature>
+Sin(float)
+</signature>
+Sin 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Sin(3));
+END EX

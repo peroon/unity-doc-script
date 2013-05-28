@@ -1,0 +1,7 @@
+影の強さを設定する（Pro 版のみの機能）。
+SA: ::ref::shadows property, Renderer.castShadows, Renderer.receiveShadows.
+CONVERTEXAMPLE
+BEGIN EX
+	// make light's shadows very faint
+	light.shadowStrength = 0.3;
+END EX

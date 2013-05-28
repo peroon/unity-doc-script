@@ -1,0 +1,9 @@
+<signature>
+a
+</signature>
+アルファ成分が格納されている
+CONVERTEXAMPLE
+BEGIN EX
+	var color : Color = Color.white;
+	color.a = 0;
+END EX

@@ -1,0 +1,5 @@
+<signature>
+NewObject(IntPtr,IntPtr,jvalue[])
+</signature>
+新しいJavaオブジェクトを作成する。メソッドIDは呼び出すメソッドを指している。このIDは、戻り値なし（void）のメソッド名をGetMethodID関数で呼び出して取得しておかなければいけない。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

@@ -1,0 +1,4 @@
+<signature>
+SelectionFrame(int,Vector3,Quaternion,float)
+</signature>
+Draw a camera facing selection frame.

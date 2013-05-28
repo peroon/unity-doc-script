@@ -1,0 +1,13 @@
+<signature>
+alignment
+</signature>
+テキストを整列させる
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints how text alignment is set at customStyles[0]
+
+	function OnGUI() {
+		if(GUI.skin.customStyles.Length > 0)
+			Debug.Log(GUI.skin.customStyles[0].alignment);
+	}
+END EX

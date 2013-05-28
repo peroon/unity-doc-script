@@ -1,0 +1,13 @@
+<signature>
+rawVector
+</signature>
+The raw geomagnetic data measured in microteslas. (RO)
+The compass is actually a magnetometer that measures the magnetic
+ field in the device's XYZ coordinates - in the absence of a stronger
+ magnet, it will measure the Earth's field from which the compass heading can be found. This property can be used if you want to make non-standard use of the compass (eg, find the heading from the X or Z axis of the device).
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUILayout.Label("Magnetometer reading: " + Input.compass.rawVector.ToString());
+	}
+END EX

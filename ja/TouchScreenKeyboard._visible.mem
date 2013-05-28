@@ -1,0 +1,4 @@
+<signature>
+visible
+</signature>
+キーボードがスクリーン上に完全に表示されるとtrueを返す

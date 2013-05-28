@@ -1,0 +1,6 @@
+布自身が衝突判定を持つか設定する
+Enable this only where needed, as it has a big impact on cloth performance.
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(InteractiveCloth).selfCollision = false;
+END EX

@@ -1,0 +1,6 @@
+32 ビット形式でのRGBA の色の表現をします。
+各色の成分を0 から255 の範囲で表します。
+
+Components (::ref::r,::ref::g,::ref::b) define a color in RGB color space. Alpha component (::ref::a)
+defines transparency - alpha of 255 is completely opaque, alpha of zero is completely
+transparent.

@@ -1,0 +1,17 @@
+<signature>
+LateUpdate()
+</signature>
+毎フレーム呼び出される。
+Update関数よりも後に実行される。
+Update関数とLateUpdate関数の間に、アニメーションのサンプリングが行われたりします。あるオブジェクトにカメラを追従させる場合は、オブジェクトをUpdate関数内で移動させた後、カメラをLateUpdate関数内で移動させます。
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the object forward 1 meter a second
+
+	function LateUpdate () {
+		transform.Translate(0, 0, Time.deltaTime * 1);
+	}
+END EX
+In order to get the elapsed time since last call to LateUpdate, use Time.deltaTime.
+This function is only called if the [[Behaviour]] is enabled.
+Override this function in order to provide your component's functionality.

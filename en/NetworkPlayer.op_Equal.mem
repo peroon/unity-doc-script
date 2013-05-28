@@ -1,0 +1,4 @@
+<signature>
+Equal(NetworkPlayer,NetworkPlayer)
+</signature>
+Returns true if two NetworkPlayers are the same player.

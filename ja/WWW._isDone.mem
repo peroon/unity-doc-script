@@ -1,0 +1,6 @@
+<signature>
+isDone
+</signature>
+ダウンロードが終了したか確認する（読み取り専用）
+You should not write loops that spin until download is done; use coroutines instead.
+An empty loop that waits for /isDone/ will block in the web player.

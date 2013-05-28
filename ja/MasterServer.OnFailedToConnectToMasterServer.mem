@@ -1,0 +1,11 @@
+<signature>
+OnFailedToConnectToMasterServer(NetworkConnectionError)
+</signature>
+マスターサーバーとの接続に失敗したとき、サーバー側とクライアント側で呼び出されます。
+The reason for the error is passed in as a [[NetworkConnectionError]] enum.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnFailedToConnectToMasterServer(info : NetworkConnectionError) {
+		Debug.Log("Could not connect to master server: "+ info);
+	}
+END EX

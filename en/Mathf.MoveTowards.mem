@@ -1,0 +1,19 @@
+<signature>
+MoveTowards(float,float,float)
+</signature>
+Moves a value /current/ towards /target/.
+This is essentially the same as Mathf.Lerp but instead the function will ensure that the speed never exceeds /maxDelta/.
+Negative values of /maxDelta/ pushes the value away from /target/.
+CONVERTEXAMPLE
+BEGIN EX
+var currStrength: float;
+var maxStrength: float;
+var recoveryRate: float;
+
+function Update() {
+  currStrength = Mathf.MoveTowards(currStrength, maxStrength, recoveryRate * Time.deltaTime);
+}
+END EX
+@param current The current value.
+@param target The value to move towards.
+@param maxDelta The maximum change that should be applied to the value.

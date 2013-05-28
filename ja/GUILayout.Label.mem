@@ -1,0 +1,32 @@
+<signature>
+Label(Texture,GUILayoutOption[])
+Label(string,GUILayoutOption[])
+Label(GUIContent,GUILayoutOption[])
+Label(Texture,GUIStyle,GUILayoutOption[])
+Label(string,GUIStyle,GUILayoutOption[])
+Label(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+ラベルを作成します。テキストや画像を表示します。
+Labels have no user interaction, do not catch mouse clicks and are always rendered in normal style. If you want to make a control that responds visually to user input, use a ::ref::Box control
+
+{img GUILayoutLabel.png}\\
+''Label in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a texture and a label after the Texture
+	// using GUILayout.
+	var tex : Texture;
+
+	function OnGUI() {
+		if(!tex) {
+			Debug.LogError("Missing texture, assign a texture in the inspector");
+		}
+		GUILayout.Label(tex);
+		GUILayout.Label("This is an sized label");
+	}
+END EX
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さを設定する

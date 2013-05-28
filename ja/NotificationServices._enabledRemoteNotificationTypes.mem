@@ -1,0 +1,4 @@
+<signature>
+enabledRemoteNotificationTypes
+</signature>
+サウンド、アラートなどアプリケーションが受け取る通知の種類を設定する

@@ -1,0 +1,18 @@
+<signature>
+ScreenToViewportPoint(Vector3)
+</signature>
+スクリーン座標をビューポート座標へ変換する
+Screenspace is defined in pixels. The bottom-left of the screen is (0,0); the right-top
+is (::ref::pixelWidth,::ref::pixelHeight). The z position is in world units from the camera.
+
+Viewport space is normalized and relative to the camera. The bottom-left of the camera is
+(0,0); the top-right is (1,1). The z position is in world units from the camera.
+CONVERTEXAMPLE
+BEGIN EX
+	// When attached to a GUITexture object, this will
+	// move the texture around with the mouse.
+
+	function Update () {
+		transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+	}
+END EX

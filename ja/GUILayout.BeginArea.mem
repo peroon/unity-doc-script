@@ -1,0 +1,33 @@
+<signature>
+BeginArea(Rect)
+BeginArea(Rect,string)
+BeginArea(Rect,Texture)
+BeginArea(Rect,GUIContent)
+BeginArea(Rect,GUIStyle)
+BeginArea(Rect,string,GUIStyle)
+BeginArea(Rect,Texture,GUIStyle)
+BeginArea(Rect,GUIContent,GUIStyle)
+</signature>
+GUILayout要素を入れる、スクリーンに固定のエリアの開始位置を作成する
+By default, any GUI controls made using GUILayout are placed in the top-left corner of the screen. 
+If you want to place a series of automatically laid out controls in an arbitrary area, use GUILayout.BeginArea to define a new area for the automatic layouting system to use.
+
+SA: ::ref::EndArea
+
+{img GUILayoutArea.png}\\
+''Explained Area of the example.''
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI () {
+		// Starts an area to draw elements
+		GUILayout.BeginArea (Rect (10,10,100,100));
+		GUILayout.Button ("Click me");
+		GUILayout.Button ("Or me");
+		GUILayout.EndArea ();
+	}
+END EX
+This function is very useful when mixing GUILayout code. It must be matched with a call to EndArea. BeginArea / EndArea cannot be nested.
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル

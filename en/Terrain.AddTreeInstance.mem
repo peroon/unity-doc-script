@@ -1,0 +1,4 @@
+<signature>
+AddTreeInstance(TreeInstance)
+</signature>
+Adds a tree instance to the terrain.

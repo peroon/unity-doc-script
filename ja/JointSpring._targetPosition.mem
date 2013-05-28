@@ -1,0 +1,9 @@
+<signature>
+targetPosition
+</signature>
+バネが戻ろうとする目標位置。
+In the case of a [[HingeJoint]] the target position is the target angle in degrees.
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.spring.targetPosition = 70;
+END EX

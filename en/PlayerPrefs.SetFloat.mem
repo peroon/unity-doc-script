@@ -1,0 +1,8 @@
+<signature>
+SetFloat(string,float)
+</signature>
+Sets the value of the preference identified by /key/.
+CONVERTEXAMPLE
+BEGIN EX
+	PlayerPrefs.SetFloat("Player Score", 10.0);
+END EX

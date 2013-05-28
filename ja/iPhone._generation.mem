@@ -1,0 +1,5 @@
+<signature>
+generation
+</signature>
+iPhone の世代を取得（読み込み専用）。
+See iPhoneGeneration enumeration for possible return values.

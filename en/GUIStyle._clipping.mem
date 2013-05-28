@@ -1,0 +1,13 @@
+<signature>
+clipping
+</signature>
+What to do when the contents to be rendered is too large to fit within the area given.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints how is managed the text when the contents rendered
+	// are too large to fir in the area given.	
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.clipping);
+	}
+END EX

@@ -1,0 +1,15 @@
+<signature>
+OnPlayerConnected(NetworkPlayer)
+</signature>
+新しいプレイヤーが接続されたときにサーバーで呼び出される。
+CONVERTEXAMPLE
+BEGIN EX
+	private var playerCount : int = 0;
+
+	function OnPlayerConnected(player: NetworkPlayer) {
+		Debug.Log("Player " + playerCount + 
+			      " connected from " + player.ipAddress + 
+	              ":" + player.port);
+		// Populate a data structure with player information ...
+	}
+END EX

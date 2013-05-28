@@ -1,0 +1,6 @@
+<signature>
+ctor(Vector3,float)
+</signature>
+MatchTargetWeightMask contructor.
+@param positionXYZWeight Position XYZ weight.
+@param rotationWeight Rotation weight.

@@ -1,0 +1,2 @@
+テクスチャのフォーマットを表します。テクスチャをスクリプト側で作成する際に使用します。
+SA: Texture2D.Texture2D, [[wiki:class-Texture2D|texture assets]].

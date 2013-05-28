@@ -1,0 +1,6 @@
+<signature>
+ctor(float,Renderer[])
+</signature>
+Construct a LOD.
+@param screenRelativeTransitionHeight The screen relative height to use for the transition [0-1].
+@param renderers An array of renderers to use for this LOD level.

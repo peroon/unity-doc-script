@@ -1,0 +1,6 @@
+<signature>
+damper
+</signature>
+0 より大きい場合、limit変数の制限は緩くなる
+This is the damping of spring.
+{ 0, infinity }.

@@ -1,0 +1,6 @@
+<signature>
+IsRecording(string)
+</signature>
+録音をしているかどうか。
+@param deviceName マイクのデバイス名。空（""）やnullの場合、デフォルトのデバ
+イスが使用される。

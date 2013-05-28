@@ -1,0 +1,5 @@
+モーターを使用するか設定する
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.useMotor = true;
+END EX

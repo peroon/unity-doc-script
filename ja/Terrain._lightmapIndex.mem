@@ -1,0 +1,5 @@
+<signature>
+lightmapIndex
+</signature>
+レンダラーに適用されるライトマップのインデックスを設定する
+SA: Renderer.lightmapIndex.

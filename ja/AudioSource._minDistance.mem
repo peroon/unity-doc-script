@@ -1,0 +1,2 @@
+減衰処理をしない最小距離を設定する。
+Outside the min distance the volume starts to attenuate.

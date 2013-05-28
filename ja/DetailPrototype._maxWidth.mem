@@ -1,0 +1,4 @@
+<signature>
+maxWidth
+</signature>
+草のビルボードの幅の最大を返す（レンダーモードがGrassBillboardである必要がある）

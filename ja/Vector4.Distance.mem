@@ -1,0 +1,5 @@
+<signature>
+Distance(Vector4,Vector4)
+</signature>
+2 点間の距離を返す
+2 点間の距離を返します。

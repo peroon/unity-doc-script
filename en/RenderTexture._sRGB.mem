@@ -1,0 +1,5 @@
+<signature>
+sRGB
+</signature>
+Does this render texture use sRGB read / write (RO).
+SA: [[ColorSpace]].

@@ -1,0 +1,4 @@
+<signature>
+timestamp
+</signature>
+Timestamp (in seconds since 1970) when the heading was last time updated. (RO)

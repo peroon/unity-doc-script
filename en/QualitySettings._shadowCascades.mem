@@ -1,0 +1,5 @@
+<signature>
+shadowCascades
+</signature>
+Number of cascades to use for directional light shadows.
+SA: [[wiki:class-QualitySettings|Quality Settings]].

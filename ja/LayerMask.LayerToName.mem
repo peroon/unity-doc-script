@@ -1,0 +1,10 @@
+<signature>
+LayerToName(int)
+</signature>
+int型からレイヤー名を取得します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the name of the layer 1
+
+	Debug.Log(LayerMask.LayerToName(1));
+END EX

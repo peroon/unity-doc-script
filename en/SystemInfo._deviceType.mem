@@ -1,0 +1,5 @@
+<signature>
+deviceType
+</signature>
+Returns the kind of device the application is running on.
+See [[DeviceType]] enumeration for possible values.

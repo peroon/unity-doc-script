@@ -1,0 +1,12 @@
+<signature>
+CheckCapsule(Vector3,Vector3,float,int)
+</signature>
+指定の位置にカプセルを作成し、そこにコライダーの付いたオブジェクトがヒットするか調べます。ヒットした場合、trueを返します。
+CONVERTEXAMPLE
+BEGIN EX
+		// Given the start and end waypoints of a corridor, check if there is enough
+	// room for an object of a certain width to pass through.
+	function CorridorIsWideEnough(startPt: Vector3, endPt: Vector3, width: float) {
+		return Physics.CheckCapsule(startPt, endPt, width);
+	}
+END EX

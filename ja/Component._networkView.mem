@@ -1,0 +1,8 @@
+<signature>
+networkView
+</signature>
+NetworkView情報を返す（読み取り専用）
+CONVERTEXAMPLE
+BEGIN EX
+	networkView.RPC("MyFunction", RPCMode.All, "someValue");
+END EX

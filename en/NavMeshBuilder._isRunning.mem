@@ -1,0 +1,4 @@
+<signature>
+isRunning
+</signature>
+Returns true if an asynchronous build is still running.

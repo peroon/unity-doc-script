@@ -1,0 +1,11 @@
+カリングマスクの設定をする。
+A [[GameObject]] will only be illuminated by a light if that light's /cullingMask/
+includes the layer chosen for the GameObject (ie, the mask bit for the layer must be set to 1
+for the object to receive any light).
+See [[wiki:Layers|Layers]] for more information about layer masking.
+SA: [[wiki:class-Light|Light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Only light objects in the first layer (Default layer)
+	light.cullingMask = 1 << 0;
+END EX

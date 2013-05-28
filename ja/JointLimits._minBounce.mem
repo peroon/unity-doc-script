@@ -1,0 +1,11 @@
+<signature>
+minBounce
+</signature>
+下限値まで来たときのバウンドする弾力性を設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the joint to bounce off when hitting the lower limit
+	var limits = hingeJoint.limits;
+	limits.minBounce = 1;
+	hingeJoint.limits = limits;
+END EX

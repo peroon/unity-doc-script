@@ -1,0 +1,9 @@
+<signature>
+AttachCurrentThread()
+</signature>
+Java（Dalvik）VM を現行のスレッドにアタッチする。
+JNI を呼び出す前に、スレッドがVM に接続されている必要があります。
+VM に接続させるために、最初に必ずこの関数を呼び出します。
+アタッチが成功すれば、戻り値として0 を返します。
+
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

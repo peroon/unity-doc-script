@@ -1,0 +1,9 @@
+地上にいるかどうかの判断
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		var controller : CharacterController = GetComponent(CharacterController);
+		if (controller.isGrounded)
+			print("We are grounded");
+	}
+END EX

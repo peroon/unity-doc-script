@@ -1,0 +1,8 @@
+<signature>
+Asin(float)
+</signature>
+Asin 関数
+CONVERTEXAMPLE
+BEGIN EX
+	print (Mathf.Asin(0.5));
+END EX

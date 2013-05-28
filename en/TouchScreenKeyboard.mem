@@ -1,0 +1,12 @@
+Interface into the native iPhone and Android on-screen keyboards - it is not available on other platforms.
+This interface allows to display different types of the keyboard: ASCII,
+Numbers, URL, Email, and others.
+
+Because the appearance of the keyboard has the potential to obscure
+portions of your user interface, it is up to you to make sure that parts
+of your user interface are not obscured when the keyboard is being
+displayed.
+
+@@TouchScreenKeyboard.visible@@ and @@TouchScreenKeyboard.area@@ should be
+used to determine if the keyboard is being shown (activated) and what
+portion of the screen is using.

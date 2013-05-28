@@ -1,0 +1,35 @@
+<signature>
+Toggle(bool,Texture,GUILayoutOption[])
+Toggle(bool,string,GUILayoutOption[])
+Toggle(bool,GUIContent,GUILayoutOption[])
+Toggle(bool,Texture,GUIStyle,GUILayoutOption[])
+Toggle(bool,string,GUIStyle,GUILayoutOption[])
+Toggle(bool,GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+On/Off のトグルボタンを作成する
+{img GUILayoutToggle.png}\\
+''Toggle button in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws 2 toggle controls, one with a text, the other with an image.
+	var aTexture : Texture;
+
+	private var toggleTxt : boolean = false;
+	private var toggleImg : boolean = false;
+
+	function OnGUI () {
+		if(!aTexture) {
+        		Debug.LogError("Please assign a texture in the inspector.");
+        		return;
+		}
+		toggleTxt = GUILayout.Toggle(toggleTxt, "A Toggle text");
+		toggleImg = GUILayout.Toggle(toggleImg, aTexture);
+	}
+END EX
+@param value 選択状態の場合、trueを返す
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さ
+@return ボタンの新しい値

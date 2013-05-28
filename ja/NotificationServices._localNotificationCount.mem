@@ -1,0 +1,4 @@
+<signature>
+localNotificationCount
+</signature>
+受信したローカルでの通知数（読み込み専用）

@@ -1,0 +1,16 @@
+<signature>
+OnApplicationQuit()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent to all game objects before the application is quit.
+In the editor this is called when the user stops playmode.
+In the web player it is called when the web view is closed.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnApplicationQuit() {
+		// Make sure prefs are saved before quitting.
+		PlayerPrefs.Save();
+	}
+END EX

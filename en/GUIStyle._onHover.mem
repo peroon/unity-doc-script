@@ -1,0 +1,10 @@
+<signature>
+onHover
+</signature>
+Rendering settings for when the control is turned on and the mouse is hovering it.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.onHover.textColor = Color.cyan;
+	}
+END EX

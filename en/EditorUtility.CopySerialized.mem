@@ -1,0 +1,4 @@
+<signature>
+CopySerialized(Object,Object)
+</signature>
+Copy all settings of a Unity [[Object]].

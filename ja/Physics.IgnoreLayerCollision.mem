@@ -1,0 +1,6 @@
+<signature>
+IgnoreLayerCollision(int,int,bool)
+</signature>
+レイヤーによって衝突判定の無効化を設定します。
+You can set the default values for your project for any layer combinations in the Physics inspector.
+SA: [[Physics.GetIgnoreLayerCollision]],[[Physics.IgnoreCollision]].

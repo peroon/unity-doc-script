@@ -1,0 +1,5 @@
+<signature>
+actualRenderingPath
+</signature>
+Actually used rendering path (RO).
+SA: ::ref::renderingPath, [[RenderingPath]].

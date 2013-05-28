@@ -1,0 +1,4 @@
+<signature>
+GetGenericData(string)
+</signature>
+Get data associated with current drag and drop operation.

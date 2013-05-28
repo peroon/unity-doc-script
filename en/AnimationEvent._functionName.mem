@@ -1,0 +1,5 @@
+<signature>
+functionName
+</signature>
+The name of the function that will be called.
+This is the same as calling gameObject.SendMessage(animationEvent.functionName, animationEvent).

@@ -1,0 +1,4 @@
+<signature>
+terrainData
+</signature>
+The Terrain Data that stores heightmaps, terrain textures, detail meshes and trees.

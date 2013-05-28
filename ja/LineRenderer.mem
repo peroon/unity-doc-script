@@ -1,0 +1,2 @@
+3D空間にラインを描画するために使います。ラインを描くには各頂点の数・座標を設定しなければいけません。
+This class is a script interface for a [[wiki:class-LineRenderer|line renderer]] component.

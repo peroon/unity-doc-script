@@ -1,0 +1,4 @@
+<signature>
+hit
+</signature>
+ヒットしたときにtrueを返す

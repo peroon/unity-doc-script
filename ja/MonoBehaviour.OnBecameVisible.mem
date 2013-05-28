@@ -1,0 +1,16 @@
+<signature>
+OnBecameVisible()
+</signature>
+レンダラーがカメラに対して可視状態になったときに呼び出される。
+This message is sent to all scripts attached to the renderer.
+OnBecameVisible and OnBecameInvisible is useful to avoid computations that are only necessary when the object is visible.
+CONVERTEXAMPLE
+BEGIN EX
+	// Enables the behaviour when it is visible
+
+	function OnBecameVisible () {
+		enabled = true;
+	}
+END EX
+コルーチン可能
+When running in the editor, scene view cameras will also cause this function to be called.

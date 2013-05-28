@@ -1,0 +1,11 @@
+<signature>
+Statement(string,object[])
+</signature>
+メソッド名・変数名と引数として渡す値を設定する。戻り値なし。
+CONVERTEXAMPLE
+BEGIN EX
+	import UnityEngine.Flash;
+	
+	var v = 42;
+	ActionScript.Statement("trace({0})", v);
+END EX

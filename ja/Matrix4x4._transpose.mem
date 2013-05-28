@@ -1,0 +1,19 @@
+<signature>
+transpose
+</signature>
+行列を転置する（読み込み専用）。
+The transposed matrix is the one that has columns exchanged with rows of the
+original (i.e. flipped along main diagonal). So, if the original matrix looks like.
+BEGIN EX
+	 1   2   3   4
+	 5   6   7   8
+	 8  10  11  12
+	13  14  15  16
+END EX
+TODO.
+BEGIN EX
+	1   5   8  13
+	2   6  10  14
+	3   7  11  15
+	4   8  12  16
+END EX

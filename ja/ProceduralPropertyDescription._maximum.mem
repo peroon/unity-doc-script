@@ -1,0 +1,5 @@
+<signature>
+maximum
+</signature>
+最大値を設定する
+For Vector types this applies to all the vector components.

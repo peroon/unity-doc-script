@@ -1,0 +1,20 @@
+<signature>
+maximumForce
+</signature>
+設定された方向に押されているオブジェクトの力の量を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Create a JointDrive, configure it and assign the JointDrive to
+	// the zDrive element of a configurable joint.
+	
+	function Start() {
+		var joint : ConfigurableJoint = gameObject.AddComponent(ConfigurableJoint);
+		joint.targetPosition = Vector3(0,0,-10);
+		
+		var drive : JointDrive = JointDrive();
+		drive.mode = JointDriveMode.Velocity;
+		drive.maximumForce = Mathf.Infinity;;
+		
+		joint.zDrive = drive;
+	}
+END EX

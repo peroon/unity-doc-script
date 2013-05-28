@@ -1,0 +1,5 @@
+<signature>
+lightProbes
+</signature>
+ライトプローブ情報。
+It can be swapped to a different pre-baked one at runtime.

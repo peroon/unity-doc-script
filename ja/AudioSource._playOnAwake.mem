@@ -1,0 +1,10 @@
+trueの場合、オーディオソースがゲーム再生時、自動的に再生する。
+CONVERTEXAMPLE
+BEGIN EX
+		@script RequireComponent(AudioSource)
+		function Start() {
+			if(!audio.playOnAwake) {
+				audio.Play(); // Play the clip if it wasn't set to play on awake
+		}
+	}
+END EX

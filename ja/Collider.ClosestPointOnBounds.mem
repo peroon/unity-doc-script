@@ -1,0 +1,19 @@
+<signature>
+ClosestPointOnBounds(Vector3)
+</signature>
+設定したポイントから一番近い、Boundsオブジェクトのポイントを返す
+設定した位置から最も近い、バウンズ座標を返します。不特定多数（爆発の時など）のコライダーとの位置を知りたい場合に使用します。
+BEGIN EX
+	var hitPoints : float = 100.0;
+	function ApplyHitPoints (explosionPos : Vector3, radius : float) {
+		// The distance from the explosion position to the surface of the rigidbody
+		var closestPoint : Vector3 = collider.ClosestPointOnBounds(explosionPos);
+		var distance : float = Vector3.Distance(closestPoint, explosionPos);
+
+		// The hit points we apply fall decrease with distance from the hit point
+		var hitPoints : float = 1.0 - Mathf.Clamp01(distance / radius);
+		
+		// This is the final hitpoints we want to apply. 10 at maximum
+		hitPoints *= 10;
+	}
+END EX

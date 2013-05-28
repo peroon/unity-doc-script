@@ -1,0 +1,5 @@
+<signature>
+deviceType
+</signature>
+デバイスのタイプを返す
+See [[DeviceType]] enumeration for possible values.

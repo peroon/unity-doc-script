@@ -1,0 +1,13 @@
+<signature>
+PingPong(float,float)
+</signature>
+折り返し処理を行う。so that it is never larger than length and never smaller than 0.
+0 とlength 引数の間で前後に移動します。
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		// Set the x position to loop between 0 and 3
+		transform.position = Vector3(
+				     Mathf.PingPong(Time.time, 3), transform.position.y, transform.position.z);
+	}
+END EX

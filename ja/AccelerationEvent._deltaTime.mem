@@ -1,0 +1,4 @@
+<signature>
+deltaTime
+</signature>
+最後に加速度を計算したときからの時間。

@@ -1,0 +1,5 @@
+<signature>
+subMeshIndex
+</signature>
+サブメッシュのインデックスを返す
+SA: Mesh.CombineMeshes, ::ref::mesh, ::ref::transform.

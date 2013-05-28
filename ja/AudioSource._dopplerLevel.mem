@@ -1,0 +1,8 @@
+オーディオソースのドップラーレベルを設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start() {
+		// Dont use doppler effects.
+		audio.dopplerLevel = 0;
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+autoPosition
+</signature>
+上下どちらかに自動で配置する。デフォルトでは配置されない。

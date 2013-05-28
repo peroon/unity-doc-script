@@ -1,0 +1,48 @@
+<signature>
+OnPostprocessTexture(Texture2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Add this function in a subclass to get a notification when a texture has completed importing just before.
+The texture is optionally compressed and saved to disk.
+
+At this point it is too late to choose compression format, it is still possible to compress the texture
+using texture.Compress but this is not adviced and the compression format will not be displayed in the
+editor. Use OnPreprocessTexture if you wish to change compression format based on filename or other
+attributes of the texture.
+
+If the texture is modified as in the example below it is required to be readable.
+The flag isReadable must to set True in importer settings either from the editor(Read/Write Enabled) or
+in the OnPreprocessTexture function. If the texture does not have to be readable at runtime use
+texture.Apply(true, true) to update the mipmaps and make the texture unreadable at runtime.
+BEGIN EX
+	// Postprocesses all textures that are placed in a folder
+	// "invert color" to have their colors inverted.
+
+	class InvertColor extends AssetPostprocessor {
+
+		function OnPostprocessTexture (texture : Texture2D) {			
+			// Only post process textures if they are in a folder
+			// "invert color" or a sub folder of it.
+
+			var lowerCaseAssetPath = assetPath.ToLower();
+			if (lowerCaseAssetPath.IndexOf ("/invert color/") == -1)
+				return;
+			
+			for (var m : int  = 0; m < texture.mipmapCount; m++) {
+				var c : Color[] = texture.GetPixels(m);
+				for (var i : int = 0 ;i < c.Length; i++) {
+					c[i].r = 1 - c[i].r;
+					c[i].g = 1 - c[i].g;
+					c[i].b = 1 - c[i].b;
+				}
+				texture.SetPixels(c, m);
+			}
+			
+			// Instead of setting pixels for each mip map levels, you can also
+			// modify only the pixels in the highest mip level. And then simply use
+			// texture.Apply(true); to generate lower mip levels.
+		}
+	}
+END EX

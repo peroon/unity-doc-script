@@ -1,0 +1,4 @@
+<signature>
+extremumValue
+</signature>
+極値での滑りの力を返す（デフォルトは20000）

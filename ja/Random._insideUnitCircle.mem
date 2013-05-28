@@ -1,0 +1,13 @@
+<signature>
+insideUnitCircle
+</signature>
+半径1 の円の内部のランダムな点を返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the position to be somewhere inside a circle
+	// with radius 5 and the center at zero.
+
+	var newPosition : Vector2 = Random.insideUnitCircle * 5;
+	transform.position.x = newPosition.x;
+	transform.position.y = newPosition.y;
+END EX

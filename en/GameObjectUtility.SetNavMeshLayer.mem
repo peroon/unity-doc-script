@@ -1,0 +1,4 @@
+<signature>
+SetNavMeshLayer(GameObject,int)
+</signature>
+Set the navmesh layer for the gameobject.

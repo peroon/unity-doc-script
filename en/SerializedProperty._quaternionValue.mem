@@ -1,0 +1,5 @@
+<signature>
+quaternionValue
+</signature>
+Value of a quaternion property.
+SA: ::ref::propertyType, SerializedPropertyType.Quaternion, [[Quaternion]].

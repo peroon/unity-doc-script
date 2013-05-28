@@ -1,0 +1,8 @@
+<signature>
+LoadAll(Type)
+</signature>
+Loads all objects contained in the asset bundle that inherit from /type/.
+<signature>
+LoadAll()
+</signature>
+Loads all objects contained in the asset bundle.

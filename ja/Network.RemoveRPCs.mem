@@ -1,0 +1,20 @@
+<signature>
+RemoveRPCs(NetworkPlayer)
+</signature>
+対象のプレイヤーのIDに属している、すべてのRPC関数を削除する
+CONVERTEXAMPLE
+BEGIN EX
+	function OnPlayerDisconnected(player: NetworkPlayer) {
+		Debug.Log("Clean up after player " +  player);
+		Network.RemoveRPCs(player);
+		Network.DestroyPlayerObjects(player);
+	}
+END EX
+<signature>
+RemoveRPCs(NetworkPlayer,int)
+</signature>
+Remove all [[RPC]] functions which belong to this player ID and were sent based on the given group.
+<signature>
+RemoveRPCs(NetworkViewID)
+</signature>
+Remove the [[RPC]] function calls accociated with this view ID number.

@@ -1,0 +1,5 @@
+<signature>
+yMax
+</signature>
+最大のY の値。
+Changing this value will preserve top side of rectangle (so ::ref::height will change as well).

@@ -1,0 +1,9 @@
+<signature>
+GetInstanceID()
+</signature>
+Returns the instance id of the object.
+The instance id of an object is always guaranteed to be unique.
+CONVERTEXAMPLE
+BEGIN EX
+	print(GetInstanceID());
+END EX

@@ -1,0 +1,4 @@
+<signature>
+CancelAllLocalNotifications()
+</signature>
+Cancels the delivery of all scheduled local notifications.

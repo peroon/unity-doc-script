@@ -1,0 +1,12 @@
+<signature>
+text
+</signature>
+テキストファイルの情報を文字列で取り出して表示する（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	var asset : TextAsset;
+
+	function Start () {
+		print(asset.text);
+	}
+END EX

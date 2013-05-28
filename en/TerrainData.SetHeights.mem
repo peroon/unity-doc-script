@@ -1,0 +1,4 @@
+<signature>
+SetHeights(int,int,float[,])
+</signature>
+Set an array of heightmap samples.

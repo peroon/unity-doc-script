@@ -1,0 +1,4 @@
+<signature>
+ctor(float,float,float,float)
+</signature>
+Constructs new Quaternion with given x,y,z,w components.

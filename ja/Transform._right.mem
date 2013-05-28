@@ -1,0 +1,10 @@
+<signature>
+right
+</signature>
+ローカル座標のX軸
+CONVERTEXAMPLE
+BEGIN EX
+	// Set's the rigidbody velocity to be 
+	// along the red axis of the transform
+	rigidbody.velocity = transform.right * 10;
+END EX

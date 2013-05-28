@@ -1,0 +1,6 @@
+静止しているときにかかる摩擦（静止摩擦）。範囲は0 から1
+A value of 0 feels like ice, 1 feels like rubber.
+CONVERTEXAMPLE
+BEGIN EX
+	collider.staticFriction = 1;
+END EX

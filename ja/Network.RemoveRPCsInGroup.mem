@@ -1,0 +1,4 @@
+<signature>
+RemoveRPCsInGroup(int)
+</signature>
+特定のグループ番号に属する、すべてのRPC 関数を削除する

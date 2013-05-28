@@ -1,0 +1,2 @@
+The playback speed of the particle system. 1 is normal playback speed.
+A negative playback speed is not supported.

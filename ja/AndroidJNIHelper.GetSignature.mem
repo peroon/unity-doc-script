@@ -1,0 +1,16 @@
+<signature>
+GetSignature(object)
+</signature>
+特定のオブジェクトタイプのJNIシグネチャを取得する。
+@param obj 1 つのオブジェクトのシグネチャ
+<signature>
+GetSignature(object[])
+</signature>
+特定のオブジェクトタイプのJNIシグネチャを取得する。
+@param args 複数の引数として渡す、オブジェクト配列
+<signature>
+GetSignature<ReturnType>(object[])
+</signature>
+特定のオブジェクトタイプのJNIシグネチャを取得する。
+ReturnTypeは戻り値の型。
+@param args 複数の引数として渡す、オブジェクト配列

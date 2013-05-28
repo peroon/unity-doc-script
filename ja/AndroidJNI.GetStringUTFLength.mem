@@ -1,0 +1,5 @@
+<signature>
+GetStringUTFLength(IntPtr)
+</signature>
+NewStringUTF関数で変換された、オブジェクトのByte配列の長さを取得する。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

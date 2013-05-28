@@ -1,0 +1,10 @@
+<signature>
+Log10(float)
+</signature>
+基数が10 の対数
+CONVERTEXAMPLE
+BEGIN EX
+	// logarithm of 100 in base 10
+	// Prints 2
+	print(Mathf.Log10(100));
+END EX

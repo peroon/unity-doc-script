@@ -1,0 +1,5 @@
+テキストの行整列を返す
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).alignment = TextAlignment.Left;
+END EX

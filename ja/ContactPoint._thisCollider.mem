@@ -1,0 +1,11 @@
+<signature>
+thisCollider
+</signature>
+最初に接触したコライダー情報
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the name of this collider
+	function OnCollisionEnter(other : Collision) { 
+	 	print("This collider is named: " + other.contacts[0].thisCollider.name);
+	}
+END EX

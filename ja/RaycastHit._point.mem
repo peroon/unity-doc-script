@@ -1,0 +1,25 @@
+<signature>
+point
+</signature>
+衝突したオブジェクトのワールド座標を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Apply a force to a rigidbody in the scene at the point
+	// where it is clicked.
+	
+	// The force with which the target is "poked" when hit.
+	var pokeForce: float;
+	
+	function Update () {
+		if (Input.GetMouseButtonDown(0)) {
+			var hit: RaycastHit;
+			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			if (Physics.Raycast(ray, hit)) {
+				if (hit.rigidbody != null)
+					hit.rigidbody.AddForceAtPosition(ray.direction * pokeForce, hit.point);
+			}
+		}
+	}
+END EX
+SA: Physics.Raycast, Physics.Linecast.

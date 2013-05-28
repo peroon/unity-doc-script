@@ -1,0 +1,22 @@
+<signature>
+ViewportToScreenPoint(Vector3)
+</signature>
+ビューポート座標からスクリーン座標へ変換する
+Viewport space is normalized and relative to the camera. The bottom-left of the camera is
+(0,0); the top-right is (1,1). The z position is in world units from the camera.
+
+Screenspace is defined in pixels. The bottom-left of the screen is (0,0); the right-top
+is (::ref::pixelWidth,::ref::pixelHeight). The z position is in world units from the camera.
+CONVERTEXAMPLE
+BEGIN EX
+	// Draw an image based on normalized view coordinates
+	// rather than pixel positions.
+	var bottomPanel: Texture2D;
+
+	function VPToScreenPtExample() {
+		var origin = Camera.main.ViewportToScreenPoint(new Vector3(0.25, 0.1, 0));
+		var extent = Camera.main.ViewportToScreenPoint(new Vector3(0.5, 0.2, 0));
+		
+		GUI.DrawTexture(new Rect(origin.x, origin.y, extent.x, extent.y), bottomPanel);
+	}
+END EX

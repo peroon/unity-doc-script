@@ -1,0 +1,5 @@
+<signature>
+SetLayerCost(int,float)
+</signature>
+すべてのエージェントがレイヤーの平面上を横切るためのコストを設定
+This will replace any custom layer costs on all agents.

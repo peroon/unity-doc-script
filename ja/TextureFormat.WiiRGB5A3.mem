@@ -1,0 +1,2 @@
+Wii 専用の赤（5 ビット）、緑（6 ビット）、青（5 ビット）アルファ（3ビット）のテクスチャフォーマット
+SA: Texture2D.format, [[wiki:class-Texture2D|texture assets]].

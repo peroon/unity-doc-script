@@ -1,0 +1,33 @@
+<signature>
+VerticalScrollbar(Rect,float,float,float,float)
+VerticalScrollbar(Rect,float,float,float,float,GUIStyle)
+</signature>
+垂直のスクロールバーを作成します。
+CONVERTEXAMPLE
+BEGIN EX
+	var vSbarValue : float;
+
+	function OnGUI () {
+		vSbarValue = GUI.VerticalScrollbar(Rect (25, 25, 100, 30), vSbarValue, 1.0, 10.0, 0.0);
+	}
+END EX
+<b>Finding extra elements:</b><br>
+The styles of the buttons at the end of the scrollbar are searched for in the current skin by adding "upbutton" and "downbutton" to the style name. 
+The name of the scrollbar thumb (the thing you drag) is found by appending "thumb" to the style name.
+BEGIN EX
+	var scrollPos : float = 0.5;
+	// This will use the following style names to determine the size / placement of the buttons
+	// MyVertScrollbarupbutton    - Name of style used for the up button.
+	// MyVertScrollbardownbutton - Name of style used for the down button.
+	// MyVertScrollbarthumb         - Name of style used for the draggable thumb.
+	function OnGUI() {
+		scrollPos = GUI.VerticalScrollbar(Rect(0,0,100,20), scrollPos, 1, 0, 100, "Scroll");
+	}
+END EX
+@param position 表示位置
+@param value 現在値
+@param size バーの長さ
+@param topValue 最小値
+@param bottomValue 最大値
+@param style スタイル
+@return The modified value. This can be changed by the user by dragging the scrollbar, or clicking the arrows at the end.

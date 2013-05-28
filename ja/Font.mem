@@ -1,0 +1,5 @@
+フォントアセットのためのスクリプトインタフェースです。[[wiki:class-Font|font assets]].
+動的にGUI のテキスト、または
+テキストのメッシュを変更するには、このクラスを使用します
+
+SA: [[GUIText]] and [[TextMesh]].

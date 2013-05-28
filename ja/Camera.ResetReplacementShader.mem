@@ -1,0 +1,5 @@
+<signature>
+ResetReplacementShader()
+</signature>
+変更されたシェーダーを初期化します。
+Call this to end the effect of setting ::ref::SetReplacementShader.

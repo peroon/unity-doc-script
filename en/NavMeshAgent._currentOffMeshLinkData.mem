@@ -1,0 +1,5 @@
+<signature>
+currentOffMeshLinkData
+</signature>
+The current [[OffMeshLinkData]].
+In the case that this agent is not on an OffMeshLink the [[OffMeshLinkData]] is marked as invalid. See also ::ref::isOnOffMeshLink

@@ -1,0 +1,7 @@
+<signature>
+recorderStopTime
+</signature>
+End time of the recorded clip relative to when ::ref::StartRecording was called.
+For example, if we started recording at second 10, and ended recording at second 15, then this will have a value of 5.
+If the buffer is not initialized (::ref::StartRecording is not called), the value of this property will be -1.
+SA: ::ref::recorderStartTime.

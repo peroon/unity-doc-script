@@ -1,0 +1,4 @@
+<signature>
+player
+</signature>
+Get the local [[NetworkPlayer]] instance.

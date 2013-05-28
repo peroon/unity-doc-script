@@ -1,0 +1,4 @@
+<signature>
+detailHeight
+</signature>
+TerrainDataオブジェクトの高さの詳細を返す

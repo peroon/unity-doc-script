@@ -1,0 +1,4 @@
+<signature>
+isMine
+</signature>
+自分がインスタンス化されているかどうかを確認する

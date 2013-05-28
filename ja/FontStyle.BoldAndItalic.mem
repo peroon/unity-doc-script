@@ -1,0 +1,5 @@
+テキストを太字イタリックにします。
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.fontStyle = FontStyle.BoldAndItalic;
+END EX

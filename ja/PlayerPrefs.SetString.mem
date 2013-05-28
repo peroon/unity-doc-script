@@ -1,0 +1,8 @@
+<signature>
+SetString(string,string)
+</signature>
+キーとstring型の値を設定する
+CONVERTEXAMPLE
+BEGIN EX
+	PlayerPrefs.SetString("Player Name", "Foobar");
+END EX

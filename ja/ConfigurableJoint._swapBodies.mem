@@ -1,0 +1,4 @@
+有効にすると、接続された2つのRigidbodyオブジェクトはスワップされる
+Prior to Unity 3.4, this was wrongfully applied to all ConfigurableJoints with the /configuredInWorldSpace/
+property set. If you want to restore the behaviour of older Unity versions and you are using	
+/configuredInWorldSpace/, enable this property.

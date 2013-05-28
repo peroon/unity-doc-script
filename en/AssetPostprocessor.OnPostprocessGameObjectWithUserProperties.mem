@@ -1,0 +1,60 @@
+<signature>
+OnPostprocessGameObjectWithUserProperties(GameObject,string[],object[])
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Gets called for each GameObject that had at least one userpropery attached to it in the imported file.
+The propNames is a string array containing all the names of the properties found.
+The values is an System.Object array containing all the actual values.
+These can be of type string, Vector4, bool, Color, float, int.
+
+A typical use case for this feature is reading out "userdata" stored on objects in 3dmax/maya. Depending on what is written in the text userdata for an object, you could decide to postprocess your GameObject in different ways.
+ 
+Please note that the GameObjects, AnimationClips and Meshes only exist during the import and will be destroyed immediately afterwards.
+This function is called before the final prefab is created and before it is written to disk, thus you have full control over the generated game objects and components.
+Any references to game objects or meshes will become invalid after the import has been completed. Thus it is not possible to
+create a new prefab in a different file from OnPostprocessGameObjectWithUserProperties that references meshes in the imported fbx file.
+The sample below adds a simple BoxCollider component if the userdata string contains "addboxcollider".
+BEGIN EX
+	class MyPostprocessor extends AssetPostprocessor {
+
+		function OnPostprocessGameObjectWithUserProperties (
+			go : GameObject,
+			propNames : String[],
+			values : System.Object[]){
+			for (var i : int = 0; i < propNames.Length; i++) {
+				
+				var propName : String = propNames[i];
+				var value : Object = values[i];
+
+				Debug.Log("Propname: " + propName + " value: " +values[i]);
+
+				if (value.GetType() == String) {
+					var s : String = value;
+					if (s.Contains("addboxcollider")) go.AddComponent(BoxCollider);
+				}
+				
+				if (value.GetType() == Vector4) {
+					var v : Vector4 = value;
+					// do something useful.
+				}
+				
+				if (value.GetType() == Color) {
+					var c : Color = value;
+					// do something useful.
+				}
+				
+				if (value.GetType() == int) {
+					var myInt : int = value;
+					// do something useful.
+				}
+				
+				if (value.GetType() == float) {
+					var myFloat : float = value;
+					// do something useful.
+				}
+			}
+		}
+	}
+END EX

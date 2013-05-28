@@ -1,0 +1,14 @@
+<signature>
+OnTriggerExit(Collider)
+</signature>
+トリガー状態のオブジェクトとの衝突から離れた瞬間に、呼び出されます。
+This message is sent to the trigger and the collider that touches the trigger.
+Note that trigger events are only sent if one of the colliders also has a rigidbody attached.
+CONVERTEXAMPLE
+BEGIN EX
+	// Destroy everything that leaves the trigger
+
+	function OnTriggerExit (other : Collider) {
+		Destroy(other.gameObject);
+	}
+END EX

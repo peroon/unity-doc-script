@@ -1,0 +1,10 @@
+<signature>
+CreateEditor(Object)
+CreateEditor(Object,Type)
+CreateEditor(Object[])
+CreateEditor(Object[],Type)
+</signature>
+Make a custom editor for /obj/ or /objects/.
+By default an appropriate editor is chosen that has a matching CustomEditor attribute.
+If an editorType is specified, an editor of that type is created instead.
+Returns NULL if obj doesn't have a custom editor class defined.

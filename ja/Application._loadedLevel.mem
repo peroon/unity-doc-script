@@ -1,0 +1,8 @@
+<signature>
+loadedLevel
+</signature>
+最後にロードされたレベルのインデックスを返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	print (Application.loadedLevel);
+END EX

@@ -1,0 +1,8 @@
+<signature>
+supportsRenderTextures
+</signature>
+Are render textures supported? (RO)
+Returns /true/ if graphics card supports Render Textures in general. Use SystemInfo.SupportsRenderTextureFormat
+to check for support for specific render texture format.
+
+SA: [[wiki:class-RenderTexture|Render Texture assets]], [[RenderTexture]] class.

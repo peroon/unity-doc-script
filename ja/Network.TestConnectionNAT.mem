@@ -1,0 +1,6 @@
+<signature>
+TestConnectionNAT(bool)
+</signature>
+NATパンチスルー接続用に特別に接続をテストする
+NATのパンチスルーテストが強制されます。また、NATアドレスはパブリックアドレスを持ちません。
+(private IP address) but a public address. See Network.TestConnection example code.

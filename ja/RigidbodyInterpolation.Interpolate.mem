@@ -1,0 +1,6 @@
+補間を行う。外挿補間より少し反応が遅れる場合がある。
+SA: Rigidbody.interpolation variable.
+CONVERTEXAMPLE
+BEGIN EX
+	rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+END EX

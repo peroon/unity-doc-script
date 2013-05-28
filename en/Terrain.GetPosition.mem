@@ -1,0 +1,4 @@
+<signature>
+GetPosition()
+</signature>
+Get the position of the terrain.

@@ -1,0 +1,5 @@
+<signature>
+FromObjectArray(IntPtr)
+</signature>
+IntPtr型をObject配列へ変換する。
+SA: AndroidJNI.GetObjectArrayElement, AndroidJNI.GetArrayLength.

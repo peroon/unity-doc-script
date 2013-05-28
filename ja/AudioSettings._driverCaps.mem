@@ -1,0 +1,10 @@
+<signature>
+driverCaps
+</signature>
+オーディオドライバのスピーカーのモードを返す（読み取り専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the speaker mode to that of the system settings.
+
+	AudioSettings.speakerMode = AudioSettings.driverCaps;
+END EX

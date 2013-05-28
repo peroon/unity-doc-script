@@ -1,0 +1,2 @@
+非同期の[[AssetBundle]]リクエストを作成します。
+SA: AssetBundle.CreateFromMemory, [[AsyncOperation]].

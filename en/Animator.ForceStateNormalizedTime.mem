@@ -1,0 +1,5 @@
+<signature>
+ForceStateNormalizedTime(float)
+</signature>
+Force the normalized time of a state to a user defined value.
+Only works on base layer. Should not be used in transition.

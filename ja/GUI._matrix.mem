@@ -1,0 +1,8 @@
+<signature>
+matrix
+</signature>
+GUIオブジェクトのTransformオブジェクトの行列を返す
+CONVERTEXAMPLE
+BEGIN EX
+	print (GUI.matrix);
+END EX

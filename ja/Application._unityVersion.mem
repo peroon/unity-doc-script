@@ -1,0 +1,8 @@
+<signature>
+unityVersion
+</signature>
+Unity のバージョンを返す。
+CONVERTEXAMPLE
+BEGIN EX
+	print ("Version of the runtime: " + Application.unityVersion);
+END EX

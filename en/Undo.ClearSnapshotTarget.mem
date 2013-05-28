@@ -1,0 +1,5 @@
+<signature>
+ClearSnapshotTarget()
+</signature>
+Clear the snapshot target set with ::ref::SetSnapshotTarget.
+This can be used if the snapshot target is not needed anymore.

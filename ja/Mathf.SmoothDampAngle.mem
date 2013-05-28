@@ -1,0 +1,37 @@
+<signature>
+SmoothDampAngle(float,float,float,float,float,float)
+</signature>
+徐々に時間をかけて目標の角度へ向かう。
+The value is smoothed by some spring-damper like function. The function can be used to smooth any kind of value, positions, colors, scalars.
+The most common use is for smoothing a follow camera.
+CONVERTEXAMPLE
+BEGIN EX
+	// A simple smooth follow camera,
+	// that follows the targets forward direction
+
+	var target : Transform;
+	var smooth = 0.3;
+	var distance = 5.0;
+	private var yVelocity = 0.0;
+	
+	function Update () {
+		// Damp angle from current y-angle towards target y-angle
+		var yAngle : float = Mathf.SmoothDampAngle(transform.eulerAngles.y,
+		                            target.eulerAngles.y, yVelocity, smooth);
+		// Position at the target
+		var position : Vector3 = target.position;
+		// Then offset by distance behind the new angle
+		position += Quaternion.Euler(0, yAngle, 0) * Vector3 (0, 0, -distance);
+		// Apply the position
+		transform.position = position;
+
+		// Look at the target
+		transform.LookAt(target);
+	}
+END EX
+@param current The current position.
+@param target The position we are trying to reach.
+@param currentVelocity 現在の速度が格納される
+@param smoothTime target へ到達するまでのおおよその時間
+@param maxSpeed 最大速度
+@param deltaTime この関数が最後に呼び出されてからの経過時間。デフォルトはTime.deltaTime変数。FixedUpDate関数内で使用する場合はTime.fixedDeltaTime変数などに変更すると正確な値を取得できる

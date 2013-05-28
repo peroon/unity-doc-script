@@ -1,0 +1,5 @@
+単一の頂点に影響を与えるボーンの最大数を設定する
+BEGIN EX
+	var skinnedMesh : SkinnedMeshRenderer;
+	skinnedMesh.quality = SkinQuality.Bone2;
+END EX

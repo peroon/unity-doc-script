@@ -1,0 +1,13 @@
+<signature>
+deviceOrientation
+</signature>
+OS によって報告される、物理的な向きを返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Play a sound if screen is facing downwards
+
+	function Update () {
+		if (Input.deviceOrientation == DeviceOrientation.FaceDown)
+			audio.Play();
+	}
+END EX

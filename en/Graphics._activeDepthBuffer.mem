@@ -1,0 +1,5 @@
+<signature>
+activeDepthBuffer
+</signature>
+Currently active depth buffer (RO).
+SA: [[RenderBuffer]], [[Graphics.activeColorBuffer]], [[Graphics.SetRenderTarget]].

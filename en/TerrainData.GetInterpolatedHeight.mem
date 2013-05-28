@@ -1,0 +1,4 @@
+<signature>
+GetInterpolatedHeight(float,float)
+</signature>
+Gets an interpolated height at a point x,y.

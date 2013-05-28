@@ -1,0 +1,10 @@
+動画の長さを返す。
+CONVERTEXAMPLE
+BEGIN EX
+	var mov: MovieTexture;
+	var gui: GUIText;
+
+	function Start() {
+		gui.text = mov.duration.ToString();
+	}
+END EX

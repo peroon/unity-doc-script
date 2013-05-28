@@ -1,0 +1,21 @@
+<signature>
+TextArea(Rect,string)
+TextArea(Rect,string,int)
+TextArea(Rect,string,GUIStyle)
+TextArea(Rect,string,int,GUIStyle)
+</signature>
+複数行のテキストを入力するフィールドを作成します。
+CONVERTEXAMPLE
+BEGIN EX
+	var stringToEdit : String = "Hello World\nI've got 2 lines...";
+
+	function OnGUI () {
+		// Make a multiline text area that modifies stringToEdit.
+		stringToEdit = GUI.TextArea (Rect (10, 10, 200, 100), stringToEdit, 200);
+	}
+END EX
+@param position 表示位置
+@param text 表示する文字列
+@param maxLength 最大文字数
+@param style スタイル
+@return 編集された文字列

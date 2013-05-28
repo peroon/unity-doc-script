@@ -1,0 +1,5 @@
+<signature>
+npotSupport
+</signature>
+What [[NPOT|NPOTSupport]] support does GPU provide? (RO)
+SA: [[NPOTSupport]] enum.

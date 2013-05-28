@@ -1,0 +1,4 @@
+<signature>
+zero
+</signature>
+Shorthand for writing @@Vector2(0, 0)@@.

@@ -1,0 +1,31 @@
+<signature>
+Multiply(Quaternion,Quaternion)
+</signature>
+Combines rotations /lhs/ and /rhs/.
+Rotating by the product /lhs/ * /rhs/ is the same as applying the two rotations in sequence,
+/lhs/ first and then /rhs/. Note that this means rotations are not commutative, so
+''lhs * rhs'' does not give the same rotation as ''rhs * lhs''.
+CONVERTEXAMPLE
+BEGIN EX
+	// Applies the rotation of
+	// /extraRotation/ to the current rotation.
+
+	var extraRotation : Transform;
+	transform.rotation *= extraRotation.rotation;
+END EX
+<signature>
+Multiply(Quaternion,Vector3)
+</signature>
+Rotates the point /point/ with /rotation/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Moves the object along relativeDirection
+	// Usually you would use transform.Translate for this
+
+	var relativeDirection = Vector3.forward;
+
+	function Update () {
+		var absoluteDirection = transform.rotation * relativeDirection;
+		transform.position += absoluteDirection * Time.deltaTime;
+	}
+END EX

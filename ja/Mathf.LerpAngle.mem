@@ -1,0 +1,17 @@
+<signature>
+LerpAngle(float,float,float)
+</signature>
+a 引数からb 引数へ回転します。360 度の回転に対応した関数になります。t 引数は0 から1までの値を設定することができます。
+t 引数が0.5 であれば、a 引数とb 引数の中間地点となります。
+CONVERTEXAMPLE
+BEGIN EX
+	// Fades from minimum to maximum in one second
+
+	var minAngle = 0.0;
+	var maxAngle = 90.0;
+
+	function Update () {
+		var angle : float = Mathf.LerpAngle(minAngle, maxAngle, Time.time);
+		transform.eulerAngles = Vector3(0, angle, 0);
+	}
+END EX

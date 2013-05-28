@@ -1,0 +1,4 @@
+<signature>
+GetHeight(int,int)
+</signature>
+特定の(x,y)の地形からの高さを取得する

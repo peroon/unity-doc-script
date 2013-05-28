@@ -1,0 +1,7 @@
+オブジェクトに常に力が適用されます。
+連続的なオブジェクトへの力を適用する場合に使用される、ユーティリティクラスになります。
+
+Rigidbody.AddForce applies a force to the [[Rigidbody]] only for one frame, thus you have to keep calling the function.
+ConstantForce on the other hand will apply the force every frame until you change the force or torque to a new value.
+
+SA: [[Rigidbody]].

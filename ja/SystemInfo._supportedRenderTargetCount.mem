@@ -1,0 +1,5 @@
+<signature>
+supportedRenderTargetCount
+</signature>
+サポートしているレンダリングターゲットの数を返す（読み込み専用）
+SA: [[Graphics.SetRenderTarget]].

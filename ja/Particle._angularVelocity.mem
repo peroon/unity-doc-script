@@ -1,0 +1,7 @@
+<signature>
+angularVelocity
+</signature>
+パーティクルの角速度を返す
+これは毎秒度における粒子の角速度である。
+
+SA: [[wiki:comp-ParticlesLegacy|Particles documentation]].

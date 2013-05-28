@@ -1,0 +1,4 @@
+ワールド座標のポイントからローカル座標に変換した、行列の値（読み取り専用）
+If you're not familiar with using matrices for coordinate transformations, use Transform.InverseTransformPoint instead.
+
+__IMPORTANT:__ If you're setting shader parameters you MUST use Renderer.worldToLocalMatrix instead.

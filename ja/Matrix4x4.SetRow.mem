@@ -1,0 +1,7 @@
+<signature>
+SetRow(int,Vector4)
+</signature>
+行部分の値を設定する。
+i 行目にv 引数の値を上書きします。i 引数は0 から3 になります。
+
+SA: ::ref::GetRow.

@@ -1,0 +1,4 @@
+<signature>
+IssuePluginEvent(int)
+</signature>
+イベントID を指定してイベントを行う

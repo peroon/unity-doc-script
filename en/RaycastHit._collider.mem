@@ -1,0 +1,20 @@
+<signature>
+collider
+</signature>
+The [[Collider]] that was hit.
+This property is null if the ray hit nothing and not-null if it hit a Collider.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update() {
+		if (Input.GetMouseButtonDown(0)) {
+			var hit: RaycastHit;
+			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			if (Physics.Raycast(ray, hit)) {
+				if (hit.collider != null)
+					hit.collider.enabled = false;
+			}
+		}
+	}
+END EX
+SA: Physics.Raycast, Physics.Linecast, Physics.RaycastAll.

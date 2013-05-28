@@ -1,0 +1,26 @@
+<signature>
+LoadLevelAsync(int)
+LoadLevelAsync(string)
+</signature>
+バックグラウンドで非同期にレベルをロードする。
+シーンを非同期で読み込みます。シーンを非同期で読み込んだ後切り替えるので、LoadLevel関数での「読み込みが完了するまで画面が固まる」という現象を抑えることができます。AsyncOperationクラスと組み合わせて使うことによって、プログレスバーを表示したり、ロードが完了したかを確認することができます。
+
+AsyncOperation::pref::isDone variable from the resulting [[AsyncOperation]] can be used to query
+if the level load has completed. The result of a LoadLevelAsync can also be used to __yield__ in a coroutine.
+
+When building a player Unity automatically optimizes assets in such a way that LoadLevelAsync will
+load them from disk linearly to avoid seek times.  Note that background loading performance in the
+Unity Editor is much lower than in the web player or standalone build. In the Editor you might also
+get more loading hiccups than in the player.
+
+This function requires __Unity Pro__.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		// Load the level named "MyBigLevel".
+		var async : AsyncOperation = Application.LoadLevelAsync ("MyBigLevel");
+		yield async;
+		Debug.Log ("Loading complete");
+	}
+END EX
+SA: [[AsyncOperation]], Application.backgroundLoadingPriority, Application.LoadLevel, Application.LoadLevelAdditive, Application.LoadLevelAdditiveAsync.

@@ -1,0 +1,4 @@
+<signature>
+SetGlobalShaderProperty(string)
+</signature>
+プロパティネームでRenderTextureオブジェクトにシェーダーを割り当てる。

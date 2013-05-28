@@ -1,0 +1,5 @@
+<signature>
+GetParticles(Particle[])
+</signature>
+Get the particles of this particle system. Returns the number of particles written to the input particle array.
+SA: ::ref::SetParticles.

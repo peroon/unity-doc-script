@@ -1,0 +1,4 @@
+<signature>
+extremumValue
+</signature>
+Force at the extremum slip (default 20000).

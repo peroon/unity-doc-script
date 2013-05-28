@@ -1,0 +1,3 @@
+Text file assets.
+You can use raw .txt files in your project as assets and get their contents through
+this class.

@@ -1,0 +1,6 @@
+<signature>
+expirationDelay
+</signature>
+キャッシュの有効期限を返す
+This value defaults to 150 days (12,960,000 seconds).
+Lower values will cause the cache to be cleaned more aggressively in order to minimize disk storage usage. The delay cannot be set greater than 12,960,000 seconds.

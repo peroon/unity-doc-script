@@ -1,0 +1,21 @@
+<signature>
+Start(string,bool,int,int)
+</signature>
+デバイス名を指定して録音を開始する。
+Note that if you want to use the Microphone class in the web player, you need to get the
+user's permission to do so. Call [[Application.RequestUserAuthorization]] before calling
+any Microphone methods.
+CONVERTEXAMPLE
+BEGIN EX
+	// Start recording with built-in Microphone and play the recorded audio right away
+	function Start() {
+		audio.clip = Microphone.Start("Built-in Microphone", true, 10, 44100);
+		audio.Play();
+	}
+END EX
+@param deviceName マイクのデバイス名。空（""）やnullの場合、デフォルトのデバ
+イスが使用される。
+@param lengthSec 録音するクリップの長さ。
+@param loop ループを行うか。
+@param frequency 周波数
+@return The function returns null if the recording fails to start.

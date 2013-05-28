@@ -1,0 +1,4 @@
+<signature>
+preWrapMode
+</signature>
+最初のキーフレーム前のラップモードを返す。

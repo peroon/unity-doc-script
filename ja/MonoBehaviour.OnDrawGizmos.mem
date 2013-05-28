@@ -1,0 +1,15 @@
+<signature>
+OnDrawGizmos()
+</signature>
+オブジェクトのギズモを表示するときは、この関数を実装する。
+This allows you to quickly pick important objects in your scene.
+
+Note that OnDrawGizmos will use a mouse position that is relative to the Scene View.
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws the Light bulb icon at position of the object.
+
+	function OnDrawGizmos () {
+		Gizmos.DrawIcon (transform.position, "Light Gizmo.tiff");
+	}
+END EX

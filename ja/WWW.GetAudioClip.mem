@@ -1,0 +1,10 @@
+<signature>
+GetAudioClip(bool)
+GetAudioClip(bool,bool)
+GetAudioClip(bool,bool,AudioType)
+</signature>
+WWWオブジェクトからAudioClipオブジェクトを取得する（読み取り専用）
+取得形式はOgg（WebPlayer、スタンドアローン推奨）、MP3（スマートフォン推奨）、WAV、XM、IT、MOD、A3Mに対応しています。
+@param threeD trueにすると3Dサウンド、􀁚falseにすると2D サウンドになる
+@param stream trueにすると、完全にダウンロードされていなくても再生できるようになる
+@param set The AudioType of the content your downloading. If this is not set Unity will try to determine the type from URL.

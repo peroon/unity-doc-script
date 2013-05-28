@@ -1,0 +1,2 @@
+使用するフォグモードです。
+SA: RenderSettings.fogMode, [[wiki:class-RenderSettings|Render Settings manager]].

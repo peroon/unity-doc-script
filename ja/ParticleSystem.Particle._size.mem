@@ -1,0 +1,5 @@
+<signature>
+size
+</signature>
+パーティクルのサイズ
+This is particle's size in meters in world space.

@@ -1,0 +1,5 @@
+異方性摩擦が有効になっている場合、frictionDirection2変数に沿って適用される
+CONVERTEXAMPLE
+BEGIN EX
+	collider.physicMaterial.staticFriction2 = 0;
+END EX

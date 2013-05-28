@@ -1,0 +1,8 @@
+バイパスエフェクトを有効にするかの設定（コンポーネントやグローバルリスナーから適用されます）
+CONVERTEXAMPLE
+BEGIN EX
+	// Turn all the audio effects applied to this audio Listener off
+	function Start() {
+		audio.bypassEffects = false;
+	}
+END EX

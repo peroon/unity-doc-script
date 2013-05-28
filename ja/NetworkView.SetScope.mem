@@ -1,0 +1,6 @@
+<signature>
+SetScope(NetworkPlayer,bool)
+</signature>
+特定のネットワークプレイヤーとのネットワークビューの関係性の範囲を設定する
+This can be used to implement relevant sets. Either set it to true or false depending
+on if you want the player to receive updates from the network view or not.

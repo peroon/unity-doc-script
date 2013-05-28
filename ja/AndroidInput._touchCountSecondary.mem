@@ -1,0 +1,4 @@
+<signature>
+touchCountSecondary
+</signature>
+セカンダリタッチの数を返す。フレーム全体で変更されないことが保証されている（読み込み専用）

@@ -1,0 +1,8 @@
+<signature>
+GetOutputData(int,int)
+</signature>
+Returns a block of the currently playing source's output data.
+<signature>
+GetOutputData(float[],int)
+</signature>
+Returns a block of the currently playing source's output data.

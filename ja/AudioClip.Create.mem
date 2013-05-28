@@ -1,0 +1,38 @@
+<signature>
+Create(string,int,int,int,bool,bool)
+Create(string,int,int,int,bool,bool,PCMReaderCallback)
+Create(string,int,int,int,bool,bool,PCMReaderCallback,PCMSetPositionCallback)
+</signature>
+チャンネルや周波数を設定し、クリップを生成する。
+SetData関数を使用して、オーディオデータを設定して使用します。
+Use the ::ref::PCMReaderCallback and ::ref::PCMSetPositionCallback delegates to get a callback whenever the clip reads data and changes the position.
+stream引数がtrueの場合には、必要に応じて小さくまとまったデータを読み取り、コールバック関数の引数として渡します。falseの場合は、作成時、一度にすべてを読み込みます。
+CONVERTEXAMPLE
+BEGIN EX
+	#pragma strict
+	// Creates a 1 sec long audioclip, with a 440hz sinoid
+	var position: int = 0;
+	var sampleRate : int = 0;
+	var frequency : float = 440;
+	function Start () {
+		var myClip = AudioClip.Create("MySinoid", 44100, 1, 44100, false, true, OnAudioRead, OnAudioSetPosition);
+		sampleRate = AudioSettings.outputSampleRate;
+
+		audio.clip = myClip;
+		audio.Play();
+	}
+
+	function OnAudioRead(data:float[])
+	{
+		for (var count = 0; count < data.Length; count++)
+		{
+			data[count] = Mathf.Sign(Mathf.Sin(2 * Mathf.PI * frequency * position / sampleRate));
+			position++;
+		}
+	}
+
+	function OnAudioSetPosition(newPosition:int)
+	{
+		position = newPosition;
+	}
+END EX

@@ -1,0 +1,20 @@
+<signature>
+Awake()
+</signature>
+スクリプトのインスタンスがロードされたときに呼び出される。
+スクリプトが最初に読み込まれるとき、一度だけAwake関数が呼び出されます。変数などの初期化などに最適です。Awake関数でのオブジェクトの参照は行っても、情報の取得は行わないようにしましょう。参照先のAwake関数の処理が終わっていない可能性があるからです。情報の取得はStart関数で行うようにします。
+また、スクリプトのインスタンスが無効の場合でも呼び出されます。
+Awake is always called before any Start functions. This allows you to order initialization of scripts.
+Awake can not act as a coroutine.
+
+Note for C# and Boo users: use Awake instead of the constructor for initialization, as the serialized state of the component is undefined at construction time.
+Awake is called once, just like the constructor.
+CONVERTEXAMPLE
+BEGIN EX
+	private var target : GameObject;
+
+	function Awake () {
+		target = GameObject.FindWithTag ("Player");
+	}
+END EX
+Awake cannot be a co-routine.

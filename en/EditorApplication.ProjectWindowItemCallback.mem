@@ -1,0 +1,5 @@
+<signature>
+ProjectWindowItemCallback(string,Rect)
+</signature>
+Delegate to be called for every visible list item in the ProjectWindow on every OnGUI event.
+SA: EditorApplication.projectWindowItemOnGUI.

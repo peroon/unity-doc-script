@@ -1,0 +1,5 @@
+標準スタイル
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.fontStyle = FontStyle.Normal;
+END EX

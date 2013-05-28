@@ -1,0 +1,4 @@
+<signature>
+alertBody
+</signature>
+アラートのときに表示されるメッセージ（読み込み専用）。

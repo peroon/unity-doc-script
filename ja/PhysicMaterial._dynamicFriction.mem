@@ -1,0 +1,6 @@
+移動しているときにかかる摩擦（動摩擦）。範囲は0 から1
+A value of 0 feels like ice, 1 feels like rubber.
+CONVERTEXAMPLE
+BEGIN EX
+	collider.dynamicFriction = 1;
+END EX

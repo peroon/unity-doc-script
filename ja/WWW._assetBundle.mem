@@ -1,0 +1,13 @@
+<signature>
+assetBundle
+</signature>
+AssetBundleオブジェクトを返す
+BEGIN EX
+	function Start () {
+		var www = new WWW ("http://myserver/myBundle.unity3d");
+		yield www;
+		// Get the designated main asset and instantiate it.
+		Instantiate(www.assetBundle.mainAsset);
+	}
+END EX
+SA: [[AssetBundle]] class.

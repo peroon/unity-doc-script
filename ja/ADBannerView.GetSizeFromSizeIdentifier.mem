@@ -1,0 +1,4 @@
+<signature>
+GetSizeFromSizeIdentifier(ADSizeIdentifier)
+</signature>
+サイズを設定し、バナーサイズを変換する。

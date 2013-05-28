@@ -1,0 +1,4 @@
+<signature>
+compass
+</signature>
+Property for accessing compass (handheld devices only). (RO)

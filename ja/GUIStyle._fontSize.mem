@@ -1,0 +1,6 @@
+<signature>
+fontSize
+</signature>
+使用するフォントのサイズを設定する（ダイナミックフォント専用
+If this is set to a non-zero value, the font size specified in the font importer is overriden with a custom size.
+This is only supported for fonts set to use dynamic font rendering. Other fonts will always use the default font size.

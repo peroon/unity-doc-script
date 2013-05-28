@@ -1,0 +1,4 @@
+<signature>
+GetBuildLocation(BuildTarget)
+</signature>
+Get the current location for the build.

@@ -1,0 +1,4 @@
+<signature>
+alertLaunchImage
+</signature>
+Identifies the image used as the launch image when the user taps the action button.

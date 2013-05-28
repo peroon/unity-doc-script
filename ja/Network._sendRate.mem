@@ -1,0 +1,11 @@
+<signature>
+sendRate
+</signature>
+ネットワークデータの送信速度を返す。デフォルトはネットワークビューの更新速度と同じ
+CONVERTEXAMPLE
+BEGIN EX
+	function Awake () {
+		// Increase default send rate
+		Network.sendRate = 25;
+	}
+END EX

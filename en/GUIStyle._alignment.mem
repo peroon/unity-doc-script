@@ -1,0 +1,12 @@
+<signature>
+alignment
+</signature>
+Text alignment.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints how text alignment is set.
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.alignment);
+	}
+END EX

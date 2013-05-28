@@ -1,0 +1,5 @@
+<signature>
+usedHeapSize
+</signature>
+ヒープサイズを設定する
+@return Size of the used heap in bytes, (or 0 if the profiler is disabled).

@@ -1,0 +1,41 @@
+<signature>
+Emit()
+</signature>
+設定した数の分だけパーティクルを放出する
+Makes the emitter spit out a random number of particles, as set by the ::ref::minEmission
+and ::ref::maxEmission properties.
+CONVERTEXAMPLE
+BEGIN EX
+	// Emit a random amount of particles between min and max emission now.
+
+	particleEmitter.Emit();
+END EX
+<signature>
+Emit(int)
+</signature>
+Emit /count/ particles immediately.
+CONVERTEXAMPLE
+BEGIN EX
+	// Emit 10 particles
+
+	particleEmitter.Emit(10);
+END EX
+<signature>
+Emit(Vector3,Vector3,float,float,Color)
+</signature>
+Emit a single particle with given parameters.
+BEGIN EX
+	// Emit one particle at the origin, shooting straight up.
+	// The size of the particle is 0.2 and it will live 2 seconds long.
+	particleEmitter.Emit(Vector3.zero, Vector3.up, 0.2, 2, Color.yellow);
+END EX
+@param pos パーティクルの位置。パーティクル1つを作成させる場合に使用する
+@param velocity パーティクルの速度。パーティクル1つを作成させる場合に使用する
+@param size パーティクルの大きさ。パーティクル1つを作成させる場合に使用する
+@param energy パーティクルが消滅にかかる時間。パーティクル1 つを作成させる場合に使用する
+@param color パーティクルの色。パーティクル1つを作成させる場合に使用する
+<signature>
+Emit(Vector3,Vector3,float,float,Color,float,float)
+</signature>
+@param rotation パーティクルの回転。パーティクル1つを作成させる場合に使用する
+@param angularVelocity パーティクルの回転速度。パーティクル1つを作成させる場合に使用する

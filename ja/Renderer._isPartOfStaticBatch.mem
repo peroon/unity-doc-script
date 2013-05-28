@@ -1,0 +1,4 @@
+<signature>
+isPartOfStaticBatch
+</signature>
+レンダラーが静的にバッチ処理されているか、確認する（読み込み専用）。

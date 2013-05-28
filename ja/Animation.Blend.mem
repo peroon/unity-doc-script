@@ -1,0 +1,5 @@
+<signature>
+Blend(string,float,float)
+</signature>
+ウェイトを設定し、アニメーションを組み合わせる。
+Playback of other animations will not be affected.

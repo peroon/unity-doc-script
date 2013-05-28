@@ -1,0 +1,4 @@
+<signature>
+SetFromToRotation(Vector3,Vector3)
+</signature>
+/fromDirection/引数から/toDirection/引数へ回転させる

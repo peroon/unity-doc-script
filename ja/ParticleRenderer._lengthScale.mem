@@ -1,0 +1,2 @@
+StretchParticles変数がStretchedのときのパーティクルの長さを設定する
+Use this to make particles always be longer than they are wide.

@@ -1,0 +1,5 @@
+ライトプローブを格納します。
+プローブの位置やSH 係数、モザイク処理のデータをベイクします。
+実行時に係数を変更することができます。[[LightmapSettings.lightProbes]]変数を使用し、別のベイク前のライトプローブと入れ替えることができます。
+
+SA: [[LightmapSettings]] class, Renderer.useLightProbes property.

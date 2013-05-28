@@ -1,0 +1,19 @@
+<signature>
+ctor()
+</signature>
+<txttag>
+UNDOC
+</txttag>
+<signature>
+ctor(Event)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Copy an event.
+<signature>
+ctor(IntPtr)
+</signature>
+<txttag>
+UNDOC
+</txttag>

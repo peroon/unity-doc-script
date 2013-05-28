@@ -1,0 +1,8 @@
+<signature>
+text
+</signature>
+The text to display.
+CONVERTEXAMPLE
+BEGIN EX
+	guiText.text = "Hello";
+END EX

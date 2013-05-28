@@ -1,0 +1,4 @@
+<signature>
+UnregisterForRemoteNotifications()
+</signature>
+Unregister for remote notifications.

@@ -1,0 +1,9 @@
+<signature>
+this(int)
+</signature>
+0 がX 成分、1 がY 成分、2 がZ 成分、3 がw成分になる
+CONVERTEXAMPLE
+BEGIN EX
+	var p : Vector4;
+	p[3] = 5; // the same as p.w = 5
+END EX

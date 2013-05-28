@@ -1,0 +1,5 @@
+<signature>
+colorBuffer
+</signature>
+カラーバッファを取得する（読み込み専用）。
+SA: [[RenderBuffer]], ::ref::depthBuffer, [[Graphics.SetRenderTarget]].

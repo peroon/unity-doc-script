@@ -1,0 +1,9 @@
+<signature>
+GetInstanceID()
+</signature>
+オブジェクトのインスタンスIDを返す
+オブジェクトのインスタンスIDです。一意なID となっています。
+CONVERTEXAMPLE
+BEGIN EX
+	print(GetInstanceID());
+END EX

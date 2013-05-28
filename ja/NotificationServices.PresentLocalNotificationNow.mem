@@ -1,0 +1,20 @@
+<signature>
+PresentLocalNotificationNow(LocalNotification)
+</signature>
+すぐにローカル通知を表示する
+BEGIN EX
+	function Start()
+	{
+		var notif = new LocalNotification();
+		notif.alertBody = "Hello!";
+		NotificationServices.PresentLocalNotificationNow(notif);
+	}
+
+	function Update()
+	{
+		if (NotificationServices.localNotificationCount > 0) {
+			Debug.Log(NotificationServices.localNotifications[0].alertBody);
+			NotificationServices.ClearLocalNotifications();
+		}
+	}
+END EX

@@ -1,0 +1,9 @@
+<signature>
+grayscale
+</signature>
+グレースケールが格納されている（読み込み専用）
+CONVERTEXAMPLE
+BEGIN EX
+	var color : Color = Color (.3, .4, .6);
+	print(color.grayscale);
+END EX

@@ -1,0 +1,6 @@
+<signature>
+AddForceAtPosition(Vector3,Vector3,float)
+AddForceAtPosition(Vector3,Vector3,float,ForceMode)
+</signature>
+Adds force /force/ to all vertices of the cloth mesh which are with /radius/ distance of /position/.
+SA: [[Cloth.externalAcceleration]], [[Cloth.randomAcceleration]].

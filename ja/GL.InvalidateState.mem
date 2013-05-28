@@ -1,0 +1,4 @@
+<signature>
+InvalidateState()
+</signature>
+内部的にキャッシュされたレンダーを無効にする

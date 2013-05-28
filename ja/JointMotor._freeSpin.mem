@@ -1,0 +1,8 @@
+<signature>
+freeSpin
+</signature>
+有効になっている場合、加速が遅くなることがなくなる。
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.motor.freeSpin = false;
+END EX

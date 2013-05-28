@@ -1,0 +1,21 @@
+<signature>
+alt
+</signature>
+「Alt/Option」キーが押されたかを返す（読み込み専用）
+Windowsでは、このリターンは真の任意のAltキーが押されている場合。\ \
+任意のオプションキーが押されている場合、Macでは、これはtrueを返します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints Option or Alt key was pressed depending the
+	// platform this script is being run.
+	function OnGUI() {
+		var e : Event = Event.current;
+		if (e.alt) {
+			if(Application.platform == RuntimePlatform.OSXEditor) {
+				Debug.Log("Option key was pressed");
+			} else if( Application.platform == RuntimePlatform.WindowsEditor) {
+				Debug.Log("Alt Key was pressed!");			
+			}
+		}
+	}
+END EX

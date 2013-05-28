@@ -1,0 +1,5 @@
+<signature>
+externalIP
+</signature>
+ネットワークインタフェースの外部IP アドレスを返す
+This will only be populated after some external connection has been made.

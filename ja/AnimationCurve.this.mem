@@ -1,0 +1,4 @@
+<signature>
+this(int)
+</signature>
+indexで指定したキーを返す（読み取り専用）。

@@ -1,0 +1,4 @@
+<signature>
+minHeight
+</signature>
+草のビルボードの高さの最小を返す（レンダーモードがGrassBillboardである必要がある）

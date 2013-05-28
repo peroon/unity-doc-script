@@ -1,0 +1,5 @@
+<signature>
+Dot(Vector4,Vector4)
+</signature>
+2 つのベクトルの内積を返す
+Returns /lhs/ @@.@@ /rhs/.

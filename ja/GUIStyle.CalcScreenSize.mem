@@ -1,0 +1,4 @@
+<signature>
+CalcScreenSize(Vector2)
+</signature>
+実際のスクリーンサイズによる大きさを返す

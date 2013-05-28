@@ -1,0 +1,7 @@
+<signature>
+Release()
+</signature>
+RenderTextureオブジェクトをリリースする。
+ハードウェアリソースを解放します。テクスチャ自体は削除されず、再度使用するときに再構成されます。
+
+SA: ::ref::Create, ::ref::IsCreated functions.

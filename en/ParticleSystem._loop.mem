@@ -1,0 +1,2 @@
+Is the particle system looping?
+If you disable looping on a playing particle system, it will stop after the end of the current loop.

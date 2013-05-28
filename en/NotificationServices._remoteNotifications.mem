@@ -1,0 +1,4 @@
+<signature>
+remoteNotifications
+</signature>
+The list of objects representing received remote notifications. (RO)

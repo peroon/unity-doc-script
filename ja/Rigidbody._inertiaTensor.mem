@@ -1,0 +1,9 @@
+mass変数の中心に対する、相対的な対角慣性テンソル値。
+The inertia tensor is rotated by the inertiaTensorRotation.
+If you don't set intertia tensor from a script it will be calculated automatically from all colliders attached to the rigidbody.
+CONVERTEXAMPLE
+BEGIN EX
+	// The inertia tensor of a long brick
+
+	rigidbody.inertiaTensor = Vector3(5, 1, 1);
+END EX

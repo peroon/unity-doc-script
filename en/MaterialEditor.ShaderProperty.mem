@@ -1,0 +1,6 @@
+<signature>
+ShaderProperty(Shader,int)
+</signature>
+Automatically draw a shader property from given index for the given shader.
+@param shader Shader that the material uses.
+@param propertyIndex Index of the property to draw.

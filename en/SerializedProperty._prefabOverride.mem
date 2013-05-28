@@ -1,0 +1,5 @@
+<signature>
+prefabOverride
+</signature>
+Is property's value different from the prefab it belongs to?
+SA: ::ref::isInstantiatedPrefab.

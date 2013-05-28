@@ -1,0 +1,4 @@
+<signature>
+isProcessing
+</signature>
+テクスチャの再レンダリング中に、Procedural<aterialオブジェクトかを判断する

@@ -1,0 +1,8 @@
+<signature>
+SetLevelPrefix(int)
+</signature>
+すべてのネットワークのViewIDの番号に前置きされる、レベルの接頭辞を設定する
+これは新しくシーンが切り替わったとき、不必要なオブジェクトの更新を行わないようにするために使用されます。
+This can be set to any number and then incremented with each new level load. This doesn't add overhead to
+network traffic but just diminishes the pool of network ViewID numbers a little bit.
+The [[wiki:net-NetworkLevelLoad|Network level loading]] page has an example of how to use this function.

@@ -1,0 +1,12 @@
+<signature>
+graphicsDeviceVendor
+</signature>
+グラフィックデバイスのベンダーを返す（読み込み専用）
+This is the vendor of user's graphics card, as reported by the graphics driver.
+SA: SystemInfo.graphicsDeviceName, SystemInfo.graphicsDeviceVersion.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints "ATI Technologies Inc." on MacBook Pro running OS X 10.4.8
+
+	print (SystemInfo.graphicsDeviceVendor);
+END EX

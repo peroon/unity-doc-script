@@ -1,0 +1,8 @@
+<signature>
+camera
+</signature>
+Camera情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	camera.fieldOfView = 40;
+END EX

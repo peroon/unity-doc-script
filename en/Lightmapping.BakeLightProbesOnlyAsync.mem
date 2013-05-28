@@ -1,0 +1,5 @@
+<signature>
+BakeLightProbesOnlyAsync()
+</signature>
+Starts an asynchronous bake job, but only bakes light probes.
+The progress can be monitored via ::ref::isRunning property.

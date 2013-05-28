@@ -1,0 +1,12 @@
+The time, in seconds, that the movie takes to play back completely.
+Note that duration is only available once the movie has started.  Until then duration will return -1.  If you need to know the duration of a movie before it is played, consider extracting this information offline and creating a text asset.  You can then look up the duration given the movie name.
+
+CONVERTEXAMPLE
+BEGIN EX
+	var mov: MovieTexture;
+	var gui: GUIText;
+
+	function Start() {
+		gui.text = mov.duration.ToString();
+	}
+END EX

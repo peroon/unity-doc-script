@@ -1,0 +1,12 @@
+<signature>
+name
+</signature>
+The name of this GUIStyle. Used for getting them based on name.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints the name of the style.
+
+	function OnGUI() {
+		Debug.Log(GUI.skin.button.name);
+	}
+END EX

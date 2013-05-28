@@ -1,0 +1,10 @@
+<signature>
+OnServerInitialized()
+</signature>
+サーバーが初期化されたとき、サーバー側で呼び出されます。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnServerInitialized() {
+		Debug.Log("Server initialized and ready");
+	}
+END EX

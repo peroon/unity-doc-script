@@ -1,0 +1,4 @@
+<signature>
+Contains(Vector3)
+</signature>
+設定したポイントが、バウンディングボックスに含まれているか確認する

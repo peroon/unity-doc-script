@@ -1,0 +1,7 @@
+ソフトシャドウのフェードアウトの速度を設定する。
+SA: ::ref::shadows, ::ref::shadowSoftness properties.
+CONVERTEXAMPLE
+BEGIN EX
+	// make light's shadow softness fade out really fast
+	light.shadowSoftnessFade = 0.3;
+END EX

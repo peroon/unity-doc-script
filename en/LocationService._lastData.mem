@@ -1,0 +1,6 @@
+<signature>
+lastData
+</signature>
+Last measured device geographical location.
+Before accessing this property, make sure location service was started
+via @@Input.location.Start()@@.

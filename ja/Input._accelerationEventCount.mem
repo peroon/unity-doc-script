@@ -1,0 +1,13 @@
+<signature>
+accelerationEventCount
+</signature>
+最後のフレーム中に発生したか、速度測定の結果の数を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Check if we got any acceleration measurements during last frame
+
+	function Update () {
+		if (Input.accelerationEventCount > 0)
+			print ("We got new acceleration measurements");
+	}
+END EX

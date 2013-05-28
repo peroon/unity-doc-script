@@ -1,0 +1,8 @@
+<signature>
+ctor(Type)
+</signature>
+Tells a PropertyDrawer class which run-time class or attribute it's a drawer for.
+When you make a custom drawer, you need put this attribute on the drawer class.
+
+SA: [[PropertyDrawer]] class.
+@param type If the drawer is for a custom [[Serializable]] class, the type should be that class. If the drawer is for script variables with a specific [[PropertyAttribute]], the type should be that attribute.

@@ -1,0 +1,4 @@
+<signature>
+Add<T>(T[],T)
+</signature>
+Appends ''item'' to the end of ''array''.

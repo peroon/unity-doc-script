@@ -1,0 +1,9 @@
+<signature>
+ResetWorldToCameraMatrix()
+</signature>
+worldToCameraMatrix変数で設定したものをリセットする
+worldToCameraMatrix変数で設定したものをリセットします。
+CONVERTEXAMPLE
+BEGIN EX
+	camera.ResetWorldToCameraMatrix();
+END EX

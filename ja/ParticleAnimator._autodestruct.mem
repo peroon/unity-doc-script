@@ -1,0 +1,2 @@
+すべてのパーティクルが表出して、消滅したとき、ゲームオブジェクトが破棄される
+When set to /true/, the [[GameObject]] will be destroyed when all particles disappear.

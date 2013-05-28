@@ -1,0 +1,31 @@
+<signature>
+Box(Texture,GUILayoutOption[])
+Box(string,GUILayoutOption[])
+Box(GUIContent,GUILayoutOption[])
+Box(Texture,GUIStyle,GUILayoutOption[])
+Box(string,GUIStyle,GUILayoutOption[])
+Box(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+ボックスを作成する
+This will make a solid box. If you want to make a box with some contents inside, use the style paramenter of one of the subgroup functions (::ref::BeginHorizontal, ::ref::BeginVertical, etc...).
+
+{img GUILayoutBox.png}\\
+''Boxes in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws a texture and a label inside 2 different boxes
+	var tex : Texture;
+
+	function OnGUI() {
+		if(!tex) {
+			Debug.LogError("Missing texture, assign a texture in the inspector");
+		}
+		GUILayout.Box(tex);
+		GUILayout.Box("This is an sized label");
+	}
+END EX
+@param text 表示する文字列
+@param image 表示する画像
+@param content 表示する文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さを設定する

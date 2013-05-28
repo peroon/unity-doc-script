@@ -1,0 +1,2 @@
+Callback to draw GUI within a window (used with [[GUI.Window]]).
+This function takes the ID number of the window to be drawn. Its body should contains GUI calls to display the window, much like a standard OnGUI function. This function can then be passed as a parameter to [[GUI.Window]] to draw the appropriate contents.

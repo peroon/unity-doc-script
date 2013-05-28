@@ -1,0 +1,10 @@
+Auto-rotates the screen as necessary toward any of the enabled orientations.
+When this option is assigned to the ::ref::orientation property, the screen will auto-rotate so that the bottom of the screen image points downwards. The orientations that can be used are set by the ::ref::autorotateToLandscapeLeft, ::ref::autorotateToLandscapeRight, ::ref::autorotateToPortrait and ::autorotateToPortraitUpsideDown properties. For example, if ::ref::autorotateToPortrait and ::autorotateToPortraitUpsideDown are both true but the others are false then the auto-rotation will never choose either of the landscape options even when the device is held with the long side of the screen pointing downwards.
+BEGIN EX
+function Start () {
+	Screen.autorotateToPortrait = true;
+	Screen.autorotateToPortraitUpsideDown = true;
+	Screen.orientation = ScreenOrientation.AutoRotation;
+}
+END EX
+SA: Screen.orientation.

@@ -1,0 +1,4 @@
+<signature>
+supportsGyroscope
+</signature>
+ジャイロスコープが利用できるかを返す

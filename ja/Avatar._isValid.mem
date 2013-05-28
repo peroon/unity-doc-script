@@ -1,0 +1,4 @@
+<signature>
+isValid
+</signature>
+アバターが正常なmecanimのアバターの場合、trueを返します。

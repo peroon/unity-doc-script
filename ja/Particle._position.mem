@@ -1,0 +1,5 @@
+<signature>
+position
+</signature>
+パーティクルの座標を返す
+SA: [[wiki:comp-ParticlesLegacy|Particles documentation]].

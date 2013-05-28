@@ -1,0 +1,26 @@
+<signature>
+transforms
+</signature>
+Returns the top level selection, excluding prefabs.
+This is the most common selection type when working with scene objects.
+BEGIN EX
+class LookAtMainCamera extends ScriptableObject {
+    @MenuItem ("Example/Selection looks at Main Camera _l")
+    
+    static function Look() {
+        var camera = Camera.main;
+
+        if (camera) {
+            for (var transform in Selection.transforms) {
+                Undo.RegisterUndo(transform, transform.name + " Looks at Main Camera" );
+                transform.LookAt(camera.transform);
+            }
+        }
+    }
+    //The menu item will be disabled if nothing, is selected.
+    @MenuItem ("Example/Selection looks at Main Camera _l", true)
+    static function ValidateSelection() {
+        return Selection.transforms.Length != 0;
+    }
+}
+END EX

@@ -1,0 +1,5 @@
+<signature>
+FromDoubleArray(IntPtr)
+</signature>
+Convert a Java array of <tt>double</tt> to a managed array of System.Double.
+SA: AndroidJNI.GetDoubleArrayElement, AndroidJNI.GetArrayLength.

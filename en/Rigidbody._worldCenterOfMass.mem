@@ -1,0 +1,5 @@
+The center of mass of the rigidbody in world space (RO).
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(rigidbody.worldCenterOfMass);
+END EX

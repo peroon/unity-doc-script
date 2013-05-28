@@ -1,0 +1,4 @@
+<signature>
+ResetNoBackupFlag(string)
+</signature>
+除外設定をリセットする。

@@ -1,0 +1,8 @@
+<signature>
+StartLocationServiceUpdates(float,float)
+StartLocationServiceUpdates(float)
+StartLocationServiceUpdates()
+</signature>
+<txttag>
+UNDOC
+</txttag>

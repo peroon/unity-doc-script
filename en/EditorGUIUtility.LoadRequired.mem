@@ -1,0 +1,8 @@
+<signature>
+LoadRequired(string)
+</signature>
+Load a built-in resource that has to be there.
+This function will look in Assets/Editor Default Resources/whatever for the resource.
+BEGIN EX
+	var handleMaterial : Material = EditorGUIUtility.Load("HandleMaterial");
+END EX

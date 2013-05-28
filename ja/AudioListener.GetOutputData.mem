@@ -1,0 +1,8 @@
+<signature>
+GetOutputData(int,int)
+</signature>
+リスナーの出力データのブロックを返す。
+<signature>
+GetOutputData(float[],int)
+</signature>
+リスナーの出力データのブロックを返す。

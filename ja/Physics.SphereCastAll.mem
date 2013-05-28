@@ -1,0 +1,23 @@
+<signature>
+SphereCastAll(Vector3,float,Vector3,float,int)
+</signature>
+球体のレイを飛ばし、ヒットしたすべてのオブジェクト情報を取得します
+Casts a sphere against all colliders in the scene and returns detailed information on each collider which was hit.
+This is useful when a Raycast does not give enough precision, because you want to find out if an object of a specific size,
+such as a character, will be able to move somewhere without colliding with anything on the way.
+
+__Notes:__ The sphere cast does not work against colliders configured as triggers.
+If you move colliders from scripting or by animation, there needs to be at
+least one FixedUpdate executed so that the physics library can update it's data
+structures, before a sphere cast will hit the collider at it's new position.
+
+SA: [[Physics.SphereCast]], [[Physics.CapsuleCast]], [[Physics.Raycast]], [[Rigidbody.SweepTest]].
+@param origin 原点
+@param radius 半径
+@param direction 方向
+@param distance 距離の長さ
+@param layerMask レイヤーの設定。衝突を無視することもできる
+@return An array of all colliders hit in the sweep.
+<signature>
+SphereCastAll(Ray,float,float,int)
+</signature>

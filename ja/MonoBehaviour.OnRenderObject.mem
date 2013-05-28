@@ -1,0 +1,20 @@
+<signature>
+OnRenderObject()
+</signature>
+オブジェクトが可視状態のとき、カメラごとに一度呼び出される。
+OnPostRender関数と似ていますが、この関数はカメラのコンポーネントが付いていないオブジェクトでも使用することができます。Graphics.DrawMeshNow関数のようなすぐ描画するようなものを、この関数で使用します。
+CONVERTEXAMPLE
+BEGIN EX
+    var mainMesh: Mesh;
+	var miniMapMesh: Mesh;
+
+	function OnRenderObject() {
+		// Render different meshes for the object depending on whether
+		// the main camera or minimap camera is viewing.
+		if (Camera.current.name == "MiniMapcam") {
+			Graphics.DrawMeshNow(miniMapMesh, transform.position, transform.rotation);
+		} else {
+			Graphics.DrawMeshNow(mainMesh, transform.position, transform.rotation);
+		}
+	}
+END EX

@@ -1,0 +1,12 @@
+ディレイあたりの減衰比率を設定する。0 から1の間で設定（デフォルトは0.5）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the decayRatio on the chorus filter to total decay
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioEchoFilter)
+
+	function Start() {
+		GetComponent(AudioEchoFilter).decayRatio = 0.0;
+	}
+END EX

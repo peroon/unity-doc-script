@@ -1,0 +1,4 @@
+<signature>
+HasKey(string)
+</signature>
+キーが存在するか確認する

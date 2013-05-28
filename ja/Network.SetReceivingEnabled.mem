@@ -1,0 +1,11 @@
+<signature>
+SetReceivingEnabled(NetworkPlayer,int,bool)
+</signature>
+特定のプレイヤーから特定のグループ番号への、メッセージの受信の有効／無効を設定する
+メッセージ受信の有効／無効を設定します。シーンのロード中など、メッセージを表示させたくない場合に使用します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Stop receiving messages in group 0 from all players (clients)
+	for (var player : NetworkPlayer in Network.connections)
+		Network.SetReceivingEnabled(player, 0, false);
+END EX

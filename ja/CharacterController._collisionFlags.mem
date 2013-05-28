@@ -1,0 +1,8 @@
+SimpleMove関数やMove関数で障害物がキャラクターのどこに当たったかを返す
+BEGIN EX
+	function Update () {
+		var controller : CharacterController = GetComponent(CharacterController);
+		if ((controller.collisionFlags & CollisionFlags.Above) != 0)
+			print("touched the ceiling");
+	}
+END EX

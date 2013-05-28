@@ -1,0 +1,10 @@
+<signature>
+up
+</signature>
+The green axis of the transform in world space.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set's the rigidbody velocity to be 
+	// along the green axis of the transform
+	rigidbody.velocity = transform.up * 10;
+END EX

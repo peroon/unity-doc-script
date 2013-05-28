@@ -1,0 +1,4 @@
+<signature>
+GetAnimationEvents(AnimationClip)
+</signature>
+Retrieves all animation events associated with the animation clip.

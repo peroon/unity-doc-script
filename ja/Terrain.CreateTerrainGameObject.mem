@@ -1,0 +1,4 @@
+<signature>
+CreateTerrainGameObject(TerrainData)
+</signature>
+TerrainDataオブジェクトから、コライダーを含むTerrainDataオブジェクトを作成する

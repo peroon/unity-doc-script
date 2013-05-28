@@ -1,0 +1,5 @@
+<signature>
+LoadIdentity()
+</signature>
+モデルビュー行列に単位行列をロードする
+現在のモデルビュー行列に単位行列をロードします。保存／復元して投影パラメーターを上書きするためには、PushMatrix関数とPopMatrix関数を使用してください。

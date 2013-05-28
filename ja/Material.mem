@@ -1,0 +1,10 @@
+マテリアルを扱うクラスです。
+このクラスには、マテリアルでアニメーションを行えるような情報が格納されています。
+またインスペクター上で設定できない情報（行列など）を設定する場合にも使われます。 (e.g. matrices).
+
+In order to get the material used by an object, use the Renderer.material property:
+SA: [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+CONVERTEXAMPLE
+BEGIN EX
+renderer.material.color = Color.red;
+END EX

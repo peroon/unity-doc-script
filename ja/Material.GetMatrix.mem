@@ -1,0 +1,8 @@
+<signature>
+GetMatrix(string)
+</signature>
+シェーダーの行列を取得する。
+This is mostly used with custom shaders that need extra matrix
+parameters. プロパティ名から行列を取得します。行列は、インスペクター上で確認することができません。スクリプトで確認／設定します。
+
+SA: ::ref::SetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].

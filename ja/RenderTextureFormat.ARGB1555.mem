@@ -1,0 +1,5 @@
+1 ビットのアルファチャンネル、他各5 ビットのテクスチャフォーマット。
+Note that not all graphics cards support 16 bit textures. Use SystemInfo.SupportsRenderTextureFormat
+to check for support.
+
+SA: RenderTexture.format, [[RenderTexture]] class, SystemInfo.SupportsRenderTextureFormat.

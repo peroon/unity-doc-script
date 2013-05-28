@@ -1,0 +1,2 @@
+レイアウトフェーズの有効／無効。
+It can only be used if you do not use GUI.Window and GUILayout inside of this OnGUI call.

@@ -1,0 +1,5 @@
+<signature>
+supports3DTextures
+</signature>
+Are 3D (volume) textures supported? (RO)
+SA: [[Texture3D]] class.

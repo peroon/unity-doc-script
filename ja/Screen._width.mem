@@ -1,0 +1,5 @@
+<signature>
+width
+</signature>
+ピクセル単位のスクリーンの幅を返す（読み込み専用）
+This is the actual width of the player window (in fullscreen it is also the current resolution).

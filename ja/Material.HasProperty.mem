@@ -1,0 +1,12 @@
+<signature>
+HasProperty(string)
+</signature>
+シェーダーのプロパティにプロパティ名が設定されているか確認します。
+SA: [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Attach this to a gameObject that has a renderer.
+
+	if(renderer.material.HasProperty("_Color"))
+		renderer.material.SetColor("_Color",Color.red);
+END EX

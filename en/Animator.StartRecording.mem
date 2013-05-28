@@ -1,0 +1,7 @@
+<signature>
+StartRecording(int)
+</signature>
+Sets the animator in recording mode, and allocates a circular buffer of size ''frameCount''.
+After this call, the recorder starts collecting up to ''frameCount'' frames in the buffer. Note it is not possible to start playback until a call to ::ref::StopRecording is made. 
+SA: ::ref::StopRecording, ::ref::recordingStartTime, ::ref::recordingStopTime, ::ref::StartPlayback, ::ref::StopPlayback, ::ref::playbackTime.
+@param frameCount The number of frames (updates) that will be recorded. If frameCount is 0, the recording will continue until the user calls ::ref::StopRecording. The maximum value for frameCount is 10000.

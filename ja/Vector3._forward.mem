@@ -1,0 +1,8 @@
+<signature>
+forward
+</signature>
+Vector3(0, 0, 1)と同じ意味
+CONVERTEXAMPLE
+BEGIN EX
+	transform.position += Vector3.forward * Time.deltaTime;
+END EX

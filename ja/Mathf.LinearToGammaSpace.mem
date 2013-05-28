@@ -1,0 +1,4 @@
+<signature>
+LinearToGammaSpace(float)
+</signature>
+線形からガンマのカラー空間へ値を変形する。

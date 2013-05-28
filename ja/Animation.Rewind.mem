@@ -1,0 +1,18 @@
+<signature>
+Rewind(string)
+</signature>
+アニメーションを巻き戻す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Rewind the walk animation to the start
+	animation.Rewind("walk");
+END EX
+<signature>
+Rewind()
+</signature>
+アニメーションを巻き戻す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Rewind all animations to the start
+	animation.Rewind();
+END EX

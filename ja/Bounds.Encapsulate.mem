@@ -1,0 +1,8 @@
+<signature>
+Encapsulate(Vector3)
+</signature>
+設定したポイントを含むように拡大する
+<signature>
+Encapsulate(Bounds)
+</signature>
+位置やバウンズを含むように、拡大・縮小します。

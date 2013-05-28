@@ -1,0 +1,8 @@
+<signature>
+transform
+</signature>
+Transform情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	transform.Translate(1, 1, 1);
+END EX

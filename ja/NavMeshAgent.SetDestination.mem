@@ -1,0 +1,32 @@
+<signature>
+SetDestination(Vector3)
+</signature>
+移動先のパスを設定します。既に移動先が設定されていた場合、破棄されます。
+Note that the path may not become available until after a few frames later.
+While the path is being computed, ::ref::pathPending will be true.
+If a valid path becomes available - the agent will resume movement.
+CONVERTEXAMPLE
+BEGIN EX
+// Script to move a NavMeshAgent to the place where
+// the mouse is clicked.
+	private var agent: NavMeshAgent;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+	}
+
+	function Update () {
+		var hit: RaycastHit;
+
+		// When the mouse is clicked...	
+		if (Input.GetMouseButtonDown(0)) {
+			// If the click was on an object then set the agent's
+			// destination to the point where the click occurred.
+			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			if (Physics.Raycast(ray, hit)) {
+				agent.SetDestination(hit.point);
+			}
+		}
+	}
+END EX

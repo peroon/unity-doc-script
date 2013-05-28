@@ -1,0 +1,26 @@
+<signature>
+SelectionGrid(Rect,int,string[],int)
+SelectionGrid(Rect,int,Texture[],int)
+SelectionGrid(Rect,int,GUIContent[],int)
+SelectionGrid(Rect,int,string[],int,GUIStyle)
+SelectionGrid(Rect,int,Texture[],int,GUIStyle)
+SelectionGrid(Rect,int,GUIContent[],int,GUIStyle)
+</signature>
+グリッドを作成します。
+CONVERTEXAMPLE
+BEGIN EX
+	var selGridInt : int = 0;
+	var selStrings : String[] = ["Grid 1", "Grid 2", "Grid 3", "Grid 4"];
+	
+	function OnGUI () {
+		selGridInt = GUI.SelectionGrid (Rect (25, 25, 100, 30), selGridInt, selStrings, 2);
+	}
+END EX
+@param position 各配列のインデックスに対応している
+@param selected 表示する文字列の配列
+@param texts 表示する文字列の配列
+@param images 表示する画像の配列
+@param contents 表示するGUIContentオブジェクトの配列
+@param xCount 横に並べる数
+@param style スタイル
+@return The index of the selected button.

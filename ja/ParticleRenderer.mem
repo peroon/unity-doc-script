@@ -1,0 +1,2 @@
+スクリーン上にパーティクルをレンダリングします。（旧パーティクルクラスで使用します）
+This class is a script interface for a [[wiki:class-ParticleRenderer|particle renderer]] component.

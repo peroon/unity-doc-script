@@ -1,0 +1,4 @@
+<signature>
+GetPosition()
+</signature>
+地形の位置を取得する

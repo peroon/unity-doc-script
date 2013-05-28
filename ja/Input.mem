@@ -1,0 +1,38 @@
+入力システムのインタフェースです。
+[[wiki:Input|Input Manager]]で設定した軸を読み込んだり、モバイルのマルチタッチや加速度センサーにアクセスするにはこのクラスを使用します。
+
+To read an axis use Input.GetAxis with one of the following default axes:
+"Horizontal" and "Vertical" are mapped to joystick, /A/, /W/, /S/, /D/ and the arrow keys.
+"Mouse X" and "Mouse Y" are mapped to the mouse delta.
+"Fire1", "Fire2" "Fire3" are mapped to /Ctrl/, /Alt/, /Cmd/ keys and three mouse or joystick buttons.
+New input axes can be added in the [[wiki:Input|Input Manager]].
+
+If you are using input for any kind of movement behaviour use Input.GetAxis.
+It gives you smoothed and configurable input that can be mapped to keyboard, joystick or mouse.
+Use Input.GetButton for action like events only. Don't use it for movement, Input.GetAxis will make the script code smaller and simpler.
+
+入力フラグが完了するまでリセットされないので、Update関数の中に記述することをお勧めします。
+
+__Mobile Devices:__
+
+iOSやAndroidでは、マルチタッチ機能を利用でき、複数の指を認識することが可能です。
+You can access data on the status of each finger touching screen during the last frame by accessing the Input.touches property array.
+
+As a device moves, its accelerometer hardware reports linear acceleration changes along the three primary axes in three-dimensional space.
+You can use this data to detect both the current orientation of the device (relative to the ground) and any immediate changes to that orientation.
+
+Acceleration along each axis is reported directly by the hardware as G-force values.
+A value of 1.0 represents a load of about +1g along a given axis while a value of -1.0 represents -1g.
+If you hold the device upright (with the home button at the bottom) in front of you, the X axis is positive along the right,
+the Y axis is positive directly up, and the Z axis is positive pointing toward you.
+
+You can read the Input.acceleration property to get the accelerometer reading.
+You can also use the Input.deviceOrientation property to get a discrete evaluation of the device's orientation in three-dimensional space.
+Detecting a change in orientation can be useful if you want to create game behaviors when the user rotates the device to hold it differently.
+
+Note that the accelerometer hardware can be polled more than once per frame.
+To access all accelerometer samples since the last frame, you can read the Input.accelerationEvents property array.
+This can be useful when reconstructing player motions, feeding acceleration data into a predictor, or implementing other precise motion analysis.
+
+The Unity mobile devices input API is based on Apple's iOS API. It may help to learn more about the native API to better understand Unity's Input API.
+If you're a registered iOS developer, you can find Apple's input API documentation online.

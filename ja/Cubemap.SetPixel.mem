@@ -1,0 +1,18 @@
+<signature>
+SetPixel(CubemapFace,int,int,Color)
+</signature>
+座標(face, x, y)のピクセルカラーを設定する
+Call ::ref::Apply to actually upload the changed pixels to the graphics card.
+Uploading is an expensive operation, so you'll want to change as many pixels
+as possible between /Apply/ calls.
+
+この関数はARGB32、RGB24、Alpha8のフォーマットで動作します。
+For other formats /SetPixel/ is ignored.
+SA: ::ref::Apply function.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the pixel at (0,0) of the +X face red.
+	var c : Cubemap;
+	c.SetPixel(CubemapFace.PositiveX, 0, 0, Color.red);
+	c.Apply(); // Apply the color to the face.
+END EX

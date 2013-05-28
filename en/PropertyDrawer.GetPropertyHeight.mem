@@ -1,0 +1,8 @@
+<signature>
+GetPropertyHeight(SerializedProperty,GUIContent)
+</signature>
+Override this method to specify how tall the GUI for this field is in pixels.
+The default is one line high.
+@param property The SerializedProperty to make the custom GUI for.
+@param label The label of this property.
+@return The height in pixels.

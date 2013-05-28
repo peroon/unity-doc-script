@@ -1,0 +1,4 @@
+<signature>
+touchCountSecondary
+</signature>
+Number of secondary touches. Guaranteed not to change throughout the frame. (RO).

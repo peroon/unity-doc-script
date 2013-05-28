@@ -1,0 +1,10 @@
+<signature>
+captureFramerate
+</signature>
+値が0より大きくなると、リアルタイムに関係なく、設定した値（フレーム/s）になる
+@@(1.0 / captureFramerate)@@ per frame regardless of real time.
+This is useful if you want to capture a movie where you need a constant frame rate.
+CONVERTEXAMPLE
+BEGIN EX
+	Time.captureFramerate = 25;
+END EX

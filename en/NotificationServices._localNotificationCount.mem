@@ -1,0 +1,4 @@
+<signature>
+localNotificationCount
+</signature>
+The number of received local notifications. (RO)

@@ -1,0 +1,19 @@
+MonoBehaviour.StartCoroutine returns a Coroutine. Instances of this class are only used to reference these coroutines and do not hold any exposed properties or functions.
+何秒待つ、という処理や非同期のループ処理を行う場合に使用します。
+CONVERTEXAMPLE
+BEGIN EX
+// - prints "Starting 0.0"
+// - prints "WaitAndPrint 5.0"
+// - prints "Done 5.0"
+
+print ("Starting " + Time.time);
+// Start function WaitAndPrint as a coroutine
+yield WaitAndPrint();
+print ("Done " + Time.time);
+
+function WaitAndPrint () {
+	// suspend execution for 5 seconds
+	yield WaitForSeconds (5);
+	print ("WaitAndPrint "+ Time.time);
+}
+END EX

@@ -1,0 +1,50 @@
+<signature>
+GetRect(GUIContent,GUIStyle)
+GetRect(GUIContent,GUIStyle,GUILayoutOption[])
+</signature>
+Reserve layout space for a rectangle for displaying some contents with a specific style.
+CONVERTEXAMPLE
+BEGIN EX
+	// Shows the button rect properties in a label when the mouse is over it
+	var buttonText : GUIContent = new GUIContent("some button"); 
+	var buttonStyle : GUIStyle = GUIStyle.none; 
+	
+	function OnGUI() { 
+		var rt : Rect = GUILayoutUtility.GetRect(buttonText, buttonStyle); 
+		if (rt.Contains(Event.current.mousePosition)) { 
+			GUI.Label(Rect(0,20,200,70), "PosX: " + rt.x + "\nPosY: " + rt.y + 
+				  "\nWidth: " + rt.width + "\nHeight: " + rt.height);
+		} 
+		GUI.Button(rt, buttonText, buttonStyle); 
+	}
+END EX
+@param content 表示される文字列、画像、ツールチップ
+@param style スタイル
+@param options 幅・高さ
+@return A rectangle that is large enough to contain content when rendered in style.
+<signature>
+GetRect(float,float)
+GetRect(float,float,GUIStyle)
+GetRect(float,float,GUILayoutOption[])
+GetRect(float,float,GUIStyle,GUILayoutOption[])
+</signature>
+Reserve layout space for a rectangle with a fixed content area.
+@param width 幅
+@param height 高さ
+@param style スタイル
+@param options 幅・高さ
+@return The rectanlge to put your control in.
+<signature>
+GetRect(float,float,float,float)
+GetRect(float,float,float,float,GUIStyle)
+GetRect(float,float,float,float,GUILayoutOption[])
+GetRect(float,float,float,float,GUIStyle,GUILayoutOption[])
+</signature>
+The rectangle's size will be between the min & max values.
+@param minWidth 最小幅
+@param maxWidth 最大幅
+@param minHeight 最小の高さ
+@param maxHeight 最大の高さ
+@param style スタイル
+@param options 幅・高さ
+@return A rectangle with size between minWidth & maxWidth on both axes.

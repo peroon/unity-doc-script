@@ -1,0 +1,8 @@
+ハンドルの角度を返す。常にローカル座標のY 軸になる
+CONVERTEXAMPLE
+BEGIN EX
+	// steer forwards
+
+	collider.steerAngle = 0;
+END EX
+At high velocities use only small steer angles; a few degrees should suffice.

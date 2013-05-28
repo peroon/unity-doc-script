@@ -1,0 +1,11 @@
+<signature>
+isPlaying
+</signature>
+プレイヤーがプレイ可能状態かを確認する（読み取り専用）。
+Returns true in the Unity editor when in play mode.
+CONVERTEXAMPLE
+BEGIN EX
+	if (Application.isPlaying) {
+	    print("In player or playmode");
+	}
+END EX

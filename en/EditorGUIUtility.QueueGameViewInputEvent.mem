@@ -1,0 +1,4 @@
+<signature>
+QueueGameViewInputEvent(Event)
+</signature>
+Send an input event into the game.

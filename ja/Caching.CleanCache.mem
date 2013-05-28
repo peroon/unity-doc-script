@@ -1,0 +1,10 @@
+<signature>
+CleanCache()
+</signature>
+キャッシュされているすべてのAssetBundleオブジェクトのコンテンツを削除する
+This function is not available to WebPlayer applications that use the shared cache.
+BEGIN EX
+if (GUILayout.Button("Uninstall Game"))
+	Caching.CleanCache ();
+END EX
+@return True when cache cleaning succeeded, false if cache was in use.

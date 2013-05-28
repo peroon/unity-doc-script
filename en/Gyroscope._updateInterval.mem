@@ -1,0 +1,10 @@
+<signature>
+updateInterval
+</signature>
+Sets or retrieves gyroscope interval in seconds.
+CONVERTEXAMPLE
+BEGIN EX
+    function Start () {
+		Input.gyro.updateInterval = 0.01;
+	}
+END EX

@@ -1,0 +1,18 @@
+<signature>
+GetConstructorID(IntPtr,string)
+</signature>
+特定のシグネチャに一致するコンストラクタメソッドのJava クラスを読み込む
+The signature comparison is done to allow for sub-/base-classes of the class types.
+シグネチャが空文字の場合、最初にヒットしたコンストラクタのIDを返します。
+
+SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetMethodID, AndroidJNIHelper.GetFieldID.
+@param javaClass Java クラスオブジェクト
+@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチャ。デフォルトは空文字列
+<signature>
+GetConstructorID(IntPtr,object[])
+</signature>
+Java クラスオブジェクトからコンストラクタID を取得します。
+特定のシグネチャに一致するコンストラクタメソッドのJava クラスを読み込む。
+The signature comparison is done to allow for sub-/base-classes of the class types.
+@param javaClass Java クラスオブジェクト
+@param args コンストラクタに必要な引数を配列として渡す

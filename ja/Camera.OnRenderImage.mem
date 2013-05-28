@@ -1,0 +1,25 @@
+<signature>
+OnRenderImage(RenderTexture,RenderTexture)
+</signature>
+すべてのレンダリングが完了したときに呼び出されます。
+Postprocessing effects __(Unity Pro only)__.
+
+It allows you to modify final image by processing it with shader based filters.
+The incoming image is /source/ render texture. The result should end up in
+/destination/ render texture. When there are multiple image filters attached to the camera,
+they process image sequentially, by passing first filter's destination as the source to the next filter.
+
+This message is sent to all scripts attached to the camera.
+
+SA: The [[wiki:comp-ImageEffects|image effects]] in Unity Pro.
+CONVERTEXAMPLE
+BEGIN EX
+	var mat: Material;
+
+	function OnRenderImage(src: RenderTexture, dest: RenderTexture)
+   {
+		// Copy the source Render Texture to the destination,
+		// applying the material along the way.
+		Graphics.Blit(src, dest, mat);
+	}
+END EX

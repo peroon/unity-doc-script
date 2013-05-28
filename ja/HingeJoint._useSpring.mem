@@ -1,0 +1,5 @@
+スプリングを使用するか設定する
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.useSpring = true;
+END EX

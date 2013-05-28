@@ -1,0 +1,4 @@
+<signature>
+GetHeights(int,int,int,int)
+</signature>
+ハイトマップのサンプルの配列を設定する

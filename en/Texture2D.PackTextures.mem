@@ -1,0 +1,46 @@
+<signature>
+PackTextures(Texture2D[],int)
+PackTextures(Texture2D[],int,int)
+PackTextures(Texture2D[],int,int,bool)
+</signature>
+Packs multiple Textures into a texture atlas.
+This function will replace the current texture with the atlas made from the supplied textures.
+The size, format and mipmaps of any of the textures can change after packing.
+
+The resulting texture atlas will be as large as needed to fit all input textures but only up to /maximumAtlasSize/ in
+each dimension. If the input textures can't all fit into a texture atlas of the desired size then they will be
+scaled down to fit.
+
+The atlas will have TextureFormat::pref::DXT1 format if all input textures are DXT1 compressed.
+If all input textures are compressed in TextureFormat::pref::DXT1 or TextureFormat::pref::DXT5 formats
+then the atlas will be in DXT5 format. If any input texture is not compressed then the atlas will
+be in TextureFormat::pref::ARGB32 uncompressed format.
+
+If none of the input textures have mipmaps then the atlas will also have no mipmaps.
+
+If you use non-zero padding and the atlas is compressed and has mipmaps then the lower-level mipmaps might not be
+exactly the same as in the original texture due to compression restrictions.
+
+If /makeNoLongerReadable/ is /true/ then the texture will be marked as no longer readable
+and memory will be freed after uploading to the GPU.
+By default /makeNoLongerReadable/ is set to /false/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Source textures.
+	var atlasTextures: Texture2D[];
+	
+	// Rectangles for individual atlas textures.
+	var rects: Rect[];
+	
+	function Start () {
+		// Pack the individual textures into the smallest possible space,
+		// while leaving a two pixel gap between their edges.
+		var atlas = new Texture2D(8192, 8192);
+		rects = atlas.PackTextures(atlasTextures, 2, 8192);
+	}
+END EX
+@param textures Array of textures to pack into the atlas.
+@param padding Padding in pixels between the packed textures.
+@param maximumAtlasSize Maximum size of the resulting texture.
+@param makeNoLongerReadable Should the texture be marked as no longer readable?
+@return An array of rectangles containing the UV coordinates in the atlas for each input texture, or null if packing fails.

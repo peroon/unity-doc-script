@@ -1,0 +1,5 @@
+<signature>
+transform
+</signature>
+衝突した[[Transform]]情報を返す。
+SA: Physics.Raycast, Physics.Linecast, Physics.RaycastAll.

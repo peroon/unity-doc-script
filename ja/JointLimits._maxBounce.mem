@@ -1,0 +1,11 @@
+<signature>
+maxBounce
+</signature>
+上限値まで来たときのバウンドする弾性力を設定する。
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the joint to bounce off when hitting the upper limit
+	var limits = hingeJoint.limits;
+	limits.maxBounce = 1;
+	hingeJoint.limits = limits;
+END EX

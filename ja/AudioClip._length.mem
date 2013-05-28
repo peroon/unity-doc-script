@@ -1,0 +1,7 @@
+秒単位のAudioClipオブジェクトの長さ（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	audio.Play();
+	// Wait for the audio to have finished
+	yield WaitForSeconds (audio.clip.length);
+END EX

@@ -1,0 +1,19 @@
+<signature>
+OnPreprocessAudio()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Add this function in a subclass to get a notification just before an audio clip is being imported.
+This lets you control the import settings trough code.
+BEGIN EX
+	class MyAudioPostprocessor extends AssetPostprocessor {
+		function OnPreprocessAudio () {
+			// Import files containin "mono" in their name as mono.
+			if (assetPath.Contains("mono")) {
+				var audioImporter : AudioImporter = assetImporter;
+				audioImporter.forceToMono = true;
+			}
+		}
+	}
+END EX

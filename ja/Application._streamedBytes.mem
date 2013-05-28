@@ -1,0 +1,16 @@
+<signature>
+streamedBytes
+</signature>
+Web Player で今までダウンロードしたバイト数を返す（読み込み専用）。
+In the webplayer this returns the number of compressed bytes downloaded so far.
+In standalone player or the editor this always returns zero.
+
+SA: ::ref::GetStreamProgressForLevel function.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints to a GUIText how many bytes we have streamed.
+
+	function Update() {
+	    guiText.text = "Streamed Bytes: " + Application.streamedBytes.ToString();
+	}
+END EX

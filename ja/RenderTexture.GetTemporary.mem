@@ -1,0 +1,7 @@
+<signature>
+GetTemporary(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
+</signature>
+一時的なレンダリングテクスチャを割り当てる。
+迅速にレンダーテクスチャの表示を行いたい場合に使用します。
+使い終わった場合には、ReleaseTemporary関数で解放することもでき
+ます。

@@ -1,0 +1,4 @@
+<signature>
+asymptoteValue
+</signature>
+漸近線の滑りの力を返す（デフォルトは10000）

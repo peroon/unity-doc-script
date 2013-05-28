@@ -1,0 +1,4 @@
+<signature>
+isHuman
+</signature>
+このアバターが正常な人型アバターの場合、trueを返します。

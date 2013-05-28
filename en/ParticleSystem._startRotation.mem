@@ -1,0 +1,5 @@
+<signature>
+startRotation
+</signature>
+The initial rotation of particles when emitted. When using curves, this values acts as a scale on the curve.
+Note that the value should be given in radians.

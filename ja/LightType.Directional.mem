@@ -1,0 +1,7 @@
+ディレクショナル（一方向の）ライト。
+SA: Light.type, [[wiki:class-Light|light component]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Make the light a directional light
+	light.type = LightType.Directional;
+END EX

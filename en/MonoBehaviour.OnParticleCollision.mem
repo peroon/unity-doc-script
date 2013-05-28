@@ -1,0 +1,95 @@
+<signature>
+OnParticleCollision(GameObject)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+OnParticleCollision is called when a particle hits a collider.
+This can be used to apply damage to a game object when hit by particles.
+
+__Legacy particle system:__\\
+This message is sent to all scripts attached to the /WorldParticleCollider/ and to the [[Collider]] that was hit.
+The message is only sent if you enable /sendCollisionMessage/ in the inspector of the /WorldParticleCollider/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Legacy particle system example
+	// Applies a force to all rigid bodies that are hit by the particle.
+
+	function OnParticleCollision (other : GameObject) {
+		var body : Rigidbody = other.rigidbody;
+		if (body) {
+			var direction : Vector3 = other.transform.position - transform.position;
+			direction = direction.normalized;
+			body.AddForce (direction * 5);
+		}
+	}
+END EX
+__Shuriken particle system:__\\
+This message is sent to scripts attached to particle systems and to the [[Collider]] that was hit.
+
+When OnParticleCollision is invoked from a script attached to a [[GameObject]] with a [[Collider]] the [[GameObject]] parameter represents the [[ParticleSystem]]. The [[Collider]] receives at most one message per particle system that collided with it in any given frame even when the particle system struck the [[Collider]] with multiple particles in the current frame. In order to retrieve detailed information about all the collisions caused by the [[ParticleSystem]] [[ParticleSystem.GetCollisionEvents]] must be used to retrieve the array of [[ParticleSystem.CollisionEvent]].
+
+When OnParticleCollision is invoked from a script attached to a [[ParticleSystem]] the [[GameObject]] parameter represents a [[GameObject]] with an attached [[Collider]] struck by the [[ParticleSystem]]. The [[ParticleSystem]] will receive at most one message per [[Collider]] that is struck. As above [[ParticleSystem.GetCollisionEvents]] must be used to retrieve all the collisions incident on the [[GameObject]].
+
+Messages are only sent if you enable /Send Collision Messages/ in the inspector of the particle system collision module.
+\\
+\\
+OnParticleCollision can be a co-routine, simply use the yield statement in the function.
+CONVERTEXAMPLE
+BEGIN EX
+	// collision event script attached to a GameObject
+	// applies a force to rigid bodies that are hit by particles
+	private var collisionEvents = new ParticleSystem.CollisionEvent[16];
+
+	function OnParticleCollision(other : GameObject) {
+		// get the particle system
+		var particleSystem : ParticleSystem;
+		particleSystem = other.GetComponent(ParticleSystem);
+
+		// adjust array length
+		var safeLength = particleSystem.safeCollisionEventSize;
+		if (collisionEvents.Length < safeLength) {
+			collisionEvents = new ParticleSystem.CollisionEvent[safeLength];
+		}
+
+		// get collision events for the gameObject that the script is attached to
+		var numCollisionEvents = particleSystem.GetCollisionEvents(gameObject, collisionEvents);
+
+		// apply some force to RigidBody components
+		for (var i = 0; i < numCollisionEvents; i++) {
+			if (gameObject.rigidbody)
+			{
+				var pos = collisionEvents[i].intersection;
+				var force = collisionEvents[i].velocity * 10;
+				gameObject.rigidbody.AddForce(force);
+			}
+		}
+	}
+END EX
+CONVERTEXAMPLE
+BEGIN EX
+	// collision event script attached to a ParticleSystem
+	// applies a force to rigid bodies that are hit by particles
+	private var collisionEvents = new ParticleSystem.CollisionEvent[16];
+
+	function OnParticleCollision(other : GameObject) {
+		// adjust array length
+		var safeLength = particleSystem.safeCollisionEventSize;
+		if (collisionEvents.Length < safeLength) {
+			collisionEvents = new ParticleSystem.CollisionEvent[safeLength];
+		}
+
+		// get collision events for the gameObject that the script is attached to
+		var numCollisionEvents = particleSystem.GetCollisionEvents(other, collisionEvents);
+
+		// apply some force to RigidBody components
+		for (var i = 0; i < numCollisionEvents; i++) {
+			if (other.rigidbody)
+			{
+				var pos = collisionEvents[i].intersection;
+				var force = collisionEvents[i].velocity * 10;
+				other.rigidbody.AddForce(force);
+			}
+		}
+	}
+END EX

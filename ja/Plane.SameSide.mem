@@ -1,0 +1,4 @@
+<signature>
+SameSide(Vector3,Vector3)
+</signature>
+2 つのポイントが同じ面側にあるかどうかを判断します。

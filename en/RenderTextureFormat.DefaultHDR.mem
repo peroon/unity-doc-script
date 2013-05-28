@@ -1,0 +1,2 @@
+Default HDR color render texture format: will be chosen accordingly to Frame Buffer format and Platform.
+SA: RenderTexture.format, [[RenderTexture]] class.

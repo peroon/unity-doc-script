@@ -1,0 +1,10 @@
+<signature>
+Log10(float)
+</signature>
+Returns the base 10 logarithm of a specified number.
+CONVERTEXAMPLE
+BEGIN EX
+	// logarithm of 100 in base 10
+	// Prints 2
+	print(Mathf.Log10(100));
+END EX

@@ -1,0 +1,12 @@
+ユーザーが設定する。
+__Note:__ 現在はスクリプト側から設定できない。
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the rolloff of the audio source attached to
+	// this script to custom.
+
+	@script RequireComponent(AudioSource)
+	function Start() {
+		audio.rolloffMode = AudioRolloffMode.Custom;
+	}
+END EX

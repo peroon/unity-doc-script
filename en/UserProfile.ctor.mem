@@ -1,0 +1,8 @@
+<signature>
+ctor()
+ctor(string,string,bool)
+ctor(string,string,bool,UserState,Texture2D)
+</signature>
+<txttag>
+UNDOC
+</txttag>

@@ -1,0 +1,19 @@
+<signature>
+ctor(Vector3,Vector3)
+</signature>
+平面を作成する
+Resulting plane has normal /inNormal/ and goes through a point /inPoint/.
+
+/inNormal/ must be a normalized vector.
+<signature>
+ctor(Vector3,float)
+</signature>
+平面を作成する
+Resulting plane has normal /inNormal/ and goes through a point /inPoint/.
+
+/inNormal/ must be a normalized vector.
+<signature>
+ctor(Vector3,Vector3,Vector3)
+</signature>
+平面を作成する
+The resulting plane goes through the given three points. The points go around clockwise as you look down on the top surface of the plane.

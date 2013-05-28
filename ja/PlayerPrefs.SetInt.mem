@@ -1,0 +1,8 @@
+<signature>
+SetInt(string,int)
+</signature>
+キーとInt型の値を設定する
+CONVERTEXAMPLE
+BEGIN EX
+	PlayerPrefs.SetInt("Player Score", 10);
+END EX

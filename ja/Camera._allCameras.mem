@@ -1,0 +1,9 @@
+<signature>
+allCameras
+</signature>
+シーンにあるすべての有効となっているカメラを取得する
+CONVERTEXAMPLE
+BEGIN EX
+	var count : int = Camera.allCameras.Length;
+	print ("We've got " + count + " cameras");
+END EX

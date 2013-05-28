@@ -1,0 +1,4 @@
+<signature>
+CancelAction()
+</signature>
+現在実行中のバナービューの行動をキャンセルする

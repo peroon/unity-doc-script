@@ -1,0 +1,4 @@
+<signature>
+isDone
+</signature>
+ping関数が完了したときにtrueを返す

@@ -1,0 +1,47 @@
+<signature>
+OnPostRender()
+</signature>
+カメラがシーンのレンダリングを終了したときに呼び出される。カメラコンポーネントが必要。
+This function is called only if the script is attached to the camera and is enabled.
+コルーチン可能
+
+GUI などすべてを表示した後に、何かを行いたい場合に使用する関数です。またGL関数を使用する場合もこの関数になります。
+
+SA: ::ref::OnPreRender, [[WaitForEndOfFrame]].
+BEGIN EX
+	// When attached to a camera, will clear alpha channel
+	// of camera's render texture to pure white.
+	// Useful if you have camera rendering into a texture and later
+	// want to display it in GUI.
+
+	private var mat : Material;
+
+	function OnPostRender() {
+		// Create a shader that renders white only to alpha channel
+		if(!mat) {
+			mat = new Material( "Shader \"Hidden/SetAlpha\" {" +
+				"SubShader {" +
+				"	Pass {" +
+				"		ZTest Always Cull Off ZWrite Off" +
+				"		ColorMask A" +
+				"		Color (1,1,1,1)" +
+				"	}" +
+				"}" +
+				"}"
+			);
+		}
+		// Draw a quad over the whole screen with the above shader
+		GL.PushMatrix ();
+		GL.LoadOrtho ();
+		for (var i = 0; i < mat.passCount; ++i) {
+			mat.SetPass (i);
+			GL.Begin( GL.QUADS );
+			GL.Vertex3( 0, 0, 0.1 );
+			GL.Vertex3( 1, 0, 0.1 );
+			GL.Vertex3( 1, 1, 0.1 );
+			GL.Vertex3( 0, 1, 0.1 );
+			GL.End();
+		}
+		GL.PopMatrix ();	
+	}
+END EX

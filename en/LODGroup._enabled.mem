@@ -1,0 +1,4 @@
+<signature>
+enabled
+</signature>
+Enable / Disable the LODGroup - Disabling will turn off all renderers.

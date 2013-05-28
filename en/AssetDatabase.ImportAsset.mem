@@ -1,0 +1,7 @@
+<signature>
+ImportAsset(string)
+ImportAsset(string,ImportAssetOptions)
+</signature>
+Import asset at path.
+All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png"
+SA: [[ImportAssetOptions]].

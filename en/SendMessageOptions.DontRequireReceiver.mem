@@ -1,0 +1,3 @@
+No receiver is required for SendMessage.
+If no Component (script) on the GameObject implements the method no error will be generated.
+SA: GameObject::ref::SendMessage

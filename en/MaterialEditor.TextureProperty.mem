@@ -1,0 +1,9 @@
+<signature>
+TextureProperty(string,string,ShaderPropertyTexDim)
+TextureProperty(string,string,ShaderPropertyTexDim,bool)
+</signature>
+Draw a property field for a texture shader property.
+@param propertyName Name of the property to draw.
+@param label Label for the field.
+@param texDim Dimensions of the texture.
+@param scaleOffset Draw scale / offset.

@@ -1,0 +1,8 @@
+<signature>
+particleSystem
+</signature>
+ParticleSystem情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	particleSystem.Emit(5);
+END EX

@@ -1,0 +1,14 @@
+<signature>
+GetTextureOffset(string)
+</signature>
+プロパティ名から画像のオフセットを取得します。
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTextureOffset property, ::ref::SetTextureOffset.
+CONVERTEXAMPLE
+BEGIN EX
+	print(renderer.material.GetTextureOffset("_MainTex"));
+END EX

@@ -1,0 +1,4 @@
+<signature>
+CancelLocalNotification(LocalNotification)
+</signature>
+Cancels the delivery of the specified scheduled local notification.

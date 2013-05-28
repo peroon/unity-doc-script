@@ -1,0 +1,5 @@
+<signature>
+Project(Vector4,Vector4)
+</signature>
+Projects a vector onto another vector.
+Returns /a/ projected onto /b/.

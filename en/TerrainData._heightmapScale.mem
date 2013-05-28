@@ -1,0 +1,4 @@
+<signature>
+heightmapScale
+</signature>
+The size of each heightmap sample.

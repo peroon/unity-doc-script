@@ -1,0 +1,12 @@
+<signature>
+CreateInstance(string)
+</signature>
+クラス名からScriptableObjectクラスのインスタンスを作成する
+<signature>
+CreateInstance(Type)
+</signature>
+Creates an instance of a scriptable object with /type/.
+<signature>
+CreateInstance<T>()
+</signature>
+Creates an instance of a scriptable object with /T/.

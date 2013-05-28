@@ -1,0 +1,4 @@
+<signature>
+secondaryTouchWidth
+</signature>
+タッチパッドの幅を返す（読み込み専用）

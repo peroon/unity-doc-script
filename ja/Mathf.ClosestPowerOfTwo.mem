@@ -1,0 +1,12 @@
+<signature>
+ClosestPowerOfTwo(int)
+</signature>
+2 のべき乗に最も近い値を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 8
+	Debug.Log(Mathf.ClosestPowerOfTwo(7));
+	
+	// prints 16
+	Debug.Log(Mathf.ClosestPowerOfTwo(19));
+END EX

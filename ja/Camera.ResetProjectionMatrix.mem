@@ -1,0 +1,9 @@
+<signature>
+ResetProjectionMatrix()
+</signature>
+projection変数で設定したものをリセットする
+projection変数で設定したものをリセットします。
+CONVERTEXAMPLE
+BEGIN EX
+	camera.ResetProjectionMatrix();
+END EX

@@ -1,0 +1,13 @@
+<signature>
+attitude
+</signature>
+Returns the attitude (ie, orientation in space) of the device.
+CONVERTEXAMPLE
+BEGIN EX
+	// Rotate the object to match the device's orientation
+	// in space.
+	function Update () {
+		transform.rotation = Input.gyro.attitude;
+	}
+	
+END EX

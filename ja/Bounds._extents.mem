@@ -1,0 +1,4 @@
+<signature>
+extents
+</signature>
+ボックスの範囲。常にsize変数の1/2 倍

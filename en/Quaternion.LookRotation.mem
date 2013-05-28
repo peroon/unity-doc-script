@@ -1,0 +1,24 @@
+<signature>
+LookRotation(Vector3)
+LookRotation(Vector3,Vector3)
+</signature>
+Creates a rotation with the specified /forward/ and /upwards/ directions.
+Returns the computed quaternion.
+If used to orient a Transform, the Z axis will be aligned with /forward/
+and the Y axis with /upwards/ if these vectors are orthogonal.
+Logs an error if the forward direction is zero.
+CONVERTEXAMPLE
+BEGIN EX
+	// Most of the time you can use:
+	// transform.LookAt instead
+
+	var target : Transform;
+	function Update () {
+		var relativePos = target.position - transform.position;
+		var rotation = Quaternion.LookRotation(relativePos);
+		transform.rotation = rotation;
+	}
+END EX
+SA: ::ref::SetLookRotation.
+@param forward The direction to look in.
+@param upwards The vector that defines in which direction up is.

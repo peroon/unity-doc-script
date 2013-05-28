@@ -1,0 +1,5 @@
+<signature>
+autorotateToPortrait
+</signature>
+自動で縦回転するのを許可するかを設定する
+This setting is taken into account when ::ref::orientation is set to ScreenOrientation::pref::AutoRotation.

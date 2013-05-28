@@ -1,0 +1,9 @@
+布が破れるかを返す（読み込み専用）。
+SA: ::ref::tearFactor variable.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update() {
+		if(transform.GetComponent(InteractiveCloth).isTeared)
+			Debug.Log("Cloth teared!");
+	}
+END EX

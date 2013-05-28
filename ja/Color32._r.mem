@@ -1,0 +1,9 @@
+<signature>
+r
+</signature>
+赤成分が格納されている
+CONVERTEXAMPLE
+BEGIN EX
+	var color : Color32 = Color.white;
+	color.r = 0;
+END EX

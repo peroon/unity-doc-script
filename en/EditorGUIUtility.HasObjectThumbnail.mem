@@ -1,0 +1,4 @@
+<signature>
+HasObjectThumbnail(Type)
+</signature>
+Does a given class have per-object thumbnails?

@@ -1,0 +1,17 @@
+<signature>
+accelerationEvents
+</signature>
+最後のフレーム中に発生したか、速度測定の結果リストを返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	// Calculates weighted sum of acceleration measurements which occurred during the last frame
+	// Might be handy if you want to get more precise measurements
+
+	function Update () {
+		var acceleration:Vector3 = Vector3.zero;
+		for (var accEvent : AccelerationEvent in Input.accelerationEvents) {
+			acceleration += accEvent.acceleration * accEvent.deltaTime;
+		}
+		print (acceleration);
+	}
+END EX

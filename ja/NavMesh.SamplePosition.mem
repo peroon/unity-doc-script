@@ -1,0 +1,9 @@
+<signature>
+SamplePosition(Vector3,NavMeshHit,float,int)
+</signature>
+特定の位置に最も近いナビメッシュオブジェクトをサンプリングする。
+@param sourcePosition 特定の位置
+@param hit 一番近いナビメッシュオブジェクトのヒット情報を格納する
+@param maxDistance 検出する範囲の最大距離
+@param allowedMask ナビメッシュレイヤーとして指定できるマスク
+@return True if a nearest point is found.

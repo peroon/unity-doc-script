@@ -1,0 +1,15 @@
+<signature>
+forwardSlip
+</signature>
+圧延方向のタイヤのスリップの値を返す。加速スリップが負の場合、ブレーキスリップが正になる
+BEGIN EX
+	// Prints "braking slip!" when tire slips badly.
+	function FixedUpdate() {
+		var hit : WheelHit;
+		var wheel : WheelCollider = GetComponent(WheelCollider);
+		if( wheel.GetGroundHit( hit ) ) {
+			if( hit.forwardSlip > 0.5 )
+				print ("braking slip!");
+		}
+	}
+END EX

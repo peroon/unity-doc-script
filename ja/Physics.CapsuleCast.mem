@@ -1,0 +1,36 @@
+<signature>
+CapsuleCast(Vector3,Vector3,float,Vector3,float,int)
+CapsuleCast(Vector3,Vector3,float,Vector3,RaycastHit,float,int)
+</signature>
+カプセル型のレイを飛ばし、オブジェクトコライダーの付いたオブジェクトがヒットするかを調べます。ヒットした場合、trueを返します。
+TODO.The capsule is defined by the two spheres with /radius/ around /point1/ and /point2/, which form the two ends of the capsule.
+Hits are returned for the first collider which would collide against this capsule if the capsule was moved along /direction/.
+This is useful when a Raycast does not give enough precision, because you want to find out if an object of a specific size,
+such as a character, will be able to move somewhere without colliding with anything on the way.
+__Note:__ If you move colliders from scripting or by animation, there needs to be at
+least one FixedUpdate executed so that the physics library can update it's data
+structures, before a CapsuleCast will hit the collider at it's new position.
+
+SA: [[Physics.SphereCast]], [[Physics.CapsuleCastAll]], [[Physics.Raycast]], [[Rigidbody.SweepTest]].
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		var hit : RaycastHit;
+		var charContr : CharacterController = GetComponent(CharacterController);
+		var p1 : Vector3 = transform.position + charContr.center + 
+					Vector3.up * (-charContr.height*0.5);
+		var p2 : Vector3 = p1 + Vector3.up * charContr.height;
+		// Cast character controller shape 10 meters forward, to see if it is about to hit anything
+		if (Physics.CapsuleCast (p1, p2, charContr.radius, transform.forward, hit, 10)) {
+			distanceToObstacle = hit.distance;
+		}
+	}
+END EX
+@param point1 カプセルの開始位置
+@param point2 カプセルの終了位置
+@param radius 半径
+@param direction 方向
+@param hitInfo 距離の長さ
+@param distance レイヤーの設置。衝突を無視することもできる
+@param layerMask ヒットした場合、ヒットしたオブジェクト情報が格納される
+@return True when the capsule sweep intersects any collider, otherwise false.

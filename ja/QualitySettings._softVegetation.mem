@@ -1,0 +1,8 @@
+<signature>
+softVegetation
+</signature>
+地形エンジンにおける、草木などに2つのシェーダーを使うかを設定する。
+If enabled, vegetation will have smoothed edges, if disabled all plants
+will have hard edges オフにした場合、速度が約2 倍になる。
+
+SA: [[wiki:class-QualitySettings|Quality Settings]].

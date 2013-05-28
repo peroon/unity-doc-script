@@ -1,0 +1,9 @@
+<signature>
+targetVelocity
+</signature>
+設定した速度に強制的に働かせる。
+CONVERTEXAMPLE
+BEGIN EX
+	// Achieve 10 m/s.
+	hingeJoint.motor.targetVelocity = 10;
+END EX

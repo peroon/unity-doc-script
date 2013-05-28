@@ -1,0 +1,6 @@
+ローカルサイズでのコライダーの大きさを返す
+The box size will be scaled by the transform's scale.
+BEGIN EX
+	// Make the box collider long
+	collider.size = Vector3(10, 1, 1);
+END EX

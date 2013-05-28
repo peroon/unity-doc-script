@@ -1,0 +1,4 @@
+<signature>
+screenRelativeTransitionHeight
+</signature>
+The screen relative height to use for the transition [0-1].

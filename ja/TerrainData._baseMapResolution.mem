@@ -1,0 +1,4 @@
+<signature>
+baseMapResolution
+</signature>
+地形上で遠くにあるパッチをレンダリングするために使用される、基盤となるマップの解像度を返す

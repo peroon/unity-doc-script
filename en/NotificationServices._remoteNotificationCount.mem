@@ -1,0 +1,4 @@
+<signature>
+remoteNotificationCount
+</signature>
+The number of received remote notifications. (RO)

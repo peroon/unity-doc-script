@@ -1,0 +1,4 @@
+<signature>
+PickGameObject(Vector2,bool)
+</signature>
+Pick game object closest to specified position.

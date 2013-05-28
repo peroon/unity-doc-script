@@ -1,0 +1,2 @@
+Forces asset import as uncompressed for edition facilities.
+SA: AssetDatabase.ImportAsset, AssetDatabase.Refresh.

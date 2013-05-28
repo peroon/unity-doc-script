@@ -1,0 +1,17 @@
+<signature>
+SetTexture(string,Texture)
+</signature>
+プロパティ名で画像を設定します。
+Many shaders use more than one texture. Use SetTexture to change the /propertyName/ texture.
+
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定できる。 \\
+@@"_BumpMap"@@ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@キューブマップを設定する場合に使用する。
+
+SA: ::ref::mainTexture property, ::ref::GetTexture.
+CONVERTEXAMPLE
+BEGIN EX
+	var bumpMap : Texture;
+	renderer.material.SetTexture("_BumpMap", bumpMap);
+END EX

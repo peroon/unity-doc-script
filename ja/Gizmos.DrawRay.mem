@@ -1,0 +1,14 @@
+<signature>
+DrawRay(Ray)
+DrawRay(Vector3,Vector3)
+</signature>
+レイを描画する
+CONVERTEXAMPLE
+BEGIN EX
+	function OnDrawGizmosSelected () {
+		// Draws a 5 meter long red line in front of the object
+		Gizmos.color = Color.red;
+		var direction : Vector3 = transform.TransformDirection (Vector3.forward) * 5;
+		Gizmos.DrawRay (transform.position, direction);
+	}
+END EX

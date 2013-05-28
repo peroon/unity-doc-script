@@ -1,0 +1,6 @@
+<signature>
+Play(bool)
+</signature>
+パーティクルシステムの再生を行います。
+SA: ::ref::Stop, ::ref::Pause functions.
+@param withChildren 子となっているパーティクルも適用するかどうか。デフォルトはtrue

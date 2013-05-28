@@ -1,0 +1,7 @@
+ローカル座標でのサスペンションの最大の長さを返す
+Suspension always extends downwards the local y-axis.
+Suspension travel will be scaled by the transform's scale.
+CONVERTEXAMPLE
+BEGIN EX
+	collider.suspensionDistance = 0.1;
+END EX

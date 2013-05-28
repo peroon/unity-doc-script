@@ -1,0 +1,3 @@
+デバイスの物理的な向きを設定します。
+If device is physically situated between discrete positions, as when (for
+example) rotated diagonally, system will report Unknown orientation.

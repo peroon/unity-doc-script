@@ -1,0 +1,4 @@
+<signature>
+GetLocalNotification(int)
+</signature>
+ローカル通知の情報を取得する

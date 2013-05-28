@@ -1,0 +1,30 @@
+<signature>
+Lerp(Material,Material,float)
+</signature>
+2 つのマテリアルを時間をかけて変更させる。
+start 引数からend 引数へマテリアルの設定を補完しながら変更させます。float引数は0 から1 の間で動作します。
+
+Most often you want the materials that are interpolated between to be the same
+(use the same shaders and textures) except for colors and floats. Then you use
+/Lerp/ to blend between them.
+
+SA: [[wiki:Materials]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Blends between two materials
+
+	var material1 : Material;
+	var material2 : Material;
+	var duration = 2.0;
+
+	function Start () {
+		// At start, use the first material
+		renderer.material = material1;
+	}
+
+	function Update () {
+		// ping-pong between the materials over the duration
+		var lerp : float = Mathf.PingPong (Time.time, duration) / duration;
+		renderer.material.Lerp (material1, material2, lerp);
+	}
+END EX

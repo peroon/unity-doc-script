@@ -1,0 +1,5 @@
+<signature>
+ReadTextureSettings(TextureImporterSettings)
+</signature>
+Read texture settings into [[TextureImporterSettings]] class.
+SA: TextureImporterSettings.

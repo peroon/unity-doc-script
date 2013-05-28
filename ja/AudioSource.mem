@@ -1,0 +1,11 @@
+3D 空間でのオーディオの表現を行います。
+An AudioSource is attached to a [[GameObject]] for playing back sounds in a 3D environment.
+サウンドを再生するためには、必ず[[AudioListener]]コンポーネントがシーンにある1 つのオブジェクトに付加されている必要があります。デフォルトではメインカメラに付いています。
+Whether sounds are played in 3D or 2D is determined by [[AudioImporter]] settings.
+
+You can play a single audio clip using ::ref::Play, ::ref::Pause and ::ref::Stop.
+You can also adjust its volume while playing using the ::ref::volume property, or seek using ::ref::time.
+Multiple sounds can be played on one AudioSource using ::ref::PlayOneShot.
+You can play a clip at a static position in 3D space using ::ref::PlayClipAtPoint.
+
+SA: [[AudioListener]], [[AudioClip]], [[class-AudioSource|AudioSource component]].

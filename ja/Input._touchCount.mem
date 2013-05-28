@@ -1,0 +1,12 @@
+<signature>
+touchCount
+</signature>
+タッチの数を返す（読み込み専用）。
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		if (Input.touchCount > 0) {
+			print(Input.touchCount);
+		}
+	}
+END EX

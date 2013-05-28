@@ -1,0 +1,4 @@
+<signature>
+useOcclusionCulling
+</signature>
+Whether or not the Camera will use occlusion culling during rendering.

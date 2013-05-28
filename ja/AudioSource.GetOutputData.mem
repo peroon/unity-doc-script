@@ -1,0 +1,8 @@
+<signature>
+GetOutputData(int,int)
+</signature>
+再生中のSourceの出力データのブロックを返す。
+<signature>
+GetOutputData(float[],int)
+</signature>
+再生中のSourceの出力データのブロックを返す。

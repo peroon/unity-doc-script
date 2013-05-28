@@ -1,0 +1,5 @@
+<signature>
+Distance(Vector2,Vector2)
+</signature>
+Returns the distance between /a/ and /b/.
+@@Vector2.Distance(a,b)@@ is the same as @@(a-b).magnitude@@.

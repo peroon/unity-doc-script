@@ -1,0 +1,12 @@
+コーラスのフィードバック。ウェット信号がコーラスのバッファにどの程度フィードバックされるかを決定する。0 から1 の間で設定。（デフォルトは0）
+CONVERTEXAMPLE
+BEGIN EX
+	// Process only once the signal and dont introduce feedback to the filter.
+
+	@script RequireComponent(AudioSource)
+	@script RequireComponent(AudioChorusFilter)
+
+	function Start() {
+		GetComponent(AudioChorusFilter).feedback = 0;
+	}
+END EX

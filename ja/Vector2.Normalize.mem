@@ -1,0 +1,12 @@
+<signature>
+Normalize()
+</signature>
+1 の大きさのベクトルを返す
+magnitude変数が1 になるように変換されます。
+
+Note that this function will change the current vector. If you
+want to keep the current vector unchanged, use ::ref::normalized variable.
+
+If this vector is too small to be normalized it will be set to zero.
+
+SA: ::ref::normalized variable.

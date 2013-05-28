@@ -1,0 +1,4 @@
+<signature>
+CallStaticLongMethod(IntPtr,IntPtr,jvalue[])
+</signature>
+メソッドID を使い、戻り値がLong型のstaticのJava メソッドを呼び出す。必要に応じて引数(<tt>args</tt>)を設定する。

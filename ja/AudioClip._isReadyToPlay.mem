@@ -1,0 +1,15 @@
+再生するために流すオーディオクリップは準備できているかの確認 読み込み専用）。
+If the AudioClip is downloading from a web site, this returns if enough data has been downloaded so playback should be able to start without interruptions.
+For AudioClips not associated with a web stream, this value always returns true.
+CONVERTEXAMPLE
+BEGIN EX
+	function Start () {
+		var www : WWW = new WWW("www.example.com");
+		audio.clip = www.audioClip;
+	}
+
+	function Update () {
+		if(!audio.isPlaying && audio.clip.isReadyToPlay)
+			audio.Play();
+	}
+END EX

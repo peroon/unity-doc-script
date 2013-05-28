@@ -1,0 +1,5 @@
+Z軸のオフセットを返す
+CONVERTEXAMPLE
+BEGIN EX
+	GetComponent(TextMesh).offsetZ = 5;
+END EX

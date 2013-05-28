@@ -1,0 +1,16 @@
+<signature>
+enabled
+</signature>
+Sets or retrieves the enabled status of this gyroscope.
+CONVERTEXAMPLE
+BEGIN EX
+    var enableTilt: boolean;
+
+	function OnGUI() {
+		if (Input.gyro.enabled) {
+			GUILayout.Toggle(enableTilt, "Enable tilt control");
+		}
+		
+		// Other GUI elements...
+	}
+END EX

@@ -1,0 +1,23 @@
+<signature>
+ClampMagnitude(Vector3,float)
+</signature>
+Returns a copy of /vector/ with its magnitude clamped to /maxLength/.
+CONVERTEXAMPLE
+BEGIN EX
+	// Move the object around with the arrow keys but confine it
+	// to a given radius around a center point.
+	var centerPt: Vector3;
+	var radius: float;
+	
+	
+	function Update() {
+		// Get the new position for the object.
+		var movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		var newPos = transform.position + movement;
+		
+		// Calculate the distance of the new position from the center point. Keep the direction
+		// the same but clamp the length to the specified radius.
+		var offset = newPos - centerPt;
+		transform.position = centerPt + Vector3.ClampMagnitude(offset, radius);
+	}
+END EX

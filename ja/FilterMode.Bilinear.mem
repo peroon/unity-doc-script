@@ -1,0 +1,6 @@
+平均化され、滑らかに表示する
+SA: Texture.filterMode, [[wiki:class-Texture2D|texture assets]].
+CONVERTEXAMPLE
+BEGIN EX
+	renderer.material.mainTexture.filterMode = FilterMode.Bilinear;
+END EX

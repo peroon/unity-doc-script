@@ -1,0 +1,4 @@
+<signature>
+max
+</signature>
+The maximal point of the box. This is always equal to ''center+extents''.

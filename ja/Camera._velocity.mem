@@ -1,0 +1,8 @@
+カメラのワールド座標での速度を取得する（読み込み専用）
+This camera's motion in units per second as it was during the last frame.
+CONVERTEXAMPLE
+BEGIN EX
+	function Update () {
+		print ("Camera moving at " + camera.velocity.magnitude + " m/s");
+	}
+END EX

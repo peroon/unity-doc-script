@@ -1,0 +1,9 @@
+<signature>
+DeltaAngle(float,float)
+</signature>
+与えられた角度の最短の差を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints 90
+	Debug.Log(Mathf.DeltaAngle(1080,90));
+END EX

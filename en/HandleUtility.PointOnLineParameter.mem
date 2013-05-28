@@ -1,0 +1,6 @@
+<signature>
+PointOnLineParameter(Vector3,Vector3,Vector3)
+</signature>
+Returns the parameter for the projection of the /point/ on the given line.
+The return value can be negative if the projected point is in negative /lineDirection/ relative to the /linePoint/
+SA: ::ref::ProjectPointLine.

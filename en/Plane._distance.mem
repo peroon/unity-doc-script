@@ -1,0 +1,5 @@
+<signature>
+distance
+</signature>
+Distance from the origin to the plane.
+SA: ::ref::normal.

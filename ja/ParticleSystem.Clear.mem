@@ -1,0 +1,5 @@
+<signature>
+Clear(bool)
+</signature>
+パーティクルシステムのパーティクルをすべて削除する
+@param withChildren Clear all child particle systems as well.

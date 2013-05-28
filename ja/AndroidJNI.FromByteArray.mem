@@ -1,0 +1,5 @@
+<signature>
+FromByteArray(IntPtr)
+</signature>
+IntPtr型をByte配列へ変換する。
+SA: AndroidJNI.GetByteArrayElement, AndroidJNI.GetArrayLength.

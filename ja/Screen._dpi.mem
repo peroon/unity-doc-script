@@ -1,0 +1,6 @@
+<signature>
+dpi
+</signature>
+スクリーン／デバイスの現在の解像度を返す（読み込み専用）
+This is the actual DPI of the screen attached or physical device running the application.
+May return 0 if unable to determine the current DPI.

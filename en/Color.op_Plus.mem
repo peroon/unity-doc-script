@@ -1,0 +1,9 @@
+<signature>
+Plus(Color,Color)
+</signature>
+Adds two colors together. Each component is added separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// blue + red = magenta
+	var result : Color = Color.blue + Color.red;
+END EX

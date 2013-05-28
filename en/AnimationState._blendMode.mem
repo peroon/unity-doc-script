@@ -1,0 +1,7 @@
+Which blend mode should be used?
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the leanLeft animation to blend additively
+
+	animation["leanLeft"].blendMode = AnimationBlendMode.Additive;
+END EX

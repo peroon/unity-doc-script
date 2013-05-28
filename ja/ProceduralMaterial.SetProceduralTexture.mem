@@ -1,0 +1,8 @@
+<signature>
+SetProceduralTexture(string,Texture2D)
+</signature>
+プロパティ名を指定してTexture2D型のプロパティを設定する
+Used for Procedural properties of type Texture.
+The texture needs to be setup with Advanced texture type and Read-Write enabled.
+
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralTexture.

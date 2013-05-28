@@ -1,0 +1,9 @@
+<signature>
+identity
+</signature>
+rotation の値が(0, 0, 0, 1) になる（読み込み専用）
+Is perfectly aligned with the world or parent axes.
+CONVERTEXAMPLE
+BEGIN EX
+	transform.rotation = Quaternion.identity;
+END EX

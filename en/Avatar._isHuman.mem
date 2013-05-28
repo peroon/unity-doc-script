@@ -1,0 +1,4 @@
+<signature>
+isHuman
+</signature>
+Return true if this avatar is a valid human avatar.

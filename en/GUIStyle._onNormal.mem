@@ -1,0 +1,10 @@
+<signature>
+onNormal
+</signature>
+Rendering settings for when the control is turned on.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnGUI() {
+		GUI.skin.button.onNormal.textColor = Color.red;		
+	}
+END EX

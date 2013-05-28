@@ -1,0 +1,30 @@
+<signature>
+SendMessage(string)
+SendMessage(string,object)
+SendMessage(string,object,SendMessageOptions)
+SendMessage(string,SendMessageOptions)
+</signature>
+Calls the method named /methodName/ on every [[MonoBehaviour]] in this game object.
+The receiving method can choose to ignore the argument by having zero arguments.
+if options is set to SendMessageOptions.RequireReceiver an error is printed when the message is not picked up by any component.
+
+Note that messages will not be sent to inactive objects (ie, those that have been deactivated in the editor or with the GameObject::ref::SetActive function).
+CONVERTEXAMPLE
+BEGIN EX
+	// Calls the function ApplyDamage with a value of 5
+	SendMessage ("ApplyDamage", 5.0);
+	
+	// Every script attached to the game object 
+	// that has a ApplyDamage function will be called.
+	function ApplyDamage (damage : float) {
+		print (damage);
+	}
+END EX
+@param methodName Name of the method to call.
+@param value Optional parameter for the method.
+@param options Should an error be raised if the target object doesn't implement the method for the message?
+<signature>
+</signature>
+<txttag>
+UNDOC
+</txttag>

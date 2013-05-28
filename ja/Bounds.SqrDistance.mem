@@ -1,0 +1,4 @@
+<signature>
+SqrDistance(Vector3)
+</signature>
+設定したポイントとの最小距離の2 乗されたものを返す

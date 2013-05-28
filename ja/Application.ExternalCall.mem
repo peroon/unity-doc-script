@@ -1,0 +1,32 @@
+<signature>
+ExternalCall(string,object[])
+</signature>
+Web ページ内の関数を呼び出す（Web Player のみ）。
+Web Player のみの機能です。Web Player からWeb ページ内のJavaScript へアクセスします。Web ページ内からWeb PlayerへはSendMessage関数を使ってアクセスします。その際に渡せるパラメーターはString型のみになります。ExternalCall関数で送るパラメーターに、コールバック名とコールバック関数の記述されているゲームオブジェクト名を追加しておきます。
+
+The function is called non-blocking, i.e. ExternalCall immediately returns without waiting for the function that was called to complete.
+
+The number of passed arguments can be varying:
+CONVERTEXAMPLE
+BEGIN EX
+	// Calls MyFunction1 in web page with no arguments
+	Application.ExternalCall ("MyFunction1");
+
+	// Calls MyFunction2 in web page with a string
+	Application.ExternalCall ("MyFunction2", "Hello from Unity!");
+
+	// Calls MyFunction3 in web page with several arguments of different types
+	Application.ExternalCall ("MyFunction3", "one", 2, 3.0);
+END EX
+The functions to be called are just declared in the HTML page using standard
+syntax, for example:
+BEGIN EX
+	// This should be contained in the host page in the appropriate <script> element.
+	// Using the above call from Unity, this will receive
+	// "Hello from Unity!" as the argument.
+	function MyFunction2( arg )
+	{
+		alert( arg );
+	}
+END EX
+SA: [[wiki:Unity Web Player and Browser Communication|Browser to Unity communication]], Application.ExternalEval.

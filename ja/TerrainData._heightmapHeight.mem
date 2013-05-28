@@ -1,0 +1,4 @@
+<signature>
+heightmapHeight
+</signature>
+サンプル中の地形の高さを返す（読み込み専用）

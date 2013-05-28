@@ -1,0 +1,13 @@
+<signature>
+OnServerInitialized()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Called on the server whenever a Network.InitializeServer was invoked and has completed.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnServerInitialized() {
+		Debug.Log("Server initialized and ready");
+	}
+END EX

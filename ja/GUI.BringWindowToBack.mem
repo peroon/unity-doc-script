@@ -1,0 +1,30 @@
+<signature>
+BringWindowToBack(int)
+</signature>
+ウィンドウ同士が重なった場合を考え、後面に表示する設定をします。設定する場合、ウィンドウのID を使用します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Draws 2 overlapped windows and when clicked on 1 window's button
+	// Brings the window to the back.
+	
+	private var windowRect : Rect = Rect (20, 20, 120, 50);
+	private var windowRect2 : Rect = Rect (80, 20, 120, 50);
+	
+	function OnGUI () {
+		windowRect = GUI.Window (0, windowRect, DoMyFirstWindow, "First");
+		windowRect2 = GUI.Window (1, windowRect2, DoMySecondWindow, "Second" );
+	}
+	
+	function DoMyFirstWindow (windowID : int) {
+		if (GUI.Button (Rect (10,20,100,20), "Put Back"))
+			GUI.BringWindowToBack(0);
+		GUI.DragWindow(Rect (0,0, 10000, 20));
+	}
+	
+	function DoMySecondWindow (windowID : int) {
+		if (GUI.Button (Rect (10,20,100,20), "Put Back"))
+			GUI.BringWindowToBack(1);
+		GUI.DragWindow(Rect (0,0, 10000, 20));
+	}
+END EX
+@param windowID 対応するウィンドウID

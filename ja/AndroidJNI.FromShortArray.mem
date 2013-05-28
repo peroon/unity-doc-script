@@ -1,0 +1,5 @@
+<signature>
+FromShortArray(IntPtr)
+</signature>
+IntPtr型をShort配列へ変換する。
+SA: AndroidJNI.GetShortArrayElement, AndroidJNI.GetArrayLength.

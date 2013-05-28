@@ -1,0 +1,4 @@
+Depth texture generation mode for [[Camera]].
+フラグを組み合わせることができるので、「奥行き」と「深さ＋法線テクスチャ」の必要に応じて、両方を生成するようにカメラを設定することができます。
+
+SA: Camera.depthTextureMode.

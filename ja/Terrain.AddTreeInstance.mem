@@ -1,0 +1,4 @@
+<signature>
+AddTreeInstance(TreeInstance)
+</signature>
+地形にツリーインスタンスを追加する

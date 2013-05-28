@@ -1,0 +1,6 @@
+<signature>
+playbackTime
+</signature>
+Sets the playback position in the recording buffer.
+When in playback mode (see ::ref::StartPlayback), this value is used for controlling the current playback position in the buffer (in seconds). The value can range between ::ref::recordingStartTime and ::ref::recordingStopTime
+SA: ::ref::StartPlayback, ::ref::StopPlayback.

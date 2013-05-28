@@ -1,0 +1,5 @@
+<signature>
+collider
+</signature>
+The [[Collider]] we hit (RO).
+To find all colliders that were hit in detail you have to iterate the contact points (::ref::contacts property).

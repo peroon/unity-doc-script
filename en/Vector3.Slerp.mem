@@ -1,0 +1,49 @@
+<signature>
+Slerp(Vector3,Vector3,float)
+</signature>
+Spherically interpolates between two vectors.
+Interpolates between /from/ and /to/ by amount /t/. The difference between this and linear
+interpolation (aka, "lerp") is that the vectors are treated as directions rather than points
+in space. The direction of the returned vector is interpolated by the angle and its
+::ref::magnitude is interpolated between the magnitudes of /from/ and /to/.
+
+/t/ is clamped between [0...1].
+SA: ::ref::Lerp function.
+CONVERTEXAMPLE
+BEGIN EX
+	// Animates the position in an arc between sunrise and sunset.
+	
+	var sunrise : Transform;
+	var sunset : Transform;
+	
+	// Time to move from sunrise to sunset position, in seconds.
+	var journeyTime = 1.0;
+	
+	// The time at which the animation started.
+	private var startTime: float;
+	
+	
+	function Start() {
+		// Note the time at the start of the animation.
+		startTime = Time.time;
+	}
+	
+	
+	function Update () {
+	    // The center of the arc
+	    var center = (sunrise.position + sunset.position) * 0.5;
+	    // move the center a bit downwards to make the arc vertical
+	    center -= Vector3(0,1,0);
+	
+	    // Interpolate over the arc relative to center
+	    var riseRelCenter = sunrise.position - center;
+	    var setRelCenter = sunset.position - center;
+	    
+	    // The fraction of the animation that has happened so far is
+	    // equal to the elapsed time divided by the desired time for
+	    // the total journey.
+	    var fracComplete = (Time.time - startTime) / journeyTime;
+	    transform.position = Vector3.Slerp(riseRelCenter, setRelCenter, fracComplete);
+	    transform.position += center;
+	}
+END EX

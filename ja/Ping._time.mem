@@ -1,0 +1,4 @@
+<signature>
+time
+</signature>
+isDone変数がtrueを返したときに、ping時間が格納される

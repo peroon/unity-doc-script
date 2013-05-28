@@ -1,0 +1,5 @@
+<signature>
+NewStringUTF(string)
+</signature>
+入力した文字列から、UTF-8 エンコーディングされたIntPtr型の<tt>java.lang.String</tt>オブジェクトを返す。
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

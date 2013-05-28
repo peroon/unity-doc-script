@@ -1,0 +1,18 @@
+カメラが遠近感をシミュレートするかを設定する
+When ortho is ''true'', camera's viewing volume is defined by ::ref::orthographicSize.\\
+When orthographic is ''false'', camera's viewing volume is defined by ::ref::fieldOfView.
+
+SA: [[wiki:class-Camera|camera component]], ::ref::transparencySortMode.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the camera to be orthograpghic
+
+	camera.orthographic = true;
+END EX
+TODO.
+CONVERTEXAMPLE
+BEGIN EX
+	// Set the main camera to be orthographic
+
+	Camera.main.orthographic = true;
+END EX

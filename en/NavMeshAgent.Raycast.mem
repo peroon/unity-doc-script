@@ -1,0 +1,35 @@
+<signature>
+Raycast(Vector3,NavMeshHit)
+</signature>
+Trace movement towards a target postion in the NavMesh. Without moving the agent.
+This function follows the path of a "ray" between the agent's
+position and the specified target position. If an obstruction is 
+encountered along the line then a true value is returned and
+the position and other details of the obstructing object are stored
+in the /hit/ parameter. This can be used to check if there is a clear
+shot or line of sight between a character and a target object.
+This function is preferable to the similar ::ref::Physics.Raycast
+because the line tracing is performed in a simpler way using the navmesh and has a lower processing overhead.
+CONVERTEXAMPLE
+BEGIN EX
+var target: Transform;
+
+	private var agent: NavMeshAgent;
+
+	function Start () {
+		agent = GetComponent.<NavMeshAgent>();
+	}
+
+	function Update() {
+		var hit: NavMeshHit;
+		
+		// Note the negative test condition!
+		if (!agent.Raycast(target.position, hit)) {
+			// Target is "visible" from our position.
+		}
+	}
+
+END EX
+@param targetPosition The desired end position of movement.
+@param hit Holds the properties of the resulting unblocked position.
+@return True If terminated before reaching target position. Otherwise returns false.

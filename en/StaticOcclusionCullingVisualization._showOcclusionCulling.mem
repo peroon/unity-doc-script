@@ -1,0 +1,4 @@
+<signature>
+showOcclusionCulling
+</signature>
+If set to true, visualization of target volumes is enabled.

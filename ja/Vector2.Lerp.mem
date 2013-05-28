@@ -1,0 +1,10 @@
+<signature>
+Lerp(Vector2,Vector2,float)
+</signature>
+2 点間の特定の位置を返す。
+Interpolates between /from/ and /to/ by amount /t/.
+
+/t/ is clamped between [0...1].
+When /t/ = 0 returns /from/.
+When /t/ = 1 returns /to/.
+When /t/ = 0.5 returns the average of /from/ and /to/.

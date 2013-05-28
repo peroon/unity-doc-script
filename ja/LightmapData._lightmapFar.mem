@@ -1,0 +1,5 @@
+<signature>
+lightmapFar
+</signature>
+入射光を格納する。
+SA: [[LightmapSettings]] class, Renderer.lightmapIndex property.

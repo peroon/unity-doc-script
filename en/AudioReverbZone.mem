@@ -1,0 +1,9 @@
+Reverb Zones are used when you want to create location based ambient effects in the scene.
+As the Audio Listener moves into a Reverb Zone, the ambient effect associated with the zone is gradually applied.
+At the max distance there is no effect and at the min distance the effect is fully applied.
+For example you can gradually change your character's footsteps sounds and create the
+feeling like you where entering into a cavern, going trough a room,
+swimming underwater, etc.
+
+You can always mix reverb zones to have combined effects.
+For more info check [[wiki:class-AudioReverbZone|Reverb Zones]] in the manual.

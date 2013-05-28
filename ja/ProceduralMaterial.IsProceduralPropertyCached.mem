@@ -1,0 +1,5 @@
+<signature>
+IsProceduralPropertyCached(string)
+</signature>
+指定した名前のプロパティがキャッシュされているかを確認する
+SA: ::ref::CacheProceduralProperty, ::ref::ClearCache.

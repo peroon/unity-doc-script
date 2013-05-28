@@ -1,0 +1,7 @@
+<signature>
+assetTimeStamp
+</signature>
+<txttag>
+UNDOC
+</txttag>
+Used by AssetImporterInspector.cs to detect whether there are local changes or if the asset was modified om disk.

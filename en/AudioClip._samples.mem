@@ -1,0 +1,11 @@
+<signature>
+samples
+</signature>
+The length of the audio clip in samples. (RO)
+CONVERTEXAMPLE
+BEGIN EX
+// Prints how many samples the attached audio source has	
+function Start() {
+    Debug.Log(audio.clip.samples);
+}
+END EX

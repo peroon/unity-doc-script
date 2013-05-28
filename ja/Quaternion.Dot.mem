@@ -1,0 +1,8 @@
+<signature>
+Dot(Quaternion,Quaternion)
+</signature>
+2 つの回転の内積を返す。
+CONVERTEXAMPLE
+BEGIN EX
+	print(Quaternion.Dot (transform.rotation, Quaternion.identity));
+END EX

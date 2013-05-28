@@ -1,0 +1,14 @@
+<signature>
+ctor(float,float,float,float)
+</signature>
+Creates a new rectangle.
+CONVERTEXAMPLE
+BEGIN EX
+	var rect = Rect (0, 0, 10, 10);
+END EX
+<signature>
+ctor(Rect)
+</signature>
+<txttag>
+UNDOC
+</txttag>

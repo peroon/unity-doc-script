@@ -1,0 +1,4 @@
+<signature>
+heightmapWidth
+</signature>
+Width of the terrain in samples (RO).

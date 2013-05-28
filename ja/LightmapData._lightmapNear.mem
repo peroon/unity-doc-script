@@ -1,0 +1,5 @@
+<signature>
+lightmapNear
+</signature>
+間接的な入射光を格納する。
+SA: [[LightmapSettings]] class, Renderer.lightmapIndex property.

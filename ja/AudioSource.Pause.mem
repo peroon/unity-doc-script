@@ -1,0 +1,12 @@
+<signature>
+Pause()
+</signature>
+ポースする。
+CONVERTEXAMPLE
+BEGIN EX
+	function Start()
+	{
+		audio.Pause();
+	}
+END EX
+SA: ::ref::Play, ::ref::Stop functions.

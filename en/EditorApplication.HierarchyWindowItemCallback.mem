@@ -1,0 +1,5 @@
+<signature>
+HierarchyWindowItemCallback(int,Rect)
+</signature>
+Delegate to be called for every visible list item in the HierarchyWindow on every OnGUI event.
+SA: EditorApplication.hierarchyWindowItemOnGUI.

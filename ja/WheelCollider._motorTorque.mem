@@ -1,0 +1,8 @@
+モータのトルク。回転方向に応じて正と負を返す
+To simulate brakes, do not use negative motor torque - use ::ref::brakeTorque instead.
+CONVERTEXAMPLE
+BEGIN EX
+	// spin the wheel forward
+
+	collider.motorTorque = 10;
+END EX

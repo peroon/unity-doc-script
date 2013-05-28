@@ -1,0 +1,7 @@
+<signature>
+Stop()
+Stop(bool)
+</signature>
+Stop movement of this agent along its current path.
+@param stopUpdates If true, the [[GameObject]] is stopped immediately and not affected by the avoidance system.
+If false, the [[NavMeshAgent]] is controlling the deceleration.

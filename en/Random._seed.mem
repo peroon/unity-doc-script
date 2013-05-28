@@ -1,0 +1,4 @@
+<signature>
+seed
+</signature>
+Sets the seed for the random number generator.

@@ -1,0 +1,7 @@
+<signature>
+rotation
+</signature>
+パーティクルの角度を返す
+This is particle's rotation in degrees.
+
+SA: [[wiki:comp-ParticlesLegacy|Particles documentation]].

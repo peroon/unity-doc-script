@@ -1,0 +1,5 @@
+<signature>
+GetInterpolatedNormal(float,float)
+</signature>
+指定したポイントでの保管された法線を取得する
+The /x/ and /y/ values are normalized coordinates in the range 0..1.

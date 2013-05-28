@@ -1,0 +1,19 @@
+<signature>
+GetComponents(Type)
+</signature>
+1つのゲームオブジェクトで該当するすべてのコンポーネントを取得します。
+CONVERTEXAMPLE
+BEGIN EX
+	// Disable the spring on all HingeJoints 
+	// in this game object
+
+	var hingeJoints : HingeJoint[];
+	hingeJoints = gameObject.GetComponents.<HingeJoint>();
+	for (var joint : HingeJoint in hingeJoints) {
+		joint.useSpring = false;
+	}
+END EX
+<signature>
+GetComponents<T>()
+</signature>
+Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.

@@ -1,0 +1,4 @@
+3D 空間におけるリスナーの表現を行います。
+AudioListenerクラスの周りで音を記録して、PC などのスピーカーで音を出します。また、1 つのシーンに1 つのAudioListenerクラスを付加することができます（デフォルトではメインカメラに付いています）。
+
+SA: [[AudioSource]], [[class-AudioListener|AudioListener component]] in the Components Reference.

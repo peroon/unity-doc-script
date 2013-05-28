@@ -1,0 +1,4 @@
+<signature>
+GetBuiltinSkin(EditorSkin)
+</signature>
+Get one of the built-in GUI skins, which can be the game view, inspector or scene view skin as chosen by the parameter.

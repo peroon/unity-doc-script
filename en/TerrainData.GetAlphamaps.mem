@@ -1,0 +1,30 @@
+<signature>
+GetAlphamaps(int,int,int,int)
+</signature>
+Returns the alpha map at a position x, y given a width and height.
+The returned array is three-dimensional - the first two dimensions
+represent x and y coordinates on the map, while the third denotes the
+splatmap texture to which the alphamap is applied.
+BEGIN EX
+// Add some random "noise" to the alphamaps.
+function AddAlphaNoise(t: Terrain, noiseScale: float) {
+	var maps = t.terrainData.GetAlphamaps(0, 0, t.terrainData.alphamapWidth, t.terrainData.alphamapHeight);
+
+		for (var y = 0; y < t.terrainData.alphamapHeight; y++) {
+			for (var x = 0; x < t.terrainData.alphamapWidth; x++) {
+ 			    var a0 = maps[x, y, 0];
+				var a1 = maps[x, y, 1];
+				
+				a0 += Random.value * noiseScale;
+				a1 += Random.value * noiseScale;
+				
+				var total = a0 + a1;
+				
+				maps[x, y, 0] = a0 / total;
+				maps[x, y, 1] = a1 / total;
+			}
+		}
+		
+		t.terrainData.SetAlphamaps(0, 0, maps);
+	}
+END EX

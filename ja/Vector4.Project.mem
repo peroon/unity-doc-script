@@ -1,0 +1,5 @@
+<signature>
+Project(Vector4,Vector4)
+</signature>
+別のベクトルにベクトルを投影する
+法線に投影されたベクトルを返します。

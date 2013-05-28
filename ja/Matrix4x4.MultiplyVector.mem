@@ -1,0 +1,7 @@
+<signature>
+MultiplyVector(Vector3)
+</signature>
+行列から向きに変換する。
+MultiplyPoint関数に似ていますが、この関数は方向を変換するのみとなります。変換する際に、行列の回転部分のみが考慮されます。
+
+SA: ::ref::MultiplyPoint, ::ref::MultiplyPoint3x4.

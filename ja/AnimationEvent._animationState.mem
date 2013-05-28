@@ -1,0 +1,5 @@
+<signature>
+animationState
+</signature>
+このイベントを発生させたときのアニメーションの状態を確認する（読み込み専用）。
+Returns null when the method is called outside of an animation event callback.

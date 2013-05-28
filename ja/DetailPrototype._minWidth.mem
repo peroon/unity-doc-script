@@ -1,0 +1,4 @@
+<signature>
+minWidth
+</signature>
+草のビルボードの幅の最小を返す（レンダーモードがGrassBillboardである必要がある）

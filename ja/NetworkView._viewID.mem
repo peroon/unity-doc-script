@@ -1,0 +1,13 @@
+<signature>
+viewID
+</signature>
+ネットワークビューのViewIDを返す
+CONVERTEXAMPLE
+BEGIN EX
+	function OnNetworkInstantiate (info : NetworkMessageInfo) {
+		var networkViews : NetworkView[] = GetComponents(NetworkView);
+		Debug.Log("New prefab network instantiated with views - ");
+		for (var view : NetworkView in networkViews)
+			Debug.Log("- " + view.viewID);
+	}
+END EX

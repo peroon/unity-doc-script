@@ -1,0 +1,7 @@
+<signature>
+GetSuperclass(IntPtr)
+</signature>
+クラスがオブジェクトクラス以外を指すとき、この関数はクラスによって指定されたスーパークラスを表すオブジェクトを取得する。
+<tt>clazz</tt>引数がクラスオブジェクト以外を指すクラスの場合、スーパークラスを指すオブジェクトを返します。スーパークラスでない場合、<tt>NULL</tt>かエラーを返します。
+
+SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

@@ -1,0 +1,10 @@
+<signature>
+Sign(float)
+</signature>
+符号。
+正ならば1、負ならば－ 1、0 なら0。
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(Mathf.Sign(-10));
+	Debug.Log(Mathf.Sign(10));
+END EX

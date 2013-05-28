@@ -1,0 +1,4 @@
+<signature>
+max
+</signature>
+ボックスの最大値。常にcenter変数とextents変数を足した値となる

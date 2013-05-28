@@ -1,0 +1,4 @@
+<signature>
+isValid
+</signature>
+Return true if this avatar is a valid mecanim avatar. It can be a generic avatar or a human avatar.

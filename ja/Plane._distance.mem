@@ -1,0 +1,5 @@
+<signature>
+distance
+</signature>
+原点から平面への距離を返す
+SA: ::ref::normal.

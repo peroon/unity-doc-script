@@ -1,0 +1,4 @@
+<signature>
+horizontalAccuracy
+</signature>
+水平方向の精度を返す。

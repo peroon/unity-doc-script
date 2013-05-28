@@ -1,0 +1,2 @@
+パーティクルの出現順序でソートを行い、重なりを考慮する
+This looks better with blended particle shaders, but is slower because of the sorting.

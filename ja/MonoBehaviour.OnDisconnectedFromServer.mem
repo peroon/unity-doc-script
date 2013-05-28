@@ -1,0 +1,10 @@
+<signature>
+OnDisconnectedFromServer(NetworkDisconnection)
+</signature>
+クライアントがサーバーへの接続を失ったときに呼び出される。
+CONVERTEXAMPLE
+BEGIN EX
+	function OnDisconnectedFromServer (info : NetworkDisconnection) {
+		Debug.Log("Disconnected from server: " + info);
+	}
+END EX

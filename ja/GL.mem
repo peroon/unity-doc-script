@@ -1,0 +1,55 @@
+低レベルのグラフィックスライブラリです。
+OpenGLの即時モードと同様のアクティブな変換行列、レンダリングコマンドでの出力などの低レベルグラフィックスのタスクを実行します。
+
+ほとんどすべての場合にGraphics.DrawMesh関数を使用していることに、注意してください。GL関数の即時描画モードを使用するよりも効率的です。
+
+GLクラスの描画コードの中から、他の描画コマンドを呼び出す場合、他のマテリアルを設定することができるので、同じような制御下にあることを確認してください。GLクラスの描画コマンドはすぐ実行されます。Update関数で呼び出した場合、カメラにレンダリングされる前に、それらが実行されることを意味しています。そしてカメラはGLクラスの描画が表示されない場合、スクリーンが映らない可能性が高くなります。GLクラスを描画する場所は、OnPostRender関数が一般的です。
+BEGIN EX
+static var lineMaterial : Material;
+
+static function CreateLineMaterial() {
+	if( !lineMaterial ) {
+		lineMaterial = new Material( "Shader \"Lines/Colored Blended\" {" +
+			"SubShader { Pass { " +
+			"    Blend SrcAlpha OneMinusSrcAlpha " +
+			"    ZWrite Off Cull Off Fog { Mode Off } " +
+			"    BindChannels {" +
+			"      Bind \"vertex\", vertex Bind \"color\", color }" +
+			"} } }" );
+		lineMaterial.hideFlags = HideFlags.HideAndDontSave;
+		lineMaterial.shader.hideFlags = HideFlags.HideAndDontSave;
+	}
+}
+
+function OnPostRender() {
+	CreateLineMaterial();
+	// set the current material
+	lineMaterial.SetPass( 0 );
+	GL.Begin( GL.LINES );
+	GL.Color( Color(1,1,1,0.5) );
+	GL.Vertex3( 0, 0, 0 );
+	GL.Vertex3( 1, 0, 0 );
+	GL.Vertex3( 0, 1, 0 );
+	GL.Vertex3( 1, 1, 0 );
+	GL.Color( Color(0,0,0,0.5) );
+	GL.Vertex3( 0, 0, 0 );
+	GL.Vertex3( 0, 1, 0 );
+	GL.Vertex3( 1, 0, 0 );
+	GL.Vertex3( 1, 1, 0 );
+	GL.End();
+}
+END EX
+__Note:__ This class is almost always used when you need to draw a couple of lines or triangles, and don't want to deal with meshes.
+If you want to avoid surprises the usage pattern is this:
+BEGIN EX
+function OnPostRender() {
+	 // Set your materials
+
+	 GL.PushMatrix();
+	 // yourMaterial.SetPass( );
+	 // Draw your stuff
+	 GL.PopMatrix();
+}
+END EX
+Where at the "// Draw your stuff" you should do SetPass() on some material previously declared, which will be used for drawing.
+If you dont call SetPass, then you'll get basically a random material (whatever was used before) which is not good. So do it.

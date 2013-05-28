@@ -1,0 +1,6 @@
+<signature>
+height
+</signature>
+ピクセル単位のテクスチャの高さ。
+Note that unlike Texture.height property, this is both read and write -
+setting a value changes size.

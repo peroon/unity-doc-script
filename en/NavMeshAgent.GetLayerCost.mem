@@ -1,0 +1,6 @@
+<signature>
+GetLayerCost(int)
+</signature>
+Gets the cost for traversing over geometry of the layer type.
+@param layer Layer index.
+@return Current cost of specified layer.

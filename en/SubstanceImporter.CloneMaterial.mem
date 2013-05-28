@@ -1,0 +1,5 @@
+<signature>
+CloneMaterial(ProceduralMaterial)
+</signature>
+Clones an existing Procedural Material instance.
+NOTE: This requires a re-import to actually create the new instance !

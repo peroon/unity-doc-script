@@ -1,0 +1,4 @@
+<signature>
+Set(float,float,float,float)
+</signature>
+Set components of an existing Rect.

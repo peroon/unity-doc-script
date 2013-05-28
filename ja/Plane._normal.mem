@@ -1,0 +1,5 @@
+<signature>
+normal
+</signature>
+平面の法線ベクトルを返す
+SA: ::ref::distance.

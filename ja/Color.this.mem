@@ -1,0 +1,9 @@
+<signature>
+this(int)
+</signature>
+rは [0]、gは [1]、bは [2]、aは[3]に格納されている
+CONVERTEXAMPLE
+BEGIN EX
+	var p : Color;
+	p[1] = 5; // the same as p.g = 5
+END EX

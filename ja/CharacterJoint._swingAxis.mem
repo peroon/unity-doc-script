@@ -1,0 +1,2 @@
+関節が回転できるための2軸を設定する
+CharacterJoint.swing1Limit are the limits of the rotation allowed around this axis.

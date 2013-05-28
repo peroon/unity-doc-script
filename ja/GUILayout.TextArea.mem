@@ -1,0 +1,23 @@
+<signature>
+TextArea(string,GUILayoutOption[])
+TextArea(string,int,GUILayoutOption[])
+TextArea(string,GUIStyle,GUILayoutOption[])
+TextArea(string,int,GUIStyle,GUILayoutOption[])
+</signature>
+複数行のテキストを入力するフィールドを作成します。
+{img GUILayoutTextArea.png}\\
+''Text area in the Game View.''
+CONVERTEXAMPLE
+BEGIN EX
+	var stringToEdit : String = "Hello World\nI've got 2 lines...";
+
+	function OnGUI () {
+		// Make a multiline text area that modifies stringToEdit.
+		stringToEdit = GUILayout.TextArea (stringToEdit, 200);
+	}
+END EX
+@param text 表示する文字列
+@param maxLength 最大文字数
+@param style スタイル
+@param options 幅・高さ
+@return 編集された文字列

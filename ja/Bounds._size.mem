@@ -1,0 +1,5 @@
+<signature>
+size
+</signature>
+ボックスのサイズ。常にextents変数の2 倍
+''size.x'' is the width, ''size.y'' is the height and ''size.z'' is the depth of the box.

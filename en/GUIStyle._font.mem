@@ -1,0 +1,12 @@
+<signature>
+font
+</signature>
+The font to use for rendering. If null, the default font for the current [[GUISkin]] is used instead.
+CONVERTEXAMPLE
+BEGIN EX
+	// Prints name of the font that button is using.
+
+	function OnGUI() {
+		Debug.Log("Font name: " + GUI.skin.button.font.name);
+	}
+END EX

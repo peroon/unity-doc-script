@@ -1,0 +1,10 @@
+<signature>
+x
+</signature>
+左側から数えたX の値。
+CONVERTEXAMPLE
+BEGIN EX
+	var rect = Rect (10, 10, 100, 100);
+	print(rect.x);
+	rect.x = 20;
+END EX

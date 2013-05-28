@@ -1,0 +1,20 @@
+<signature>
+Max(float,float)
+Max(float[])
+</signature>
+Returns largest of two or more values.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 2.4
+	print(Mathf.Max(1.2, 2.4));
+END EX
+<signature>
+Max(int,int)
+Max(int[])
+</signature>
+Returns the largest of two or more values.
+CONVERTEXAMPLE
+BEGIN EX
+	// prints 2
+	print(Mathf.Max(1, 2));
+END EX

@@ -1,0 +1,17 @@
+<signature>
+horizontalScrollbar
+</signature>
+HorizontalScrollbarオブジェクトの設定をする
+CONVERTEXAMPLE
+BEGIN EX
+	// Modifies only the default background of the 
+	// horizontal scrollbar of the current GUISkin
+
+	var hSbarValue : float;
+	var style : GUIStyle;
+
+	function OnGUI () {
+		GUI.skin.horizontalScrollbar = style;
+		hSbarValue = GUILayout.HorizontalScrollbar (hSbarValue, 1.0, 0.0, 10.0);
+	}
+END EX

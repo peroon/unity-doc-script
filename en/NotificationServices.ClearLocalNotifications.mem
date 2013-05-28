@@ -1,0 +1,4 @@
+<signature>
+ClearLocalNotifications()
+</signature>
+Discards of all received local notifications.

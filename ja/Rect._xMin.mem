@@ -1,0 +1,5 @@
+<signature>
+xMin
+</signature>
+最小のX の値。
+Changing this value will preserve right side of rectangle (so ::ref::width will change as well).

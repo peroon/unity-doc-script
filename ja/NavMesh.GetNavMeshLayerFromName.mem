@@ -1,0 +1,5 @@
+<signature>
+GetNavMeshLayerFromName(string)
+</signature>
+レイヤー名からレイヤーのインデックスを返す
+If the named layer does not exist returns -1.

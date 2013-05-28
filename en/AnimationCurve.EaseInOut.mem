@@ -1,0 +1,4 @@
+<signature>
+EaseInOut(float,float,float,float)
+</signature>
+An ease-in and out curve starting at /timeStart/, /valueStart/ and ending at /timeEnd/, /valueEnd/.

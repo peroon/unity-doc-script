@@ -1,0 +1,5 @@
+<signature>
+lightmapIndex
+</signature>
+The index of the lightmap applied to this renderer.
+SA: Renderer.lightmapIndex.

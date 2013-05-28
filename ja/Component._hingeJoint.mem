@@ -1,0 +1,8 @@
+<signature>
+hingeJoint
+</signature>
+HingeJoint情報を返す
+CONVERTEXAMPLE
+BEGIN EX
+	hingeJoint.motor.targetVelocity = 5;
+END EX

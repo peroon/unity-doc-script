@@ -1,0 +1,2 @@
+レンダリングパス。カメラに使用されるレンダリング方法を定義する
+SA: ::ref::actualRenderingPath, [[RenderingPath]].
