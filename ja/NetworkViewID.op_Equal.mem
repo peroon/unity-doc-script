@@ -1,0 +1,4 @@
+<signature>
+Equal(NetworkViewID,NetworkViewID)
+</signature>
+Returns true if two NetworkViewIDs are identical.

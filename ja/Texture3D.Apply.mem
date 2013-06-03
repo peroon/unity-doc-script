@@ -1,0 +1,13 @@
+<signature>
+Apply()
+Apply(bool)
+</signature>
+Actually apply all previous ::ref::SetPixels changes.
+If /updateMipmaps/ is /true/, the mipmap levels are recalculated as well, using
+the base level as a source. Usually you want to use /true/ in all cases except when
+you've modified the mip levels yourself using ::ref::SetPixels.
+
+This is a potentially expensive operation, so you'll want to change as many pixels
+as possible between /Apply/ calls.
+
+SA: ::ref::SetPixels functions.

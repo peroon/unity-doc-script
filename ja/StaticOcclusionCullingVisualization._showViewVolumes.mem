@@ -1,0 +1,4 @@
+<signature>
+showViewVolumes
+</signature>
+If set to true, visualization of view volumes is enabled.

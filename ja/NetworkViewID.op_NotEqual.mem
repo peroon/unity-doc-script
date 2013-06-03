@@ -1,0 +1,4 @@
+<signature>
+NotEqual(NetworkViewID,NetworkViewID)
+</signature>
+Returns true if two NetworkViewIDs are not identical.

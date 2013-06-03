@@ -1,0 +1,4 @@
+<signature>
+NotEqual(NetworkPlayer,NetworkPlayer)
+</signature>
+Returns true if two NetworkPlayers are not the same player.

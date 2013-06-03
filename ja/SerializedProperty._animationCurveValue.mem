@@ -1,0 +1,5 @@
+<signature>
+animationCurveValue
+</signature>
+Value of a animation curve property.
+SA: ::ref::propertyType, SerializedPropertyType.AnimationCurve, [[AnimationCurve]].

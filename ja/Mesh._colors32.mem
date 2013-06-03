@@ -1,0 +1,5 @@
+<signature>
+colors32
+</signature>
+Vertex colors of the mesh.
+Same as ::ref::colors, except using [[Color32]] structure which is better for performance.

@@ -1,0 +1,5 @@
+<signature>
+RegisterPropertyChangeUndo(string)
+</signature>
+Call this when you change a material property. It will add an undo for the action.
+@param label Undo Label.

@@ -1,0 +1,5 @@
+<signature>
+CountInProperty()
+</signature>
+Count visible children of this property, including this property itself.
+This is useful for allocating height for drawing this property including its children.

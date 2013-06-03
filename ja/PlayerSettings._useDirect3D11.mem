@@ -1,0 +1,4 @@
+<signature>
+useDirect3D11
+</signature>
+Should Direct3D 11 be used when available?

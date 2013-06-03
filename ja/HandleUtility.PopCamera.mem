@@ -1,0 +1,5 @@
+<signature>
+PopCamera(Camera)
+</signature>
+Retrieve all camera settings.
+A call to PopCamera will retrieve the most recently stored Camera settings added to a "stack" structure by ::ref::PushCamera. This allows for easy saving and restoration of temporary camera changes.

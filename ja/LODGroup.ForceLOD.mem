@@ -1,0 +1,4 @@
+<signature>
+ForceLOD(int)
+</signature>
+@param index The LOD level to use. Passing index < 0 will return to standard LOD processing.

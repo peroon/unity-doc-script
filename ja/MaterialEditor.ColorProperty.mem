@@ -1,0 +1,6 @@
+<signature>
+ColorProperty(string,string)
+</signature>
+Draw a property field for a color shader property.
+@param propertyName Name of the property to draw.
+@param label Label for the property.

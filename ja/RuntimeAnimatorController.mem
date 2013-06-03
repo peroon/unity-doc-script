@@ -1,0 +1,2 @@
+Runtime representation of the AnimatorController.
+Used to change at runtime the AnimatorController of an Animator.

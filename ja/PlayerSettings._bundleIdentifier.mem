@@ -1,0 +1,4 @@
+<signature>
+bundleIdentifier
+</signature>
+Application bundle identifier shared between iOS & Android platforms.

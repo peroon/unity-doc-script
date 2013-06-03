@@ -1,0 +1,5 @@
+<signature>
+BakeAsync()
+</signature>
+Starts an asynchronous bake job.
+The progress can be monitored via ::ref::isRunning property.

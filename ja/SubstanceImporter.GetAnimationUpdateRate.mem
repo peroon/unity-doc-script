@@ -1,0 +1,4 @@
+<signature>
+GetAnimationUpdateRate(ProceduralMaterial)
+</signature>
+Get the Procedural Material animation update rate in millisecond.

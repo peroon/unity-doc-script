@@ -1,0 +1,6 @@
+<signature>
+SetFloat(string,float)
+</signature>
+Set the value of a given float property.
+@param propertyName Name of the float property.
+@param value Float to set.

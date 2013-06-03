@@ -1,0 +1,5 @@
+<signature>
+DistancePointLine(Vector3,Vector3,Vector3)
+</signature>
+Calculate distance between a point and a line.
+SA: ::ref::ProjectPointLine.

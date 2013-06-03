@@ -1,0 +1,4 @@
+<signature>
+transformPaths
+</signature>
+Generates the list of all imported Transforms.

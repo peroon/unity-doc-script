@@ -1,0 +1,5 @@
+<signature>
+MarkDynamic()
+</signature>
+Optimize mesh for frequent updates.
+Call this before assigning vertices to get better performance when continually updating mesh.

@@ -1,0 +1,4 @@
+<signature>
+propertyPath
+</signature>
+Property path of the property being modified (Matches as SerializedProperty.propertyPath).

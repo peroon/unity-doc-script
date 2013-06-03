@@ -1,0 +1,6 @@
+<signature>
+GetFloat(string,bool)
+</signature>
+Get the value of a given float shader property.
+@param propertyName Name of the float property.
+@param hasMixedValue Does this property have multiple values?

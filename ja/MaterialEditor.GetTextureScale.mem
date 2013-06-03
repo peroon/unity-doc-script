@@ -1,0 +1,7 @@
+<signature>
+GetTextureScale(string,bool,bool)
+</signature>
+Get the value of a given texture scale for a given texture property.
+@param propertyName Name of the texture property that you wish to examine the scale of.
+@param hasMixedValueX Does the x scale have multiple values?
+@param hasMixedValueY Does the y scale have multiple values?

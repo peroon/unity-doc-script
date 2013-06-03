@@ -1,0 +1,4 @@
+<signature>
+use32BitDisplayBuffer
+</signature>
+Determines whether or not a 32-bit display buffer will be used.

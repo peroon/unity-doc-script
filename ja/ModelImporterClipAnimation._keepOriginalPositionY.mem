@@ -1,0 +1,4 @@
+<signature>
+keepOriginalPositionY
+</signature>
+Keeps the vertical position as it is authored in the source file.

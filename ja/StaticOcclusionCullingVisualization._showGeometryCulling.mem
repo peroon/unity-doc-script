@@ -1,0 +1,4 @@
+<signature>
+showGeometryCulling
+</signature>
+If set to true, culling of geometry is enabled.

@@ -1,0 +1,5 @@
+<signature>
+objectReferenceValue
+</signature>
+Value of an object reference property.
+SA: ::ref::propertyType, SerializedPropertyType.ObjectReference.

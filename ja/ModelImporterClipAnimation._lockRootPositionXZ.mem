@@ -1,0 +1,4 @@
+<signature>
+lockRootPositionXZ
+</signature>
+Enable to make horizontal root motion be baked into the movement of the bones. Disable to make horizontal root motion be stored as root motion.

@@ -1,0 +1,5 @@
+<signature>
+depth
+</signature>
+Nesting depth of the property. (RO)
+SA: ::ref::propertyPath.

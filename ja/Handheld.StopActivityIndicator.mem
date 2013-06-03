@@ -1,0 +1,4 @@
+<signature>
+StopActivityIndicator()
+</signature>
+Stops os activity indicator.

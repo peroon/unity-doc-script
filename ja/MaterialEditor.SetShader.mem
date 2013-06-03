@@ -1,0 +1,8 @@
+<signature>
+SetShader(Shader)
+SetShader(Shader,bool)
+</signature>
+Set the shader of the material.
+Automatically handles internal inspector rebuilding.
+@param shader Shader to set.
+@param registerUndo Should undo be registered.

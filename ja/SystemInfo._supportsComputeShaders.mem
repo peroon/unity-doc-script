@@ -1,0 +1,5 @@
+<signature>
+supportsComputeShaders
+</signature>
+Are compute shaders supported? (RO)
+SA: [[ComputeShader]], [[ComputeBuffer]] classes.

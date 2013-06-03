@@ -1,0 +1,5 @@
+<signature>
+FromMonoBehaviour(MonoBehaviour)
+</signature>
+Returns the MonoScript object containing specified MonoBehaviour.
+@param behaviour The MonoBehaviour whose MonoScript should be returned.

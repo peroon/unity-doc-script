@@ -1,0 +1,4 @@
+<signature>
+GetScriptingDefineSymbolsForGroup(BuildTargetGroup)
+</signature>
+Get user-specified symbols for script compilation for the given build target group.

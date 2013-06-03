@@ -1,0 +1,4 @@
+<signature>
+DisconnectPrefabInstance(Object)
+</signature>
+Disconnects the prefab instance from its parent prefab.

@@ -1,0 +1,23 @@
+<signature>
+OnAnimatorMove()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Callback for processing animation movements for modifying root motion.
+This callback will be invoked at each frame after the state machines and the animations have been evaluated,
+but before ::ref::OnAnimatorIK.
+
+SA: [[wiki:Scripting Root Motion|Root motion]].
+CONVERTEXAMPLE
+BEGIN EX
+	function OnAnimatorMove() {
+		var animator = GetComponent.<Animator>(); 
+		
+		if (animator) {
+			var newPosition = transform.position;
+			newPosition.z += animator.GetFloat("Runspeed") * Time.deltaTime;                                 
+			transform.position = newPosition;
+		}
+	}
+END EX

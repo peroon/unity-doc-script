@@ -1,0 +1,24 @@
+<signature>
+GetFiltered(Type,SelectionMode)
+</signature>
+Returns the current selection filtered by type and mode.
+For a selected GameObject that has multiple Components of /type/, only the first one will be included in the results. \\
+if /type/ is a subclass of [[Component]] or [[GameObject]] the full SelectionMode is supported. \\
+if /type/ does not subclass from [[Component]] or [[GameObject]] (eg. [[Mesh]] or [[ScriptableObject]]) only SelectionMode.ExcludePrefab and SelectionMode.Editable are supported.
+BEGIN EX
+class ToggleActive extends ScriptableObject {
+    @MenuItem ("Example/Toggle Active of Selected %i")
+    static function DoToggle() {
+        var activeGOs: Object[] =
+            Selection.GetFiltered(
+                GameObject,
+                SelectionMode.Editable | SelectionMode.TopLevel);
+
+        for (var obj in activeGOs)
+        	var activeGO = obj as GameObject;
+            activeGO.SetActive(!activeGO.activeSelf);
+    }
+}
+END EX
+@param type Only objects of this type will be retrieved.
+@param mode Further options to refine the selection.

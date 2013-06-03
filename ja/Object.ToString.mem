@@ -1,0 +1,8 @@
+<signature>
+ToString()
+</signature>
+Returns the name of the game object.
+CONVERTEXAMPLE
+BEGIN EX
+	Debug.Log(gameObject);
+END EX

@@ -1,0 +1,8 @@
+<signature>
+GenerateSecondaryUVSet(Mesh)
+</signature>
+Will auto generate uv2 with default settings for provided mesh, and fill them in.
+<signature>
+GenerateSecondaryUVSet(Mesh,UnwrapParam)
+</signature>
+Will auto generate uv2 with provided settings for provided mesh, and fill them in.

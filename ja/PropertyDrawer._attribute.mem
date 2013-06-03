@@ -1,0 +1,4 @@
+<signature>
+attribute
+</signature>
+The [[PropertyAttribute]] for the property. Not applicable for custom class drawers. (RO)

@@ -1,0 +1,5 @@
+<signature>
+GetPrefabObject(Object)
+</signature>
+Retrieves the enclosing prefab for any object contained within.
+@param targetObject An object contained within a prefab object.

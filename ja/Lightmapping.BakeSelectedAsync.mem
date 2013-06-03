@@ -1,0 +1,5 @@
+<signature>
+BakeSelectedAsync()
+</signature>
+Starts an asynchronous bake job for the selected objects.
+The progress can be monitored via ::ref::isRunning property.

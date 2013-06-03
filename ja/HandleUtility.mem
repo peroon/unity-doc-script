@@ -1,0 +1,2 @@
+Helper functions for Scene View style 3D GUI.
+These are mainly mathematical functions that assist in converting between the 3D scene space and the 2D GUI. The functions are used in the construction of the Unity editor itself and so using them is a good way to make your own Handle GUIs consistent with Unity's.

@@ -1,0 +1,5 @@
+<signature>
+FromScriptableObject(ScriptableObject)
+</signature>
+Returns the MonoScript object containing specified ScriptableObject.
+@param scriptableObject The ScriptableObject whose MonoScript should be returned.

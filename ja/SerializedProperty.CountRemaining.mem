@@ -1,0 +1,5 @@
+<signature>
+CountRemaining()
+</signature>
+Count remaining visible properties.
+This is useful for allocating height for drawing this property and all the following ones.

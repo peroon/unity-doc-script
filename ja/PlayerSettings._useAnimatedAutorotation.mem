@@ -1,0 +1,4 @@
+<signature>
+useAnimatedAutorotation
+</signature>
+Let the OS autorotate the screen as the device orientation changes.

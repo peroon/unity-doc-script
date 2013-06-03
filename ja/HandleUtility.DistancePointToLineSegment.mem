@@ -1,0 +1,4 @@
+<signature>
+DistancePointToLineSegment(Vector2,Vector2,Vector2)
+</signature>
+Distance from a point /p/ in 2d to a line segment defined by two points /a/ and /b/.

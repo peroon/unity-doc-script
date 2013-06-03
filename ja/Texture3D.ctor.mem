@@ -1,0 +1,5 @@
+<signature>
+ctor(int,int,int,TextureFormat,bool)
+</signature>
+Create a new empty 3D Texture.
+SA: ::ref::SetPixels, ::ref::Apply functions.

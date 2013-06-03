@@ -1,0 +1,5 @@
+<signature>
+Next(bool)
+</signature>
+Move to next property.
+SA: ::ref::NextVisible, ::ref::Reset.

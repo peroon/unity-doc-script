@@ -1,0 +1,4 @@
+<signature>
+ClearCamera(Rect,Camera)
+</signature>
+Clears the camera.

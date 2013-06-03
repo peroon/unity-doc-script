@@ -1,0 +1,12 @@
+<signature>
+ctor(Type)
+</signature>
+Require a single component.
+<signature>
+ctor(Type,Type)
+</signature>
+Require a two components.
+<signature>
+ctor(Type,Type,Type)
+</signature>
+Require three components.

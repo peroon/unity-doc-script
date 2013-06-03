@@ -1,0 +1,10 @@
+<signature>
+Divide(Vector4,float)
+</signature>
+Divides a vector by a number.
+Divides each component of /a/ by a number /d/.
+CONVERTEXAMPLE
+BEGIN EX
+	// make the vector twice shorter: prints (0.5,1.0,1.5,2.0)
+	print (Vector4(1,2,3,4) / 2.0);
+END EX

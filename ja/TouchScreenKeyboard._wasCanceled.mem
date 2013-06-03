@@ -1,0 +1,4 @@
+<signature>
+wasCanceled
+</signature>
+Specifies if input process was canceled. (RO)

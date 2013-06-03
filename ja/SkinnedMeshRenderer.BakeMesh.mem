@@ -1,0 +1,6 @@
+<signature>
+BakeMesh(Mesh)
+</signature>
+Creates a snapshot of SkinnedMeshRenderer and stores it in /mesh/.
+The vertices are relative to the SkinnedMeshRenderer Transform component. Note that the snapshot is still computed even when ::ref::updateWhenOffscreen is set to false and the skinned mesh object is currently offscreen.
+@param mesh A static mesh that will receive the snapshot of the skinned mesh.

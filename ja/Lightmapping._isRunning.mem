@@ -1,0 +1,4 @@
+<signature>
+isRunning
+</signature>
+Returns true when the bake job is running, false otherwise (RO).

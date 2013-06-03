@@ -1,0 +1,5 @@
+<signature>
+keyaliasPass
+</signature>
+Password for the key used for signing an Android application.
+This is the password for signing an application with a particular key (known as [-keypass <keypass>] on the keytool/jarsigner command line).

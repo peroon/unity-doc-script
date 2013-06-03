@@ -1,0 +1,4 @@
+<signature>
+exitOnSuspend
+</signature>
+Application should exit when suspended to background.

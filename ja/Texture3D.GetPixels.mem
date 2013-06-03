@@ -1,0 +1,6 @@
+<signature>
+GetPixels()
+GetPixels(int)
+</signature>
+This function returns an array of pixel colors representing one mip level of the 3D texture.
+Call ::ref::Apply to actually upload the changed.

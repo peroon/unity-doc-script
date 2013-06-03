@@ -1,0 +1,5 @@
+<signature>
+propertyPath
+</signature>
+Full path of the property. (RO)
+SA: ::ref::name, ::ref::depth.

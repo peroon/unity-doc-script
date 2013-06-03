@@ -1,0 +1,15 @@
+<signature>
+hasChanged
+</signature>
+Has the transform changed since the last time the flag was set to 'false'?
+A change to the transform can be anything that causes its matrix to be recalculated: any adjustment to its position, rotation or scale.
+CONVERTEXAMPLE
+BEGIN EX
+	function OnUpdate () {
+		if (transform.hasChanged)
+		{
+			print("The transform has changed!");
+			transform.hasChanged = false;
+		}
+	}
+END EX

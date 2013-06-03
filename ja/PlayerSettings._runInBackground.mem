@@ -1,0 +1,4 @@
+<signature>
+runInBackground
+</signature>
+If enabled, your game will continue to run after lost focus.

@@ -1,0 +1,4 @@
+<signature>
+GetMaterialScale(ProceduralMaterial)
+</signature>
+Get the material scale, which is used for all the textures that are part of this Procedural Material.

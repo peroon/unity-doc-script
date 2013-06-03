@@ -1,0 +1,4 @@
+<signature>
+SetMaterialOffset(ProceduralMaterial,Vector2)
+</signature>
+Set the material offset, which is used for all the textures that are part of this Procedural Material.

@@ -1,0 +1,5 @@
+<signature>
+SetAspectRatio(AspectRatio,bool)
+</signature>
+Enables the specified aspect ratio.
+Aspect Ratios selectable in the Resolution Dialog will be monitor-supported resolutions of enabled items from this list.

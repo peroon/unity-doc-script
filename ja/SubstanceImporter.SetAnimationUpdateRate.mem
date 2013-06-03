@@ -1,0 +1,4 @@
+<signature>
+SetAnimationUpdateRate(ProceduralMaterial,int)
+</signature>
+Set the Procedural Material animation update rate in millisecond.

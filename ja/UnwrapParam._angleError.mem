@@ -1,0 +1,4 @@
+<signature>
+angleError
+</signature>
+Maximum allowed angle distortion (0..1).

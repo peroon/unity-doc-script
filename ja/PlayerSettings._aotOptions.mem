@@ -1,0 +1,4 @@
+<signature>
+aotOptions
+</signature>
+Additional AOT compilation options. Shared by AOT platforms.

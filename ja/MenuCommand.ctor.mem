@@ -1,0 +1,10 @@
+<signature>
+ctor(Object,int)
+</signature>
+Creates a new MenuCommand object.
+Context and userData will be initialized to inContext and inUserdata respectively.
+<signature>
+ctor(Object)
+</signature>
+Creates a new MenuCommand object.
+Context will be initialized to inContext and userdata will be set to 0.

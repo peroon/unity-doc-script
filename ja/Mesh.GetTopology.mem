@@ -1,0 +1,5 @@
+<signature>
+GetTopology(int)
+</signature>
+Gets the topology of a submesh.
+SA: [[MeshTopology]] enum, ::ref::SetIndices function.

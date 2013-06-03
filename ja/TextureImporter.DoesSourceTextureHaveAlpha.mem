@@ -1,0 +1,4 @@
+<signature>
+DoesSourceTextureHaveAlpha()
+</signature>
+Does textures source image have alpha channel.

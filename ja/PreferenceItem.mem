@@ -1,0 +1,28 @@
+The PreferenceItem attribute allows you to add preferences sections to the Preferences Window.
+The PreferenceItem attribute turns any static function into an OnGUI callback. Only static functions can use the PreferenceItem attribute.
+BEGIN EX
+public class OurPreferences {
+	// Have we loaded the prefs yet
+	private static var prefsLoaded : boolean = false;
+	
+	// The Preferences
+	public static var boolPreference : boolean = false;
+	
+	// Add preferences section named "My Preferences" to the Preferences Window
+	@PreferenceItem ("My Preferences")
+	static function PreferencesGUI () {
+		// Load the preferences
+		if (!prefsLoaded) {
+			boolPreference = EditorPrefs.GetBool ("BoolPreferenceKey", false);
+			prefsLoaded = true;
+		}
+		
+		// Preferences GUI
+		boolPreference = EditorGUILayout.Toggle ("Bool Preference", boolPreference);
+		
+		// Save the preferences
+		if (GUI.changed)
+			EditorPrefs.SetBool ("BoolPreferenceKey", boolPreference);
+	}
+}
+END EX

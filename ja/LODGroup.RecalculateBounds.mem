@@ -1,0 +1,4 @@
+<signature>
+RecalculateBounds()
+</signature>
+Recalculate the bounding region for the LODGroup (Relatively slow, do not call often).

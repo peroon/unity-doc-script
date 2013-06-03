@@ -1,0 +1,4 @@
+<signature>
+bundleVersion
+</signature>
+Application bundle version shared between iOS & Android platforms.

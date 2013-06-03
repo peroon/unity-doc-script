@@ -1,0 +1,5 @@
+<signature>
+implop_Vector2(Vector3)
+</signature>
+Converts a [[Vector3]] to a Vector2.
+Vector3s can be implicitly converted to Vector2 (z is discarded).

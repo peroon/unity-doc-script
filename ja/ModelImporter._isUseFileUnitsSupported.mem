@@ -1,0 +1,4 @@
+Is useFileUnits supported for this asset.
+UseFileUnits is supported only on .max files.
+
+SA: ::ref::useFileUnits.

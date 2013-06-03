@@ -1,0 +1,48 @@
+<signature>
+ctor(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
+</signature>
+Creates a new RenderTexture object.
+The render texture is created with /width/ by /height/ size, with a depth buffer
+of /depth/ bits (depth can be 0, 16 or 24), and in /format/ format and with sRGB read / write on or off.
+
+Note that constructing a RenderTexture object does not create the hardware representation immediately.
+The actual render texture is created upon first use or when ::ref::Create is called manually. So after
+constructing the render texture, it is possible to set additional variables, like ::ref::format,
+::ref::isCubemap and so on.
+
+SA: ::ref::format variable.
+CONVERTEXAMPLE
+BEGIN EX
+var rt: RenderTexture;
+
+function Start () {
+	rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
+}
+END EX
+<signature>
+ctor(int,int,int,RenderTextureFormat)
+</signature>
+Creates a new RenderTexture object.
+The render texture is created with /width/ by /height/ size, with a depth buffer
+of /depth/ bits (depth can be 0, 16 or 24), and in /format/ format.
+
+Note that constructing a RenderTexture object does not create the hardware representation immediately.
+The actual render texture is created upon first use or when ::ref::Create is called manually. So after
+constructing the render texture, it is possible to set additional variables, like ::ref::format,
+::ref::isCubemap and so on.
+
+SA: ::ref::format variable.
+<signature>
+ctor(int,int,int)
+</signature>
+Creates a new RenderTexture object.
+The render texture is created with /width/ by /height/ size, with a depth buffer
+of /depth/ bits (depth can be 0, 16 or 24). The render texture is set to be
+in [[RenderTextureFormat.Default|color format]] by default.
+
+Note that constructing a RenderTexture object does not create the hardware representation immediately.
+The actual render texture is created upon first use or when ::ref::Create is called manually. So after
+constructing the render texture, it is possible to set additional variables, like ::ref::format,
+::ref::isCubemap and so on.
+
+SA: ::ref::format variable.

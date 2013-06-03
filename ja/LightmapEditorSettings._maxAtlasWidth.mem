@@ -1,0 +1,4 @@
+<signature>
+maxAtlasWidth
+</signature>
+The maximum width of an individual lightmap texture.

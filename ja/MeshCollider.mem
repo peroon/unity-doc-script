@@ -1,0 +1,2 @@
+A mesh collider allows you to do [[wiki:class-MeshCollider|collision detection]] between meshes and primitives.
+SA: [[BoxCollider]], [[CapsuleCollider]], [[PhysicMaterial]], [[Rigidbody]].

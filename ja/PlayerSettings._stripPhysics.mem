@@ -1,0 +1,4 @@
+<signature>
+stripPhysics
+</signature>
+Remove Physics code from player to save build size (Flash and NaCl only).

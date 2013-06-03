@@ -1,0 +1,7 @@
+<signature>
+GetEndProperty()
+GetEndProperty(bool)
+</signature>
+Retrieves the SerializedProperty that defines the end range of this property.
+It's the first property that's not a child or grandchild of this property.
+The end property can be used to iterate over all children of a property by using ::ref::EqualContents.

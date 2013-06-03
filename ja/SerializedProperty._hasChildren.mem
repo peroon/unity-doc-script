@@ -1,0 +1,5 @@
+<signature>
+hasChildren
+</signature>
+Does it have child properties? (RO)
+SA: ::ref::hasVisibleChildren.
