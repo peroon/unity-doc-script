@@ -1,0 +1,4 @@
+<signature>
+feetPivotActive
+</signature>
+Blends pivot point between body center of mass and feet pivot. At 0%, the blending point is body center of mass. At 100%, the blending point is feet pivot.

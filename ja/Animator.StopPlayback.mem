@@ -1,0 +1,5 @@
+<signature>
+StopPlayback()
+</signature>
+Stops the animator playback mode. When playback stops, the avatar resumes getting control from game logic.
+SA: ::ref::StartRecording, ::ref::StopRecording, ::ref::recordingStartTime, ::ref::recordingStopTime, ::ref::StartPlayback, , ::ref::playbackTime.

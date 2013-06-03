@@ -1,0 +1,5 @@
+<signature>
+GetBoneTransform(HumanBodyBones)
+</signature>
+Returns transform mapped to this human bone id.
+@param humanBoneId The human bone that is queried, see enum HumanBodyBones for a list of possible values.

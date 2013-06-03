@@ -1,0 +1,5 @@
+<signature>
+whiteMiniLabel
+</signature>
+Style for white mini label.
+Useful for coloring your labels; set GUI::ref::contentColor to your text color, then use this style.

@@ -1,0 +1,19 @@
+<signature>
+leftFeetBottomHeight
+</signature>
+Get left foot bottom height.
+BEGIN EX
+	void LateUpdate()
+	{
+		if(animator)
+		{
+			Vector3 leftFootT = animator.GetIKPosition(AvatarIKGoal.LeftFoot);
+			Quaternion leftFootQ = animator.GetIKRotation(AvatarIKGoal.LeftFoot);
+			
+			Vector3 leftFootH = new Vector3(0, -animator.leftFeetBottomHeight, 0);
+			
+			Vector3 pos = leftFootT + leftFootQ * leftFootH;
+			Debug.Log(pos);
+		}
+	}
+END EX

@@ -1,0 +1,4 @@
+<signature>
+stride
+</signature>
+Size of one element in the buffer (RO).

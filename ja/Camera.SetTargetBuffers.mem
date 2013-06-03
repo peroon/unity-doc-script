@@ -1,0 +1,7 @@
+<signature>
+SetTargetBuffers(RenderBuffer,RenderBuffer)
+</signature>
+Sets the Camera to render to the chosen buffers of one or more RenderTextures.
+SA: [[RenderBuffer]], [[RenderTexture]].
+@param colorBuffer The RenderBuffer to which color information will be rendered.
+@param depthBuffer The RenderBuffer to which depth information will be rendered.

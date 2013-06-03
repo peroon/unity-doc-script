@@ -1,0 +1,5 @@
+<signature>
+normalizedTime
+</signature>
+Normalized time of the State.
+The integer part is the number of time a state has been looped. The fractional part is the % (0-1) of progress in the current loop.

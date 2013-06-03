@@ -1,0 +1,4 @@
+<signature>
+RemoveAt<T>(T[],int)
+</signature>
+Remove element at position ''index''.

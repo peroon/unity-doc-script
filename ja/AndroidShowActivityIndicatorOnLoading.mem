@@ -1,0 +1,2 @@
+Application should show ActivityIndicator when loading.
+SA: PlayerSettings.Android.showActivityIndicatorOnLoading.

@@ -1,0 +1,5 @@
+<signature>
+SetData(Array)
+</signature>
+Set the buffer with values from an array.
+@param data Array of values to fill the buffer.

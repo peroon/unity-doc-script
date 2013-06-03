@@ -1,0 +1,94 @@
+<signature>
+SetScheduledEndTime(double)
+</signature>
+Changes the time at which a sound that has already been scheduled to play will end. Notice that depending on the timing not all rescheduling requests can be fulfilled.
+Note that the time specified is still a time on the absolute time-line, meaning that the sound will stop when reaching that time, regardless of when it was started. So if you have a 5 second long sound and want it to play at time T and stop after 3 seconds (i.e. silencing the last 2 seconds of the sound), you need to specify the end time to be T+3. This function is useful in music systems to overcome the discontinuities in signals that frame-based lossy codecs cause.
+CONVERTEXAMPLE
+BEGIN EX
+// Demonstration of a tool that cuts up a clip into two clips with a short overlaps, then stitches them together at playback time.
+// An overlap of 0.2 seconds is used meaning that the clip will be cut onto two portions of approximately the same size,
+// but with the first sound having 0.2s of the sound after the cut and the second clip starting with
+// 0.2s of the sound before the cut.
+// The idea is then to play cut1 from its start to the cut point and then stop playback, i.e. not playing
+// the 0.2s overlap (this happens via the SetScheduledEndTime), then play cut2 starting 0.2s into the sound and
+// playing it to the end.
+// While this may seem unnecessarily complicated to do this in the case of uncompressed sounds, you can now use
+// the SavWav code from https://gist.github.com/2317063 to save the generated clips into new assets,
+// run the program once with a specified sourceClip and the script will generate "cut1.wav" and "cut2.wav".
+// These can now be imported into Unity as assets and changed to compressed sounds.
+// Since psychoacoustic compression severely alters the waveforms and frequency content of sounds and
+// furthermore operates in a block-based fashion, it would cause very noticeable pops and clicks if we didn't
+// have the sound data after and before the cut point. By having it, even though we are not playing it, the decoder is "warmed up",
+// i.e. it has matching frequency content before and after the transition, so at least the
+// frequency spectrum will be more or less the same before and after the transition and so the click will be less audible
+// than if we had just cut up the sound without the 0.2s overlap regions.
+// This method may also be combined with cross-fading in order to further smoothen out any remaining artifacts.
+
+@script RequireComponent(AudioSource)
+
+public var sourceClip : AudioClip;
+
+private var audio1 : AudioSource;
+private var audio2 : AudioSource;
+private var cutClip1 : AudioClip;
+private var cutClip2 : AudioClip;
+private var overlap : float = 0.2f;
+private var len1 : int = 0;
+private var len2 : int = 0;
+
+function Start ()
+{
+	var child : GameObject;
+	child = new GameObject("Player1"); child.transform.parent = gameObject.transform; audio1 = child.AddComponent("AudioSource");
+	child = new GameObject("Player2"); child.transform.parent = gameObject.transform; audio2 = child.AddComponent("AudioSource");
+	var overlapSamples : int;
+	if(sourceClip != null)
+	{
+		len1 = sourceClip.samples / 2;
+		len2 = sourceClip.samples - len1;
+		overlapSamples = overlap * sourceClip.frequency;
+		cutClip1 = AudioClip.Create ("cut1", len1 + overlapSamples, sourceClip.channels, sourceClip.frequency, false, false);
+		cutClip2 = AudioClip.Create ("cut2", len2 + overlapSamples, sourceClip.channels, sourceClip.frequency, false, false);
+		var smp1 = new float [(len1 + overlapSamples) * sourceClip.channels];
+		var smp2 = new float [(len2 + overlapSamples) * sourceClip.channels];
+		sourceClip.GetData(smp1, 0);
+		sourceClip.GetData(smp2, len1 - overlapSamples);
+		cutClip1.SetData(smp1, 0);
+		cutClip2.SetData(smp2, 0);
+		//SavWav.Save("cut1.wav", cutClip1);
+		//SavWav.Save("cut2.wav", cutClip2);
+	}
+	else
+	{
+		overlapSamples = overlap * cutClip1.frequency;
+		len1 = cutClip1.samples - overlapSamples;
+		len2 = cutClip2.samples - overlapSamples;
+	}
+}
+
+function OnGUI()
+{
+	if (GUI.Button(new Rect(10, 50, 230, 40), "Trigger source"))
+		audio1.PlayOneShot(sourceClip);
+	if (GUI.Button(new Rect(10, 100, 230, 40), "Trigger cut 1"))
+		audio1.PlayOneShot(cutClip1);
+	if (GUI.Button(new Rect(10, 150, 230, 40), "Trigger cut 2"))
+		audio1.PlayOneShot(cutClip2);
+	if (GUI.Button(new Rect(10, 200, 230, 40), "Play stitched"))
+	{
+		audio1.clip = cutClip1;
+		audio2.clip = cutClip2;
+		var t0 = AudioSettings.dspTime + 3.0;
+		var clipTime1 : double = len1;
+		clipTime1 /= cutClip1.frequency;
+		audio1.PlayScheduled(t0);
+		audio1.SetScheduledEndTime(t0 + clipTime1);
+		Debug.Log("t0 = " + t0 + ", clipTime1 = " + clipTime1 + ", cutClip1.frequency = " + cutClip1.frequency);
+		Debug.Log("cutClip2.frequency = " + cutClip2.frequency + ", samplerate = " + AudioSettings.outputSampleRate);
+		audio2.PlayScheduled(t0 + clipTime1);
+		audio2.time = overlap;
+	}
+}
+END EX
+__Note:__ If possible create clips that overlap, and use the scheduled end time for the first, and AudioSource::ref::time for the second to trim out the overlapped part, as the example above shows.
+@param time Time in seconds.

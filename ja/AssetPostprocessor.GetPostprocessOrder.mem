@@ -1,0 +1,6 @@
+<signature>
+GetPostprocessOrder()
+</signature>
+Override the order in which importers are processed.
+By overriding GetImportOrder you can sort in which order postprocessors are executed.
+Smaller priorities will be imported first.

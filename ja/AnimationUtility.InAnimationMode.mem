@@ -1,0 +1,5 @@
+<signature>
+InAnimationMode()
+</signature>
+Returns true if the editor is currently in animation mode.
+SA: ::ref::StartAnimationMode, ::ref::StopAnimationMode.

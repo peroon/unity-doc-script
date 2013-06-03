@@ -1,0 +1,4 @@
+<signature>
+SetVector(string,Vector4)
+</signature>
+Set a vector parameter.

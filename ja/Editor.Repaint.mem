@@ -1,0 +1,5 @@
+<signature>
+Repaint()
+</signature>
+Repaint any inspectors that shows this editor.
+Useful when you want to make sure the inspector updates to show changes made in OnSceneGUI.

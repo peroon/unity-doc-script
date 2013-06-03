@@ -1,0 +1,5 @@
+<signature>
+AssetPathToGUID(string)
+</signature>
+Get the GUID for the asset at /path/.
+All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png".

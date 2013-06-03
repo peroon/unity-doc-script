@@ -1,0 +1,5 @@
+<signature>
+SetLookAtPosition(Vector3)
+</signature>
+Sets the look at position.
+@param lookAtPosition The position to lookAt.

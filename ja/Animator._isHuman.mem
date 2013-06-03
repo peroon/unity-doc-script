@@ -1,0 +1,4 @@
+<signature>
+isHuman
+</signature>
+Returns true if the current rig is ''humanoid'', false if it is ''generic''.

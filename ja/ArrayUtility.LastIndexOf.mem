@@ -1,0 +1,5 @@
+<signature>
+LastIndexOf<T>(T[],T)
+</signature>
+Index of the last element with value ''value''.
+@return The zero-based index of the element, if found; otherwise -1.

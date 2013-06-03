@@ -1,0 +1,6 @@
+Tells a custom [[PropertyDrawer]] which run-time [[Serializable]] class or [[PropertyAttribute]] it's a drawer for.
+When you make a custom [[PropertyDrawer]], you need put this attribute on the drawer class.
+If the drawer is for a [[Serializable]] class, then pass the type of the class to the CustomPropertyDrawer attribute.
+If the drawer is for a [[PropertyAttribute]], then pass the type of the PropertyAttribute to the CustomPropertyDrawer attribute.
+
+SA: [[PropertyDrawer]] class.

@@ -1,0 +1,5 @@
+<signature>
+GetAtPath(string)
+</signature>
+Retrieves the asset importer for the asset at /path/.
+SA: [[ModelImporter]], [[TextureImporter]], [[AudioImporter]].

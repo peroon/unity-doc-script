@@ -1,0 +1,5 @@
+<signature>
+targetRotation
+</signature>
+Returns the rotation of the target specified by SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)).
+The rotation is only valid when a frame has being evaluated after the ::ref::SetTarget call.

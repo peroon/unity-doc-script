@@ -1,0 +1,4 @@
+<signature>
+ClearDeveloperConsole()
+</signature>
+Clears errors from the developer console.

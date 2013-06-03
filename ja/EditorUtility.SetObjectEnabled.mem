@@ -1,0 +1,4 @@
+<signature>
+SetObjectEnabled(Object,bool)
+</signature>
+Set the enabled state of the object.

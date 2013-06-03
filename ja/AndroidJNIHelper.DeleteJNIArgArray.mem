@@ -1,0 +1,6 @@
+<signature>
+DeleteJNIArgArray(object[],jvalue[])
+</signature>
+Deletes any local jni references previously allocated by CreateJNIArgArray().
+@param args The array of arguments used as a parameter to CreateJNIArgArray().
+@param jniArgs The array returned by CreateJNIArgArray().

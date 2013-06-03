@@ -1,0 +1,4 @@
+<signature>
+gravityWeight
+</signature>
+The current gravity weight based on current animations that are played.

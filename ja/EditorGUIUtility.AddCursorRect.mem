@@ -1,0 +1,15 @@
+<signature>
+AddCursorRect(Rect,MouseCursor)
+AddCursorRect(Rect,MouseCursor,int)
+</signature>
+Add a custom mouse pointer to a control.
+BEGIN EX
+	function OnGUI()
+	{
+		// show the "Link" cursor when the mouse is howering over this rectangle.
+		EditorGUIUtility.AddCursorRect (Rect(10,10,100,100), MouseCursor.Link);		
+	}
+END EX
+@param position The rectangle the control should be shown within.
+@param mouse The mouse cursor to use.
+@param controlID ID of a target control.

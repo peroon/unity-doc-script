@@ -1,0 +1,4 @@
+<signature>
+deltaRotation
+</signature>
+Gets the avatar delta rotation for the last evaluated frame.

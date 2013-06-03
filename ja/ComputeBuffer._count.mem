@@ -1,0 +1,4 @@
+<signature>
+count
+</signature>
+Number of elements in the buffer (RO).

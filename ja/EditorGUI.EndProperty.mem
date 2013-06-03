@@ -1,0 +1,5 @@
+<signature>
+EndProperty()
+</signature>
+Ends a Property wrapper started with ::ref::BeginProperty.
+SA: ::ref::BeginProperty.

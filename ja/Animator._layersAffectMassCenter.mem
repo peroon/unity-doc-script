@@ -1,0 +1,5 @@
+<signature>
+layersAffectMassCenter
+</signature>
+Internal.
+True if additional layers affect the center of mass.

@@ -1,0 +1,4 @@
+<signature>
+symlinkLibraries
+</signature>
+Symlink runtime libraries with an iOS Xcode project.

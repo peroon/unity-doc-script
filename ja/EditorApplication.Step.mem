@@ -1,0 +1,5 @@
+<signature>
+Step()
+</signature>
+Perform a single frame step.
+As if you pressed the Step button in the main toolbar.

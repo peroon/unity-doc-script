@@ -1,0 +1,2 @@
+Common GUIStyles used for EditorGUI controls. These are set up by calling EditorGUIUtility::ref::LookLikeInspector and EditorGUIUtility::ref::LookLikeControls.
+Use these styles to make GUI that looks native to Unity.

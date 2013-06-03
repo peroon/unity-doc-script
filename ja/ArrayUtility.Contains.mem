@@ -1,0 +1,5 @@
+<signature>
+Contains<T>(T[],T)
+</signature>
+Determines if the array contains the item.
+@return True if ''item'' is in ''array'', false otherwise.

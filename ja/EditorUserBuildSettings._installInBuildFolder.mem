@@ -1,0 +1,4 @@
+<signature>
+installInBuildFolder
+</signature>
+Place the built player in the build folder.

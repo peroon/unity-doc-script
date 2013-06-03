@@ -1,0 +1,7 @@
+<signature>
+OnPostprocessAudio(AudioClip)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Add this function in a subclass to get a notification when an audio clip has completed importing.

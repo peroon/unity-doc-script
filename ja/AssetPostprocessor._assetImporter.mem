@@ -1,0 +1,21 @@
+<signature>
+assetImporter
+</signature>
+Reference to the asset importer.
+BEGIN EX
+#pragma strict
+
+// Set the scale of all the imported models to  "globalScaleModifier" 
+// and dont generate materials for the imported objects
+    
+class CustomImportSettings extends AssetPostprocessor {
+	var globalScaleModifier : float = 0.0028f;
+	
+	function OnPreprocessModel() {
+		var importer : ModelImporter = assetImporter as ModelImporter;
+		importer.globalScale  = globalScaleModifier;
+		importer.importMaterials = false;
+
+	}
+}
+END EX

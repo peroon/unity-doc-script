@@ -1,0 +1,9 @@
+<signature>
+Divide(Color,float)
+</signature>
+Divides color /a/ by the float /b/. Each color component is scaled separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// white / 2 = gray
+	var grayColor : Color = Color.white / 2;
+END EX

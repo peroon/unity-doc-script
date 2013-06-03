@@ -1,0 +1,4 @@
+<signature>
+SaveAssets()
+</signature>
+Writes all unsaved asset changes to disk.

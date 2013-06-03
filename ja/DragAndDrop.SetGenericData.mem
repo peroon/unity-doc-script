@@ -1,0 +1,4 @@
+<signature>
+SetGenericData(string,object)
+</signature>
+Set data associated with current drag and drop operation.

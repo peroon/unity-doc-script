@@ -1,0 +1,5 @@
+<signature>
+deltaPosition
+</signature>
+Gets the avatar delta position for the last evaluated frame.
+@TODO: Delta position should be premultiplied by the avatar rotation...

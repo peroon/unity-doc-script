@@ -1,0 +1,6 @@
+<signature>
+StopRecording()
+</signature>
+Stops animator record mode.
+A call to ::ref::StopRecording will lock the recording buffer's contents in its current state. The data get saved for subsequent playback with ::ref::StartPlayback.
+SA: ::ref::StartRecording, ::ref::recordingStartTime, ::ref::recordingStopTime, ::ref::StartPlayback, ::ref::StopPlayback, ::ref::playbackTime.

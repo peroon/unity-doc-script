@@ -1,0 +1,33 @@
+<signature>
+MaskField(Rect,int,string[])
+MaskField(Rect,string,int,string[])
+MaskField(Rect,GUIContent,int,string[])
+MaskField(Rect,GUIContent,int,string[],GUIStyle)
+MaskField(Rect,string,int,string[],GUIStyle)
+MaskField(Rect,int,string[],GUIStyle)
+</signature>
+Make a field for masks.
+{img MaskField.png}\\
+''Simple window that shows the mask field.''
+BEGIN EX
+	class SimpleMaskUsage extends EditorWindow {
+		@MenuItem("Examples/Mask Field Usage")
+		static function Init() {
+			var window = GetWindow(SimpleMaskUsage);
+			window.Show();
+		}
+		
+		var flags : int = 0;
+		var options : String[] = ["CanJump", "CanShoot", "CanSwim"];
+		function OnGUI() {
+			flags = EditorGUI.MaskField (new Rect (0, 0, 300, 20), "Player Flags", flags, options, false);
+		}
+	}
+END EX
+@param position Rectangle on the screen to use for this control.
+@param label Label for the field.
+@param mask The current mask to display.
+@param displayedOption A string array containing the labels for each flag.
+@param style Optional [[GUIStyle]].
+@param displayedOptions A string array containing the labels for each flag.
+@return The value modified by the user.

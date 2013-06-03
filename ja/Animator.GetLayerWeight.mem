@@ -1,0 +1,5 @@
+<signature>
+GetLayerWeight(int)
+</signature>
+Gets the layer's current weight.
+@param layerIndex The layer's index.

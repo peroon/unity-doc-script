@@ -1,0 +1,6 @@
+<signature>
+GetNextAnimatorStateInfo(int)
+</signature>
+Gets the next State information on a specified AnimatorController layer.
+Only valid when during a transition.
+@param layerIndex The layer's index.

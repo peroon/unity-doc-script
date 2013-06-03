@@ -1,0 +1,3 @@
+Delegate called each time [[AudioClip]] reads data.
+SA: AudioClip::ref::Create.
+@param data Array of floats containing data read from the clip.

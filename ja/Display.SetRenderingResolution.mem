@@ -1,0 +1,6 @@
+<signature>
+SetRenderingResolution(int,int)
+</signature>
+Sets Rendering resolution for the display.
+@param w Rendering width.
+@param h Rendering height.

@@ -1,0 +1,9 @@
+<signature>
+Minus(Color,Color)
+</signature>
+Subtracts color /b/ from color /a/. Each component is subtracted separately.
+CONVERTEXAMPLE
+BEGIN EX
+	// magenta - blue = red
+	var redColor : Color = Color.magenta - Color.blue;
+END EX

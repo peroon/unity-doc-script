@@ -1,0 +1,7 @@
+<signature>
+SetFloats(string,float[])
+</signature>
+Set multiple consecutive float parameters at once.
+This function can be used to set float vector, float array or float vector array
+values. For example, float4 myArray[4] in the compute shader
+can be filled by passing 16 floats.

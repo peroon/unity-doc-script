@@ -1,0 +1,44 @@
+<signature>
+RectField(Rect,Rect)
+RectField(Rect,string,Rect)
+RectField(Rect,GUIContent,Rect)
+</signature>
+Make an X, Y, W & H field for entering a [[Rect]].
+{img EditorGUIRectField.png}\\
+''Rect field in an Editor Window.''
+BEGIN EX
+	// Find all the cameras in the scene and shows all their viewports togheter
+	
+	class EditorGUIRectField extends EditorWindow {
+		
+		var cameras : Camera[];
+		
+		@MenuItem("Examples/Editor GUI RectField usage")
+		static function Init() {
+			var window = GetWindow(EditorGUIRectField);
+			window.position = Rect(0,0,150,120);
+			window.Show();
+		}
+		
+		function OnGUI() {
+			if(GUI.Button(Rect(3,3,position.width-6,20),"Update list"))	
+				cameras = FindObjectsOfType(Camera);
+			
+			if(cameras)
+			for(var i = 0; i < cameras.Length; i++) {
+				cameras[i].rect = EditorGUI.RectField(
+						Rect(3,25+45*i,position.width - 6, 25),
+						cameras[i].name,
+						cameras[i].rect);
+			}
+		}
+	}
+END EX
+@param position Rectangle on the screen to use for the field.
+@param label Optional label to display above the field.
+@param value The value to edit.
+@return The value entered by the user.
+<signature>
+RectField(Rect,SerializedProperty,GUIContent)
+</signature>
+Make an X, Y, W & H for Rect using SerializedProperty (not public).

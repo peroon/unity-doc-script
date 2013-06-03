@@ -1,0 +1,4 @@
+<signature>
+SetBuildLocation(BuildTarget,string)
+</signature>
+Set a new location for the build.

@@ -1,0 +1,4 @@
+<signature>
+activeControlID
+</signature>
+Get or set ID of currently active drag and drop control.

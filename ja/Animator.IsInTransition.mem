@@ -1,0 +1,5 @@
+<signature>
+IsInTransition(int)
+</signature>
+Is the specified AnimatorController layer in a transition.
+@param layerIndex The layer's index.

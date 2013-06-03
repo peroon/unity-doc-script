@@ -1,0 +1,5 @@
+<signature>
+RepaintHierarchyWindow()
+</signature>
+Can be used to ensure repaint of the HierarchyWindow.
+SA: EditorApplication.HierarchyWindowItemCallback, EditorApplication.hierarchyWindowItemOnGUI.

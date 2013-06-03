@@ -1,0 +1,4 @@
+<signature>
+appendProject
+</signature>
+Append (rather than replace) the build of an iOS Xcode project.

@@ -1,0 +1,4 @@
+<signature>
+AddRange<T>(T[],T[])
+</signature>
+Appends items to the end of array.

@@ -1,0 +1,21 @@
+<signature>
+ctor(int,TextureFormat,bool)
+</signature>
+Create a new empty cubemap texture.
+The texture will be /size/ on each side and can be created with or without mipmaps.
+
+Usually you will want to set the colors of the texture after creating it, using
+::ref::SetPixel and ::ref::Apply functions.
+CONVERTEXAMPLE
+BEGIN EX
+var texture: Cubemap;
+
+function Start () {
+	// Create a new Cubemap texture.
+	texture = new Cubemap (128, TextureFormat.ARGB32, false);
+}
+END EX
+SA: ::ref::SetPixel, ::ref::Apply functions.
+@param size Width/height of a cube face in pixels.
+@param format Pixel data format to be used for the Cubemap.
+@param mipmap Should mipmaps be created?

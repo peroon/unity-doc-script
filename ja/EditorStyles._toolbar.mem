@@ -1,0 +1,6 @@
+<signature>
+toolbar
+</signature>
+Toolbar background from top of windows.
+The toolbar is used as a background for other toolbar elements
+SA: ::ref::toolbarButton, ::ref::toolbarPopup, ::ref::toolbarDropDown.
