@@ -1,0 +1,8 @@
+<signature>
+activeInHierarchy
+</signature>
+Is the GameObject active in the scene?
+This lets you know if a gameObject is active in the game. That is the case if its 
+[[GameObject.activeSelf]] property is enabled, as well as that of all it's parents.
+
+SA: [[GameObject.SetActive]], [[GameObject.activeSelf]].

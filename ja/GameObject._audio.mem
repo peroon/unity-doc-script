@@ -1,0 +1,9 @@
+<signature>
+audio
+</signature>
+The [[AudioSource]] attached to this GameObject (RO). (null if there is none attached).
+CONVERTEXAMPLE
+BEGIN EX
+	var other : GameObject; 
+	other.audio.Play();
+END EX

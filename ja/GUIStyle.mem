@@ -1,0 +1,2 @@
+Styling information for GUI elements.
+Most GUI functions accept an optional GUIStyle parameter to override the default style. This allows coloring, fonts and other details to be changed and switched for different states (eg, when the mouse is hovering over the control). Where a consistent look-and-feel is required over a whole GUI design, the GUISkin class is a useful way to collect a set of GUIStyle settings and apply them all at once.

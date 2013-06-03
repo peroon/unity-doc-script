@@ -1,0 +1,30 @@
+Gradient used for animating colors.
+SA: GradientColorKey, GradientAlphaKey.
+BEGIN EX
+function Start () {
+    var g : Gradient;
+    var gck : GradientColorKey[];
+    var gak : GradientAlphaKey[];
+
+    g = new Gradient();
+
+    // populate the color keys at time 0 and 1 second
+    gck = new GradientColorKey[2];
+    gck[0].color = Color.red;
+    gck[0].time = 0.0f;
+    gck[1].color = Color.blue;
+    gck[1].time = 1.0f;
+
+    // populate the alpha  keys at time 0 and 1 second
+    gak = new GradientAlphaKey[2];
+    gak[0].alpha = 1.0f;
+    gak[0].time = 0.0f;
+    gak[1].alpha = 0.0f;
+    gak[1].time = 1.0f;
+
+    g.SetKeys(gck, gak);
+    
+    // what's the color at time 0.25 seconds?
+    Debug.Log(g.Evaluate(0.25f));
+}
+END EX

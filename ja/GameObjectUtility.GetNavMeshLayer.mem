@@ -1,0 +1,4 @@
+<signature>
+GetNavMeshLayer(GameObject)
+</signature>
+Get the navmesh layer for the GameObject.

@@ -1,0 +1,4 @@
+<signature>
+GetNavMeshLayerNames()
+</signature>
+Get all the navmesh layer names.

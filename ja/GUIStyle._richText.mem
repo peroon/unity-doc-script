@@ -1,0 +1,10 @@
+<signature>
+richText
+</signature>
+Enable HTML-style tags for Text Formatting Markup.
+Supported tags are:
+&lt;color="htmlcolor"&gt;colored text&lt;/color&gt;, where "htmlcolor" is a html color string, like "#ff0000" or "red".
+&lt;b&gt;bold text&lt;/b&gt;
+&lt;i&gt;italic text&lt;/i&gt;
+&lt;size=20&gt;sized text&lt;/size&gt;
+These are only supported for fonts set to use dynamic font rendering, except for the 'color' tag.

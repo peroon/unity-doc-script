@@ -1,0 +1,8 @@
+<signature>
+ctor()
+</signature>
+Constructor for empty GUIStyle.
+<signature>
+ctor(GUIStyle)
+</signature>
+Constructs GUIStyle identical to given other GUIStyle.

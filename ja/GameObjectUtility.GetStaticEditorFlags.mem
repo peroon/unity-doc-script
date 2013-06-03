@@ -1,0 +1,4 @@
+<signature>
+GetStaticEditorFlags(GameObject)
+</signature>
+Gets the set StaticEditorFlags.

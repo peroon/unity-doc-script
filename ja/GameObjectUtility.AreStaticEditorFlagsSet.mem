@@ -1,0 +1,4 @@
+<signature>
+AreStaticEditorFlagsSet(GameObject,StaticEditorFlags)
+</signature>
+Returns true if the passed in StaticEditorFlags are set.

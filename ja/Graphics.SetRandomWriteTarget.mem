@@ -1,0 +1,10 @@
+<signature>
+SetRandomWriteTarget(int,RenderTexture)
+SetRandomWriteTarget(int,ComputeBuffer)
+</signature>
+Set random write target for DX11 pixel shaders.
+[[wiki:DirectX 11]] pixel shaders can write into arbitrary locations of some textures, called "unordered access views" in DX11. These "random write" targets are set similarly to how multiple render targets are set. You can either use a [[RenderTexture]] with /enableRandomWrite/ flag set, or a [[ComputeBuffer]] as target.
+
+The targets stay set until you manually clear them with ::ref::ClearRandomWriteTargets.
+
+SA: RenderTexture.enableRandomWrite, [[ComputeBuffer]], [[wiki:DirectX 11]].

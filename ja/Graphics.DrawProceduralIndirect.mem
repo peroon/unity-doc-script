@@ -1,0 +1,18 @@
+<signature>
+DrawProceduralIndirect(MeshTopology,ComputeBuffer)
+DrawProceduralIndirect(MeshTopology,ComputeBuffer,int)
+</signature>
+Draws a fully procedural geometry on the GPU.
+DrawProceduralIndirect does a draw call on the GPU, without any vertex or index buffers.
+The amount of geometry to draw is read from a [[ComputeBuffer]]. Typical use
+case is generating arbitrary amount of data from a [[ComputeShader]] and
+then rendering that, without requiring a readback to the CPU.
+
+This is only useful on DirectX 11 level hardware where shaders can read
+arbitrary data from [[ComputeBuffer]] buffers.
+
+Buffer with arguments, /bufferWithArgs/, has to have four integer numbers at given /argsOffset/ offset:
+vertex count per instance, instance count, start vertex location, start instance location.
+This very much maps to Direct3D11 DrawInstancedIndirect function.
+
+SA: Graphics.DrawProcedural, ComputeBuffer.CopyCount, SystemInfo.supportsComputeShaders.

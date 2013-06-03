@@ -1,0 +1,5 @@
+<signature>
+GetActivityIndicatorStyle()
+</signature>
+Gets the current activity indicator style.
+See [[iOSActivityIndicatorStyle]] and [[AndroidActivityIndicatorStyle]] for the set of style options available.

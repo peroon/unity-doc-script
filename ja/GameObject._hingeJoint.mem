@@ -1,0 +1,8 @@
+<signature>
+hingeJoint
+</signature>
+The [[HingeJoint]] attached to this GameObject (RO). (null if there is none attached).
+BEGIN EX
+	var other : GameObject; 
+	other.hingeJoint.spring.targetPosition = 70;
+END EX

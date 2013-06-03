@@ -1,0 +1,4 @@
+<signature>
+hasModalWindow
+</signature>
+A global property, which is true if a ModalWindow is being displayed, false otherwise.

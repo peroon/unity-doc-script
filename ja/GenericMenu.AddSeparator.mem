@@ -1,0 +1,5 @@
+<signature>
+AddSeparator(string)
+</signature>
+Add a seperator item to the menu.
+SA: GenericMenu.AddItem, GenericMenu.AddDisabledItem.

@@ -1,0 +1,5 @@
+<signature>
+DropDown(Rect)
+</signature>
+Show the menu at the given screen rect.
+SA: GenericMenu.ShowAsContext.

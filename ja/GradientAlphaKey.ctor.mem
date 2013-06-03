@@ -1,0 +1,6 @@
+<signature>
+ctor(float,float)
+</signature>
+Gradient alpha key.
+@param alpha Alpha of key (0 - 1).
+@param time Time of the key (0 - 1).

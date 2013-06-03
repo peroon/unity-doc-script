@@ -1,0 +1,4 @@
+<signature>
+GetItemCount()
+</signature>
+Get number of items in the menu.

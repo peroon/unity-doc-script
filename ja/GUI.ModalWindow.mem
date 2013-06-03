@@ -1,0 +1,19 @@
+<signature>
+ModalWindow(int,Rect,WindowFunction)
+ModalWindow(int,Rect,WindowFunction,string)
+ModalWindow(int,Rect,WindowFunction,Texture)
+ModalWindow(int,Rect,WindowFunction,GUIContent)
+ModalWindow(int,Rect,WindowFunction,string,GUIStyle)
+ModalWindow(int,Rect,WindowFunction,Texture,GUIStyle)
+ModalWindow(int,Rect,WindowFunction,GUIContent,GUIStyle)
+ModalWindow(int,Rect,WindowFunction,GUIContent,GUIStyle,GUISkin)
+</signature>
+Show a Modal Window.
+Similar to [[GUI.Window]], however the window will always be on top of all other GUI, and while displayed, is guaranteed to be sole recipient of all GUI input and events. While a ModalWindow is being displayed, other controls will not be processing input. Note that only one ModalWindow can be displayed at a time.
+@param id A unique id number.
+@param clientRect Position and size of the window.
+@param func A function which contains the immediate mode GUI code to draw the contents of your window.
+@param text Text to appear in the title-bar area of the window, if any.
+@param image An image to appear in the title bar of the window, if any.
+@param content GUIContent to appear in the title bar of the window, if any.
+@param style Style to apply to the window.

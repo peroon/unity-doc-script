@@ -1,0 +1,6 @@
+<signature>
+SetKeys(GradientColorKey[],GradientAlphaKey[])
+</signature>
+Setup Gradient with an array of color keys and alpha keys.
+@param colorKeys Color keys of the gradient (maximum 8 color keys).
+@param alphaKeys Alpha keys of the gradient (maximum 8 alpha keys).
