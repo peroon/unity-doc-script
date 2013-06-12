@@ -1,8 +1,9 @@
 <signature>
 GenerateSecondaryUVSet(Mesh)
 </signature>
-Will auto generate uv2 with default settings for provided mesh, and fill them in.
+メッシュのデフォルト設定でuv2を自動生成し、それをメッシュに割り当てる。
 <signature>
 GenerateSecondaryUVSet(Mesh,UnwrapParam)
 </signature>
-Will auto generate uv2 with provided settings for provided mesh, and fill them in.
+パラメータで与えられた設定でuv2を自動生成し、それをメッシュに割り当てる。
+
