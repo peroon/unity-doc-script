@@ -4,7 +4,7 @@ ctor(Vector3,Vector3)
 原点から方向ベクトルの方角に進むレイを作成する。
 CONVERTEXAMPLE
 BEGIN EX
-	// トランスフォームの位置からトランスフォームのローカルZ軸方向へのレイを作成する
+	// トランスフォームの位置からトランスフォームのローカルZ軸方向に進むレイを作成する
 
 	var ray = new Ray (transform.position, transform.forward);
 END EX
