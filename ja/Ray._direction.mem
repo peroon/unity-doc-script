@@ -1,6 +1,5 @@
 <signature>
 direction
 </signature>
-レイの方向。
-Direction is always a normalized vector. If you assign a vector of non unit length, it will
-be normalized.
+レイの方向ベクトル。
+方向ベクトルは常に正規化されています。 もし非単位ベクトルを割り当てた場合でも必ず正規化されます。

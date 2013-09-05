@@ -1,9 +1,9 @@
 <signature>
 GetPoint(float)
 </signature>
-設定した距離分、進んだポイントを返す。
+レイの位置から設定した距離だけ進んだ点の座標を返す。
 CONVERTEXAMPLE
 BEGIN EX
 	var r : Ray;
-	print( r.GetPoint (10) ); // a point 10 units along the ray
+	print( r.GetPoint (10) ); // レイの位置から10進んだ点
 END EX

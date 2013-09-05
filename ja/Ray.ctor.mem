@@ -1,10 +1,10 @@
 <signature>
 ctor(Vector3,Vector3)
 </signature>
-Creates a ray starting at /origin/ along /direction/.
+原点から方向ベクトルの方角に進むレイを作成する。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a ray from the transform position along the transform's z-axis
+	// トランスフォームの位置からトランスフォームのローカルZ軸方向に進むレイを作成する
 
 	var ray = new Ray (transform.position, transform.forward);
 END EX
