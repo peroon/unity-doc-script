@@ -1,7 +1,8 @@
 <signature>
 Raycast(Vector3,Vector3,float,int)
 </signature>
-シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得する
+シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得
+する
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
@@ -19,7 +20,8 @@ structures, before a Raycast will hit the collider at it's new position.
 @param origin The starting point of the ray in world coordinates.
 @param direction 方向
 @param distance 距離
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
+きる
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Vector3,Vector3,RaycastHit,float,int)
@@ -49,7 +51,8 @@ END EX
 @param direction 方向
 @param distance 距離
 @param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
+きる
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Ray,float,int)
@@ -63,8 +66,9 @@ BEGIN EX
 	}
 END EX
 @param ray 使用するレイを設定する
-@param distance 方向
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@param distance 距離
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
+きる
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Ray,RaycastHit,float,int)
@@ -79,7 +83,8 @@ BEGIN EX
 	}
 END EX
 @param ray 使用するレイを設定する
-@param distance 方向
+@param distance 距離
 @param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもできる
+@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
+きる
 @return True when the ray intersects any collider, otherwise false.
