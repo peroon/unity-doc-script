@@ -1,7 +1,7 @@
 <signature>
 ctor(string)
 </signature>
-The script will be placed in the component menu according to /menuName/.
-For example, if the /menuName/ is "Rendering/DoSomething" the new menu will be called DoSomething and appear as a child of the /Rendering/ group in the /Components/ menu.
-If /menuName/ is "" the component will be hidden from the menu.
-@param menuName /menuName/ is the path to the component.
+スクリプトは /menuName/ によるコンポーネントメニューに配置されます。
+例えば、もし/menuName/ が "Rendering/DoSomething" である場合、新しいメニューは DoSomething と名づけられ、/Components/ メニューの /Rendering/ グループの子として表示されます。
+もし /menuName/ が "" である場合、コンポーネントはメニューから隠されます。
+@param menuName /menuName/ がコンポーネントに対するパスとなります。
