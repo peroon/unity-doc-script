@@ -2,15 +2,14 @@
 UnEscapeURL(string)
 UnEscapeURL(string,Encoding)
 </signature>
-Converts URL-friendly escape sequences back to normal text.
-Certain text characters have special meanings when present in URLs. If you need to include those characters in URL parameters then you must represent them with escape sequences. This function takes a string containing these escape sequences and converts them back to normal text.
-CONVERTEXAMPLE
+エスケープシークエンス（特殊文字）を変換し、ユーザーが使いやすいのテキストを返します。
+特定の文字はURLにとって特殊ない見を持っています。もしこれらのURLパラメータをやりとりする必要がある場合、それらをエスケープシーケンスへ変換する必要があります。この関数はエスケープシーケンスを含む文字列を受取、通常のテキストに戻して変換します。
 BEGIN EX
 function Start () {
-	// Plain name is "Fish & Chips".
+	// 本来の文字列は"Fish & Chips"です。
 	var plainName = WWW.UnEscapeURL('Fish+%26+Chips');
 }
 END EX
 SA: EscapeURL.
-@param s A string containing escaped characters.
-@param e The text encoding to use.
+@param s エスケープされた文字を含む文字列
+@param e 使用するテキストエンコーディング
