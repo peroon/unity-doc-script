@@ -1,6 +1,6 @@
 <signature>
 DeleteJNIArgArray(object[],jvalue[])
 </signature>
-Deletes any local jni references previously allocated by CreateJNIArgArray().
-@param args The array of arguments used as a parameter to CreateJNIArgArray().
-@param jniArgs The array returned by CreateJNIArgArray().
+CreateJNIArgArray()による任意のローカルJNI参照の割り当てを削除します。
+@param args CreateJNIArgArray()に使用した引数の配列。
+@param jniArgs CreateJNIArgArray()で返された配列。
