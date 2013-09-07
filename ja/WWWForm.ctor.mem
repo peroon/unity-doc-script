@@ -1,7 +1,7 @@
 <signature>
 ctor()
 </signature>
-Creates an empty WWWForm object.
-Use the ::ref::AddField and ::ref::AddBinaryData methods to insert data into the form.
+空の WWWForm オブジェクトを作成します。
+使用するには ::ref::AddField と ::ref::AddBinaryData でフォームにデータを挿入します。
 
 SA: [[WWW]] class.
