@@ -1,23 +1,23 @@
 <signature>
 textureNonReadable
 </signature>
-Returns a non-readable [[Texture2D]] generated from the downloaded data (RO).
-Same as ::ref::texture, but marks texture as non-readable, effectively freeing system memory.
+ダウンロードしたデータから読書が不可な [[Texture2D]] を生成します (読み取り専用).
+これは ::ref::texture と同様ですが、読書不可なテクスチャであるため、システムメモリを効率的に開放します.
 
 SA TextureImporter.isReadable.
 CONVERTEXAMPLE
 BEGIN EX
-	// Get the latest webcam shot from outside "Friday's" in Times Square
+	// 最新の webcam shot を取得する
 
 	var url = "http://images.earthcam.com/ec_metros/ourcams/fridays.jpg";
 	function Start () {
-		 // Start a download of the given URL
+		 // 対象のURLからファイルをダウンロードする
 		var www : WWW = new WWW (url);
 
-		// Wait for download to complete
+		// ダウンロードが完了するのを待つ
 		yield www;
 
-		// assign texture
+		// テクスチャを登録する
 		renderer.material.mainTexture = www.textureNonReadable;
 	}
 END EX
