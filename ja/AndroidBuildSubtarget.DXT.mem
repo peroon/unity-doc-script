@@ -1,2 +1,2 @@
-S3 texture compression, nonspecific to DXT variant. Supported on devices running Nvidia Tegra2 platform, including Motorala Xoom, Motorola Atrix, Droid Bionic, and others.
-SA: EditorUserBuildSettings.androidBuildSubtarget.
+S3 テクスチャ圧縮、DXT 変形に特有でない。NVIDIA Tegra2 プラットフォームが動作するデバイスでサポートされ、 Motorala Xoom、Motorola Atrix、Droid Bionic等のデバイスで動作します。
+SA: EditorUserBuildSettings.androidBuildSubtarget
