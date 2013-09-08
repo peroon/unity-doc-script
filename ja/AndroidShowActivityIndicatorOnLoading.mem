@@ -1,2 +1,2 @@
-Application should show ActivityIndicator when loading.
-SA: PlayerSettings.Android.showActivityIndicatorOnLoading.
+アプリケーションはロード時に ActivityIndicator を表示します。
+SA: PlayerSettings.Android.showActivityIndicatorOnLoading
