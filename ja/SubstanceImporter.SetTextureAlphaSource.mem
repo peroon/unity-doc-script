@@ -1,4 +1,4 @@
 <signature>
 SetTextureAlphaSource(ProceduralMaterial,string,ProceduralOutputType)
 </signature>
-Set the alpha source of the given texture in the Procedural Material.
+ProceduralMaterial内で使用されているテクスチャのアルファの出力タイプの設定を行います

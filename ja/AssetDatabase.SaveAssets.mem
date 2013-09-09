@@ -1,4 +1,4 @@
 <signature>
 SaveAssets()
 </signature>
-Writes all unsaved asset changes to disk.
+変更されたアセットの保存を行います

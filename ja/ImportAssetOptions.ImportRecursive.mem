@@ -1,2 +1,2 @@
-When a folder is imported, import all its contents as well.
+フォルダがインポートされた時にフォルダに含まれている全てのアセットにインポート処理を施します
 SA: AssetDatabase.ImportAsset, AssetDatabase.Refresh.

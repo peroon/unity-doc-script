@@ -1,2 +1,3 @@
-Quality of Texture Compression in the range [0..100].
+テクスチャの圧縮率を返します
+範囲は0から100です
 SA: [[TextureCompressionQuality]].

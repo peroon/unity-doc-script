@@ -6,14 +6,14 @@ FloatField(string,float,GUIStyle,GUILayoutOption[])
 FloatField(GUIContent,float,GUILayoutOption[])
 FloatField(GUIContent,float,GUIStyle,GUILayoutOption[])
 </signature>
-Make a text field for entering float values.
 {img EditorGUILayoutFloatField.png}\\
-''Multiply the scale of the selected GameObject.''
+Float型の値を操作するフィールドを作成します
+数値を直接キーボードで打ちこむだけでなく、ラベル部分をマウスでドラッグすると数値を変動させることが可能です
 BEGIN EX
 	// Editor Script that multiplies the scale of the current selected GameObject 
-	
+
 	class EditorGUILayoutFloatField extends EditorWindow {
-	
+
 		var sizeMultiplier : float = 1;
 		
 		@MenuItem("Examples/Scale selected Object")
@@ -30,10 +30,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label to display in front of the float field.
-@param value The value to edit.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value Float型の値
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The value entered by the user.

@@ -1,5 +1,5 @@
 <signature>
 isInstantiatedPrefab
 </signature>
-Is property part of a prefab instance? (RO)
+プレハブインスタンスでのプロパティの一部かどうかを確認します
 SA: ::ref::prefabOverride.

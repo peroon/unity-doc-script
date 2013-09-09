@@ -1,4 +1,6 @@
 <signature>
 showVisibilityLines
 </signature>
-If set to true, visualization of portals is enabled.
+可視化されるOcclusionPortalボリュームを表示するかどうか
+
+

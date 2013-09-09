@@ -1,4 +1,6 @@
 <signature>
 cycleOffset
 </signature>
-Offset to the cycle of a looping animation, if a different time in it is desired to be the start.
+アニメーションの開始位置のオフセット
+ループを行うときに通常の開始位置を変更したいときに使用されます
+

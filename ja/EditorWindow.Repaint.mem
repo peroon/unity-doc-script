@@ -1,15 +1,17 @@
 <signature>
 Repaint()
 </signature>
-Make the window repaint.
 {img RandomizeInSelection.png}\\
-''Randomize the rotation of the Selected Objects.''
+EditorWindowを再描画します
+ウィンドウにフォーカスが当たっていて、イベントが発行されている場合、自動で再描画処理が走ります
+ですがフォーカスがあたっておらずイベントが発行されない場合は自動で更新されないのでRepaintを呼び出して更新を行う必要があります
+また、OnInspectorUpdateにRepaintを記述することで、常に最新の描画を行うことが出来ます。
 BEGIN EX
 	// Simple script that randomizes the rotation of the Selected GameObjects
 	// and lets you see which objects are currently selected
-	
+
 	class RandomizeInSelection extends EditorWindow {
-	
+
 		var rotationAmount = 0.33;
 		var selected = "";    
 		function RandomizeSelected() {

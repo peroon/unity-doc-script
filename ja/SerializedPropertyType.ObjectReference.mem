@@ -1,2 +1,3 @@
-Reference to another object.
+オブジェクト参照型
+対応していない場合でもこのタイプになります
 SA: [[SerializedProperty]], SerializedProperty.objectReferenceValue.

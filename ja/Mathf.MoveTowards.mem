@@ -3,12 +3,13 @@ MoveTowards(float,float,float)
 </signature>
 current 引数からtarget 引数まで、maxDelta 引数のスピードで移動します。
 This is essentially the same as Mathf.Lerp but instead the function will ensure that the speed never exceeds /maxDelta/.
-target 引数の間でしか移動はしませんが、負の方向であればどこまでも移動します。
+target 引数
+の間でしか移動はしませんが、負の方向であればどこまでも移動します。
 CONVERTEXAMPLE
 BEGIN EX
 	var target = 20.0;
 	var speed = 5.0;
-	
+
 	function Update() {
 		transform.position = Vector3(Mathf.MoveTowards
 			(transform.position.x, target, speed * Time.deltaTime), 0, 0);

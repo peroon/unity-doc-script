@@ -1,11 +1,8 @@
 <signature>
 FocusProjectWindow()
 </signature>
-Brings the project window to the front and focuses it.
-This is commonly called after a menu item that creates and selects an asset is invoked.
-
-{img EditorUtilityFocusProjectWindow.png}\\
-''Changes the color of the selected GameObjects.''
+プロジェクトウィンドウにフォーカスを当てます
+一般的な使い方は、オブジェクトのパラメータを操作した後にフォーカスを戻すときに使用されます
 BEGIN EX
 	// Change The color of the selected Game Objects
 	// and focus the project window after clicking on the

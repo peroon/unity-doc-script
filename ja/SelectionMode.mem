@@ -1,2 +1,1 @@
-SelectionMode can be used to tweak the selection returned by Selection.GetTransforms.
-The default transform selection mode is: SelectionMode.TopLevel | SelectionMode.ExcludePrefab | SelectionMode.Editable.
+Selection.GetTransformsによって選択されたものを微調整するために使用されます

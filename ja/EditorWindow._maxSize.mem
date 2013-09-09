@@ -1,4 +1,5 @@
 <signature>
 maxSize
 </signature>
-The maximum size of this window.
+EditorWindowの最大サイズを設定します
+

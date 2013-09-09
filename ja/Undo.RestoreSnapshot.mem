@@ -1,5 +1,5 @@
 <signature>
 RestoreSnapshot()
 </signature>
-Restore the snapshot state made with ::ref::CreateSnapshot.
-This can be used if a change in progress should be canceled; for example if the user presses Escape while dragging something.
+CreateSnapshotで保存された状態を復元します
+主に、キャンセル処理が行われた時に使用されます

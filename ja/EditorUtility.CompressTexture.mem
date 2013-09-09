@@ -2,11 +2,9 @@
 CompressTexture(Texture2D,TextureFormat,int)
 CompressTexture(Texture2D,TextureFormat,TextureCompressionQuality)
 </signature>
-Compress a texture.
-Use this function to explicitly compress a texture into specified format.
-
-If you want to do texture compression in-game, use Texture2D.Compress function, which
-will use faster but lower quality DXT compression.
+テクスチャを圧縮します
+指定するフォーマットへ圧縮する場合に使用します
+Texture2D.CompressはDTX圧縮のみで品質は落ちますが、高速で処理されるので用途に合わせて使い分けるようにしてください
 BEGIN EX
 	// Automatically Compress all imported textures to the project
 	// to RGB24

@@ -1,4 +1,6 @@
 <signature>
 lockRootPositionXZ
 </signature>
-Enable to make horizontal root motion be baked into the movement of the bones. Disable to make horizontal root motion be stored as root motion.
+trueの場合、ベイクされているにボーンの動きに合わせてX軸とZ軸を変更します
+falseの場合はアニメーションに保存されている情報を使用してX軸とZ軸を変更します
+

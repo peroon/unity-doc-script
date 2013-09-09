@@ -1,7 +1,5 @@
 <signature>
 GetIconSize()
 </signature>
-Get the size that has been set using ::ref::SetIconSize.
-The default size is Vector2.zero where the size is determined by the available space.
-
+SetIconSize で設定したアイコンのサイズを取得します
 SA: ::ref::SetIconSize.

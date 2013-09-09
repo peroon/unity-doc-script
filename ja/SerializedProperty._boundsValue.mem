@@ -1,5 +1,5 @@
 <signature>
 boundsValue
 </signature>
-Value of bounds property.
+Bounds型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Bounds, [[Bounds]].

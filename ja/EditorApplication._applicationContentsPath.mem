@@ -1,7 +1,5 @@
 <signature>
 applicationContentsPath
 </signature>
-Path to the Unity editor contents folder. (RO)
-The contents folder contains several items internally required by the editor for building players.
-
+現在起動しているUnityEditorのContentsフォルダのパスを取得します
 SA: ::ref::applicationPath.

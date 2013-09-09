@@ -1,2 +1,1 @@
-Draw the gizmo if it is selected.
-It is recommended to always use GizmoType.SelectedOrChild instead.
+オブジェクトが選択状態の時に描画します

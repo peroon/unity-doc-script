@@ -1,5 +1,6 @@
 <signature>
 EndProperty()
 </signature>
-Ends a Property wrapper started with ::ref::BeginProperty.
+SerializedPropertyをGUIで管理しやすくするようにするためのGUIグループを作成します
+GUIグループはBeginPropertyと EndPropertyに囲まれた範囲になります
 SA: ::ref::BeginProperty.

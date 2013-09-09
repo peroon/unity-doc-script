@@ -1,4 +1,4 @@
 <signature>
 GetAnimatableProperties(GameObject)
 </signature>
-Retrieves all animatable properties of all components / materials attached to the game object.
+ゲームオブジェクトにアタッチされている全てのコンポーネント/マテリアルからAnimationClipCurveDataを取得します

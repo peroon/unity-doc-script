@@ -1,2 +1,2 @@
-Anisotropic filtering level of the texture.
+テクスチャの異方性フィルタリングのレベルを返します
 SA: [[Texture.anisoLevel]], [[wiki:class-Texture2D|texture assets]].

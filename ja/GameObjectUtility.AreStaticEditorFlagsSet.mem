@@ -1,4 +1,5 @@
 <signature>
 AreStaticEditorFlagsSet(GameObject,StaticEditorFlags)
 </signature>
-Returns true if the passed in StaticEditorFlags are set.
+特定のStaticEditorFlagsが設定されているか確認を行います
+設定されている場合trueを返します

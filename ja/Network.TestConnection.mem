@@ -2,10 +2,13 @@
 TestConnection(bool)
 </signature>
 ネットワーク接続のテストを行います。
-プライベートIPアドレスのみであればプライベートIPアドレスで、パブリックIPアドレスがあればパブリックIPアドレスでテストを行います。
+プライベートIPアドレスのみであればプライベー
+トIPアドレスで、パブリックIPアドレスがあればパブリックIPアドレスでテストを行います。
 
 パブリックIPでのテストを行うときは、サーバーを起動させる必要があります。デフォルトで
-は、テストサーバーはローカルサーバーのIPアドレスとポートに接続しようとします。パブリックサーバーで行う場合は、ファイヤーウォールはほとんどのポートをブロックしているので、ポート開放を行う必要があります。
+は、テストサーバーはローカルサーバーのIPアドレスとポートに接続しようとします。パブ
+リックサーバーで行う場合は、ファイヤーウォールはほとんどのポートをブロックしているの
+で、ポート開放を行う必要があります。
 
 テストで行うことは、NATパンチスルー機能の確認です。NAT の種類は基本的に4 種類あ
 ります。(see[[ConnectionTesterStatus]]):
@@ -34,10 +37,10 @@ BEGIN EX
 	var probingPublicIP = false;
 	var serverPort = 9999;
 	var connectionTestResult = ConnectionTesterStatus.Undetermined;
-	
+
 	// Indicates if the useNat parameter be enabled when starting a server
 	var useNat = false;
-	
+
 	function OnGUI() {
 		GUILayout.Label("Current Status: " + testStatus);
 		GUILayout.Label("Test result : " + testMessage);
@@ -45,7 +48,7 @@ BEGIN EX
 		if (!doneTesting)
 			TestConnection();
 	}
-	
+
 	function TestConnection() {
 		// Start/Poll the connection test, report the results in a label and 
 		// react to the results accordingly
@@ -118,7 +121,7 @@ BEGIN EX
 				useNat = true;
 				doneTesting = true;
 				break;
-	
+
 			default: 
 				testMessage = "Error in test routine, got " + connectionTestResult;
 		}

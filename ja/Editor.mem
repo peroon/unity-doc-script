@@ -1,5 +1,4 @@
-Base class to derive custom Editors from. Use this to create your own custom inspectors and editors for your objects.
-Consider a script MyPlayer with variables for armor, damage, and a reference to a gun GameObject:
+インスペクターの拡張を行う基本クラスです
 BEGIN EX
 // MyPlayer.js
 // This is not an editor script.

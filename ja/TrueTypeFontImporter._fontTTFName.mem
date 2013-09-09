@@ -1,4 +1,5 @@
 <signature>
 fontTTFName
 </signature>
-The internal font name of the TTF file.
+TTFファイルの内部フォント名を返します
+

@@ -1,4 +1,4 @@
 <signature>
 GetAnimationEvents(AnimationClip)
 </signature>
-Retrieves all animation events associated with the animation clip.
+AnimationClipに関連付けられた全てのAnimationEventを取得します

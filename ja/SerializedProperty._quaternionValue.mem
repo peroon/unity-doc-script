@@ -1,5 +1,5 @@
 <signature>
 quaternionValue
 </signature>
-Value of a quaternion property.
+Quaternion型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Quaternion, [[Quaternion]].

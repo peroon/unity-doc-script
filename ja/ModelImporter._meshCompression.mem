@@ -1,8 +1,8 @@
 <signature>
 meshCompression
 </signature>
-Mesh compression setting.
-Compressing meshes saves space in the built game, but more compression
-introduces more artifacts in vertex data.
-
+メッシュの圧縮を行います
+ModelImporterMeshCompression.Highに近づくほど圧縮率は上がり、メモリの削減につながります
+ですが、圧縮は頂点数の削減になっているのでモデルデータの見た目の問題が出てくるので、用途に合わせ設定を行うようにしてください
+デフォルトではModelImporterMeshCompression.Offになっており圧縮は行われません
 SA: [[ModelImporterMeshCompression]].

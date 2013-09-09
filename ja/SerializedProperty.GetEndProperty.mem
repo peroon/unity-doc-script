@@ -2,6 +2,5 @@
 GetEndProperty()
 GetEndProperty(bool)
 </signature>
-Retrieves the SerializedProperty that defines the end range of this property.
-It's the first property that's not a child or grandchild of this property.
-The end property can be used to iterate over all children of a property by using ::ref::EqualContents.
+現在選択しているプロパティを、最後のプロパティと定義して新たにSerializedPropartyを取得します
+取得するSerializedPropartyは、定義されたプロパティの次のプロパティを最初として扱い、残りの子となっているプロパティを取得することが出来ます

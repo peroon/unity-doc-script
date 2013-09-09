@@ -1,9 +1,9 @@
 <signature>
 PrefixLabel(Rect,int,GUIContent)
 </signature>
-Make a label in front of some control.
 {img EditorGUIPrefixLabel.png}\\
-''Prefix Label in an Editor Window.''
+各フィールドの前にラベルを表示するために使用されます
+フィールドが表示されるべき位置のRect情報を返します
 BEGIN EX
 	// Inflates a mesh
 	//
@@ -12,17 +12,17 @@ BEGIN EX
 	//
 	// Note: To control the ratio of inflation just change the increaseRatio 
 	// var in the "InflateMesh.js" sript
-	
+
 	class InflateMeshEditor extends EditorWindow {
-	
+
 		var object : MeshFilter;
-	
+
 		@MenuItem("Examples/Inflate Mesh")
 		static function Init() {
 			var window = GetWindow(InflateMeshEditor);
 			window.Show();
 		}
-	
+
 		function OnGUI() {
 			EditorGUI.PrefixLabel(Rect(3,3,position.width-6, 15),
 				0,
@@ -43,7 +43,7 @@ BEGIN EX
 			var mesh = object.sharedMesh;
 			var vertices = mesh.vertices;
 			var normals = mesh.normals;
-	
+
 			// Find identical vertices	
 			// this will hold an ID for each vertex, vertices at 
 			// the same position will share the same ID!
@@ -61,7 +61,7 @@ BEGIN EX
 	   						vertexIDs[j] = vertexIDs[i];
 				}
 			}
-	
+
 			finalNormals = normals;
 			calculated = 0.5;
 			// Calcualte average normals		
@@ -96,7 +96,7 @@ BEGIN EX
 		vertices = mesh.vertices;
 		normals = mesh.normals;
 	}
-	
+
 	function Update () {
 		for (var i = 0; i < vertices.length; i++) {
 			vertices[i] += fNormals[i]  * Time.deltaTime * increaseRatio;
@@ -104,7 +104,7 @@ BEGIN EX
 		mesh.vertices = vertices;
 	}
 END EX
-@param totalPosition Rectangle on the screen to use in total for both the label and the control.
-@param id The unique ID of the control.
-@param label Label to show in front of the control.
+@param totalPosition ラベルと各フィールドで使用するRect情報の合計値
+@param id コントロールID
+@param label 表示する文字列、テクスチャ、ツールチップ
 @return Rectangle on the screen to use just for the control itself.

@@ -1,4 +1,5 @@
 <signature>
 heightOffset
 </signature>
-Offset to the vertical root position.
+ルートの位置からの高さのオフセット
+

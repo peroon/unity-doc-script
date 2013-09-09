@@ -1,1 +1,2 @@
-Lets you do ''move'', ''copy'', ''delete'' operations over files or directories.
+ファイル操作を行う際のユーティリティクラスです
+移動、コピー、削除を行うことができます

@@ -1,5 +1,5 @@
 <signature>
 isRunning
 </signature>
-Used to check if asynchronous generation of static occlusion culling data is still running.
+ベイク中の場合、trueを返します
 SA: StaticOcclusionCulling.GenerateInBackground, StaticOcclusionCulling.Cancel.

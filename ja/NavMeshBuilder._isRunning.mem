@@ -1,4 +1,5 @@
 <signature>
 isRunning
 </signature>
-Returns true if an asynchronous build is still running.
+非同期でビルドされているかどうかを取得します
+

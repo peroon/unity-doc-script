@@ -1,5 +1,5 @@
 <signature>
 DropDown(Rect)
 </signature>
-Show the menu at the given screen rect.
+今まで追加されたメニューをRect範囲内でドロップダウンメニューとして表示します
 SA: GenericMenu.ShowAsContext.

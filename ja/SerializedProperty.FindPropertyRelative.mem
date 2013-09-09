@@ -1,4 +1,4 @@
 <signature>
 FindPropertyRelative(string)
 </signature>
-Retrieves the SerializedProperty at a relative path to the current property.
+現在のプロパティから相対パスでSerializedPropertyを取得します

@@ -1,8 +1,7 @@
 <signature>
 visualMode
 </signature>
-The visual indication of the drag.
-Default is DragAndDropVisualMode.Link.
+ドラッグの状態を視覚的に表示するアイコンの設定を行います
 BEGIN EX
 	function OnGUI ()
 	{

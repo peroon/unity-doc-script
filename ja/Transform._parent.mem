@@ -13,7 +13,7 @@ BEGIN EX
 
 	// place it behind the current object
 	cameraTransform.localPosition = -Vector3.forward * 5;
-	
+
 	// make it point towards the object
 	cameraTransform.LookAt(transform);
 END EX

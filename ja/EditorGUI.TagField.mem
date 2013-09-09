@@ -6,14 +6,15 @@ TagField(Rect,string,GUIStyle)
 TagField(Rect,string,string,GUIStyle)
 TagField(Rect,GUIContent,string,GUIStyle)
 </signature>
-Make a tag selection field.
 {img EditorGUITagField.png}\\
-''Tag field in an Editor window.''
+タグフィールドを作成します
+表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのTagsの値になります
+戻り値として選択したタグ名が返されます
 BEGIN EX
 	// Change the Tag and/or the layer of the selected GameObjects.
-	
+
 	class EditorGUITagLayerField extends EditorWindow {
-	
+
 		var selectedTag : String = "";
 		var selectedLayer : int = 0;
 		
@@ -23,7 +24,7 @@ BEGIN EX
 			window.position = Rect(0,0,350,70);
 			window.Show();
 		}
-	
+
 		function OnGUI() {
 			selectedTag = EditorGUI.TagField(
 				Rect(3,3,position.width/2 - 6, 20),
@@ -49,8 +50,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label in front of the field.
-@param tag The tag the field shows.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param tag 選択されたタグ名
+@param style スタイル
 @return The tag selected by the user.

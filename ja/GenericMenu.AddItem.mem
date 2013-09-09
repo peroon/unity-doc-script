@@ -1,10 +1,10 @@
 <signature>
 AddItem(GUIContent,bool,MenuFunction)
 </signature>
-Add an item to the menu.
+メニューにアイテムを追加します
 SA: GenericMenu.AddDisabledItem, GenericMenu.AddSeparator.
 <signature>
 AddItem(GUIContent,bool,MenuFunction2,object)
 </signature>
-Add an item to the menu.
+メニューにアイテムを追加します
 SA: GenericMenu.AddDisabledItem, GenericMenu.AddSeparator.

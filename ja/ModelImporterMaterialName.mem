@@ -1,2 +1,2 @@
-Material naming options for [[ModelImporter]].
+ModelImporter.materialNameで使用されるマテリアル名を決めるオプションを選択します
 SA: ModelImporter.materialName.

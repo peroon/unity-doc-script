@@ -1,4 +1,5 @@
 <signature>
 resolutionDialogBanner
 </signature>
-The image to display in the Resolution Dialog window.
+スタンドアロンの解像度設定ダイアログに表示させるイメージ画像を設定します
+

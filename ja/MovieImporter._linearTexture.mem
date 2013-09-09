@@ -1,2 +1,2 @@
-Is this a linear texture or an sRGB texture (Only used when performing linear rendering).
-The default value is sRGB.
+線形画像またはsRGB画像を設定します
+線形の場合はtrueにしてください

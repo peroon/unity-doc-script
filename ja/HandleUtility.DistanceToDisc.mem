@@ -1,10 +1,5 @@
 <signature>
 DistanceToDisc(Vector3,Vector3,float)
 </signature>
-Pixel distance from mouse pointer to a 3D disc.
-Calculates the screen space distance from the mouse pointer to the disc (circle) at given world
-space /position/ with the given /radius/ and /normal/.
-
-Uses the current camera to determine the distance.
-
+円状ラインとマウスポインターの距離(最短距離)をピクセル単位で返します
 SA: ::ref::DistanceToCircle.

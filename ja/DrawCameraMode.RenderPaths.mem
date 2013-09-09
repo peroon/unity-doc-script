@@ -1,1 +1,2 @@
-Draw color-coded render paths. Objects are colored Green for Deferred, Yellow for Forward and Red for VertexLit.
+色分けされたRenderPathを描画します
+Deferredは緑、Forwardは黄色、VertexLitは赤色になります

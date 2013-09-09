@@ -1,4 +1,5 @@
 <signature>
 renderingPath
 </signature>
-Which rendering path is enabled?
+カメラのレンダリングパスを設定します
+

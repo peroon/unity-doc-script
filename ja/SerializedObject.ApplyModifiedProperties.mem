@@ -1,4 +1,5 @@
 <signature>
 ApplyModifiedProperties()
 </signature>
-Apply property modifications.
+プロパティの変更を適用します
+適用された場合trueを返します

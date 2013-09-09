@@ -1,4 +1,5 @@
 <signature>
 NewScene()
 </signature>
-Create a new scene.
+新しくシーンを作成します
+強制的に新規シーンが作成されるため、必ず編集していたシーンを保存するようにしてください

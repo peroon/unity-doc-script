@@ -1,7 +1,8 @@
 <signature>
 OnGUI(Rect,SerializedProperty,GUIContent)
 </signature>
-Override this method to make your own GUI for the property.
-@param position Rectangle on the screen to use for the property GUI.
-@param property The SerializedProperty to make the custom GUI for.
-@param label The label of this property.
+実際のGUI描画をここで記述します
+この関数はオーバーライドして使用します
+@param position 描画する位置
+@param property 対象となるシリアライズ化されたプロパティ
+@param label 文字列、テクスチャ、ツールチップ

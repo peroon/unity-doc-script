@@ -1,5 +1,6 @@
 <signature>
 WriteImportSettingsIfDirty(string)
 </signature>
-Writes the import settings to disk.
-In order to make the cache server import assets.
+アセットのインポート設定をディスクに保存します
+キャッシュサーバーを使用している時、インポート設定はディスク保持されずキャッシュサーバーで共有が行われます
+その時にもインポート設定をディスクに保存したい場合に使用されます

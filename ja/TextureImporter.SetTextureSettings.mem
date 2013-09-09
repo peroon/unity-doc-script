@@ -1,5 +1,5 @@
 <signature>
 SetTextureSettings(TextureImporterSettings)
 </signature>
-Set texture importers settings from [[TextureImporterSettings]] class.
+TextureImporterSettingsからテクスチャインポーターの設定を行います
 SA: TextureImporterSettings.

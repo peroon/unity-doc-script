@@ -1,5 +1,6 @@
 <signature>
 UnlockReloadAssemblies()
 </signature>
-Must be called after LockReloadAssemblies, to reenable loading of assemblies.
+EditorApplication.LockReloadAssembliesでロックしたアセンブリロードを解除します
+必ずLockReloadAssembliesの最後に UnlockReloadAssembliesを呼び出す必要があります
 SA: EditorApplication.LockReloadAssemblies.

@@ -1,2 +1,2 @@
-3D vector property.
+Vector3型
 SA: [[SerializedProperty]], SerializedProperty.vector3Value, [[Vector3]].

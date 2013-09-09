@@ -1,2 +1,3 @@
-ARGB 32 bit texture format.
+RGBA 32ビットのテクスチャフォーマット
+
 SA: TextureImporter.textureFormat.

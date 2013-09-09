@@ -1,5 +1,6 @@
 <signature>
 aoMaxDistance
 </signature>
-Beyond this distance a ray is considered to be unoccluded.
-Can be used to avoid full occlusion in closed scenes.
+AOの最大距離を設定します
+完全なオクルージョンを防ぐために使用されます
+

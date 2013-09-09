@@ -1,10 +1,8 @@
 <signature>
 ReplaceFile(string,string)
 </signature>
-Replaces a file.
-Replaces the file located at __dst__ with the file located at __src__.
-if __dst__ doesnt exists it just copies the file. If __dst__ exists
-then it deletes it and copies the file at __src__ to __dst__
+ファイルを置換します
+置換先に指定したファイルがない場合はコピーされたものが置換先に生成されます
 SA: FileUtil.ReplaceDirectory.
 BEGIN EX
 	// creates a menu entry that replaces a file.

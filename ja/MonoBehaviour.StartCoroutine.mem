@@ -22,7 +22,7 @@ BEGIN EX
 		// - After 2 seconds, prints "WaitAndPrint 2.0"
 		print ("Starting " + Time.time);
 		// Start function WaitAndPrint as a coroutine. And continue execution while it is running
-	
+
 		// this is the same as WaitAndPrint(2.0) as the compiler does it for you automatically
 		StartCoroutine(WaitAndPrint(2.0)); 
 		print ("Before WaitAndPrint Finishes " + Time.time);
@@ -39,7 +39,7 @@ CONVERTEXAMPLE
 BEGIN EX
 	// In this example we show how to invoke a coroutine and wait until it 
 	// is completed
-	
+
 	function Start() {
 		// - After 0 seconds, prints "Starting 0.0"
 		// - After 2 seconds, prints "WaitAndPrint 2.0"

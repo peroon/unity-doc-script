@@ -1,4 +1,5 @@
 <signature>
 activeScriptCompilationDefines
 </signature>
-DEFINE directives for the compiler.
+現在のプラットフォームで定義されているディレクティブを文字列の配列で取得します
+UNITY_STANDALONE_OSXやUNITY4_2などUnity側が定義しているものに加え、自分で定義したものも取得することが可能です

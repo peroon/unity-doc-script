@@ -1,10 +1,7 @@
 <signature>
 timeSinceStartup
 </signature>
-The time since the editor was started. (RO)
-This property contains the time since the editor was started, in seconds. 
-Unlike Time.realtimeSinceStartup, this is not reset when starting play mode.
-
+UnityEditorが起動されてからの時間を取得します
 SA: Time.realtimeSinceStartup
 
 {img SimpleAutoSave.png}\\

@@ -1,11 +1,8 @@
 <signature>
 defaultIsFullScreen
 </signature>
-If enabled, the game will default to fullscreen mode.
-The __Windowed__ checkbox on the Resolution Dialog will be disabled by default when this setting is enabled.
-
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+trueの場合、起動時にフルスクリーンで表示されます
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

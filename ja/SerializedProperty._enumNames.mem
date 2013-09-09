@@ -1,5 +1,5 @@
 <signature>
 enumNames
 </signature>
-Names of enumeration of an enum property.
+enumの全ての定数名を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Enum, ::ref::enumValueIndex.

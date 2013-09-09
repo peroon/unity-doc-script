@@ -1,5 +1,5 @@
 <signature>
 isArray
 </signature>
-Is this property an array? (RO)
+配列かどうかを確認します
 SA: ::ref::arraySize.

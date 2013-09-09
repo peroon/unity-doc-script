@@ -1,4 +1,5 @@
 <signature>
 handleRotation
 </signature>
-The rotation of the tool handle in world space.
+ハンドルの角度を取得します
+

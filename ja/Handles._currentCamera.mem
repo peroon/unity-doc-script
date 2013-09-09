@@ -1,5 +1,6 @@
 <signature>
 currentCamera
 </signature>
-Setup viewport and stuff for a current camera.
-The camera used for deciding where 3D handles end up.
+シーンビューの最終的の描画を決定するカメラを返します
+通常はSceneCameraを返します
+

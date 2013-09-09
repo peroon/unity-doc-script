@@ -1,4 +1,4 @@
-Used to extract the context for a [[MenuItem]]. MenuCommand objects are passed to custom menu item functions defined using the [[MenuItem]] attribute.
+メニューを表示するターゲットとなる情報を格納しています
 BEGIN EX
 // Add context menu named "Something" to context menu
 @MenuItem ("CONTEXT/Rigidbody/Do Something")

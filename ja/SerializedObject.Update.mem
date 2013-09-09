@@ -1,4 +1,4 @@
 <signature>
 Update()
 </signature>
-Update serialized object's representation.
+シリアライズ化されたオブジェクトの更新をします

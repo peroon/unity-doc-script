@@ -2,4 +2,4 @@
 CreatePrefab(string,GameObject)
 CreatePrefab(string,GameObject,ReplacePrefabOptions)
 </signature>
-Creates a prefab from a game object hierarchy.
+HierarchyにあるGameObjectからPrefabを作成します

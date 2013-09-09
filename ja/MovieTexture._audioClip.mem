@@ -16,7 +16,6 @@ BEGIN EX
 		while (!movieTexture.isReadyToPlay)
 			yield;
 
-
 		// Initialize gui texture to be 1:1 resolution centered on screen
 		guiTexture.texture = movieTexture;
 

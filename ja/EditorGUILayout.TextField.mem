@@ -6,15 +6,12 @@ TextField(string,string,GUIStyle,GUILayoutOption[])
 TextField(GUIContent,string,GUILayoutOption[])
 TextField(GUIContent,string,GUIStyle,GUILayoutOption[])
 </signature>
-Make a text field.
-This works just like GUILayout.TextField, but correctly responds to select all, copy, paste etc. in the editor,
-and it can have an optional label in front.
-
 {img EditorGUILayoutTextField.png}\\
-''Changes the name of the selected GameObject.''
+テキストフィールドを作成します
+GUILayout.TextFieldとは少し違い、ラベルを表示することが出来ます
 BEGIN EX
 	// Automatically change the name of the selected object via a text field
-	
+
 	class EditorGUILayoutTextField extends EditorWindow {	
 		var objectName : String = "";
 		@MenuItem("Examples/GUILayout TextField")
@@ -31,10 +28,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label to display in front of the text field.
-@param text The text to edit.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param text 表示する文字列
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The text entered by the user.

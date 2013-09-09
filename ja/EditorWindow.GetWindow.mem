@@ -4,16 +4,16 @@ GetWindow(Type,bool)
 GetWindow(Type,bool,string)
 GetWindow(Type,bool,string,bool)
 </signature>
-Returns the first EditorWindow of type /t/ which is currently on the screen.
-If there is none, creates and shows new window and returns the instance of it.
-
 {img GetWindowEx.png}\\
-''Simple Empty non-dockable window.''
+EditorWindowのタイプを指定してウィンドウを取得または生成を行います
+ウィンドウが生成されていない場合は自動で生成が行われ、そのインスタンスを取得します
+インスタンスはキャッシュされており、この関数で呼び出される限り同じインスタンスを使用し、ウィンドウの重複を避ける事ができます
+内部でEditorWindow.Show相当の処理が呼び出されています
 BEGIN EX
 	// Simple script that creates a new non-dockable window
-	
+
 	import UnityEditor;
-	
+
 	class GetWindowEx extends EditorWindow {	
 		@MenuItem("Example/Display simple Window")
 		static function Initialize() {
@@ -21,9 +21,9 @@ BEGIN EX
 		}
 	}
 END EX
-@param t The type of the window. Must derive from EditorWindow.
-@param utility Set this to true, to create a floating utility window, false to create a normal window.
-@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
+@param t ウィンドウのタイプを指定します。EditorWindowを継承している必要があります
+@param utility trueで常に前面に表示されるようになります。EditorWindow.ShowUtilityと同じ動作になります
+@param title ウィンドウのタイトルを設定します。nullの場合クラス名を使用します
 <signature>
 GetWindow<T>()
 GetWindow<T>(bool)
@@ -32,19 +32,23 @@ GetWindow<T>(string)
 GetWindow<T>(string,bool)
 GetWindow<T>(bool,string,bool)
 </signature>
-Returns the first EditorWindow of type /T/ which is currently on the screen.
-If there is none, creates and shows new window and returns the instance of it.
+EditorWindowのタイプを指定してウィンドウを取得または生成を行います
+ウィンドウが生成されていない場合は自動で生成が行われ、そのインスタンスを取得します
+インスタンスはキャッシュされており、この関数で呼び出される限り同じインスタンスを使用し、ウィンドウの重複を避ける事ができます
+内部でEditorWindow.Show相当の処理が呼び出されています
 @param T The type of the window. Must derive from EditorWindow.
-@param utility Set this to true, to create a floating utility window, false to create a normal window.
-@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
+@param utility trueで常に前面に表示されるようになります。EditorWindow.ShowUtilityと同じ動作になります
+@param title ウィンドウのタイトルを設定します。nullの場合クラス名を使用します
 <signature>
 GetWindow<T>(Type[])
 GetWindow<T>(string,Type[])
 GetWindow<T>(string,bool,Type[])
 </signature>
-Returns the first EditorWindow of type /T/ which is currently on the screen.
-If there is none, creates and shows new window and returns the instance of it.
+EditorWindowのタイプを指定してウィンドウを取得または生成を行います
+ウィンドウが生成されていない場合は自動で生成が行われ、そのインスタンスを取得します
+インスタンスはキャッシュされており、この関数で呼び出される限り同じインスタンスを使用し、ウィンドウの重複を避ける事ができます
+内部でEditorWindow.Show相当の処理が呼び出されています
 The created window will attempt to be docked next to the first founds specified window type.
 @param T The type of the window. Must derive from EditorWindow.
-@param title If GetWindow creates a new window, it will get this title. If this value is null, use the class name as title.
-@param desiredDockNextTo An array of EditorWindow types that the window will attempt to dock onto.
+@param title ウィンドウのタイトルを設定します。nullの場合クラス名を使用します
+@param desiredDockNextTo 指定したタイプのウィンドウが存在する場合、ドッキングします。複数指定した場合は最初にヒットしたものになります

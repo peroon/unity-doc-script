@@ -6,9 +6,9 @@ MaskField(Rect,GUIContent,int,string[],GUIStyle)
 MaskField(Rect,string,int,string[],GUIStyle)
 MaskField(Rect,int,string[],GUIStyle)
 </signature>
-Make a field for masks.
 {img MaskField.png}\\
-''Simple window that shows the mask field.''
+マスクフィールドを作成します
+戻り値は選択されたマスクの合計値が返されます
 BEGIN EX
 	class SimpleMaskUsage extends EditorWindow {
 		@MenuItem("Examples/Mask Field Usage")
@@ -24,10 +24,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for this control.
-@param label Label for the field.
-@param mask The current mask to display.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param mask マスクの合計値
 @param displayedOption A string array containing the labels for each flag.
-@param style Optional [[GUIStyle]].
-@param displayedOptions A string array containing the labels for each flag.
+@param style スタイル
+@param displayedOptions ポップアップで表示される文字列
 @return The value modified by the user.

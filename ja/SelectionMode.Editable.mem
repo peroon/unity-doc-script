@@ -1,2 +1,1 @@
-Excludes any objects which shall not be modified.
-This will filter generated prefabs from an imported fbx file but not user created prefabs.
+変更されていないオブジェクトを除外したものを返します

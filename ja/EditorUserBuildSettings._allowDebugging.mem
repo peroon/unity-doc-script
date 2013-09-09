@@ -1,4 +1,6 @@
 <signature>
 allowDebugging
 </signature>
-Enable source-level debuggers to connect.
+デバッガーからUnityを起動する場合はtrueを設定します
+現在ではデバッガーはMonodevelopから起動することができます
+

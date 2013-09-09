@@ -1,9 +1,7 @@
 <signature>
 isPlaying
 </signature>
-Is editor currently in play mode?
-Setting isPlaying delays the result until after all script code has completed for this frame.
-
+ゲームビューが再生中の場合はtrueを返します
 SA: ::ref::isPaused, ::ref::isPlayingOrWillChangePlaymode.
 BEGIN EX
 	// Simple editor Script that lets you save a scene while in play mode.

@@ -1,9 +1,6 @@
 <signature>
 niceMouseDelta
 </signature>
-Get nice mouse delta to use for dragging a float value (RO).
-This will autodetect the users preference for X / Y axis dragging and give you back
-a float that is measured accordingly. This also handles modifier keys correctly, i.e.
-the delta is already multiplied by ::ref::acceleration.
-
+マウスでドラッグした時の移動量を取得します
+accelerationが乗算された値が返されます
 SA: ::ref::acceleration, ::ref::niceMouseDeltaZoom.

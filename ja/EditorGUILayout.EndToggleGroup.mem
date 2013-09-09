@@ -1,7 +1,7 @@
 <signature>
 EndToggleGroup()
 </signature>
-Close a group started with ::ref::BeginToggleGroup.
+BeginToggleGroupを使用した場合は必ずEndToggleGroup を使用する必要があります
 SA: ::ref::BeginToggleGroup
 
 {img Aligner.png}\\
@@ -10,32 +10,32 @@ BEGIN EX
 	// C# Example
 	// Simple script that lets you align GameObjects 
 	// position/rotation/scale wise with the selected active transform
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class Aligner : EditorWindow {
 		bool[] pos = new bool[3] { true, true, true };
 		bool[] rot = new bool[3] { true, true, true };
 		bool[] scale = new bool[3] { true, true, true };
-	
+
 		bool posGroupEnabled = true;
 		bool rotGroupEnabled = true;
 		bool scaleGroupEnabled = false;
-	
+
 		void OnGUI() {
 			posGroupEnabled = EditorGUILayout.BeginToggleGroup("Align position", posGroupEnabled);
 				pos[0] = EditorGUILayout.Toggle("x", pos[0]);
 				pos[1] = EditorGUILayout.Toggle("y", pos[1]);
 				pos[2] = EditorGUILayout.Toggle("z", pos[2]);
 			EditorGUILayout.EndToggleGroup();
-	
+
 			rotGroupEnabled = EditorGUILayout.BeginToggleGroup("Align rotation", rotGroupEnabled);
 				rot[0] = EditorGUILayout.Toggle("x", rot[0]);
 				rot[1] = EditorGUILayout.Toggle("y", rot[1]);
 				rot[2] = EditorGUILayout.Toggle("z", rot[2]);
 			EditorGUILayout.EndToggleGroup();
-	
+
 			scaleGroupEnabled = EditorGUILayout.BeginToggleGroup("Align scale", scaleGroupEnabled);
 				scale[0] = EditorGUILayout.Toggle("x", scale[0]);
 				scale[1] = EditorGUILayout.Toggle("y", scale[1]);
@@ -46,7 +46,7 @@ BEGIN EX
 			if (GUILayout.Button("Align!"))
 				Align();
 		}
-	
+
 		void Align() {
 			Transform[] transforms = Selection.transforms;
 			Transform activeTransform = Selection.activeTransform;
@@ -87,7 +87,7 @@ BEGIN EX
 				}
 			}
 		}
-	
+
 		[MenuItem("Examples/Position-Rotation-Scale Aligner")]
 		static void Init() {
 			Aligner window = (Aligner)EditorWindow.GetWindow(typeof(Aligner));

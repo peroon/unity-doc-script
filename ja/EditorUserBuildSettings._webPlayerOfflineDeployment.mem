@@ -1,4 +1,5 @@
 <signature>
 webPlayerOfflineDeployment
 </signature>
-Build the webplayer along with the UnityObject.js file (so it doesn't need to be downloaded).
+UnityObject2.jsなどを含めてオフラインでも作業を可能にします
+

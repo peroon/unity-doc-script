@@ -1,4 +1,6 @@
-Is this clip a 2D or 3D sound?
+3Dサウンドにしたい場合はtrue、2Dサウンドにしたい場合はfalseにします
+ゲーム空間で座標位置関係なく同じ大きさの音を鳴らしたい時は2Dサウンドにします
+デフォルトはtrueで3Dサウンドです
 BEGIN EX
 	// C#: Prints a warning if the imported audio is a 2D sound.
 	class Warning2D extends AssetPostprocessor {

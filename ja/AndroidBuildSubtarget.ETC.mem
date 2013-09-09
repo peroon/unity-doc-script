@@ -1,2 +1,2 @@
-ETC1 テクスチャ圧縮 (または RGBA16のアルファ付きテクスチャ), このテクスチャは全てのデバイスでサポートされています。
+ETC圧縮を行います
 SA: EditorUserBuildSettings.androidBuildSubtarget.

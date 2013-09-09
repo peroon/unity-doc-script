@@ -1,4 +1,5 @@
 <signature>
 captureSingleScreen
 </signature>
-Defines if fullscreen games should darken secondary displays.
+フルスクリーンの時にセカンダリディスプレイを暗くしたい場合、trueを設定します
+

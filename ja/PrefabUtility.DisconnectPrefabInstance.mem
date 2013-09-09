@@ -1,4 +1,5 @@
 <signature>
 DisconnectPrefabInstance(Object)
 </signature>
-Disconnects the prefab instance from its parent prefab.
+強制的にアセットのプレハブからリンクを切断します
+再度リンクを行うにはReconnectToLastPrefabを使用してください

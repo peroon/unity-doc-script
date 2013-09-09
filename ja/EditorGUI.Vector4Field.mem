@@ -1,18 +1,18 @@
 <signature>
 Vector4Field(Rect,string,Vector4)
 </signature>
-Make an X, Y, Z & W field for entering a [[Vector4]].
 {img EditorGUIVector4Field.png}\\
-''Vector4 field in an Editor Window.''
+Vector4型のフィールドを作成します
+X,Y,Z,Wのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
 	// Editor window that shows the detailed rotation (X,Y,Z and W components), 
 	// the position in 3D space and position in Screen space of the selected 
 	// transform.
-	
+
 	class CustomTransformInspector extends EditorWindow {
 		var showing : boolean = true;
 		var rotationComp : Vector4;
-	
+
 		@MenuItem("Examples/GameObject detailed inspector")
 		static function Init() {
 			var window = GetWindow(CustomTransformInspector);
@@ -58,7 +58,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Label to display above the field.
-@param value The value to edit.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value 現在値
 @return The value entered by the user.

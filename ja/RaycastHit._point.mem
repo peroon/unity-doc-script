@@ -6,10 +6,10 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Apply a force to a rigidbody in the scene at the point
 	// where it is clicked.
-	
+
 	// The force with which the target is "poked" when hit.
 	var pokeForce: float;
-	
+
 	function Update () {
 		if (Input.GetMouseButtonDown(0)) {
 			var hit: RaycastHit;

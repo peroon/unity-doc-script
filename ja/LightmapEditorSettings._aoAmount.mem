@@ -1,6 +1,7 @@
 <signature>
 aoAmount
 </signature>
-Controls how much Ambient Occlusion to blend into the Final Gather solution.
-Can be used to get more contrast in your lighting.
-Set to a value greater than 0 for AO to be calculated.
+アンビエントオクルージョン（AO）の使用量
+照明のコントラストを取得します
+計算をさせるにはAOの値を0以上にします
+

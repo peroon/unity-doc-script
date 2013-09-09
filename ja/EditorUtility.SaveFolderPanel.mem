@@ -1,7 +1,9 @@
 <signature>
 SaveFolderPanel(string,string,string)
 </signature>
-Displays the "save folder" dialog and returns the selected path name.
+フォルダを保存するパネルを表示します。実際にはこの関数だけでは保存することはできません
+戻り値として保存するファイルの絶対パスを返します
+キャンセルした場合は空文字を返します
 SA: ::ref::SaveFilePanel, ::ref::OpenFilePanel functions.
 
 {img EditorUtilitySaveFolderPanel.png}\\

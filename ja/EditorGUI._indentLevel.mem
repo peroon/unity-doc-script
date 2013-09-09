@@ -1,12 +1,10 @@
 <signature>
 indentLevel
 </signature>
-The indent level of the field labels.
-{img EditorGUIIndent.png}\\
-''Shows info of the selected object.''
+ラベルのインデントレベルを設定する
 BEGIN EX
 	// Shows info of the selected transform
-	
+
 	class EditorGUIIndent extends EditorWindow {
 		
 		@MenuItem("Examples/Indent usage")

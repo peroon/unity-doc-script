@@ -1,4 +1,5 @@
-Use the OS default font rendering mode. This selects either [[FontRenderingMode.HintedSmooth]] or.
-[[FontRenderingMode.HintedRaster]] on Windows, and either [[FontRenderingMode.Smooth]] or
-[[FontRenderingMode.HintedRaster]] on Mac OS X, depending on the system preferences. This mode
-is only available for dynamic fonts, as static fonts are generated at build time.
+OSのデフォルトのレンダリング方法を使用します
+このレンダリング方法ではビルド時にフォントが生成されるため、ダイナミックフォントのみ有効です
+OSのシステム設定により以下のどちらかになります
+Windows: FontRenderingMode.HintedSmooth または FontRenderingMode.HintedRaster
+Mac OS X: FontRenderingMode.Smooth または FontRenderingMode.HintedRaster

@@ -1,1 +1,1 @@
-Only return the topmost selected transform. A selected child of another selected transform will be filtered out.
+最上位の親のみを返します

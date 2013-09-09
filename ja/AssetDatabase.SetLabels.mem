@@ -1,4 +1,4 @@
 <signature>
 SetLabels(Object,string[])
 </signature>
-Replaces that list of labels on an asset.
+アセットにラベルを設定します。また新しくラベルを作成することも出来ます

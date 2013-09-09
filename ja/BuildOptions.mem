@@ -1,2 +1,2 @@
-Building options. Multiple options can be combined together.
+Unityプロジェクトをビルドする時のオブジョンを選択します
 SA: BuildPipeline.BuildPlayer.

@@ -3,7 +3,8 @@ DrawTextureAlpha(Rect,Texture)
 DrawTextureAlpha(Rect,Texture,ScaleMode)
 DrawTextureAlpha(Rect,Texture,ScaleMode,float)
 </signature>
-Draws the alpha channel of a texture within a rectangle.
+テクスチャのアルファチャンネルを描画します
+alphaが適用されている場所は黒色、それ以外は白色になります
 SA: GUI.color, GUI.contentColor
 
 {img EditorGUIDrawTextureAlpha.png}\\
@@ -11,9 +12,9 @@ SA: GUI.color, GUI.contentColor
 BEGIN EX
 	// Load a texture, display the texture, display its alpha channel and
 	// show a preview of the inverted texture
-	
+
 	class EditorGUITextures extends EditorWindow {
-	
+
 		var texture : Texture2D;
 		var invertedTexture : Texture2D;
 		var showInverted = false;
@@ -80,7 +81,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to draw the texture within.
-@param image [[Texture]] to display.
-@param scaleMode How to scale the image when the aspect ratio of it doesn't fit the aspect ratio to be drawn within.
-@param imageAspect Aspect ratio to use for the source image. If 0 (the default), the aspect ratio from the image is used.
+@param position 表示位置
+@param image 表示するテクスチャ
+@param scaleMode スケールの方法を選択します。デフォルトはStretchToFill
+@param imageAspect アスペクト比。テクスチャそのままのアスペクト比は0を指定します。デフォルトは0

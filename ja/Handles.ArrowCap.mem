@@ -1,20 +1,19 @@
 <signature>
 ArrowCap(int,Vector3,Quaternion,float)
 </signature>
-Draw an arrow like those used by the move tool.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+矢印を描画します
+これはハンドルを作成するときに使用されます
 
 {img ArrowCap.png}\\
-''Arrow Cap in the Scene View.''
 BEGIN EX
 	// Draw one Arrow on each axis of any GameObject 
 	// that has the "DummyArrowCapScript.js" script attached.
-	
+
 	@CustomEditor (DummyArrowCapScript)
 	class ArrowCap extends Editor {
 		
 		var arrowSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.ArrowCap(0,

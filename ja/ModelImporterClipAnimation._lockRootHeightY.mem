@@ -1,4 +1,6 @@
 <signature>
 lockRootHeightY
 </signature>
-Enable to make vertical root motion be baked into the movement of the bones. Disable to make vertical root motion be stored as root motion.
+trueの場合、ベイクされているにボーンの動きに合わせて高さを変更します
+falseの場合はアニメーションに保存されている情報を使用して高さを変更します
+

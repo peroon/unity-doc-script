@@ -1,6 +1,6 @@
 <signature>
 GetPropertyType(Shader,int)
 </signature>
-Get the ShaderProperyType of the shader propery at index propertyIdx of Shader s.
-@param s The shader to check against.
-@param propertyIdx The property index to use.
+プロパティのタイプを取得します
+@param s プロパティのタイプを取得したいシェーダー
+@param propertyIdx プロパティのインデックス

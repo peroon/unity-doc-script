@@ -1,4 +1,7 @@
 <signature>
 loopPose
 </signature>
-Enable to make the motion loop seamlessly.
+ループ時に自然なループを行いたい場合にtrueにします
+これにより自動で補完が行われますが、補完によって予期しない動きをしてしまう可能性があることに注意してください
+補完はアニメーションの最後辺りで最初のフレームの値に近づくように補完が行われます
+

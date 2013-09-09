@@ -1,6 +1,6 @@
 <signature>
 RevertPrefabInstance(GameObject)
 </signature>
-Resets the properties of all objects in the prefab, including child game objects and components that were added to the prefab instance.
-All overrides will be cleared. However the transform.position and rotation of a root game object in a prefab instance 
-will never be cleared.
+GameObjectにアタッチされている全てのコンポーネントとプロパティをPrefabの設定にリセットします
+ですがルートとなるGameObjectのTransform情報（位置と回転とスケール）はリセットされません
+正しくリセットされた場合trueを返します

@@ -1,8 +1,9 @@
 <signature>
 activeGameObject
 </signature>
-Returns the active game object. (The one shown in the inspector).
-It will also return game objects that might be prefabs or non-modifyable objects.
+選択中のゲームオブジェクト情報を取得します
+複数選択した場合は最初に選択したオブジェクトの情報を取得します
+代入を行うことで選択状態にすることも出来ます
 BEGIN EX
 	// Rotates the selected Game Object +45 degrees if the user presses 'g'
 	// or -45 degrees if the user presses 'Shift + g'
@@ -18,7 +19,6 @@ BEGIN EX
 	static function ValidatePlus45() {
 		return Selection.activeGameObject != null;
 	}
-
 
 	@MenuItem ("Example/Rotate green -45 #g")
 	static function RotateGreenMinus45() {

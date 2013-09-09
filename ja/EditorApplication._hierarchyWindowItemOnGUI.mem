@@ -1,5 +1,6 @@
 <signature>
 hierarchyWindowItemOnGUI
 </signature>
-Delegate for OnGUI events for every visible list item in the HierarchyWindow.
+ヒエラルキーイベントで表示されるアイテムリストのOnGUIイベントのデリゲートを設定します
+
 SA: EditorApplication.HierarchyWindowItemCallback, EditorApplication.RepaintHierarchyWindow.

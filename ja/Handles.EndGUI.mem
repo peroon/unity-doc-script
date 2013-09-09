@@ -1,7 +1,9 @@
 <signature>
 EndGUI()
 </signature>
-End a 2D GUI block and get back to the 3D handle GUI.
+GUIを描画する領域を設定します
+BeginGUIを使用した場合は必ずEndGUI を使用する必要があります
+
 SA: Handles.BeginGUI.
 
 {img BeginEndGUI.png}\\
@@ -11,7 +13,7 @@ BEGIN EX
 	// that lets you modify the "shieldArea" var in the WireArcExample.js, also
 	// lets you visualize some info of the transform and finally lets you 
 	// reset the shield area value to 5 by clicking on a button
-	
+
 	@CustomEditor (DummyButtonScript)
 	class GUIButtonHandle extends Editor {
 	    function OnSceneGUI () {
@@ -42,6 +44,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	// DummyButtonScript.js
-	
+
 	var shieldArea : float = 5;
 END EX

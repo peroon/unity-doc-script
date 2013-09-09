@@ -1,4 +1,6 @@
 <signature>
 allowedAutorotateToLandscapeRight
 </signature>
-Is auto-rotation to landscape right supported?
+右に端末を傾けた時の対応をするかどうか
+OrientationがAutorotateの時のみ有効です
+

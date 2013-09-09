@@ -1,4 +1,4 @@
 <signature>
 SetMaterialScale(ProceduralMaterial,Vector2)
 </signature>
-Set the material scale, which is used for all the textures that are part of this Procedural Material.
+ProceduralMaterialのテクスチャのスケールを設定します

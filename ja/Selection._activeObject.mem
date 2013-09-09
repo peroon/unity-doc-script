@@ -1,5 +1,7 @@
 <signature>
 activeObject
 </signature>
-Returns the actual object selection. Includes prefabs, non-modifyable objects.
-When working with objects that are primarily in a scene, it is strongly recommended to use Selection.activeTransform instead.
+選択中のオブジェクト情報を取得します
+複数選択した場合は最初に選択したオブジェクトの情報を取得します
+代入を行うことで選択状態にすることも出来ます
+

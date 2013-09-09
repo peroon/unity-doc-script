@@ -1,1 +1,1 @@
-Bake Inverse Kinematics (IK) when importing.
+インポートするモデルデータにIKが設定されている時に、trueを設定するとUnity側で使用できるようにベイクを行います

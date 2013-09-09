@@ -1,2 +1,2 @@
-Mip map bias of the texture.
+テクスチャのMipmapバイアスを返します
 SA: [[Texture.mipMapBias]], [[wiki:class-Texture2D|texture assets]].

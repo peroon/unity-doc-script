@@ -1,4 +1,4 @@
 <signature>
 GetTextureAlphaSource(ProceduralMaterial,string)
 </signature>
-Get the alpha source of the given texture in the Procedural Material.
+ProceduralMaterial内で使用されているテクスチャのアルファの出力タイプを取得します

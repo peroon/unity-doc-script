@@ -21,7 +21,6 @@ BEGIN EX
 	// to the captured image.
 	var display: Renderer;
 
-
 	function OnPostRender() {
 		if (grab) {
 			// Make a new texture of the right size and

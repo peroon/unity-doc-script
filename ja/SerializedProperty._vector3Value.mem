@@ -1,5 +1,5 @@
 <signature>
 vector3Value
 </signature>
-Value of a 3D vector property.
+Vector3型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Vector3, [[Vector3]].

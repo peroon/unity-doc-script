@@ -3,17 +3,11 @@ BuildAssetBundle(Object,Object[],string)
 BuildAssetBundle(Object,Object[],string,BuildAssetBundleOptions)
 BuildAssetBundle(Object,Object[],string,BuildAssetBundleOptions,BuildTarget)
 </signature>
-Builds an asset bundle __(Unity Pro only)__.
-Creates a compressed unity3d file that contains a collection of /assets/. AssetBundles can contain any asset found in the project folder.
-This lets you stream resource data of any type, fully setup prefabs, textures, meshes, animations, any type of asset shown in the project window.
-/mainAsset/ lets you specify a specific object that can be conveniently retrieved using AssetBundle.mainAsset.
-The compressed asset bundle file will be saved at /pathName/.
-/options/ allows you to automatically include dependencies or always include complete assets instead of just the exact referenced objects.
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png"
-
-Note that asset bundles built for standalone or webplayer targets cannot be loaded by
-applications built for mobile platforms and vice versa. Furthermore, bundles are not
-compatible between iOS and Android platforms.
+アセットバンドルを作成します　（Unity Pro のみ）
+アセットバンドルの作成に成功した場合は戻り値としてtrueを返します
+アセットバンドルとは、アセットをunity3dファイルとして圧縮し、WWWクラスを使用してゲーム再生中にロード・インスタンス化を行えるものです
+これにより余計なアセットをビルド時に含めることなくアプリケーションを作成できるようになり、容量の削減に繋がります。
+アセットバンドル化できるものは、プレハブ・テクスチャ・メッシュ・アニメーションなどプロジェクトウィンドウで表示されるものです
 
 SA: [[AssetBundle]] class, WWW.assetBundle.
 BEGIN EX

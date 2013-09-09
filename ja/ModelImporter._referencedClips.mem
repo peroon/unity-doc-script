@@ -1,4 +1,5 @@
 <signature>
 referencedClips
 </signature>
-Generates the list of all imported Animations.
+インポートされるモデルのAnimationClipのパスを配列で取得します
+

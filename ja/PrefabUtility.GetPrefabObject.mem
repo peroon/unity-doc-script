@@ -1,5 +1,5 @@
 <signature>
 GetPrefabObject(Object)
 </signature>
-Retrieves the enclosing prefab for any object contained within.
+ProjectウィンドウにあるPrefabのオブジェクト（親）を取得します
 @param targetObject An object contained within a prefab object.

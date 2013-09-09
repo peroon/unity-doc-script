@@ -1,1 +1,2 @@
-Draw the camera textured with selection wireframe and no background clearing.
+背景なしの描画を行います
+選択中のみオブジェクトのワイヤーフレームの描画も行います

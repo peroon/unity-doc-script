@@ -1,6 +1,6 @@
 <signature>
 GetPropertyDescription(Shader,int)
 </signature>
-Get the description of the shader propery at index propertyIdx of Shader s.
-@param s The shader to check against.
-@param propertyIdx The property index to use.
+プロパティの説明部分を取得します
+@param s プロパティの説明部分を取得したいシェーダー
+@param propertyIdx プロパティのインデックス

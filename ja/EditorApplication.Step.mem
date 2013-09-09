@@ -1,5 +1,5 @@
 <signature>
 Step()
 </signature>
-Perform a single frame step.
-As if you pressed the Step button in the main toolbar.
+ゲーム再生で1フレームごと進ませる場合に使用します
+これはツールバーの[Step]ボタンと同じ効果です

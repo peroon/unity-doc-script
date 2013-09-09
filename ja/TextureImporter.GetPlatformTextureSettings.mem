@@ -1,17 +1,19 @@
 <signature>
 GetPlatformTextureSettings(string,int,TextureImporterFormat,int)
 </signature>
-Get platform specific texture settings.
-The values for the chosen platform are returned in the "out" parameters. The options for the platform string are "Web", "Standalone", "iPhone", "Android" and "FlashPlayer".
-@param platform The platform whose settings are required (see below).
-@param maxTextureSize Maximum texture width/height in pixels.
-@param textureFormat Data format of the texture.
-@param compressionQuality Value from 0..100, equivalent to the standard JPEG quality setting.
+特定のプラットフォームのテクスチャ設定情報を取得します
+取得できた場合はtrueを返します
+取得する場合は「Overrride for 〜」の許可をする必要があります
+@param platform 取得するプラットフォーム名
+@param maxTextureSize 最大サイズ
+@param textureFormat テクスチャフォーマット
+@param compressionQuality 圧縮している場合のクオリティレベル
 <signature>
 GetPlatformTextureSettings(string,int,TextureImporterFormat)
 </signature>
-Get platform specific texture settings.
-The values for the chosen platform are returned in the "out" parameters. The options for the platform string are "Web", "Standalone", "iPhone", "Android" and "FlashPlayer".
-@param platform The platform whose settings are required (see below).
-@param maxTextureSize Maximum texture width/height in pixels.
-@param textureFormat Data format of the texture.
+特定のプラットフォームのテクスチャ設定情報を取得します
+取得できた場合はtrueを返します
+取得する場合は「Overrride for 〜」の許可をする必要があります
+@param platform 取得するプラットフォーム名
+@param maxTextureSize 最大サイズ
+@param textureFormat テクスチャフォーマット

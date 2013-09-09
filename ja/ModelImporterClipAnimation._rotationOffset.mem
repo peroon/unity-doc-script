@@ -1,4 +1,5 @@
 <signature>
 rotationOffset
 </signature>
-Offset in degrees to the root rotation.
+ルートの角度からのオフセット
+

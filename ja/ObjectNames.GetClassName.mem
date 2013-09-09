@@ -1,5 +1,6 @@
 <signature>
 GetClassName(Object)
 </signature>
-Class name of an object.
+オブジェクトからクラス名を取得します
+
 SA: ObjectNames.GetInspectorTitle.

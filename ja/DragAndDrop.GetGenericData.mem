@@ -1,4 +1,5 @@
 <signature>
 GetGenericData(string)
 </signature>
-Get data associated with current drag and drop operation.
+ドラッグ＆ドロップしているオブジェクトデータを取得します
+DragAndDrop.SetGenericDataでデータを設定する必要があります

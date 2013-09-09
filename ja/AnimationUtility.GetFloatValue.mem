@@ -1,5 +1,5 @@
 <signature>
 GetFloatValue(GameObject,string,Type,string,float)
 </signature>
-Retrieves the current float value by sampling a curve value on a specific game object.
-Useful for recording keyframes.
+ゲームオブジェクトにアタッチされているAnimarionCurveのカーブ値をサンプリングし、取得します
+値を取得できた場合は戻り値としてtrueを返します

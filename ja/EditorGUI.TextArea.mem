@@ -2,11 +2,9 @@
 TextArea(Rect,string)
 TextArea(Rect,string,GUIStyle)
 </signature>
-Make a text area.
-This works just like GUI.TextArea, but correctly responds to select all, copy, paste etc. in the editor.
-
 {img EditorGUITextArea.png}\\
-''Text Area in an Editor Window.''
+テキストエリアを作成します
+GUI.TextAreaとは少し違い、文字列のコピーやペースト等が使用することが出来ます
 BEGIN EX
 	// Create a window where you can have notes
 	// This doesnt preserve the notes between sessions. 
@@ -30,7 +28,7 @@ BEGIN EX
 		}	
 	}
 END EX
-@param position Rectangle on the screen to use for the text field.
-@param text The text to edit.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param text 表示する文字列
+@param style スタイル
 @return The text entered by the user.

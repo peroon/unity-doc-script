@@ -1,9 +1,8 @@
 <signature>
 GetClass()
 </signature>
-Returns the System.Type object of the class implemented by this script.
 {img ScriptAdder.png}\\
-''ScriptAdder in the editor Window.''
+スクリプトのクラスタイプを取得します
 BEGIN EX
 	// Simple Editor Script that adds one or more scripts
 	// to the selected GameObjects

@@ -1,11 +1,8 @@
 <signature>
 companyName
 </signature>
-The name of your company.
-This is used to locate the preferences file.
-
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+カンパニー名
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

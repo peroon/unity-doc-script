@@ -1,1 +1,2 @@
-An Interface for accessing assets and performing operations on assets.
+アセットにアクセスし、操作を行うことが出来るクラスです
+アクセスできるのは「Assets」ディレクトリ配下のみとなります

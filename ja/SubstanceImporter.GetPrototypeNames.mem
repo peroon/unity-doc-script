@@ -1,4 +1,4 @@
 <signature>
 GetPrototypeNames()
 </signature>
-Get a list of the names of the Procedural Material prototypes in the package.
+Substanceに定義されている全てのプロトタイプ名を取得します

@@ -1,5 +1,6 @@
 <signature>
 UpdateIfDirtyOrScript()
 </signature>
-Update serialized object's representation, only if the object has been modified since the last call to Update or if it is a script.
-In which case it is not safe to assume that SetDirty has been called.
+シリアライズ化されたオブジェクトを更新します
+オブジェクトが更新後に変更された時やスクリプトの時のみに使用してください
+なお、このDirtyの処理は呼び出されたからといって安全に行われるとは限りません

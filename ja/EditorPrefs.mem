@@ -1,4 +1,42 @@
-Stores and accesses Unity editor preferences.
-On Mac OS X, EditorPrefs are stored in @@~/Library/Preferences/com.unity3d.UnityEditor.plist@@.
+Unityエディターの情報を保存するクラスです
+MacOSXでは「~/Library/Preferences/com.unity3d.UnityEditor.plist」に保存されます
+Windowsでは「HKCU\Software\Unity Technologies\UnityEditor」に保存されます
 
-On Windows, EditorPrefs are stored in the registry under the @@HKCU\Software\Unity Technologies\UnityEditor@@ key.
+
+BEGIN EX
+using UnityEngine;
+using UnityEditor;
+
+public class Example : EditorWindow
+{
+    [MenuItem("Example/RenderGameViewCameras")]
+    static void OpenWindow()
+    {
+        GetWindow<Example>();
+    }
+
+    private string key, value;
+
+    void OnGUI()
+    {
+        key = EditorGUILayout.TextField("Key", key);
+        value = EditorGUILayout.TextField("Value", value);
+
+        if (GUILayout.Button("Save"))
+        {
+            EditorPrefs.SetString(key, value);
+        }
+
+        if (GUILayout.Button("Delete"))
+        {
+            if (EditorPrefs.HasKey(key))
+            {
+                EditorPrefs.DeleteKey(key);
+            }
+        }
+
+        EditorGUILayout.LabelField(EditorPrefs.GetString(key, "nothing"));
+
+    }
+}
+END EX

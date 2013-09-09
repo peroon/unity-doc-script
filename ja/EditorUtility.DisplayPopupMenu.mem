@@ -1,9 +1,8 @@
 <signature>
 DisplayPopupMenu(Rect,string,MenuCommand)
 </signature>
-Displays a popup menu.
-Menu is shown at position /pos/, generated from a submenu specified by /menuItemPath/ using a
-[[MenuCommand]] as menu context.
+ポップアップメニューを表示します
+
 BEGIN EX
 	// Shows the Assets menu when you right click on the contextRect Rectangle.
 

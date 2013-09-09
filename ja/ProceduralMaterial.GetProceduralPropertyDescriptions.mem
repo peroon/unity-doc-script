@@ -19,9 +19,9 @@ function OnGUI () {
 
 function ProceduralPropertiesGUI (windowId : int) {	
 	scrolling = GUILayout.BeginScrollView (scrolling);
-	
+
 	var substance = renderer.sharedMaterial as ProceduralMaterial;
-	
+
 	// Get a list of all the Procedural properties
 	var inputs = substance.GetProceduralPropertyDescriptions ();
 	// Iterate through all the properties
@@ -112,7 +112,7 @@ function ProceduralPropertiesGUI (windowId : int) {
 	}
 	// Rebuild the textures to show the changes
 	substance.RebuildTextures();
-	
+
 	GUILayout.EndScrollView();
 }
 END EX

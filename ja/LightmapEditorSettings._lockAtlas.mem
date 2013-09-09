@@ -1,4 +1,6 @@
 <signature>
 lockAtlas
 </signature>
-If enabled, Beast atlasing won't be run and lightmap indices, tiling and offset won't be modified on Mesh Renderers.
+有効の場合、ビーストのアトラスとライトマップのインデックスが実行されなくなります
+これによりメッシュレンダラーでタイルとオフセットは変更されなくなるのに注意してください
+

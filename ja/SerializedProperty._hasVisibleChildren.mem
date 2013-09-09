@@ -1,5 +1,5 @@
 <signature>
 hasVisibleChildren
 </signature>
-Does it have visible child properties? (RO)
+表示されている子となるプロパティがあるかどうかを確認します
 SA: ::ref::hasChildren.

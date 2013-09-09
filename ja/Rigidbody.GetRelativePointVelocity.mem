@@ -1,7 +1,8 @@
 <signature>
 GetRelativePointVelocity(Vector3)
 </signature>
-ローカル座標における、Rigidbodyオブジェクトの相対的速度を取得する。
+ローカル座標における、Rigidbodyオブジェクトの相対的速度を取得
+する。
 GetRelativePointVelocity will take the angularVelocity of the rigidbody into account when calculating the velocity.
 CONVERTEXAMPLE
 BEGIN EX
@@ -9,7 +10,7 @@ BEGIN EX
 
 	var point : Vector3;
 	var velocity : Vector3;
-	
+
 	point = transform.InverseTransformPoint(Vector3(0, -.2, 0));
 	velocity = rigidbody.GetPointVelocity(point);
 	print(velocity.magnitude);

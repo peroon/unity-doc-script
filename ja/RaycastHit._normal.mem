@@ -5,12 +5,12 @@ normal
 CONVERTEXAMPLE
 BEGIN EX
 	// Calculate the reflection of a "laser beam" off a clicked object.
-	
+
 	// The object from which the beam is fired. The incoming beam will
 	// not be visible if the camera is used for this!
 	var gunObj: Transform;
-	
-	
+
+
 	function Update () {
 		if (Input.GetMouseButton(0)) {
 			var hit: RaycastHit;

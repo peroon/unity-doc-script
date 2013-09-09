@@ -4,8 +4,7 @@ IsOpenForEdit(string)
 IsOpenForEdit(Object,string)
 IsOpenForEdit(string,string)
 </signature>
-Use IsOpenForEdit to determine if the asset is open for edit by the version control.
-Used to disable editor controls.
+AssetModificationProcessor.IsOpenForEdit をご覧ください
 @param assetPath Is the path to the asset on disk relative to project folder.
 @param message Used to give reason for not open.
 @return True is the asset can be edited.

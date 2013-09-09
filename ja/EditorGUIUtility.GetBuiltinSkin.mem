@@ -1,4 +1,5 @@
 <signature>
 GetBuiltinSkin(EditorSkin)
 </signature>
-Get one of the built-in GUI skins, which can be the game view, inspector or scene view skin as chosen by the parameter.
+標準として準備してあるGUISkinを取得します
+これにより、ゲームビュー、シーンビュー、インスペクターで使用されるスキンを取得できます

@@ -1,9 +1,9 @@
 <signature>
 ShowHelpPage(string)
 </signature>
-Show a help page.
-/page/ should be the URL of the help page, usually beginning with @@file://@@. If /page/ starts
-with @@file:///unity/@@, then it points to Unity help.
+ローカルにあるドキュメントページを開きます
+独自のヘルプページを開くことも可能です
+ドキュメントページヘは「file://unity/」を使用することでパスの短縮が可能です
 BEGIN EX
 	// open scripting reference
 	Help.ShowHelpPage ("file:///unity/ScriptReference/index.html");

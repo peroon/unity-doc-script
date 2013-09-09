@@ -1,7 +1,9 @@
 <signature>
 loadType
 </signature>
-Set/get the way Unity is loading the Audio data.
+ストリーミング再生（StreamFromDisc）や、圧縮されたオーディオの再生（CompressedInMemory）、非圧縮のオーディオ再生（DecompressOnLoad）を選択します
+メモリ的に一番負荷が低いのがストリーミング再生です
+次に圧縮されたオーディオ再生になります
 BEGIN EX
 	// C#: If an imported audio contains the "DL_" string
 	// in its filename, it sets the loadType to DecompressOnLoad.

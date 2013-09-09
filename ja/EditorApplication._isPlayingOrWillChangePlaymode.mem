@@ -1,8 +1,5 @@
 <signature>
 isPlayingOrWillChangePlaymode
 </signature>
-Is editor either currently in play mode, or about to switch to it? (RO)
-This will return true when editor will switch to play mode after finishing some tasks (e.g. after scripts
-will be recompiled).
-
+ゲームビューが再生中か、または再生中でスクリプトの再コンパイルのために更新された際にtrueを返します
 SA: ::ref::isPlaying, ::ref::isCompiling.

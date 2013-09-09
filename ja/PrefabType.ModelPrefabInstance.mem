@@ -1,2 +1,2 @@
-The object is an instance of an imported 3D model.
+3Dモデルをインポートしてインスタンス化されたプレハブです
 SA: EditorUtility.GetPrefabType.

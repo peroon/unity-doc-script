@@ -3,7 +3,8 @@ Compress(bool)
 </signature>
 DXTフォーマットにテクスチャを圧縮する
 スクリプトなどで生成されたテクスチャを圧縮しま
-す。圧縮すると、以降はグラフィックスメモリを使用してレンダリングするため高速になります。
+す。圧縮すると、以降はグラフィックスメモリを使用してレンダリングするため高速になりま
+す。
 
 After compression, texture will be in TextureFormat::pref::DXT1 format if the original texture
 had no alpha channel, and in TextureFormat::pref::DXT5 format if it had alpha channel.
@@ -12,7 +13,6 @@ Passing /true/ for /highQuality/ parameter will dither the source texture during
 which helps to reduce compression artifacts but is slightly slower.
 
 グラフィックスカードが圧縮をサポートしていない場合は実行されません。
-
 
 In the Editor scripts, you probably want to use EditorUtility.CompressTexture, which will
 compress using slower, but higher quality DXT compression.

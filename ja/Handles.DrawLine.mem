@@ -1,17 +1,17 @@
 <signature>
 DrawLine(Vector3,Vector3)
 </signature>
-Draw a line from __p1__ to __p2__.
 {img DrawLine.png}\\
-''Draw Line in the Scene View.''
+線を描画します
+
 BEGIN EX
 	// Draw lines to the connected game objects that a script has.
 	// if the target object doesnt have any game objects attached
 	// then it draws a line from the object to 0,0,0.
-	
+
 	@CustomEditor (ConnectedObjects)
 	class ConnectLineHandle extends Editor {
-	
+
 	    function OnSceneGUI () {
 	    	for(var i = 0; i < target.objs.Length; i++)
 	    		if(target.objs[i])
@@ -25,6 +25,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	//ConnectedObjects.js
-	
+
 	var objs : GameObject[] = null;
 END EX

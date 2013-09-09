@@ -1,4 +1,4 @@
 <signature>
 GetItemCount()
 </signature>
-Get number of items in the menu.
+メニューに追加されているアイテムの数を取得します

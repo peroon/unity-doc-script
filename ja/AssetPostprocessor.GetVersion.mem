@@ -1,8 +1,9 @@
 <signature>
 GetVersion()
 </signature>
-Returns the version of the asset postprocessor.
-When the script is recompiled, if a version change is detected, the assets associated with this asset postprocessor will be reimported.
+プロセッサーのバージョンを返します
+スクリプトが再コンパイルされバージョンの変更が検出された場合、そのプロセッサーに関連付けられているアセットは再インポートされることになります
+スクリプトで行う処理をすべてのアセットに反映させる場合に使用します
 BEGIN EX
 	class TexturePostProcessor : AssetPostprocessor
 	{

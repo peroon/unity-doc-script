@@ -1,7 +1,6 @@
 <signature>
 GenerateInBackground(float,float,float,int,StaticOcclusionCullingMode)
 </signature>
-Used to compute static occlusion culling data asynchronously.
-The memory limit (specified in bytes) is a hint to the PVS baking system about the likely memory requirements.
-
+非同期で静的なオクルージョンカリングのデータを生成します
+生成が開始された際にはtrueを返します
 SA: StaticOcclusionCulling.Compute, StaticOcclusionCulling.Cancel, ::ref::isRunning.

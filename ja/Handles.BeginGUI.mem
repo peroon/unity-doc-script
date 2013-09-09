@@ -2,8 +2,8 @@
 BeginGUI()
 BeginGUI(Rect)
 </signature>
-Begin a 2D GUI block inside the 3D handle GUI.
-Begin a 2D GUI block on top of the current handle camera.
+GUIを描画する領域を設定します
+必ず最後にEndGUI を使用する必要があります
 
 SA: Handles.EndGUI.
 
@@ -14,7 +14,7 @@ BEGIN EX
 	// that lets you modify the "shieldArea" var in the WireArcExample.js, also
 	// lets you visualize some info of the transform and finally lets you 
 	// reset the shield area value to 5 by clicking on a button
-	
+
 	@CustomEditor (DummyButtonScript)
 	class GUIButtonHandle extends Editor {
 	    function OnSceneGUI () {
@@ -45,6 +45,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	// DummyButtonScript.js
-	
+
 	var shieldArea : float = 5;
 END EX

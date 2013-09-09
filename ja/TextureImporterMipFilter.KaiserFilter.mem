@@ -1,2 +1,3 @@
-Kaiser mipmap filter.
+シャープ化を行うカイザーアルゴリズムを実装するフィルターです
+テクスチャがぼやけすぎている場合はこちらを使用します
 SA: TextureImporter.mipmapFilter.

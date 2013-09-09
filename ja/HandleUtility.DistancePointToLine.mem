@@ -1,4 +1,5 @@
 <signature>
 DistancePointToLine(Vector2,Vector2,Vector2)
 </signature>
-Distance from a point /p/ in 2d to a line defined by two points /a/ and /b/.
+ラインとポイント上の間の距離(最短距離)を計算して返します
+２次元での計算になります

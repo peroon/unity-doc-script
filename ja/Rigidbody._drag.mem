@@ -6,7 +6,7 @@ BEGIN EX
 	function OpenParachute() {
 		rigidbody.drag = 20;
 	}
-	
+
 	function Update() {
 		if (Input.GetButton ("Space")) {
 			OpenParachute();

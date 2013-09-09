@@ -1,4 +1,4 @@
 <signature>
 ClearCamera(Rect,Camera)
 </signature>
-Clears the camera.
+カメラの色でクリアして描画を行います

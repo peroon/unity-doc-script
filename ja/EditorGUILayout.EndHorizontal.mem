@@ -1,17 +1,16 @@
 <signature>
 EndHorizontal()
 </signature>
-Close a group started with BeginHorizontal.
+BeginHorizontalを使用した場合は必ずEndHorizontalを使用する必要があります
 SA: EditorGUILayout.BeginHorizontal
-
 
 {img BeginEndHorizontalExample.png}\\
 ''Horizontal Compound group.''
 BEGIN EX
 	// Create a Horizontal Compound Button
-	
+
 	class BeginEndHorizontalExample extends EditorWindow {
-	
+
 		@MenuItem("Examples/Begin-End Horizontal usage")
 		static function Init() {
 			var window = GetWindow(BeginEndHorizontalExample);

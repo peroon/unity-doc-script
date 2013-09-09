@@ -1,4 +1,4 @@
 <signature>
 CopySerialized(Object,Object)
 </signature>
-Copy all settings of a Unity [[Object]].
+オブジェクトからシリアライズ化された情報を複製します

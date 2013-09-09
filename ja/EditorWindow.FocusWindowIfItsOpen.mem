@@ -1,12 +1,10 @@
 <signature>
 FocusWindowIfItsOpen(Type)
 </signature>
-Focuses the first found EditorWindow of specified type if it is open.
-If there is no open window of such type, nothing happens.
-@param t The type of the window. Must derive from EditorWindow.
+指定したタイプのEditorWindowが既に生成され、表示されている場合フォーカスを当てます
+@param t フォーカスを当てたいウィンドウのタイプ
 <signature>
 FocusWindowIfItsOpen<T>()
 </signature>
-Focuses the first found EditorWindow of type /T/ if it is open.
-If there is no open window of such type, nothing happens.
+指定したタイプのEditorWindowが既に生成され、表示されている場合フォーカスを当てます
 @param T The type of the window. Must derive from EditorWindow.

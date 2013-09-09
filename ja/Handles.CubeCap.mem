@@ -1,20 +1,19 @@
 <signature>
 CubeCap(int,Vector3,Quaternion,float)
 </signature>
-Draw a cube. Pass this into handle functions.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+キューブを描画します
+これはハンドルを作成するときに使用されます
 
 {img CubeCap.png}\\
-''Cube Cap on the Scene View.''
 BEGIN EX
 	// Draw one cube on each axis of any GameObject that has 
 	// the "DummyCubeCapScript.js" script attached.
-	
+
 	@CustomEditor (DummyCubeCapScript)
 	class CubeCap extends Editor {
 		
 		var cubeSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.CubeCap(0,

@@ -1,4 +1,4 @@
 <signature>
 PickGameObject(Vector2,bool)
 </signature>
-Pick game object closest to specified position.
+指定した位置から最も近いゲームオブジェクトを取得します

@@ -1,4 +1,4 @@
 <signature>
 SetScriptingDefineSymbolsForGroup(BuildTargetGroup,string)
 </signature>
-Set user-specified symbols for script compilation for the given build target group.
+プラットフォーム別にDefineを設定します

@@ -1,5 +1,8 @@
-Derive from this class to create an editor wizard.
-Editor wizards are typically opened using a menu item.
+ウィザードを作成します
+OnGUI関数を使用することが出来ますが、使用するとウィザード画面が上書きされますので注意して下さい
+
+
+
 BEGIN EX NOCHECK
 // C#
 // Creates a simple wizard that lets you create a Ligth GameObject

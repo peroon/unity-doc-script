@@ -1,13 +1,13 @@
 <signature>
 color
 </signature>
-Colors of the handles.
 {img SliderHandle.png}\\
-''Magenta slider that points to 0,0,0.''
+ハンドルの色を返します
+
 BEGIN EX
 	// Simple script that creates a Magenta Slide Handle that 
 	// points to (0,0,0) nomatter where the target GameObject is located.
-	
+
 	@CustomEditor (Slide)
 	class SliderHandleJS extends Editor {
 		function OnSceneGUI () {
@@ -23,11 +23,11 @@ And the script attached to this Handle:
 BEGIN EX
 	// Usage: Place this script on the Game Object you want to use the
 	// editor-created slide handle.
-	
+
 	@script ExecuteInEditMode()
-	
+
 	var vectorPoint : Vector3 = Vector3(0,0,0);
-	
+
 	function Update() {
 		Debug.Log("Looking at: " + vectorPoint);
 	}

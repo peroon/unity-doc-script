@@ -1,10 +1,10 @@
 <signature>
 CalcLineTranslation(Vector2,Vector2,Vector3,Vector3)
 </signature>
-Map a mouse drag onto a movement along a line in 3D space.
-Certain types of Handles (such as arrows) involve movement along a line in 3D space. For example, the Transform's position arrows move the object along its local X, Y or Z axis as the mouse is dragged. The CalcLineTranslation function converts the movement of the mouse into constrained movement along a 3D line in the familiar way used by Unity's built-in tools.
-@param src The source point of the drag.
-@param dest The destination point of the drag.
-@param srcPosition The 3D position the dragged object had at /src/ ray.
-@param constraintDir 3D direction of constrained movement.
+矢印の長さを計算します
+戻り値として移動した時の距離を返します
+@param src ドラッグを開始した点（マウスの位置）
+@param dest ドラッグ先の点（現在のマウスの位置）
+@param srcPosition ドラッグを開始した点の3次元座標
+@param constraintDir 移動する方向
 @return The distance travelled along constraintDir.

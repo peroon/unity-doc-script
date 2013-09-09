@@ -1,11 +1,11 @@
 <signature>
 assetPath
 </signature>
-The path name of the asset being imported.
+インポートされた、またはインポートしていようとしているアセットに対してのパスを取得します
 BEGIN EX
 	// Automatically sets Textures settings upon first import and prints the 
 	// path from  where is being imported
-	
+
 	class CustomImportSettings extends AssetPostprocessor {
 		
 		function OnPreprocessTexture() {

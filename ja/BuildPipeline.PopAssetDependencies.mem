@@ -1,11 +1,8 @@
 <signature>
 PopAssetDependencies()
 </signature>
-Lets you manage cross-references and dependencies between different asset bundles and player builds.
-If a asset bundle has dependencies to other asset bundles, it is your responsibility to make sure the dependent asset bundles are loaded through the [[WWW]] class.
-
-When you push asset dependencies it will share all resources on that layer, pushing recursively always inherits the previous dependencies.
-::ref::PushAssetDependencies and ::ref::PopAssetDependencies must even each other out.
+異なるアセットバンドルやプレイヤーの相互参照・依存関係を管理することが出来ます
+この関数を使うことで、後のアセットバンドルは依存関係がなくなります
 BEGIN EX
 	@MenuItem("Assets/Auto Build Asset Bundles")
 	static function ExportResource () {

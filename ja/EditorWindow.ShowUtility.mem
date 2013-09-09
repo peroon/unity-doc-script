@@ -1,19 +1,17 @@
 <signature>
 ShowUtility()
 </signature>
-Show the EditorWindow as a floating utility window.
-Utility windows will always be in front of normal windows, and will be hidden when user switches to another application.
+タブウィンドウとして扱えず、常に手前に表示されるEditorWindowを表示します
+たとえ他のウィンドウにフォーカスを当てていてもウィンドウが裏側に回り込むことはありません
+EditorWindow.GetWindow関数を使用してのウィンドウの作成は出来ず、CreateInstanceを使用する必要があります
 
-__Note:__ You dont need to use EditorWindow.GetWindow() before using this function to show the window.
 
-{img RandomizeInSelection.png}\\
-''Floating window utility that lets you randomize the rotation of the selected objects.''
 BEGIN EX
 	// Simple script that randomizes the rotation of the Selected GameObjects
 	// and lets you see which objects are currently selected
-	
+
 	class RandomizeInSelection extends EditorWindow {
-	
+
 		var rotationAmount = 0.33;
 		var selected = "";    
 		function RandomizeSelected() {

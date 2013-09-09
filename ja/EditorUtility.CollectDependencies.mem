@@ -1,9 +1,9 @@
 <signature>
 CollectDependencies(Object[])
 </signature>
-Calculates and returns a list of all assets the assets listed in /roots/ depend on.
 {img EditorUtilityCollectDependencies.png}\\
-''Editor window that shows the next example.''
+オブジェクトの子も含めたアセットの配列を返します。これは依存関係にあるものすべてを取得します
+例えばヒエラルキーにあるゲームオブジェクトをrootsとすると、プロジェクトビューのプレハブも取得できます
 BEGIN EX
 	//Select the dependencies of the found GameObject
 

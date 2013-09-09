@@ -1,1 +1,1 @@
-Base class from which asset importers for specific asset types derive.
+特定のアセットの型から派生するアセットインポーターのベースとなるクラスです

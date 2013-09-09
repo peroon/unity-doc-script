@@ -4,11 +4,11 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Pulse light's range between original range
 	// and half of the original one
-	
+
 	var duration : float = 3.0;
 	private var originalRange : float;
 	originalRange = light.range;
-	
+
 	function Update() {
 		var amplitude : float = Mathf.PingPong( Time.time, duration );
 		// transform from 0..duration to 0.5..1 range

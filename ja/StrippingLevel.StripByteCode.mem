@@ -1,1 +1,2 @@
-Managed method bodies are stripped away. AOT platforms only.
+メソッドの本体部分が取り除かれます
+AOTのみ対応しています

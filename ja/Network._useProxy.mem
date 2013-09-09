@@ -45,23 +45,23 @@ BEGIN EX
 	var serverIP: String;
 	var serverPort: int;
 	var serverUsesNAT: boolean;
-	
+
 	function Awake() {
 		// Set custom proxy server address
 		Network.proxyIP = "1.1.1.1";
 		Network.proxyPort = 1111;
-	
+
 		if (imaserver)
 			StartServerWithProxy();
 		else
 			ConnectToServerWithProxy();
 	}
-	
+
 	function StartServerWithProxy() {
 		Network.useProxy = true;
 		Network.InitializeServer(2,25000, false);
 	}
-	
+
 	function OnServerInitialized(player: NetworkPlayer) {
 		if (Network.useProxy)
 			Debug.Log ("Successfully started server with proxy support. We are connectable through "

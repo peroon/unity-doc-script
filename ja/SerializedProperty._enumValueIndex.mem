@@ -1,5 +1,5 @@
 <signature>
 enumValueIndex
 </signature>
-Enum index of an enum property.
+enumのインデックスを取得します
 SA: ::ref::propertyType, SerializedPropertyType.Enum, ::ref::enumNames.

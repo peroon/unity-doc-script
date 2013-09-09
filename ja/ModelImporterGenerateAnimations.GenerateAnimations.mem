@@ -1,2 +1,2 @@
-Default animation import mode (All animations are stored in the root object).
+アニメーション情報をインポートしてルートとなるオブジェクトに全てのアニメーションを生成します
 SA: ModelImporter.generateAnimations.

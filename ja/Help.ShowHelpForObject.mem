@@ -1,7 +1,8 @@
 <signature>
 ShowHelpForObject(Object)
 </signature>
-Show help page for this object.
+オブジェクトから該当するドキュメントページをブラウザで表示します
+
 SA: Help.HasHelpForObject.
 
 {img QuickHelper.png}\\

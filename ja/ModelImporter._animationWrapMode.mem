@@ -1,2 +1,2 @@
-The default wrap mode for the generated animation clips.
+インポートされるアニメーションのラップモードを設定します
 SA: WrapMode, AnimationClip.wrapMode.

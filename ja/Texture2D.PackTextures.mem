@@ -26,10 +26,10 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Source textures.
 	var atlasTextures: Texture2D[];
-	
+
 	// Rectangles for individual atlas textures.
 	var rects: Rect[];
-	
+
 	function Start () {
 		// Pack the individual textures into the smallest possible space,
 		// while leaving a two pixel gap between their edges.

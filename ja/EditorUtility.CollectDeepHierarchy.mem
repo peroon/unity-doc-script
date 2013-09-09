@@ -1,9 +1,9 @@
 <signature>
 CollectDeepHierarchy(Object[])
 </signature>
-Calculates and returns a list of all assets the assets listed in /roots/ depend on.
 {img EditorUtilityCollectDeepHierarchy.png}\\
-''Show list of all assets the assets listed in roots depend on.''
+オブジェクトの子も含めたアセットの配列を返します。これは依存関係にあるものすべてを取得します
+EditorUtility.CollectDependenciesと違い、これはヒエラルキーにあるオブジェクトのみを取得します
 BEGIN EX
 	// Show list of all assets the assets listed in roots depend on.
 	// on the selected GameObject

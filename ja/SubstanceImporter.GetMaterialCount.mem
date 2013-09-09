@@ -1,4 +1,4 @@
 <signature>
 GetMaterialCount()
 </signature>
-Get the number of Procedural Material instances.
+ProceduralMaterialの数を取得します

@@ -1,10 +1,9 @@
 <signature>
 GetFiltered(Type,SelectionMode)
 </signature>
-Returns the current selection filtered by type and mode.
-For a selected GameObject that has multiple Components of /type/, only the first one will be included in the results. \\
-if /type/ is a subclass of [[Component]] or [[GameObject]] the full SelectionMode is supported. \\
-if /type/ does not subclass from [[Component]] or [[GameObject]] (eg. [[Mesh]] or [[ScriptableObject]]) only SelectionMode.ExcludePrefab and SelectionMode.Editable are supported.
+取得範囲と取得する型のフィルターをかけ、オブジェクトを取得します
+例えば、SelectionMode.TopLevelで取得出来るものが１つの場合、最初に検出されたオブジェクトを返します
+
 BEGIN EX
 class ToggleActive extends ScriptableObject {
     @MenuItem ("Example/Toggle Active of Selected %i")
@@ -20,5 +19,5 @@ class ToggleActive extends ScriptableObject {
     }
 }
 END EX
-@param type Only objects of this type will be retrieved.
-@param mode Further options to refine the selection.
+@param type 取得したいタイプ
+@param mode 取得範囲

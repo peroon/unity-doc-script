@@ -2,7 +2,8 @@
 BeginToggleGroup(string,bool)
 BeginToggleGroup(GUIContent,bool)
 </signature>
-Begin a vertical group with a toggle to enable or disable all the controls within at once.
+トグルで編集可,不可を操作できるGUIグループを作成します
+必ずBeginToggleGroupとEndToggleGroupで囲む必要があります
 SA: ::ref::EndToggleGroup.
 
 {img Aligner.png}\\
@@ -11,43 +12,43 @@ BEGIN EX
 	// C# Example
 	// Simple script that lets you align GameObjects 
 	// position/rotation/scale wise with the selected active transform
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class Aligner : EditorWindow {
 		bool[] pos = new bool[3] { true, true, true };
 		bool[] rot = new bool[3] { true, true, true };
 		bool[] scale = new bool[3] { true, true, true };
-	
+
 		bool posGroupEnabled = true;
 		bool rotGroupEnabled = true;
 		bool scaleGroupEnabled = false;
-	
+
 		void OnGUI() {
 			posGroupEnabled = EditorGUILayout.BeginToggleGroup("Align position", posGroupEnabled);
 				pos[0] = EditorGUILayout.Toggle("x", pos[0]);
 				pos[1] = EditorGUILayout.Toggle("y", pos[1]);
 				pos[2] = EditorGUILayout.Toggle("z", pos[2]);
 			EditorGUILayout.EndToggleGroup();
-	
+
 			rotGroupEnabled = EditorGUILayout.BeginToggleGroup("Align rotation", rotGroupEnabled);
 				rot[0] = EditorGUILayout.Toggle("x", rot[0]);
 				rot[1] = EditorGUILayout.Toggle("y", rot[1]);
 				rot[2] = EditorGUILayout.Toggle("z", rot[2]);
 			EditorGUILayout.EndToggleGroup();
-	
+
 			scaleGroupEnabled = EditorGUILayout.BeginToggleGroup("Align scale", scaleGroupEnabled);
 				scale[0] = EditorGUILayout.Toggle("x", scale[0]);
 				scale[1] = EditorGUILayout.Toggle("y", scale[1]);
 				scale[2] = EditorGUILayout.Toggle("z", scale[2]);
 			EditorGUILayout.EndToggleGroup();
-	
+
 			GUILayout.Space(30);
 			if (GUILayout.Button("Align!"))
 				Align();
 		}
-	
+
 		void Align() {
 			Transform[] transforms = Selection.transforms;
 			Transform activeTransform = Selection.activeTransform;
@@ -88,7 +89,7 @@ BEGIN EX
 				}
 			}
 		}
-	
+
 		[MenuItem("Examples/Position-Rotation-Scale Aligner")]
 		static void Init() {
 			Aligner window = (Aligner)EditorWindow.GetWindow(typeof(Aligner));
@@ -96,6 +97,6 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Label to show above the toggled controls.
-@param toggle Enabled state of the toggle group.
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param toggle 選択状態の場合、trueを返します
 @return The enabled state selected by the user.

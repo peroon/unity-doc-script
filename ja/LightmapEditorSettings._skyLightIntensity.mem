@@ -1,6 +1,7 @@
 <signature>
 skyLightIntensity
 </signature>
-Sky light intensity.
-Sky light can give very good results in outdoor scenes but
-also significantly increases bake time. Value of 0 disables sky light.
+スカイライトの強度
+屋外のようなシーンで効果を発揮します
+しかし、ベイク時間が増加してしまうので注意してください
+

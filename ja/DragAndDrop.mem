@@ -1,1 +1,65 @@
-Editor drag & drop operations.
+UnityEditor上で行われるドラッグ＆ドロップを操作するためのクラスです
+
+pathsまたはobjectReferencesを使用しない場合でも必ず空の配列を代入してください
+代入しないとEventType.DragUpdatedやEventType.DragExitedなどのDrag専用イベントが呼び出されません
+
+BEGIN EX
+using UnityEditor;
+using UnityEngine;
+
+public class Example : EditorWindow
+{
+    [MenuItem("Window/Example")]
+    static void Open()
+    {
+        GetWindow<Example>();
+    }
+
+    void OnGUI()
+    {
+        EditorGUILayout.LabelField("Drag me!");
+        Event e = Event.current;
+
+        if (e.type == EventType.MouseDrag)
+        {
+            DragAndDrop.PrepareStartDrag();
+            DragAndDrop.paths = new string[0];
+            DragAndDrop.visualMode = DragAndDropVisualMode.Move;
+            DragAndDrop.SetGenericData("ExampleDrag", "String");
+            DragAndDrop.StartDrag("ExampleDraging...");
+            e.Use();
+        }
+    }
+}
+END EX
+
+BEGIN EX
+using UnityEditor;
+using UnityEngine;
+using System.Collections;
+
+public class Example2 : EditorWindow
+{
+    [MenuItem("Window/Example2")]
+    static void Open()
+    {
+        GetWindow<Example2>();
+    }
+
+    void OnGUI()
+    {
+
+        EditorGUILayout.LabelField("Drop here!");
+
+        DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+
+        object dragData = DragAndDrop.GetGenericData("ExampleDrag");
+
+        if (Event.current.type == EventType.DragPerform && dragData != null)
+        {
+            DragAndDrop.AcceptDrag();
+            Debug.Log(dragData);
+        }
+    }
+}
+END EX

@@ -2,6 +2,6 @@
 RenderGameViewCameras(Rect,bool,bool)
 RenderGameViewCameras(Rect,Rect,bool,bool)
 </signature>
-Render all ingame cameras.
-@param cameraRect The device coordinates to render all game cameras into.
-@param gizmos Show gizmos as well.
+GameViewにレンダリングされているものを現在のEditorWindowでもレンダリングを行います
+@param cameraRect ゲームビューの画面を表示するRect情報
+@param gizmos Gizmoを表示する場合はtrueにする

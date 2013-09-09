@@ -2,9 +2,7 @@
 LogError(string)
 LogError(string,Object)
 </signature>
-Logs an import error message to the console.
-Pass an asset as the second argument to link the error to the asset in the editor.
-
+コンソールにエラーログを表示します
 SA: Debug.LogError.
 BEGIN EX
 	class CustomImportSettings extends AssetPostprocessor {

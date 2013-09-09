@@ -1,4 +1,5 @@
 <signature>
 SetGenericData(string,object)
 </signature>
-Set data associated with current drag and drop operation.
+ドラッグ＆ドロップしているオブジェクトのデータを設定します
+typeに設定する文字列は自由に決めることができます

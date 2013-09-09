@@ -1,15 +1,14 @@
 <signature>
 BeginChangeCheck()
 </signature>
-Check if any control was changed inside a block of code.
-When needing to check if GUI.changed is set to true inside a block of code,
-wrap the code inside BeginChangeCheck () and EndChangeCheck () like this:
+BeginChangeCheck とEndChangeCheckで囲んだGUIグループ内の GUI要素で何らかの変更がなされた時にアクションを起こすために使用されます
+同じ機能としてGUI.changedもありますが、これはOnGUI関数内全てのことを指すので、一定の範囲内だけで行いたい場合はこちらを使用します
 BEGIN EX
 	EditorGUI.BeginChangeCheck ();
-	
+
 	// Block of code with controls
 	// that may set GUI.changed to true.
-	
+
 	if (EditorGUI.EndChangeCheck ()) {
 		// Code to execute if GUI.changed
 		// was set to true inside the block of code above.

@@ -1,5 +1,6 @@
 <signature>
 DuplicateCommand()
 </signature>
-Duplicates the serialized property.
-The serialized property can't be used anymore after calling this function. A new iterator must be created in that case.
+シリアライズ化されたプロパティが重複しているか確認します
+この関数を使用した後のSerializedProoertyは使用することができません
+このような時には新しくイテレーターを作成する必要があります

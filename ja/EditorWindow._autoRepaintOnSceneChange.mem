@@ -1,20 +1,19 @@
 <signature>
 autoRepaintOnSceneChange
 </signature>
-Does the window automatically repaint whenever the scene has changed?
 {img CameraViewer.png}\\
-''Editor Window that renders what the main camera is "seeing".''
+Sceneビュー内で何らかの変更が加えられた時自動的にEditorWindowを再描画する場合はtrueを設定します
 BEGIN EX
 	// C# example
 	// Simple script that lets you render the main camera in an editor Window.
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class CameraViewer : EditorWindow {
 		Camera camera = Camera.main;
 		RenderTexture renderTexture;
-	
+
 		[MenuItem("Example/Camera viewer")]
 		static void Init() {
 			EditorWindow editorWindow = GetWindow(typeof(CameraViewer));

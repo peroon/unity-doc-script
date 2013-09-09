@@ -1,4 +1,5 @@
 <signature>
 toggleGroup
 </signature>
-Style used for headings for EditorGUILayout::ref::BeginToggleGroup.
+トグルグループで使用されるスタイル
+

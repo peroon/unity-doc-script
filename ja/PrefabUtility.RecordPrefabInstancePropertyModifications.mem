@@ -1,5 +1,5 @@
 <signature>
 RecordPrefabInstancePropertyModifications(Object)
 </signature>
-Force record property modifications by comparing against the parent prefab.
-This is done automatically and you will not have to call this function manually.
+強制的に親のプレハブと比較しプロパティの変更を上書きします
+個別に変更を適用する場合はPrefabUtility.GetPropertyModificationsとPrefabUtility.SetPropertyModificationsを使用して下さい

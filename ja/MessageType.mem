@@ -1,2 +1,2 @@
-User message types.
+EditorGUI.HelpBoxやEditorGUILayout.HelpBoxで使用するメッセージタイプを選択します
 SA: [[EditorGUI.HelpBox]], [[EditorGUILayout.HelpBox]].

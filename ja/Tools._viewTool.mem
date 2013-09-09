@@ -1,4 +1,5 @@
 <signature>
 viewTool
 </signature>
-Which view tool is active in the scene view.
+現在のViewToolを取得します
+

@@ -1,1 +1,1 @@
-Callback raised whenever the state of the Project window changes.
+プロジェクトウィンドウでの更新が行われた後に呼び出されるデリゲートを設定します

@@ -1,17 +1,16 @@
 <signature>
 Close()
 </signature>
-Close the editor window.
-This will destroy the editor window
-
 {img ShowPopupEx.png}\\
-''Simple window that lets you delete components from the selected Game Objects.''
+EditorWindowを閉じます
+この関数は通常右上にある閉じるボタンと同じ動作をします
+EditorWindow.ShowPopup閉じるボタンがないウィンドウを強制的に閉じる場合にも使用されます
 BEGIN EX
 	// Create a simple popup window that lets you delete a specific 
 	// Component from the GameObjects you have selected
 	//
 	// Warning: There is no undo in this action.
-	
+
 	class ShowPopupEx extends EditorWindow {
 		var className = "Rigidbody";
 		@MenuItem("Example/Delete Components in Selection")

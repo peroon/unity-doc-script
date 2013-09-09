@@ -1,7 +1,5 @@
 <signature>
 FindProperty(string)
 </signature>
-Find serialized property by name.
-You can use this to find a specific property in the target object.
-
+プロパティ名からSerializedPropertyを取得します
 SA: ::ref::GetIterator, [[SerializedProperty]].

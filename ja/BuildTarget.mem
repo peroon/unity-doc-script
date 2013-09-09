@@ -1,2 +1,2 @@
-Target build platform.
+Unityプロジェクトをビルドする時の対象プラットフォームを選択します
 SA: BuildPipeline.BuildPlayer.

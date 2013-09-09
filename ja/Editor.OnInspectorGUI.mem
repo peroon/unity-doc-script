@@ -1,11 +1,9 @@
 <signature>
 OnInspectorGUI()
 </signature>
-Implement this function to make a custom inspector.
-Inside this function you can add your own custom GUI for the inspector of a specific object class.
-
-__Note:__ This function has to be overrided in order to work. Check the example:
-
+インスペクターに表示されるGUIを自由に編集する時に使用します
+EditorGUIやEditorGUILayoutを使用することが可能です
+この関数は必ずオーバーライドを行う必要があります
 SA: Editor.DrawDefaultInspector.
 BEGIN EX NOCHECK
 	//Creates a custom Label on the inspector for all the scripts named ScriptName

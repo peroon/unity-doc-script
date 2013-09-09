@@ -1,1 +1,1 @@
-Draw the gizmo if it is selected or a child of the selection.
+オブジェクトが選択状態の時、または選択された子である場合に描画します

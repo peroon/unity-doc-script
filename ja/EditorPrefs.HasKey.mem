@@ -1,9 +1,8 @@
 <signature>
 HasKey(string)
 </signature>
-Returns true if /key/ exists in the preferences.
 {img QuickNotes.png}\\
-''Quick notes that last between Unity Sessions.''
+keyに紐付けられた値がある場合trueを返します
 BEGIN EX
 	// Simple Editor Script that lets you create / save quick notes
 	// Between Unity Sessions.

@@ -1,2 +1,2 @@
-Use hinted font rendering without anti-aliasing. This is the crispest font rendering option, and may be most readable for small.
-Font sizes.
+アンチエイリアスをかけずにレンダリングを行います
+これは最も単純なレンダリング方法でありフォントサイズによっては見やすくなる可能性があります

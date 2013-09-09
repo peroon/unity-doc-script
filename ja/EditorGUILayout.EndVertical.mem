@@ -1,16 +1,16 @@
 <signature>
 EndVertical()
 </signature>
-Close a group started with BeginVertical.
+BeginVerticalを使用した場合は必ずEndVerticalを使用する必要があります
 SA: EditorGUILayout.BeginVertical
 
 {img BeginEndVerticalExample.png}\\
 ''Vertical Compound group.''
 BEGIN EX
 	// Create a Vertical Compound Button 
-	
+
 	class BeginEndVerticalExample extends EditorWindow {
-	
+
 		@MenuItem("Examples/Begin-End Vertical usage")
 		static function Init() {
 			var window = GetWindow(BeginEndVerticalExample);

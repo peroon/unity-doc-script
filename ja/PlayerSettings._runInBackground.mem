@@ -1,4 +1,5 @@
 <signature>
 runInBackground
 </signature>
-If enabled, your game will continue to run after lost focus.
+trueの場合、エディタまたはビルドしたアプリがフォーカスが当たっていなくても動作するようになります
+

@@ -1,4 +1,5 @@
 <signature>
 nearClipPlane
 </signature>
-Near clip plane used for preview visualization.
+プレビューの可視化に使用される最も近いクリップ面の距離を取得します
+

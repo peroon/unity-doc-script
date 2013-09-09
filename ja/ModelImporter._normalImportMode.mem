@@ -1,5 +1,8 @@
 <signature>
 normalImportMode
 </signature>
-Normals import mode.
+法線の設定を行います
+モデリングツールなどで計算された法線情報を使用する場合はModelImporterTangentSpaceMode.Importを使用してください
+Unity側がインポート時に法線の再計算を行うことが可能です。その際はModelImporterTangentSpaceMode.Calculateを設定するようにしてください
+デフォルトはModelImporterTangentSpaceMode.Importです
 SA: [[ModelImporterTangentSpaceMode]].

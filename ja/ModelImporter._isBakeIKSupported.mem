@@ -1,1 +1,1 @@
-Is Bake Inverse Kinematics (IK) supported by this importer.
+インポートするモデルデータにIKが設定されている場合、trueを返します

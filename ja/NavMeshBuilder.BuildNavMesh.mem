@@ -1,4 +1,4 @@
 <signature>
 BuildNavMesh()
 </signature>
-Build the Navmesh.
+同期でNavMeshをビルドします

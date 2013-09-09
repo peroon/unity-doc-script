@@ -12,7 +12,7 @@ BEGIN EX
 	function Start () 
 	{
 		group = gameObject.AddComponent(LODGroup);
-	
+
 		// Add 4 LOD levels
 		var lods = new LOD[4];
 

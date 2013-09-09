@@ -1,1 +1,1 @@
-Threshold for area distortion when generating secondary UV.
+セカンダリUVを生成した際に許容出来る範囲の歪みを設定します

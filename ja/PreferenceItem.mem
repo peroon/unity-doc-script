@@ -4,10 +4,10 @@ BEGIN EX
 public class OurPreferences {
 	// Have we loaded the prefs yet
 	private static var prefsLoaded : boolean = false;
-	
+
 	// The Preferences
 	public static var boolPreference : boolean = false;
-	
+
 	// Add preferences section named "My Preferences" to the Preferences Window
 	@PreferenceItem ("My Preferences")
 	static function PreferencesGUI () {

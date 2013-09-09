@@ -1,1 +1,1 @@
-Keep texture borders the same when generating mipmaps?
+Mipmap生成時にborderの設定をオリジナルのテクスチャと同じにするかどうか

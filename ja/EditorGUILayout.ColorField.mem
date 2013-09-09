@@ -3,12 +3,12 @@ ColorField(Color,GUILayoutOption[])
 ColorField(string,Color,GUILayoutOption[])
 ColorField(GUIContent,Color,GUILayoutOption[])
 </signature>
-Make a field for selecting a [[Color]].
 {img MassiveColorChange.png}\\
-''Change the color of the selected GameObjects.''
+Color型のフィールドを作成します
+カラーピッカーを表示して色を設定します
 BEGIN EX
 	// Change The color of the selected Game Objects
-	
+
 	class MassiveColorChange extends EditorWindow {
 		
 		var matColor : Color = Color.white;
@@ -33,9 +33,9 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label to display in front of the field.
-@param value The color to edit.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 幅・高さ
+@param value 現在値
+@param options 左側に表示する文字列
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The color selected by the user.

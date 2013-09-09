@@ -1,5 +1,5 @@
 <signature>
 RegisterSnapshot()
 </signature>
-Register the snapshot state made with ::ref::CreateSnapshot so the user can later undo back to that state.
+Undo操作を行う直前にRedo操作として元に戻すSnapshotを作成します
 SA: ::ref::SetSnapshotTarget , ::ref::CreateSnapshot.

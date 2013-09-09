@@ -1,2 +1,3 @@
-Symlink runtime libraries when generating iOS XCode project. (Faster iteration time).
+シンボリックリンクのランタイムライブラリをiOSのXcodeプロジェクト生成時に含めます
+そのため出来上がるフォルダ内のデータサイズが小さくなります
 SA: BuildPipeline.BuildPlayer.

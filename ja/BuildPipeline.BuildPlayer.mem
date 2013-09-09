@@ -1,9 +1,10 @@
 <signature>
 BuildPlayer(string[],string,BuildTarget,BuildOptions)
 </signature>
-Builds a player __(Unity Pro only)__.
-Use this function to programatically create a build of your project.
-Note that any references to GameObjects acquired in the editor script /before/ the BuildPlayer call will be invalid after it and will need to be reacquired.
+Unityプロジェクトをビルドしてアプリケーションを作成します（Unity Pro のみ）
+この関数を呼び出す直前に取得したゲームオブジェクトへの参照は、取り消されるので注意して下さい
+何らかのエラーが出た場合、戻り値としてエラー文字を返し、成功したときは空文字になります
+Pro専用です
 BEGIN EX
 	// Build a folder containing unity3d file and html file
 	@MenuItem ("Build/BuildWebplayer")
@@ -13,8 +14,8 @@ BEGIN EX
 					   BuildTarget.WebPlayer, BuildOptions.None); 
 	}
 END EX
-@param levels The scenes to be included in the build. If empty, the currently open scene will be built. Paths are relative to the project folder (Assets/MyLevels/MyScene.unity).
-@param locationPathName The path where the application will be built.
-@param target The [[BuildTarget]] to build.
-@param options Additional [[BuildOptions]], like whether to run the built player.
+@param levels ビルドに含めるシーンのパス
+@param locationPathName 成果物の保存先のパス
+@param target ビルドターゲット
+@param options ビルドオプション
 @return An error message if an error occurred.

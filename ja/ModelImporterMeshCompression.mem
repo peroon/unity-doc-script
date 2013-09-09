@@ -1,5 +1,2 @@
-Mesh compression options for [[ModelImporter]].
-Compressing meshes saves space in the built game, but more compression
-introduces more artifacts in vertex data.
-
+ModelImporter.meshCompressionで使用されるメッシュの圧縮オプションを選択します
 SA: ModelImporter.meshCompression.

@@ -2,12 +2,13 @@
 probePositions
 </signature>
 プローブの位置。エディターのみ
-プローブの位置を、親オブジェクトから相対的なローカル座標の配列で返す。
+プローブの位置を、親オブジェクトから相対的なローカル座標の配列で返
+す。
 
 At runtime this function will return an empty Vector3 array and setting it will have no effect.
 BEGIN EX
 	// Create four probe positions which will form a tetrahedron.
-	
+
 	class LightProbePositions extends EditorWindow {
 
 		var lightProbes : LightProbeGroup = null;

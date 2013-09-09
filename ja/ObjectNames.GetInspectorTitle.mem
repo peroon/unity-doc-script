@@ -1,7 +1,5 @@
 <signature>
 GetInspectorTitle(Object)
 </signature>
-Inspector title for an object.
-If an object is a script, this will return "''scriptname'' (Script)", for example.
-
+インスペクターに表示を行う用の文字列を取得します
 SA: ObjectNames.GetClassName, ObjectNames.NicifyVariableName.

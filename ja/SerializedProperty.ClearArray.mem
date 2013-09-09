@@ -1,5 +1,5 @@
 <signature>
 ClearArray()
 </signature>
-Remove all elements from the array.
+配列のすべての要素を削除します
 SA: ::ref::isArray.

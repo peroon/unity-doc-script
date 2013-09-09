@@ -1,5 +1,5 @@
 <signature>
 AddSeparator(string)
 </signature>
-Add a seperator item to the menu.
+区切り文字を追加します。空文字列(“”)の場合は区切り線になります
 SA: GenericMenu.AddItem, GenericMenu.AddDisabledItem.

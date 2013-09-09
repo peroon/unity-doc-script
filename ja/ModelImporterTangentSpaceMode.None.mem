@@ -1,4 +1,2 @@
-Strip normals/tangents.
-If normals/tangents are not needed by all shaders, this can be a simple
-way to reduce build size a little.
+法線と接線データが有った場合、インポート時に取り除かれます
 SA: ModelImporter.normalImportMode, ModelImporter.tangentImportMode.

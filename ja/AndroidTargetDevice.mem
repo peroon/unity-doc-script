@@ -1,1 +1,2 @@
-Target Android device architecture.
+Androidデバイスのアーキテクチャを選択します
+現在（Unity4.2.0）ではARMv7のみです

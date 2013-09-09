@@ -1,8 +1,9 @@
 <signature>
 activeTransform
 </signature>
-Returns the active transform. (The one shown in the inspector).
-This will never return prefabs or non-modifyable objects.
+現在選択中のTransform情報を取得します
+複数選択した場合は最初に選択したオブジェクトの情報を取得します
+代入を行うことで選択状態にすることも出来ます
 BEGIN EX
 class SelectionActiveTransform extends ScriptableObject {
     @MenuItem ("Example/Duplicate at Origin _d")

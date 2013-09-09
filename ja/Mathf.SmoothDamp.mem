@@ -11,7 +11,7 @@ BEGIN EX
 	var target : Transform;
 	var smoothTime = 0.3;
 	private var yVelocity = 0.0;
-	
+
 	function Update () {
 		var newPosition : float = Mathf.SmoothDamp(transform.position.y, target.position.y,
 		                             yVelocity, smoothTime);

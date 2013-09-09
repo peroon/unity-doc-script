@@ -1,4 +1,4 @@
 <signature>
 CalculateLODGroupBoundingBox(LODGroup)
 </signature>
-Recalculate the bounding region for the given LODGroup.
+LODGroupのバウンズ範囲を再計算します

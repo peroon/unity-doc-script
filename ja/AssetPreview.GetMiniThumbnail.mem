@@ -1,4 +1,5 @@
 <signature>
 GetMiniThumbnail(Object)
 </signature>
-Returns the thumbnail for an object (like the ones you see in the project view).
+GUIContentなどで使用するためのアイコンを取得します
+Hierarchyのようなウィンドウを作成するときに使用されます

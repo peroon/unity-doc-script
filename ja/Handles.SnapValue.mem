@@ -1,5 +1,5 @@
 <signature>
 SnapValue(float,float)
 </signature>
-Rounds the value ''val'' to the closest multiple of ''snap'' (snap can only be posiive).
-@return The rounded value, if ''snap'' is positive, and ''val'' otherwise.
+スナップ値の最も近い倍数に丸めた値を返します
+必ずスナップ値は正である必要があります

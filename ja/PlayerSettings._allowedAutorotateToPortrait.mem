@@ -1,4 +1,6 @@
 <signature>
 allowedAutorotateToPortrait
 </signature>
-Is auto-rotation to portrait supported?
+端末の向きを変更した時、画面を自動回転をさせるかどうか
+OrientationがAutorotateの時のみ有効です
+

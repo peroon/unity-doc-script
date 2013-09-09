@@ -1,1 +1,2 @@
-Tells Unity that the asset was deleted by the callback. Unity will not try to delete the asset, but will delete the cached version and preview file.
+プロジェクトウィンドウ上では削除されますがDisk上では削除されていません
+リフレッシュ（または再インポート）を行った場合元に戻ります

@@ -1,7 +1,9 @@
 <signature>
 paths
 </signature>
-The file names being dragged.
-Never returns null. If no paths are available returns an empty array.
+ドラッグされているアセットのパスを取得、または設定します
+nullを返すことはなく、参照するオブジェクトがない場合は空のstring配列を返します
 
+また、pathsを使用しない場合でも必ず空の配列を代入してください
+代入しないとEventType.DragUpdatedやEventType.DragExitedなどのDrag専用イベントが呼び出されません
 SA: ::ref::objectReferences, ::ref::PrepareStartDrag, ::ref::StartDrag.

@@ -1,2 +1,2 @@
-Generate cubemap from cylindrical texture.
+円柱状テクスチャからキューブマップを生成します
 SA: TextureImporter.generateCubemap.

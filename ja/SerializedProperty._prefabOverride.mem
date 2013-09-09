@@ -1,5 +1,5 @@
 <signature>
 prefabOverride
 </signature>
-Is property's value different from the prefab it belongs to?
+プレハブの値に変更があり、上書きすべきものがあるかどうかを確認します
 SA: ::ref::isInstantiatedPrefab.

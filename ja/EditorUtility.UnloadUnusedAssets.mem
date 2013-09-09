@@ -1,7 +1,7 @@
 <signature>
 UnloadUnusedAssets()
 </signature>
-Unloads assets that are not used.
-An asset is deemed to be unused if it isn't reached after walking the whole game object hierarchy, including script components. Static variables are also examined.
-
+使用していないアセットをアンロードします
+スクリプト含むすべてのコンポーネントを調べた後に使用されていないと判断されたものをアンロードします
+また、静的変数も対象に入ります
 SA: [[Resources.UnloadUnusedAssets]].

@@ -1,10 +1,9 @@
 <signature>
 ReplaceDirectory(string,string)
 </signature>
-Replaces a directory.
-Replaces the directory located at __dst__ with the directory located at __src__.
-if __dst__ doesnt exists it copies the file. If __dst__ exists
-then it deletes it and copies the directory at __src__ to __dst__
+ディレクトリを置換します
+置換先に指定したディレクトリがない場合はコピーされたものが置換先に生成されます
+ディレクトリ内にあるファイルも全て置換されます
 SA: FileUtil.ReplaceFile.
 BEGIN EX
 	// creates a menu entry that replaces a directory.

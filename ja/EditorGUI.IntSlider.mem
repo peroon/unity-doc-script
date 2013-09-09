@@ -3,12 +3,13 @@ IntSlider(Rect,int,int,int)
 IntSlider(Rect,string,int,int,int)
 IntSlider(Rect,GUIContent,int,int,int)
 </signature>
-Make a slider the user can drag to change an integer value between a min and a max.
 {img EditorGUIIntSlider.png}\\
-''Int Slider in an Editor Window.''
+スライダーを作成します
+値はInt型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
 BEGIN EX
 	// Simple editor script that lets you clone your object in a grid
-	
+
 	class EditorGUIIntSlider extends EditorWindow {
 		var cloneTimesX : int = 1;
 		var cloneTimesY : int = 1;
@@ -26,7 +27,7 @@ BEGIN EX
 			cloneTimesX = EditorGUI.IntSlider(Rect(0,0,position.width, 20), cloneTimesX, 1, 10);
 			cloneTimesY = EditorGUI.IntSlider(Rect(0,25,position.width, 20), cloneTimesY, 1, 10);
 			cloneTimesZ = EditorGUI.IntSlider(Rect(0,50,position.width, 20), cloneTimesZ, 1, 10);
-	
+
 			if(GUI.Button(Rect(0,75,position.width,15),"Make Grid!"))
 				CloneSelected();
 		}
@@ -42,23 +43,25 @@ BEGIN EX
 							Vector3(i,j,k)*spacing, 
 							Selection.activeGameObject.transform.rotation);
 		}
-	
+
 	}
 END EX
-@param position Rectangle on the screen to use for the slider.
-@param label Optional label in front of the slider.
-@param value The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value 現在値
+@param leftValue 最小値
+@param rightValue 最大値
 @return The value that has been set by the user.
 <signature>
 IntSlider(Rect,SerializedProperty,int,int)
 IntSlider(Rect,SerializedProperty,int,int,string)
 IntSlider(Rect,SerializedProperty,int,int,GUIContent)
 </signature>
-Make a slider the user can drag to change a value between a min and a max.
-@param position Rectangle on the screen to use for the slider.
-@param label Optional label in front of the slider.
-@param property The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
+スライダーを作成します
+値はInt型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
+@param position 表示位置
+@param label 左側に表示する文字列
+@param property シリアライズ化されたint型のプロパティ
+@param leftValue 最小値
+@param rightValue 最大値

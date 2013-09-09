@@ -1,7 +1,7 @@
 <signature>
 helpString
 </signature>
-Allows you to set the help text of the wizard.
+ウィザードのヘルプテキストを設定します
 SA: ScriptableWizard.OnWizardUpdate
 
 {img HelpString.png}\\

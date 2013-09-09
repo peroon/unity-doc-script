@@ -1,7 +1,8 @@
 <signature>
 SendEvent(Event)
 </signature>
-Sends an Event to a window.
+EditorWindowにイベントを送信します
+EditorGUIUtility.CommandEventと組み合わせることによって、コピー＆ペーストの実行を行うことが可能です
 BEGIN EX
 		var win : EditorWindow;
 		

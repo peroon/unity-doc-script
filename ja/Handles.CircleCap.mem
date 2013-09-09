@@ -1,20 +1,20 @@
 <signature>
 CircleCap(int,Vector3,Quaternion,float)
 </signature>
-Draw a camera-facing Circle. Pass this into handle functions.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+円を描画します
 
 {img CircleCap.png}\\
-''Circle Cap in the scene view.''
+これはハンドルを作成するときに使用されます
+
 BEGIN EX
 	// Draw one Circle on each axis of any GameObject that
 	// has the "DummyCircleCapScript.js" script attached.
-	
+
 	@CustomEditor (DummyCircleCapScript)
 	class CircleCap extends Editor {
 		
 		var circleSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.CircleCap(0,
@@ -37,6 +37,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	//DummyCircleCapScript.js
-	
+
 	Debug.Log("I have CircleCap Handles attached to this transform!");
 END EX

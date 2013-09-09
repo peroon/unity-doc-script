@@ -1,2 +1,2 @@
-Generate animations in the root objects of the animation package.
+インポート時にルートとなっているオブジェクトにアニメーションを生成します
 SA: ModelImporter.generateAnimations.

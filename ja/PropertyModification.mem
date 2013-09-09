@@ -1,2 +1,2 @@
-Defines a single modified property.
-Used by the prefab system to track any changes applied to an instance.
+プロパティが変更された時に一時的に値を保持しておくためのクラスです
+Prefabのインスタンスが変更された時に使用されます

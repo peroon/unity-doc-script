@@ -6,14 +6,15 @@ LayerField(string,int,GUIStyle,GUILayoutOption[])
 LayerField(GUIContent,int,GUILayoutOption[])
 LayerField(GUIContent,int,GUIStyle,GUILayoutOption[])
 </signature>
-Make a layer selection field.
 {img EditorGUILayoutLayerField.png}\\
-''Set the layer of the selected GameObjects.''
+レイヤーフィールドを作成します
+表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのLayerの値になります
+戻り値として選択したレイヤー番号が返されます
 BEGIN EX
 	// Simple editor script that lets you set the layer for the selected GameObjects.
-	
+
 	class EditorGUILayoutLayerField extends EditorWindow {
-	
+
 		var selectedLayer : int = 0;
 		@MenuItem("Examples/Set Layer For Selection")
 		static function Init() {
@@ -37,10 +38,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the field.
-@param layer The layer shown in the field.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param layer 選択されたレイヤー
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The layer selected by the user.

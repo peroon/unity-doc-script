@@ -19,11 +19,11 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Rotate an image 180 degrees by reversing the order
 	// of the pixels.
-	
+
 	// Source texture.
 	var sourceTex: Texture2D;	
-	
-	
+
+
 	function Start () {
 		// Get the pixel block and reverse the array to
 		// rotate the image.

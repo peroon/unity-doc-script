@@ -1,3 +1,2 @@
-<modelFileName>-<materialName>.mat material name.
-Name materials <modelFileName>-<materialName>.mat when searching for existing or creating new materials.
+モデル名とマテリアル名を使用します
 SA: ModelImporter.materialName.

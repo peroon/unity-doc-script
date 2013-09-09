@@ -1,4 +1,5 @@
 <signature>
 lastUsedResolution
 </signature>
-Last used lightmap resolution (i.e. resolution of the lightmaps currently in the scene) in texels per world unit.
+最後に使用されたライトマップの解像度
+

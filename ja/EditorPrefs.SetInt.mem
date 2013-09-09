@@ -1,9 +1,10 @@
 <signature>
 SetInt(string,int)
 </signature>
-Sets the value of the preference identified by /key/.
 {img ScriptAdder.png}\\
-''Add one or more script to the selected GameObjects.''
+int型の値をkeyに紐づけて保存します
+Windowsで保存を行う場合はレジストリに保存を行う関係で2バイト文字（日本語）で保存を行うのは得策ではありません
+レジストリでは2バイト文字を扱うことが保証されず文字化けを起こしてしまう可能性があるからです
 BEGIN EX
 	// Simple Editor Script that adds one or more scripts
 	// to the selected GameObjects

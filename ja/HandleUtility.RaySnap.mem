@@ -1,5 +1,6 @@
 <signature>
 RaySnap(Ray)
 </signature>
-Casts /ray/ against the scene and report if an object lies in its path.
-@return A boxed RaycastHit, null if nothing hit it.
+シーンビューにレイを飛ばします
+ヒットした場合オブジェクトを返します
+オブジェクトの中身はRaycastHitです

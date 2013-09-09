@@ -1,4 +1,4 @@
-Material naming setting.
-When importing new model Unity will generate material name based on this setting and then it will try to locate
-existing material with such name, if no such material exists Unity will create a new material by that name.
+マテリアル名の規則を設定します
+モデルをインポートする際に、この設定に基づいてマテリアルを取得したり、マテリアルが存在しない場合はマテリアルを生成したりします
+マテリアル名の規則の詳細はModelImporterMaterialNameを参照してください
 SA: [[ModelImporterMaterialName]], ::ref::materialSearch, ::ref::importMaterials.

@@ -9,7 +9,7 @@ Called whenever the selection has changed.
 ''Saves the current selection and load it later with a simple click.''
 BEGIN EX
 	// Simple example that lets you save the current selection and load it.
-	
+
 	class SelectionChange extends EditorWindow {
 		var selectionIDs : int[];
 		@MenuItem("Example/Selection Saver")
@@ -35,7 +35,7 @@ BEGIN EX
 		}
 		function LoadLastSavedSelection() {
 			var strIDs : String[] = EditorPrefs.GetString("SelectedIDs").Split(char.Parse(";"));
-	
+
 			var ids : int[] = new int[strIDs.Length];
 			for(var i = 0; i < strIDs.Length; i++)
 				ids[i] = parseInt(strIDs[i]);

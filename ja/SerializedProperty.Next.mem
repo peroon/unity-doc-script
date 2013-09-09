@@ -1,5 +1,7 @@
 <signature>
 Next(bool)
 </signature>
-Move to next property.
+次のプロパティへ移動します
+この関数では、扱ってはいけない（扱うべきではない）プロパティも存在します
+使用する場合には十分注意して下さい
 SA: ::ref::NextVisible, ::ref::Reset.

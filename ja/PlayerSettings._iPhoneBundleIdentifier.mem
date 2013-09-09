@@ -1,4 +1,5 @@
 <signature>
 iPhoneBundleIdentifier
 </signature>
-The bundle identifier of the iPhone application.
+iPhoneアプリケーションのBundle Identifier
+

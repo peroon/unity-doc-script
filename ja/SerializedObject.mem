@@ -1,4 +1,4 @@
-SerializedObject and [[SerializedProperty]] are classes for editing properties on objects in a completely generic way that automatically handles undo and styling UI for prefabs.
-SerializedObject is used in conjunction with [[SerializedProperty]] and [[Editor]] classes.
+PrefabやUndoのためにオブジェクトのプロパティをシリアライズ化して編集をするクラスです。
+通常は SerializedPropertyクラスとEditorクラスで使用されます。
 
 SA: [[SerializedProperty]] class, [[Editor]] class.

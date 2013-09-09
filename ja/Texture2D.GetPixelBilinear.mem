@@ -14,17 +14,17 @@ BEGIN EX
 	// "Warp" a texture by squashing its pixels to one side.
 	// This involves sampling the image at non-integer pixel
 	// positions to ensure a smooth effect.
-	
+
 	// Source image.
 	var sourceTex: Texture2D;
-	
+
 	// Amount of "warping".
 	var warpFactor = 1.0;
-	
+
 	private var destTex: Texture2D;
 	private var destPix: Color[];
-	
-	
+
+
 	function Start () {
 		// Set up a new texture with the same dimensions as the original.
 		destTex = new Texture2D(sourceTex.width, sourceTex.height);

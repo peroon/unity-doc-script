@@ -1,5 +1,5 @@
 <signature>
 Reset()
 </signature>
-Move to first property of the object.
+オブジェクトの最初のプロパティへ移動します
 SA: ::ref::Next, ::ref::NextVisible.

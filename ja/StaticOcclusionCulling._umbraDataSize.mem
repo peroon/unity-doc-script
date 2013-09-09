@@ -1,4 +1,5 @@
 <signature>
 umbraDataSize
 </signature>
-Returns the size in bytes that the PVS data is currently taking up in this scene on disk.
+アンブラのデータサイズを取得、または設定します
+

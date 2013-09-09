@@ -1,5 +1,4 @@
 <signature>
 GUIDToAssetPath(string)
 </signature>
-Translate a GUID to its current asset path.
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png".
+CreateFolderや AssetPathToGUID で生成されるGUIDを使用して、アセットのパスを取得します

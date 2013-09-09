@@ -1,1 +1,2 @@
-Script method call overhead decreased at the expense of limited compatibility.
+互換性を犠牲にしてスクリプトのメソッドコールによるオーバーヘッドを減少させます
+

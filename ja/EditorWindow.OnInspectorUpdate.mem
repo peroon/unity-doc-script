@@ -10,12 +10,12 @@ OnInspectorUpdate is called at 10 frames per second to give the inspector a chan
 BEGIN EX
 	// Simple script that aligns the position of several selected GameObjects
 	// with the first selected one.
-	
+
 	class AlignPosition extends EditorWindow {
 		var alignToX = true;var alignToY = true; var alignToZ = true;
 		var selected = "";
 		var alignTo = "";
-	
+
 		@MenuItem("Example/Align position")
 		static function Init() {		
 			var window = GetWindow(AlignPosition);

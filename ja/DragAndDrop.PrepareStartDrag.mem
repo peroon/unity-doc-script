@@ -1,9 +1,8 @@
 <signature>
 PrepareStartDrag()
 </signature>
-Clears drag & drop data.
-Clears everything stored in the drag & drop object and prepares it so you can write into it for initiating a drag operation.
-
+ドラッグ＆ドロップ情報を初期化し、使用出来るようにします
+ドラッグを行う前に呼び出してください
 SA: ::ref::StartDrag, ::ref::paths, ::ref::objectReferences.
 BEGIN EX
 	function OnGUI () {

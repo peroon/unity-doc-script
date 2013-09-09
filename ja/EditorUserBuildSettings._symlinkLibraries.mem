@@ -1,4 +1,5 @@
 <signature>
 symlinkLibraries
 </signature>
-Symlink runtime libraries with an iOS Xcode project.
+iOSでビルドする際にUnityのライブラリ群をシンボリックリンク（symbolic link）で扱います
+

@@ -1,10 +1,5 @@
 <signature>
 GeneratePerTriangleUV(Mesh)
 </signature>
-Will generate per-triangle uv (3 uv pairs for each triangle) with default settings.
-You'll need to merge them yourself.
-<signature>
-GeneratePerTriangleUV(Mesh,UnwrapParam)
-</signature>
-Will generate per-triangle uv (3 uv pairs for each triangle) with provided settings.
-You'll need to merge them yourself.
+デフォルトの設定で三角形あたりのUV（1つの三角形あたり3つのUVペア）を生成します
+これは手動でマージを行う必要があります

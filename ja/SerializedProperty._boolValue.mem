@@ -1,5 +1,5 @@
 <signature>
 boolValue
 </signature>
-Value of a boolean property.
+bool型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Boolean.

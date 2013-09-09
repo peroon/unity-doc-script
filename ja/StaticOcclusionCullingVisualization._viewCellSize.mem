@@ -1,4 +1,5 @@
 <signature>
 viewCellSize
 </signature>
-View Cell size used for preview visualization.
+プレビューの可視化に使用されるセルのサイズを取得します
+

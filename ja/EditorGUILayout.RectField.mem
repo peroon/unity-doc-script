@@ -3,18 +3,18 @@ RectField(Rect,GUILayoutOption[])
 RectField(string,Rect,GUILayoutOption[])
 RectField(GUIContent,Rect,GUILayoutOption[])
 </signature>
-Make an X, Y, W & H field for entering a [[Rect]].
 {img MoveResizeSelectedWindow.png}\\
-''Modify Another's window position and size values.''
+Rect型のフィールドを作成します
+X,Y,W,Hのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
 	// Simple Script that lets you modify another's window position value
 	//
 	// To use this script you need to open first the DummyWindow window.
-	
+
 	class MoveResizeSelectedWindow extends EditorWindow {
-	
+
 		var pos : Rect;
-	
+
 		@MenuItem("Examples/Move - Resize other window")
 		static function Init() {
 			var window = GetWindow(MoveResizeSelectedWindow);
@@ -35,9 +35,9 @@ END EX
 And the script that works with the example:
 BEGIN EX
 	// Dummy window that is going to be moved.
-	
+
 	class DummyWindow extends EditorWindow {
-	
+
 		static var instance;
 		@MenuItem("Examples/Dummy Window")
 		static function Init() {
@@ -49,9 +49,9 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Label to display above the field.
-@param value The value to edit.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value 現在値
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The value entered by the user.

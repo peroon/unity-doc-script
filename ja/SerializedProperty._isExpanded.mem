@@ -1,4 +1,5 @@
 <signature>
 isExpanded
 </signature>
-Is this property expanded in the inspector?
+プロパティがインスペクタ上で表示されるかどうかを確認します
+

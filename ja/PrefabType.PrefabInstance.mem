@@ -1,2 +1,2 @@
-The object is an instance of a user created prefab.
+ユーザーが作成してインスタンス化されたプレハブです
 SA: EditorUtility.GetPrefabType.

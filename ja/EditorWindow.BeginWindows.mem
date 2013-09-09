@@ -1,13 +1,10 @@
 <signature>
 BeginWindows()
 </signature>
-Mark the beginning area of all popup windows.
-GUI.Window behaves somewhat differently in the editor than inside your games. In games, GUI.Window pops up a window on your screen. In the editor, 
-GUI.Window shows a subwindow inside one of your editor windows. Begin/EndWindows is used to determine where these can go.
-You need to have all calls to GUI::ref::Window or GUILayout::ref::Window inside a ::ref::BeginWindows / ::ref::EndWindows pair. Like this:
-
 {img GUIWindowDemo.png}\\
-''Simple editor Window with a window and a button inside.''
+EditorWindowの上にポップアップウィンドウを表示します
+この関数が直接ウィンドウを表示するわけではなく、GUI.WindowやGUILayout.Windowの補助的なものになります
+EditorWindow内部にサブウィンドウを表示する際は、必ずBeginWindowとEndWindowの範囲内に記述する必要があります
 BEGIN EX
 	class GUIWindowDemo extends EditorWindow {
 		// The position of the window

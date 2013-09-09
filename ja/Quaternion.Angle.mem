@@ -8,7 +8,7 @@ BEGIN EX
 	// the rotation of this transform and target.
 
 	var target : Transform;
-	
+
 	function Update () {
 		var angle : float = Quaternion.Angle(transform.rotation, target.rotation);
 	}

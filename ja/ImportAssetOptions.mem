@@ -1,2 +1,2 @@
-Asset importing options.
+アセットのインポート方法を選択肢ます
 SA: AssetDatabase.ImportAsset, AssetDatabase.Refresh.

@@ -1,7 +1,6 @@
 <signature>
 MoveAssetToTrash(string)
 </signature>
-Moves the asset at path to the trash.
-Returns true if the asset has been successfully removed, false if it doesn't exit or couldn't be moved to the trash.
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png"
+アセットをゴミ箱へ移動（削除）します
+正常に行われた場合はtrueを返します
 SA: AssetDatabase.DeleteAsset.

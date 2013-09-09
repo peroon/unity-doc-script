@@ -1,3 +1,1 @@
-Replaces the prefab using name based lookup in the transform hierarchy.
-This is internally used by the model importer and is useful for relating game object hierarchy built 
-from scratch to an existing prefab without breaking connections.
+ヒエラルキー階層で名前ベースで検索をしてプレハブを置き換えを行います

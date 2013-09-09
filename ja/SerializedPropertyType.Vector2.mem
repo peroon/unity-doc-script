@@ -1,2 +1,2 @@
-2D vector property.
+Vector2型
 SA: [[SerializedProperty]], SerializedProperty.vector2Value, [[Vector2]].

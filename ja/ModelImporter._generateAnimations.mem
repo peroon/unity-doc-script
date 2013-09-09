@@ -1,2 +1,3 @@
-Animation generation options.
+アニメーションを生成する時、どこにAnimationコンポーネントをアタッチするかを設定します
+この機能はAnimationTypeがLegacyの時に適用されるものです
 SA: [[ModelImporterGenerateAnimations]].

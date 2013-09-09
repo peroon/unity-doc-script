@@ -1,4 +1,5 @@
 <signature>
 AcceptDrag()
 </signature>
-Accept a drag operation.
+ドロップを行う際にドラッグしてきたオブジェクトを取得します
+これは見た目の処理で、この関数を使用しなくても内部処理的には問題ないですが、見た目がリジェクトの動作をします

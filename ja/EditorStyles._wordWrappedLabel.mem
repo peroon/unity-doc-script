@@ -1,4 +1,5 @@
 <signature>
 wordWrappedLabel
 </signature>
-Style for word wrapped label.
+範囲以上の文字が入力された際の折り返しを行うスタイル
+

@@ -4,19 +4,17 @@ Foldout(bool,GUIContent)
 Foldout(bool,string,GUIStyle)
 Foldout(bool,GUIContent,GUIStyle)
 </signature>
-Make a label with a foldout arrow to the left of it.
-This is useful for creating tree or folder like structures where child objects are only shown if the parent is folded out.
-
 {img FoldoutUsage.png}\\
-''Create a foldable menu that hides/shows the selected transform.''
+折りたたみ式のラベルを作成します
+foldoutがtrueの場合、展開されます
 BEGIN EX
 	// Create a foldable menu that hides/shows the selected transform
 	// position.
 	// if no Transform is selected, the Foldout item will be folded until
 	// a transform is selected.
-	
+
 	class FoldoutUsage extends EditorWindow {
-	
+
 		var showPosition : boolean = true;
 		var status : String = "Select a GameObject";
 		@MenuItem("Examples/Foldout Usage")
@@ -44,7 +42,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param foldout The shown foldout state.
-@param content The label to show.
-@param style Optional [[GUIStyle]].
+@param foldout タイトルバーの状態。trueの場合、展開されている状態です
+@param content 表示する文字列
+@param style スタイル
 @return The foldout state selected by the user. If true, you should render sub-objects.

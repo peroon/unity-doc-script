@@ -1,17 +1,16 @@
 <signature>
 wantsMouseMove
 </signature>
-Does the GUI in this editor window want MouseMove events?
-If set to true, the window recieves an OnGUI call whenever the mouse is moved over the window.
-
-__Note:__ This function does not trigger Repaint() Automatically.
-
 {img WantsMouseMoveEx.png}\\
-''Editor Window that detects mouse moves when the toggle button is activated and the mouse is over the window.''
+マウスが移動したことをイベントとして取得したい場合はtrueに設定します
+trueに設定した時のみEventType.MouseMoveが呼び出されます
+EventType.MouseMoveが呼び出された時 = 作業を行っている時
+とすることで無駄な処理を行わずに済むことがあるかもしれません
+再描画処理はその1つです
 BEGIN EX
 	// Editor Script that shows how mouse movement events 
 	// get caught in the editor window
-	
+
 	class WantsMouseMoveEx extends EditorWindow {
 		@MenuItem("Example/wantsMouseMove example")
 		static function InitWindow() {

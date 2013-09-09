@@ -1,2 +1,2 @@
-Import normals/tangents from file.
+インポートするアセットから法線と接線のデータをインポートします
 SA: ModelImporter.normalImportMode, ModelImporter.tangentImportMode.

@@ -6,14 +6,15 @@ TagField(string,string,GUIStyle,GUILayoutOption[])
 TagField(GUIContent,string,GUILayoutOption[])
 TagField(GUIContent,string,GUIStyle,GUILayoutOption[])
 </signature>
-Make a tag selection field.
 {img EditorGUILayoutTagField.png}\\
-''Assign tags on the selected GameObjects.''
+タグフィールドを作成します
+表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのTagsの値になります
+戻り値として選択したタグ名が返されます
 BEGIN EX
 	// Simple editor script that lets you set a tag for the selected GameObjects.
-	
+
 	class EditorGUILayoutTagField extends EditorWindow {
-	
+
 		var tagStr = "";
 		@MenuItem("Examples/Set Tags For Selection")
 		static function Init() {
@@ -37,10 +38,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the field.
-@param tag The tag the field shows.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列
+@param tag 選択されたタグ名
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The tag selected by the user.

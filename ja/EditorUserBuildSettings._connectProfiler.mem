@@ -1,4 +1,6 @@
 <signature>
 connectProfiler
 </signature>
-Start the player with a connection to the profiler.
+ビルド後の成果物としてできた実行ファイルでプロファイラーが実行可能な場合trueを返します
+ただしProfilerが実行可能なのはBuildSettingsウィンドウのDevelopmentBuildまたはEditorUserBuildSettings.developmentにチェックを入れている場合です
+

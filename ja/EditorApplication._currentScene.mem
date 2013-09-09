@@ -1,8 +1,8 @@
 <signature>
 currentScene
 </signature>
-The path of the scene that the user has currently open (Will be an empty string if no scene is currently open). (RO)
-All paths are relative to the project folder. Like: "Assets/MyScenes/MyScene.unity".
+現在のシーンのパスを取得します
+シーンを作成していない場合は空文字になります
 BEGIN EX
 	// saves the current scene into a new temporary scene.
 	

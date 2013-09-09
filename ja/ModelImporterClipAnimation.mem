@@ -1,1 +1,2 @@
-Animation clips to split animation into.
+アニメーションの分割されたクリップを扱うクラスです
+ModelImporter.clipAnimationsで使用されます

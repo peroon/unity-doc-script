@@ -6,12 +6,12 @@ Toggle(bool,GUIStyle,GUILayoutOption[])
 Toggle(string,bool,GUIStyle,GUILayoutOption[])
 Toggle(GUIContent,bool,GUIStyle,GUILayoutOption[])
 </signature>
-Make a toggle.
 {img EditorGUILayoutToggle.png}\\
-''Show a button if the toggle control is selected.''
+トグルを作成します
+GUILayout.Toggleとは少し違い、チェックボックスが右側に表示されます
 BEGIN EX
 	// Show a button if the toggle control is selected.
-	
+
 	class EditorGUILayoutToggle extends EditorWindow {
 		
 		var showBtn : boolean = true;
@@ -29,10 +29,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the toggle.
-@param value The shown state of the toggle.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value 選択状態の場合、trueを返します
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The selected state of the toggle.

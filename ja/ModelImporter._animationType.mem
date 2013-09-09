@@ -1,5 +1,7 @@
 <signature>
 animationType
 </signature>
-Animator generation mode.
+Animatorの生成モードを設定します
+Unity4以降のアニメーションはGenericやHumanを使用してください
+Unity3.5以前はLegacyを使用します
 SA: [[ModelImporterAnimationType]].

@@ -1,4 +1,4 @@
 <signature>
 Cancel()
 </signature>
-Cancels the currently running asynchronous bake job.
+非同期で行なわれているベイク処理をキャンセルします

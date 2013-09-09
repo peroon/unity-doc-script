@@ -1,5 +1,6 @@
 <signature>
 AddControl(int,float)
 </signature>
-Record a distance measurement from a handle.
-All handles call this with their controlID during layout, then use nearestControl to check if they got the mouseDown.
+どのハンドルを操作するか記録します
+全てのハンドルはレイアウト時（操作時）にコントロールIDを使用してこの関数が呼び出されています
+その後、マウスを押した時、一番距離の近いコントロールが呼ばれることになります

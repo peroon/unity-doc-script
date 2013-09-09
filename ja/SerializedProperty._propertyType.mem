@@ -1,9 +1,5 @@
 <signature>
 propertyType
 </signature>
-Type of this property (RO).
-Property type determines which of the "value" variable accessors are valid.
-For example, only ::ref::intValue is valid for properties of SerializedPropertyType.Integer
-type.
-
+プロパティのタイプ
 SA: [[SerializedPropertyType]].

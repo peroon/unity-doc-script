@@ -1,2 +1,2 @@
-Keep non power of two textures as is.
+スケーリングせずに基のテクスチャサイズを使用します
 SA: TextureImporter.npotScale.

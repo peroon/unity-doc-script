@@ -1,8 +1,8 @@
 <signature>
 DrawRegionSwatch(Rect,SerializedProperty,SerializedProperty,Color,Color,Rect)
 </signature>
-Draw swatch with a filled region between two SerializedProperty curves.
 <signature>
 DrawRegionSwatch(Rect,AnimationCurve,AnimationCurve,Color,Color,Rect)
 </signature>
-Draw swatch with a filled region between two curves.
+２つのSerializedProperty・AnimationCurve間で塗りつぶされたカラーを可視化します
+編集は出来ません

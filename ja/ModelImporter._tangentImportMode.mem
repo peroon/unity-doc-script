@@ -1,5 +1,8 @@
 <signature>
 tangentImportMode
 </signature>
-Tangents import mode.
+接線の設定を行います
+モデリングツールなどで計算された接線情報を使用する場合はModelImporterTangentSpaceMode.Importを使用してください
+Unity側がインポート時に接線の再計算を行うことが可能です
+その際はModelImporterTangentSpaceMode.Calculateを設定するようにしてください
 SA: [[ModelImporterTangentSpaceMode]].

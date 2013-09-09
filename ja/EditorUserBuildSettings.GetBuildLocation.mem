@@ -1,4 +1,5 @@
 <signature>
 GetBuildLocation(BuildTarget)
 </signature>
-Get the current location for the build.
+ビルド後の成果物の保存先を取得します
+設定を行なっていない場合、空文字を返します

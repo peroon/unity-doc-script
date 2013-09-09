@@ -13,25 +13,25 @@ BEGIN EX
 	//
 	// You can put later the frames togheter and create a video.
 	// Note: The frames are saved next to the Assets folder.
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class SimpleRecorder : EditorWindow {
 		string fileName = "FileName";
-	
+
 		string status = "Idle";
 		string recordButton = "Record";
 		bool recording = false;
 		float lastFrameTime = 0.0f;
 		int capturedFrame = 0;
-	
+
 		[MenuItem ("Example/Simple Recorder")]
 		static void Init () {
 			SimpleRecorder window = 
 				(SimpleRecorder)EditorWindow.GetWindow(typeof(SimpleRecorder));
 		}
-	
+
 		void OnGUI () {
 			fileName = EditorGUILayout.TextField ("File Name:", fileName);
 			

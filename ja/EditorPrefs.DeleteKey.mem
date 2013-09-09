@@ -1,9 +1,8 @@
 <signature>
 DeleteKey(string)
 </signature>
-Removes /key/ and its corresponding value from the preferences.
 {img RemoveSpecificEditorPrefs.png}\\
-''Removes a user entered editor preference, if it doesnt exists it prints a message.''
+keyに紐付けられた値を削除します
 BEGIN EX
 	// Removes a user entered editor preference, if it doesnt exists it prints a message.
 

@@ -1,4 +1,4 @@
 <signature>
 Clear<T>(T[])
 </signature>
-Clears the array.
+配列を初期化します

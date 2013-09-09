@@ -1,5 +1,5 @@
 <signature>
 DeleteArrayElementAtIndex(int)
 </signature>
-Delete the element at the specified index in the array.
+指定したインデックス位置の要素を削除します
 SA: ::ref::isArray.

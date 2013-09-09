@@ -1,7 +1,9 @@
 <signature>
 OpenFilePanel(string,string,string)
 </signature>
-Displays the "open file" dialog and returns the selected path name.
+ファイルを選択するパネルを表示します
+戻り値として、選択したファイルの絶対パスを返します
+キャンセルした場合は空文字を返します
 SA: ::ref::SaveFilePanel function.
 
 {img EditorUtilityOpenFilePanel.png}\\

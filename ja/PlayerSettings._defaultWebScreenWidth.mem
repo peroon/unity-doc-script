@@ -1,9 +1,8 @@
 <signature>
 defaultWebScreenWidth
 </signature>
-Default horizontal dimension of web player window.
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+WebPlayerでのデフォルトの幅
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

@@ -1,2 +1,2 @@
-Normal map filtering mode.
+法線マップのフィルタリング方法を返します
 SA: [[TextureImporterNormalFilter]], ::ref::convertToNormalmap.

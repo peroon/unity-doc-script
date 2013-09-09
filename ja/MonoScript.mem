@@ -1,2 +1,1 @@
-Representation of Script assets.
-This class represents C#, JavaScript and Boo files stored in the project.
+スクリプトのアセットを扱うクラスです

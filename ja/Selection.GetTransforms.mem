@@ -1,7 +1,7 @@
 <signature>
 GetTransforms(SelectionMode)
 </signature>
-Allows for fine grained control of the selection type using the [[SelectionMode]] bitmask.
+取得範囲を設定して選択中のTransform情報を取得します
 BEGIN EX
 class CreateParentForTransforms extends ScriptableObject {
     @MenuItem ("Example/Create Parent For Selection _p")
@@ -20,4 +20,4 @@ class CreateParentForTransforms extends ScriptableObject {
     }
 }
 END EX
-@param mode Options for refining the selection.
+@param mode Transformの取得範囲

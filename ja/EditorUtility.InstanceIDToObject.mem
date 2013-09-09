@@ -1,11 +1,7 @@
 <signature>
 InstanceIDToObject(int)
 </signature>
-Translates an instance ID to a reference to an object.
-If the object is not loaded from disk, loads it from disk.
-
-{img EditorUtilityInstanceIDToObject.png}\\
-''Editor Window to enter the instance ID and print the name of the object.''
+インスタンスIDからオブジェクトを取得します
 BEGIN EX
 	// Simple editor window that prints on the console the GameObject
 	// name given an ID.

@@ -1,20 +1,17 @@
 <signature>
 ProgressBar(Rect,float,string)
 </signature>
-Make a progress bar.
-Value goes from 0 to 1, where 0 means 0% of the bar filled and 1
-means the bar is at 100%  fully filled
-
 {img EditorGUIProgressBar.png}\\
-''Progress bar in an Editor Window.''
+プログレスバーを作成します
+表示される値は％単位なのでvalueに設定するのは0から１の範囲になります
 BEGIN EX
 	// Draw the damage and the armor with bars in an Editor Window
-	
+
 	class EditorGUIProgressBar extends EditorWindow {
-	
+
 		var armor : int = 20;
 		var damage : int = 80;
-	
+
 		@MenuItem("Examples/Display Info")
 		static function Init() {
 			var window = GetWindow(EditorGUIProgressBar);
@@ -32,4 +29,4 @@ BEGIN EX
 	}
 END EX
 @param totalPosition Rectangle on the screen to use in total for both the control.
-@param value Value that is shown.
+@param value 現在値

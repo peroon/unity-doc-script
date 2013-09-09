@@ -1,4 +1,4 @@
 <signature>
 Remove<T>(T[],T)
 </signature>
-Removes ''item'' from ''array''.
+配列から特定の要素を削除します

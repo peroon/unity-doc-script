@@ -15,12 +15,12 @@ SA: Gizmos class.
 BEGIN EX
 	// C#
 	// Creates a sphere where the gizmo is painted in the scene view. 
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class ScriptableWizardOnDrawGizmos : ScriptableWizard {
-	
+
 		public Vector3 spherePosition = Vector3.zero;
 		public float sphereRadius = 1;
 		

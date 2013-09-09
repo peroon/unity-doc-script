@@ -1,2 +1,2 @@
-Do not generate cubemap (default).
+キューブマップを生成しません（デフォルト）
 SA: TextureImporter.generateCubemap.

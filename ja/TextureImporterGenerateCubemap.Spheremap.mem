@@ -1,2 +1,2 @@
-Generate cubemap from spheremap texture.
+球状マップテクスチャからキューブマップを生成します
 SA: TextureImporter.generateCubemap.

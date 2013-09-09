@@ -13,7 +13,6 @@ BEGIN EX
 	function Update() {
 		var materialProperty : MaterialPropertyBlock = new MaterialPropertyBlock();
 
-
 		// Not shiny
 		materialProperty.Clear();
 		materialProperty.AddFloat("_Shininess", 1.0);

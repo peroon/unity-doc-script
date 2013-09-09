@@ -1,2 +1,3 @@
-Build target group.
+Unityプロジェクトをビルドする対象プラットフォームを選択します
+BuildTargetよりも大雑把な範囲で選択され、BuildSettings画面で開発プラットフォーム環境を切り替えるために使用されます
 SA: BuildPipeline.BuildPlayer, BuildTarget.

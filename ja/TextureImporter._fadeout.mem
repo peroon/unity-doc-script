@@ -1,2 +1,2 @@
-Fade out mip levels to gray color?
+テクスチャをMipmapレベルによって灰色を強くし、次第にフェードアウトの演出を行うかどうか
 SA: ::ref::mipmapEnabled.

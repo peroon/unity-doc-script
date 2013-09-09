@@ -1,4 +1,4 @@
 <signature>
 SwitchActiveBuildTarget(BuildTarget)
 </signature>
-Select a new build target to be active.
+ビルドターゲットを変更します

@@ -1,2 +1,4 @@
-Stores settings of a [[TextureImporter]].
+TextureImporterの設定を保持するクラスです
+
+変数についてはTextureImporterを御覧ください
 SA: TextureImporter.

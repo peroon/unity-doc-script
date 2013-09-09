@@ -1,9 +1,8 @@
 <signature>
 SetSelectedWireframeHidden(Renderer,bool)
 </signature>
-Set whether the renderer's wireframe will be hidden when the renderer's gameobject is selected.
 {img EditorUtilitySetSelectedWireframeHidden.png}\\
-''Cube with the wireframe hidden/shown.''
+Meshのワイヤーフレームを非表示にします
 BEGIN EX
 	// Shows / hides the wireframe of the objects in the scene.
 

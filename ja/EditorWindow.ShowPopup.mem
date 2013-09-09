@@ -1,17 +1,15 @@
 <signature>
 ShowPopup()
 </signature>
-Used for popup style windows.
-On mac this means light shadow and no titlebar
+タイトルバーなしのポップアップウィンドウを表示します
+ウィンドウを閉じるボタンも表示されないので必ずEditorWindow.Closeを呼び出す必要があります
 
-{img ShowPopupEx.png}\\
-''Delete specific components from the selected objects.''
 BEGIN EX
 	// Create a simple popup window that lets you delete a specific 
 	// Component from the GameObjects you have selected
 	//
 	// Warning: There is no undo in this action.
-	
+
 	class ShowPopupEx extends EditorWindow {
 		var className = "Rigidbody";
 		@MenuItem("Example/Delete Components in Selection")

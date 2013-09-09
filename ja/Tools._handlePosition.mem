@@ -1,4 +1,5 @@
 <signature>
 handlePosition
 </signature>
-The position of the tool handle in world space.
+ハンドルの位置を取得します
+

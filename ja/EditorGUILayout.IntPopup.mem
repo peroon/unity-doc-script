@@ -8,14 +8,12 @@ IntPopup(string,int,string[],int[],GUIStyle,GUILayoutOption[])
 IntPopup(GUIContent,int,GUIContent[],int[],GUILayoutOption[])
 IntPopup(GUIContent,int,GUIContent[],int[],GUIStyle,GUILayoutOption[])
 </signature>
-Make an integer popup selection field.
-Takes the currently selected integer as a parameter and returns the integer selected by the user.
-
 {img EditorGUILayoutIntPopup.png}\\
-''Rescales the current selected GameObject.''
+ポップアップで表示されるセレクトボックスを作成します
+Popupとは少し違い、戻り値で返される値はoptionValuesで指定した値が返されます
 BEGIN EX
 	// Simple Editor Script that lets you rescale the current selected GameObject.
-	
+
 	class EditorGUILayoutIntPopup extends EditorWindow {
 		var selectedSize : int = 1;
 		var names : String[] = ["Normal", "Double", "Quadruple"];
@@ -39,12 +37,12 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the field.
-@param selectedValue The value of the option the field shows.
-@param displayedOptions An array with the displayed options the user can choose from.
-@param optionValues An array with the values for each option.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param selectedValue 選択された値
+@param displayedOptions ポップアップで表示される文字列、画像、ツールチップ
+@param optionValues 実際に適用される値。インデックスは displayedOptionsと揃えるようにする
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The value of the option that has been selected by the user.
@@ -53,11 +51,12 @@ IntPopup(SerializedProperty,GUIContent[],int[],GUIContent,GUIStyle,GUILayoutOpti
 IntPopup(SerializedProperty,GUIContent[],int[],GUILayoutOption[])
 IntPopup(SerializedProperty,GUIContent[],int[],GUIContent,GUILayoutOption[])
 </signature>
-Make an integer popup selection field.
-@param property The value of the option the field shows.
-@param displayedOptions An array with the displayed options the user can choose from.
-@param optionValues An array with the values for each option.
-@param label Optional label in front of the field.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+ポップアップで表示されるセレクトボックスを作成します
+Popupとは少し違い、戻り値で返される値はoptionValuesで指定した値が返されます
+@param property シリアライズ化されたプロパティ
+@param displayedOptions ポップアップで表示される文字列、画像、ツールチップ
+@param optionValues 実際に適用される値。インデックスは displayedOptionsと揃えるようにする
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.

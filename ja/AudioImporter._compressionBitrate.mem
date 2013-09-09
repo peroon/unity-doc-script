@@ -1,5 +1,5 @@
-Compression bitrate.
-This value is in bits/second, e.g. 128000 would be 128 kbps.
+Unity側で圧縮ビットレートを設定します
+128kbpsを設定したい場合は128000を代入してください
 BEGIN EX
 	// Prints the bitrate of the imported audio files
 

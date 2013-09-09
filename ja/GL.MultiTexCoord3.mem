@@ -7,8 +7,8 @@ if multi-texturing is available. On other graphics APIs the same
 functionality is emulated.
 
 The Z component is used only when:\\
-__1.__ You access a cubemap (which you access with a vector coordinate, hence x,y & z).\\
-__2.__ You do "projective texturing", where the X & Y coordinates are divided by Z to get the final coordinate. This would be mostly useful for water reflections and similar things.
+__1_ You access a cubemap (which you access with a vector coordinate, hence x,y & z).\\
+__2_ You do "projective texturing", where the X & Y coordinates are divided by Z to get the final coordinate. This would be mostly useful for water reflections and similar things.
 
 This function can only be called between GL.Begin and GL.End functions.
 CONVERTEXAMPLE

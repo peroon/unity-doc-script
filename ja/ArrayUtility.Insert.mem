@@ -1,4 +1,4 @@
 <signature>
 Insert<T>(T[],int,T)
 </signature>
-Inserts item ''item'' at position ''index''.
+要素を配列の特定の位置に挿入します

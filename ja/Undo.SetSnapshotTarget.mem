@@ -2,12 +2,14 @@
 SetSnapshotTarget(Object,string)
 SetSnapshotTarget(Object[],string)
 </signature>
-Set the objects modified by the GUI or Handles so they can undo properly.
-This does not push an undo (the actual GUI or Handles are the ones who know when this is needed),
-but only informs the GUI or Handles what to call the operation on and where you end up applying it.
+Snapshotを行うオブジェクトを設定します
+この関数だけではUndoとして保存はされていません
+Undo. CreateSnapshotを呼び出すことで保存されるようになります
 
-This happens for example when you are issuing drag and drop operations and you want to save a "temporary" state but you dont want
-to register as an Undo action. (For example when you click ESC when moving the position handle).
+これは、オブジェクト操作途中にキャンセル処理が入った場合を想定して使用されるものです
+キャンセル処理が入った場合、Undoに保存はするべきではありません
+キャンセル処理がされず、オブジェクト操作が終了した時点で初めてUndoとして保存されるべきです
+これを実現するためにこの関数が使用されます
 BEGIN EX
 	// Editor Script Side
 	// Create a position Handle and make the target always look at the position handle.
@@ -43,5 +45,5 @@ BEGIN EX
 	    transform.LookAt (lookAtPoint);
 	}
 END EX
-@param objectToUndo The object(s) you want to save undo info for.
-@param name The name of the thing to undo. - Think "Undo ...." in the main menu.
+@param objectToUndo Undoを行うオブジェクト
+@param name Undo処理の名前

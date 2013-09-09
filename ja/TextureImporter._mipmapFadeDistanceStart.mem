@@ -1,2 +1,2 @@
-Mip level where texture begins to fade out.
+テクスチャがフェードアウトを開始するMipmapレベルを返します
 SA: ::ref::mipmapEnabled, ::ref::fadeout, ::ref::mipmapFadeDistanceEnd.

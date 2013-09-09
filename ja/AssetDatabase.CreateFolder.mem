@@ -1,11 +1,14 @@
 <signature>
 CreateFolder(string,string)
 </signature>
-Create a new folder.
+新しくフォルダを作成します
+parentFolderが「Assets」、newFolderNameが「newFolder」の場合、作成される場所は「Assets/newFolder」となります
+ただし、既に「newFolder」という名前が存在する場合、「newFolder 1」 が生成されてしまうことに気をつけてください
+また、フォルダを作成した時に戻り値としてフォルダのGUIDを返します。このGUIDはAssetDatabase.GUIDToAssetPath使用することが出来ます
 BEGIN EX
 		string guid = AssetDatabase.CreateFolder("Assets", "My Folder");
 		string newFolderPath = AssetDatabase.GUIDToAssetPath(guid);
 END EX
-@param parentFolder The name of the parent folder.
-@param newFolderName The name of the new folder.
+@param parentFolder 親フォルダ。この直下にフォルダが作成されます
+@param newFolderName 作成するフォルダ名
 @return The GUID of the newly created folder.

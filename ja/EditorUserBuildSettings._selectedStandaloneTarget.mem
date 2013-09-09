@@ -1,4 +1,5 @@
 <signature>
 selectedStandaloneTarget
 </signature>
-The currently selected target for a standalone build.
+現在選択中のStandalonePlayerを取得します
+

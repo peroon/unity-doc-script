@@ -1,12 +1,9 @@
 <signature>
 PickRectObjects(Rect)
 </signature>
-Pick GameObjects that lie within a specified screen rectangle.
-This is useful for implementing multi-select tools that allow the user to drag a rectangle around the desired objects.
-@param rect An screen rectangle specified with pixel coordinates.
+Rectの範囲内にあるゲームオブジェクトを全て取得します
+@param rect 取得したい範囲
 <signature>
 PickRectObjects(Rect,bool)
 </signature>
-<txttag>
-UNDOC
-</txttag>
+Rectの範囲内にあるゲームオブジェクトを全て取得します

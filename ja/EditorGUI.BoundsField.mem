@@ -2,9 +2,9 @@
 BoundsField(Rect,Bounds)
 BoundsField(Rect,GUIContent,Bounds)
 </signature>
-Make Center & Extents field for entering a [[Bounds]].
 {img EditorGUIBoundsField.png}\\
-''Bounds field in an Editor Window.''
+Bounds型のフィールドを作成します
+X,Y,Zのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
 	// Simple script that shows radius of bounds of selected MeshFilter
 
@@ -36,7 +36,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label to display above the field.
-@param value The value to edit.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value 現在値
 @return The value entered by the user.

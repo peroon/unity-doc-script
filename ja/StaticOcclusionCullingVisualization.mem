@@ -1,1 +1,1 @@
-Used to visualize static occlusion culling at development time in scene view.
+オクルージョンカリング設定時にシーンビューで可視化を行う為に使用するクラスです

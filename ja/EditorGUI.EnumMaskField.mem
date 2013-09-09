@@ -6,9 +6,10 @@ EnumMaskField(Rect,Enum,GUIStyle)
 EnumMaskField(Rect,string,Enum,GUIStyle)
 EnumMaskField(Rect,GUIContent,Enum,GUIStyle)
 </signature>
-Make a field for enum based masks.
 {img MaskField.png}\\
-''Simple window that shows the enum mask field.''
+マスクフィールドを作成します
+戻り値は選択されたマスクの合計値が返されます
+MaskFieldとは少し違い、Enumを使用します
 BEGIN EX
 	class SimpleEnumMaskUsage extends EditorWindow {
 		@MenuItem("Examples/Mask Field Usage")
@@ -23,16 +24,14 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for this control.
-@param enumValue Enum to use for the flags.
-@param style Optional [[GUIStyle]].
-@param label Caption/label for the control.
+@param position 表示位置
+@param enumValue 選択されたEnum値
+@param style スタイル
+@param label 左側に表示する文字列
 @return The value modified by the user.
 <signature>
 EnumMaskField(Rect,Enum,GUIStyle,int,bool)
 </signature>
-<txttag>
-UNDOC
-</txttag>
-Internal version that also gives you back which flags were changed and what they were changed to.
-This is useful if you want to make the same change to multiple things.
+マスクフィールドを作成します
+戻り値は選択されたマスクの合計値が返されます
+MaskFieldとは少し違い、Enumを使用します

@@ -1,4 +1,5 @@
 <signature>
 activeBuildTarget
 </signature>
-The currently active build target.
+現在選択しているビルドターゲットを返します
+

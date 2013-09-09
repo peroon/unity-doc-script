@@ -6,19 +6,16 @@ TextField(Rect,string,GUIStyle)
 TextField(Rect,string,string,GUIStyle)
 TextField(Rect,GUIContent,string,GUIStyle)
 </signature>
-Make a text field.
-This works just like GUI.TextField, but correctly responds to select all, copy, paste etc. in the editor,
-and it can have an optional label in front.
-
 {img EditorGUITextField.png}\\
-''Text field in an Editor Window.''
+テキストフィールドを作成します
+GUI.TextFieldとは少し違い、ラベルを表示することが出来ます
 BEGIN EX
 	// Changes the name of the selected Objects to the one typed in the text field
-	
+
 	class EditorGUITextField extends EditorWindow {
-	
+
 		var objNames : String = "";
-	
+
 		@MenuItem("Examples/Bulk Name change")
 		static function Init() {
 			var window = GetWindow(EditorGUITextField);
@@ -41,8 +38,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the text field.
-@param label Optional label to display in front of the text field.
-@param text The text to edit.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param text 表示する文字列
+@param style スタイル
 @return The text entered by the user.

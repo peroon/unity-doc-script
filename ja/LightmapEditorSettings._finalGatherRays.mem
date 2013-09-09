@@ -1,7 +1,6 @@
 <signature>
 finalGatherRays
 </signature>
-Number of rays used in the final gather integrator.
-Since lower number of rays leads to creating points of higher variance
-(so a higher contrast difference), you will probably need a higher setting
-for ::ref::finalGatherContrastThreshold to prevent points from clumping together.
+最終的なレイの数
+レイの数が少ないと高分散位置を作成してしまうため、finalGatherContrastThresholdの設定が必要になります
+

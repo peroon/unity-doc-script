@@ -1,4 +1,5 @@
 <signature>
 useAnimatedAutorotation
 </signature>
-Let the OS autorotate the screen as the device orientation changes.
+OS側が端末の傾きに応じて画面を自動回転させるかどうか
+

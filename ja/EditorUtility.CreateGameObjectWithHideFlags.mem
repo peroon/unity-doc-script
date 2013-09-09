@@ -1,12 +1,10 @@
 <signature>
 CreateGameObjectWithHideFlags(string,HideFlags,Type[])
 </signature>
-Creates a game object with [[HideFlags]] and specified components.
-This is very similar to creating a [[GameObject]] the usual way, except it
-sets the specified [[HideFlags]] immediately.
-
 {img EditorUtility CreateGameObjectWithHideFlags.png}
-''Editor Window that shows how does the example looks.''
+HideFlagを設定したGameObjectを作成します
+これはGameObjectの作成とHideFlagの設定を同時に行うための便利関数です
+この関数を使用する時はEditor専用の処理を行なっている時にどうしてもGameObjectの作成が必要になった時に使用します
 BEGIN EX
 	// Simple script that lets you manage the flags of an instanceID from a
 	// GameObject or lets you create a new empty GameObject with custom flags set

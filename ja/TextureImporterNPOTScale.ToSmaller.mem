@@ -1,2 +1,2 @@
-Scale to smaller power of two.
+2のべき乗で小さい方にスケーリングします
 SA: TextureImporter.npotScale.

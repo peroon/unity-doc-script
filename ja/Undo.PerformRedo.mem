@@ -1,9 +1,7 @@
 <signature>
 PerformRedo()
 </signature>
-Perform an Redo operation.
-This is similar to the user selecting Redo from the Edit menu.
-
+Redo操作を実行します
 SA: ::ref::PerformUndo.
 
 {img PerformVariousRedo.png}\\
@@ -16,7 +14,6 @@ BEGIN EX
 
 	public class PerformVariousRedo : ScriptableWizard {
 		public int numberOfSteps = 5;
-
 
 		[MenuItem ("Example/Perform Various Redo %#r")]
 		static void ExecuteMenu() {

@@ -1,5 +1,4 @@
 <signature>
 SetAspectRatio(AspectRatio,bool)
 </signature>
-Enables the specified aspect ratio.
-Aspect Ratios selectable in the Resolution Dialog will be monitor-supported resolutions of enabled items from this list.
+指定したアスペクト比を有効,無効にします

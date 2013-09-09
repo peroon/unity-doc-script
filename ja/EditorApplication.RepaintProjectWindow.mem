@@ -1,5 +1,5 @@
 <signature>
 RepaintProjectWindow()
 </signature>
-Can be used to ensure repaint of the ProjectWindow.
+プロジェクトウィンドウを再描画します
 SA: EditorApplication.ProjectWindowItemCallback, EditorApplication.projectWindowItemOnGUI.

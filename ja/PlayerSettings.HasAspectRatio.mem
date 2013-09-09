@@ -1,5 +1,5 @@
 <signature>
 HasAspectRatio(AspectRatio)
 </signature>
-Returns whether or not the specified aspect ratio is enabled.
-Aspect Ratios selectable in the Resolution Dialog will be monitor-supported resolutions of enabled items from this list.
+指定されたアスペクト比を有効にできるかどうか確認します
+無効になるものはモニタがサポートしていないことになります

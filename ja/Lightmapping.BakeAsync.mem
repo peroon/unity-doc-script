@@ -1,5 +1,6 @@
 <signature>
 BakeAsync()
 </signature>
-Starts an asynchronous bake job.
-The progress can be monitored via ::ref::isRunning property.
+非同期でベイクを行います
+処理が開始された時にtrueを返します。falseを返すときは何らかのエラーが出た時です
+Lightmapping.isRunningで進行状況を確認することが出来ます

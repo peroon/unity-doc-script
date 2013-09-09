@@ -1,9 +1,10 @@
 <signature>
 SetString(string,string)
 </signature>
-Sets the value of the preference identified by /key/.
 {img QuickNotes.png}\\
-''Quick notes that last between Unity Sessions.''
+string型の値をkeyに紐づけて保存します
+Windowsで保存を行う場合はレジストリに保存を行う関係で2バイト文字（日本語）で保存を行うのは得策ではありません
+レジストリでは2バイト文字を扱うことが保証されず文字化けを起こしてしまう可能性があるからです
 BEGIN EX
 	// Simple Editor Script that lets you create / save quick notes
 	// Between Unity Sessions.

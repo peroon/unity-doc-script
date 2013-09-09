@@ -4,18 +4,14 @@ DrawPreviewTexture(Rect,Texture,Material)
 DrawPreviewTexture(Rect,Texture,Material,ScaleMode)
 DrawPreviewTexture(Rect,Texture,Material,ScaleMode,float)
 </signature>
-Draws the texture within a rectangle.
-If mat is null (the default), an appropriate material will be chosen for a RGBM or doubleLDR lightmap or a normal map
-and the fallback blit material will be chosen otherwise.
-
 {img EditorGUIDrawPreviewTexture.png}\\
-''Preview Texture in an Editor Window.''
+テクスチャを描画します
 BEGIN EX
 	// Load a texture, display the texture, display its alpha channel and
 	// show a preview of the inverted texture
-	
+
 	class EditorGUITextures extends EditorWindow {
-	
+
 		var texture : Texture2D;
 		var invertedTexture : Texture2D;
 		var showInverted = false;
@@ -82,8 +78,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to draw the texture within.
-@param image [[Texture]] to display.
-@param mat Material to be used when drawing the texture.
-@param scaleMode How to scale the image when the aspect ratio of it doesn't fit the aspect ratio to be drawn within.
-@param imageAspect Aspect ratio to use for the source image. If 0 (the default), the aspect ratio from the image is used.
+@param position 表示位置
+@param image テクスチャ
+@param mat テクスチャの描画にマテリアルを使用する場合に設定します。デフォルトはnull
+@param scaleMode スケールの方法を選択します。デフォルトはStretchToFill
+@param imageAspect アスペクト比。テクスチャそのままのアスペクト比は0を指定します。デフォルトは0

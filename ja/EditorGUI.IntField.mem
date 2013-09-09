@@ -6,14 +6,14 @@ IntField(Rect,int,GUIStyle)
 IntField(Rect,string,int,GUIStyle)
 IntField(Rect,GUIContent,int,GUIStyle)
 </signature>
-Make a text field for entering integers.
 {img EditorGUIIntField.png}\\
-''Int Field in an Editor Window.''
+Int型の値を操作するフィールドを作成します
+数値を直接入力するだけでなく、ラベル部分をマウスでドラッグすると数値を変動させることが可能です
 BEGIN EX
 	// Editor Script that clones the selected GameObject a number of times.
-	
+
 	class EditorGUIIntField extends EditorWindow {
-	
+
 		var clones : int = 1;
 		
 		@MenuItem("Examples/Clone Object")
@@ -32,8 +32,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the int field.
-@param label Optional label to display in front of the int field.
-@param value The value to edit.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value Int型の値
+@param style スタイル
 @return The value entered by the user.

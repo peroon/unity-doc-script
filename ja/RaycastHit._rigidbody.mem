@@ -1,11 +1,12 @@
 <signature>
 rigidbody
 </signature>
-衝突したオブジェクトにRigidbodyオブジェクトが付加されていればRigidbody情報を返す。
+衝突したオブジェクトにRigidbodyオブジェクトが付加されていれば
+Rigidbody情報を返す。
 CONVERTEXAMPLE
 BEGIN EX
 	// Apply a force to a clicked rigidbody object.
-	
+
 	// The force applied to an object when hit.
 	var hitForce: float;
 

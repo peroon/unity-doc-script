@@ -1,5 +1,6 @@
 <signature>
 CountRemaining()
 </signature>
-Count remaining visible properties.
-This is useful for allocating height for drawing this property and all the following ones.
+残りの表示されるプロパティの数を取得します
+この関数を実行することでSerializedProperty.NextVisibleが実行され、最後のプロパティへ移動してしまいます
+再度、プロパティを調べる場合はSerializedProperty.Resetを呼び出す必要があります

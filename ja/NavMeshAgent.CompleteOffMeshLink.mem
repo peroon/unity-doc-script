@@ -5,7 +5,8 @@ CompleteOffMeshLink()
 When the ::ref::autoTraverseOffMeshLink property is switched off
 an agent will pause at an off-mesh link until this function is called
 to let it pass. This can be used to allow characters access selectively
-(eg, to simulate openable doors or obstacles that only certain characters can pass, etc).
+(eg, to simulate openable doors or obstacles that only certain characters
+ can pass, etc).
 CONVERTEXAMPLE
 BEGIN EX
 	private var agent: NavMeshAgent;
@@ -13,7 +14,7 @@ BEGIN EX
 	function Start () {
 		agent = GetComponent.<NavMeshAgent>();
 	}
-	
+
 	// Let an agent cross the off-mesh link if he has
 	// the right door key.
 	function CheckForDoorKey(doorKeys: Hashtable) {

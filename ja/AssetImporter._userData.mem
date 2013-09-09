@@ -1,5 +1,8 @@
 <signature>
 userData
 </signature>
-Get or set any user data.
-This can be usefull during asset post processing if you want to associate eg. a model with an auxillary xml file to control some parts of the importing or you can put your xml data directly in to the userData field.
+ユーザーが自由に文字列を設定出来ます
+例えばOnPreprocess系の処理の中でOnPostprocess系に行いたい処理を決めさせたい時、userData内に情報を持たせます
+このuserDataはmetaデータに記述されています
+よってVersion ControlがMeta Filesの場合、生成されるmetaファイルに記述されていることになります
+

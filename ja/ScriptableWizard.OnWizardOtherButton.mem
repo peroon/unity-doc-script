@@ -15,12 +15,12 @@ SA: ScriptableWizard.DisplayWizard
 BEGIN EX
 	// C#
 	// Display a window showing the distance between two objects when clicking the Info button.
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class ScriptableWizardOnWizardOtherButton : ScriptableWizard {
-	
+
 		public Transform firstObject = null;
 		public Transform secondObject = null;
 

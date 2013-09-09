@@ -1,9 +1,8 @@
 <signature>
 defaultScreenWidth
 </signature>
-Default horizontal dimension of stand-alone player window.
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+スタンドアロンでのデフォルトの幅
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

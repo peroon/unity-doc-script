@@ -14,11 +14,11 @@ SA: ScriptableWizard.DisplayWizard
 BEGIN EX
 	// C#
 	// Editor Script that lets you "Select" all the GameObjects that have a certain Component.
-	
+
 	using UnityEngine;
 	using UnityEditor;
 	using System.Collections;
-	
+
 	public class ScriptableWizardOnWizardCreate : ScriptableWizard {	
 		public string componentName = "Camera";
 		

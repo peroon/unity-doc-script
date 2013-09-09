@@ -3,16 +3,17 @@ Slider(Rect,float,float,float)
 Slider(Rect,string,float,float,float)
 Slider(Rect,GUIContent,float,float,float)
 </signature>
-Make a slider the user can drag to change a value between a min and a max.
 {img EditorGUISlider.png}\\
-''Slider in an Editor Window.''
+スライダーを作成します
+値はFloat型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
 BEGIN EX
 	// Editor script that lets you scale the selected GameObject between 1 and 100
-	
+
 	class EditorGUISlider extends EditorWindow {
-	
+
 		var scale : float = 1.0;
-	
+
 		@MenuItem("Examples/EditorGUI Slider usage")
 		static function Init() {
 			var window = GetWindow(EditorGUISlider);
@@ -29,20 +30,22 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the slider.
-@param label Optional label in front of the slider.
-@param value The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value 現在値
+@param leftValue 最小値
+@param rightValue 最大値
 @return The value that has been set by the user.
 <signature>
 Slider(Rect,SerializedProperty,float,float)
 Slider(Rect,SerializedProperty,float,float,string)
 Slider(Rect,SerializedProperty,float,float,GUIContent)
 </signature>
-Make a slider the user can drag to change a value between a min and a max.
-@param position Rectangle on the screen to use for the slider.
-@param label Optional label in front of the slider.
-@param property The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
+スライダーを作成します
+値はFloat型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
+@param position 表示位置
+@param label 左側に表示する文字列
+@param property シリアライズ化されたプロパティ
+@param leftValue 最小値
+@param rightValue 最大値

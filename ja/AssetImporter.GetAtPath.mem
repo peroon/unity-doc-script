@@ -1,5 +1,6 @@
 <signature>
 GetAtPath(string)
 </signature>
-Retrieves the asset importer for the asset at /path/.
+アセットのパスからAssetImporterを取得します
+アセットの種類によって型はModelImporter、TextureImporter、AudioImporterと変化します
 SA: [[ModelImporter]], [[TextureImporter]], [[AudioImporter]].

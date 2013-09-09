@@ -1,6 +1,3 @@
-Allowed error of animation scale compression.
-Allowed error is defined in distance (in percents) between compressed and
-original scale on a curve. This settings used only when animation keyframe
-reduction is enabled.
-
+アニメーションのスケールの削除を行う上限を設定します
+この値が小さいほど削除される間隔が小さくなり削除による影響は小さくなります
 SA: ::ref::animationCompression, [[ModelImporterAnimationCompression]].

@@ -1,20 +1,19 @@
 <signature>
 DotCap(int,Vector3,Quaternion,float)
 </signature>
-Draw a camera-facing dot. Pass this into handle functions.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+ドットを描画します
+これはハンドルを作成するときに使用されます
 
 {img DotCap.png}\\
-''Dot Cap in the Scene View.''
 BEGIN EX
 	// Draw one Dot on each axis of any GameObject that has 
 	// the "DummyDotCapScript.js" script attached.
-	
+
 	@CustomEditor (DummyDotCapScript)
 	class DotCap extends Editor {
 		
 		var dotSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.DotCap(0,

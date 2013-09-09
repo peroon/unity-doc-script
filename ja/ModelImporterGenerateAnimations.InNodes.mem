@@ -1,2 +1,2 @@
-Generate animations in the objects that animate.
+アニメーションを行うオブジェクト１つ１つにアニメーションを生成します
 SA: ModelImporter.generateAnimations.

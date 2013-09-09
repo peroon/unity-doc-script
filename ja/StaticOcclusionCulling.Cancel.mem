@@ -1,5 +1,5 @@
 <signature>
 Cancel()
 </signature>
-Used to cancel asynchronous generation of static occlusion culling data.
+非同期で生成中のオクルージョンカリングのデータをキャンセルします
 SA: StaticOcclusionCulling.GenerateInBackground, ::ref::isRunning.

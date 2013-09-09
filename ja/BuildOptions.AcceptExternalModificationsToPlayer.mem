@@ -1,3 +1,4 @@
-Do not overwrite player directory, but accept user's modifications.
-On iPhone this setting will append changes to already existing and potentially user modified XCode project.
+アプリケーションのディレクトリは上書き出来ないが変更は受け入れるようにする場合に設定します
+この設定はiOSでXcodeプロジェクトに於いて何らかの変更を行う場合に有効です
+また、Androidプロジェクトを生成する場合もこのオプションを設定します
 SA: BuildPipeline.BuildPlayer.

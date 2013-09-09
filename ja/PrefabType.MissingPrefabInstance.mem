@@ -1,2 +1,2 @@
-The object was an instance of a prefab, but the original prefab could not be found.
+プレハブがインスタンス化されましたが参照元が見つかりません
 SA: EditorUtility.GetPrefabType.

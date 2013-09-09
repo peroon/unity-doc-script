@@ -1,10 +1,8 @@
-Base class to derive custom property drawers from. Use this to create custom drawers for your own [[Serializable]] classes or for script variables with custom [[PropertyAttribute]]s.
-PropertyDrawers have two uses:\\
-- Customize the GUI of every instance of a [[Serializable]] class.\\
-- Customize the GUI of script members with custom [[PropertyAttribute]]s.
+特定のプロパティのGUIをカスタマイズします
+まずは先にCustomPropertyDrawerを御覧ください
 
-If you have a custom [[Serializable]] class, you can use a PropertyDrawer to control how it looks in the Inspector.
-Consider the Serializable class Ingredient in the script below:
+PropertyDrawerは「シリアライズ化されているクラス」と「PropertyDrawerを継承したAttribute」に使用することが出来ます
+
 BEGIN EX
 // Recipe.js
 // This is not an editor script
@@ -25,6 +23,7 @@ function Update () {
 	// Update logic here...
 }
 END EX
+
 Using a custom PropertyDrawer, every appearance of the Ingredient class in the Inspector can be changed.
 Compare the look of the Ingredient properties in the Inspector without and with a custom PropertyDrawer:
 
@@ -36,7 +35,7 @@ BEGIN EX
 // IngredientDrawer.js
 @CustomPropertyDrawer (Ingredient)
 class IngredientDrawer extends PropertyDrawer {
-	
+
 	// Draw the property inside the given rect
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
 		// Using BeginProperty / EndProperty on the parent property means that
@@ -82,7 +81,7 @@ BEGIN EX
 class RangeAttribute extends PropertyAttribute {
 	var min : float;
 	var max : float;
-	
+
 	function RangeAttribute (min : float, max : float) {
 		this.min = min;
 		this.max = max;
@@ -97,7 +96,7 @@ BEGIN EX
 // Tell the RangeDrawer that it is a drawer for properties with the RangeAttribute.
 @CustomPropertyDrawer (RangeAttribute)
 class RangeDrawer extends PropertyDrawer {
-	
+
 	// Draw the property inside the given rect
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
 		

@@ -1,4 +1,4 @@
 <signature>
 SetStaticEditorFlags(GameObject,StaticEditorFlags)
 </signature>
-Sets the StaticEditorFlags.
+StaticEditorFlagsの値を設定します

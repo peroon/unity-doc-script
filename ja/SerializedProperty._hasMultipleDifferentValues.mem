@@ -1,5 +1,5 @@
 <signature>
 hasMultipleDifferentValues
 </signature>
-Does this property represent multiple different values due to multi-object editing? (RO)
+マルチオブジェクト編集で複数の値を表示しているかどうかを確認します
 SA: SerializedObject.SetIsDifferentCacheDirty.

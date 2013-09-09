@@ -2,9 +2,7 @@
 LogWarning(string)
 LogWarning(string,Object)
 </signature>
-Logs an import warning to the console.
-Pass an asset as the second argument to link the warning to the asset in the editor.
-
+インポートした際に何らかの警告があればコンソールに警告として表示する
 SA: Debug.LogWarning.
 BEGIN EX
 	// Compress all the imported audio files and 

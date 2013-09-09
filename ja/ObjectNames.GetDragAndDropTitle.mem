@@ -1,5 +1,6 @@
 <signature>
 GetDragAndDropTitle(Object)
 </signature>
-Drag and drop title for an object.
+ドラッグ＆ドロップを行う時用のオブジェクト名を取得します
+文字列は「オブジェクト名（タイプ）」となります
 SA: ObjectNames.GetInspectorTitle, ObjectNames.GetClassName.

@@ -2,11 +2,9 @@
 GetBool(string)
 GetBool(string,bool)
 </signature>
-Returns the value corresponding to /key/ in the preference file if it exists.
-If it doesn't exist, it will return /defaultValue/.
-
 {img EditorPrefsBool.png}\\
-''Round rotations/positions and remember the active option.''
+keyからbool型の値を取得します
+keyに紐付けられた値がない場合はdefaultValueで設定した値を取得します
 BEGIN EX
 	// Simple script that lets you round rotations and
 	// round your positions of your selected objects.

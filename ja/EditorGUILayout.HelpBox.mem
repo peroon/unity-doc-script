@@ -2,7 +2,8 @@
 HelpBox(string,MessageType)
 HelpBox(string,MessageType,bool)
 </signature>
-Make a help box with a message to the user.
-@param message The message text.
-@param type The type of message.
-@param wide If true, the box will cover the whole width of the window; otherwise it will cover the controls part only.
+ヘルプボックスを作成します
+何かユーザーに伝えることがある場合に使用されます
+@param message 表示するメッセージ
+@param type メッセージのタイプ
+@param wide ヘルプボックスを表示する幅。trueだとラベル部分も含んだ画面幅いっぱいに表示します。falseだと操作部分のみになります。デフォルトはtrueです

@@ -1,4 +1,5 @@
 <signature>
 isEditingMultipleObjects
 </signature>
-Does the serialized object represents multiple objects due to multi-object editing? (RO)
+シリアライズ化されているオブジェクトが複数のオブジェクトのシリアライズ情報を保持しているかどうかを確認します
+

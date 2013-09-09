@@ -1,6 +1,6 @@
 <signature>
 GetTexDim(Shader,int)
 </signature>
-Gets the ShaderPropertyTexDim of the texture at property index propertyIdx of Shader s.
-@param s The shader to check against.
-@param propertyIdx The property index to use.
+テクスチャの種類を取得します
+@param s 取得したいシェーダー
+@param propertyIdx プロパティのインデックス

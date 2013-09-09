@@ -1,4 +1,5 @@
 <signature>
 heightFromFeet
 </signature>
-Keeps the feet aligned with the root transform position.
+足の位置をルートの位置から維持するかどうか
+

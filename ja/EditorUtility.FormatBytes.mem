@@ -1,7 +1,8 @@
 <signature>
 FormatBytes(int)
 </signature>
-Returns a text for a number of bytes.
+バイト数をString型へ表示に適したものにフォーマットします
+100が「100 bytes」、2048が「2.0 KB」にフォーマットされます
 BEGIN EX
 	// prints "100 bytes"
 	print (EditorUtility.FormatBytes(100));

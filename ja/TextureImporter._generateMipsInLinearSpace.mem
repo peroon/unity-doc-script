@@ -1,2 +1,2 @@
-Should mip maps be generated with gamma correction?
+ミップマップをガンマ補正を使用して生成すべきかどうか
 SA: ::ref::mipmapEnabled.

@@ -1,4 +1,5 @@
 <signature>
 SetObjectEnabled(Object,bool)
 </signature>
-Set the enabled state of the object.
+オブジェクトの状態を設定します
+オブジェクトが親子関係になっている場合、ダイアログが表示され、子も含めて操作を行うか選択が可能です

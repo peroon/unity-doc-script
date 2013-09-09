@@ -1,2 +1,3 @@
-Scaling mode for non power of two textures.
+スケーリング方法を返します
+デフォルトでは2のべき乗サイズに変換される
 SA: [[TextureImporterNPOTScale]].

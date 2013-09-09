@@ -1,7 +1,9 @@
 <signature>
 OpenFolderPanel(string,string,string)
 </signature>
-Displays the "open folder" dialog and returns the selected path name.
+フォルダを選択するパネルを表示します
+実際にはこの関数だけではファイルを開くことはできません
+戻り値として、保存するファイルの絶対パスを返し、キャンセルした場合は空文字を返します
 SA: ::ref::OpenFilePanel, ::ref::SaveFolderPanel functions.
 
 {img EditorUtilityOpenFolderPanel.png}\\

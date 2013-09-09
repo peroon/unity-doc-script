@@ -1,6 +1,7 @@
 <signature>
 scenes
 </signature>
-<txttag>
-UNDOC
-</txttag>
+BuildSettingsウィンドウで設定されているシーン情報を取得します
+ここでは実際にビルドに含まれるものだけではなく設定されている全てのシーンが取得できるので
+EditorBuildSettingsScene.enabledで有効かどうかチェックを行なってください
+

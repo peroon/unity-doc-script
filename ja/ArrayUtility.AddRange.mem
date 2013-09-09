@@ -1,4 +1,4 @@
 <signature>
 AddRange<T>(T[],T[])
 </signature>
-Appends items to the end of array.
+配列と配列を結合します

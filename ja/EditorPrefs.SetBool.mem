@@ -1,9 +1,10 @@
 <signature>
 SetBool(string,bool)
 </signature>
-Sets the value of the preference identified by /key/.
 {img EditorPrefsBool.png}\\
-''Round rotations/positions and remember the active option.''
+bool型の値をkeyに紐づけて保存します
+Windowsで保存を行う場合はレジストリに保存を行う関係で2バイト文字（日本語）で保存を行うのは得策ではありません
+レジストリでは2バイト文字を扱うことが保証されず文字化けを起こしてしまう可能性があるからです
 BEGIN EX
 	// Simple script that lets you round rotations and
 	// round your positions of your selected objects.

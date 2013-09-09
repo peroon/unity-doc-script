@@ -1,5 +1,5 @@
 <signature>
 objectReferenceValue
 </signature>
-Value of an object reference property.
+参照しているオブジェクトを取得します
 SA: ::ref::propertyType, SerializedPropertyType.ObjectReference.

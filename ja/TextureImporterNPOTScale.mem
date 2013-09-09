@@ -1,2 +1,2 @@
-Scaling mode for non power of two textures in [[TextureImporter]].
+TextureImporter.npotScaleで使用するテクスチャを2のべき乗の大きさにスケーリングする方法を選択します
 SA: TextureImporter.npotScale.

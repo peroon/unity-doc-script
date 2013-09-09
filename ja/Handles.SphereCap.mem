@@ -1,20 +1,20 @@
 <signature>
 SphereCap(int,Vector3,Quaternion,float)
 </signature>
-Draw a Sphere. Pass this into handle functions.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+スフィア状のハンドルを作成します
+これはハンドルを作成するときに使用されます
+
 
 {img SphereCap.png}\\
-''Sphere Cap on the Scene View.''
 BEGIN EX
 	// Draw one sphere on each axis of any GameObject that has 
 	// the "DummySphereCapScript.js" script attached.
-	
+
 	@CustomEditor (DummySphereCapScript)
 	class SphereCap extends Editor {
 		
 		var sphereSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.SphereCap(0,
@@ -37,6 +37,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	//DummySphereCapScript.js
-	
+
 	Debug.Log("I have SphereCap Handles attached to this transform!");
 END EX

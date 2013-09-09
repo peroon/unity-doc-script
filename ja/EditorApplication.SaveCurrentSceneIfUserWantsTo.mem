@@ -1,7 +1,5 @@
 <signature>
 SaveCurrentSceneIfUserWantsTo()
 </signature>
-Ask the user if he wants to save the open scene.
-You might want to call this before opening another scene or creating a new scene.
-A return value of true indicates that you may continue.
-A return value of false indicates that the user cancelled the operation and you should not Open another Scene.
+シーンを保存するかのダイアログを表示します
+別のシーンや新しいシーンを作成して移動する場合には、このメソッドを使用して現在のシーンを保存するかどうかを確かめるのをお勧めします

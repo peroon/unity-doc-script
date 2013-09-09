@@ -1,1 +1,1 @@
-Callback raised whenever the contents of a window's search box are changed.
+検索が行われた後呼び出されるデリゲートを設定します

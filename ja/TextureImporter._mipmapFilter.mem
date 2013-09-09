@@ -1,2 +1,2 @@
-Mipmap filtering mode.
+Mipmapのフィルタリング方法を返します
 SA: [[TextureImporterMipFilter]], ::ref::mipmapEnabled.

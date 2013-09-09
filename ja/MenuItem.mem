@@ -13,7 +13,6 @@ static function DoSomething () {
 	Debug.Log ("Doing Something...");
 }
 
-
 // Validated menu item.
 // Add a menu item named "Log Selected Transform Name" to MyMenu in the menu bar.
 // We use a second function to validate the menu item
@@ -31,14 +30,12 @@ static function ValidateLogSelectedTransformName () {
 	return Selection.activeTransform != null;
 }
 
-
 // Add a menu item named "Do Something with a Shortcut Key" to MyMenu in the menu bar
 // and give it a shortcut (ctrl-g on Windows, cmd-g on OS X).
 @MenuItem ("MyMenu/Do Something with a Shortcut Key %g")
 static function DoSomethingWithAShortcutKey () {
 	Debug.Log ("Doing something with a Shortcut Key...");
 }
-
 
 // Add a menu item called "Double Mass" to a Rigidbody's context menu.
 @MenuItem ("CONTEXT/Rigidbody/Double Mass")
@@ -60,7 +57,6 @@ public class MenuTest : MonoBehaviour {
 		Debug.Log ("Doing Something...");
 	}
 
-
 	// Validated menu item.
 	// Add a menu item named "Log Selected Transform Name" to MyMenu in the menu bar.
 	// We use a second function to validate the menu item
@@ -78,7 +74,6 @@ public class MenuTest : MonoBehaviour {
 		// Return false if no transform is selected.
 		return Selection.activeTransform != null;
 	}
-
 
 	// Add a menu item named "Do Something with a Shortcut Key" to MyMenu in the menu bar
 	// and give it a shortcut (ctrl-g on Windows, cmd-g on OS X).

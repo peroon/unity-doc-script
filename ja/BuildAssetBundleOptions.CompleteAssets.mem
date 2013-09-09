@@ -1,5 +1,2 @@
-Forces inclusion of the entire asset.
-For example if you pass a Mesh into the BuildPipeline.BuildAssetBundle function and use CompleteAssets it would also include
-the game object and any animation clips in the same asset.
-
+AnimationClipやTextureなど使用されるすべてのアセットを含めます
 SA: BuildPipeline.BuildAssetBundle.

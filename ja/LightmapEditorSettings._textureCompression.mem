@@ -1,7 +1,6 @@
 <signature>
 textureCompression
 </signature>
-Whether to use DXT1 compression on the generated lightmaps.
-Compression is recommended to improve lightmap rendering performance
-and lower the memory footprint, but might introduce visible artifacts
-in scenes without high-detail texturing that would mask-out the issues.
+ライトマップの生成にDXT1圧縮を使用するかどうかを設定します
+パフォーマンス向上のため圧縮することを勧めますが、精細なマップを使用したい場合は圧縮しないようにしてください
+

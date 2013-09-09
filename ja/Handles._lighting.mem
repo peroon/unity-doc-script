@@ -1,4 +1,6 @@
 <signature>
 lighting
 </signature>
-Are handles lit?
+ライトの影響を受ける場合はtrueにします
+デフォルトでtrueです
+

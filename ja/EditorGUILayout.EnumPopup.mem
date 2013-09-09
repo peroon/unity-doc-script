@@ -6,14 +6,12 @@ EnumPopup(string,Enum,GUIStyle,GUILayoutOption[])
 EnumPopup(GUIContent,Enum,GUILayoutOption[])
 EnumPopup(GUIContent,Enum,GUIStyle,GUILayoutOption[])
 </signature>
-Make an enum popup selection field.
-Takes the currently selected enum value as a parameter and returns the enum value selected by the user.
-
 {img EditorGUILayoutEnumPopup.png}\\
-''Creates a primitive selected by the user.''
+ポップアップで表示されるセレクトボックスを作成します
+ Popupと少し違い、Enumを使用します
 BEGIN EX
 	// Creates an instance of a primitive depending on the option selected by the user.
-	
+
 	enum OPTIONS { 
 		CUBE = 0, 
 		SPHERE = 1, 
@@ -53,10 +51,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the field.
-@param selected The enum option the field shows.
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列
+@param selected 選択されたEnum値
+@param style スタイル
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The enum option that has been selected by the user.

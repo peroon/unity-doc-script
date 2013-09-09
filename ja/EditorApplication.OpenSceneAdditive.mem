@@ -1,12 +1,12 @@
 <signature>
 OpenSceneAdditive(string)
 </signature>
-Opens the scene at /path/ additively.
-All paths are relative to the project folder. Like: "Assets/MyScenes/MyScene.unity".
+シーンファイルのパスを指定して現在のシーンに加算ロードを行います
+強制的にシーンが加算ロードされるため、必ず編集していたシーンを保存するようにしてください
 BEGIN EX
 	// Simple script that lets you load the contents of a selected scene 
 	// to your current scene.
-	
+
 	@MenuItem("Example/Load Scene Additive") 
 	static function Apply () { 
 	    var strScenePath : String = AssetDatabase.GetAssetPath(Selection.activeObject); 

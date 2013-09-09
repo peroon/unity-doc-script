@@ -4,7 +4,8 @@ ColorField(Rect,Color,bool,bool)
 ColorField(Rect,string,Color)
 ColorField(Rect,GUIContent,Color)
 </signature>
-Make a field for selecting a [[Color]].
+[[Color]]型のフィールドを作成します
+カラーピッカーを表示して色を設定します
 {img EditorGUIColorField.png}\\
 ''Color field in an Editor Window.''
 BEGIN EX

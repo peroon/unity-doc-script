@@ -1,5 +1,5 @@
 <signature>
 CopyAsset(string,string)
 </signature>
-Duplicates the asset at /path/ and stores it at /newPath/.
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png".
+アセットをコピーします
+コピーに成功した場合はtrueを返します

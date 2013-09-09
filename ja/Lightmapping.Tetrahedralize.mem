@@ -1,8 +1,5 @@
 <signature>
 Tetrahedralize(Vector3[],int[],Vector3[])
 </signature>
-Calculates a Delaunay Tetrahedralization of the 'positions' point set - the same way the lightmapper.
-Tetrahedralizes the space for Light Probes. outIndices index into the array of outPositions and every
-four indices correspond to a tetrahedron. During the tetrahedralization any position duplicates
-withing some tolerance are removed (the first element is kept, subsequent are removed), so outPositions
-might have fewer elements than positions.
+LightProbesを置く位置を計算によって4面体を生成します
+outIndicesとoutPositionsの配列のインデックス位置は対応していますが、位置の重複や許容範囲範囲内にある複数のものは１つになるため positionsと outPositionsは必ずしも同じ要素数にはならない可能性があります。

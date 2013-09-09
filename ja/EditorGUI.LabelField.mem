@@ -8,12 +8,12 @@ LabelField(Rect,GUIContent,GUIStyle)
 LabelField(Rect,string,string,GUIStyle)
 LabelField(Rect,GUIContent,GUIContent,GUIStyle)
 </signature>
-Make a label field. (Useful for showing read-only info.)
 {img EditorGUILabelField.png}\\
-''Shows a label in an editor window with the seconds since the editor started.''
+ラベルを作成します
+GUI.Labelとは少し違い、特徴的なのは１つでラベルが２つ作成できるという点です
 BEGIN EX
 	// Shows a label in the editor with the seconds since the editor started
-	
+
 	class EditorGUILabelField extends EditorWindow {	
 		@MenuItem("Examples/EditorGUI Label Usage")
 		static function Init() {
@@ -28,7 +28,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the label field.
-@param label Label in front of the label field.
-@param label2 The label to show to the right.
-@param style Style information (color, etc) for displaying the label.
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param label2 右側に表示する文字列、テクスチャ、ツールチップ
+@param style スタイル

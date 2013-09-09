@@ -1,4 +1,5 @@
 <signature>
 DoesSourceTextureHaveColor()
 </signature>
-Does textures source image have RGB channels.
+RGBチャンネルがあるかどうか確認します
+ある場合trueを返します

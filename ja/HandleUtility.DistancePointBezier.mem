@@ -1,5 +1,5 @@
 <signature>
 DistancePointBezier(Vector3,Vector3,Vector3,Vector3,Vector3)
 </signature>
-Calculate distance between a point and a Bezier curve.
+ベジエ曲線とポイントの間の距離(最短距離)をピクセル単位で返します
 SA: Handles.DrawBezier function.

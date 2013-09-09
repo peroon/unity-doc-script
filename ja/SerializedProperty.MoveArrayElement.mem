@@ -1,5 +1,4 @@
 <signature>
 MoveArrayElement(int,int)
 </signature>
-Move an array element from srcIndex to dstIndex.
-The SerializedProperty must be pointed to an array.
+配列内の要素を、インデックスを使用して移動します

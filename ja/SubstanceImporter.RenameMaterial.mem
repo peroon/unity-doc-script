@@ -1,4 +1,4 @@
 <signature>
 RenameMaterial(ProceduralMaterial,string)
 </signature>
-Rename an existing Procedural Material instance.
+ProceduralMaterialの名前をリネームします

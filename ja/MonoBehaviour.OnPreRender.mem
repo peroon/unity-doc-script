@@ -4,7 +4,9 @@ OnPreRender()
 カメラがシーンのレンダリングを開始する前に呼び出される。
 This function is called only if the script is attached to the camera and is enabled.
 
-レンダリングのパラメーターを変更させる場合に使用する関数です。この関数でカメラのパラメーターを変更しても、適用されるのは次のフレームからになります。
+レンダリングのパラ
+メーターを変更させる場合に使用する関数です。この関数でカメラのパラメーターを変更して
+も、適用されるのは次のフレームからになります。
 コルーチン可能
 
 SA: ::ref::OnPostRender.
@@ -15,12 +17,12 @@ BEGIN EX
 	// you can turn fog on or off per camera.
 
 	private var revertFogState = false;
-	
+
 	function OnPreRender () {
 		revertFogState = RenderSettings.fog;
 		RenderSettings.fog = enabled;
 	}
-	
+
 	function OnPostRender () {
 		RenderSettings.fog = revertFogState;
 	}

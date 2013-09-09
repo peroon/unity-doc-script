@@ -2,10 +2,10 @@
 PingObject(Object)
 PingObject(int)
 </signature>
-Ping an object in a window like clicking it in an inspector.
+オブジェクトを指定してプロジェクトウィンドウにあるオブジェクトを黄色い枠で強調させる場合に使用します
 BEGIN EX
 	// Pings the currently selected Object
-	
+
 	@MenuItem("Examples/Ping Selected")
 	static function Ping() {
 		if(!Selection.activeObject) {

@@ -1,20 +1,16 @@
 <signature>
 DisplayWizard<T>(string)
 </signature>
-Creates a wizard.
-When the user hits the Create button ::ref::OnWizardCreate function will be called.
-DisplayWizard will only show one wizard for every wizard class.
-
 {img ScriptableWizardDisplayWizard.png}\\
-''Simple Wizard Window that copies a GameObject several times.''
+ウィザードを作成します
 BEGIN EX
 	// C#
 	// Simple Wizard that clones an object.
-	
+
 	using UnityEngine;
 	using UnityEditor;
 	using System.Collections;
-	
+
 	public class ScriptableWizardDisplayWizard : ScriptableWizard {
 		
 		public GameObject ObjectToCopy = null;
@@ -43,24 +39,22 @@ BEGIN EX
 	}
 END EX
 @param T The class implementing the wizard. It has to derive from [[ScriptableWizard]].
-@param title The title shown at the top of the wizard window.
+@param title ウィンドウ名
 @return The wizard.
 <signature>
 DisplayWizard<T>(string,string)
 DisplayWizard<T>(string,string,string)
 </signature>
-Creates a wizard.
-When the user hits the Create button ::ref::OnWizardCreate function will be called.
-DisplayWizard will only show one wizard for every wizard class.
+ウィザードを作成します
 @param T The class implementing the wizard. It has to derive from [[ScriptableWizard]].
-@param title The title shown at the top of the wizard window.
+@param title ウィンドウ名
 @param class The class implementing the wizard. It has to derive from [[ScriptableWizard]].
-@param createButtonName The text shown on the create button.
-@param otherButtonName The text shown on the optional other button. Leave this parameter out to leave the button out.
+@param createButtonName 作成ボタンの名前。デフォルトではCreateです
+@param otherButtonName 補助ボタンとして作成ボタンの左側に表示される名前。デフォルトでは空文字でボタンは表示されません
 @return The wizard.
 <signature>
 DisplayWizard(string,Type)
 DisplayWizard(string,Type,string)
 DisplayWizard(string,Type,string,string)
 </signature>
-TODO.
+ウィザードを作成します

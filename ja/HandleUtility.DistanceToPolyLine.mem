@@ -1,10 +1,5 @@
 <signature>
 DistanceToPolyLine(Vector3[])
 </signature>
-Pixel distance from mouse pointer to a polyline.
-Calculates the screen space distance from the mouse pointer to the multi segment line
-that goes through the given world space points.
-
-Uses the current camera to determine the distance.
-
+全てのポイントを通過するラインとマウスポインターの距離(最短距離)をピクセル単位で返します
 SA: ::ref::DistanceToLine.

@@ -1,4 +1,4 @@
 <signature>
 SetAnimationEvents(AnimationClip,AnimationEvent[])
 </signature>
-Replaces all animation events in the animation clip.
+AnimationClipにAnimationEventを設定します

@@ -1,5 +1,5 @@
 <signature>
 CountInProperty()
 </signature>
-Count visible children of this property, including this property itself.
-This is useful for allocating height for drawing this property including its children.
+自身を含む、子となっているプロパティ数を取得します
+この関数を実行することで子となっているプロパティの位置を通り過ぎてしまいますので注意して下さい

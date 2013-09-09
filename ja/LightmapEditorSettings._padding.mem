@@ -1,4 +1,5 @@
 <signature>
 padding
 </signature>
-Texel separation between shapes.
+テクセル単位のパディングを設定します
+

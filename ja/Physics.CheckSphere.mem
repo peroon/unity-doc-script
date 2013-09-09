@@ -1,11 +1,12 @@
 <signature>
 CheckSphere(Vector3,float,int)
 </signature>
-指定の位置に球体を作成し、そこにコライダーの付いたオブジェクトがヒットするか調べます。ヒットした場合、trueを返します。
+指定の位置に球体を作成し、そこにコライダーの付いたオブジェクトがヒットするか調べま
+す。ヒットした場合、trueを返します。
 CONVERTEXAMPLE
 BEGIN EX
 	var sphereRadius: float;
-	
+
 	function WarningNoise() {
 		// Play a noise if an object is nearby.
 		if (Physics.CheckSphere(transform.position, sphereRadius)) {

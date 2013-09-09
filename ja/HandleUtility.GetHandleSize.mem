@@ -1,5 +1,5 @@
 <signature>
 GetHandleSize(Vector3)
 </signature>
-Get world space size of a manipulator handle at given position.
-Uses the current camera to calculate suitable size.
+指定した位置からマニピュレータを表示した際のハンドルの長さを取得します
+この長さはワールド空間を基準としたもので、シーンカメラから見える実際の長さになります

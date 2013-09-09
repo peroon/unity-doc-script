@@ -1,7 +1,7 @@
 <signature>
 OpenProject(string,string[])
 </signature>
-Open another project.
-Note that this function will not exit immediately. It will open another project after executing function returns.
-@param projectPath The path of a project to open.
-@param args Arguments to pass to command line.
+他のUnityプロジェクトを開きます
+この命令は直ぐには動くわけでなく、スクリプト一連の処理が終わった後に実行されます
+@param projectPath 開きたいプロジェクトのパス
+@param args コマンドライン引数の配列

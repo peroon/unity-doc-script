@@ -6,14 +6,14 @@ FloatField(Rect,float,GUIStyle)
 FloatField(Rect,string,float,GUIStyle)
 FloatField(Rect,GUIContent,float,GUIStyle)
 </signature>
-Make a text field for entering floats.
 {img EditorGUIFloatField.png}\\
-''Float Field in an Editor Window.''
+Float型の値を操作するフィールドを作成します
+数値を直接キーボードで打ちこむだけでなく、ラベル部分をマウスでドラッグすると数値を変動させることが可能です
 BEGIN EX
 	// Editor Script that multiplies the scale of the current selected GameObject 
-	
+
 	class EditorGUIFloatField extends EditorWindow {
-	
+
 		var sizeMultiplier : float = 1;
 		
 		@MenuItem("Examples/Scale selected Object")
@@ -33,8 +33,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the float field.
-@param label Optional label to display in front of the float field.
-@param value The value to edit.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value Float型の値
+@param style スタイル
 @return The value entered by the user.

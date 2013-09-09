@@ -1,11 +1,9 @@
 <signature>
 stripUnusedMeshComponents
 </signature>
-Should unused [[Mesh]] components be excluded from game build?
-When this setting is on, Mesh components (e.g. tangent vectors, vertex colors etc.)
-that are not in use will be removed. This is good for game data size and runtime performance.
+trueの場合、使用されていないMeshはビルド時に除外されます
+ゲームのパフォーマンス的は向上しますがいくつか注意点があります
+ゲーム実行時にシェーダーをDiffuseからBumpmapシェーダーに切り替えた時うまく表示されません
+これは、Diffuseの時点で三角形情報が不要と判断され削除されてしまっているからです
+シェーダーの切り替えを行う場合はこの設定は使用するべきでないことを覚えておいてください
 
-However, be aware of this flag if you're switching shaders on some objects at runtime.
-For example, if a mesh uses a simple Diffuse shader when building the game, Unity will remove
-tangent vectors since they are not needed. If you'd want to switch to a bumpmapped shader
-on this mesh at runtime, you will not get proper tangent data since it was removed!

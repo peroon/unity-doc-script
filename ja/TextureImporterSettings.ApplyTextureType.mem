@@ -1,6 +1,6 @@
 <signature>
 ApplyTextureType(TextureImporterType,bool)
 </signature>
-Configure parameters to import a texture for a purpose of ''type'', as described [[TextureImporterType|here]].
-@param type Texture type. See [[TextureImporterType]].
-@param applyAll If @@false@@, change only specific properties. Exactly which, depends on ''type''.
+テクスチャタイプを設定します
+@param type 適用する TextureImporterTypeを指定します
+@param applyAll falseの場合、適用したいTextureImporterTypeのみになります。trueの場合だと関係なく全てのタイプで適用される

@@ -1,4 +1,2 @@
-Allows to control the lightmapping job.
-Before starting the job the bake settings can be set via [[LightmapEditorSettings]].
-
+Lightmapping機能の制御を行うクラスです
 SA: [[LightmapEditorSettings]].

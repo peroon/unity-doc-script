@@ -1,1 +1,3 @@
-Enum for Tools.viewTool.
+Tools.viewToolでアクティブにさせるツールを選択します
+これはシーンビューでのカメラ操作を行うツールを操作するものです
+Shiftを押しながらだと早くなります

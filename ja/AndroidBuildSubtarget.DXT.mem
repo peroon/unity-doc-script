@@ -1,2 +1,2 @@
-S3 テクスチャ圧縮、DXT 変形に特有でない。NVIDIA Tegra2 プラットフォームが動作するデバイスでサポートされ、 Motorala Xoom、Motorola Atrix、Droid Bionic等のデバイスで動作します。
+DXT圧縮を行います
 SA: EditorUserBuildSettings.androidBuildSubtarget

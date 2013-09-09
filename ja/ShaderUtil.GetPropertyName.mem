@@ -1,6 +1,6 @@
 <signature>
 GetPropertyName(Shader,int)
 </signature>
-Get the name of the shader propery at index propertyIdx of Shader s.
-@param s The shader to check against.
-@param propertyIdx The property index to use.
+プロパティ名を取得します
+@param s プロパティ名を取得したいシェーダー
+@param propertyIdx プロパティのインデックス

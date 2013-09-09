@@ -1,4 +1,5 @@
 <signature>
 showPortals
 </signature>
-If set to true, visualization of portals is enabled.
+OcclusionPortalのボリュームを表示する場合にはtrueを返します
+

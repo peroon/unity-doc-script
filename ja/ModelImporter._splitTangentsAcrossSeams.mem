@@ -1,4 +1,3 @@
-Should tangents be split across UV seams.
-This setting is only used when tangentImportMode is set to Calculate.
-
+接線はUVの繋ぎ目にまたがって分割されるべきであるときにtrueを返します
+これはtangentImporterModeがCalculateの時のみ有効です
 SA: ::ref::tangentImportMode.

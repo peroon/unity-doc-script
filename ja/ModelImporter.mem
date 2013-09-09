@@ -1,2 +1,1 @@
-Model importer lets you modify [[wiki:class-Mesh|model]] import settings from editor scripts.
-Settings of this class match the ones exposed in [[wiki:class-Mesh|Mesh Import Settings]].
+モデルのインポート設定を行うことが出来るクラスです

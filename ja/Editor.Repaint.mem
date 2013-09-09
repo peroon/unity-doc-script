@@ -1,5 +1,5 @@
 <signature>
 Repaint()
 </signature>
-Repaint any inspectors that shows this editor.
-Useful when you want to make sure the inspector updates to show changes made in OnSceneGUI.
+インスペクターを再描画します
+何か描画に関する処理を行った直後に呼び出すことで常に最新の情報を描画します

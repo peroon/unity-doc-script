@@ -1,6 +1,5 @@
 <signature>
 targetObject
 </signature>
-The inspected object (RO).
-When multi-object editing, the targetObject property will just return the first of the edited objects.
-To get all the objects, use the ::ref::targetObjects property instead.
+シリアライズ化されているオブジェクトを取得します
+

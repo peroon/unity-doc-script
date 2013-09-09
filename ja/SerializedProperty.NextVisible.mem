@@ -1,5 +1,6 @@
 <signature>
 NextVisible(bool)
 </signature>
-Move to next visible property.
+Unityエディター上で変更できるプロパティへ移動します
+オブジェクト名やタグ名、レイヤーなどインスペクター上で変更できる値を取得します
 SA: ::ref::Next, ::ref::Reset.

@@ -1,4 +1,4 @@
 <signature>
 GetNavMeshLayer(GameObject)
 </signature>
-Get the navmesh layer for the GameObject.
+GameObjectからNavMeshLayerを取得します

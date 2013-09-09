@@ -12,9 +12,9 @@ This is transform.parent changed, gameObject.name, creating a new game object, e
 BEGIN EX
 	// Simple Editor Script that makes Unity Sync with MonoDevelop each time
 	// there is a change in the Hierarchy or the Project view.
-	
+
 	class ForceSync extends EditorWindow {
-	
+
 		@MenuItem("Example/ForceSync When project changes")
 		static function Init() {
 			var window : ForceSync = EditorWindow.GetWindowWithRect(ForceSync, Rect(0,0,100, 100));

@@ -10,10 +10,10 @@ CONVERTEXAMPLE
 BEGIN EX
 		// The object whose rotation we want to match.
 	var target: Transform;
-	
+
 	// Angular speed in degrees per sec.
 	var speed: float;
-	
+
 	function Update () {    
 	    // The step size is equal to speed times frame time.
 	    var step = speed * Time.deltaTime;

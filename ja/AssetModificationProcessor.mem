@@ -1,3 +1,2 @@
-AssetModificationProcessor lets you hook into saving of serialized assets and scenes which are edited inside Unity.
-This lets you prevent writing of assets by Unity for integration with VCS solutions like Perforce which require
-locking of files.
+シリアライズ化されたアセットのデータを管理する時に使用されます
+PerforceのようなVCSソリューションとの統合化の為に一部ファイルを編集不可にする場合にも使用されます

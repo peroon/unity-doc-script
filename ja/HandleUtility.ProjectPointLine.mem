@@ -1,6 +1,7 @@
 <signature>
 ProjectPointLine(Vector3,Vector3,Vector3)
 </signature>
-Project /point/ onto a line.
+ライン上に実際の位置を投影します
+戻り値として投影された位置を返します
 SA: ::ref::DistancePointLine.
 SA: ::ref::PointOnLineParameter.

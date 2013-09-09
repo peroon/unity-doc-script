@@ -1,14 +1,15 @@
 <signature>
 ScaleValueHandle(float,Vector3,Quaternion,float,DrawCapFunction,float)
 </signature>
-Make a single-float draggable handle.
-This is used to make the center scale handle. The user can click and drag to scale a single float up and down.
+ドラッグ可能なスケールスライダーを作成します
+ScaleSlider とは少し違い、描画するハンドルをカスタマイズすることが出来ます
+ 戻り値としてスケール値を返します
+
 
 {img ScaleValueHandle.png}\\
-''Scale Value handle in the scene view with an arrow cap as the handle.''
 BEGIN EX
 	// Increase/decrease a value just by moving an Arrow Handle
-	
+
 	@CustomEditor (ScaleValueModifier)
 	class ScaleValue extends Editor {
 		function OnSceneGUI () {
@@ -29,20 +30,20 @@ BEGIN EX
 	// ScaleValueModifier.js
 	// Usage: Place this script on the Game Object 
 	// you want to modify "floatVal" by dragging the Arrow Handle
-	
+
 	@script ExecuteInEditMode()
-	
+
 	var floatVal : float = 1;
-	
+
 	function Update() {
 		Debug.Log("Value Modified: " + floatVal);
 	}
 END EX
-@param value The value the user can modify.
-@param position The position of the handle.
-@param rotation The rotation of the handle.
-@param size The size of the handle.
-@param capFunc The function to use for drawing the handle e.g. Handles.RectangleCap.
-@param snap The new value after the user has modified it. 
+@param value 現在のスケール
+@param position ハンドルの位置
+@param rotation ハンドルの角度
+@param size ハンドル自体の大きさ。valueとは異なります
+@param capFunc ハンドルの種類
+@param snap スナップの増分
 
 __Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.

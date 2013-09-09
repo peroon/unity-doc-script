@@ -1,1 +1,1 @@
-Draw the camera like it would be drawn in-game. This uses the clear flags of the camera.
+Gameウィンドウに描画されるものと同じ方法で描画します

@@ -1,5 +1,6 @@
 <signature>
 activeBuildTargetChanged
 </signature>
-Triggered in response to SwitchActiveBuildTarget.
+SwitchActiveBuildTargetでプラットフォームが変更された直後に呼び出されるコールバックを設定します
+
 SA: System.Action.

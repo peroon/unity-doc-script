@@ -6,16 +6,12 @@ ObjectField(Rect,Object,Type,bool)
 ObjectField(Rect,string,Object,Type,bool)
 ObjectField(Rect,GUIContent,Object,Type,bool)
 </signature>
-Make an object field. You can assign objects either by drag and drop objects or by selecting an object using the Object Picker.
-Ensure that the __allowSceneObjects__ parameter is false if the object reference is stored as part of an asset, since assets can't store references to objects in a scene.<br>
-If the ObjectField is part of a custom Editor for a script component, use EditorUtility.IsPersistent() to check if the component is on an asset or a scene object. <br>
-See example in [[Editor]] class.
-
 {img EditorGUIObjectField.png}\\
-''Object field in an Editor Window.''
+オブジェクトフィールドを作成します
+ヒエラルキーやプロジェクトウィンドウからドラッグしてオブジェクトを格納することが出来ます
 BEGIN EX
 	//Select the dependencies of the found GameObject
-	
+
 	class EditorGUIObjectField extends EditorWindow {
 		
 		var obj : GameObject = null;
@@ -30,7 +26,7 @@ BEGIN EX
 		function OnInspectorUpdate () {
 			Repaint ();
 		}
-	
+
 		function OnGUI () {		
 			obj = EditorGUI.ObjectField(Rect(3,3,position.width - 6, 20),
 					"Find Dependency",
@@ -48,9 +44,9 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label in front of the field.
-@param obj The object the field shows.
-@param objType The type of the objects that can be assigned.
-@param allowSceneObjects Allow assigning scene objects. See Description for more info.
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param obj 格納されるオブジェクト
+@param objType オブジェクトの型
+@param allowSceneObjects シーンにあるゲームオブジェクトを格納するかどうか。デフォルトはtrue
 @return The object that has been set by the user.

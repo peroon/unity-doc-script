@@ -1,19 +1,15 @@
 <signature>
 actionKey
 </signature>
-Is the platform-dependent "action" modifier key held down? (RO)
-The key is Command on Mac OS X, Control on Windows.
-
-{img EditorGUIActionKey.png}\\
-''Action Key usage, key not pressed/key pressed.''
+Controlなどの修飾キーが押されたかどうかを確認します
 BEGIN EX
 	// Shows a password field with some "hidden" text.
 	// When the user presses the action key the password field becomes a text field.
-	
+
 	class EditorGUIActionKey extends EditorWindow {
-	
+
 		var text : String = "This is some text";
-	
+
 		@MenuItem("Examples/Show Hide password")
 		static function Init() {
 			var window = GetWindow(EditorGUIActionKey);

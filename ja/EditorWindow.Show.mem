@@ -2,12 +2,11 @@
 Show()
 Show(bool)
 </signature>
-Show the EditorWindow.
 {img EditorWindowPosition.png}\\
-''Empty editor window.''
+EditorWindowを表示します
 BEGIN EX
 	// Create an empty editor window and show it
-	
+
 	class EditorWindowPosition extends EditorWindow {
 	    @MenuItem ("Example/Window position usage")
 	    static function Init () {

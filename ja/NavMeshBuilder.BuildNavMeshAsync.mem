@@ -1,4 +1,4 @@
 <signature>
 BuildNavMeshAsync()
 </signature>
-Build the Navmesh Asyncronously.
+非同期でNavMeshをビルドします

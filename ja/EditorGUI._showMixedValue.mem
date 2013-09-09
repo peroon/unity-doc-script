@@ -1,16 +1,20 @@
 <signature>
 showMixedValue
 </signature>
-Makes the following controls give the appearance of editing multiple different values.
-This is sometimes useful when creating custom editors and you want to represent
-a value in a non-standard way in the GUI while also supporting multi-object editing.
+複数選択した場合に表示される「----」を表現する場合はtrueを設定します
+この表現は、CustomEditorのCanEditMultipleObjectsを有効にした時に必須のものです
+
+複数選択時で異なる値が格納されているかどうかはSerializedProperty.hasMultipleDifferentValuesで判断します
+
+
+
 BEGIN EX
 	// This example shows a custom inspector for an object "MyVessel".
 	// MyVessel has a boolean variable isFast but we want to show it
 	// as a dropdown instead of as a toggle.
-	
+
 	enum SpeedOption { Slow, Fast }
-	
+
 	@CustomEditor (MyVessel)
 	@CanEditMultipleObjects
 	class MyVesselEditor extends Editor {
@@ -57,9 +61,9 @@ BEGIN EX
 END EX
 BEGIN EX
 	// This is the MyVessel script used above
-	
+
 	var isFast : boolean = false;
-	
+
 	function Update () {
 		// Update logic here...
 	}

@@ -1,4 +1,6 @@
 <signature>
 bounces
 </signature>
-Number of light bounces in the global illumination computation (with 0 meaning direct light only).
+ライトのバウンスの数
+照明の計算において使用されます。0の場合、ディレクショナルライトを意味します
+

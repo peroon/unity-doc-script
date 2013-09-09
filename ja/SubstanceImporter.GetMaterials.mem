@@ -1,4 +1,4 @@
 <signature>
 GetMaterials()
 </signature>
-Get an array with the Procedural Material instances.
+全てのProceduralMaterialを取得します

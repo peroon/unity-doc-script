@@ -1,4 +1,5 @@
 <signature>
 foldoutPreDrop
 </signature>
-Style used for headings for EditorGUI::ref::Foldout.
+フォルドアウトでクリックして折りたたまれた要素を表示/非表示する時に使用されるスタイル。
+

@@ -2,6 +2,6 @@
 Contains(Object)
 Contains(int)
 </signature>
-Is object an asset?
-Returns true when an object is an asset (corresponds to a file in the Assets folder), 
-and false if it is not (for example object in the scene, or an object created at runtime).
+オブジェクトがプロジェクト内に含まれているかチェックします
+アセットとして保存されているオブジェクトの場合はtrueを返します
+アセットでない場合、つまりシーン上のみに存在するオブジェクトの場合はfalseを返します

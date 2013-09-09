@@ -1,9 +1,11 @@
 <signature>
 EndWindows()
 </signature>
-Close a window group started with EditorWindow::ref::BeginWindows.
 {img GUIWindowDemo.png}\\
-''Simple editor Window with a window and a button inside.''
+EditorWindowの上にポップアップウィンドウを表示します
+この関数が直接ウィンドウを表示するわけではなく、GUI.WindowやGUILayout.Windowの補助的なものになります
+EditorWindow内部にサブウィンドウを表示する際は、必ずBeginWindowとEndWindowの範囲内に記述する必要があります
+
 BEGIN EX
 	class GUIWindowDemo extends EditorWindow {
 		// The position of the window

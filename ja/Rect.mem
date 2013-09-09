@@ -1,11 +1,1 @@
-x, y, width, height変数によって定義される2 次元範囲です。
-/Rect/クラスは2D 操作になります。GUI システムだけでなく、カメラの位置決めにも使用されます。
-
-The rectangle can be specified in two different ways. The first way involves supplying the top-left corner coordinate along with the width and height. This is done using the ::ref::x, ::ref::y, ::ref::width and ::ref::height properties.
- {img RectXY.png}
- 
-The second way to specify the rectangle is to supply the X coordinates of its left and right sides and the Y coordinates of its top and bottom sides. These are denoted by the ::ref::xMin, ::ref::xMax, ::ref::yMin and ::ref::yMax properties.
- {img RectXMinYMin.png}
-Although the ::ref::x and ::ref::y properties may seem to be the same as ::ref::xMin and ::ref::xMax, their behaviour is actually slightly different. The /x/ and /y/ values are assumed to be used along with /width/ and /height/. This means that if you change /x/ or /y/ without changing /width/ or /height/ then the rectangle will change position but stay the same size. On the other hand, if you change the values of /xMin/ or /yMin/ without changing /xMax/ or /yMax/ then the rectangle will change size and the top-left corner will also change.
-
-SA: [[wiki:gui-Basics|GUI Scripting Guide]], Camera.rect, Camera.pixelRect.
+x, y, width, height変数によって定義される2 次元範囲です。/Rect/クラスは2D 操作になります。GUI システムだけでなく、カメラの位置決めにも使用されます。The rectangle can be specified in two different ways. The first way involves supplying the top-left corner coordinate along with the width and height. This is done using the ::ref::x, ::ref::y, ::ref::width and ::ref::height properties. {img RectXY.png}The second way to specify the rectangle is to supply the X coordinates of its left and right sides and the Y coordinates of its top and bottom sides. These are denoted by the ::ref::xMin, ::ref::xMax, ::ref::yMin and ::ref::yMax properties. {img RectXMinYMin.png}Although the ::ref::x and ::ref::y properties may seem to be the same as ::ref::xMin and ::ref::xMax, their behaviour is actually slightly different. The /x/ and /y/ values are assumed to be used along with /width/ and /height/. This means that if you change /x/ or /y/ without changing /width/ or /height/ then the rectangle will change position but stay the same size. On the other hand, if you change the values of /xMin/ or /yMin/ without changing /xMax/ or /yMax/ then the rectangle will change size and the top-left corner will also change.SA: [[wiki:gui-Basics|GUI Scripting Guide]], Camera.rect, Camera.pixelRect.

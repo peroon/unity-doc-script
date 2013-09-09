@@ -1,7 +1,9 @@
 <signature>
 objectReferences
 </signature>
-References to [[Object|objects]] being dragged.
-Never returns null. If no object references are available returns an empty array.
+ドラッグされているオブジェクトを取得、または設定します
+nullを返すことはなく、参照するオブジェクトがない場合は空のオブジェクトの配列を返します
 
+また、pathsまたはobjectReferencesを使用しない場合でも必ず空の配列を代入してください
+代入しないとEventType.DragUpdatedやEventType.DragExitedなどのDrag専用イベントが呼び出されません
 SA: ::ref::paths, ::ref::PrepareStartDrag, ::ref::StartDrag.

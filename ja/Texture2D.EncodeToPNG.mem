@@ -39,7 +39,6 @@ BEGIN EX
 		// For testing purposes, also write to a file in the project folder
 		// File.WriteAllBytes(Application.dataPath + "/../SavedScreen.png", bytes);
 
-
 		// Create a Web Form
 		var form = new WWWForm();
 		form.AddField("frameCount", Time.frameCount.ToString());

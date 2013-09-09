@@ -13,7 +13,7 @@ BEGIN EX
 	var smooth = 0.3;
 	var distance = 5.0;
 	private var yVelocity = 0.0;
-	
+
 	function Update () {
 		// Damp angle from current y-angle towards target y-angle
 		var yAngle : float = Mathf.SmoothDampAngle(transform.eulerAngles.y,
@@ -34,4 +34,5 @@ END EX
 @param currentVelocity 現在の速度が格納される
 @param smoothTime target へ到達するまでのおおよその時間
 @param maxSpeed 最大速度
-@param deltaTime この関数が最後に呼び出されてからの経過時間。デフォルトはTime.deltaTime変数。FixedUpDate関数内で使用する場合はTime.fixedDeltaTime変数などに変更すると正確な値を取得できる
+@param deltaTime この関数が最後に呼び出されてからの経過時間。デフォルトはTime.deltaTime変数。FixedUpDate関数内で使用する場合は
+Time.fixedDeltaTime変数などに変更すると正確な値を取得できる

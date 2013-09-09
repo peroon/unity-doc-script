@@ -1,5 +1,5 @@
 <signature>
 visibleLayers
 </signature>
-Which layers are visible in the scene view.
-This is a bitfield.
+表示しているレイヤーを取得します
+

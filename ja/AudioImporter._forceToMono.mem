@@ -1,4 +1,7 @@
-Force this clip to mono?
+ステレオから強制的にモノラルにします
+モノラルにしたくない場合はfalseにしてください
+デフォルトはfalseです
+
 BEGIN EX
 	// C#: Import files containing "mono" in their name as mono.
 	class DetectMono extends AssetPostprocessor {

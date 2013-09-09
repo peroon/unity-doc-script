@@ -2,7 +2,8 @@
 SelectableLabel(Rect,string)
 SelectableLabel(Rect,string,GUIStyle)
 </signature>
-Make a selectable label field. (Useful for showing read-only info that can be copy-pasted.)
-@param position Rectangle on the screen to use for the label.
-@param text The text to show.
-@param style Optional [[GUIStyle]].
+選択可能なラベルを生成します
+GUI.LabelやEditorGUI.LabelField とは少し違い、ラベルを選択状態にすることが出来、文字列のコピーを行うことが出来ます
+@param position 表示位置
+@param text 表示する文字列
+@param style スタイル

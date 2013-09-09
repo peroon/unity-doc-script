@@ -1,2 +1,2 @@
-ATC (Android) 8 bits/pixel compressed RGBA texture format.
+１ピクセル８ビットの圧縮されたテクスチャフォーマット(ATC専用)
 SA: TextureImporter.textureFormat.

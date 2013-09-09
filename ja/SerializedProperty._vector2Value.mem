@@ -1,5 +1,5 @@
 <signature>
 vector2Value
 </signature>
-Value of a 2D vector property.
+Vector2型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Vector2, [[Vector2]].

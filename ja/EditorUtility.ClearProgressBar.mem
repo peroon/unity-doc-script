@@ -1,9 +1,7 @@
 <signature>
 ClearProgressBar()
 </signature>
-Removes progress bar.
-Will remove any progress bar previously shown using EditorUtility.DisplayProgressBar.
-
+EditorUtility.DisplayProgressBarで表示されているプログレスバーを削除します
 SA: ::ref::DisplayProgressBar, ::ref::DisplayCancelableProgressBar functions.
 BEGIN EX
 	// Simple Editor Script that fills a cancelable bar in the given seconds.

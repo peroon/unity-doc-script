@@ -8,17 +8,17 @@ SA: ::ref::MultiplyPoint, ::ref::MultiplyVector.
 CONVERTEXAMPLE
 BEGIN EX
 	// Stretch a mesh at an arbitrary angle around the X axis.
-	
+
 	// Angle and amount of stretching.
 	var rotAngle: float;
 	var stretch: float;
-	
-	
+
+
 	private var mf: MeshFilter;
 	private var origVerts: Vector3[];
 	private var newVerts: Vector3[];
-	
-	
+
+
 	function Start () {
 		// Get the Mesh Filter component, save its original vertices
 		// and make a new vertex array for processing.
@@ -26,8 +26,8 @@ BEGIN EX
 		origVerts = mf.mesh.vertices;
 		newVerts = new Vector3[origVerts.Length];
 	}
-	
-	
+
+
 	function Update () {
 		// Create a rotation matrix from a Quaternion.
 		var rot = Quaternion.Euler(rotAngle, 0, 0);

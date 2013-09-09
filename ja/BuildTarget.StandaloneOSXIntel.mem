@@ -1,2 +1,2 @@
-Build an OS X standalone (Intel only).
+Mac OS X（32bit Intel）用にビルドします
 SA: BuildPipeline.BuildPlayer.

@@ -1,4 +1,5 @@
 <signature>
 HasObjectThumbnail(Type)
 </signature>
-Does a given class have per-object thumbnails?
+オブジェクトのアイコンが存在するかどうかを確認します
+存在しない場合はfalseを返します

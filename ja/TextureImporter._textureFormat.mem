@@ -1,2 +1,2 @@
-Format of imported texture.
+テクスチャのフォーマットを返します
 SA: [[TextureImporterFormat]].

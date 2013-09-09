@@ -1,15 +1,14 @@
 <signature>
 whiteTexture
 </signature>
-Get a white texture.
 {img EditorGUIUtilityWhiteTexture.png}\\
-''White texture in an Editor Window.''
+白色のテクスチャを取得します
 BEGIN EX
 	// Load a texture, display the texture, display its alpha channel and
 	// show a preview of the inverted texture
-	
+
 	class EditorGUITextures extends EditorWindow {
-	
+
 		var texture : Texture2D;
 		var invertedTexture : Texture2D;
 		var showInverted = false;

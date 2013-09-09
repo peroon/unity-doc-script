@@ -1,6 +1,5 @@
 <signature>
 toolbar
 </signature>
-Toolbar background from top of windows.
-The toolbar is used as a background for other toolbar elements
+ウィンドウ上部に表示するツールバーの背景スタイル
 SA: ::ref::toolbarButton, ::ref::toolbarPopup, ::ref::toolbarDropDown.

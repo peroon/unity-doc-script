@@ -1,4 +1,7 @@
 <signature>
 appendProject
 </signature>
-Append (rather than replace) the build of an iOS Xcode project.
+iOSのビルド時に変更されたファイルや新たに追加されたファイルのみ更新を行う場合はtrueを設定します
+デフォルトではfalseになっており、ビルドの成果物（Xcodeプロジェクト）を同じ保存先に保存を行う場合、Replace（一旦削除し、全て入れ替える）を行います。
+
+

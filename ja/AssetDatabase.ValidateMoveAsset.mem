@@ -1,9 +1,26 @@
 <signature>
 ValidateMoveAsset(string,string)
 </signature>
-Checks if an asset file can be moved from one folder to another. (Without actually moving the file).
+アセットを正しく移動できるかを確認します
+戻り値として返されるのはエラーメッセージです
+正しく移動出来る時は空文字が返されます
+
+### 表示されるエラーメッセージ
+
+* Trying to move asset to location it came from 「newPath」（同じファイルパスへ移動しようとしています）
+* Trying to move asset as a sub directory of itself 「newpath」（自分のサブディレクトリに移動しようとしています）
+* Trying to move asset as a sub directory of a directory that does not exist 「newPath」（移動先のディレクトリが存在しません）
+* Can not move asset out of assets/ folder （移動できるのはAssetsフォルダ内のみです）
+* Asset to move is not in asset database　（Assetsフォルダ内にアセットがありません）
+* Could not find parent directory GUID　（親ディレクトリのGUIDを取得することが出来ません）
+* Parent directory is not in asset database （親のディレクトリがAssetsフォルダ内にありません）
+* ≈ Filename （ファイル名が不正です）
+* Can not move asset from 「oldPath」 to 「newPath」. Source path does not exist（移動元のパスが存在しません）
+* Can not move asset from 「oldPath」 to 「newPath」. Destination path name does already exist（すでに移動先にアセットが存在します）
+* Can not move asset from 「oldPath」 to 「newPath」. Destination parent directory does not exist（移動先の親ディレクトリが存在しません）
+
 SA: AssetDatabase.MoveAsset.
-@param oldPath The path where the asset currently resides.
-@param newPath The path which the asset should be moved to.
+@param oldPath 移動元のパス
+@param newPath 移動先のパス
 @return An empty string, if the asset can be moved, and an error string otherwise.
 All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png".

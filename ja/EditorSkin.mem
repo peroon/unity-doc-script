@@ -1,1 +1,1 @@
-Enum that selects which skin to return from EditorGUIUtility.GetBuiltinSkin.
+EditorGUIUtility.GetBuiltinSkinから取得できるスキンを選択します

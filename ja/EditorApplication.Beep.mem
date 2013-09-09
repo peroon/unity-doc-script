@@ -1,7 +1,7 @@
 <signature>
 Beep()
 </signature>
-Plays system beep sound.
+PCシステムのビープ音を再生します
 BEGIN EX
 	// Play sound on mouse down event 
 	function OnGUI () {

@@ -1,4 +1,5 @@
 <signature>
 aoContrast
 </signature>
-Controls the look of the transition from black to white.
+黒から白へ変わるコントラストの制御を行います
+

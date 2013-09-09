@@ -1,4 +1,4 @@
 <signature>
 ClearAllNavMeshes()
 </signature>
-Clear all Navmeshes.
+NavMeshの情報を全て削除します

@@ -1,6 +1,7 @@
 <signature>
 DrawColorSwatch(Rect,Color)
 </signature>
-Draw a color swatch.
-@param position The rectangle to draw the color swatch within.
-@param color The color to draw.
+カラーの情報を可視化します
+編集は出来ません。
+@param position 表示位置
+@param color 表示する色

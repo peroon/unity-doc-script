@@ -1,4 +1,4 @@
 <signature>
 GetMaterialOffset(ProceduralMaterial)
 </signature>
-Get the material offset, which is used for all the textures that are part of this Procedural Material.
+ProceduralMaterialで使用されるテクスチャのオフセットを取得します

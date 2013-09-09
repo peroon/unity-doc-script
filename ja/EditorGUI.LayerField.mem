@@ -6,14 +6,15 @@ LayerField(Rect,int,GUIStyle)
 LayerField(Rect,string,int,GUIStyle)
 LayerField(Rect,GUIContent,int,GUIStyle)
 </signature>
-Make a layer selection field.
 {img EditorGUILayerField.png}\\
-''Layer field in an Editor Window.''
+レイヤーフィールドを作成します
+表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのLayerの値になります
+戻り値として選択したレイヤー番号が返されます
 BEGIN EX
 	// Change the Tag and/or the layer of the selected GameObjects.
-	
+
 	class EditorGUITagLayerField extends EditorWindow {
-	
+
 		var selectedTag : String = "";
 		var selectedLayer : int = 0;
 		
@@ -23,7 +24,7 @@ BEGIN EX
 			window.position = Rect(0,0,350,70);
 			window.Show();
 		}
-	
+
 		function OnGUI() {
 			selectedTag = EditorGUI.TagField(
 				Rect(3,3,position.width/2 - 6, 20),
@@ -49,8 +50,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label in front of the field.
-@param layer The layer shown in the field.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param layer 選択されたレイヤー
+@param style スタイル
 @return The layer selected by the user.

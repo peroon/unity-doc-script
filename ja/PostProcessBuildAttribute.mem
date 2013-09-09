@@ -7,14 +7,14 @@ BEGIN EX NOCHECK
 	using UnityEngine;
 	using UnityEditor;
 	using UnityEditor.Callbacks;
-	
+
 	public class MyBuildPostprocessor {
 		[PostProcessBuild]
 		public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject) {
 			Debug.Log( pathToBuiltProject );
     	}
 	}
-	
+
 	// Javascript example:
     #pragma strict
 

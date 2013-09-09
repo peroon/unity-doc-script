@@ -1,4 +1,4 @@
 <signature>
 Cancel()
 </signature>
-Cancel Navmesh construction.
+非同期でビルドしているNavMeshのビルドをキャンセルします

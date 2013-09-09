@@ -2,6 +2,5 @@
 GetAllCurves(AnimationClip)
 GetAllCurves(AnimationClip,bool)
 </signature>
-Retrieves all curves from a specific animation clip.
-If /includeCurveData/ is false, all animation curves in returned results will be null. Use this when
-you only want to get the list of curves, their types and names.
+AnimationClipから全てのAnimationClipCurveDataを取得します
+取得するAnimationClipCurveDataの数が多く、AnimationCurveを必要としない場合はincludeCurveDataをfalseにすると取得する情報量の削減になり、高速化が見込めます

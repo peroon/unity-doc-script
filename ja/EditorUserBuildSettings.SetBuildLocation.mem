@@ -1,4 +1,4 @@
 <signature>
 SetBuildLocation(BuildTarget,string)
 </signature>
-Set a new location for the build.
+ビルド後の成果物の保存先を設定します

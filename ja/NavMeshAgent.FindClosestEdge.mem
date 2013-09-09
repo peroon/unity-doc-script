@@ -15,14 +15,12 @@ private var agent: NavMeshAgent;
 		agent = GetComponent.<NavMeshAgent>();
 	}
 
-
 	function Update() {
 		// Move to the nearest wall when the mouse is clicked.
 		if (Input.GetMouseButtonDown(0)) {
 			TakeCover();
 		}
 	}
-
 
 	function TakeCover() {
 		var hit: NavMeshHit;

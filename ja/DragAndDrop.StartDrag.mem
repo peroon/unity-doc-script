@@ -1,10 +1,8 @@
 <signature>
 StartDrag(string)
 </signature>
-Start a drag operation.
-Initiates a drag operation with the current drag object state. Use ::ref::paths and/or ::ref::objectReferences to setup
-drag state.
-
+ドラッグを開始します
+この関数を呼び出す前に PrepareStartDrag関数を呼び出し、objectReferencesかpathsにアセットのパスを設定するようにして下さい
 SA: ::ref::PrepareStartDrag, ::ref::paths, ::ref::objectReferences.
 BEGIN EX
 	function OnGUI () {

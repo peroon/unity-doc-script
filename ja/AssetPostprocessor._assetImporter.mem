@@ -1,7 +1,8 @@
 <signature>
 assetImporter
 </signature>
-Reference to the asset importer.
+インポートしようとしているAssetImporterを参照します
+普段はこれをキャストしTextureImporterやAudioImporterとして使用することになります
 BEGIN EX
 #pragma strict
 
@@ -10,7 +11,7 @@ BEGIN EX
     
 class CustomImportSettings extends AssetPostprocessor {
 	var globalScaleModifier : float = 0.0028f;
-	
+
 	function OnPreprocessModel() {
 		var importer : ModelImporter = assetImporter as ModelImporter;
 		importer.globalScale  = globalScaleModifier;

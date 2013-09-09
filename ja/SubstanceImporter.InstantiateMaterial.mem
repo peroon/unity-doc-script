@@ -1,4 +1,4 @@
 <signature>
 InstantiateMaterial(string)
 </signature>
-Instantiate a new Procedural Material instance from a prototype.
+プロトタイプ名からProceduralMaterialをインスタンス化します

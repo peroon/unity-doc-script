@@ -1,2 +1,1 @@
-Maximum texture size.
-Larger textures will be scaled down to this size at import time.
+テクスチャの最大サイズを返します

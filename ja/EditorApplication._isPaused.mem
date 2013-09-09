@@ -1,9 +1,7 @@
 <signature>
 isPaused
 </signature>
-Is editor currently paused?
-Lets you change pause state programmatically, like pressing the Pause button in the main toolbar.
-
+ゲームビューが一時停止中の場合はtrueを返します
 SA: ::ref::isPlaying.
 BEGIN EX
 	// Simple editor Script that lets you save a scene while in play mode.

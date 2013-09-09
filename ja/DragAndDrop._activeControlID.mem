@@ -1,4 +1,5 @@
 <signature>
 activeControlID
 </signature>
-Get or set ID of currently active drag and drop control.
+現在のアクティブなコントロールIDを取得、または設定を行います
+

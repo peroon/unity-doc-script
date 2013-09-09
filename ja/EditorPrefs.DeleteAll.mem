@@ -1,9 +1,8 @@
 <signature>
 DeleteAll()
 </signature>
-Removes all keys and values from the preferences. Use with caution.
 {img ClearEditorPrefs.png}\\
-''Clears all editor prefs keys.''
+EditorPrefsに保存された全てのデータを削除する
 BEGIN EX
 	// Clear all the editor prefs keys.
 	//

@@ -1,4 +1,6 @@
 <signature>
 DistancePointToLineSegment(Vector2,Vector2,Vector2)
 </signature>
-Distance from a point /p/ in 2d to a line segment defined by two points /a/ and /b/.
+ラインとポイント間の距離(最短距離)を計算して返します
+ただしラインは分割されたものと考えられて計算されます
+DistancePointToLineとの違いを把握することが理解への近道です

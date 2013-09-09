@@ -1,4 +1,6 @@
-Use hardware voice/decoder if available.
+trueで尚且つ使用可能であれば、ハードウェアの音声/デコーダーを使用します
+使用不可の場合は変化はありません
+デフォルトはfalseです
 BEGIN EX
 	// C#: Use hardware voice/decoder if available when importing Audio.
 	class UseHardwareDecoder extends AssetPostprocessor {

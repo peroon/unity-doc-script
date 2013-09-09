@@ -1,11 +1,8 @@
 <signature>
 productName
 </signature>
-The name of your product.
-This will appear on the menu bar when your game is running and is used to locate the preferences file.
-
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+プロダクト名
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

@@ -1,5 +1,5 @@
 <signature>
 AddDisabledItem(GUIContent)
 </signature>
-Add a disabled item to the menu.
+選択不可のアイテムをメニューに追加します
 SA: GenericMenu.AddItem, GenericMenu.AddSeparator.

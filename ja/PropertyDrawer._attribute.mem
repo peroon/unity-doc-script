@@ -1,4 +1,5 @@
 <signature>
 attribute
 </signature>
-The [[PropertyAttribute]] for the property. Not applicable for custom class drawers. (RO)
+プロパティの PropertyAttribute を取得します
+

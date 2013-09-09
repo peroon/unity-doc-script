@@ -1,4 +1,5 @@
 <signature>
 showPreVisualization
 </signature>
-If set to true, the visualization lines of the PVS volumes will show all cells rather than cells after culling.
+カリング後のPVSボリュームの可視化ラインを表示する場合はtrueにします
+

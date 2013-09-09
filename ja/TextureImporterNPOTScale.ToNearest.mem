@@ -1,2 +1,2 @@
-Scale to nearest power of two.
+一番近い2のべき乗のサイズにスケーリングします
 SA: TextureImporter.npotScale.

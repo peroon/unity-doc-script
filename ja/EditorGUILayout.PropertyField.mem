@@ -4,12 +4,14 @@ PropertyField(SerializedProperty,GUIContent,GUILayoutOption[])
 PropertyField(SerializedProperty,bool,GUILayoutOption[])
 PropertyField(SerializedProperty,GUIContent,bool,GUILayoutOption[])
 </signature>
-Make a field for [[SerializedProperty]].
+SerializedProperty型のフィールドを作成します
+戻り値としてincludeChildrenの値が返されます
+プロパティが子を持つ場合にtrueを返します
 SA: [[SerializedProperty]], [[SerializedObject]].
-@param property The SerializedProperty to make a field for.
-@param label Optional label to use. If not specified the label of the property itself is used. Use GUIContent.none to not display a label at all.
-@param includeChildren If /true/ the property including children is drawn; otherwise only the control itself (such as only a foldout but nothing below it).
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param property シリアライズ化されたデータ
+@param label 表示する文字列、テクスチャ、ツールチップ
+@param includeChildren trueの場合、子を含むプロパティが描画されます。デフォルトはfalseです
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return True if the property has children and is expanded and includeChildren was set to false; otherwise false.

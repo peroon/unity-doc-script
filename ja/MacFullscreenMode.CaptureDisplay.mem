@@ -1,3 +1,2 @@
-Capture the display.
-In this mode Unity will capture the display and change the hardware resolution to the requested mode.
-No other UI content can appear, and it is not possible to switch to other applications while in fullscreen mode.
+Unityの解像度にディスプレイの解像度を合わせます
+Retinaなどの高解像度の場合、うまく設定できない場合があるので注意してください

@@ -1,22 +1,21 @@
 <signature>
 ConeCap(int,Vector3,Quaternion,float)
 </signature>
-Draw a Cone. Pass this into handle functions.
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
+コーンを描画します
+これはハンドルを作成するときに使用されます
 
 {img ConeCap.png}\\
-''Cone Cap in the Scene View.''
 BEGIN EX
 	// Draw one cone on each axis that points where the transform is looking at
 	//
 	// Usage: Attach the "DummyCubeCapScript.js" script to any Object you want
 	// See this working on
-	
+
 	@CustomEditor (DummyConeCapScript)
 	class ConeCap extends Editor {
 		
 		var coneSize : float = 1;
-	
+
 	    function OnSceneGUI () {
 	    	Handles.color = Color.red;
 	    	Handles.ConeCap(0,
@@ -39,6 +38,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	//DummyCubeCapScript.js
-	
+
 	Debug.Log("I have CubeCap Handles attached to this transform!");
 END EX

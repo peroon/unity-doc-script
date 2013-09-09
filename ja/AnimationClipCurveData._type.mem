@@ -1,4 +1,5 @@
 <signature>
 type
 </signature>
-The type of the component / material being animated.
+アニメーションを行うコンポーネント、またはマテリアルの型
+

@@ -1,4 +1,2 @@
-Various settings for the bake.
-The bake can be started via [[Lightmapping]] class.
-
+ライトマッピングのための設定を行うクラスです
 SA: [[Lightmapping]].

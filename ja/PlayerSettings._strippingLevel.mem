@@ -1,4 +1,5 @@
 <signature>
 strippingLevel
 </signature>
-Managed code stripping level.
+スクリプトコードの未使用部分を省くレベルを設定します
+

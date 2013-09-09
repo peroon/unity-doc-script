@@ -1,2 +1,2 @@
-PowerVR テクスチャ圧縮. SamsungのGalaxy SやNexus S、Galaxy Tab、Motorola DROIDシリーズ等、のPowerVR SGX530/540 GPUを実行しているデバイスで利用できる。
+PVRTC圧縮を行います
 SA: EditorUserBuildSettings.androidBuildSubtarget.

@@ -1,6 +1,7 @@
 <signature>
 GetTextMetaDataPathFromAssetPath(string)
 </signature>
-Gets the path to the text .meta file associasted with an asset.
-@param path The path to the asset.
+アセットのパスから、.metaファイルのパスを取得します
+しかしこの機能はpathの最後に.metaを追加しているだけになります
+@param path アセットのパス
 @return The path to the .meta text file or empty string if the file does not exist.

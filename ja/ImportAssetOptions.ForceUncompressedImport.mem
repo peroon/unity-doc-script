@@ -1,2 +1,2 @@
-Forces asset import as uncompressed for edition facilities.
+強制的にSubstanceのアセットが圧縮されていないとしてインポートを行います
 SA: AssetDatabase.ImportAsset, AssetDatabase.Refresh.

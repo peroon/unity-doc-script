@@ -3,19 +3,10 @@ SaveScene()
 SaveScene(string)
 SaveScene(string,bool)
 </signature>
-Save the open scene.
-All paths are relative to the project folder, such as: "Assets/MyScenes/MyScene.unity".
-Folders specified in the path must already exist before calling the function.
-If no path is specified, the path of the current open scene is used, except if it was never saved before, in which case a save dialog is shown.
-
-The function returns /false/ if the save failed. This can happen if the specified path is invalid or if the user cancels in the case of a save dialog.
-
-When calling the function, the unsaved changes marker is cleared, just as when saving using the file menu.
-(On Windows, the unsaved changes marker is an asterix after the file name in the window title.
-On Mac OS X it's a dot inside the red close button of the window.)
-When a path is specified, the ::ref::currentScene is also changed to be the specified asset.
-
-When /saveAsCopy/ is set to /true/ however, neither the ::ref::currentScene or the unsaved changes marker is changed.
+シーンを保存します
+pathを指定しない場合は現在開いているシーンを上書き保存します
+シーンの保存に失敗した時、戻り値としてfalseを返します
+戻り値としてfalseを返す時は、現在のシーンを保存するときのダイアログでキャンセルを行った時です
 
 SA: ::ref::currentScene.
 
@@ -24,14 +15,14 @@ SA: ::ref::currentScene.
 BEGIN EX
 	// Simple editor window that autosaves the working scene
 	// Make sure to have this window opened to be able to execute the auto save.
-	
+
 	import UnityEditor;
-	
+
 	class SimpleAutoSave extends EditorWindow {
 		
 		var saveTime : float = 300;
 		var nextSave : float = 0;
-	
+
 		@MenuItem("Example/Simple autoSave")
 		static function Init() {
 			var window : SimpleAutoSave = 
@@ -56,6 +47,6 @@ BEGIN EX
 		}
 	}
 END EX
-@param path The file path to save at. If empty, the current open scene will be overwritten, or if never saved before, a save dialog is shown.
-@param saveAsCopy If set to /true/, the scene will be saved without changing the ::ref::currentScene and without clearing the unsaved changes marker.
+@param path シーンの保存先、空文字の場合、現在開いているシーンに上書き保存されます
+@param saveAsCopy 現在のシーンに変更点を適用する場合はtrueを設定します。デフォルトはtrueで適用しません
 @return True if the save succeeded, otherwise false.

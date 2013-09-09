@@ -1,12 +1,9 @@
 <signature>
 DisplayDialogComplex(string,string,string,string,string)
 </signature>
-Displays a modal dialog with three buttons.
-Use it for displaying message boxes in the editor.
-
-Similar to ::ref::DisplayDialog, only this version shows a dialog with three buttons. /ok/, /cancel/ and /alt/
-are labels to be displayed on the buttons. DisplayDialogComplex returns an integer 0, 1 or 2 corresponding to
-ok, cancel and alt buttons.
+3つボタンのあるダイアログを表示します
+戻り値はintで押したボタンによって変わります
+OKボタンが0、キャンセルボタンが1、Altボタンが2となります
 
 SA: ::ref::DisplayDialog function.
 

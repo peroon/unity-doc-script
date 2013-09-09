@@ -7,7 +7,7 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Make an object follow a line among the X axis
 	// Notice how the tangents modify the behaviour of the animation
-	
+
 	private var ks : Keyframe[] = new Keyframe[3];
 	private var anim : AnimationCurve ;
 
@@ -20,7 +20,7 @@ BEGIN EX
 		ks[2].outTangent = 90;
 		anim = AnimationCurve(ks);
 	}
-	
+
 	function Update() {
 		transform.position = Vector3(Time.time,anim.Evaluate(Time.time),0); 
 	}

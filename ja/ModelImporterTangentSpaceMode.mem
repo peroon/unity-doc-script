@@ -1,2 +1,2 @@
-Animation generation options for [[ModelImporter]].
+ModelImporter.normalImportModeやModelImporter.tangentImportModeで使用される生成オプションを選択します
 SA: ModelImporter.normalImportMode, ModelImporter.tangentImportMode.

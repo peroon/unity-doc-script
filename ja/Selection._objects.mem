@@ -1,9 +1,8 @@
 <signature>
 objects
 </signature>
-The actual unfiltered selection from the Scene.
-Only objects from the Scene or Hierarchy will be returned, not from the Project View. You can also assign objects to the selection.
-
+選択中の全てのオブジェクト情報を取得します
+代入を行うことで選択状態にすることも出来ます
 SA: Selection.instanceIDs.
 
 {img SelectAllOfTag.png}\\

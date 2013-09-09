@@ -1,2 +1,2 @@
-Normal map filtering mode for [[TextureImporter]].
+TextureImporter.normalmapFilterで使用される法線マップのフィルタリング方法を選択します
 SA: TextureImporter.normalmapFilter.

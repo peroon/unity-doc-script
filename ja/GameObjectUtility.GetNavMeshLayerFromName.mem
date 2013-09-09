@@ -1,4 +1,4 @@
 <signature>
 GetNavMeshLayerFromName(string)
 </signature>
-Get the navmesh layer from the layer name.
+NavMeshLayer名からNavMeshLayerの値を取得します

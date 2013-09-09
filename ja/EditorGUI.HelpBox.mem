@@ -1,7 +1,8 @@
 <signature>
 HelpBox(Rect,string,MessageType)
 </signature>
-Make a help box with a message to the user.
-@param position Rectangle on the screen to draw the help box within.
-@param message The message text.
-@param type The type of message.
+ヘルプボックスを作成します
+何かユーザーへ伝えることがあるときに使用されます
+@param position 表示位置
+@param message 表示するメッセージ
+@param type メッセージのタイプ

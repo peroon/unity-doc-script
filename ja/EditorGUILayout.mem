@@ -1,1 +1,2 @@
-Auto-layouted version of [[EditorGUI]].
+エディターで使用されるGUILayoutクラスです
+自動でRect情報が設定されます

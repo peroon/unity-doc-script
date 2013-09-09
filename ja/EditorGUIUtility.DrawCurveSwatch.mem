@@ -2,11 +2,11 @@
 DrawCurveSwatch(Rect,AnimationCurve,SerializedProperty,Color,Color)
 DrawCurveSwatch(Rect,AnimationCurve,SerializedProperty,Color,Color,Rect)
 </signature>
-Draw a curve swatch.
-Pass in the curve to draw either with the curve parameter or with the property parameter.
-@param position The rectangle to draw the color swatch within.
-@param curve The curve to draw.
-@param property The curve to draw as a SerializedProperty.
-@param color The color to draw the curve with.
-@param bgColor The color to draw the background with.
-@param curveRanges Optional parameter to specify the range of the curve which should be included in swatch.
+AnimationCurveの情報を可視化します
+編集は出来ません
+@param position 表示位置
+@param curve 描画するAnimationCurve情報
+@param property シリアライズ化されたAnimationCurve情報
+@param color 曲線の色
+@param bgColor 背景の色
+@param curveRanges 曲線の範囲

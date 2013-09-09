@@ -1,4 +1,7 @@
 <signature>
 SelectionFrame(int,Vector3,Quaternion,float)
 </signature>
-Draw a camera facing selection frame.
+選択状態を表すフレームを描画します
+これはハンドルを作成するときに使用されます
+
+

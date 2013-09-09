@@ -1,11 +1,10 @@
 <signature>
 BuildStreamedSceneAssetBundle(string[],string,BuildTarget)
 </signature>
-Builds one or more scenes and all their dependencies into a compressed asset bundle.
-The scene AssetBundle can be built for any target platform and always creates a single compressed unity3d file.
-
-The scene can be downloaded and loaded using the WWW class.
-You can use WWW.LoadFromCacheOrDownload to cache the downloaded scene after it has been downloaded.
+シーンをWWWクラスでロードして使用するためにアセットバンドルとして作成します（Unity Pro のみ）
+この際にロードしたシーンを呼び出すにはWWW.assetBundleを一度呼び出す必要があります
+またWWW.LoadFromCacheOrDownloadを利用してキャッシュとして残すことが出来ます
+何らかのエラーが出た場合、戻り値としてエラー文字を返します。成功したときは空文字になります
 BEGIN EX
 	// Build a streamed unity3d file. This contain one scene that can be downloaded
 	// on demand and loaded once its asset bundle has been loaded.
@@ -39,7 +38,7 @@ BEGIN EX
 		Application.LoadLevel ("Level1");
 	}
 END EX
-@param levels Pathnames of levels to include in the asset bundle.
-@param locationPath Pathname for the output asset bundle.
-@param target Runtime platform on which the asset bundle will be used.
+@param levels シーンアセットパスの配列
+@param locationPath AssetBundleの保存先
+@param target ビルドターゲット
 @return String with an error message, empty on success.

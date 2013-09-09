@@ -1,2 +1,4 @@
-Native format.
+そのままの形式でインポートします
+ファイルサイズは大きくなりますが高品質になり、短いサウンドエフェクトに最適です
+
 SA: AudioImporter.format.

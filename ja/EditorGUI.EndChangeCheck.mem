@@ -1,6 +1,6 @@
 <signature>
 EndChangeCheck()
 </signature>
-Ends a change check started with BeginChangeCheck ().
+BeginChangeCheck とEndChangeCheckで囲んだGUIグループ内の GUI要素で何らかの変更がなされた時にアクションを起こすために使用されます
 SA: ::ref::BeginChangeCheck.
 @return True if GUI.changed was set to true, otherwise false.

@@ -1,16 +1,14 @@
 <signature>
 mouseOverWindow
 </signature>
-The EditorWindow currently under the mouse cursor. (RO)
-/mouseOverWindow/ can be null if there is no window under the cursor.
-
+マウスの乗っているEditorWindowを取得します
 SA: ::ref::focusedWindow.
 
 {img mouseFocusedWindowEx.png}\\
 ''Move the mouse over other Unity windows to automatically focus them.''
 BEGIN EX
 	// Focus any unity window where the mouse is over.
-	
+
 	class mouseFocusedWindowEx extends EditorWindow {
 		
 		var mouseOver : String = "Nothing...";

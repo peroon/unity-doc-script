@@ -2,7 +2,7 @@
 AddCursorRect(Rect,MouseCursor)
 AddCursorRect(Rect,MouseCursor,int)
 </signature>
-Add a custom mouse pointer to a control.
+Rect空間内のカーソルを変更します
 BEGIN EX
 	function OnGUI()
 	{
@@ -10,6 +10,6 @@ BEGIN EX
 		EditorGUIUtility.AddCursorRect (Rect(10,10,100,100), MouseCursor.Link);		
 	}
 END EX
-@param position The rectangle the control should be shown within.
-@param mouse The mouse cursor to use.
-@param controlID ID of a target control.
+@param position 変更させる範囲
+@param mouse カーソルの種類
+@param controlID コントロールID

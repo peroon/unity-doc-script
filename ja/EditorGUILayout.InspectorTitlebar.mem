@@ -2,13 +2,13 @@
 InspectorTitlebar(bool,Object)
 InspectorTitlebar(bool,Object[])
 </signature>
-Make an inspector-window-like titlebar.
 {img InspectorTitlebarUsage.png}\\
-''Create a custom inspector that shows the X,Y,Z,W quaternion components on the rotation.''
+折りたたみ式のタイトルバーを作成します
+foldoutがtrueの場合、展開されます
 BEGIN EX
 	// Create a custom transform inspector that shows the X,Y,Z,W quaternion components
 	// instead of the rotation angles.
-	
+
 	class InspectorTitlebarUsage extends EditorWindow {
 		
 		var fold : boolean = true;
@@ -52,6 +52,6 @@ BEGIN EX
 	}
 END EX
 The titlebar has an arrow for foling out, a help icon, and a settings menu that depends on the type of the object supplied.
-@param foldout The foldout state shown with the arrow.
-@param targetObj The object (for example a component) or objects that the titlebar is for.
+@param foldout タイトルバーの状態。trueの場合、展開されている状態です
+@param targetObj 対象となるオブジェクト
 @return The foldout state selected by the user.

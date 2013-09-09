@@ -1,4 +1,5 @@
 <signature>
 keepOriginalPositionXZ
 </signature>
-Keeps the vertical position as it is authored in the source file.
+元ファイルから設定されていたX軸とZ軸を維持する場合はtrueを返します
+

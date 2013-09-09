@@ -1,8 +1,8 @@
 <signature>
 animationCompression
 </signature>
-Animation compression setting.
-Compressing animations saves space in the built game, but more compression
-introduces more artifacts in the animation data.
-
+アニメーションの圧縮を行います
+圧縮は２種類あり、アニメーションキーフレームの削減による圧縮と（言い方は変ですが）単なる圧縮の２種類です
+キーフレームの削減はUnity側が自動で余計なキーフレームを判断し省くことで削減を行います
+キーフレームの圧縮はメモリの削減につながりますが、複雑で厳密なアニメーションが出来なることに注意してください
 SA: [[ModelImporterAnimationCompression]].

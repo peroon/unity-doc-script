@@ -1,9 +1,9 @@
 <signature>
 LockReloadAssemblies()
 </signature>
-Prevents loading of assemblies when it is inconvenient.
-For example during drag operations you might want to prevent assembly reloading to not lose state during the drag.
-Each LockReloadAssemblies must be matched by UnlockReloadAssemblies, otherwise scripts will never unload.
-Unity automatically prevents reloading during mouse down.
+Assemblyの再コンパルを行わないようにロックします
 
+例えば、ファイルのドラッグ中にアセンブリのリロードが行われるとドラッグ情報が失われる可能性があります。
+そのためドラッグ中はこのメソッドを使用してリロードを行わないようにしなければいけません。
+必ず UnlockReloadAssembliesを最後に呼び出さないと実行されません。
 SA: EditorApplication.UnlockReloadAssemblies.

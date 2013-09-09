@@ -1,6 +1,2 @@
-Low amount of mesh compression.
-Vertex positions, normals/tangents and UVs will be quantized to
-respectively 20, 8, 16 bits per component. Skinning information
-will be compressed.
-
+コンポーネントあたり、頂点位置20ビット、法線/接線16ビット、UV8ビットに量子化されます
 SA: ModelImporter.meshCompression.

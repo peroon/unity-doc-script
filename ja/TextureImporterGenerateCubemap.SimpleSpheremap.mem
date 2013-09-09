@@ -1,2 +1,3 @@
-Generate cubemap from spheremap texture.
+球状マップテクスチャからキューブマップを生成します
+回転した時反射により変形が起きます
 SA: TextureImporter.generateCubemap.

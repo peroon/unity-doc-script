@@ -1,17 +1,15 @@
 <signature>
 ObjectContent(Object,Type)
 </signature>
-Return a GUIContent object with the name and icon of an Object.
-If the object is null, the icon will be picked according to type.
-
 {img EditorGUIUtilityObjectContent.png}\\
-''Object Content usage.''
+オブジェクトの名前とアイコンをGUIContentとして取得します
+デフォルトのアイコンを使用するにはobjをnullにして取得します
 BEGIN EX
 	// Simple Editor Script that shows the icons of Transform, rigidbody, GameObject
 	// and MonoBehaviour in 4 buttons.
-	
+
 	class EditorGUIUtilityObjectContent extends EditorWindow {
-	
+
 		@MenuItem("Examples/ObjectContent Usage")
 		static function Init() {
 			var window = GetWindow(EditorGUIUtilityObjectContent);

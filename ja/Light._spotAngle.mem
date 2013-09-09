@@ -10,10 +10,10 @@ BEGIN EX
 	var minAngle : float = 10;
 	var maxAngle : float = 90;
 	private var timeLeft : float;
-	
+
 	timeLeft = interval;
 	light.type = LightType.Spot;
-	
+
 	function Update () {
 		timeLeft -= Time.deltaTime;
 		if (timeLeft < 0.0) {

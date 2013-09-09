@@ -10,20 +10,20 @@ BEGIN EX
 	// Minimum and maximum values for the transition.
 	var minimum = 10.0;
 	var maximum = 20.0;
-	
+
 	// Time taken for the transition.
 	var duration = 5.0;
-	
-	
+
+
 	private var startTime: float;
-	
-	
+
+
 	function Start() {
 		// Make a note of the time the script started.
 		startTime = Time.time;
 	}
-	
-	
+
+
 	function Update() {
 		// Calculate the fraction of the total duration that has passed.
 		var t = (Time.time - startTime) / duration;

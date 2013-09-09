@@ -1,4 +1,5 @@
 <signature>
 numberField
 </signature>
-Style used for field editors for numbers.
+数字を入力するフィールドで使用されるスタイル
+

@@ -1,4 +1,4 @@
 <signature>
 GetLabels(Object)
 </signature>
-Returns all labels attached to a given asset.
+アセットのラベルを全て取得します

@@ -1,7 +1,7 @@
 <signature>
 applicationPath
 </signature>
-Returns the path to the Unity editor application. (RO)
+UnityEditorアプリケーションのパスを返します
 SA: ::ref::applicationContentsPath.
 BEGIN EX
 	// This example lets you load Editor scripts

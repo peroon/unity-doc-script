@@ -1,1 +1,2 @@
-Generate mip maps for the texture?
+Mipmapを生成するかどうか
+生成しない場合はfalseを設定する

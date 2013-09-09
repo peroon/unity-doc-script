@@ -6,25 +6,25 @@ CurveField(AnimationCurve,Color,Rect,GUILayoutOption[])
 CurveField(string,AnimationCurve,Color,Rect,GUILayoutOption[])
 CurveField(GUIContent,AnimationCurve,Color,Rect,GUILayoutOption[])
 </signature>
-Make a field for editing an [[AnimationCurve]].
 {img FollowCurve.png}\\
-''Create an animation on the different axis and assign it to a GameObject.''
+AnimationCurve型のフィールドを作成します
+フィールドをクリックすることで編集ウィンドウが表示されます
 BEGIN EX
 	// Makes the selected GameObject follow the animation curve.
 	//
 	// Usage: Generate the curves for X,Y and Z axis of your desired GameObject
 	// Select an Object and click Generate Curve.
 	// Press Play and see your object moving.
-	
-	
+
+
 	class FollowCurve extends EditorWindow {
-	
-	
+
+
 		var curveX : AnimationCurve = AnimationCurve.Linear(0,0,10,10);
 		var curveY : AnimationCurve = AnimationCurve.Linear(0,0,10,10);
 		var curveZ : AnimationCurve = AnimationCurve.Linear(0,0,10,10);
 		
-	
+
 		@MenuItem("Examples/Create Curve For Object")
 		static function Init() {
 			var window = GetWindow(FollowCurve);
@@ -54,11 +54,11 @@ END EX
 And the script that works with the example:
 BEGIN EX
 	// This script has to go outside of the Editor Folder.
-	
+
 	var curveX : AnimationCurve;
 	var curveY : AnimationCurve;
 	var curveZ : AnimationCurve;
-	
+
 	function SetCurves(xC : AnimationCurve, yC : AnimationCurve, zC : AnimationCurve) {
 		curveX = xC;
 		curveY = yC;
@@ -70,21 +70,22 @@ BEGIN EX
 									curveZ.Evaluate(Time.time));
 	}
 END EX
-@param label Optional label to display in front of the field.
-@param value The curve to edit.
-@param color The color to show the curve with.
-@param ranges Optional rectangle that the curve is restrained within.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列
+@param value 現在値
+@param color カーブ曲線の色
+@param ranges カーブウィンドウで表示できる範囲
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The curve edited by the user.
 <signature>
 CurveField(SerializedProperty,Color,Rect,GUILayoutOption[])
 </signature>
-Make a field for editing an [[AnimationCurve]].
+AnimationCurve型のフィールドを作成します
+フィールドをクリックすることで編集ウィンドウが表示されます
 @param property The curve to edit.
-@param color The color to show the curve with.
-@param ranges Optional rectangle that the curve is restrained within.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param color カーブ曲線の色
+@param ranges カーブウィンドウで表示できる範囲
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.

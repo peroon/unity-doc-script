@@ -1,4 +1,5 @@
 <signature>
 customCharacters
 </signature>
-A custom set of characters to be included in the Font Texture.
+フォントテクスチャに含ませるカスタム文字を設定します
+

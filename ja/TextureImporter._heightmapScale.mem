@@ -1,2 +1,2 @@
-Amount of bumpyness in the heightmap.
+ハイトマップのbumpyness量を返します
 SA: ::ref::convertToNormalmap.

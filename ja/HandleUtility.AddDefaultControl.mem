@@ -1,4 +1,5 @@
 <signature>
 AddDefaultControl(int)
 </signature>
-Add the ID for a default control. This will be picked if nothing else is.
+Unityが実装しているデフォルトの距離でコントロールIDを設定します
+特に指定する距離がない場合に使われます

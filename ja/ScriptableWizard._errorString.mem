@@ -1,7 +1,7 @@
 <signature>
 errorString
 </signature>
-Allows you to set the error text of the wizard.
+ウィザードのエラーテキストを設定します
 SA: ScriptableWizard.OnWizardUpdate
 
 {img ErrorString.png}\\
@@ -10,10 +10,10 @@ BEGIN EX
 	// C#
 	// Creates a simple Wizard window and prints an error 
 	// string until you set the number to 5
-	
+
 	using UnityEngine;
 	using UnityEditor;
-	
+
 	public class ErrorString : ScriptableWizard {
 		public int number = 0;
 		[MenuItem ("Example/Show Error String")]

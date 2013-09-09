@@ -1,5 +1,5 @@
 <signature>
 intValue
 </signature>
-Value of an integer property.
+int型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Integer.

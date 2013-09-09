@@ -1,5 +1,6 @@
 <signature>
 finalGatherInterpolationPoints
 </signature>
-The number of final gather points to interpolate between.
-Higher values give smoother results, but can also smooth out details in the lighting.
+補間されるファイナルギャザーポイントの数
+多ければライティング詳細でとても滑らかな結果が得られます
+

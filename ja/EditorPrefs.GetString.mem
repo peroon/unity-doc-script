@@ -2,11 +2,9 @@
 GetString(string)
 GetString(string,string)
 </signature>
-Returns the value corresponding to /key/ in the preference file if it exists.
-If it doesn't exist, it will return /defaultValue/.
-
 {img QuickNotes.png}\\
-''Quick notes that last between Unity Sessions.''
+keyからstring型の値を取得します
+keyに紐付けられた値がない場合はdefaultValueで設定した値を取得します
 BEGIN EX
 	// Simple Editor Script that lets you create / save quick notes
 	// Between Unity Sessions.

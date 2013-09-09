@@ -1,2 +1,2 @@
-Export package option. Multiple options can be combined together using the | operator.
+unitypackageとしてデータをエクスポートする際のオプションを選択します
 SA: AssetDatabase.ExportPackage.

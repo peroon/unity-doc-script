@@ -1,8 +1,9 @@
 <signature>
 InstantiatePrefab(Object)
 </signature>
-Instantiates the given prefab.
-This is similar to Instantiate but creates a prefab connection to the prefab.
+プレハブをインスタンス化します
+ProjectウィンドウにあるPrefabのみ有効です
+GameObject経由でインスタンス化を行いたい場合はInstantiateAttachedAssetを使用してください
 BEGIN EX
 	@MenuItem("Examples/Instantiate Selected")
 	static function CreatePrefab() {	
@@ -13,7 +14,7 @@ BEGIN EX
 		GameObject go = Selection.activeObject as  GameObject;
 		if (go == null)
 			return false;
-	
+
 		return PrefabUtility.GetPrefabType(go) == PrefabType.Prefab || PrefabUtility.GetPrefabType(go) == PrefabType.ModelPrefab;
 	}
 END EX

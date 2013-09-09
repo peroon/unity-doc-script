@@ -1,4 +1,3 @@
-Is useFileUnits supported for this asset.
-UseFileUnits is supported only on .max files.
-
+インポートしようとしているモデルがUseFileUtilsをサポートしているかどうかをチェックします
+サポートされているのは現段階でmaxファイルのみです
 SA: ::ref::useFileUnits.

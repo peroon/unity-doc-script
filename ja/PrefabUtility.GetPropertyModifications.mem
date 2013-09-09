@@ -1,4 +1,5 @@
 <signature>
 GetPropertyModifications(Object)
 </signature>
-Extract all modifications that are applied to the prefab instance compared to the parent prefab.
+PrefabとリンクされているGameObjectの変更点を取得します
+取得した変更点を適用するにはPrefabUtility.SetPropertyModificationsを使用してください

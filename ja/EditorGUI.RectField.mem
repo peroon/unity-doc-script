@@ -3,12 +3,12 @@ RectField(Rect,Rect)
 RectField(Rect,string,Rect)
 RectField(Rect,GUIContent,Rect)
 </signature>
-Make an X, Y, W & H field for entering a [[Rect]].
 {img EditorGUIRectField.png}\\
-''Rect field in an Editor Window.''
+Rect型のフィールドを作成します
+X,Y,W,Hのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
 	// Find all the cameras in the scene and shows all their viewports togheter
-	
+
 	class EditorGUIRectField extends EditorWindow {
 		
 		var cameras : Camera[];
@@ -34,11 +34,12 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label to display above the field.
-@param value The value to edit.
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value 現在値
 @return The value entered by the user.
 <signature>
 RectField(Rect,SerializedProperty,GUIContent)
 </signature>
-Make an X, Y, W & H for Rect using SerializedProperty (not public).
+Rect型のフィールドを作成します
+X,Y,W,Hのラベル部分をドラッグして数値を変動させることも出来ます

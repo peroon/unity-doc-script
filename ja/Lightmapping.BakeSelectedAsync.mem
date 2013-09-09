@@ -1,5 +1,5 @@
 <signature>
 BakeSelectedAsync()
 </signature>
-Starts an asynchronous bake job for the selected objects.
-The progress can be monitored via ::ref::isRunning property.
+非同期で選択されているオブジェクトのベイク処理を行います
+処理が開始された時にtrueを返します。falseを返すときは何らかのエラーが出た時です

@@ -1,4 +1,5 @@
 <signature>
 textField
 </signature>
-Style used for EditorGUI::ref::TextField.
+テキストフィールドで使用されるスタイル
+

@@ -1,4 +1,3 @@
-Calculate normals/tangents.
-It is recommended to use Import mode as long as you can - use Calculate
-only if you don't have normals/tangents in your file.
+計算して法線/接線を設定します
+ファイルに法線と接線データがない場合に使用します
 SA: ModelImporter.normalImportMode, ModelImporter.tangentImportMode.

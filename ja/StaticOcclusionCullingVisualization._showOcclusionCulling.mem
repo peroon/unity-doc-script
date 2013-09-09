@@ -1,4 +1,5 @@
 <signature>
 showOcclusionCulling
 </signature>
-If set to true, visualization of target volumes is enabled.
+カリングの可視化を行う場合はtrueにします
+

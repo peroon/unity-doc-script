@@ -1,2 +1,2 @@
-Type of a [[SerializedProperty]].
+SerializedPropertyでタイプを設定するために使用されます
 SA: SerializedProperty.propertyType.

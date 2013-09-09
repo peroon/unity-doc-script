@@ -1,4 +1,8 @@
 <signature>
 androidBuildSubtarget
 </signature>
-Android platform options.
+Androidのテクスチャ設定に合ったデバイス用にビルドを行うために設定を行います
+Androidではデバイスによってサポートしているテクスチャの形式が違います
+そのために強制的にテクスチャ形式を変更しビルドを行うための機能としてUnityが提供を行なっています
+強制的にテクスチャ形式を変更させたくない時はAndroidBuildSubtarget.Genericを選択するようにしてください
+

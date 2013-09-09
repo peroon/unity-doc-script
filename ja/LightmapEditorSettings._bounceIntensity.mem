@@ -1,4 +1,5 @@
 <signature>
 bounceIntensity
 </signature>
-Indirect light intensity multiplier.
+間接光の強度の乗数を設定します
+

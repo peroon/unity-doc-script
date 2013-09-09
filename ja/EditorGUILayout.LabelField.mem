@@ -8,12 +8,12 @@ LabelField(string,string,GUIStyle,GUILayoutOption[])
 LabelField(GUIContent,GUIContent,GUILayoutOption[])
 LabelField(GUIContent,GUIContent,GUIStyle,GUILayoutOption[])
 </signature>
-Make a label field. (Useful for showing read-only info.)
 {img EditorGUILayoutLabel.png}\\
-''Shows a label in the editor (Label) with the seconds since the editor started (Label2).''
+ラベルを作成します
+GUI.Labelとは少し違い、特徴的なのは１つでラベルが２つ作成できるという点です
 BEGIN EX
 	// Shows a label in the editor with the seconds since the editor started
-	
+
 	class EditorGUILayoutLabel extends EditorWindow {	
 		@MenuItem("Examples/Editor GUILayout Label Usage")
 		static function Init() {
@@ -27,8 +27,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Label in front of the label field.
-@param label2 The label to show to the right.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param label2 右側に表示する文字列、テクスチャ、ツールチップ
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.

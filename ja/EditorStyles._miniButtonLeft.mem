@@ -1,4 +1,5 @@
 <signature>
 miniButtonLeft
 </signature>
-Style used for the leftmost button in a horizontal button group.
+小さく左寄りのラジオボタンのスタイル
+

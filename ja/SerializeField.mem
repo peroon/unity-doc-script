@@ -4,7 +4,6 @@ When Unity serializes your scripts, it will only serialize public fields.
 If in addition to that you also want Unity to serialize one of your private fields
 you can add the SerializeField attribute to the field.
 
-
 Unity will serialize all your script components, reload the new assemblies,
 and recreate your script components from the serialized verions. This
 serialization does not happen with .NET's serialization functionality, but

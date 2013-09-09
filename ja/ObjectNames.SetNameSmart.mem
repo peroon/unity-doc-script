@@ -1,5 +1,5 @@
 <signature>
 SetNameSmart(Object,string)
 </signature>
-Sets the name of an Object.
-If the object is an Asset, renames the asset and file names to match the object.
+オブジェクトがアセットである場合、アセット名をnameへ置換します
+既に同じ名前がある場合でも置換されてしまうので気をつけてください

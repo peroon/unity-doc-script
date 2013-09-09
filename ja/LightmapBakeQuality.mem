@@ -1,2 +1,2 @@
-Bake quality setting for [[LightmapEditorSettings]].
+LightmapEditorSettingsでベイクする時の品質を選択します
 SA: LightmapEditorSettings.quality.

@@ -1,11 +1,9 @@
 <signature>
 DrawDefaultInspector()
 </signature>
-Draw the built-in inspector.
-Call this function from inside OnInspectorGUI method to draw the automatic inspector.
-It is useful you don't want to redo the entire inspector, but you want to add
-a few buttons to it.
-
+デフォルトのインスペクターを描画します
+インスペクターに表示されるべきパラメーターを全て表示します
+通常は、OnInspectorGUIをオーバーライドすると、自分で1からGUIを記述しなければいけませんが、 DrawDefaultInspectorを使用することでシリアライズされた変数を全て表示することができます
 SA: ::ref::OnInspectorGUI.
 BEGIN EX NOCHECK
 	// This example shows a custom inspector for an

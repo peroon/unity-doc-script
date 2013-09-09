@@ -6,23 +6,22 @@ EnumPopup(Rect,Enum,GUIStyle)
 EnumPopup(Rect,string,Enum,GUIStyle)
 EnumPopup(Rect,GUIContent,Enum,GUIStyle)
 </signature>
-Make an enum popup selection field.
-Takes the currently selected enum value as a parameter and returns the enum value selected by the user.
 {img EditorGUIEnumPopup.png}\\
-''Enum Popup in an Editor Window.''
+ポップアップで表示されるセレクトボックスを作成します
+ Popupと少し違い、Enumを使用します
 BEGIN EX
 	// Shows info of a GameObject depending on the selected option
-	
+
 	enum OPTIONS {
 		Position = 0,
 		Rotation = 1,
 		Scale = 2,
 	}
-	
+
 	class EditorGUIEnumPopup extends EditorWindow {
-	
+
 		var display : OPTIONS = OPTIONS.Position;
-	
+
 		@MenuItem("Examples/Editor GUI Enum Popup usage")
 		static function Init() {
 			var window = GetWindow(EditorGUIEnumPopup);
@@ -69,8 +68,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Optional label in front of the field.
-@param selected The enum option the field shows.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列
+@param selected 選択されたEnum値
+@param style スタイル
 @return The enum option that has been selected by the user.

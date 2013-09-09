@@ -1,5 +1,6 @@
 <signature>
 Bake()
 </signature>
-Stars a synchronous bake job.
-Returns when the lightmapping has finished.
+同期でベイクを行います
+処理が終わるまで戻り値は返されず、操作は出来ません
+処理が終わるとtrueを返します。falseを返すときは何らかのエラーが出た時です

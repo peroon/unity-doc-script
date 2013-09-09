@@ -1,7 +1,8 @@
 <signature>
 isUpdating
 </signature>
-Is editor currently updating? (RO)
+何らかの処理がUnity内で行われている場合にtrueを返します
+何かアセットを作成する際に、そのアセットに関係するUpdateを待たずに生成すると正常に作成できない場合があります
 BEGIN EX
 	// Simple editor Script that lets you create a new scene if editor is nmot updating.
 	

@@ -1,1 +1,2 @@
-Only return objects that are assets in the Asset directory.
+アセットとしての（Projectウィンドウに存在する）オブジェクトのみを返します
+

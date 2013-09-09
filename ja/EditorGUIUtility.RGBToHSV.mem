@@ -1,15 +1,14 @@
 <signature>
 RGBToHSV(Color,float,float,float)
 </signature>
-Convert a color from RGB to HSV color space.
-All values are in the 0-1 range
-
+カラースペースをRBGからHSVへ変換します
+変換された値の範囲は0から1になります
 SA: ::ref::HSVToRGB.
 BEGIN EX
 	// Simple script that shows the color info on 
 	// RGB (Red Green Blue) values and
 	// HSV (Hue Saturation Value) values.
-	
+
 	class RGBHSVInfo extends Editor{
 			
 		@MenuItem("Examples/Color Info")
@@ -37,7 +36,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param rgbColor The color to convert from.
-@param H The hue of the color is written to this variable.
-@param S The saturation of the color is written to this variable.
-@param V The value of the color is written to this variable.
+@param rgbColor 変換させる色
+@param H 色相
+@param S 彩度
+@param V 明度

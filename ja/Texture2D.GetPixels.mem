@@ -19,12 +19,12 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Get a rectangular area of a texture and place it into a new
 	// texture the size of the rectangle.
-	
+
 	// Source texture and the rectangular area we want to extract.
 	var sourceTex: Texture2D;
 	var sourceRect: Rect;
-	
-	
+
+
 	function Start () {
 		// The values in the Rect structure are floats, so round them
 		// down to the nearest integer.

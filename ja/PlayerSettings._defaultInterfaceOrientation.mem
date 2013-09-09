@@ -1,4 +1,5 @@
 <signature>
 defaultInterfaceOrientation
 </signature>
-Default screen orientation for mobiles.
+端末のデフォルトとして起動させる画面の向き
+

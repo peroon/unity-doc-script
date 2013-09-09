@@ -1,4 +1,5 @@
 <signature>
 doesSceneHaveManualPortals
 </signature>
-Does the scene contain any occlusion portals that were added manually rather than automatically?
+現在のシーン上にOcclusionPortalを配置している場合、trueを返します
+

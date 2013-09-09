@@ -5,16 +5,14 @@ Label(Vector3,GUIContent)
 Label(Vector3,string,GUIStyle)
 Label(Vector3,GUIContent,GUIStyle)
 </signature>
-Make a text label positioned in 3D space.
-Labels have no user interaction, do not catch mouse clicks and are always rendered in normal style. 
+3D空間にラベルを描画します
 
 {img HandlesLabel.png}\\
-''Label in the Scene View.''
 BEGIN EX
 	// Create a 180 degrees wire arc with a ScaleValueHandle attached to the disc
 	// that lets you modify the "shieldArea" var in the WireArcExample.js, also
 	// lets you visualize some info of the transform
-	
+
 	@CustomEditor (DummyLabelScript)
 	class LabelHandle extends Editor {
 	    function OnSceneGUI () {
@@ -23,7 +21,7 @@ BEGIN EX
 	 				target.transform.position.ToString() + "\nShieldArea: " +
 	 				target.shieldArea.ToString());
 	 		Handles.BeginGUI(Rect(Screen.width - 100, Screen.height - 80, 90,50));
-	
+
 	        Handles.DrawWireArc(target.transform.position, 
 	        		target.transform.up, 
 	        		-target.transform.right, 
@@ -42,13 +40,13 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	// DummyLavelScript.js
-	
+
 	var shieldArea : float = 5;
 END EX
-@param position Position in 3D space as seen from the current handle camera.
-@param text Text to display on the label.
-@param image Texture to display on the label.
-@param content Text, image and tooltip for this label.
-@param style The style to use. If left out, the /label/ style from the current GUISkin is used.
+@param position 表示位置
+@param text 表示する文字列
+@param image 表示するテクスチャ
+@param content 表示する文字列、テクスチャ、ツールチップ
+@param style スタイル
 
 __Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.

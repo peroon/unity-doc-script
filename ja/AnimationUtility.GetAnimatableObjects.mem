@@ -1,4 +1,5 @@
 <signature>
 GetAnimatableObjects(GameObject)
 </signature>
-Returns a list of animatable objects attached to the game object (includes materials).
+アニメーションを行えるオブジェクトを全て取得します
+取得できるオブジェクトにはマテリアルが含まれていますので注意してください

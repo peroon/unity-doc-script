@@ -1,12 +1,13 @@
 <signature>
 Disc(Quaternion,Vector3,Vector3,float,bool,float)
 </signature>
-Make a 3D disc that can be dragged with the mouse.
 {img DiscHandle.png}\\
-''Disc Handle on the Scene View.''
+円状のハンドルを描画します
+ドラッグすることで操作が可能です
+
 BEGIN EX
 	// Create a handle to rotate an object over 45 degrees on X and Y axis
-	
+
 	@CustomEditor (DiscValueModifier)
 	class DiscHandle extends Editor {
 		function OnSceneGUI () {
@@ -27,20 +28,20 @@ And the script attached to this Handle:
 BEGIN EX
 	// Usage: Place this script on the Game Object you want to modify
 	// the handle's rot with the disc
-	
+
 	@script ExecuteInEditMode()
-	
+
 	var rot : Quaternion = Quaternion.identity;
-	
+
 	function Update() {
 		transform.rotation = rot;
 	}
 END EX
-@param rotation The rotation of the disc.
-@param position The center of the disc.
-@param axis The axis to rotate around.
-@param size The size of the disc in world space SA:HandleUtility.GetHandleSize.
-@param cutoffPlane If true, only the front-facing half of the circle is draw / draggable. This is useful when you have many overlapping rotation axes (like in the default rotate tool) to avoid clutter.
-@param snap The new value after the user has modified it.
+@param rotation ハンドルの角度
+@param position ハンドルの位置
+@param axis 回転軸
+@param size ハンドルの大きさ
+@param cutoffPlane 本来3D空間でオブジェクトに隠れてしまうワイヤー部分を表示または非表示します。tureで表示しません
+@param snap スナップの増分
 
 __Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.

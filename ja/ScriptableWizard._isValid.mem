@@ -1,7 +1,7 @@
 <signature>
 isValid
 </signature>
-Allows you to enable and disable the wizard create button, so that the user can not click it.
+falseにすると作成ボタンを無効化できます
 SA: ScriptableWizard.OnWizardUpdate
 
 {img isValidScriptableWizard.png}\\

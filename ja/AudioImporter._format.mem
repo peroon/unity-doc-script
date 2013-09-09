@@ -1,4 +1,5 @@
-Format of imported audio.
+オーディオをUnity側で圧縮するか否かを設定します
+圧縮を行う場合はAudioImporterFormat.Compressedを代入してください
 SA: [[AudioImporterFormat]].
 BEGIN EX
 	// Prints when an imported audio is compressed

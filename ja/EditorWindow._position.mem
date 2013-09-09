@@ -1,15 +1,13 @@
 <signature>
 position
 </signature>
-The position of the window in screen space.
-Setting this value will undock the window if it's docked
-
 {img EditorWindowPosition.png}\\
-''Create an empty editor window of 200x200px.''
+EditorWindowのRect値を設定します
+表示時にRect値を設定する場合にはEditorWindow.GetWindowWithRectを使用してください
 BEGIN EX
 	// Create an empty editor window of 200x200 pixels size
 	// located at the top left corner  
-	
+
 	class EditorWindowPosition extends EditorWindow {
 	    @MenuItem ("Example/Window position usage")
 	    static function Init () {

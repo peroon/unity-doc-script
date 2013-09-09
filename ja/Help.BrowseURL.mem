@@ -1,9 +1,9 @@
 <signature>
 BrowseURL(string)
 </signature>
-Open /url/ in the default web browser.
 {img QuickHelper.png}\\
-''Editor Window that lets you load docs for any Selected GameObject.''
+URLを指定してブラウザで起動します
+表示できるURLに制限はないので表示したいURLを指定してください
 BEGIN EX
 	// EditorScript that quickly searchs for a help page
 	// of the selected Object.

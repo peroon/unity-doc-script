@@ -1,4 +1,2 @@
-Quality setting to use when importing the movie. This is a float value from 0 to 1.
-0 uses strongest compression for small download sizes.
-1 uses best quality resulting in larger files.
-This corresponds directly to the slider in the MovieImporter inspector. The default value is 0.5.
+動画をインポートするときのクオリティの設定をします
+範囲はfloat型で0から1です

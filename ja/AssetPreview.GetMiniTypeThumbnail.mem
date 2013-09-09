@@ -1,9 +1,6 @@
 <signature>
 GetMiniTypeThumbnail(Type)
-</signature>
-Returns the thumbnail for the type.
-<signature>
 GetMiniTypeThumbnail(Object)
 </signature>
-Returns the thumbnail for the object's type.
-Use this instead of ::ref::GetMiniThumbnail if you don't want preview thumbnails (e.g. thumbnails for textures).
+タイプからサムネイルを取得します
+Unityのビルドインされているアイコン画像になります

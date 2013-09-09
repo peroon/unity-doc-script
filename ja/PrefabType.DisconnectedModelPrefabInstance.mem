@@ -1,3 +1,2 @@
-The object is an instance of an imported 3D model, but the connection is broken.
-For example, adding or removing a component from the instance breaks connection between the instance and the prefab.
+3Dモデルをインポートしてインスタンス化したものに新たにコンポーネントを追加や削除など変更を加えてプレハブとの接続が切れた状態です
 SA: EditorUtility.GetPrefabType.

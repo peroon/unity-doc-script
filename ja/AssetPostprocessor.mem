@@ -1,5 +1,7 @@
-AssetPostprocessor lets you hook into the import pipeline and run scripts prior or after importing assets.
-In a production pipeline AssetPostprocessors should always be placed in pre-built dll's in the project instead of in scripts.
-AssetPostprocessors change the output of imported assets, thus a compile error in one of the scripts will lead to assets being imported differently.
-This can be a severe issue when working in a production pipeline. By using dll's for AssetPostprocessors you ensure that they can always be executed even if the scripts have compile errors.
-This way you can override default values in the import settings or modify the imported data like textures or meshes.
+インポートパイプラインにフックする時、アセットをインポートする時、スクリプトを再ビルドする時、などに使用されます
+使用する時はAssetPostprocessorを継承したクラスを作成します
+実際に使用する際にはスクリプトは必ず事前にビルドされたDLLを準備し、プロジェクト内に置いておくことをお勧めします
+AssetPostprocessorはインポートされたアセットの出力を元に動作します
+したがって、アセットのスクリプトにコンパイルエラーが検出された際にも、変更されたデータが出力されたと検出され、誤った動作をしてしまうことがあります
+この誤った動作はパイプライン処理に重大な問題へと繋がる恐れがあります
+AssetPostprocessor用のDLLを用意することで、スクリプト(Assembly-CSharp-Editorでコンパイルされるもの)がコンパイルエラーを出した場合でも、正常に動作が出来るようになります

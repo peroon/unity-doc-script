@@ -1,4 +1,5 @@
 <signature>
 keepOriginalPositionY
 </signature>
-Keeps the vertical position as it is authored in the source file.
+元ファイルから設定されていたY軸を維持する場合はtrueを返します
+

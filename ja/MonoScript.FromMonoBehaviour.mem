@@ -1,5 +1,5 @@
 <signature>
 FromMonoBehaviour(MonoBehaviour)
 </signature>
-Returns the MonoScript object containing specified MonoBehaviour.
-@param behaviour The MonoBehaviour whose MonoScript should be returned.
+MonoBehaviourが継承されているスクリプトからMonoScriptを取得します
+@param behaviour MonoBehaviourが継承されているスクリプトアセット

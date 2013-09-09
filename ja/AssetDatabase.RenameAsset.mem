@@ -1,8 +1,18 @@
 <signature>
 RenameAsset(string,string)
 </signature>
-Rename an asset file.
-@param pathName The path where the asset currently resides.
-@param newName The new name which should be given to the asset.
+アセットの名前を変更します
+戻り値として返されるのはエラーメッセージです
+正しく移動できるときは空文字が返されます
+
+### 表示されるエラーメッセージ
+
+* The source asset could not be found　（変更前のアセットを取得することが出来ませんでした）
+* Can't rename to empty name（空文字で変更することは出来ません）
+* No folder in asset's path（パスの中にフォルダが存在しません）
+
+他にも、AssetDatabase.ValidateMoveAssetで表示されるエラーメッセージを取得します
+@param pathName 変更前のパス
+@param newName 変更後のパス
 @return An empty string, if the asset has been successfully renamed, and an error string otherwise.
 All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png".

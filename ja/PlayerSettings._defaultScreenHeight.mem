@@ -1,9 +1,8 @@
 <signature>
 defaultScreenHeight
 </signature>
-Default vertical dimension of stand-alone player window.
 {img PlayerSettingsCustomSettings.png}\\
-''Custom player settings.''
+スタンドアロンでのデフォルトの高さ
 BEGIN EX
 	// Simple Script that saves and loads custom
 	// Stand-alone/Web player screen settings among

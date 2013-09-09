@@ -1,9 +1,8 @@
 <signature>
 FindTexture(string)
 </signature>
-Get a texture from its source filename.
 {img EditorGUIUtilityFindTexture.png}\\
-''Checks the path of a texture.''
+ファイル名からテクスチャを検索します
 BEGIN EX
 	// Simply editor window that lets you quick check a path of
 	// a texture in your project instead of waiting your code to 
@@ -11,11 +10,11 @@ BEGIN EX
 	//
 	// if the path exists then it shows a message
 	// else displays an error message
-	
+
 	class EditorGUIUtilityFindTexture extends EditorWindow {
-	
+
 		var path : String = "";
-	
+
 		@MenuItem("Examples/Check Path For Texture")
 		static function Init() {
 			var window = GetWindow(EditorGUIUtilityFindTexture);

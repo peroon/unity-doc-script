@@ -1,7 +1,8 @@
 <signature>
 hierarchyWindowChanged
 </signature>
-Each time an object is (or a group of objects are) created, renamed, parented, unparented or destroyed this callback is raised.
+ヒエラルキーウィンドウでの更新が行われた後に呼び出されるデリゲートを設定します
+
 SA: EditorWindow.OnHierarchyChange.
 BEGIN EX
 	using UnityEditor;

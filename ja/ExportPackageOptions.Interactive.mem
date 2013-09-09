@@ -1,2 +1,1 @@
-The export operation will be run asynchronously and reveal the exported package file in a file browser window after the export is finished.
-Note. When interactive mode is enabled, ExportPackage will return immediately before the package file has been created.
+エクスポートが非同期で行われ、完了後にファイルブラウザでunitypackageを表示します

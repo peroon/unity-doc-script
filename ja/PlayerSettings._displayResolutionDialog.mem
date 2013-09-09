@@ -1,4 +1,5 @@
 <signature>
 displayResolutionDialog
 </signature>
-Defines the behaviour of the Resolution Dialog on product launch.
+スタンドアロンでの起動時に解像度を設定するダイアログの表示・非表示を管理します
+

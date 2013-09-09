@@ -2,8 +2,8 @@
 BeginHorizontal(GUILayoutOption[])
 BeginHorizontal(GUIStyle,GUILayoutOption[])
 </signature>
-Begin a horizontal group and get its rect back.
-This is an extension to GUILayout::ref::BeginHorizontal. It can be used for making compound controls
+水平に配置するGUIグループを作成します
+必ずBeginHorizontalとEndHorizontalで囲む必要があります
 
 {img BeginEndHorizontalExample.png}\\
 ''Horizontal Compound group.''

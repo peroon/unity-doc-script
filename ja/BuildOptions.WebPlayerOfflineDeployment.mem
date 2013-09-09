@@ -1,2 +1,3 @@
-Copy UnityObject.js alongside Web Player so it wouldn't have to be downloaded from internet.
+WebPlayerのビルド時にUnityObject2.jsを含めるようにします
+インターネットに接続されていないオフラインの時に有効です
 SA: BuildPipeline.BuildPlayer.

@@ -1,4 +1,4 @@
 <signature>
 CopyFromSerializedProperty(SerializedProperty)
 </signature>
-Copies a value from a SerializedProperty to the same serialized property on this serialized object.
+同じSerializedPropertyが存在した場合コピーを行います

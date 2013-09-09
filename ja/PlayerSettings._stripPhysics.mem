@@ -1,4 +1,6 @@
 <signature>
 stripPhysics
 </signature>
-Remove Physics code from player to save build size (Flash and NaCl only).
+Physicsを無効にする場合はtrueを設定します
+NaClやFlashで設定可能です
+

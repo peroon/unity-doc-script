@@ -1,5 +1,5 @@
 <signature>
 Contains<T>(T[],T)
 </signature>
-Determines if the array contains the item.
-@return True if ''item'' is in ''array'', false otherwise.
+配列の中に特定の要素が含まれているか確認します
+配列の中に特定の要素が存在する場合trueを返します。

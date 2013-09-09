@@ -1,2 +1,2 @@
-Mip map filter for [[TextureImporter]].
+TextureImporter.mipmapFilterで使用するミップマップフィルタを選択します
 SA: TextureImporter.mipmapFilter.

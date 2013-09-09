@@ -1,4 +1,4 @@
 <signature>
 DestroyMaterial(ProceduralMaterial)
 </signature>
-Destroy an existing Procedural Material instance.
+SubstanceからProceduralMaterialを削除します

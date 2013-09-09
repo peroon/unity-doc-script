@@ -1,5 +1,5 @@
 <signature>
 arraySize
 </signature>
-The number of elements in the array.
+配列の長さ
 SA: ::ref::isArray.

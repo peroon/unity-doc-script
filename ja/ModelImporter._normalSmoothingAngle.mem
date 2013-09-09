@@ -1,5 +1,4 @@
-Smoothing angle for calculating normals.
-How sharp the edge has to be to be turned into a hard edge when calculating normals.
-This setting is only used when normalImportMode is set to Calculate.
-
+Unity側の計算によって設定される法線の角度をスムージングします
+法線を計算するとき鋭角なエッジはハードエッジでなければいけません
+これはnormalImportModeがCalculateの時のみ有効でUnity側で計算を行わなくてはいけません
 SA: ::ref::normalImportMode.

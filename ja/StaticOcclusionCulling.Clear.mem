@@ -1,4 +1,4 @@
 <signature>
 Clear()
 </signature>
-Clears the PVS of the opened scene.
+ビルドされているオクルージョンカリングのデータを削除します

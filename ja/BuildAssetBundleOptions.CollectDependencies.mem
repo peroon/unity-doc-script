@@ -1,5 +1,2 @@
-Includes all dependencies.
-This follows all references to any assets,
-game objects or components and includes them in the build.
-
+GameObjectにアタッチされているコンポーネントなどの全ての参照を辿り、含めます
 SA: BuildPipeline.BuildAssetBundle.

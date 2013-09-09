@@ -1,4 +1,5 @@
 <signature>
 bundleVersion
 </signature>
-Application bundle version shared between iOS & Android platforms.
+iOSとAndroidで使用される共通のBundleバージョン
+

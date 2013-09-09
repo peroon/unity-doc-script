@@ -1,1 +1,3 @@
-Arrow with small arrows for indicating sliding at number fields.
+EditorGUI.FloatFieldのフィールドでスライドさせて数値を変更するような時に使用するポインタ
+
+

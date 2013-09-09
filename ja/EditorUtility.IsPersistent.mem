@@ -1,12 +1,9 @@
 <signature>
 IsPersistent(Object)
 </signature>
-Determines if an object is stored on disk.
-Typically assets like prefabs, textures, audio clips, animation clips, materials are stored on disk.
-
-Returns false if the object lives in the scene. Typically this is a game object or component but
-it could also be a material that was created from code and not stored in an asset but instead
-stored in the scene.
+オブジェクトがアセットかどうかを確認します
+trueを返すものはアセットとして存在するプレハブ・テクスチャ・オーディオ・アニメーション・マテリアル・モデルなどのファイルになります
+シーンビュー・ヒエラルキービューにしか存在しないGameObjectはfalseを返します
 BEGIN EX
 	// Tells if an Object is stored on disk or not.
 

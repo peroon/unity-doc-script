@@ -1,2 +1,4 @@
-An AnimationClipCurveData object contains all the information needed to identify a specific curve in an AnimationClip. The curve animates a specific property of a component / material attached to a game object / animated bone.
-\\SA: [[AnimationUtility]], [[ObjectNames]].
+AnimationClipのデータを扱うクラスです
+AnimationClipで必要な情報のすべてを扱うことができます
+カーブは、ゲームオブジェクト、アニメーションに使われるボーンにアタッチされているコンポーネント、マテリアルの特定のプロパティで扱います
+SA: [[AnimationUtility]], [[ObjectNames]].

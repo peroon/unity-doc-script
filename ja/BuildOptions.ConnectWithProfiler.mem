@@ -1,2 +1,2 @@
-Start the player with a connection to the profiler in the editor.
+アプリケーション起動時に自動でプロファイラーと接続します
 SA: BuildPipeline.BuildPlayer.

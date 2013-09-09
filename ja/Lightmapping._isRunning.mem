@@ -1,4 +1,5 @@
 <signature>
 isRunning
 </signature>
-Returns true when the bake job is running, false otherwise (RO).
+ベイク処理が行われている場合trueを返します
+

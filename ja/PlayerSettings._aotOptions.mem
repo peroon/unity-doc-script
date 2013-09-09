@@ -1,4 +1,6 @@
 <signature>
 aotOptions
 </signature>
-Additional AOT compilation options. Shared by AOT platforms.
+追加されるAOTコンパイルオプション
+AOTのプラットフォームで共有される
+

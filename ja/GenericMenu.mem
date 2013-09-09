@@ -1,4 +1,4 @@
-The GenericMenu lets you create a custom context and dropdown menus.
+コンテキストメニューやドロップダウンメニューを作成するクラスです
 BEGIN EX
 // This example shows how to create a context menu inside a custom EditorWindow.
 

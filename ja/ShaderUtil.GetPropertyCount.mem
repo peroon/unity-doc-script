@@ -1,5 +1,5 @@
 <signature>
 GetPropertyCount(Shader)
 </signature>
-Get the number of properties in Shader s.
-@param s The shader to check against.
+シェーダーのプロパティ数を取得します
+@param s プロパティの数を知りたいシェーダー

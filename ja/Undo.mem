@@ -1,21 +1,17 @@
-Lets you register undo operations on specific objects you are about to perform changes on.
-The undo system in Unity works by saving the state of one or more objects before performing a change on those objects.
-It is similar to taking a backup. To undo the change later, the saved state is restored.
-Since this reverts the objects to the state they had before performing the change, it will be as if the change never happened.
+直前に行ったオブジェクト操作を取り消し、元に戻す動作を実装するさに使用されるクラスです
 
-For instant changes to one or more objects, simply call functions ::ref::RegisterUndo or ::ref::RegisterSceneUndo
-before performing the change that it should be possible to undo.
+UnityでのUndo処理は、1つ前のオブジェクト状態を保存することによって実現されています
+これはバックアップを取ることに似ています
 
-This is all that needs to be done. Unity will automatically handle Undo and Redo for you after that.
-::ref::PerformUndo and ::ref::PerformRedo should normally not be used unless you want to create your own
-user interface to the undo system in addition to the user interface Unity already provides.
+Editor拡張でUndo処理を実現させるには、RegisterUndo関数やRegisterSceneUndo関数でオブジェクト・シーンの登録を行う必要があります
+PerformUndo関数とPerformRedo関数の実装は、独自にUIを実装しない限りお勧めしません
+出来るだけ標準のUndo・Redoを使用するようにして下さい
 
-Using ::ref::RegisterUndo is most efficient for actions that change one or more objects.
-::ref::RegisterSceneUndo is slower and requires more memory, but it can be used in all cases,
-and is required for actions that create or destroy objects.
+1つ/複数のオブジェクトを登録する場合はRegisterUndo関数、シーン内すべてのオブジェクトを登録する場合はRegisterSceneUndo関数を使用します
+RegisterSceneUndo関数はメモリ使用量が多くなりますが、すべての状態を丸ごと登録することが出来ます
+また、オブジェクトを生成/破壊する作業が必要になります
 
-Certain operations, such as dragging, consist of many small incremental changes.
-Typically it is not desired to create an undo step for each of these small changes.
-For example, if the user performs an undo after a dragging operation,
-it is expected that the object is reverted back to the state it had before the dragging started.
-The functions ::ref::SetSnapshotTarget, ::ref::CreateSnapshot, and ::ref::RegisterSnapshot are available to handle cases like this.
+シーンビュー内でのドラッグのような操作で変更された値は微増なことが多く、このUndo処理をRegisterUndo関数で実装することはお勧めしません。
+また、「ユーザーがキャンセルを行う操作」が存在する場合はSnapshotを使用します。
+Snapshotを使用せずにRegisterUndoで実装は可能ですがキャンセルのための処理をUndoに登録するべきではありません。
+

@@ -1,4 +1,5 @@
 <signature>
 minSize
 </signature>
-The minimum size of this window.
+EditorWindowの最小サイズを設定します
+

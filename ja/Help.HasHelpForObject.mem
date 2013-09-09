@@ -1,7 +1,7 @@
 <signature>
 HasHelpForObject(Object)
 </signature>
-Is there a help page for this object?
+オブジェクトに対してのドキュメントページが存在する場合はtrueを返します
 SA: Help.ShowHelpForObject.
 
 {img QuickHelper.png}\\

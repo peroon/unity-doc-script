@@ -1,4 +1,4 @@
 <signature>
 RemoveAt<T>(T[],int)
 </signature>
-Remove element at position ''index''.
+indexから配列の要素を削除します

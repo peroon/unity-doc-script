@@ -1,4 +1,5 @@
 <signature>
 StopAssetEditing()
 </signature>
-Stop Asset importing. This lets you group several asset imports together into one larger import.
+アセットのインポートを終了します
+いくつかのアセットをまとめて(再)インポートする際に使用されます。機能的にはImportAssetとほぼ同じです。

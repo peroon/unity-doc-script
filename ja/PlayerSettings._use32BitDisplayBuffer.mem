@@ -1,4 +1,5 @@
 <signature>
 use32BitDisplayBuffer
 </signature>
-32-bit Display Buffer is used.
+32ビットのディスプレイバッファを使用するかどうか
+

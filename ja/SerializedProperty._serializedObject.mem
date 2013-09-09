@@ -1,4 +1,5 @@
 <signature>
 serializedObject
 </signature>
-[[SerializedObject]] this property belongs to (RO).
+このプロパティが属しているシリアライズ化されたオブジェクトを取得します
+

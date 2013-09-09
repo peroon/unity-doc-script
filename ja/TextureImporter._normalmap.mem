@@ -1,1 +1,1 @@
-Is this texture a normal map?
+インポートしたテクスチャが法線マップの場合trueを返します

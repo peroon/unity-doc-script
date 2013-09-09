@@ -1,5 +1,5 @@
 <signature>
 ReconnectToLastPrefab(GameObject)
 </signature>
-Connects the game object to the prefab that it was last connected to.
-Returns true if the game object has never been a prefab instance.
+GameObjectを最後に接続されていたPrefabに再接続します
+接続された場合、trueを返します

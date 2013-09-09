@@ -8,8 +8,8 @@ IntPopup(Rect,string,int,string[],int[])
 IntPopup(Rect,GUIContent,int,GUIContent[],int[],GUIStyle)
 IntPopup(Rect,GUIContent,int,GUIContent[],int[])
 </signature>
-Make an integer popup selection field.
-Takes the currently selected integer as a parameter and returns the integer selected by the user.
+ポップアップで表示されるセレクトボックスを作成します
+Popupとは少し違い、戻り値で返される値はoptionValuesで指定した値が返されます
 
 {img EditorGUIIntPopup.png}\\
 ''Int Popup in an Editor Window.''

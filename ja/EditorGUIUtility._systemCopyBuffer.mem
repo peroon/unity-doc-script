@@ -1,16 +1,14 @@
 <signature>
 systemCopyBuffer
 </signature>
-The system copy buffer.
-Use this to make Copy and Paste work for your own stuff.
-
 {img EditorGUIUtilitySystemCopyBuffer.png}\\
-''have more than 1 saved "copy" command.''
+control+Cでクリップボードにコピーした情報を取得します
+パスワード等、重要な情報も文字列として取得しているので扱いに注意してください
 BEGIN EX
 	// Simple editor Window that lets you have more than 1 saved "copy" command
-	
+
 	class EditorGUISystemCopyBuffer extends EditorWindow {
-	
+
 		var savedCopies : String[] = new String[5];
 		var load = false;
 		

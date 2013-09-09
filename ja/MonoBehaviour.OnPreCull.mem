@@ -5,7 +5,8 @@ OnPreCull()
 Culling determines which objects are visible to the camera. OnPreCull is called just before
 this process.
 
-カメラのパラメーターを変更する場合に使用する関数です。この関数を使用するには、同じオブジェクトにコンポーネントのカメラを付け、有効である必要があります。
+カメラのパラメーターを変更する場合に使
+用する関数です。この関数を使用するには、同じオブジェクトにコンポーネントのカメラを付け、有効である必要があります。
 Visibility of scene objects will be determined based on camera's
 parameters after /OnPreCull/.
 CONVERTEXAMPLE
@@ -13,7 +14,7 @@ BEGIN EX
 	// Attach this to a camera.
 	// Inverts the vie of the camera so everything rendered by it, is flipped
 	// This will only work on  Unity - PRO
-	
+
 	function OnPreCull () {
 		camera.ResetWorldToCameraMatrix ();
 		camera.ResetProjectionMatrix ();
@@ -23,7 +24,7 @@ BEGIN EX
 	function OnPreRender () {
 		GL.SetRevertBackfacing (true);
 	}
-	
+
 	// Set it to false again because we don't want to affect all other cameras.
 	function OnPostRender () {
 		GL.SetRevertBackfacing (false);

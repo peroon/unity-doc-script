@@ -1,15 +1,17 @@
 <signature>
 RotationHandle(Quaternion,Vector3)
 </signature>
-Make a Scene view rotation handle.
-This will behave like the built-in rotation tool in Unity. If you have assigned something to Undo.SetSnapshotTarget, it will work fully with Undo.
+オブジェクトを回転させるハンドルを作成します
+これは標準のシーンビューで使用できるものと同じものになります
+Undo.SetSnapshotTarget関数を使用したUndo操作もきちんと動作します
+戻り値としてハンドルの角度を返します
+
 
 {img RotationHandle.png}\\
-''Rotate the attached object from the Rotation Handle.''
 BEGIN EX
 	//Create a rotation handle at (0,0,0) and rotate any object that has "RotateAtPoint.js"
 	// attached from 0,0,0.
-	
+
 	@CustomEditor (RotateAtPoint)
 	class RotationHandleJS extends Editor {
 		function OnSceneGUI () {
@@ -27,16 +29,16 @@ BEGIN EX
 	// Usage: Just Place this script on the object you want to work the handle with.
 	// And control the Object's rotation from the handle that appears at 0,0,0 when 
 	// This object is selected.
-	
+
 	@script ExecuteInEditMode()
 	var rot : Quaternion = Quaternion.identity;
-	
+
 	function Update () {
 		transform.rotation = rot;
 	}
 END EX
-@param rotation Orientation of the handle.
-@param position Center of the handle in 3D space.
+@param rotation ハンドルの角度
+@param position ハンドルの位置
 @return The modified rotation
 
 __Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.

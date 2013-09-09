@@ -4,22 +4,21 @@ DrawCamera(Rect,Camera,DrawCameraMode,DrawGridParameters)
 <txttag>
 UNDOC
 </txttag>
-Draws a camera inside a rectangle.
-This function alse sets Camera.current to /camera/. It sets the camera's pixelRect to /position/.
+カメラが描画するものを指定した位置で描画します
+ゲームビューに表示させたくない場合には、カメラのenabledをfalseにします
 
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
-@param position The area to draw the camera within in GUI coordinates.
-@param camera The camera to draw.
-@param drawMode How the camera is drawn (textured, wireframe, etc).
+@param position 描画する位置
+@param camera 描画させるカメラ
+@param drawMode 描画方法。デフォルトはDrawCameraMode.Normal
 @param gridParam Parameters of grid drawing (can be omitted).
 <signature>
 DrawCamera(Rect,Camera)
 DrawCamera(Rect,Camera,DrawCameraMode)
 </signature>
-Draws a camera inside a rectangle.
-This function alse sets Camera.current to /camera/. It sets the camera's pixelRect to /position/.
+カメラが描画するものを指定した位置で描画します
+ゲームビューに表示させたくない場合には、カメラのenabledをfalseにします
 
-__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
-@param position The area to draw the camera within in GUI coordinates.
-@param camera The camera to draw.
-@param drawMode How the camera is drawn (textured, wireframe, etc.).
+
+@param position 描画する位置
+@param camera 描画させるカメラ
+@param drawMode 描画方法。デフォルトはDrawCameraMode.Normal

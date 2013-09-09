@@ -1,7 +1,7 @@
 <signature>
 CommandEvent(string)
 </signature>
-Creates an event.
+コマンド名からイベントを作成します
 BEGIN EX
 	var win : EditorWindow;
 

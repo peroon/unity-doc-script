@@ -1,28 +1,25 @@
 <signature>
 LookLikeInspector()
 </signature>
-Make all [[EditorGUI]] look like simplified outline view controls.
-This will make the default styles used by EditorGUI look like it does in the inspector.
-
 {img EditorGUIUtilityLookLikeInspector.png}\\
-''Editor window with "LookLikeInspector" look.''
-
+ラベル・フィールドの幅、スタイルの表示について設定します
+インスペクターで使われるものと同じスタイルになります
 SA: ::ref::LookLikeControls.
 BEGIN EX
 	// Simple editor window that shows the difference between
 	// Look like controls and look like inspector 
-	
+
 	class LookLikeControlsInspector extends EditorWindow { 
 		
 	    var integer1 : int = 0;
 	    var float1 : float = 5.5;
-	
+
 	    @MenuItem("Examples/Look Like Controls - Inspector")
 	    static function Init() {
 	        var window = GetWindow(LookLikeControlsInspector);
 	        window.Show();
 	    }
-	
+
 	    function OnGUI() {
 	    	EditorGUIUtility.LookLikeInspector ();
 	    		EditorGUILayout.TextField ("Text Field:", "Hello There");

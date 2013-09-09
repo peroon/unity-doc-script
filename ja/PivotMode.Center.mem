@@ -1,1 +1,2 @@
-The tool handle is at the graphical center of the selection.
+選択したオブジェクト全体の中心にピボットを配置します
+子となるオブジェクトも含まれます

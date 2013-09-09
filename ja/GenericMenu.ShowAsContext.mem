@@ -1,5 +1,6 @@
 <signature>
 ShowAsContext()
 </signature>
-Show the menu under the mouse.
+今まで追加されたメニューをコンテキストメニューで表示します
+自動でマウスの位置に表示されます
 SA: GenericMenu.DropDown.

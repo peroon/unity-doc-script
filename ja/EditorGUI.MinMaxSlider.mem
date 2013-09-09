@@ -2,15 +2,15 @@
 MinMaxSlider(GUIContent,Rect,float,float,float,float)
 MinMaxSlider(Rect,float,float,float,float)
 </signature>
-Make a special slider the user can use to specify a range between a min and a max.
 {img EditorGUIMinMaxSlider.png}\\
-''MinMax Slider in an Editor Window.''
+最小値・最大値を決めるスライダーを作成します
+最小値・最大値の範囲だけでなく、位置もスライドするだけで変更することが出来ます
 BEGIN EX
 	// Place the selected object randomly between the interval of the Min Max Slider
 	// in the X,Y,Z coords
-	
+
 	class EditorGUIMinMaxSlider extends EditorWindow {
-	
+
 		var minVal : float = -10;
 		var minLimit : float = -20;
 		var maxVal : float = 10;
@@ -43,10 +43,10 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the slider.
-@param position Rectangle on the screen to use for the slider.
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param position 表示位置
 @param value The value the slider shows. This determines the position of the draggable thumb.
-@param minValue The lower value of the range the slider shows, passed by reference.
-@param maxValue The upper value at the range the slider shows, passed by reference.
-@param minLimit The limit at the left end of the slider.
-@param maxLimit The limit at the right end of the slider.
+@param minValue 現在の最小の値
+@param maxValue 現在の最大の値
+@param minLimit 設定できる範囲の最小値
+@param maxLimit 設定できる範囲の最大値

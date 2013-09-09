@@ -1,4 +1,5 @@
 <signature>
 popup
 </signature>
-Style used for EditorGUI::ref::Popup, EditorGUI::ref::EnumPopup,.
+ポップアップで使用されるスタイル
+

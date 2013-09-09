@@ -1,6 +1,3 @@
-Allowed error of animation rotation compression.
-Allowed error is defined in angle (in degrees) between compressed and
-original quaternions on a curve. This settings used only when animation keyframe
-reduction is enabled.
-
+アニメーションの回転角度の削除を行う上限を設定します
+この値が小さいほど削減される間隔が小さくなり削減による影響は小さくなります
 SA: ::ref::animationCompression, [[ModelImporterAnimationCompression]].

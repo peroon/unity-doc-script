@@ -1,4 +1,5 @@
 <signature>
 DoesSourceTextureHaveAlpha()
 </signature>
-Does textures source image have alpha channel.
+アルファチャンネルがあるかどうか確認します
+ある場合trueを返します

@@ -1,5 +1,4 @@
-User initiated asset import.
-This should be passed when asset import is caused by the user (e.g. by clicking Reimport).
-Non-user initiated import happens when the asset modification time changes.
-
+強制的にアセットのインポートを行います
+これは「再インポート」と同じ処理になります
+またアセットの変更時間を更新する場合にも使用されます
 SA: AssetDatabase.ImportAsset, AssetDatabase.Refresh.

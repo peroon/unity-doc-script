@@ -1,7 +1,4 @@
-Are mesh vertices and indices accessible from script?
-Making a mesh readable will keep two copies of it in memory, one for rendering and one
-in system memory for script access. Setting isReadable to false therefore saves memory.
-Scaling a mesh with different amounts along the three axes (i.e. non-uniform scaling)
-requires the mesh to be readable for correct lighting.
-
-In the Unity editor access is always permitted when not in play mode.
+スクリプトからメッシュの頂点を操作する場合はtrueを代入します
+isReadableがtrueの場合、アクセス操作出来るメッシュの頂点データをコピーして使用します
+つまりメモリ上には2倍のメッシュデータが存在することになります
+デフォルトではtrueなので、staticオブジェクトやメッシュの頂点操作の必要がない場合は、メモリ節約のためfalseに設定することをおすすめします

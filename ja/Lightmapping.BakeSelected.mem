@@ -1,5 +1,6 @@
 <signature>
 BakeSelected()
 </signature>
-Stars a synchronous bake job for the selected objects.
-Returns when the lightmapping has finished.
+同期で選択されているオブジェクトのベイク処理を行います
+処理が終わるまで戻り値は返されず、操作は出来ません
+処理が終わるとtrueを返します。falseを返すときは何らかのエラーが出た時です

@@ -1,1 +1,1 @@
-Draw the gizmo if it is not selected and also no parent/ancestor object is selected.
+オブジェクトが選択状態でない場合に描画します

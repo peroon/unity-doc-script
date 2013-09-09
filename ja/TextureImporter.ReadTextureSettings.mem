@@ -1,5 +1,5 @@
 <signature>
 ReadTextureSettings(TextureImporterSettings)
 </signature>
-Read texture settings into [[TextureImporterSettings]] class.
+TextureImporterSettingsからテクスチャ設定情報を読み込み、設定します
 SA: TextureImporterSettings.

@@ -1,5 +1,6 @@
 <signature>
 matrix
 </signature>
-Matrix for all handle operations.
-To make all Handle routines work in an Object's local coordinate space, set this to Transform.localToWorldMatrix.
+全てのハンドル操作のための行列を設定します
+オブジェクトのローカル空間で操作するにはこれをTransform.localToWorldMatrixへ設定します
+

@@ -1,5 +1,6 @@
 <signature>
 EndDisabledGroup()
 </signature>
-Ends a disabled group started with BeginDisabledGroup.
+BeginDisabledGroupとEndDisabledGroupで囲んだGUIグループ内のGUI要素を操作不可にする場合に使用されます
+BeginDisabledGroupを使用した場合は必ずEndDisabledGroup を使用する必要があります
 SA: ::ref::BeginDisabledGroup.

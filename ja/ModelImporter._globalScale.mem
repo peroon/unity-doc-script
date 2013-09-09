@@ -1,1 +1,4 @@
-Global scale factor for importing.
+Unityでは単位をメートルで扱います
+ですがモデリングツールによってスケールの基準は違います
+そこで、globalScaleで大きさの調整を行います
+fbx/max/jas/c4dは0.01、mb/ma/lxo/dxf/blend/daeは1、3dsは0.1となっています

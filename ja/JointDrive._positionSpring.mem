@@ -6,7 +6,7 @@ CONVERTEXAMPLE
 BEGIN EX
 	// Create a JointDrive, configure it and assign the JointDrive to
 	// the zDrive element of a configurable joint.
-	
+
 	function Start() {
 		var joint : ConfigurableJoint = gameObject.AddComponent(ConfigurableJoint);
 		joint.targetPosition = Vector3(0,0,-10);

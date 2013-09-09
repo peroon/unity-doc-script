@@ -1,5 +1,5 @@
 <signature>
 BakeLightProbesOnlyAsync()
 </signature>
-Starts an asynchronous bake job, but only bakes light probes.
-The progress can be monitored via ::ref::isRunning property.
+非同期でライトプローブの非同期を行います
+処理が開始された時にtrueを返します。falseを返すときは何らかのエラーが出た時です

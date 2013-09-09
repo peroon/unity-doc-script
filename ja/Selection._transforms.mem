@@ -1,8 +1,9 @@
 <signature>
 transforms
 </signature>
-Returns the top level selection, excluding prefabs.
-This is the most common selection type when working with scene objects.
+選択したオブジェクトのTransform情報を全て取得します
+親子関係であるものは親のみTransform情報を取得します
+プレハブは無視されます
 BEGIN EX
 class LookAtMainCamera extends ScriptableObject {
     @MenuItem ("Example/Selection looks at Main Camera _l")

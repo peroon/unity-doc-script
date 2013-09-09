@@ -29,7 +29,6 @@ BEGIN EX
 	);
 	m.mainTexture = texture;
 
-
 	function Update() {
 		var materialProperty : MaterialPropertyBlock = new MaterialPropertyBlock();
 		// Construct a rotation matrix and set it for the shader

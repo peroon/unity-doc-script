@@ -1,7 +1,6 @@
-Derive from this class to create an editor window.
-Create your own custom editor window that can float free or be docked as a tab, just like the native windows in the Unity interface.
+Editorのウィンドウを作成するクラスです
 
-Editor windows are typically opened using a menu item.
+
 BEGIN EX
 // JavaScript example:
 class MyWindow extends EditorWindow {
@@ -9,14 +8,14 @@ class MyWindow extends EditorWindow {
 	var groupEnabled = false;
 	var myBool = true;
 	var myFloat = 1.23;
-	
+
 	// Add menu named "My Window" to the Window menu
 	@MenuItem ("Window/My Window")
 	static function Init () {
 		// Get existing open window or if none, make a new one:		
 		var window = ScriptableObject.CreateInstance.<MyWindow>();
 	}
-	
+
 	function OnGUI () {
 		GUILayout.Label ("Base Settings", EditorStyles.boldLabel);
 			myString = EditorGUILayout.TextField ("Text Field", myString);
@@ -37,14 +36,14 @@ public class MyWindow : EditorWindow {
 	bool groupEnabled;
 	bool myBool = true;
 	float myFloat = 1.23f;
-	
+
 	// Add menu named "My Window" to the Window menu
 	[MenuItem ("Window/My Window")]
 	static void Init () {
 		// Get existing open window or if none, make a new one:
 		MyWindow window = (MyWindow)EditorWindow.GetWindow (typeof (MyWindow));
 	}
-	
+
 	void OnGUI () {
 		GUILayout.Label ("Base Settings", EditorStyles.boldLabel);
 			myString = EditorGUILayout.TextField ("Text Field", myString);

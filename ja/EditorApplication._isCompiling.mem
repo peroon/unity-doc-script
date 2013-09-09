@@ -1,9 +1,8 @@
 <signature>
 isCompiling
 </signature>
-Is editor currently compiling scripts? (RO)
 {img FinishCompiling.png}\\
-''Editor Window that tells you if Unity is compiling scripts.''
+スクリプトがコンパイル中の場合はtrueを返します
 BEGIN EX
 	// Dont let the user enter in play mode if the editor is compiling the assemblies
 	

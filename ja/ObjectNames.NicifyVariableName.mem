@@ -1,9 +1,8 @@
 <signature>
 NicifyVariableName(string)
 </signature>
-Make a displayable name for a variable.
-This function will insert spaces before capital letters and remove optional @@m_@@, @@_@@
-or @@k@@ followed by uppercase letter in front of the name.
+Editor上で表示を行うために文字列を変換します
+大文字のところにはスペースを挿入したり、変数名で使われる先頭の _ や k や m_ を削除して見やすくします
 BEGIN EX
 	// prints "My Variable"
 	print (ObjectNames.NicifyVariableName ("MyVariable"));

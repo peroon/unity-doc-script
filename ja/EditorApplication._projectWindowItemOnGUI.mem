@@ -1,5 +1,6 @@
 <signature>
 projectWindowItemOnGUI
 </signature>
-Delegate for OnGUI events for every visible list item in the ProjectWindow.
+プロジェクトウィンドウで表示されるアイテムリストのOnGUIイベントのデリゲートを設定します
+
 SA: EditorApplication.ProjectWindowItemCallback, EditorApplication.RepaintProjectWindow.

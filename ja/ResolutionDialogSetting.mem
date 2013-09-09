@@ -1,4 +1,2 @@
-Resolution dialog setting.
-This enum is used when setting the behaviour of the resolution dialog in PlayerSettings.
-
+MacOSXとWindowsのアプリケーションの起動時に表示されるダイアログの設定を選択します
 SA: PlayerSettings.displayResolutionDialog, PlayerSettings.

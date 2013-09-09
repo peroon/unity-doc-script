@@ -1,4 +1,6 @@
 <signature>
 lockRootRotation
 </signature>
-Enable to make root rotation be baked into the movement of the bones. Disable to make root rotation be stored as root motion.
+trueの場合、ベイクされているにボーンの動きに合わせて回転軸を変更します
+falseの場合はアニメーションに保存されている情報を使用して回転軸を変更します
+

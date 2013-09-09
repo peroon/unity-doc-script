@@ -6,7 +6,7 @@ CONVERTEXAMPLE
 BEGIN EX
 	// prints false
 	Debug.Log(Mathf.IsPowerOfTwo(7));
-	
+
 	// prints true
 	Debug.Log(Mathf.IsPowerOfTwo(32));
 END EX

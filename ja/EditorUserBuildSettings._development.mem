@@ -1,4 +1,7 @@
 <signature>
 development
 </signature>
-Enables a development build.
+DevelopmentBuildを行いたい場合はtrueにします
+Profilerを有効にする場合やiOSでInstrumentsを使用する場合にも有効です
+developmentが無効の場合、容量削減も兼ねて様々な最適化が行われています。様々なシンボル名が数値となってデバッグ時に読めないことがありますがdevelopmentを有効にすることでシンボル名を文字列で取得することが可能になります。
+

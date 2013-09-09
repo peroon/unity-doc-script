@@ -1,4 +1,6 @@
 <signature>
 allowedAutorotateToPortraitUpsideDown
 </signature>
-Is auto-rotation to portrait upside-down supported?
+逆さまに回転させても対応するかどうか
+OrientationがAutorotateの時のみ有効です
+

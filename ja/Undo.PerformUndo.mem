@@ -1,11 +1,7 @@
 <signature>
 PerformUndo()
 </signature>
-Create a snapshot of /objects/ in a temporary buffer.
-This can later be pushed to the undo buffer by calling SaveSnapshot, or any the changes to the objects can be undo by calling RestoreSnapshot
-Perform an Undo operation.
-This is similar to the user selecting Undo from the Edit menu.
-
+Undo操作を実行します
 SA: ::ref::PerformRedo.
 
 {img PerformVariousUndo.png}\\

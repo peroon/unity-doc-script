@@ -2,7 +2,9 @@
 Contains(int)
 Contains(Object)
 </signature>
-Returns whether an object is contained in the current selection.
+選択中のオブジェクトに指定のオブジェクト情報を含んでいるか確認します
+オブジェクト、または、インスタンスIDから調べることができます
+含まれている場合はtrueを返します
 BEGIN EX
 	if (Selection.Contains (gameObject))
 		Debug.Log ("I'm selected!");

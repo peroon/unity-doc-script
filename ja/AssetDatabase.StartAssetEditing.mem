@@ -1,4 +1,5 @@
 <signature>
 StartAssetEditing()
 </signature>
-Begin Asset importing. This lets you group several asset imports together into one larger import.
+アセットのインポートを開始します
+いくつかのアセットをまとめて（再）インポートを行う際に必要です

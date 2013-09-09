@@ -1,4 +1,5 @@
 <signature>
 apiCompatibilityLevel
 </signature>
-.NET API compatibility level.
+NET APIの互換性レベルを設定します
+

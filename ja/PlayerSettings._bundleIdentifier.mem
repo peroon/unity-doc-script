@@ -1,4 +1,5 @@
 <signature>
 bundleIdentifier
 </signature>
-Application bundle identifier shared between iOS & Android platforms.
+iOSとAndroidで使用される共通のBundle Identifier
+

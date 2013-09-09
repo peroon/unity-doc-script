@@ -1,6 +1,6 @@
 <signature>
 quality
 </signature>
-Quality of the bake.
-Controls Beast's final gather and anti-aliasing settings
-(some of which are also exposed in Unity).
+ベイクの品質
+ビーストのファイナルギャザーとアンチエイジングに違いが出ます
+

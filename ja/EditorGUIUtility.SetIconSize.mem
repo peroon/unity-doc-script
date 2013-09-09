@@ -1,7 +1,6 @@
 <signature>
 SetIconSize(Vector2)
 </signature>
-Set icons rendered as part of [[GUIContent]] to be rendered at a specific size.
-Set the size to Vector2.zero to use the default behaviour where the size is determined by the available space.
-
+GUIContentでのアイコンのサイズを設定します
+Vector2.zeroでデフォルトのサイズを使用し、ウィンドウサイズによって自動でアイコンサイズも変更されます
 SA: ::ref::GetIconSize.

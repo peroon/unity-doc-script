@@ -3,16 +3,17 @@ Slider(float,float,float,GUILayoutOption[])
 Slider(string,float,float,float,GUILayoutOption[])
 Slider(GUIContent,float,float,float,GUILayoutOption[])
 </signature>
-Make a slider the user can drag to change a value between a min and a max.
 {img EditorGUILayoutSlider.png}\\
-''Scale the selected object between a range.''
+スライダーを作成します
+値はFloat型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
 BEGIN EX
 	// Editor script that lets you scale the selected GameObject between 1 and 100
-	
+
 	class EditorGUILayoutSlider extends EditorWindow {
-	
+
 		var scale : float = 0.0;
-	
+
 		@MenuItem("Examples/Editor GUILayout Slider usage")
 		static function Init() {
 			var window = GetWindow(EditorGUILayoutSlider);
@@ -28,11 +29,11 @@ BEGIN EX
 		}
 	}
 END EX
-@param label Optional label in front of the slider.
-@param value The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value 現在値
+@param leftValue 最小値
+@param rightValue 最大値
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 @return The value that has been set by the user.
@@ -41,11 +42,13 @@ Slider(SerializedProperty,float,float,GUILayoutOption[])
 Slider(SerializedProperty,float,float,string,GUILayoutOption[])
 Slider(SerializedProperty,float,float,GUIContent,GUILayoutOption[])
 </signature>
-Make a slider the user can drag to change a value between a min and a max.
-@param label Optional label in front of the slider.
-@param property The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+スライダーを作成します
+値はFloat型になります
+スライダーで値を変更するだけでなく、数値を直接入力する事もできます
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param property シリアライズ化されたプロパティ
+@param leftValue 最小値
+@param rightValue 最大値
+@param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.

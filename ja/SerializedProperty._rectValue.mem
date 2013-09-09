@@ -1,5 +1,5 @@
 <signature>
 rectValue
 </signature>
-Value of a rectangle property.
+Rect型の値を取得します
 SA: ::ref::propertyType, SerializedPropertyType.Rect, [[Rect]].

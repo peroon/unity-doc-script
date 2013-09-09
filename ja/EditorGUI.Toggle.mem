@@ -6,16 +6,16 @@ Toggle(Rect,string,bool,GUIStyle)
 Toggle(Rect,GUIContent,bool)
 Toggle(Rect,GUIContent,bool,GUIStyle)
 </signature>
-Make a toggle.
 {img EditorGUIToggle.png}\\
-''Toggle control in an Editor Window.''
+トグルを作成します
+GUI.Toggleとは少し違い、チェックボックスが右側に表示されます
 BEGIN EX
 	// Use a toggle button to show/hide a button that can close the window.
-	
+
 	class EditorGUIToggle extends EditorWindow {
-	
+
 		var showClose : boolean = true;
-	
+
 		@MenuItem("Examples/EditorGUI Toggle usage")
 		static function Init() {
 			var window = GetWindow(EditorGUIToggle);
@@ -32,8 +32,8 @@ BEGIN EX
 		}
 	}
 END EX
-@param position Rectangle on the screen to use for the toggle.
-@param label Optional label in front of the toggle.
-@param value The shown state of the toggle.
-@param style Optional [[GUIStyle]].
+@param position 表示位置
+@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param value 選択状態の場合、trueを返します
+@param style スタイル
 @return The selected state of the toggle.

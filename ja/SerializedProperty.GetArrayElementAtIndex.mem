@@ -1,5 +1,5 @@
 <signature>
 GetArrayElementAtIndex(int)
 </signature>
-Returns the element at the specified index in the array.
+指定したインデックス位置にある要素を取得します
 SA: ::ref::isArray.
