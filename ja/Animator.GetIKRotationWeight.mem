@@ -1,5 +1,5 @@
 <signature>
 GetIKRotationWeight(AvatarIKGoal)
 </signature>
-Gets the rotational weight of an IK goal (0 = rotation before IK, 1 = rotation at the IK goal).
-@param goal The AvatarIKGoal that is queried.
+IK ゴールの回転 (Rotation) によるウェイトを取得します（0 = IK 前の回転、1 = IKゴールでの回転）。
+@param goal 照会された AvatarIKGoal。
