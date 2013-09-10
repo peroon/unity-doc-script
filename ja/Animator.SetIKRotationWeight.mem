@@ -1,6 +1,6 @@
 <signature>
 SetIKRotationWeight(AvatarIKGoal,float)
 </signature>
-Sets the rotational weight of an IK goal (0 = rotation before IK, 1 = rotation at the IK goal).
-@param goal The AvatarIKGoal that is set.
-@param value The rotational weight.
+IK ゴールの回転 (Rotation) によるウェイトをセットします（0 = IK 前の回転、1 = IKゴールでの回転）。
+@param goal セットされた AvatarIKGoal。
+@param value 回転 (Rotation) によるウェイト。
