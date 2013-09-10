@@ -1,5 +1,5 @@
 <signature>
 GetLayerName(int)
 </signature>
-Gets name of the layer.
-@param layerIndex The layer's index.
+レイヤーの名前を取得します。
+@param layerIndex レイヤーのインデックス。
