@@ -1,5 +1,5 @@
 <signature>
 GetIKPositionWeight(AvatarIKGoal)
 </signature>
-Gets the translative weight of an IK goal (0 = at the original animation before IK, 1 = at the goal).
-@param goal The AvatarIKGoal that is queried.
+IK ゴールの移転したウェイト（0 = IK 前の元のアニメーション位置、1 = ゴール位置）。
+@param goal 照会された AvatarIKGoal。
