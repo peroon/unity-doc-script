@@ -1,4 +1,4 @@
 <signature>
 ctor()
 </signature>
-Creates a new animation event.
+新しいアニメーションイベントを作成します。
