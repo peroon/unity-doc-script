@@ -2,5 +2,5 @@
 InterruptMatchTarget()
 InterruptMatchTarget(bool)
 </signature>
-Interrupts the automatic target matching.
-CompleteMatch will make the gameobject match the target completely at the next frame.
+自動ターゲットマッチングを中断します。
+CompleteMatch（完全一致）の場合、次のフレームでゲームオブジェクトはターゲットと一致します。
