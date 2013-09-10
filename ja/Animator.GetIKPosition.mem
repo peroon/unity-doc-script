@@ -1,6 +1,6 @@
 <signature>
 GetIKPosition(AvatarIKGoal)
 </signature>
-Gets the position of an IK goal.
-The position is in world space.
-@param goal The AvatarIKGoal that is queried.
+IK ゴールの位置を取得します。
+位置はワールド座標単位。
+@param goal 照会された AvatarIKGoal。
