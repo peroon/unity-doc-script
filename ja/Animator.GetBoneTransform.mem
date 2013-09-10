@@ -1,5 +1,5 @@
 <signature>
 GetBoneTransform(HumanBodyBones)
 </signature>
-Returns transform mapped to this human bone id.
-@param humanBoneId The human bone that is queried, see enum HumanBodyBones for a list of possible values.
+このヒューマン ボーン ID にマッピングされた Transform を戻します。
+@param humanBoneId 照会されたヒューマン ボーン。取り得る値の一覧については HumanBodyBones 列挙体を参照下さい。
