@@ -1,5 +1,5 @@
 <signature>
 IsControlled(Transform)
 </signature>
-Returns true if the transform is controlled by the Animator\.
-@param transform The transform that is queried.
+アニメータにより Transform が制御されてる場合に true を戻します。
+@param transform 照会された transform。
