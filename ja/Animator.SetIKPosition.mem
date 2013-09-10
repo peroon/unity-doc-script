@@ -1,6 +1,6 @@
 <signature>
 SetIKPosition(AvatarIKGoal,Vector3)
 </signature>
-Sets the position of an IK goal.
-@param goal The AvatarIKGoal that is set.
-@param goalPosition The position in world space.
+IK ゴールの位置をセットします。
+@param goal セットした AvatarIKGoal。
+@param goalPosition ワールド空間座標での位置。
