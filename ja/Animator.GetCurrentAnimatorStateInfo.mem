@@ -1,5 +1,5 @@
 <signature>
 GetCurrentAnimatorStateInfo(int)
 </signature>
-Gets the current State information on a specified AnimatorController layer.
-@param layerIndex The layer's index.
+指定したアニメータ コントローラ レイヤーにおける現在のステート情報を取得します。
+@param layerIndex レイヤーのインデックス。
