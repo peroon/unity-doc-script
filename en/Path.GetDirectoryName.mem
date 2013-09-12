@@ -1,0 +1,23 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+GetDirectoryName()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Returns the directory name component of the specified path string.
+The string returned by this method consists of all characters between the first and last 
+::ref::DirectorySeparatorChar or ::ref::AltDirectorySeparatorChar character in the path. 
+The first separator character is included, but the last separator character is not included in the returned string.
+CONVERTEXAMPLE
+BEGIN EX
+	//Remember to import IO to make Path work.
+	import System.IO;
+
+	function Start () {
+	    //This will print "/Path/To/A/File".
+	    Debug.Log(Path.GetDirectoryName("/Path/To/A/File/foo.txt"));
+	}
+END EX

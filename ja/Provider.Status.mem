@@ -1,0 +1,15 @@
+<signature>
+Status(AssetList)
+Status(Asset)
+Status(AssetList,bool)
+Status(Asset,bool)
+Status(string[])
+Status(string[],bool)
+Status(string)
+Status(string,bool)
+</signature>
+Start a task that will fetch the most recent status from revision control system.
+The updated assets can be access through the task once it has completed.
+@param assets The assets fetch new state for.
+@param asset The asset path to fetch new state for.
+@param recursively If any assets specified are folders this flag will get status for all descendants of the folder as well.

@@ -1,0 +1,13 @@
+<suggestedtype>
+class
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Path
+</signature>
+Performs operations on strings that contain file or directory path information.
+
+This is the standard library System.IO.Path class. 
+Documentation for frequently used class members is provided here for your convenience.

@@ -1,0 +1,16 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Shift()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Unshift adds one or more elements to the beginning of an array and returns the new length of the array.
+BEGIN EX
+var arr = new Array ("Hello", "World");
+arr.Unshift("This", "is");
+// Prints This, is, Hello, World
+print(arr);
+END EX

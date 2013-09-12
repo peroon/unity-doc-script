@@ -4,7 +4,7 @@ GetUniqueTempPathInProject()
 Returns a unique path in the Temp folder within your current project.
 The returned path is relative to the project folder.
 
-The returned path is of a form @@Temp/UnityTempFile-''uniqueID''@@, where uniqueID is guaranteed to be
+The returned path is of a form @@Temp/UnityTempFile-@@''uniqueID'', where /uniqueID/ is guaranteed to be
 unique over space and time.
 
 You can use it to create temporary files/folders and be sure that

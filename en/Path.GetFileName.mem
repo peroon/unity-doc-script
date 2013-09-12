@@ -1,0 +1,23 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+GetFileName(string)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Returns the file name, including the extension if any, of the specified path string.
+
+The return value consists of the characters after the last directory character in path.
+If the last character of path is a directory separator character, returns an empty string. 
+CONVERTEXAMPLE
+BEGIN EX
+//Remember to import IO to make Path work.
+import System.IO; 
+
+function Start () {
+	//This will print "foo.extension".
+	Debug.Log(Path.GetFileName("/Some/File/At/foo.extension"));
+}
+END EX

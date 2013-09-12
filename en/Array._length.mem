@@ -1,0 +1,19 @@
+<suggestedtype>
+property
+</suggestedtype>
+<signature>
+length
+</signature>
+<txttag>
+CSNONE
+</txttag>
+The length property of the array that returns or sets the number of elements in array.
+BEGIN EX
+function Start () {
+	var arr = Array ("Hello", "World");
+	// Prints two
+	print(arr.Length);
+	// resizes the array to a size of 5
+	arr.length = 5;
+}
+END EX

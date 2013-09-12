@@ -1,0 +1,7 @@
+<signature>
+IsOpenForEdit(Asset)
+</signature>
+Returns true if an asset can be edited.
+Version control systems like Perforce requieres that an asset is checked out before it can be edited, in that case this will test if the asset can be edited.
+Some version control systems support editing without checking out the asset in that case this will always return true.
+@param asset Asset to test.

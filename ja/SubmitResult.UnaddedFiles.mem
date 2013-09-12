@@ -1,0 +1,2 @@
+Submit failed because some files need to be added.
+The assets associated with the task will contain assets with the local state set. Those are the files that need to be added to do a keep integrity in you unity project. This will only happen if you have disabled auto add in the editor preferences.

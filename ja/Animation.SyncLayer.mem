@@ -1,8 +1,11 @@
 <signature>
 SyncLayer(int)
 </signature>
-レイヤー内のすべてのアニメーションの再生速度を同期させる。
-2つのアニメーションをブレンドするときに、再生スピードを同期させ、調整を行います。2つのアニメーションの再生時間が異なる場合、再生周期も異なるので、不自然なアニメーションをしてしまうことがあります。なのでウェイトに合わせて、再生スピードを調整します。
+<txttag>
+UNDOC
+</txttag>
+Synchronizes playback speed of all animations in the /layer/.
+When blending between two looping animations they often have different lengths.
 For example a walk cycle often takes longer than a run cycle. When blending between them
 you need to make sure that the foot placement of the walk and run cycle happens at the same time.
 In other word playback speed of the animations must be adjusted so that the animations are synchronized.

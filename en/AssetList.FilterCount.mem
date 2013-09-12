@@ -1,0 +1,6 @@
+<signature>
+FilterCount(bool,States[])
+</signature>
+Count the list of assets by given a set of states.
+@param includeFolder Whether or not to include folders.
+@param states Which states to include in the count.

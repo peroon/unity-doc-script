@@ -1,0 +1,17 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Push()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Adds /value/ to the end of the array.
+And returns the new length of the array.
+BEGIN EX
+var arr = new Array ("Hello");
+arr.Push("World");
+// Prints "Hello", "World"
+print(arr);
+END EX

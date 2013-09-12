@@ -1,0 +1,5 @@
+<signature>
+SetGPSPermissions(bool)
+</signature>
+Enable / Disable access to the device GPS. (Will prompt for user for access).
+@param enable New permission value.

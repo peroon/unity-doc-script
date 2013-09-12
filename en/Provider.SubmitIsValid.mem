@@ -1,0 +1,6 @@
+<signature>
+SubmitIsValid(ChangeSet,AssetList)
+</signature>
+Returns true if submitting the assets is a valid operation.
+@param changeset The changeset to submit.
+@param assets The asset to submit.

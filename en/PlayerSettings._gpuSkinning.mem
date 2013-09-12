@@ -1,0 +1,6 @@
+<signature>
+gpuSkinning
+</signature>
+Enable GPU skinning on capable platforms.
+
+DX11, OpenGL ES 3.0 and Xbox 360 can do mesh skinning on the GPU.

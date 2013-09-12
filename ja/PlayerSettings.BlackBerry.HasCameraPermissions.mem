@@ -1,0 +1,4 @@
+<signature>
+HasCameraPermissions()
+</signature>
+Returns true when camera access has been requested in the player settings.

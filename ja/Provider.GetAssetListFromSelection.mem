@@ -1,0 +1,4 @@
+<signature>
+GetAssetListFromSelection()
+</signature>
+Return version control information about the currently selected assets.

@@ -1,0 +1,7 @@
+<signature>
+OnPostprocessScene()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Add this function in a subclass to get a notification just before building the scene.

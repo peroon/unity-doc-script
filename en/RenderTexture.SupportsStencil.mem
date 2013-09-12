@@ -1,0 +1,5 @@
+<signature>
+SupportsStencil(RenderTexture)
+</signature>
+Does the RenderTexture have stencil buffer?
+If rt is null, will report the status for the main screen.

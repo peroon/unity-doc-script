@@ -1,0 +1,4 @@
+<signature>
+tokenPath
+</signature>
+File system path to the debug token that the editor is currently sourcing.

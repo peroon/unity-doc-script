@@ -1,0 +1,5 @@
+<signature>
+color
+</signature>
+The color used to render the text.
+This is the base color used to render the text. <color> tags in rich text markup will override this.

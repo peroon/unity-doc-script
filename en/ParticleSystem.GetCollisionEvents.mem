@@ -1,0 +1,11 @@
+<signature>
+GetCollisionEvents(GameObject,CollisionEvent[])
+</signature>
+Get the particle collision events for a GameObject. Returns the number of events written to the array.
+This method is typically called from [[MonoBehaviour.OnParticleCollision]] in response to a collision callback.
+
+If the array used is too short events may be truncated. To avoid this use [[ParticleSystem.safeCollisionEventSize]] to determine an appropriate array size prior the call.
+
+SA: [[MonoBehaviour.OnParticleCollision]].
+@param go The GameObject for which to retrieve collision events.
+@param collisionEvents Array to write collision events to.

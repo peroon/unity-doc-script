@@ -1,6 +1,9 @@
 <signature>
 SyncLayer(int)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 Synchronizes playback speed of all animations in the /layer/.
 When blending between two looping animations they often have different lengths.
 For example a walk cycle often takes longer than a run cycle. When blending between them

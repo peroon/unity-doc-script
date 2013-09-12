@@ -1,0 +1,84 @@
+<suggestedtype>
+class
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Array
+</signature>
+Arrays allow you to store multiple objects in a single variable.
+The Array class is only available in Javascript.
+For more information about ArrayLists, Dictionaries or Hashtables in C# or Javascript see
+<a href="http://msdn2.microsoft.com/en-us/library/system.collections.arraylist_members(VS.80).aspx">here</a>
+
+__Here is a basic example of what you can do with an array class: __
+BEGIN EX
+function Start () {
+	var arr = new Array ();
+
+	// Add one element
+	arr.Push ("Hello");
+	
+	// print the first element ("Hello")
+	print(arr[0]);
+
+	// Resize the array
+	arr.length = 2;
+	// Assign "World" to the second element
+	arr[1] = "World";
+	
+	// iterate through the array
+	for (var value : String in arr) {
+		print(value);
+	}
+}
+END EX
+There are two types of arrays in Unity, builtin arrays and normal Javascript Arrays.
+__Builtin arrays (native .NET arrays), are extremely fast and efficient but they can not be resized__
+
+They are statically typed which allows them to be edited in the inspector. Here is a basic example of how you can use builtin arrays:
+BEGIN EX
+// Exposes an float array in the inspector,
+// which you can edit there.
+var values : float[];
+
+function Start () {
+	// iterate through the array
+	for (var value in values) {
+		print(value);
+	}
+
+	// Since we can't resize builtin arrays
+	// we have to recreate the array to resize it
+	values = new float[10];
+
+	// assign the second element
+	values[1] = 5.0;
+}
+END EX
+Builtin arrays are useful in performance critical code (With Unity's javascript and builtin arrays you could easily process 2 million vertices using the [[Mesh|mesh interface]] in one second.)
+
+Normal Javascript Arrays on the other hand can be resized, sorted and can do all other operations you would expect from an array class.
+Javascript Arrays do not show up in the inspector.
+__You can easily convert between Javascript Arrays and builtin arrays. __
+BEGIN EX
+function Start () {
+    var array = new Array (Vector3(0, 0, 0), Vector3(0, 0, 1));
+    array.Push(Vector3(0, 0, 2));
+    array.Push(Vector3(0, 0, 3));
+
+    // Copy the js array into a builtin array
+    var builtinArray : Vector3[] = array.ToBuiltin(Vector3) as Vector3[];
+    
+    // Assign the builtin array to a js Array
+    var newarr = new Array (builtinArray);
+    
+    // newarr contains the same elements as array
+    print (newarr);
+}
+END EX
+Note that Array's functions are upper case following Unity's naming convention.
+As a convenience for javascript users, Unity also accepts lower case functions for the array class.
+
+ __Note:__ Unity doesn't support serialization of a List of Lists, nor an Array of Arrays.

@@ -1,0 +1,4 @@
+<signature>
+onlineState
+</signature>
+Returns the OnlineState of the version control provider.

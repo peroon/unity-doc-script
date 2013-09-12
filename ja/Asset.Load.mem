@@ -1,0 +1,4 @@
+<signature>
+Load()
+</signature>
+Loads the asset to memory.

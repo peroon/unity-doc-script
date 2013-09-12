@@ -1,0 +1,4 @@
+<signature>
+batchedDrawCalls
+</signature>
+The number of batched draw calls made this frame.

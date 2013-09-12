@@ -1,0 +1,5 @@
+<signature>
+safeCollisionEventSize
+</signature>
+Safe array size for use with [[ParticleSystem.GetCollisionEvents]].
+This is guaranteed to be large enough to use with [[ParticleSystem.GetCollisionEvents]] for the current frame. GetCollisionEvents may return fewer elements for some GameObjects though.

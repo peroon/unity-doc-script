@@ -1,9 +1,9 @@
 <signature>
 Load(string)
 </signature>
-パスを設定し、Resourcesフォルダにあるアセットをロードする。
+Loads an asset stored at /path/ in a Resources folder.
 Returns the asset at /path/ if it can be found otherwise returns null.
-パスは「Resources」フォルダから相対的なパスになります。
+The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
 CONVERTEXAMPLE
 BEGIN EX
 	// Assigns a texture named "Assets/Resources/glass" to a Plane.
@@ -25,10 +25,10 @@ END EX
 <signature>
 Load(string,Type)
 </signature>
-パスを設定し、Resourcesフォルダにあるアセットをロードする。
+Loads an asset stored at /path/ in a Resources folder.
 Returns the asset at /path/ if it can be found otherwise returns null.
 Only objects of /type/ will be returned.
-パスは「Resources」フォルダから相対的なパスになります。
+The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
 CONVERTEXAMPLE
 BEGIN EX
 	// Assigns a texture named "glass" to a Plane.

@@ -1,0 +1,5 @@
+<signature>
+GetChild(int)
+</signature>
+Returns a transform child by index.
+@param index Index of the child transform to return. Must be smaller then Transform.childCount.

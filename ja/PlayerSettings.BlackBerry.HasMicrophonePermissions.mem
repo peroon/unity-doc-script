@@ -1,0 +1,4 @@
+<signature>
+HasMicrophonePermissions()
+</signature>
+Returns true if microphone access has been requested in player settings.

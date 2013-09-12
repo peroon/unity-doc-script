@@ -1,0 +1,22 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+GetFileNameWithoutExtension(string)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Returns the file base component of the specified path string without the extension.
+The return value consists of the string returned by ::ref::GetFileName(), minus
+the extension separator character and extension.
+CONVERTEXAMPLE
+BEGIN EX
+//Remember to import IO to make Path work.
+import System.IO;
+
+function Start () {
+	//This will print "foo".
+	Debug.Log(Path.GetFileNameWithoutExtension("/Some/File/At/foo.extension"));
+}
+END EX

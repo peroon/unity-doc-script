@@ -1,0 +1,4 @@
+<signature>
+GetPlatformTextureSettings(string,string,int,int,int,int)
+</signature>
+Platform settings.

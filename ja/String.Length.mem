@@ -1,0 +1,10 @@
+<suggestedtype>
+property
+</suggestedtype>
+<signature>
+Length
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Gets the number of characters in this instance (RO).

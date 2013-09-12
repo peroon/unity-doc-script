@@ -1,0 +1,4 @@
+<signature>
+saveLogPath
+</signature>
+The file system path that the device log will be saved to when it is downloaded.

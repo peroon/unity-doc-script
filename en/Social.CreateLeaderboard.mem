@@ -1,0 +1,26 @@
+<signature>
+CreateLeaderboard()
+</signature>
+Create an ILeaderboard instance.
+BEGIN EX
+ILeaderboard leaderboard = Social.CreateLeaderboard();
+	leaderboard.id = "Leaderboard01";
+	leaderboard.LoadScores (result => {				
+		Debug.Log("Received " + leaderboard.scores.Length + " scores");
+		foreach (IScore score in leaderboard.scores)
+			Debug.Log(score);
+	});
+END EX
+BEGIN EX
+void DoLeaderboard () {
+		m_Leaderboard = Social.CreateLeaderboard();
+		m_Leaderboard.id = "Leaderboard01";
+		m_Leaderboard.LoadScores(result => DidLoadLeaderboard(result));
+	}
+	
+	void DidLoadLeaderboard (bool result) {
+		Debug.Log("Received " + m_Leaderboard.scores.Length + " scores");
+		foreach (IScore score in m_Leaderboard.scores)
+			Debug.Log(score);
+	}
+END EX

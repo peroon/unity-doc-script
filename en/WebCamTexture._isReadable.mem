@@ -1,0 +1,4 @@
+<signature>
+isReadable
+</signature>
+Returns if the WebCamTexture is non-readable. (iOS only).

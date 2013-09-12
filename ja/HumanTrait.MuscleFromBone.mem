@@ -1,0 +1,6 @@
+<signature>
+MuscleFromBone(int,int)
+</signature>
+Return muscle index based on bone index and dof index.
+@param i Bone index.
+@param dofIndex Dof index: 0 for X-Axis, 1 for Y-Axis, 2 for Z-Axis.

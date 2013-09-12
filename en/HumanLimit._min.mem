@@ -1,0 +1,7 @@
+<signature>
+min
+</signature>
+The minimum value for this muscle.
+Value range from -180 to 0.
+Value is in degrees.
+SA: HumanLimit.useDefaultValues.

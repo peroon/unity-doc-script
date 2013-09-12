@@ -1,0 +1,4 @@
+<signature>
+isMeta
+</signature>
+Returns true if the instance of the Asset class actually refers to a .meta file.

@@ -1,0 +1,8 @@
+<signature>
+left
+</signature>
+Shorthand for writing @@Vector3(-1, 0, 0)@@.
+CONVERTEXAMPLE
+BEGIN EX
+	transform.position += Vector3.left * Time.deltaTime;
+END EX

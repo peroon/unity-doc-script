@@ -1,0 +1,5 @@
+<signature>
+lastReport
+</signature>
+Returns last crash report, or null if no reports are available.
+SA: CrashReport.reports.

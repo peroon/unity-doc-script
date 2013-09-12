@@ -41,25 +41,3 @@ BEGIN EX
 		go.renderer.material.mainTexture = texture;
 	}
 END EX
-<signature>
-LoadAll<T>(string)
-</signature>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-Only objects of /type/ will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
-CONVERTEXAMPLE
-BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
-
-	function Start (){
-		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
-		var textures = Resources.LoadAll.<Texture2D>("Textures");
-		var texture = textures[Random.Range(0, textures.Length)];
-		go.renderer.material.mainTexture = texture;
-	}
-END EX

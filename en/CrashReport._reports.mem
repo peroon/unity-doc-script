@@ -1,0 +1,5 @@
+<signature>
+reports
+</signature>
+Returns all currently available reports in a new array.
+SA: CrashReport.lastReport.

@@ -1,0 +1,4 @@
+<signature>
+collider
+</signature>
+The [[Collider]] for the GameObject struck by the particles.

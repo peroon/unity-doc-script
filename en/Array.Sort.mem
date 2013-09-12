@@ -1,0 +1,14 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Sort()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sorts all Array elements.
+Var hello = new Array ("c", "a", "b");
+hello.Sort();
+print(hello);
+// prints a, b, c.

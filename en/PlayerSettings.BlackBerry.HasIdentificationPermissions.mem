@@ -1,0 +1,5 @@
+<signature>
+HasIdentificationPermissions()
+</signature>
+Returns true when access the device's Unique identifier has been requested.
+If this option is enabled the user will be prompted with a dialog box asking for permission to access the device's unique identifier. If the user declines SystemInfo.deviceUniqueIdentifier will always return as 0.

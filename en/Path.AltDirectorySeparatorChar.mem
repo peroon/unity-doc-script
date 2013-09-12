@@ -1,0 +1,11 @@
+<suggestedtype>
+property
+</suggestedtype>
+<signature>
+AltDirectorySeparatorChar
+</signature>
+<txttag>
+CSNONE
+</txttag>
+An alternate character used to separate directory levels. (RO)
+This is '/' on Windows and '/' on Mac OS X

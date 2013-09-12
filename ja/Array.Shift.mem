@@ -1,0 +1,16 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Shift()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Removes the first element of the array and returns it.
+BEGIN EX
+var arr = new Array ("Hello", "World");
+arr.Shift();
+// arr now only contains "World"
+print ("World");
+END EX

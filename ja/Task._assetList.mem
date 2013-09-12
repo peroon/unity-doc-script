@@ -1,0 +1,5 @@
+<signature>
+assetList
+</signature>
+The result of some types of tasks.
+Most task perform an action and returns the result as list of version control informations about assets, e.g. a Status task will return the result in this list.

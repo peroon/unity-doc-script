@@ -1,0 +1,31 @@
+<suggestedtype>
+class
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Serializable
+</signature>
+The Serializable attribute lets you embed a class with sub properties in the inspector.
+You can use this to display variables in the inspector similar to how a [[Vector3]] shows up in the inspector.
+The name and a triangle to expand its properties.
+To do this you need create a class that derives from System.Object and give it the Serializable attribute.
+In JavaScript the Serializable attribute is implicit and not necessary.
+BEGIN EX
+class Test extends System.Object {
+	var p = 5;
+	var c = Color.white;
+}
+var test = Test ();
+END EX
+
+BEGIN EX NOCHECK
+// C# Example
+[System.Serializable]
+class Test
+{
+	public int p = 5;
+	public Color c = Color.white;
+}
+END EX

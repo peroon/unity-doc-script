@@ -1,0 +1,6 @@
+<signature>
+GetAssetByGUID(string)
+</signature>
+Returns version control information about an asset.
+Returns null if the GUID is not known by the Unity Editor.
+@param guid GUID of asset.

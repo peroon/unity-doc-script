@@ -1,0 +1,5 @@
+<signature>
+normal
+</signature>
+Geometry normal at the intersection point of the collision.
+The normal is reported in world coordinates regardless of whether the particle system is simulated in local coordinates.

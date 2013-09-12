@@ -1,0 +1,7 @@
+In the player on Windows Phone 8 device.
+SA: Platform dependent Compilation.
+CONVERTEXAMPLE
+BEGIN EX
+	if (Application.platform == RuntimePlatform.WP8Player)
+		Debug.Log("Do something special here!");
+END EX

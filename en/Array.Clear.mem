@@ -1,0 +1,15 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Clear()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Empties the array. The length of the array will be zero.
+BEGIN EX
+var hello = new Array ("Hello", "World");
+hello.Clear();
+// hello now contains zero elements
+END EX

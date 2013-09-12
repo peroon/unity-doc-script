@@ -1,0 +1,17 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+RemoveAt()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Removes the element at /index/ from the array.
+Var arr = new Array ("Hello", "and good morning", "World");
+
+// remove "and good morning"
+arr.RemoveAt(1);
+	
+// Prints "Hello,World"
+print (arr);

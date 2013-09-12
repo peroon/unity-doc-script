@@ -1,0 +1,6 @@
+<signature>
+ResolveIsValid(AssetList)
+</signature>
+Tests if any of the assets in the list is resolvable.
+Returns true if any of the assets are resolvable.
+@param assets The list of asset to be resolved.

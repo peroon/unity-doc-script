@@ -1,0 +1,2 @@
+List of includes transform for this avatar.
+This list define which transform to include or exclude from the final avatar skeleton. If you define a hierarchy with hole you may get unexpected result.

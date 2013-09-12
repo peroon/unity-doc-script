@@ -1,0 +1,2 @@
+Used the merged version yours and conflicting assets.
+Provider.Merge() should be issues before calling Provider.Resolve() with this flag.

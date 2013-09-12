@@ -1,0 +1,4 @@
+<signature>
+GetObjectPickerObject()
+</signature>
+The object currently selected in the object picker.

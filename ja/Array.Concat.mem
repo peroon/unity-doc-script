@@ -1,0 +1,23 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Concat()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Concat joins two or more arrays.
+The method does not change the existing arrays and returns a copy of the joined array.
+BEGIN EX
+function Start () {
+		var arr = new Array ("Hello", "World");
+		var arr2 = new Array ("!");
+	
+		// joined now contains all 3 strings		
+		var joined = arr.Concat(arr2);
+		
+		// prints "Hello","World","!"    
+		print(joined);
+}
+END EX

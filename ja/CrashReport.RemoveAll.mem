@@ -1,0 +1,5 @@
+<signature>
+RemoveAll()
+</signature>
+Remove all reports from available reports list.
+SA: CrashReport.Remove.

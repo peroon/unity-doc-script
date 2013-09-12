@@ -1,0 +1,9 @@
+<signature>
+center
+</signature>
+The relax value for this bone.
+The center is the angular position your bone will be when the muscle value is 0. 
+Value range from minimum to maximum range.
+Default value is 0,0,0.
+Value is in degrees.
+SA: HumanLimit.useDefaultValues.

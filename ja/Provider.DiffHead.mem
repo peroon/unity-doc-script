@@ -1,0 +1,6 @@
+<signature>
+DiffHead(AssetList,bool)
+</signature>
+Starts a task for showing a diff of the given assest versus their head revision.
+@param assets List of assets.
+@param includingMetaFiles Whether or not to include .meta.

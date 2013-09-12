@@ -1,0 +1,5 @@
+<signature>
+authorId
+</signature>
+Unique developer identification assigned by BlackBerry.
+The AuthorID is a unique identifier used whenever creating debug tokens or submission bar files.  This ID is unique to each vendor using AppWorld.

@@ -1,0 +1,4 @@
+<signature>
+SetPerTriangleUV2(Mesh,Vector2[])
+</signature>
+Will insert per-triangle uv2 in mesh and handle vertex splitting etc.

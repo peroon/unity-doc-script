@@ -1,0 +1,8 @@
+<signature>
+legStretch
+</signature>
+Amount of stretch allow on leg when using IK.
+The value range from 0 to 1.
+Default value is 0.05.
+
+At 0.05 the leg will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is done by translating both the knee and ankle transform.

@@ -1,0 +1,4 @@
+<signature>
+HasSharedPermissions()
+</signature>
+Returns true if shared permissions are requested in player settings.

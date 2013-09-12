@@ -1,0 +1,17 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Pop()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Removes the last element of the array and returns it.
+BEGIN EX
+var arr = new Array ("Hello", "World");
+arr.Pop();
+
+// Prints only "Hello"
+print (arr);
+END EX

@@ -1,0 +1,8 @@
+<signature>
+GetLatestIsValid(AssetList)
+GetLatestIsValid(Asset)
+</signature>
+Returns true if getting the latest version of an asset is a valid operation.
+For the list version it returns true if is valid for one or more assets.
+@param assets List of assets to test.
+@param asset Asset to test.

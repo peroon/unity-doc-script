@@ -1,0 +1,41 @@
+<signature>
+LoadAchievements(Action<IAchievement[]>)
+</signature>
+Load the achievements the logged in user has already achieved or reported progress on.
+BEGIN EX
+//JavaScript
+	function Start () {
+		Social.localUser.Authenticate (ProcessAuthentication);
+	}
+	
+	function ProcessAuthentication (success: boolean) {
+		if (success) {
+			Debug.Log ("Authenticated, checking achievements");
+			Social.LoadAchievements( function(cache) {
+				Debug.Log ("Got " + cache.Length + " achievements");
+			});
+		}
+		else
+			Debug.Log ("Failed to authenticate");
+	}
+END EX
+BEGIN EX
+//C#
+Social.LoadAchievements (achievements => {
+		if (achievements.Length > 0) {
+			Debug.Log ("Got " + achievements.Length + " achievement instances");
+			string myAchievements = "My achievements:\n";
+			foreach (IAchievement achievement in achievements)
+			{
+				myAchievements += "\t" + 
+					achievement.id + " " +
+					achievement.percentCompleted + " " +
+					achievement.completed + " " +
+					achievement.lastReportedDate + "\n";
+			}
+			Debug.Log (myAchievements);
+		}
+		else
+			Debug.Log ("No achievements returned");
+	});
+END EX

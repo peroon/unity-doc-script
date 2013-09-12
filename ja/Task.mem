@@ -1,0 +1,1 @@
+A UnityEditor.VersionControl.Task is created almost everytime UnityEditor.VersionControl.Provider is ask to perform an action.

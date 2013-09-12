@@ -1,0 +1,4 @@
+<signature>
+GetNetworkStats(int)
+</signature>
+The network statistics.

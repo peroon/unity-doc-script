@@ -1,0 +1,4 @@
+<signature>
+locked
+</signature>
+Returns true if the asset is locked by the version control system.

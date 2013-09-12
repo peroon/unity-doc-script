@@ -1,0 +1,53 @@
+The class stores the mapping for one human transform and the muscle space range limit.
+BEGIN EX
+// C# example
+using UnityEngine;
+using UnityEditor;
+
+using System.Collections;
+using System.Collections.Generic;
+
+public class HumanBoneList : MonoBehaviour
+{
+	[MenuItem("Mecanim/HumanBoneList")]
+	public static void DoHumanBoneList()
+	{
+		Dictionary<string, string> boneName = new Dictionary<string, string>();
+
+		boneName["Chest"] = "Bip001 Spine2";
+		boneName["Head"] = "Bip001 Head";
+		boneName["Hips"] = "Bip001 Pelvis";
+		boneName["LeftFoot"] = "Bip001 L Foot";
+		boneName["LeftHand"] = "Bip001 L Hand";
+		boneName["LeftLowerArm"] = "Bip001 L Forearm";
+		boneName["LeftLowerLeg"] = "Bip001 L Calf";
+		boneName["LeftShoulder"] = "Bip001 L Clavicle";
+		boneName["LeftUpperArm"] = "Bip001 L UpperArm";
+		boneName["LeftUpperLeg"] = "Bip001 L Thigh";
+		boneName["RightFoot"] = "Bip001 R Foot";
+		boneName["RightHand"] = "Bip001 R Hand";
+		boneName["RightLowerArm"] = "Bip001 R Forearm";
+		boneName["RightLowerLeg"] = "Bip001 R Calf";
+		boneName["RightShoulder"] = "Bip001 R Clavicle";
+		boneName["RightUpperArm"] = "Bip001 R UpperArm";
+		boneName["RightUpperLeg"] = "Bip001 R Thigh";
+		boneName["Spine"] = "Bip001 Spine1";
+
+		string[] humanName = HumanTrait.BoneName;
+		HumanBone[] humanBones = new HumanBone[boneName.Count];
+
+		for (int i = 0, j = 0; i < humanName.Length; i++)
+		{
+			if (boneName.ContainsKey(humanName[i]))
+			{
+				HumanBone humanBone = new HumanBone();
+				humanBone.humanName = humanName[i];
+				humanBone.boneName = boneName[humanName[i]];
+                humanBone.limit.useDefaultValues = true;
+
+				humanBones[j++] = humanBone;
+			}
+		}
+	}
+}
+END EX

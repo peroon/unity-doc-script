@@ -1,0 +1,5 @@
+<signature>
+SetMicrophonePermissions(bool)
+</signature>
+Enable / Disable microphone permission level. (Will prompt user for access).
+@param enable New permission value.

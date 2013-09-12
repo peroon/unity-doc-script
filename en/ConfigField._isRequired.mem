@@ -1,0 +1,4 @@
+<signature>
+isRequired
+</signature>
+This is true if the configuration field is required for the version control plugin to function correctly.

@@ -1,0 +1,33 @@
+<signature>
+localUser
+</signature>
+The local user (potentially not logged in).
+Until the user logs in or authenticates himself the profile data will be invalid and no other Social API functionality will work.
+BEGIN EX
+//JavaScript
+Social.localUser.Authenticate (function (success) {
+        if (success) {
+            Debug.Log ("Authentication successful");
+            var userInfo : String = "Username: " + Social.localUser.userName + 
+                "\nUser ID: " + Social.localUser.id + 
+                "\nIsUnderage: " + Social.localUser.underage;
+            Debug.Log (userInfo);
+        }
+        else
+            Debug.Log ("Authentication failed");
+    });
+END EX
+BEGIN EX
+//C#
+Social.localUser.Authenticate (success => {
+		if (success) {
+			Debug.Log ("Authentication successful");
+			string userInfo = "Username: " + Social.localUser.userName + 
+				"\nUser ID: " + Social.localUser.id + 
+				"\nIsUnderage: " + Social.localUser.underage;
+			Debug.Log (userInfo);
+		}
+		else
+			Debug.Log ("Authentication failed");
+	});
+END EX

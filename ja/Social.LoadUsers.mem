@@ -1,0 +1,4 @@
+<signature>
+LoadUsers(string[],Action<IUserProfile[]>)
+</signature>
+Load the user profiles accociated with the given array of user IDs.

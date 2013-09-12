@@ -1,0 +1,7 @@
+<signature>
+Merge(AssetList,MergeMethod)
+</signature>
+This method will initiate a merge task handle merging of the conflicting assets.
+An initial attempt of is made to make a simple merge automatically. If this fails the merge method decide if manual merge too will be spawned of not.
+@param assets The list of conflicting assets to be merged.
+@param method How to merge the assets.

@@ -1,3 +1,9 @@
+<signature>
+layer
+</signature>
+<txttag>
+UNDOC
+</txttag>
 The layer of the animation. When calculating the final blend weights, animations in higher layers will get their weights.
 Distributed first. Lower layer animations only receive blend weights if the higher layers didn't use up all blend weights.
 CONVERTEXAMPLE

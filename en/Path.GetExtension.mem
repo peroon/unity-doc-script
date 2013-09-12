@@ -1,0 +1,21 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+GetExtension(string)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Returns the extension component of the specified path string.
+The extension returned includes the . character used to separate the extension from the rest of the path.
+CONVERTEXAMPLE
+BEGIN EX
+//Remember to import IO to make Path work.
+import System.IO;
+
+function Start () {
+	//This will print ".extension".
+	Debug.Log(Path.GetExtension("/Some/File/At/foo.extension"));
+}
+END EX

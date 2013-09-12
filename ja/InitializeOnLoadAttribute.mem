@@ -1,0 +1,2 @@
+Allow an editor class to be initialized when Unity loads without action from the user.
+SA: [wiki:RunningEditorCodeOnLaunch.html|Running Editor Code on Launch].

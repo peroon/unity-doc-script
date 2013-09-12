@@ -1,0 +1,4 @@
+<signature>
+supportsStencil
+</signature>
+Is the stencil buffer supported? (RO)

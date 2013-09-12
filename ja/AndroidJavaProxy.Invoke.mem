@@ -1,0 +1,8 @@
+<signature>
+Invoke(string,object[])
+Invoke(string,AndroidJavaObject[])
+</signature>
+Called by the java vm whenever a method is invoked on the java proxy interface. You can override this to run special code on method invokation, or you can leave the implementation as is, and leave the default behavior which is to look for c# methods matching the signature of the java method.
+@param methodName Name of the invoked java method.
+@param args Arguments passed from the java vm - converted into AndroidJavaObject, AndroidJavaClass or a primitive.
+@param javaArgs Arguments passed from the java vm - all objects are represented by AndroidJavaObject, int for instance is represented by a java.lang.Integer object.

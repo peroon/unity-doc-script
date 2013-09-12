@@ -1,0 +1,5 @@
+<signature>
+DeleteChangeSetsIsValid(ChangeSets)
+</signature>
+Test if deleting a changeset is a valid task to perform.
+@param changesets Changeset to test.

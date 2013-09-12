@@ -1,0 +1,2 @@
+Merge assets that does not conflict and leave conflicting assets not merged.
+This will require handling the conflict another way youself.

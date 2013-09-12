@@ -1,0 +1,6 @@
+<signature>
+deviceAddress
+</signature>
+The address used when accessing the device.
+The device address can be found on the device by accessing: Settings/About/Network
+Either the USB or WiFi address can be used (USB recommended).

@@ -1,0 +1,5 @@
+<signature>
+firstStreamedLevelWithResources
+</signature>
+First level to have access to all Resources.Load assets in Streamed Web Players.
+Use this variable to specify the index of the first level that will have access to all Resources.Load assets.

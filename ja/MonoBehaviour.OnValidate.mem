@@ -1,0 +1,8 @@
+<signature>
+OnValidate()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+This function is called when the script is loaded or a value is changed in the inspector (Called in the editor only).
+Use this function to validate the data of your MonoBehaviours. This can be used to ensure that when you modify date in an editor that the data stays within a certain range.

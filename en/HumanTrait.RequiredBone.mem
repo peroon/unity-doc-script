@@ -1,0 +1,25 @@
+<signature>
+RequiredBone(int)
+</signature>
+Return true if bone i is a required human bone.
+BEGIN EX
+// C# example
+using UnityEngine;
+using UnityEditor;
+
+public class PrintRequiredBone : MonoBehaviour
+{
+	[MenuItem("Mecanim/PrintRequiredBone")]
+	public static void DoPrintRequiredBone()
+	{
+		string[] boneName = HumanTrait.BoneName;
+		for(int i=0;i<HumanTrait.BoneCount;++i)
+		{
+			if(HumanTrait.RequiredBone(i))
+				Debug.Log(boneName[i]);
+		}
+	}
+
+}
+END EX
+@param i Bone index.

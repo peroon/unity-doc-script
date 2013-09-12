@@ -1,0 +1,20 @@
+<signature>
+simulationSpace
+</signature>
+This selects the space in which to simulate particles. It can be either world or local space.
+CONVERTEXAMPLE
+BEGIN EX
+var useLocal : boolean = true;
+
+function Start () {
+	useLocal = (particleSystem.simulationSpace == ParticleSystemSimulationSpace.Local);
+}
+
+function Update () {
+	particleSystem.simulationSpace = (useLocal ? ParticleSystemSimulationSpace.Local : ParticleSystemSimulationSpace.World);
+}
+
+function OnGUI() {
+	useLocal = GUI.Toggle(new Rect(10, 60, 200, 30), useLocal, " Use Local Simulation Space");
+}
+END EX

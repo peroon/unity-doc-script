@@ -1,0 +1,5 @@
+<signature>
+tokenExpires
+</signature>
+The date in which the debug token is set to expire.
+The debug token can be renewed by pressing 'Renew' in the Publishing Section.

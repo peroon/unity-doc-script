@@ -1,0 +1,23 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Combine(string, string)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Concatenates two path strings.
+
+If path1 does not end with a valid separator character ::ref::DirectorySeparatorChar
+is appended to path1 prior to the concatenation.
+CONVERTEXAMPLE
+BEGIN EX
+//Remember to import IO to make Path work.
+import System.IO;
+
+function Start () {
+	//This will print "/First/Path/To/Some/File/At/foo.txt".
+	Debug.Log(Path.Combine("/First/Path/To", "Some/File/At/foo.txt"));
+}
+END EX

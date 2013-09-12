@@ -1,0 +1,19 @@
+<suggestedtype>
+method
+</suggestedtype>
+<signature>
+Join()
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Joins the contents of an array into one string.
+The elements are seperated by the /seperator/ string and returns a copy of the joined array.
+BEGIN EX
+function Start () {
+		var arr = new Array ("Hello", "World");
+
+		// Prints "Hello, World"
+		print(arr.join(", "));
+}
+END EX

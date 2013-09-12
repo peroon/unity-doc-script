@@ -1,0 +1,5 @@
+<signature>
+resultCode
+</signature>
+Some task return result codes, these are stored here.
+Depending on the task the result code will map to either an AssetDeleteResult, AssetMoveResult or SubmitResult.

@@ -1,0 +1,11 @@
+<suggestedtype>
+property
+</suggestedtype>
+<signature>
+DirectorySeparatorChar
+</signature>
+<txttag>
+CSNONE
+</txttag>
+The default character used to separate directory levels. (RO)
+This is '\' on Windows and '/' on Mac OS X

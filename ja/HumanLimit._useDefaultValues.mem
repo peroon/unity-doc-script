@@ -1,0 +1,5 @@
+<signature>
+useDefaultValues
+</signature>
+Should this limit use the default values.
+As soon as you set other member you need to set this member to false.

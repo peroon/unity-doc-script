@@ -1,0 +1,4 @@
+<signature>
+OnInspectorGUI()
+</signature>
+Implement specific MaterialEditor GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.

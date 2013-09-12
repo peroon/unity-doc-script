@@ -1,0 +1,12 @@
+<signature>
+maximized
+</signature>
+Is this window maximized.
+Set this value to maximize / unmaximize a window. If the window is undocked, this value will always be false and setting it will have no effect.
+BEGIN EX
+class Maximizer extends EditorWindow {
+	function OnGUI() {
+		maximized = GUILayout.Toggle(maximized, "Maximize window");
+	}
+}
+END EX

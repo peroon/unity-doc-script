@@ -1,0 +1,22 @@
+<signature>
+LoadAchievementDescriptions(Action<IAchievementDescription[]>)
+</signature>
+Loads the achievement descriptions accociated with this application.
+This is usually set up outside Unity on some external service provided by the implementation provider. For example, when using GameCenter you need to set up the achievements using iTunes Connect.
+BEGIN EX
+Social.LoadAchievementDescriptions (descriptions => {
+		if (descriptions.Length > 0) {
+			Debug.Log ("Got " + descriptions.Length + " achievement descriptions");
+			string achievementDescriptions = "Achievement Descriptions:\n";
+			foreach (IAchievementDescription ad in descriptions) {
+				achievementDescriptions += "\t" +
+					ad.id + " " +
+					ad.title + " " +
+					ad.unachievedDescription + "\n";
+			}
+			Debug.Log (achievementDescriptions);
+		}
+		else
+			Debug.Log ("Failed to load achievement descriptions");
+	});
+END EX

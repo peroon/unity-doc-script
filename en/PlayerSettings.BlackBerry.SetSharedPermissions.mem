@@ -1,0 +1,5 @@
+<signature>
+SetSharedPermissions(bool)
+</signature>
+Enable / Disable access to QNX shared folders (accesible via the rst://drive).
+@param enable New permission value.

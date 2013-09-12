@@ -1,0 +1,9 @@
+<signature>
+Add(AssetList,bool)
+Add(Asset,bool)
+</signature>
+Adds an assets or list of assets to version control.
+If the input asset is a folder setting the recursive flag will add all assets and assets in subfolders to the version control system.
+@param assets List of assets to add to version control system.
+@param recursive Set this true if adding should be done recursively into subfolders.
+@param asset Single asset to add to version control system.

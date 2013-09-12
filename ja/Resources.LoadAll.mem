@@ -1,11 +1,11 @@
 <signature>
 LoadAll(string,Type)
 </signature>
-Resourcesフォルダ内にあるフォルダ・ファイルのパスを設定し、すべてのアセットを取得する。
+Loads all assets in a folder or file at /path/ in a Resources folder.
 If /path/ refers to a folder, all assets in the folder will be returned.
 If /path/ refers to a file, only that asset will be returned.
 Only objects of /type/ will be returned.
-パスは「Resources」フォルダから相対的なパスになります。
+The /path/ is relative to any Resources folder inside the Assets folder of your project.
 CONVERTEXAMPLE
 BEGIN EX
 	// Loads all assets in the "Resources/Textures" folder
@@ -23,10 +23,10 @@ END EX
 <signature>
 LoadAll(string)
 </signature>
-Resourcesフォルダ内にあるフォルダ・ファイルのパスを設定し、すべてのアセットを取得する。
+Loads all assets in a folder or file at /path/ in a Resources folder.
 If /path/ refers to a folder, all assets in the folder will be returned.
 If /path/ refers to a file, only that asset will be returned.
-パスは「Resources」フォルダから相対的なパスになります。
+The /path/ is relative to any Resources folder inside the Assets folder of your project.
 CONVERTEXAMPLE
 BEGIN EX
 	// Loads all assets in the "Resources/Textures" folder

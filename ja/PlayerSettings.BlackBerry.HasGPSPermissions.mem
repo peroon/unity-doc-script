@@ -1,0 +1,4 @@
+<signature>
+HasGPSPermissions()
+</signature>
+Returns true when GPS permission has been requested in the player settings.

@@ -1,7 +1,7 @@
 <signature>
 LoadAssetAtPath(string,Type)
 </signature>
-「Assets/Resources」のパスでResourcesを取得する（エディター専用）。
+Returns a resource at an asset path (Editor Only).
 This function always return null in the standalone player or web player.
 This is useful for quickly accessing an asset for use in the editor only.
 

@@ -1,0 +1,7 @@
+<signature>
+feetSpacing
+</signature>
+Additionnal offset used when mecanim stabilize feet.
+Default value is 0.
+
+This offset could be used to avoid mesh interpenetration when your avatar have big foot.

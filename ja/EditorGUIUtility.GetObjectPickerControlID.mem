@@ -1,0 +1,5 @@
+<signature>
+GetObjectPickerControlID()
+</signature>
+The controlID of the currently showing object picker.
+See ::ref::ShowObjectPicker.

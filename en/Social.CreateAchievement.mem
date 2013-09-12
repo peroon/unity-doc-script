@@ -1,0 +1,15 @@
+<signature>
+CreateAchievement()
+</signature>
+Create an IAchievement instance.
+BEGIN EX
+IAchievement achievement = Social.CreateAchievement();
+	achievement.id = "Achievement01";
+	achievement.progressCompleted = 100.0;
+	achievement.ReportProgress( result => {
+		if (result)
+			Debug.Log ("Successfully reported progress");
+		else
+			Debug.Log ("Failed to report progress");
+	});
+END EX

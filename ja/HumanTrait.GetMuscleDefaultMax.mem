@@ -1,0 +1,24 @@
+<signature>
+GetMuscleDefaultMax(int)
+</signature>
+Return the default maximum range for this muscle.
+Value is in degrees.
+BEGIN EX
+// C# example
+using UnityEngine;
+using UnityEditor;
+
+public class PrintMuscleMinMax : MonoBehaviour
+{
+	[MenuItem("Mecanim/PrintMuscleMinMax")]
+	public static void DoPrintMuscleMinMax()
+	{
+		string[] muscleName = HumanTrait.MuscleName;
+		for (int i = 0; i < HumanTrait.MuscleCount; ++i)
+		{
+			Debug.Log(muscleName[i] +" min: " + HumanTrait.GetMuscleDefaultMin(i) + " max: " + HumanTrait.GetMuscleDefaultMax(i));
+		}
+	}
+}
+END EX
+@param i Muscle index.

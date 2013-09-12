@@ -1,0 +1,8 @@
+<signature>
+armStretch
+</signature>
+Amount of stretch allow on arm when using IK.
+The value range from 0 to 1.
+Default value is 0.05.
+
+At 0.05 the arm will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is done by translating both the elbow and wrist transform.

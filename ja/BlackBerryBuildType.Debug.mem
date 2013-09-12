@@ -1,0 +1,2 @@
+Build type for local testing purposes.
+This BuildType requires a debug token to be imported in the editor and deployed to the device.

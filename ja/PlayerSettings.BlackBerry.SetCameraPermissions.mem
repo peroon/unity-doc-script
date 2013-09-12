@@ -1,0 +1,5 @@
+<signature>
+SetCameraPermissions(bool)
+</signature>
+Enable or disable camera permissions. (Will prompt user for access).
+@param enable New permission value.

@@ -1,0 +1,4 @@
+<signature>
+availablePlugins
+</signature>
+Static property which returns an array of all available plugins.

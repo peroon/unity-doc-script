@@ -1,7 +1,7 @@
 <signature>
 FindObjectsOfTypeAll(Type)
 </signature>
-設定したタイプのすべてのオブジェクトのリストを返す。
+Returns a list of all objects of Type /type/.
 This function can return any type of Unity object that is loaded, including game objects, prefabs, materials, meshes, textures, etc. It will also list internal stuff, therefore please be ''extra'' careful the way you handle the returned objects.
 Contrary to Object::ref::FindObjectsOfType this function will also list disabled objects.
 
@@ -23,5 +23,26 @@ BEGIN EX
 		GUILayout.Label("Components " + Resources.FindObjectsOfTypeAll(typeof(Component)).Length);
 	}
 END EX
-@param type オブジェクトの型
+BEGIN EX
+import System.Collections.Generic;
+
+// This script finds all the objects in scene, excluding prefabs:
+function GetAllObjectsInScene(): List.<GameObject> {
+    var objectsInScene: List.<GameObject> = new List.<GameObject>();
+    
+    for (var go: GameObject in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[]) {
+        if (go.hideFlags == HideFlags.NotEditable || go.hideFlags == HideFlags.HideAndDontSave)
+            continue;
+        
+        var assetPath: String = AssetDatabase.GetAssetPath(go.transform.root.gameObject);
+        if (!String.IsNullOrEmpty(assetPath))
+            continue;
+        
+        objectsInScene.Add(go);
+    }
+    
+    return objectsInScene;
+}
+END EX
+@param type Type of the class to match while searching.
 @return An array of objects whose class is ''type'' or is derived from ''type''.
