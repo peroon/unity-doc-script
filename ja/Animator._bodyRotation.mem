@@ -1,5 +1,2 @@
-<signature>
-bodyRotation
-</signature>
-The rotation of the body center of mass.
-The rotation is local to the gameobject.
+アニメータ コンポーネントのカリングを制御します。
+SA: [[AnimatorCullingMode]] enum.
