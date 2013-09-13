@@ -1,6 +1,6 @@
 <signature>
 StringToHash(string)
 </signature>
-Generates an parameter id from a string.
-Ids are used for optimized setters and getters on parameters.
-@param name The string to convert to Id.
+文字列からパラメータ ID を生成します。
+ID は パラメータの setter および getter として最適化され使用されます。
+@param name ID に変換する文字列。
