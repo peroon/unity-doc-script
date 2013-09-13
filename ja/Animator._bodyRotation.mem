@@ -1,2 +1,5 @@
-アニメータ コンポーネントのカリングを制御します。
-SA: [[AnimatorCullingMode]] enum.
+<signature>
+bodyRotation
+</signature>
+ボディ重心の回転（Rotation）。
+ゲームオブジェクトに対してローカルな回転（Rotation）となります。

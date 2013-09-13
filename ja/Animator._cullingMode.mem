@@ -1,2 +1,2 @@
-Controls culling of this Animator component.
+アニメータ コンポーネントのカリングを制御します。
 SA: [[AnimatorCullingMode]] enum.
