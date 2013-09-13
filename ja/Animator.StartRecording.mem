@@ -1,7 +1,7 @@
 <signature>
 StartRecording(int)
 </signature>
-Sets the animator in recording mode, and allocates a circular buffer of size ''frameCount''.
-After this call, the recorder starts collecting up to ''frameCount'' frames in the buffer. Note it is not possible to start playback until a call to ::ref::StopRecording is made. 
+アニメータを録画モードにセットして、frameCount の大きさのリングバッファを割り当てます。
+このコールの後、録画が frameCount となるまでフレームをバッファに累積します。::ref::StopRecording へのコールが行われるまでプレイバックの開始が出来ないことに留意して下さい。
 SA: ::ref::StopRecording, ::ref::recordingStartTime, ::ref::recordingStopTime, ::ref::StartPlayback, ::ref::StopPlayback, ::ref::playbackTime.
-@param frameCount The number of frames (updates) that will be recorded. If frameCount is 0, the recording will continue until the user calls ::ref::StopRecording. The maximum value for frameCount is 10000.
+@param frameCount 録画されるフレーム数（更新数）。もし frameCount が 0 である場合、ユーザが ::ref::StopRecording をコールするまで継続されます。frameCount の最大値は 10000 です。
