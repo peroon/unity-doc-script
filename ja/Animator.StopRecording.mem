@@ -1,6 +1,6 @@
 <signature>
 StopRecording()
 </signature>
-Stops animator record mode.
-A call to ::ref::StopRecording will lock the recording buffer's contents in its current state. The data get saved for subsequent playback with ::ref::StartPlayback.
+アニメータの録画モードを停止します。
+::ref::StopRecording へのコールにより現在のステートでのバッファコンテンツを録画します。データは ::ref::StartPlayback によりデータは後続のプレイバックに保存されます。
 SA: ::ref::StartRecording, ::ref::recordingStartTime, ::ref::recordingStopTime, ::ref::StartPlayback, ::ref::StopPlayback, ::ref::playbackTime.
