@@ -1,6 +1,6 @@
 <signature>
 StartPlayback()
 </signature>
-Sets the animator in playback mode.
-In this mode, the animator is not updated from game logic and is controlled instead by setting time value. Note that time will not automatically progress here, you have to manipulate it explicitly from ::ref::playbackTime.
-PlaybackRecordedFrame should be used to playback recorded data.
+アニメータをプレイバックモードにセットします。
+このモードでは、アニメータはゲームロジックから更新されず、 time の値をセットすることで制御されます。time が自動的に進行しないことに留意して下さい。::ref::playbackTime から明示的に編集する必要があります。
+PlaybackRecordedFrame は記録データのプレイバックに使用すべきです。
