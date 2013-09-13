@@ -1,5 +1,5 @@
 <signature>
 bodyPosition
 </signature>
-The position of the body center of mass.
-The position is local to the gameobject.
+ボディの重心位置。
+ゲームオブジェクトに対してローカルな位置となります。

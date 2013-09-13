@@ -1,5 +1,5 @@
 <signature>
 avatar
 </signature>
-Gets/Sets the current Avatar.
-Changing the avatar at runtime is not fully supported. Use it at your own risk.
+現在のアバターを Get/Set します。
+アバターを実行時に変更することは完全に保証されていません。ユーザの責任下で判断することになります。
