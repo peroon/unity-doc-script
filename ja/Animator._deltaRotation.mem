@@ -1,4 +1,4 @@
 <signature>
 deltaRotation
 </signature>
-Gets the avatar delta rotation for the last evaluated frame.
+最後に評価されったフレームのアバターの delta Rotation（差分回転）を取得します。
