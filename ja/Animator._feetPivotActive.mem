@@ -1,4 +1,4 @@
 <signature>
 feetPivotActive
 </signature>
-Blends pivot point between body center of mass and feet pivot. At 0%, the blending point is body center of mass. At 100%, the blending point is feet pivot.
+重心とピボット位置（Feet Pivot）の間のピボット位置をブレンドします。0% ではブレンド位置は重心です。100% ではブレンド位置はピボット位置（Feet Pivot）です。
