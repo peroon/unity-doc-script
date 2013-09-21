@@ -1,5 +1,5 @@
 <signature>
 humanScale
 </signature>
-Returns the scale of the current Avatar for a humanoid rig, (1 by default if the rig is generic).
-The scale is relative to Unity's Default Avatar.
+ヒューマノイド リグでの、現在のアバターのスケールを戻します（リグがジェネリックの場合、デフォルトで1）。
+スケールは Unity のデフォルト アバターに対する相対的な大きさを示します。
