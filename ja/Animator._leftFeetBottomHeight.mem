@@ -1,7 +1,7 @@
 <signature>
 leftFeetBottomHeight
 </signature>
-Get left foot bottom height.
+左足の底の位置の高さ
 BEGIN EX
 	void LateUpdate()
 	{
