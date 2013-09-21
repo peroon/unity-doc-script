@@ -1,4 +1,5 @@
 <signature>
 isHuman
 </signature>
-Returns true if the current rig is ''humanoid'', false if it is ''generic''.
+現在のリグが、ヒューマノイド (''humanoid'') の場合は true、ジェネリック (''generic'') の場合は falseを戻します。
+
