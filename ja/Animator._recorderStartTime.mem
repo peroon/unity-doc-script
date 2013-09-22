@@ -1,8 +1,8 @@
 <signature>
 recorderStartTime
 </signature>
-Start time of the first frame of the buffer relative to the frame at which ::ref::StartRecording was called.
-For example, if we started recording at frame 10, and the buffer is 5 frames long.
-If the buffer is not initialized (::ref::StartRecording is not called), the value of this property will be -1.
+::ref::StartRecording +MExUfDBzUfowVzBVMIwwXzDVMOww/DDgMGtb/jBXMGZ2+Fv+doQwajDQMMMw1TChMG5nAFIdMG4w1TDsMPww4DBulYtZy2ZClZMwAg
++T4swSDBwMAEwgjBX 10 +MNUw7DD8MOB27jBnkzJ1OzCSlYtZyzBXMGYwATDQMMMw1TChMEw 5 +MNUw7DD8MOBlcDBnMEIwYzBfWDRUCDAC
++MIIwVzDQMMMw1TChMExSHWcfUxYwVTCMMGYwajBEWDRUCP8I::ref::StartRecording +MG5UfDBzUfowVzBMW59lvTBVMIwwZjBqMET/CTABMFMwbjDXMO0w0TDGMKMwblAkMG8 -1 +MGgwajCKMH4wWTAC
 
 SA: ::ref::recorderStopTime.
