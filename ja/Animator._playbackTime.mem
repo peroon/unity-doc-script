@@ -1,6 +1,6 @@
 <signature>
 playbackTime
 </signature>
-Sets the playback position in the recording buffer.
-When in playback mode (see ::ref::StartPlayback), this value is used for controlling the current playback position in the buffer (in seconds). The value can range between ::ref::recordingStartTime and ::ref::recordingStopTime
+録画バッファの中の再生位置をセットします。
+プレイバック モードのとき（ ::ref::StartPlayback を参照）、この値はバッファの中の現在の再生位置を制御するために使用されます（秒単位）。値の範囲は ::ref::recordingStartTime および ::ref::recordingStopTime の間となります。
 SA: ::ref::StartPlayback, ::ref::StopPlayback.
