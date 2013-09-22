@@ -1,7 +1,7 @@
 <signature>
 pivotWeight
 </signature>
-Gets the pivot weight.
-The pivot is the most stable point between the avatar's left and right foot
-For a value of 0, the left foot is the most stable point
-For a value of 1, the right foot is the most stable point.
+ピボットの重み付けを取得します。
+ピボットとはアバターの左足と右足の間の最も安定した地点を示します。
+値が 0 の場合、左足が最も安定した地点です。
+値が 1 の場合、右足が最も安定した地点です。

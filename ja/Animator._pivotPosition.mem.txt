@@ -1,5 +1,0 @@
-<signature>
-pivotPosition
-</signature>
-ピボットの現在位置を取得します。
-ピボットとはアバターの左足と右足の間の最も安定した地点を示します。
