@@ -1,5 +1,5 @@
 <signature>
 pivotPosition
 </signature>
-Get the current position of the pivot.
-The pivot is the most stable point between the avatar's left and right foot.
+ピボットの現在位置を取得します。
+ピボットとはアバターの左足と右足の間の最も安定した地点を示します。
