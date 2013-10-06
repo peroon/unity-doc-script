@@ -1,4 +1,4 @@
-Animation is disabled when renderers are not visible.
-The statemachine and root motion will always be evaluated. Thus you will always receive the OnAnimatorMove callbacks.
-All other animation will be skipped if the character is not visible.
-Specifically evaluation of bone animation, IK, OnAnimatorIK will be skipped.
+アニメーションはレンダラが非表示の場合は無効化されます。
+ステートマシンおよびルートモーションは常に評価されます。従って、 OnAnimatorMove コールバックは常に受け取ります。
+他の全てのアニメーションはキャラクターが非表示の場合スキップされます。
+具体的にはボーンアニメーション、IK、OnAnimatorIK の評価はスキップされます。
