@@ -1,5 +1,5 @@
 <signature>
 IsName(string)
 </signature>
-Does /name/ match the name of the active Transition.
-Format is "CURRENT_STATE -> NEXT_STATE".
+/name/ が有効なトランジションの名前と一致するかを示します。
+形式は "CURRENT_STATE -> NEXT_STATE"。
