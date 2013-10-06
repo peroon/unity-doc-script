@@ -1,6 +1,6 @@
 <signature>
 length
 </signature>
-Current duration of the state.
-In seconds
-Can vary when the State contains a Blend Tree.
+ステートの現在の長さ（duration）
+秒単位で示します。
+ステートがブレンドツリーを含む場合は相違することがあります。

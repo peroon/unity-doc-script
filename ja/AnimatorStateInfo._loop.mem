@@ -1,5 +1,5 @@
 <signature>
 loop
 </signature>
-Is the state looping.
-All animations in the state must be looping.
+ステートがループする設定か示します。
+ステートにおける全てのアニメーションがループする設定の必要があります。
