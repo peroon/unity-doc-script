@@ -2,4 +2,4 @@
 targetPosition
 </signature>
 SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)) により指定されたターゲットの位置を戻します。
-位置は ::ref::SetTarget 呼び出しの後にフレームが評価された場合のみ、位置は有効となります。
+位置は ::ref::SetTarget 呼び出しの後にフレームが評価された場合のみ、有効となります。

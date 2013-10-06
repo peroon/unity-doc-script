@@ -1,5 +1,5 @@
 <signature>
 targetRotation
 </signature>
-Returns the rotation of the target specified by SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)).
-The rotation is only valid when a frame has being evaluated after the ::ref::SetTarget call.
+SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)) により指定されたターゲットの回転位置を戻します。
+回転位置は ::ref::SetTarget 呼び出しの後にフレームが評価された場合のみ、有効となります。
