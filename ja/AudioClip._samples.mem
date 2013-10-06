@@ -1,10 +1,10 @@
 <signature>
 samples
 </signature>
-The length of the audio clip in samples. (RO)
+サンプルにおけるオーディオクリップの長さ。 (RO)
 CONVERTEXAMPLE
 BEGIN EX
-// Prints how many samples the attached audio source has	
+// オーディオソースにアタッチされたサンプルの数を出力
 function Start() {
     Debug.Log(audio.clip.samples);
 }
