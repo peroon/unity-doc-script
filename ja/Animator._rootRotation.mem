@@ -1,4 +1,4 @@
 <signature>
 rootRotation
 </signature>
-The root rotation, the rotation of the game object.
+ルート回転位置、すなわちゲームオブジェクトの回転位置（Rotation）。
