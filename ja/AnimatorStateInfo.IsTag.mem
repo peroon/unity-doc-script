@@ -1,4 +1,4 @@
 <signature>
 IsTag(string)
 </signature>
-Does /tag/ match the tag of the active state in the statemachine.
+/tag/ がステートマシンの有効なステートのタグと一致するかを示します。

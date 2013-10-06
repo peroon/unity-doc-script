@@ -1,4 +1,4 @@
 <signature>
 IsName(string)
 </signature>
-Does /name/ match the name of the active state in the statemachine.
+/name/ がステートマシンの有効なステートの名前と一致するかどうかを示します。
