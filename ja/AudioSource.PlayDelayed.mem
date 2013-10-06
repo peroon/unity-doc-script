@@ -1,6 +1,6 @@
 <signature>
 PlayDelayed(float)
 </signature>
-Plays the ::ref::clip with a delay specified in seconds. Users are advised to use this function instead of the old Play(delay) function that took a delay specified in samples relative to a reference rate of 44.1 kHz as an argument.
-__Note:__ This function replaces the Play(delay) function when called with the delay-argument. In that function the delay had to be specified as samples relative to a reference rate of 44100. This is inconvenient when the engine is running on a different sample rate and the source sound has an even different rate. Working with delays specified in seconds makes this independent of these.
-@param delay Delay time specified in seconds.
+::ref::clip を秒単位で指定された遅延時間で再生します。ユーザは過去の Play(delay) 関数（44.1 kHz に対する相対的なサンプルレートで指定された引数が必要であった）の代わりにこの関数を使用することを推奨します。
+__注意:__ この関数は delay 引数でコールされたとき Play(delay) 関数を置き換えます。その関数では、遅延時間は 44100 に対する相対的なサンプルレートで指定する必要がありました。これはエンジンが異なるサンプルレートで実行される場合、そしてソース音源がさらに異なる場合に不便でした。遅延時間を秒単位で指定することによりこれらの要素から独立させることが出来ます。
+@param delay 秒単位で指定された遅延時間。
