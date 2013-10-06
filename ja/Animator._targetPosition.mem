@@ -1,5 +1,5 @@
 <signature>
 targetPosition
 </signature>
-Returns the position of the target specified by SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)).
-The position is only valid when a frame has being evaluated after the ::ref::SetTarget call.
+SetTarget(AvatarTarget targetIndex, float targetNormalizedTime)) により指定されたターゲットの位置を戻します。
+位置は ::ref::SetTarget 呼び出しの後にフレームが評価された場合のみ、位置は有効となります。
