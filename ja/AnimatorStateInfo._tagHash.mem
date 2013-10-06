@@ -1,5 +1,5 @@
 <signature>
 tagHash
 </signature>
-The Tag of the State.
-The hash is generated using Animator::StringToHash.
+ステートのタグ。
+Animator::StringToHash を使用してハッシュは生成されます。
