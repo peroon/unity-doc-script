@@ -1,4 +1,4 @@
 <signature>
 runtimeAnimatorController
 </signature>
-The runtime representation of AnimatorController that controls the Animator.
+アニメータを制御するアニメータ コントローラの実行時の表現
