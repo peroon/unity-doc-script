@@ -1,5 +1,5 @@
 <signature>
 nameHash
 </signature>
-Name of the State.
-The hash is generated using Animator::StringToHash. The string to pass should include the parent layer's name.  For example, if you have a @@Run@@ state in the @@Base Layer@@ the string to generate the hash will be @@Base Layer.Run@@.
+ステートの名前。
+ハッシュは Animator::StringToHash を使用して生成されます。渡す文字列は親レイヤーの名前を含めて指定する必要があります。例えば、もし @@Run@@ ステートが @@Base@@ レイヤーにある場合、ハッシュを生成する文字列は @@Base Layer.Run@@ です。
