@@ -1,3 +1,3 @@
-Delegate called each time [[AudioClip]] changes read position.
-SA: AudioClip::ref::Create.
-@param position New position in the audio clip.
+[[AudioClip]] がデータを読み込むたびにデリゲートを呼出します。
+SA: AudioClip::ref::Create
+@param position オーディオクリップの新しい位置
