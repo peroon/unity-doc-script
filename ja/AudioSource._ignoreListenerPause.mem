@@ -1,5 +1,5 @@
 <signature>
 ignoreListenerPause
 </signature>
-Allows AudioSource to play even though AudioListener.pause is set to true. This is useful for the menu element sounds or background music in pause menus.
-This property can only be set via the script and is not serialized.
+AudioListener.pause が true にセットされているにも関わらず、オーディオソースが再生することを許可します。メニュー音声やポーズメニューでのバックグラウンドミュージックの時に便利です。
+このプロパティはスクリプト経由でのみセットすることが可能であり、シリアライズされていません。
