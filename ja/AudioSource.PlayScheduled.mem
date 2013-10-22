@@ -1,15 +1,15 @@
 <signature>
 PlayScheduled(double)
 </signature>
-Plays the ::ref::clip at a specific time on the absolute time-line that AudioSettings.dspTime reads from.
-This is the preferred way to stitch AudioClips in music players because it is independent of the frame rate and gives the audio system enough time to prepare the playback of the sound to fetch it from media where the opening and buffering takes a lot of time (streams) without causing sudden CPU spikes.
+AudioSettings.dspTime が読み込みを行なう絶対的な時間軸において ::ref::clip を再生します。
+これはオーディオクリップを連結するのに推奨される方法である。その理由はフレームレートから独立しいて、かつ、オーディオシステムにおいて突然の CPU スパイクを起こすことなく、オープニングやバッファリングに多くの時間（またはストリーム）を消費するメディアからフェッチして音声の再生を準備するだけの時間が十分となるためです。
 CONVERTEXAMPLE
 BEGIN EX
-// Basic demonstration of a music system that uses PlayScheduled to preload and sample-accurately stitch two AudioClips in an alternating fashion.
-// The code assumes that the music pieces are each 16 bars (4 beats / bar) at a tempo of 140 beats per minute.
-// To make it stitch arbitrary clips just replace the line
+// プリロードおよび二つのオーディオクリップをサンプルにて正確に交互に連結しながら PlayScheduled 関数を使用するミュージックシステムの基本的なデモ
+// このコードの前提としてミュージック曲が各々16小節（4 ビート/小節）かつ 140 ビート/秒と仮定します。
+// 任意のクリップを連結させるためには、
 //   nextEventTime += (60.0 / bpm) * numBeatsPerSegment 
-// by
+// の箇所を次の行に変更します。
 //   nextEventTime += clips[flip].length;
 
 @script RequireComponent(AudioSource)
@@ -42,21 +42,21 @@ function Update()
 	var time = AudioSettings.dspTime;
 	if(time + 1.0 > nextEventTime)
 	{
-		// We are now approx. 1 second before the time at which the sound should play, so we will schedule it now in order for the system to have enough time
-		// to prepare the playback at the specified time. This may involve opening buffering a streamed file and should therefore take any worst-case delay into account.
+		// 音声が再生されるべき時間の約 1 秒前になっているため、指定時刻に再生できるようにシステムを準備しスケジューリングする。
+		// これはストリームファイルのオープニング、バッファリングが関与する場合があるため、あらゆる最悪のケースを想定する必要がある。
 		audioSources[flip].clip = clips[flip];
 		audioSources[flip].PlayScheduled(nextEventTime);
 		Debug.Log("Scheduled source " + flip + " to start at time " + nextEventTime);
 
-		// Place the next event 16 beats from here at a rate of 140 beats per minute
+		// 次のイベントはこの時点から16ビート後として140ビート/秒とする
 		nextEventTime += (60.0 / bpm) * numBeatsPerSegment;
 
-		// Flip between two audio sources so that the loading process of one does not interfere with the one that's playing out
+		// 二つのオーディオソースの間でフリップして片方のロードのプロセスがもう片方の再生を遮らないようにする
 		flip = 1 - flip;
 	}
 }
 END EX
-The example at AudioSource::ref::SetScheduledEndTime shows how you can play two audio clips without pops or clicks between the clips.  The approach is to have two AudioSources with clips attached, and queue up each clip using its AudioSource.
+AudioSource::ref::SetScheduledEndTime のサンプルにより二つのオーディオクリップをクリップ間でポップやクリックすることなく再生する方法を指名します。必要なアプローチはクリップがアタッチされた二つのオーディオソースを持ち、オーディオソースを使用してそれぞれのクリップを並ばせることです。
 
 SA: AudioSource::pref::SetScheduledStartTime.
-@param time Time in seconds on the absolute time-line that AudioSettings.dspTime refers to for when the sound should start playing.
+@param time 秒単位で絶対的な時間軸において AudioSettings.dspTime が音声の開始時間を示す時間
