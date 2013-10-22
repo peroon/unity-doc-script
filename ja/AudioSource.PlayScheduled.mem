@@ -42,21 +42,21 @@ function Update()
 	var time = AudioSettings.dspTime;
 	if(time + 1.0 > nextEventTime)
 	{
-		// 音声が再生されるべき時間の約 1 秒前になっているため、指定時刻に再生できるようにシステムを準備しスケジューリングする。
-		// これはストリームファイルのオープニング、バッファリングが関与する場合があるため、あらゆる最悪のケースを想定する必要がある。
+		// 音声が再生されるべき時間の約 1 秒前になっているため、指定時刻に再生できるようにシステムを準備しスケジューリングします。
+		// これはストリームファイルのオープニング、バッファリングが関与する場合があるため、あらゆる最悪のケースを想定する必要があります。
 		audioSources[flip].clip = clips[flip];
 		audioSources[flip].PlayScheduled(nextEventTime);
 		Debug.Log("Scheduled source " + flip + " to start at time " + nextEventTime);
 
-		// 次のイベントはこの時点から16ビート後として140ビート/秒とする
+		// 次のイベントはこの時点から16ビート後として140ビート/秒とします
 		nextEventTime += (60.0 / bpm) * numBeatsPerSegment;
 
-		// 二つのオーディオソースの間でフリップして片方のロードのプロセスがもう片方の再生を遮らないようにする
+		// 二つのオーディオソースの間でフリップして片方のロードのプロセスがもう片方の再生を遮らないようにします
 		flip = 1 - flip;
 	}
 }
 END EX
-AudioSource::ref::SetScheduledEndTime のサンプルにより二つのオーディオクリップをクリップ間でポップやクリックすることなく再生する方法を指名します。必要なアプローチはクリップがアタッチされた二つのオーディオソースを持ち、オーディオソースを使用してそれぞれのクリップを並ばせることです。
+AudioSource::ref::SetScheduledEndTime のサンプルにより二つのオーディオクリップをクリップ間でポップやクリックすることなく再生する方法を指定します。必要なアプローチはクリップがアタッチされた二つのオーディオソースを持ち、オーディオソースを使用してそれぞれのクリップを並ばせることです。
 
 SA: AudioSource::pref::SetScheduledStartTime.
 @param time 秒単位で絶対的な時間軸において AudioSettings.dspTime が音声の開始時間を示す時間

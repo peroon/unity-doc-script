@@ -1,12 +1,12 @@
 <signature>
 SetScheduledStartTime(double)
 </signature>
-Changes the time at which a sound that has already been scheduled to play will start.
-Notice that depending on the timing not all rescheduling requests can be fulfilled.
+再生するスケジュールが確定した音声について、開始時刻を変更します。
+タイミングによっては再スケジュールのリクエストは満たされない場合があることに注意して下さい。
 
-One interesting use case for this is stinger sound effects that are initiated by game events, but that you also want to be synchronized to specific beats in music. Then this function can be used to defer the stinger until the next musical transition.
+興味深いひとつのユースケースとして、ゲームイベントにより引き起こされる高音のサウンドエフェクトでありながらミュージックの特定のビートと同期させたい場合です。この関数を使用することで高音を次の音楽における転調まで引き延ばすことが出来ます。
 
-__Note:__ In general it is better to use ::ref::PlayScheduled to cue up audio.  Only use SetScheduledStartTime if you have scheduled an audio clip to play in the future and you need to change the time at which it starts.  Calling SetScheduledStartTime will not cause an un-scheduled audio clip to play.
+__注意:__ 一般的にはオーディオを並べる場合は ::ref::PlayScheduled を使用するのが良いです。オーディオークリップを未来時刻に再生するようにスケジューリングして開始時刻を変更する必要がある場合にかぎり SetScheduledStartTime を使用して下さい。SetScheduledStartTime を呼び出しすることにより、未スケジュールのオーディオクリップが再生されることはありません。
 
 SA: AudioClip::ref::PlayScheduled.
-@param time Time in seconds.
+@param time 秒単位での時間。
