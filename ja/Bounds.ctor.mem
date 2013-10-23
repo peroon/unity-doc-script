@@ -1,10 +1,10 @@
 <signature>
 ctor(Vector3,Vector3)
 </signature>
-Creates new Bounds with a given /center/ and total /size/. Bound ::ref::extents will be half the given size.
+新しい Bounds を与えられた /center/ および総計の /size/ で作成します。Boundの ::ref::extents は与えられた size の半分となります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create pillar bounding box centered at the origin
+	// 原点に柱状のバウンディングボックスを作成します。
 
 	var bounds = Bounds (Vector3.zero, Vector3 (1, 2, 1));
 END EX
