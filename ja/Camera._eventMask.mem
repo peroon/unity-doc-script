@@ -1,11 +1,11 @@
 <signature>
 eventMask
 </signature>
-Mask to select which layers can trigger events on the camera.
-Just as the camera's /cullingMask/ determines if the camera is able to see the [[GameObject]], the event mask determines whether the [[GameObject]] is able to receive mouse events.
-Only objects visible by the camera and whose /layerMask/ overlaps with the camera's /eventMask/ will be able to receive OnMouseXXX events.
-Setting this mask to zero will improve performance and is recommended if you don't use OnMouseXXX events.
-See [[wiki:Layers|Layers]] for more information.
+カメラ上でどのレイヤーがイベントをトリガー可能とするか、のマスキングを行なう。
+ [[GameObject]] を表示可能とするか、 /cullingMask/ により決定されると同様に、イベントマスクは [[GameObject]] がマウスイベントを受け取ることが出来るか決定します。
+カメラにより表示され、かつ /layerMask/ がカメラの /eventMask/ と重なるオブジェクトのみが OnMouseXXX イベントを受け取ることが出来ます。
+マスクをゼロにセットすることでパフォーマンスが改善するため、OnMouseXXX イベントを使用しない場合の推奨設定となります。
+詳細については [[wiki:Layers|レイヤー]] を参照して下さい。
 SA: MonoBehaviour::ref::OnMouseEnter
 SA: MonoBehaviour::ref::OnMouseExit
 SA: MonoBehaviour::ref::OnMouseOver
