@@ -1,9 +1,9 @@
 <signature>
 implop_Color(Vector4)
 </signature>
-Colors can be implicitly converted to and from [[Vector4]].
+明示的に [[Vector4]] に変換（または Vector4 へと変換）できます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Convert a vector4 to a Color
+	// Vector4 を Color に変換
 	var aColor : Color = Vector4(0.5,1,0.5,1);
 END EX
