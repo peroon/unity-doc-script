@@ -1,5 +1,5 @@
 <signature>
 style
 </signature>
-The style of the character.
-Only used with characters generated at runtime for dynamic fonts).
+文字列のスタイル。
+ダイナミックフォントにて文字列が実行時に生成された場合のみ使用されます。
