@@ -1,17 +1,17 @@
 <signature>
 ViewportToWorldPoint(Vector3)
 </signature>
-Transforms /position/ from viewport space into world space.
-Viewport space is normalized and relative to the camera. The bottom-left of the camera is
-(0,0); the top-right is (1,1). The z position is in world units from the camera.
+ビューポート空間の /position/ をワールド空間に変換します。
+ビューポート空間は正規化され、カメラに対して相対座標で示されます。カメラの左下の座標は (0,0)
+であり、右上の座標は (1,1) です。 Z 位置はカメラからのワールド空間で示されます。
 
-Note that it transforms a x-y screen position, into a x-y-z position in 3D space. 
+スクリーン位置の XY を 3D 空間の XYZ 座標に変換します。
 
-You provide the function with a vector where the x-y components of the vector are the screen coordinates and the z component is the distance of the resulting plane from the camera.
+関数に引数として、 XY コンポーネントがスクリーン座標のベクトルに相当し、 Z コンポーネントが結果として出力される平面とカメラとの距離に相当します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Draw a yellow sphere at top-right corner of the near plane
-	// for the selected camera in the scene view.
+	// シーンビューの選択されたカメラについて、
+	// ニア プレーンの右上隅に黄色い球を描画
 	function OnDrawGizmosSelected () {
 		var p : Vector3 = camera.ViewportToWorldPoint (Vector3 (1,1, camera.nearClipPlane));
 		Gizmos.color = Color.yellow;
