@@ -1,7 +1,7 @@
 <signature>
 ctor(float,float,float,float)
 </signature>
-Constructs a new Color with given r,g,b,a components.
+与えられた r,g,b,a コンポーネントで新しい色を作成します。
 CONVERTEXAMPLE
 BEGIN EX
 	var color : Color = Color(0.2, 0.3, 0.4, 0.5);
@@ -9,7 +9,7 @@ END EX
 <signature>
 ctor(float,float,float)
 </signature>
-Constructs a new Color with given r,g,b components and sets /a/ to 1.
+与えられた r,g,b コンポーネントで新しい色を作成し、 /a/ に 1 をセットします。
 CONVERTEXAMPLE
 BEGIN EX
 	var color : Color = Color(0.2, 0.3, 0.4);

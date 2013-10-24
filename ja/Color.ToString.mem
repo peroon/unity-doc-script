@@ -2,7 +2,7 @@
 ToString()
 ToString(string)
 </signature>
-Returns a nicely formatted string of this color.
+指定した色の適切にフォーマットされた文字列を戻します。
 CONVERTEXAMPLE
 BEGIN EX
 	print(Color.white);
