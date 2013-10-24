@@ -1,17 +1,17 @@
-<signature>
+﻿<signature>
 SetReplacementShader(Shader,string)
 </signature>
-Make the camera render with shader replacement.
-See [[wiki:SL-ShaderReplacement|Rendering with Replaced Shaders]] page for details.
+カメラをシェーダ リプレースメントによりレンダリングを行なう。
+詳細については [[wiki:SL-ShaderReplacement|Replaced Shaders でのレンダリング]] を参照して下さい。
 
-After calling this function, camera will render its view with shader replacement. Call
-::ref::ResetReplacementShader to reset it back to normal rendering.
+この関数を呼び出しした後、カメラはシェーダ リプレースメントによりレンダリングを行ないます。
+::ref::ResetReplacementShader を呼び出しして通常のレンダリングにリセットして下さい。
 
-SA: [[wiki:SL-ShaderReplacement|Rendering with Replaced Shaders]], ::ref::ResetReplacementShader, ::ref::RenderWithShader.
+SA: [[wiki:SL-ShaderReplacement|Replaced Shaders でのレンダリング]], ::ref::ResetReplacementShader, ::ref::RenderWithShader.
 CONVERTEXAMPLE
 BEGIN EX
 	var heatVisionShader: Shader;
 
-	// Render tagged objects with a "heat vision" effect.
+	// "熱分布" 効果によりタグ付けされたオブジェクトをレンダリング
 	camera.SetReplacementShader(heatVisionShader, "VisibleWithHeatVision");
 	END EX
