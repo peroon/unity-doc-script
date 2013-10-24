@@ -1,5 +1,5 @@
-Attribute used to make a custom editor support multi-object editing.
-When multiple objects are selected, Editors that don't have this attribute will show the message "Multi-object editing not supported".
-See the [[Editor]] class documentation on how to make an Editor support multi-object editing.
+化すためエディタが複数オブジェクト編集に対応させるために使用します。
+複数オブジェクトが選択されたとき、この属性がないエディタは "Multi-object editing not supported" （複数オブジェクト編集はサポートしていません）というメッセージが表示されます。
+エディタに複数オブジェクト編集に対応させるには [[Editor]] クラスのドキュメントを参照して下さい。
 
-SA: [[Editor]] class.
+SA: [[Editor]] クラス。
