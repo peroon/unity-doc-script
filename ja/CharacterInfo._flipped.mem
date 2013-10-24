@@ -1,6 +1,6 @@
 <signature>
 flipped
 </signature>
-Is the character flipped?
-Unity may flip the U and V coordinates of characters in font textures it generates
-to make more efficient use of texture space.
+キャラクターが反転しているか？
+Unity がテクスチャ空間をより効率的に使用するため、
+文字列のフォントテクスチャの UV座標を反転する場合があります。

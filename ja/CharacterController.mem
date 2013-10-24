@@ -1,5 +1,5 @@
-A CharacterController allows you to easily do movement constrained by collisions without having to deal with a rigidbody.
-A CharacterController is not affected by forces and will only move when you call the Move funtion.
-It will then carry out the movement but be constrained by collisions.
+CharacterController によって、Rigidbody を扱うことなくコリジョンで制限された動作を容易に実現できます。
+CharacterController は Force によって影響を受けず、 Move 関数を呼び出したときのみ動作します。
+次に動作を実行しますが衝突により制限されます。
 
-SA: [[wiki:class-CharacterController|Character Controller component]] and <a href="http://www.unity3d.com/examples">Character animation examples</a>
+SA: [[wiki:class-CharacterController|Character Controller コンポーネント]] および <a href="http://www.unity3d.com/examples">キャララクターアニメーションの例</a>
