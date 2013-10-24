@@ -1,7 +1,7 @@
 <signature>
 Divide(Color,float)
 </signature>
-Divides color /a/ by the float /b/. Each color component is scaled separately.
+色 /a/ を浮動小数点 /b/ により除算します。各々の色コンポーネントは別々にスケールします。
 CONVERTEXAMPLE
 BEGIN EX
 	// white / 2 = gray

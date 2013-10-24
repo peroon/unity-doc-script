@@ -1,9 +1,9 @@
 <signature>
 Minus(Color,Color)
 </signature>
-Subtracts color /b/ from color /a/. Each component is subtracted separately.
+色 /b/ から色 /a/ を減算します。各々のコンポーネントは別々に減算します。
 CONVERTEXAMPLE
 BEGIN EX
-	// magenta - blue = red
+	// マジェンダから青を減算して赤に
 	var redColor : Color = Color.magenta - Color.blue;
 END EX
