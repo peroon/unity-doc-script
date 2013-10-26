@@ -1,2 +1,2 @@
-The detail prototype will be rendered as billboards that are always facing the camera.
-Grass will take normals from terrain directly underneath it, so that the shading matches the terrain.
+ビルボードは常にカメラの方向へ向くため詳細プロトタイプはレンダリングされます。
+草（Grass）はそのすぐ下にある地形（Terrain）から法線を取得して、地形（Terrain）とシェーディングが一致するようにします。
