@@ -1,15 +1,14 @@
 <signature>
 isDebugBuild
 </signature>
-In the Build Settings dialog there is a check box called "Development Build".
-If it is checked isDebugBuild will be true.
-In the editor /isDebugBuild/ always returns true.
-It is recommended to remove all calls to Debug.Log when deploying a game, this way you can
-easily deploy beta builds with debug prints and final builds without.
+Build Settings ダイアログには Development Build チェックボックスがあります。
+もしチェックされている場合、 isDebugBuild は true です。
+エディタで /isDebugBuild/ は常に true を戻します。
+ゲームをデプロイするとき、Debug.Log 呼び出しをすべて取り除くことを推奨します。この方法を使えば簡単にベータのビルドでデバッグ出力を残し、最終ビルドで除いてデプロイできます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Log some debug information only if this is a debug build
+	// デバッグビルドの場合のみデバッグ情報を記録します。
 	if (Debug.isDebugBuild) {
-		Debug.Log ("This is a debug build!");
+		Debug.Log ("これはデバッグビルドです!");
 	}
 END EX
