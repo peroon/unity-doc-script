@@ -1,1 +1,1 @@
-Class for handling cube maps, Use this to create or modify existing [[wiki:class-Cubemap|cube map assets]].
+Cubemap をハンドリングするクラス。これを使用して既存の [[wiki:class-Cubemap|Cube map アセット]] を作成または修正します。

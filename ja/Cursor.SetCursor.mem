@@ -1,8 +1,8 @@
 <signature>
 SetCursor(Texture2D,CursorMode)
 </signature>
-Change the mouse cursor to the set texture OnMouseEnter.
-Reset the cursor to default OnMouseExit.
+マウス カーソルをセットした OnMouseEnter テクスチャに変更します。
+カーソルをデフォルトの OnMouseExit にリセットします。
 BEGIN EX
 	var cursorTexture : Texture2D;
 	var cursorMode : CursorMode = CursorMode.Auto;
@@ -19,7 +19,7 @@ END EX
 <signature>
 SetCursor(Texture2D,Vector2,CursorMode)
 </signature>
-Specify a custom cursor that you wish to use as a cursor.
-@param texture The texture to use for the cursor.
-@param hotspot The offset from the top left of the texture to use as the target point (must be within the bounds of the cursor).
-@param cursorMode Allow this cursor to render as a hardware cursor on supported platforms, or force software cursor.
+カーソルとして使用したい カスタム カーソルをしています。
+@param texture カーソルとして使用したいテクスチャを指定します。
+@param hotspot ターゲット地点として使用するテクスチャの左上からのオフセット距離（カーソルの境界範囲にある必要があります）。
+@param cursorMode このカーソルが対応するプラットフォームでのハードウェア カーソルとしてレンダリングすることを許可するか、強制的にソフトウェア カーソルとします。
