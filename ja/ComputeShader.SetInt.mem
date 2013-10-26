@@ -1,4 +1,4 @@
 <signature>
 SetInt(string,int)
 </signature>
-Set an integer parameter.
+integer パラメータをセットします。

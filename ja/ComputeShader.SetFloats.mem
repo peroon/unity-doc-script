@@ -1,7 +1,5 @@
 <signature>
 SetFloats(string,float[])
 </signature>
-Set multiple consecutive float parameters at once.
-This function can be used to set float vector, float array or float vector array
-values. For example, float4 myArray[4] in the compute shader
-can be filled by passing 16 floats.
+複数の連続した float 引数を同時にセットします。
+この関数により float ベクトル、float 配列、または float ベクトル配列の値をセットするのに使用できます。例えば float4 myArray[4] というように Compute Shader を 16 個の float を渡して埋めることができます。
