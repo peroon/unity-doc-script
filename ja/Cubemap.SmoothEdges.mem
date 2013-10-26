@@ -2,8 +2,7 @@
 SmoothEdges()
 SmoothEdges(int)
 </signature>
-Performs smoothing of near edge regions.
-Helps to compensate lack of linear interpolation across the edges of cubemap in GPU.
-
-Usually you will want to call this function for the cubemap which is going to be used for glossy reflections.
-@param smoothRegionWidthInPixels Pixel distance at edges over which to apply smoothing.
+エッジに近い領域のスムージングを行ないます。
+GPU にて Cubemap のエッジに渡る線形補間の不足を補うのに役立ちます。
+通常はこの関数を光沢のある反射に使用される Cubemap に関数を呼び出しする使い方をします。
+@param smoothRegionWidthInPixels スムージングを適用するエッジに渡るピクセル距離。

@@ -1,21 +1,21 @@
 <signature>
 ctor(int,TextureFormat,bool)
 </signature>
-Create a new empty cubemap texture.
-The texture will be /size/ on each side and can be created with or without mipmaps.
+空の Cubemap テクスチャを生成します。
+テクスチャは各々の辺で /size/ の長さとなり、ミップマップあり/なしで生成できます。
 
-Usually you will want to set the colors of the texture after creating it, using
-::ref::SetPixel and ::ref::Apply functions.
+通常はテクスチャ作成後に ::ref::SetPixel および ::ref::Apply を用いて
+カラーをセットします。
 CONVERTEXAMPLE
 BEGIN EX
 var texture: Cubemap;
 
 function Start () {
-	// Create a new Cubemap texture.
+	// 新規の Cubemap テクスチャを作成します。
 	texture = new Cubemap (128, TextureFormat.ARGB32, false);
 }
 END EX
-SA: ::ref::SetPixel, ::ref::Apply functions.
-@param size Width/height of a cube face in pixels.
-@param format Pixel data format to be used for the Cubemap.
-@param mipmap Should mipmaps be created?
+SA: ::ref::SetPixel, ::ref::Apply 関数.
+@param size ピクセル単位での Cube 面の幅/高さ。
+@param format Cubemap で使用されるピクセルデータフォーマット。
+@param mipmap みっぴマップを作成すべきか？
