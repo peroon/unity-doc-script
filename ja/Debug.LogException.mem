@@ -1,11 +1,11 @@
 <signature>
 LogException(Exception)
 </signature>
-A variant of Debug.Log that logs an error message from an exception to the console.
+Debug.Log の派生として、例外からのエラーメッセージをコンソールに記録します。
 BEGIN EX
 	try
 	{
-		// Do something that can throw an exception
+		// 何かをして例外をスローする
 	}
 	catch (Exception e)
 	{
@@ -15,13 +15,13 @@ END EX
 <signature>
 LogException(Exception,Object)
 </signature>
-A variant of Debug.Log that logs an error message to the console.
-When you select the message in the console a connection to the context object will be drawn.
-This is very useful if you want know on which object an error occurs.
+Debug.Log の派生として、エラーメッセージをコンソールに記録します。
+コンソール上でメッセージを選択するとき、コンテキスト オブジェクトへの接続が描画されます。
+これはどのオブジェクトでエラーが発生するか知りたいときに非常に役立ちます。
 BEGIN EX
 	try
 	{
-		// Do something that can throw an exception
+		// 何かをして例外をスローする
 	}
 	catch (Exception e)
 	{

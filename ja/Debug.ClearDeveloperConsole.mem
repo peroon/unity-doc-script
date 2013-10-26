@@ -1,4 +1,4 @@
 <signature>
 ClearDeveloperConsole()
 </signature>
-Clears errors from the developer console.
+開発コンソールからエラーをクリアします。
