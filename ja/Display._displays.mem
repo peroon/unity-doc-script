@@ -1,2 +1,2 @@
-The list of currently connected Displays. Contains at least one (main) display.
-It will be automatically updated should the display be connected/disconnected.
+現在接続されているディスプレイの一覧。少なくとも一つの（メインの）ディスプレイを含みます。
+接続/切断が行なわれた場合、自動的に更新されます。
