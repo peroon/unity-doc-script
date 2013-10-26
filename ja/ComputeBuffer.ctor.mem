@@ -2,10 +2,10 @@
 ctor(int,int)
 ctor(int,int,ComputeBufferType)
 </signature>
-Create a Compute Buffer.
-Use ::ref::Release to release the buffer when no longer needed.
-@param count Number of elements in the buffer.
-@param stride Size of one element in the buffer. Has to match size of buffer type in the shader.
-@param type Type of the buffer, default is ComputeBufferType.Default.
+Compute Buffer を作成します。
+::ref::Release を使用して必要なくなったバッファをリリースします。
+@param count バッファの中の要素の数。
+@param stride バッファの中の要素のサイズ。シェーダのバッファ型のサイズと一致する必要があります。
+@param type バッファの型であり、デフォルトは ComputeBufferType.Default。
 
-SA: SystemInfo.supportsComputeShaders, [[ComputeShader]] class, Shader.SetGlobalBuffer, Material.SetBuffer, [[wiki:Compute Shaders|Compute Shaders]].
+SA: SystemInfo.supportsComputeShaders, [[ComputeShader]] クラス, Shader.SetGlobalBuffer, Material.SetBuffer, [[wiki:Compute Shaders|Compute Shaders]].
