@@ -1,6 +1,6 @@
-Tells a custom [[PropertyDrawer]] which run-time [[Serializable]] class or [[PropertyAttribute]] it's a drawer for.
-When you make a custom [[PropertyDrawer]], you need put this attribute on the drawer class.
-If the drawer is for a [[Serializable]] class, then pass the type of the class to the CustomPropertyDrawer attribute.
-If the drawer is for a [[PropertyAttribute]], then pass the type of the PropertyAttribute to the CustomPropertyDrawer attribute.
+カスタム [[PropertyDrawer]] に対して、その Drawer がどの実行時 [[Serializable]] クラスまたは [[PropertyAttribute]] のものであるかを示します。
+カスタム [[PropertyDrawer]] を作成するとき、この属性を Drawer クラスにつける必要があります。
+もし Drawer が [[Serializable]] クラスのものである場合、クラスの型を CustomPropertyDrawer に渡します。
+もし Drawer が [[PropertyAttribute]] のものである場合、PropertyAttribute の型を CustomPropertyDrawer に渡します。
 
-SA: [[PropertyDrawer]] class.
+SA: [[PropertyDrawer]] クラス。
