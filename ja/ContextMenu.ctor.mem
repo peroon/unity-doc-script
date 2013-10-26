@@ -1,26 +1,25 @@
 <signature>
 ctor(string)
 </signature>
-Adds the function to the context menu of the component.
-In the inspector of the attached script. When the user selects the context menu,
-the function will be executed.
+コンポーネントのコンテキストメニューにアタッチされたスクリプトのインスペクタに
+関数を追加します。ユーザがコンテキストメニューを選択したとき、関数が実行されます。
 
-This is most useful for automatically setting up scene data from the script.
-The function has to be non-static.
+これはスクリプトからシーンデータを自動的にセットアップするときにもっとも便利です。
+この関数は非 static である必要があります。
 BEGIN EX
-	@ContextMenu ("Do Something")
+	@ContextMenu ("Do Something（何か実行）")
 	function DoSomething () {
-		Debug.Log ("Perform operation");
+		Debug.Log ("処理を実行");
 	}
 END EX
 BEGIN EX NOCHECK
-	// C# example:
+	// C# サンプル:
 	class ContextTesting : MonoBehaviour {
-		/// Add a context menu named "Do Something" in the inspector
-		/// of the attached script.
-		[ContextMenu ("Do Something")]
+		/// アタッチされたスクリプトのインスペクタに
+		/// "Do Something" というコンテキストメニュを追加します。
+		[ContextMenu ("Do Something（何か実行）")]
 		void DoSomething () {
-			Debug.Log ("Perform operation");
+			Debug.Log ("処理を実行");
 		}
 	}
 END EX
