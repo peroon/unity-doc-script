@@ -4,27 +4,27 @@ DrawLine(Vector3,Vector3,Color)
 DrawLine(Vector3,Vector3,Color,float)
 DrawLine(Vector3,Vector3,Color,float,bool)
 </signature>
-Draws a line from the /point/ start to /end/ with color for a duration of time and with or without depth testing. If duration is 0 then the line is rendered 1 frame.
-The line will be drawn in the scene view of the editor. If gizmo drawing is enabled in the game view, the line will also be drawn there.
-Note: This is for debugging playmode only. Editor gizmos should be drawn with Gizmos.Drawline or Handles.DrawLine instead.
+開始地点 /point/ から 終了地点 /end/ まで、指定のカラー・時間・デプステストあり/なしで線を描画します。もし時間にゼロを指定した場合、線は 1 フレーム描画されます。
+線はエディタのシーンビューに描画されます。もし Gizmo 描画がゲームビューにて有効であるとき線はそちらにも描画されます。
+注意: これはデバッグの再生モードでのみ使用できます。エディタの Gizmo の場合は、代わりに Gizmos.Drawline または Handles.DrawLine を使用すべきです。
 CONVERTEXAMPLE
 BEGIN EX
-	// Frame update example: Draws a red line from the world-space origin to the point (1, 0, 0) for 1 frame.
+	// フレーム Update サンプル: 赤い線をワールド座標空間の原点から (1, 0, 0) 地点まで 1 フレーム描画します。
 	function Update () {
 		Debug.DrawLine (Vector3.zero, Vector3 (1, 0, 0), Color.red);
 	}
 END EX
 CONVERTEXAMPLE
 BEGIN EX
-	// Event callback example: Debug-draw all contact points and normals for 2 seconds.
+	// イベント コールバック サンプル: デバッグで接触地点(contact)および法線を 2 秒間描画します。
 	function OnCollisionEnter(collision : Collision) {
 		for (var contact : ContactPoint in collision.contacts) {
 			Debug.DrawLine(contact.point, contact.point + contact.normal, Color.green, 2, false);
 		}
 	}
 END EX
-@param start Point in world space where the line should start.
-@param end Point in world space where the line should end.
-@param color Color of the line.
-@param duration How long the line should be visible for.
-@param depthTest Should the line be obscured by objects closer to the camera?
+@param start ワールド座標空間における線分の開始地点。
+@param end ワールド座標空間における線分の終了地点。
+@param color 線のカラー。
+@param duration 線が表示される時間。
+@param depthTest カメラからみて、別のオブジェクトが手前にある場所で線を描画するか？
