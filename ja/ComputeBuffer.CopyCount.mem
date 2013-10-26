@@ -1,19 +1,15 @@
 <signature>
 CopyCount(ComputeBuffer,ComputeBuffer,int)
 </signature>
-Set buffer data.
-Compute buffer data can be filled from an aribrary array of value types (simple types like ints or floats;
-or struct types like Vector3 or Color).
-Read buffer data.
+バッファデータをセットします。
+Compute Buffer データは任意の値型の配列で埋められます（int や float など単純な型か、またはVector3 や Color といった構造体）。
+バッファデータを読み出しします。
 
-Reads buffer data into an aribrary array of value types (simple types like ints or floats;
-or struct types like Vector3 or Color). Note that reading data back from the buffer
-can be quite slow, as the CPU will have to wait for GPU to finish any pending operations and read
-the data back to system memory.
-Copy counter value of append/consume buffer into another buffer.
+バッファデータを任意の値型の配列に読み込みできます（int や float など単純な型か、またはVector3 や Color といった構造体）
+データをバッファから読み戻すのが遅い場合があり、それは CPU が GPU でペンディングしているオペレーションの完了を待ちデータをシステムメモリーに読み戻す必要があるためである、
+ということに留意して下さい。
+append/consume バッファの値を別のバッファにカウンタ変数をコピーします。
 
-CopyCount takes an append or consume buffer as /src/, and copies its "counter"
-value into /dst/ buffer at given byte offset.
+CopyCount は append または consume バッファを /src/ として取得し、 "counter" 値を与えられたバイトのオフセットにて /dst/ バッファへとコピーします。
 
-This is most commonly used in conjunction with Graphics.DrawProceduralIndirect,
-to render arbitrary number of primitives without reading their count back to the CPU.
+これは Graphics.DrawProceduralIndirect とともに一般的には多く使用され、CPUへとカウントを読み戻すことなく、任意の数のプリミティブをレンダリングします。
