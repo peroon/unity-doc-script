@@ -1,8 +1,8 @@
-Cursor API for setting the cursor that is used for rendering.
-Supports Hardware Cursors on OSX, Windows, Linux, and Flash falls back to software cursors on unsupported platforms.
+レンダリングに使用されるカーソルをセットするためのカーソル API。
+OSX, Windows, Linux, および Flash のハードウェアカーソルをサポートし、未対応プラットフォームではソフトウェアカーソルにフォールバックします。
 
-Textures used as cursors should be marked as such in their import settings. 
+カーソルとして使用されるテクスチャ Import Settings において、そのようにマーキングしておく必要があります。
 
-OSX Webplayer note: Due to sandboxing, Hardware Cursors can only be updated intermittently (when the cursor is moving)
-the best way to ensure correct behavior if to use OnMouseEnter and OnMouseExit to set the hardware cursors. This is not
-an issue for software cursors.
+OSX ウェブプレイヤー 注意事項: サンドボックスによりハードウェア カーソルは逐次更新しかできません（カーソルが移動しているとき）。
+正しい動作を保証するためには、 OnMouseEnter および OnMouseExit を使用してハードウェア カーソルをセットします。これは
+ソフトウェアカーソルにおいては問題となりません。
