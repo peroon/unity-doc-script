@@ -1,10 +1,10 @@
 <signature>
 current
 </signature>
-The current event that's being processed right now.
+現在処理されているイベント。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnGUI() {
-		 Debug.Log("Current detected event: " + Event.current);
+		 Debug.Log("現在検知されたイベント: " + Event.current);
 	}
 END EX

@@ -1,7 +1,7 @@
 <signature>
 GetTypeForControl(int)
 </signature>
-Get a filtered event type for a given control ID.
-This function is used to implement mouse locking and keyboard focus.  The controlID can be obtained from GUIUtilty.GetControlID ().
-SA:  EventType for the list of possible values.
-@param controlID The ID of the control you are querying from.
+与えられたコントロールID に対するフィルタリングされたイベントを取得します。
+この関数はマウスロックおよびキーボード フォーカスを実装するために使用されます。コントロールID は GUIUtilty.GetControlID () により取得できます。
+SA:  取りうる値の一覧としての EventType 
+@param controlID クエリを行なっているコントロールの ID。
