@@ -1,27 +1,27 @@
 <signature>
 Multiply(Color,Color)
 </signature>
-Multiplies two colors together. Each component is multiplied separately.
+二つのカラーを乗算します。各コンポーネントは別々に乗算されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// white * gray = gray
-	var grayColor: Color = Color.gray * Color.white;
+	// 白 * グレー = グレー
+		var grayColor: Color = Color.gray * Color.white;
 END EX
 <signature>
 Multiply(Color,float)
 </signature>
-Multiplies color /a/ by the float /b/. Each color component is scaled separately.
+カラー /a/ を 浮動小数点 /b/ と乗算します。各コンポーネントは別々にスケールされます。
 CONVERTEXAMPLE
 BEGIN EX
-	// gray * 2 = White
+	// グレー * 2 = ホワイト
 	var whiteColor: Color = Color.gray * 2;
 END EX
 <signature>
 Multiply(float,Color)
 </signature>
-Multiplies color /a/ by the float /b/. Each color component is scaled separately.
+カラー /a/ を 浮動小数点 /b/ と乗算します。各コンポーネントは別々にスケールされます。
 CONVERTEXAMPLE
 BEGIN EX
-	// 2 * gray = White
+	// 2 * グレー = ホワイト
 	var whiteColor: Color = 2 * Color.gray;
 END EX
