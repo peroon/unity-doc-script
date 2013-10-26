@@ -1,2 +1,2 @@
-Types of modifier key that can be active during a keystroke event.
-SA: [[Event]], [[wiki:GUI Scripting Guide|GUI Scripting Guide]].
+キーストローク イベントの際にアクティブにできる修飾キーの種類。
+SA: [[Event]] , [[wiki:GUI Scripting Guide|GUI スクリプティング ガイド]] 。
