@@ -1,2 +1,2 @@
-Default [[ComputeBuffer]] type.
-A simple structured buffer in DX11.
+デフォルトの [[ComputeBuffer]] 型。
+DirectX 11 の単純な構造化されたバッファ。
