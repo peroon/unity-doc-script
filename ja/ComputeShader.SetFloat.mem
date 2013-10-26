@@ -1,4 +1,4 @@
 <signature>
 SetFloat(string,float)
 </signature>
-Set a float parameter.
+float 変数をセットします。

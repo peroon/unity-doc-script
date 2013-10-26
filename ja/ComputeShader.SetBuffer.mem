@@ -1,5 +1,5 @@
 <signature>
 SetBuffer(int,string,ComputeBuffer)
 </signature>
-This function can either set an input or output compute buffer.
+この関数により入力または出力 ComputeBuffer をセットできます。
 SA: ::ref::FindKernel, [[ComputeBuffer]].
