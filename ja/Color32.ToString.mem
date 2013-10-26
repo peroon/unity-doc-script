@@ -2,7 +2,7 @@
 ToString()
 ToString(string)
 </signature>
-Returns a nicely formatted string of this color.
+このカラーを適切にフォーマットした文字列を戻します。
 CONVERTEXAMPLE
 BEGIN EX
 	var w : Color32 = Color.white;
