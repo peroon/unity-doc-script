@@ -2,7 +2,7 @@
 ctor(Type)
 ctor(Type,bool)
 </signature>
-Defines which object type the custom editor class can edit.
-SA: [[Editor]] class.
-@param inspectedType Type that this editor can edit.
-@param editorForChildClasses If true, child classes of inspectedType will also show this editor. Defaults to false.
+カスタム エディタ クラスが編集できるオブジェクト型を定義します。
+SA: [[Editor]] クラス。
+@param inspectedType このエディタが編集できる型。
+@param editorForChildClasses true の場合、inspectedType の子クラスもエディタを表示します。デフォルトは false。
