@@ -1,9 +1,8 @@
-Data buffer to hold data for compute shaders.
-[[ComputeShader]] programs often need arbitrary data to be read & written into memory buffers.
-ComputeBuffer class is exactly for that - you can create & fill them from script code,
-and use them in compute shaders or regular shaders.
+Compute Shader のためにデータを格納するデータバッファ。
+[[ComputeShader]] プログラムはメモリバッファに読み出しおよび書き込みするために任意のデータが必要となることがしばしばあります。 
+ComputeBuffer クラスはまさにそのためにあります。スクリプトコードから作成および埋め込みしたうえで Compute Shader または通常のシェーダで使用できます。
 
-Compute shaders need a fairly modern GPU and are only available when using DirectX 11 right now.
-On shader side, ComputeBuffers map to StructuredBuffer<T> and RWStructuredBuffer<T> in HLSL.
+Compute Shader は比較的最新の GPU を必要とし、現時点では DirectX 11 を使用するときのみ利用可能です。
+シェーダ側では ComputeBuffer は HLSL のいて StructuredBuffer<T> および RWStructuredBuffer<T> にマッピングします。
 
-SA: SystemInfo.supportsComputeShaders, [[ComputeShader]] class, Shader.SetGlobalBuffer, Material.SetBuffer, [[wiki:Compute Shaders|Compute Shaders]].
+SA: SystemInfo.supportsComputeShaders, [[ComputeShader]] クラス, Shader.SetGlobalBuffer, Material.SetBuffer, [[wiki:Compute Shaders|Compute Shaders]].
