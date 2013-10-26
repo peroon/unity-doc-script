@@ -1,5 +1,5 @@
 <signature>
 GetData(Array)
 </signature>
-Read data values from the buffer into an array.
-@param data An array to receive the data.
+バッファからデータの値を配列へと読み出します。
+@param data データを受け取るための配列。
