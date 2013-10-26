@@ -1,7 +1,6 @@
 <signature>
 Dispatch(int,int,int,int)
 </signature>
-Execute a compute shader.
-This functions "runs" the compute shader, with the given work size as
-indicated by threadsX, threadsY, threadsZ parameters.
+Compute Shader を実行します。
+この関数は Compute Shader を実行し、ワーク サイズは threadsX, threadsY, threadsZ 引数 により示します。
 SA: ::ref::FindKernel, [[wiki:Compute Shaders|Compute Shaders]].
