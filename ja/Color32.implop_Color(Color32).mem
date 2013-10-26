@@ -1,7 +1,7 @@
 <signature>
 implop_Color(Color32)
 </signature>
-Color32 can be implicitly converted to and from [[Color]].
+Color32 を明示的に [[Color]] に変換（または Color へと変換）出来ます。
 CONVERTEXAMPLE
 BEGIN EX
 	// Convert a Color32 to a Color
