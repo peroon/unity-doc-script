@@ -1,4 +1,4 @@
 <signature>
 count
 </signature>
-Number of elements in the buffer (RO).
+バッファの要素の数（読み取り専用）。

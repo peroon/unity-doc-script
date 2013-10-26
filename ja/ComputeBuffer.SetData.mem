@@ -1,5 +1,5 @@
 <signature>
 SetData(Array)
 </signature>
-Set the buffer with values from an array.
-@param data Array of values to fill the buffer.
+配列から値をバッファへとセットします。
+@param data バッファを埋めるための値の配列。
