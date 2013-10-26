@@ -1,17 +1,17 @@
-Makes a script execute in edit mode.
-By default, script components are only executed in play mode.
-By adding this attribute, each script component will also have its callback functions executed while the Editor is not in playmode.
+スクリプトを Edit モードで実行します。
+デフォルトでは、スクリプトコンポーネントは Play モードでのみ実行されます。
+この属性を追加することで各々のスクリプトコンポーネントはエディタが Play モードでないときにコールバック関数が実行されます。
 
-The functions are not called constantly like they are in play mode.\\
-- [[MonoBehaviour.Update|Update]] is only called when something in the scene changed.\\
-- [[MonoBehaviour.OnGUI|OnGUI]] is called when the Game View recieves an [[Event]].\\
-- [[MonoBehaviour.OnRenderObject|OnRenderObject]] and the other rendering callback functions are called on every repaint of the Scene View or Game View.
+関数は Play モードと異なり継続的に呼び出しされません。\\
+- [[MonoBehaviour.Update|Update]] はシーンの何かが変更されたときのみ呼び出しされます。\\
+- [[MonoBehaviour.OnGUI|OnGUI]] はゲームビューが [[Event]] を受け取った時のみ呼び出しされます。\\
+- [[MonoBehaviour.OnRenderObject|OnRenderObject]] および他のレンダリング コールバック関数はシーンビューまたはゲームビューの再描画の都度、呼び出しされます。
 CONVERTEXAMPLE
 BEGIN EX
-// Make the script also execute in edit mode.
+// スクリプトが Edit モードでも実行されるようにします。
 @script ExecuteInEditMode()
 
-// Just a simple script that looks at the target transform.
+// target の Transform を LookAt する簡単なスクリプト
 var target : Transform;
 function Update () {
 	if (target)
