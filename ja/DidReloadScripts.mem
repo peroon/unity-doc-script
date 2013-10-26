@@ -1,1 +1,1 @@
-Add this attribute to a method to get a notification after scripts have been reloaded.
+この属性をメソッドに追加することでスクリプトがリロード後に通知が出るようにします。
