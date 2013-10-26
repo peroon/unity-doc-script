@@ -1,22 +1,22 @@
 <signature>
 ctor(GizmoType)
 </signature>
-Defines when the gizmo should be invoked for drawing.
+Gizmo が描画を実行するタイミングを定義します。
 SA: [[GizmoType]].
 BEGIN EX
-	/// The RenderLightGizmo function will be called if the light is not selected.
-	/// The gizmo is drawn when picking.
+	/// RenderLightGizmo 関数はライトが選択されてない場合に呼び出しされます。
+	/// 選択したとき Gizmo は描画されます。
 
 	@DrawGizmo (GizmoType.NotSelected | GizmoType.Pickable)
 	static function RenderLightGizmo (light : Light, gizmoType : GizmoType) {
 	    var position = light.transform.position;
-	    // Draw the light icon
-	    // (A bit above the one drawn by the builtin light gizmo renderer)
+	    // ライト アイコンを描画
+	    // (場所はビルトインのライト Gizmo レンダラによる描画の少し上に)
 	    Gizmos.DrawIcon (position + Vector3.up, "Light Gizmo.tiff");
 
-	    // Are we selected? Draw a solid sphere surrounding the light
+	    // 選択されているか？ライトを囲う球状の実線を描画
 	    if ((gizmoType & GizmoType.SelectedOrChild) != 0) {
-	        // Indicate that this is the active object by using a brighter color.
+	        // 明るいカラーによりアクティブ オブジェクトであることを示します
 	        if ((gizmoType & GizmoType.Active) != 0)
 	            Gizmos.color = Color.red;
 	        else
@@ -26,19 +26,19 @@ BEGIN EX
 	}
 
 	/*
-	// Draw the gizmo if it is selected or a child of the selection.
-	// This is the most common way to render a gizmo
+	// 選択されているかセレクションの子である場合、 Gizmo を描画します。
+	// これが Gizmo をレンダリングする最も一般な名方法です。
 	@DrawGizmo (GizmoType.SelectedOrChild)
 
-	// Draw the gizmo only if it is the active object.
+	// アクティブ オブジェクトである場合のみ Gizmo を描画します。
 	@DrawGizmo (GizmoType.Active)]
 	*/
 END EX
-@param gizmo Flags to denote when the gizmo should be drawn.
+@param gizmo Gizmo がいつ描画すべきか示すフラグ
 <signature>
 ctor(GizmoType,Type)
 </signature>
-Same as above. /drawnGizmoType/ determines of what type the object we are drawing the gizmo of has to be.
-If drawnGizmoType is null, the type will be determined from the first parameter of the draw gizmo method.
-@param gizmo Flags to denote when the gizmo should be drawn.
-@param drawnGizmoType Type of object for which the gizmo should be drawn.
+上記と同じ。 /drawnGizmoType/ は Gizmo を描画するオブジェクトがどの型とする必要があるか決定します。
+もし drawnGizmoType が null である場合、型は DrawGizmo メソッドの最初のパラメータにより決定されます。
+@param gizmo Gizmo がいつ描画すべきか示すフラグ
+@param drawnGizmoType Gizmo を描画するオブジェクトがどの型であるか
