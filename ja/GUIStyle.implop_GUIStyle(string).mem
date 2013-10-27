@@ -1,4 +1,4 @@
 <signature>
 implop_GUIStyle(string)
 </signature>
-Get a named GUI style from the current skin.
+現在のスキンから名前付きの GUI スタイルを取得します。

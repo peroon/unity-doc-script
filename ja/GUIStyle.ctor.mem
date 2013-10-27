@@ -1,8 +1,8 @@
 <signature>
 ctor()
 </signature>
-Constructor for empty GUIStyle.
+空の GUIStyle のコンストラクタ。
 <signature>
 ctor(GUIStyle)
 </signature>
-Constructs GUIStyle identical to given other GUIStyle.
+与えられた 別の GUIStyle と同等の GUIStyle を作成します。
