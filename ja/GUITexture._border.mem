@@ -1,5 +1,5 @@
 <signature>
 border
 </signature>
-The border defines the number of pixels from the edge that are not affected by scale.
+border によりスケールによって影響を受けないエッジからのピクセル数を定義します。
 SA: [[RectOffset]], [[wiki:class-GuiTexture|GUI texture component]].

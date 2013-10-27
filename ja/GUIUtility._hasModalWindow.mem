@@ -1,4 +1,4 @@
 <signature>
 hasModalWindow
 </signature>
-A global property, which is true if a ModalWindow is being displayed, false otherwise.
+ModalWindow が表示されてる場合に true 、そうでない場合は false となるグローバル プロパティです。
