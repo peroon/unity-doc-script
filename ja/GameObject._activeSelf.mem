@@ -1,11 +1,11 @@
 <signature>
 activeSelf
 </signature>
+このゲームオブジェクトのローカル アクティブのステート。
+これによりゲームオブジェクトのローカル アクティブのステートが戻り値となり、値をセットする場合は [[GameObject.SetActive]] を使用します。
 The local active state of this GameObject.
-This returns the local active state of this GameObject, which is set using [[GameObject.SetActive]].
-Note that a GameObject may be inactive because a parent is not active, even if this returns true. This 
-state will then be used once all parents are active. Use
-[[GameObject.activeInHierarchy]] if you want to check if the GameObject is actually treated as
-active in the scene.
+この結果が true であったとしても、ゲームオブジェクトの親オブジェクトが無効であるために無効となる場合があることに留意して下さい。このステートは次に全ての親オブジェクトが有効化されたときに使用されます。もし
+ゲームオブジェクトがシーンで有効として扱われるかチェックしたい場合は [[GameObject.activeInHierarchy]] 
+を使用して下さい。
 
 SA: [[GameObject.SetActive]], [[GameObject.activeInHierarchy]].
