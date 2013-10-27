@@ -3,18 +3,15 @@ RequestCharactersInTexture(string)
 RequestCharactersInTexture(string,int)
 RequestCharactersInTexture(string,int,FontStyle)
 </signature>
-Request characters to be added to the font texture (dynamic fonts only).
-Note: You should only ever need to use this when you want to implement your own text rendering.
-Call this function to request Unity to make sure all the characters in the string /characters/ are available
-in the font's font texture (and it's /characterInfo/ property). This is useful when you want to implement your
-own code to render dynamic fonts. You can supply a custom font size and style for the characters. If /size/ is zero
-(the default), it will use the default size for that font.
+フォント テクスチャに文字を追加するリクエストをする（ダイナミックフォントのみ）。
+注意: これが必要となる唯一のケースはカスタムのテキスト レンダリングを実装したいときです。
+文字列 /characters/ の文字がフォントの フォントテクスチャ（および /charecterInfo/ プロパティにて）全て利用可能であると確認することを Unity にリクエストするため、この関数を呼び出しします。これはカスタムのコードで
+ダイナミックフォントをレンダリングすることを実装する場合に便利です。文字に対してカスタムのフォントサイズおよびスタイルを提供できます。もし /size/ がゼロの場合、
+フォントのデフォルト サイズを使用します。
 
-RequestCharactersInTexture may cause the font texture to be regenerated if it does not have space to add all the
-requested characters. If the font texture is regenerated it will only contain characters which have been used
-using Font.RequestCharactersInTexture, or using Unity's text rendering functions during the last frame. So
-it is advisable to always call RequestCharactersInTexture for any text on the screen you wish to render using
-custom font rendering functions, even if the characters are currently present in the texture, to make sure they
-don't get purged during texture rebuild.
+RequestCharactersInTexture により、リクエストされた文字の全てを追加するスペースがない場合フォントテクスチャを再作成する原因となる場合があります。
+もしフォントテクスチャを再作成さた場合、 Font.RequestCharactersInTexture を使用するときに使用された文字、または最後のフレームで Unity のテキスト レンダリング関数により使用された文字、のみを含みます。このため
+カスタムのフォントレンダリング関数を使用させてスクリーンの任意のテキストをレンダリングしたい場合、 たとえ文字がテクスチャで現在存在していたとしても
+RequestCharactersInTexture 関数を常に呼び出して、テクスチャが再作成時にパージされないようにすることを推奨します。
 
 SA: ::ref::FontTextureRebuildCallback, ::ref::GetCharacterInfo.

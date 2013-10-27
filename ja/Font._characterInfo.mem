@@ -1,8 +1,8 @@
 <signature>
 characterInfo
 </signature>
-Access an array of all characters contained in the font texture.
-You can read this if you want to render the font texture using custom generated Meshes, or you can set it when you want to
-build your own custom font assets from scripts (or modify existing ones).
+フォントテクスチャに含まれる全ての文字の配列にアクセスします。
+カスタム生成したメッシュを使用したフォントテクスチャをレンダリングしたい場合に読み出しするか、
+カスタムのフォントアセットをスクリプトから生成する（または既存のものを修正する）場合にセットできます。
 
 SA: ::ref::GetCharacterInfo.
