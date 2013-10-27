@@ -1,24 +1,24 @@
 <signature>
 ctor()
 </signature>
-Constructor for GUIContent in all shapes and sizes.
-Build an empty GUIContent.
+全ての形状、サイズでの GUIContent のコンストラクタ。
+空の GUIContent をビルドします。
 <signature>
 ctor(string)
 </signature>
-Build a GUIContent object containing only text.
-When using the GUI, you don't need to create GUIContents for simple text strings - these two lines of code are functionally equivalent:
+テキストのみ含む GUIContent をビルドします。
+GUI を使用するとき、単純なテキスト文字列のために GUIContent を作成する必要がありません - 次の二つのコードは機能的に同等です:
 CONVERTEXAMPLE
 BEGIN EX
 	function OnGUI () {
-		GUI.Button (Rect (0, 0, 100, 20), "Click Me");
-		GUI.Button (Rect (0, 30, 100, 20), GUIContent ("Click Me"));
+		GUI.Button (Rect (0, 0, 100, 20), "クリックして下さい");
+		GUI.Button (Rect (0, 30, 100, 20), GUIContent ("クリックして下さい"));
 	}
 END EX
 <signature>
 ctor(Texture)
 </signature>
-Build a GUIContent object containing only an image.
+画像イメージのみ含む GUIContent をビルドします。
 CONVERTEXAMPLE
 BEGIN EX
 	var icon : Texture;
@@ -30,37 +30,37 @@ END EX
 <signature>
 ctor(string,Texture)
 </signature>
-Build a GUIContent object containing both /text/ and an image.
+/text/ および画像イメージの両方を含む GUIContent をビルドします。
 CONVERTEXAMPLE
 BEGIN EX
 	var icon : Texture;
 
 	function OnGUI () {
-		GUI.Button (Rect (0,0,100,20), GUIContent ("Click me", icon));
+		GUI.Button (Rect (0,0,100,20), GUIContent ("クリックして下さい", icon));
 	}
 END EX
 <signature>
 ctor(string,string)
 </signature>
-Build a GUIContent containing some /text/. When the user hovers the mouse over it, the global GUI::ref::tooltip is set to the /tooltip/.
+/text/ を含む GUIContent をビルドします。ユーザがその上にマウスオーバーすると、グローバルの GUI::ref::tooltip が /tooltip/ にセットされます。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnGUI () {
-		GUI.Button (Rect (0, 0, 100, 20), GUIContent ("Click me", "This is the tooltip"));
+		GUI.Button (Rect (0, 0, 100, 20), GUIContent ("クリックして下さい", "This is the tooltip"));
 		
-		// If the user hovers the mouse over the button, the global tooltip gets set
+		// ユーザがその上にマウスオーバーすると、グローバルの tooltip がセットされます。
 		GUI.Label (Rect (0, 40, 100, 40), GUI.tooltip);
 	}
 END EX
 <signature>
 ctor(Texture,string)
 </signature>
-Build a GUIContent containing an image. When the user hovers the mouse over it, the global GUI::ref::tooltip is set to the /tooltip/.
+画像イメージを含む GUIContent をビルドします。ユーザがその上にマウスオーバーすると、グローバルの GUI::ref::tooltip が /tooltip/ にセットされます。
 <signature>
 ctor(string,Texture,string)
 </signature>
-Build a GUIContent that contains both /text/, an /image/ and has a /tooltip/ defined. When the user hovers the mouse over it, the global GUI::ref::tooltip is set to the /tooltip/.
+/text/ および /image/ の両方を含み、 /tooltip/ が定義された GUIContent をビルドします。ユーザがその上にマウスオーバーすると、グローバルの GUI::ref::tooltip が /tooltip/ にセットされます。
 <signature>
 ctor(GUIContent)
 </signature>
-Build a GUIContent as a copy of another GUIContent.
+GUIContent を別の GUIContent のコピーとしてビルドします。
