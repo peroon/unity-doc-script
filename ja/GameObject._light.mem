@@ -1,7 +1,7 @@
 <signature>
 light
 </signature>
-The [[Light]] attached to this GameObject (RO). (null if there is none attached).
+ゲームオブジェクトにアタッチされた [[Light]] （読み取り専用）。（何もアタッチされてない場合は null）
 CONVERTEXAMPLE
 BEGIN EX
 	var other : GameObject; 
