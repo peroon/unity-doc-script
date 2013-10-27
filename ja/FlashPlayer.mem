@@ -1,2 +1,2 @@
-Runtime FlashPlayer support.
-When targetting the Flash Player, this class can be used to perform runtime Flash specific features.
+ランタイム時 FlashPlayer のサポート。
+Flash Player をターゲットとするとき、このクラスを使用して実行時 Flash 特有の機能を実行することができます。
