@@ -1,7 +1,7 @@
 <signature>
 animation
 </signature>
-The [[Animation]] attached to this GameObject (RO). (null if there is none attached).
+ゲームオブジェクトにアタッチされた [[Animation]] （読み取り専用）。（もしアタッチされてない場合は null）
 CONVERTEXAMPLE
 BEGIN EX
 	var other : GameObject; 

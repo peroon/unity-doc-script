@@ -1,15 +1,15 @@
 <signature>
 SetActive(bool)
 </signature>
-Activates/Deactivates the GameObject.
-Note that a GameObject may be inactive because a parent is not active. In that case,
-calling SetActive() will not activate it, but only set the local state of the GameObject, which
-can be checked using [[GameObject.activeSelf]]. This state will then be used once all parents are
-active.
+ゲームオブジェクトを有効化/無効化します。
+ゲームオブジェクトの親オブジェクトが無効であるために無効となる場合があることに留意して下さい。その場合、
+SetActive() を呼び出ししても有効化されず、ゲームオブジェクトのローカルなステートがセットされ、
+それは [[GameObject.activeSelf]] を使用することでチェックできます。このステートは次に全ての親オブジェクトが有効化されたときに
+使用されます。
 
 SA: [[GameObject.activeSelf]], [[GameObject.activeInHierarchy]].
 CONVERTEXAMPLE
 BEGIN EX
-	// Deactivates the game object.
+	// ゲームオブジェクトを無効化します。
 	gameObject.SetActive (false);
 END EX
