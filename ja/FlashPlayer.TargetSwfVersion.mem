@@ -1,7 +1,7 @@
 <signature>
 TargetSwfVersion
 </signature>
-Get a string representing the version of the SWF which the current project has been compiled against.
+現在のプロジェクトがコンパイルすべき SWF バージョンを文字列で取得します。
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;
