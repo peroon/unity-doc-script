@@ -1,2 +1,2 @@
-The Fixed joint groups together 2 rigidbodies, making them stick together in their bound position.
-SA: [[CharacterJoint]], [[HingeJoint]], [[SpringJoint]], [[ConfigurableJoint]].
+固定ジョイント(Fixed joint) は二つの Rigidbody をグループ化して固定された範囲の位置で繋ぎます。
+SA: [[CharacterJoint]], [[HingeJoint]], [[SpringJoint]], [[ConfigurableJoint]] 

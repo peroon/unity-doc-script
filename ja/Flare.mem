@@ -1,12 +1,12 @@
-A flare asset. Read more about flares in the [[wiki:class-Flare|components reference]].
-The flare class has no properties. It needs to be [[wiki:class-Flare|setup]] up in the inspector.
-You can reference flares and assign them to a [[Light]] at runtime.
+フレア アセット。フレアについては [[wiki:class-Flare|components reference]] を参照して下さい。
+フレア クラスにはプロパティがありません。インスペクタ上で [[wiki:class-Flare|セットアップ]] する必要があります。
+実行時にフレアを参照して [[Light]] に割り当てることが出来ます。
 CONVERTEXAMPLE
 BEGIN EX
-// Expose a reference to a flare in the inspector
+// インスペクタ上でフレアへの参照を公開します。
 var newFlare : Flare;
 
-// Assign the flare
+// フレアを割り当てます。
 light.flare = newFlare;
 END EX
-SA: [[wiki:class-Flare|Flare assets]], [[LensFlare]] class.
+SA: [[wiki:class-Flare|Flare assets]], [[LensFlare]] クラス。
