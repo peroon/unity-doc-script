@@ -1,7 +1,7 @@
 <signature>
 camera
 </signature>
-The [[Camera]] attached to this GameObject (RO). (null if there is none attached).
+ゲームオブジェクトにアタッチされた [[Camera]] （読み取り専用）。（何もアタッチされてない場合は null）
 CONVERTEXAMPLE
 BEGIN EX
 	var other : GameObject; 
