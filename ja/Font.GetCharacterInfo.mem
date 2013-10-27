@@ -3,10 +3,10 @@ GetCharacterInfo(char,characterInfo)
 GetCharacterInfo(char,characterInfo,int)
 GetCharacterInfo(char,characterInfo,int,FontStyle)
 </signature>
-Get rendering info for a specific character.
-Note: You should only ever need to use this when you want to implement your own text rendering.
-If the character /ch/ with the specified /size/ and /style/ is present in the font texture, then this method will
-return true, and info will contain the texture placement information for that character. If the character is not
-present, this method returns false. If /size/ is zero, it will use the default size for the font.
+特定の文字のレンダリング情報を取得します。
+注意: これが必要となる唯一のケースはカスタムのテキスト レンダリングを実装したいときです。
+文字 /ch/ を指定した /size/ および /style/ がフォント テクスチャに存在するとき、このメソッドは
+true を戻り値として、情報のなかにその文字のテクスチャ プレースメント情報が含まれます。もし文字が存在しないとき
+メソッドは false を戻り値とします。もし /size/ がゼロの場合、フォントのデフォルト サイズを使用します。
 
 SA: ::ref::characterInfo.

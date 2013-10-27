@@ -1,1 +1,1 @@
-Delegate used for Font.textureRebuildCallback.
+Font.textureRebuildCallback で使用されるデリゲート。
