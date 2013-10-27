@@ -1,4 +1,3 @@
-Editor only API that specifies if a game object is static.
-Returns true if any of the static flags are set (SA: GameObjectUtility.SetStaticEditorFlags).
-
-setting this to true sets all the static flags (SA: GameObjectUtility.SetStaticEditorFlags).
+ゲームオブジェクトが static であるか示すエディタ専用の API。
+もし static フラグのどれかがセットされている場合に true (SA: GameObjectUtility.SetStaticEditorFlags).
+これを true にセットすることで全ての static フラグがセットされます。 (SA: GameObjectUtility.SetStaticEditorFlags).
