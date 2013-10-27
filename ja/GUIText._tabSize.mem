@@ -1,5 +1,5 @@
-The tab width multiplier.
-This is multiplied with the tab width defined in the font.
+タブ幅の係数。
+フォントで定義されたタブ幅に乗算します。
 CONVERTEXAMPLE
 BEGIN EX
 	guiText.tabSize = 4.0;
