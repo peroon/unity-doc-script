@@ -1,5 +1,5 @@
 <signature>
 textureRebuildCallback
 </signature>
-Set a function to be called when the dynamic font texture is rebuilt.
-This lets you set a delegate function to be called when the dynamic font texture is rebuilt. This will happen when new characters added to the font no longer fit into the texture. The font texture will then be rebuilt to fit all needed characters. If you use custom meshes to render characters from the font, you will need to use the textureRebuildCallback to regenerate such meshes, as previous UV coordinates from the Font will no longer be valid.
+ダイナミックフォント テクスチャが再作成された時に関数が呼び出しされるようにセットします。
+これによりダイナミックフォント テクスチャが再作成された時にデリゲート関数が呼び出しされるようにセットできます。これはフォントに追加した新しい文字がテクスチャに入りきらない場合に発生します。フォントテクスチャは全ての必要な文字が入るように再作成されます。ふもしカスタムメッシュを使用してフォントから文字をレンダリングする場合、 フォントの以前の UV 座標はもはや有効でなくなるため textureRebuildCallback を使用して、そのようなメッシュを再作成します。
