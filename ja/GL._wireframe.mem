@@ -1,16 +1,15 @@
 <signature>
 wireframe
 </signature>
-Should rendering be done in wireframe?
-Turning on wireframe mode will affect all objects rendered after the call, until you turn
-wireframe back off. In the Unity editor, wireframe mode is always turned off
-before repainting any window.
+ワイヤフレームでレンダリングすべきか？
+ワイヤフレーム モードを有効にすることで、再び無効にするまでの間、呼び出しの後にレンダリングされる全てのオブジェクトに
+影響があります。Unity エディタでは、ワイヤフレームモードは、ウィンドウの再描画前に、常に
+無効にされます。
 
-Note that some platforms, for example mobile (OpenGL ES) and Flash (Stage3D) do not support
-wireframe rendering.
+いくつかのプラットフォーム、例えばモバイル (OpenGL ES) および Flash (Stage3D) ではワイヤフレーム レンダリングをサポートしないことに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// Attach this script to a camera, this will make it render in wireframe
+	// このスクリプトをカメラにアタッチするとワイヤフレームでレンダリングします。
 	function OnPreRender() {
 		GL.wireframe = true;
 	}
