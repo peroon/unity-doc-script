@@ -1,9 +1,9 @@
 <signature>
 tag
 </signature>
-The tag of this game object.
-A tag can be used to identify a game object.
-Tags must be declared in the tag manager before using them.
+このゲームオブジェクトのタグ
+タグはゲームオブジェクトの識別に使用できます。
+タグは使用する前に Tag Manager で宣言する必要があります。
 CONVERTEXAMPLE
 BEGIN EX
 	gameObject.tag = "Player";

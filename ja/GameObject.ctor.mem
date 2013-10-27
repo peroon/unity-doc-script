@@ -1,12 +1,12 @@
 <signature>
 ctor(string)
 </signature>
-Creates a new game object, named __name__.
-A [[Transform]] is always added to the game object.
+新規のゲームオブジェクトを __name__ という名前で作成します。
+ゲームオブジェクトに [[Transform]] が必須で追加されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates a game object named "Player" and 
-	// adds a rigidbody and box collider to it.
+	// Player という名前のゲームオブジェクトを作成し、
+	// Rigidbody および Box Collider を追加します。
 	var player : GameObject;
 	player = new GameObject ("Player");
 	player.AddComponent ("Rigidbody");
@@ -15,12 +15,12 @@ END EX
 <signature>
 ctor()
 </signature>
-Creates a new game object.
-A [[Transform]] is always added to the game object.
+新規のゲームオブジェクトを作成します。
+ゲームオブジェクトに [[Transform]] が必須で追加されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates a game object with no name and
-	// adds a rigidbody and box collider to it.
+	// 名前なしのゲームオブジェクトを作成し、
+	// Rigidbody および Box Collider を追加します。
 	var player : GameObject;
 	player = new GameObject ();
 	player.AddComponent ("Rigidbody");
@@ -29,4 +29,4 @@ END EX
 <signature>
 ctor(string,Type[])
 </signature>
-Creates a game object and attaches the specified components.
+ゲームオブジェクトを作成し、指定されたコンポーネントをアタッチします。
