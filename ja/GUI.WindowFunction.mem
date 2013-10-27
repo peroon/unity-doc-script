@@ -1,2 +1,2 @@
-Callback to draw GUI within a window (used with [[GUI.Window]]).
-This function takes the ID number of the window to be drawn. Its body should contains GUI calls to display the window, much like a standard OnGUI function. This function can then be passed as a parameter to [[GUI.Window]] to draw the appropriate contents.
+ウィンドウ内に GUI を描画するコールバック（ [[GUI.Window]] と共に使用されます）。
+この関数は描画すべきウィンドウの ID 番号を使用します。このボディにはウィンドウを表示するための GUI 呼び出しを含み、標準の OnGUI 関数に似ています。その後、この関数は [[GUI.Window]] に渡して適切なコンテンツを描画できます。
