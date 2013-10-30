@@ -1,6 +1,6 @@
 <signature>
 ctor(Color,float)
 </signature>
-Gradient color key.
-@param color Color of key.
-@param time Time of the key (0 - 1).
+グラデーション（Gradient）カラーキー。
+@param color キーのカラー。
+@param time キーにおける時間（値は 0 - 1 の範囲）。
