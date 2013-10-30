@@ -1,4 +1,4 @@
 <signature>
 use32BitDisplayBuffer
 </signature>
-Determines whether or not a 32-bit display buffer will be used.
+32 ビットディスプレイが使用されるかどうか決定します。

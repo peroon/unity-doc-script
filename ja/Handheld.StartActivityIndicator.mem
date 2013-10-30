@@ -1,10 +1,10 @@
 <signature>
 StartActivityIndicator()
 </signature>
-Starts os activity indicator.
-Please be warned that this informs os ui system to start.
-For actual animation to take effect you usually need to wait till the end of this frame.
-So if you want activity indicator to be animated during synced operation, please use coroutines.
+OS アクティブ インジケータを開始します。
+OS の UI システムに対して開始が通知されることに留意して下さい。
+実際のアニメーションの効果を得るためには一般的には当該フレームの終わりまで待機する必要があります。
+このためもしアクティブ インジケータが同期処理の際にアニメーションさせる必要がある場合はコルーチンを使用して下さい。
 BEGIN EX
 	IEnumerator Load()
     {
@@ -21,7 +21,7 @@ BEGIN EX
 
     void OnGUI()
     {
-       if( GUI.Button(new Rect(10, 10, 200, 200), "Load!") )
+       if( GUI.Button(new Rect(10, 10, 200, 200), "ロード!") )
             StartCoroutine(Load());
     }
 END EX
