@@ -1,5 +1,5 @@
 <signature>
 Evaluate(float)
 </signature>
-Calculate color at a given time.
-@param time Time of the key (0 - 1).
+与えられた時間におけるカラーを算出する。
+@param time キーの時間（値は 0 -1 の範囲）。

@@ -1,5 +1,5 @@
 <signature>
 ctor()
 </signature>
-Create a new Gradient object.
-The Gradient's keys can be manipulated using its ::ref::SetKeys function.
+グラデーション（Gradient）オブジェクトを作成します。
+グラデーションのキーは ::ref::SetKeys 関数により値を操作できます。
