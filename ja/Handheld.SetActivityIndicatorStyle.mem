@@ -1,6 +1,6 @@
-<signature>
+﻿<signature>
 SetActivityIndicatorStyle(iOSActivityIndicatorStyle)
 SetActivityIndicatorStyle(AndroidActivityIndicatorStyle)
 </signature>
-Sets the desired activity indicator style.
-Note that the change will take effect on next call to StartActivityIndicator.
+希望するアクティブティ インジケータ スタイルをセットします。
+この変更は StartActivityIndicator 関数への次の呼び出し時に反映されることに留意して下さい。

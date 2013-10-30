@@ -1,5 +1,5 @@
 <signature>
 GetActivityIndicatorStyle()
 </signature>
-Gets the current activity indicator style.
-See [[iOSActivityIndicatorStyle]] and [[AndroidActivityIndicatorStyle]] for the set of style options available.
+現在のアクティビティ インジケータ スタイルを取得します。
+利用可能なスタイルオプションの組み合わせについては [[iOSActivityIndicatorStyle]] および [[AndroidActivityIndicatorStyle]] を参照して下さい。
