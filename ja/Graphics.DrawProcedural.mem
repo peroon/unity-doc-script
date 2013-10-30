@@ -2,9 +2,8 @@
 DrawProcedural(MeshTopology,int)
 DrawProcedural(MeshTopology,int,int)
 </signature>
-Draws a fully procedural geometry on the GPU.
-DrawProcedural does a draw call on the GPU, without any vertex or index buffers.
-This is only useful on DirectX 11 level hardware where shaders can read
-arbitrary data from [[ComputeBuffer]] buffers.
+完全にプロシージャルな物体を GPU に描画します。
+DrawProcedural 関数により頂点またはインデックスバッファなしに GPU にドローコールが行なわれます。
+これはシェーダが [[ComputeBuffer]] バッファから任意のデータを読み込みできる DirectX 11 レベルのハードウェアでのみ役に立ちます。
 
 SA: Graphics.DrawProceduralIndirect, SystemInfo.supportsInstancing.

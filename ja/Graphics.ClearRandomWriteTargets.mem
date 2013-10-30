@@ -1,5 +1,5 @@
 <signature>
 ClearRandomWriteTargets()
 </signature>
-Clear random write targets for DX11 pixel shaders.
-This function clears any "random write" targets that were previously set with ::ref::SetRandomWriteTarget.
+DirectX 11 ピクセルシェーダの書き込みターゲットをクリアします。
+この関数は ::ref::SetRandomWriteTarget 関数によりセットされた任意のランダム書き込みターゲットをクリアします。
