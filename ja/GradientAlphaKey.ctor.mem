@@ -1,6 +1,6 @@
 <signature>
 ctor(float,float)
 </signature>
-Gradient alpha key.
-@param alpha Alpha of key (0 - 1).
-@param time Time of the key (0 - 1).
+グラデーション アルファキー。
+@param alpha キーのアルファ（値は 0 - 1 の範囲）。
+@param time キーにおける時間（値は 0 - 1 の範囲）。
