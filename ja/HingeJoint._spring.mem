@@ -1,16 +1,16 @@
-The spring attempts to reach a target angle by adding spring and damping forces.
-The /spring.spring/ force attempts to reach the target angle. A larger value makes the spring reach the target position faster.
+スプリング（Spring）はスプリングおよびダンパー（スプリングの減少）のフォースによりターゲット角度に到達しようとします。
+/spring.spring/ フォースによりターゲット角度に到達しようとします。大きな値にするほどスプリングはより速くターゲット位置に到達します。
 
-The /spring.damper/ force dampens the angular velocity. A larger value makes the spring reach the goal slower.
+/spring.damper/ により角速度をダンパー（スプリングを減少）させます。大きな値にするほどスプリングはより遅くターゲット位置に到達します。
 
-The spring reaches for the /spring.targetPosition/ angle in degrees relative to the rest angle. The rest angle between the bodies is always zero at the beginning of the simulation.
+スプリングは /spring.targetPosition/ のターゲット角度を目指して、残る角度に相対的な度単位でに到達しようとします。ボディ間の残る角度はシミュレーションの始めに常にゼロであります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Make the spring reach shoot for a 70 degree angle.
-	// This could be used to fire off a catapult.
+	// スプリングに 70 度の角度に到達させようとします
+	// カタパルトから発射させるのに活用できます。
 
 	hingeJoint.spring.spring = 10;
 	hingeJoint.spring.damper = 3;
 	hingeJoint.spring.targetPosition = 70;
 END EX
-Modifying the spring automatically enables it.
+スプリングを修正することで自動的に有効化されます。

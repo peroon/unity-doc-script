@@ -1,19 +1,20 @@
-The motor will apply a force up to a maximum force to achieve the target velocity in degrees per second.
-The motor tries to reach /motor.targetVelocity/ angular velocity in degrees per second.
-The motor will only be able to reach /motor.targetVelocity/, if /motor.force/ is sufficiently large.
-If the joint is spinning faster than /motor.targetVelocity/ the motor will break.
-A negative /motor.targetVelocity/ will make the motor spin in the opposite direction.
+モーター（Motor）により最大の角度/秒のターゲット速度を得るためのフォースが加わり。
+モーターは /motor.targetVelocity/ の角度/秒単位での角速度に到達しようとします。
+モーターは  /motor.force/ が十分な大きさである場合にかぎり /motor.targetVelocity/ に到達できます。
+もしジョイントが /motor.targetVelocity/ モーターより速く回転するとモーターは壊れます。
 
-The /motor.force/ is the maximum torque the motor can exert. If it is zero the motor is disabled.
+負の値の /motor.targetVelocity/ によりモーターは反対方向に回転します。
 
-The motor will brake when it is spinning faster than /motor.targetVelocity/ only, if /motor.freeSpin/ is false.
-If /motor.freeSpin/ is true the motor will not brake.
+モーターが出力できる最大のトルクが /motor.force/ です。ゼロの場合、モータは無効化されます。
+
+モータは /motor.freeSpin/ が false の場合にかぎり /motor.targetVelocity/ より速く回転すると壊れます。
+もし /motor.freeSpin/ が true の場合、モーターは壊れません。
 CONVERTEXAMPLE
 BEGIN EX
-	// Make the hinge motor rotate with 90 degrees per second and a strong force.
+	// ヒンジモーターを 90 度/秒で大きな値のフォースにより回転させます。
 
 	hingeJoint.motor.force = 100;
 	hingeJoint.motor.targetVelocity = 90;
 	hingeJoint.motor.freeSpin = false;
 END EX
-Modifying the motor automatically enables the motor by setting HingeJoint.useMotor to true.
+モーターで HingeJoint.useMotor を true に修正することで自動的にモーターを有効化します。
