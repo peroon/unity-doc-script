@@ -1,5 +1,5 @@
 <signature>
 RegisterPropertyChangeUndo(string)
 </signature>
-Call this when you change a material property. It will add an undo for the action.
-@param label Undo Label.
+マテリアル プロパティを変更したときに呼び出しします。アクションの取り消しを追加します。
+@param label 取り消しラベル。

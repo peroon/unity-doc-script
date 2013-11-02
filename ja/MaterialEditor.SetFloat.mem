@@ -1,6 +1,7 @@
 <signature>
 SetFloat(string,float)
 </signature>
+与えられた float プロパティの値をセットします。
 Set the value of a given float property.
-@param propertyName Name of the float property.
-@param value Float to set.
+@param propertyName float  プロパティの名前。
+@param value セットする float。

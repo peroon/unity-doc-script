@@ -1,6 +1,6 @@
 <signature>
 SetColor(string,Color)
 </signature>
-Set the value of a given texture property.
-@param propertyName Name of the color property.
-@param value Color to set.
+与えられたテクスチャ プロパティの値をセットします。
+@param propertyName カラー プロパティの名前。
+@param value セットするカラー。
