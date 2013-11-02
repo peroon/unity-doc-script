@@ -1,28 +1,28 @@
 <signature>
 SetScheduledEndTime(double)
 </signature>
-Changes the time at which a sound that has already been scheduled to play will end. Notice that depending on the timing not all rescheduling requests can be fulfilled.
-Note that the time specified is still a time on the absolute time-line, meaning that the sound will stop when reaching that time, regardless of when it was started. So if you have a 5 second long sound and want it to play at time T and stop after 3 seconds (i.e. silencing the last 2 seconds of the sound), you need to specify the end time to be T+3. This function is useful in music systems to overcome the discontinuities in signals that frame-based lossy codecs cause.
+再生するスケジュールが確定した音声について、終了時刻を変更します。タイミングによっては再スケジュールのリクエストは満たされない場合があることに注意して下さい。
+指定された時間はまだ絶対時間のタイムラインであることに留意して下さい。すなわち音声は、いつ開始されたかに関わらず、その時刻に到達したときに停止します。例えば 5 秒間の音声があり、時刻 T に再生そて 3 秒後に停止する（すなわち最後の 2 秒間を無音にする）ことを期待する場合、終了時刻は T+3 と指定する必要があります。フレームベースのロス発生のあるコーデックにより引き起こされるシグナルの不連続性を乗り越える場合に、この関数は役に立ちます。
 CONVERTEXAMPLE
 BEGIN EX
-// Demonstration of a tool that cuts up a clip into two clips with a short overlaps, then stitches them together at playback time.
-// An overlap of 0.2 seconds is used meaning that the clip will be cut onto two portions of approximately the same size,
-// but with the first sound having 0.2s of the sound after the cut and the second clip starting with
-// 0.2s of the sound before the cut.
-// The idea is then to play cut1 from its start to the cut point and then stop playback, i.e. not playing
-// the 0.2s overlap (this happens via the SetScheduledEndTime), then play cut2 starting 0.2s into the sound and
-// playing it to the end.
-// While this may seem unnecessarily complicated to do this in the case of uncompressed sounds, you can now use
-// the SavWav code from https://gist.github.com/2317063 to save the generated clips into new assets,
-// run the program once with a specified sourceClip and the script will generate "cut1.wav" and "cut2.wav".
-// These can now be imported into Unity as assets and changed to compressed sounds.
-// Since psychoacoustic compression severely alters the waveforms and frequency content of sounds and
-// furthermore operates in a block-based fashion, it would cause very noticeable pops and clicks if we didn't
-// have the sound data after and before the cut point. By having it, even though we are not playing it, the decoder is "warmed up",
-// i.e. it has matching frequency content before and after the transition, so at least the
-// frequency spectrum will be more or less the same before and after the transition and so the click will be less audible
-// than if we had just cut up the sound without the 0.2s overlap regions.
-// This method may also be combined with cross-fading in order to further smoothen out any remaining artifacts.
+// クリップを短い重なりのある二つのクリップに分割して、再生時刻に連結するツールのデモです。
+// 重なり時間 0.2 秒が使用されており、これはクリップがほぼ同じ長さの時間に分割されることを意味し、
+// 最初の音声がカットから 0.2 秒後まで、二つめの音声が
+// カットから 0.2 秒前までです。
+// ポイントは cut1 を開始からカット時点mあで再生し、それから再生を停止（再生されていない状態）して
+// 0.2 秒の重なりさせ（SetScheduledEndTime を通して発生）、次に cut2 がサウンドから 0.2 秒で開始し、
+// 最後まで再生させます。
+// 非圧縮音声において、これが不要に複雑に見える一方で、
+// https://gist.github.com/2317063 にある SavWav を使用することで生成された音声を新しいアセットに保存することが出来、
+// プログラムを指定された sourceClip で一回実行して、スクリプトは "cut1.wav" および "cut2.wav" を生成します。
+// これらは Unity にアセットとしてインポートすることが出来、圧縮音声に変更できます。
+// 心理音響的な圧縮は音声の波形および周波数のコンテンツに重篤な変更を加え
+// またブロックベースの形で処理されるため、音声データのカット時点の前後でポップやクリック（音がはねる）
+// が明確に気付くようになります。これがあることにより再生してないときもデコーダによるウォームアップが行なわれ
+// すなわち、移行の前後で一致する周波数のコンテンツがあり、せめて
+// 周波数巣ペクトラムは移行の前後でほぼ同じとなり、そして、もし0.2 秒の重なりエリア
+// なく音声を分割した場合と比べて、クリック（音がはねる）ことは気付きにくくなります。
+// この手法はさらにクロスフェードと組み合わせて残る異常をスムージングすることが出来ます。
 
 @script RequireComponent(AudioSource)
 
@@ -90,5 +90,5 @@ function OnGUI()
 	}
 }
 END EX
-__Note:__ If possible create clips that overlap, and use the scheduled end time for the first, and AudioSource::ref::time for the second to trim out the overlapped part, as the example above shows.
-@param time Time in seconds.
+__注意:__ もし可能であれば重なりのある音声を作成し、そして ScheduledEndTime を最初の音声に使用して、二つめの音声に AudioSource::ref::time を使用して重なり部分を上記のサンプルのようにトリミングして下さい。
+@param time 秒単位の時間。

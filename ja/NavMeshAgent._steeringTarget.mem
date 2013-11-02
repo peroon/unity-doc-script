@@ -1,1 +1,1 @@
-The current steering target - usually the next corner or end point of the current path. (RO)
+現在の Steering ターゲット - 一般的には現在のパスでの次のコーナーまたは終了地点。（読み取り専用）
