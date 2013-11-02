@@ -1,14 +1,14 @@
 <signature>
 NotEqual(Object,Object)
 </signature>
-Compares if two objects refer to a different object.
+二つのオブジェクトが異なるオブジェクトであるか比較します。
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Transform;
 	function Update () {
-		// the target object does not refer to the same object as our transform
+		// ターゲットオブジェクトが Transorm と異なるオブジェクトであるかチェック
 		if (target != transform) {
-			print("Another object");			
+			print("異なるオブジェクトです。");			
 		}
 	}
 END EX

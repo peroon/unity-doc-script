@@ -1,36 +1,36 @@
 <signature>
 Equal(Object,Object)
 </signature>
-Compares if two objects refer to the same.
+二つのオブジェクトが同じオブジェクトであるか比較します。
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Collider;
 	function OnTriggerEnter (trigger : Collider) {
 		if (trigger == target)
-			print("We hit the target trigger");
+			print("ターゲットのトリガーをヒットしました。");
 	}
 END EX
-Get early out if there is no target.
+ターゲットがない場合、ループを抜けます
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Transform;
 	function Update () {
-		// Early out if the target is gone
+		// ターゲットがいない場合ループを抜けます
 		if (target == null)
 			return;
 	}
 END EX
-Be careful when comparing with @@null@@.
+@@null@@ と比較する場合は注意して下さい。
 
-e.g.
+例
 BEGIN EX
 GameObject go = new GameObject(); 
-Debug.Log (go == null); // false
+Debug.Log (go == null); // false となります
 
 Object obj = new Object();
-Debug.Log (obj == null); // true 
+Debug.Log (obj == null); // true となります
 END EX
 
-Instatiating a [[GameObject]] adds it to the scene so it's completely initialized (!destroyed). Instantiating a simple UnityEngine.Object has no such semantics, so the it stays in the 'destroyed' state which compares @@true@@ to @@null@@.
-@param x The first Object.
-@param y The Object to compare against the first.
+[[GameObject]] をインスタンス化することでシーンに追加され、完全に初期化されます（!destroyed）。シンプルな UnityEngine.Object をインスタンス化する場合にはこのようなセマンティクスはなく、destroyed のステートのままとなり、 @@true@@ to @@null@@ が比較されます。
+@param x 最初のオブジェクト
+@param y 最初のオブジェクトを比較する対象のオブジェクト

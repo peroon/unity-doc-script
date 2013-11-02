@@ -1,20 +1,20 @@
 <signature>
 implop_bool(Object)
 </signature>
-Does the object exist?
-The two examples below give the same result.
+オブジェクトは存在するか？
+以下の二つのサンプルは同じ結果が得られます。
 CONVERTEXAMPLE
 BEGIN EX
-	// check if there is a rigidbody attached to this transform
+	// Rigidbody がこの Transform にアタッチされているかチェックします。
 
 	if (rigidbody) 
-	   Debug.Log("Rigidbody attached to this transform");
+	   Debug.Log("Rigidbody がこの Transform にアタッチされています。");
 END EX
 ...is the same as this...
 CONVERTEXAMPLE
 BEGIN EX
-	// another way to check if a rigidbody is attached to this transform
+	// Rigidbody がこの Transform にアタッチされているかチェックする別の方法です。
 
 	if (rigidbody != null)
-	   Debug.Log("Rigidbody attached to this transform");
+	   Debug.Log("Rigidbody がこの Transform にアタッチされています。");
 END EX
