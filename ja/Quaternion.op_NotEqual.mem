@@ -1,8 +1,8 @@
 <signature>
 NotEqual(Quaternion,Quaternion)
 </signature>
-Are two quaternions different from each other?
-This function tests whether dot product of two quaternions is less than 1.0.
+二つのクォータニオンは互いに異なるか？
+この関数は二つのクォータニオンの内積が 1.0 より小さいかテストします。
 
-Note that because quaternions can represent rotations that are up to two full revolutions
-(720 degrees), this comparison can return /true/ even if resulting rotations look the same.
+クォータニオンは二回転（720 度）までの回転を表現できるため、見た目の回転が同一に見えても
+比較結果が /true/ を戻り値とする場合があることに留意して下さい

@@ -1,14 +1,14 @@
 <signature>
 Multiply(Quaternion,Quaternion)
 </signature>
-Combines rotations /lhs/ and /rhs/.
-Rotating by the product /lhs/ * /rhs/ is the same as applying the two rotations in sequence,
-/lhs/ first and then /rhs/. Note that this means rotations are not commutative, so
-''lhs * rhs'' does not give the same rotation as ''rhs * lhs''.
+/lhs/ および /rhs/ の回転を組合わせます。
+/lhs/ * /rhs/ の積で回転させることは、二つの回転を /lhs/ を先に /rhs/ を次に回転と、
+順番に適用することと同じです。注意することとして、回転は交換可能ではないため、
+''lhs * rhs'' と ''rhs * lhs'' は同じ回転となりません。
 CONVERTEXAMPLE
 BEGIN EX
-	// Applies the rotation of
-	// /extraRotation/ to the current rotation.
+	// 現在の回転に /extraRotation/
+	// の回転を適用します。
 
 	var extraRotation : Transform;
 	transform.rotation *= extraRotation.rotation;
@@ -16,11 +16,11 @@ END EX
 <signature>
 Multiply(Quaternion,Vector3)
 </signature>
-Rotates the point /point/ with /rotation/.
+/point/ の点に /rotation/ の回転をさせます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Moves the object along relativeDirection
-	// Usually you would use transform.Translate for this
+	// オブジェクトを relativeDirection に沿って移動
+	// 一般的には transform.Translate をこの目的で使用します。
 
 	var relativeDirection = Vector3.forward;
 
