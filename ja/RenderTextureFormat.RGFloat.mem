@@ -1,5 +1,5 @@
-Two color (RG) render texture format, 32 bit floating point per channel.
-Note that not all graphics cards support floating point render textures.
-Use SystemInfo.SupportsRenderTextureFormat to check for support.
+二つのカラー (RG) Render Texture フォーマット, チャネルごとに32 ビット浮動小数点。
+浮動小数点 Render Texture が全てのグラフィックスカードではサポートされていないことに留意して下さい。
+SystemInfo.SupportsRenderTextureFormat を使用して対応状況をチェックします。
 
-SA: RenderTexture.format, [[RenderTexture]] class, SystemInfo.SupportsRenderTextureFormat.
+SA: RenderTexture.format, [[RenderTexture]] クラス, SystemInfo.SupportsRenderTextureFormat.
