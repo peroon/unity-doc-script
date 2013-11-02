@@ -1,4 +1,4 @@
 <signature>
 minSdkVersion
 </signature>
-Minimal Android SDK version.
+動作のための最低限の Android SDK バージョン。
