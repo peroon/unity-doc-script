@@ -2,7 +2,7 @@
 ctor()
 ctor(int,int,int,int)
 </signature>
-Creates a new rectangle with offsets.
+オフセットつきの新規の Rect を作成します。
 CONVERTEXAMPLE
 BEGIN EX
 	var rect = RectOffset (0, 10, 0, 10);
