@@ -1,4 +1,4 @@
 <signature>
 Awake()
 </signature>
-Called when the Editor is woken up.
+エディタが Awake となったときに呼び出しされます。

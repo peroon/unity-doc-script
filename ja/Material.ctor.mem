@@ -1,13 +1,13 @@
 <signature>
 ctor(string)
 </signature>
-Create a temporary material from a shader source string.
-If you have a script which implements a custom special effect, you implement all the graphic setup
-using shaders & materials. Use this function to create a custom shader & material inside your script.
-After creating the material, use ::ref::SetColor, ::ref::SetTexture, ::ref::SetFloat,
-::ref::SetVector, ::ref::SetMatrix to populate the shader property values.
+シェーダの source 文字列から一時的なマテリアルを作成します。
+もしカスタムの特殊効果を実装するスクリプトがある場合、全てのグラフィックセットアップを実装するために シェーダおよびマテリアルを
+使用します。この関数を使用して自身のスクリプトの中にカスタムシェーダおよびマテリアルを作成します。
+このマテリアルを作成後、::ref::SetColor, ::ref::SetTexture, ::ref::SetFloat,
+::ref::SetVector, ::ref::SetMatrix を使用してシェーダのプロパティの値を生成します。
 BEGIN EX
-	// Creates an additive-blended material and uses it for rendering
+	// 追加ブレンドのマテリアルを作成しレンダリングに使用します
 	var color = Color.white;
 	function Start () {
 		var shaderText =
@@ -27,21 +27,20 @@ BEGIN EX
 		renderer.material.color = color;
 	}
 END EX
-NOTE: Creating materials this way supports only simple shaders (fixed function ones). If you need
-a surface shader, or vertex/pixel shaders, you'll need to create shader asset in the editor
-and use that.
+注意: マテリアルをこの方法で作成するときシンプルなシェーダのみ対応しています（固定関数）。もし
+サーフェイス シェーダ、または頂点/ピクセルシェーダが必要である場合、エディタでシェーダ アセットを作成し、それを使用する必要があります。
 
-SA: [[wiki:Shaders|ShaderLab documentation]].
+SA: [[wiki:Shaders|ShaderLab ドキュメント]]
 <signature>
 ctor(Shader)
 </signature>
-Create a temporary Material from a [[Shader]].
-If you have a script which implements a custom special effect, you implement all the graphic setup
-using shaders & materials. Use this function to create a custom shader & material inside your script.
-After creating the material, use ::ref::SetColor, ::ref::SetTexture, ::ref::SetFloat,
-::ref::SetVector, ::ref::SetMatrix to populate the shader property values.
+[[Shader]] から一時的なマテリアルを作成します。
+もしカスタムの特殊効果を実装するスクリプトがある場合、全てのグラフィックセットアップを実装するために シェーダおよびマテリアルを
+使用します。この関数を使用して自身のスクリプトの中にカスタムシェーダおよびマテリアルを作成します。
+このマテリアルを作成後、::ref::SetColor, ::ref::SetTexture, ::ref::SetFloat,
+::ref::SetVector, ::ref::SetMatrix を使用してシェーダのプロパティの値を生成します。
 BEGIN EX
-	// Creates a material from shader&texture references
+	// シェーダおよびテクスチャの参照からマテリアルを作成します。
 	var shader : Shader;
 	var texture : Texture;
 	var color : Color;
@@ -52,7 +51,7 @@ BEGIN EX
 	}
 END EX
 BEGIN EX
-	// Creates a cube and assigns a material with a builtin Specular shader.
+	// キューブを作成してビルトインの 鏡面(Specular)シェーダからマテリアルをアサインします。
 	function Start () {
 		var cube = GameObject.CreatePrimitive (PrimitiveType.Cube);
 		cube.renderer.material = new Material (Shader.Find("Specular"));
@@ -61,4 +60,4 @@ END EX
 <signature>
 ctor(Material)
 </signature>
-Create a temporary Material by copying the shader and all properties from the /source/ Material.
+シェーダおよび /source/ マテリアルからシェーダおよび全てのプロパティから複製して一時的なマテリアルを作成します。
