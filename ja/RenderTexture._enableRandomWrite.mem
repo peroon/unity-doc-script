@@ -1,9 +1,9 @@
 <signature>
 enableRandomWrite
 </signature>
-Enable DX11 random access write into this render texture.
-[[wiki:DirectX 11]] pixel or compute shaders can write into arbitrary locations of some textures, called "unordered access views" in DX11. Set this flag before creating your render texture to enable this capability.
+この Render Texture に対してDirectX 11 ランダムアクセス書き込みを許可します。
+[[wiki:DirectX 11]] ピクセルまたは Compute シェーダは、順序なしアクセスビューという名前のいくつかのテクスチャに対して、任意の場所に書き込みできます。
 
-When a texture has this flag set, it can be written into as one RWTexture* resources in shaders. It can also be set as random access write target for pixel shaders using Graphics.SetRandomWriteTarget.
-
+テクスチャでこのフラグがセットされたとき、シェーダの中のひとつの RWTexture* リソースとして書き込むことが出来ます。さらに Graphics.SetRandomWriteTarget を使用してピクセルシェーダのランダムアクセス書き込みターゲットとしてセットできます。
+z
 SA: Graphics.SetRandomWriteTarget, [[wiki:DirectX 11]].

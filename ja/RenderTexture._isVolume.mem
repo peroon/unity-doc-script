@@ -1,8 +1,8 @@
 <signature>
 isVolume
 </signature>
-If enabled, this Render Texture will be used as a [[Texture3D]].
-Volumetric render textures currently only work on [[wiki:DirectX 11]]. You can render into them using "random access writes" from
-a pixel shader or a compute shader.
+有効化すると、Render Texture は [[Texture3D]] として使用されます。
+Volumetric な Render Texture は [[wiki:DirectX 11]] dでのみ動作します。その中にレンダリングするときはピクセルシェーダまたは Compute シェーダ
+からランダムアクセス書き込みを使用します。
 
 SA: ::ref::volumeDepth, ::ref::enableRandomWrite.

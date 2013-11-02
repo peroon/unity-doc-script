@@ -1,9 +1,9 @@
-Color or depth buffer part of a [[RenderTexture]].
-A single [[RenderTexture]] object represents both color and depth buffers,
-but many complex rendering algorithms require using the same depth buffer
-with multiple color buffers or vice versa.
+[[RenderTexture]] の中のカラーまたはデプスバッファ部分。
+ひとつの [[RenderTexture]] オブジェクトはカラーおよびデプスバッファ両方を表現しますが、
+多くの複雑なレンダリング アルゴリズムは、複数のカラーバッファで
+同一のデプスバッファ、あるいはその逆、を必要とします。
 
-This class represents either a color or a depth buffer part of a RenderTexture.
+このクラスは RenderTexture の中のカラーまたはデプスバッファ部分を表現します。
 
 SA: RenderTexture.colorBuffer, RenderTexture.depthBuffer, Graphics.activeColorBuffer,
 Graphics.activeDepthBuffer, Graphics.SetRenderTarget.
