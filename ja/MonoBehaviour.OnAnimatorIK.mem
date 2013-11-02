@@ -4,9 +4,10 @@ OnAnimatorIK(int)
 <txttag>
 CSNONE
 </txttag>
-Callback for setting up animation IK (inverse kinematics).
-OnAnimatorIK() is called by the Animator Component right before it calls its internal IK system.  
-This callback should be used to setup the positions of the IK Goal and their respective weights. .\\
+アニメーション IK をセットアップするコールバック（インバース キネマティクス）。
+アニメータ コンポーネントにより OnAnimatorIK() が内部的な IK システムの呼び出し前のタイミングで呼び出しされます。
+  
+IK ゴールおよび関連するウェイトの位置をセットアップためにこのコールバックを使用すべきです。.\\
 BEGIN EX
 		using UnityEngine;
 		using System;

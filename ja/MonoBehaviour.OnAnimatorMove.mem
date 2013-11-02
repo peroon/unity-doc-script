@@ -4,11 +4,10 @@ OnAnimatorMove()
 <txttag>
 CSNONE
 </txttag>
-Callback for processing animation movements for modifying root motion.
-This callback will be invoked at each frame after the state machines and the animations have been evaluated,
-but before ::ref::OnAnimatorIK.
+ルートモーションを修正するアニメーション動作を処理するコールバックです。
+このコールバックは各フレームごとにステートマシンおよびアニメーションが評価された後、::ref::OnAnimatorIK が実行される前のタイミングで実行されます。
 
-SA: [[wiki:Scripting Root Motion|Root motion]].
+SA: [[wiki:Scripting Root Motion|ルートモーション]].
 CONVERTEXAMPLE
 BEGIN EX
 	function OnAnimatorMove() {
