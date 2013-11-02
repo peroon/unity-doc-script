@@ -1,4 +1,4 @@
 <signature>
 sdkVersion
 </signature>
-Active iOS SDK version used for build.
+ビルドに使用されるアクティブな iOS SDK バージョン。
