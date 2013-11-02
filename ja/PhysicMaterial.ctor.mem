@@ -1,11 +1,11 @@
 <signature>
 ctor()
 </signature>
-Creates a new material.
-It is usually easier to just use collider.Collider::pref::material and modify the attached material directly.
+新規マテリアルを作成します。
+一般的には collider.Collider::pref::material を使用するしてアタッチされたマテリアルを直接使用したほうが簡単です。
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates a new material and attaches it
+	// 新規のマテリアルを作成してアタッチします。
 
 	function Start () {
 		var material = new PhysicMaterial();
@@ -16,10 +16,10 @@ END EX
 <signature>
 ctor(string)
 </signature>
-Creates a new material named /name/.
+/name/ という名前の新規マテリアルを作成します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates a new material attaches and attaches it
+	// 新規のマテリアルを作成してアタッチします。
 
 	function Start () {
 		var material = new PhysicMaterial("New Material");
