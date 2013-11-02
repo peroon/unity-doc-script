@@ -1,12 +1,12 @@
 <signature>
 ctor(Type)
 </signature>
-Require a single component.
+一つのコンポーネントを必要とします。
 <signature>
 ctor(Type,Type)
 </signature>
-Require a two components.
+二つのコンポーネントを必要とします。
 <signature>
 ctor(Type,Type,Type)
 </signature>
-Require three components.
+三つのコンポーネントを必要とします。

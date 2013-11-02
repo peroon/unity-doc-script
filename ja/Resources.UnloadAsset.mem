@@ -1,7 +1,7 @@
 <signature>
 UnloadAsset(Object)
 </signature>
-Unloads /assetToUnload/ from memory.
-This function can only be called on Assets that are stored on disk.
+メモリから /assetToUnload/ をアンロードします。
+この関数はディスクに保管されたアセットに対してのみ呼び出しできます。
 
-If there are any references from game objects in the scene to the asset and it is being used then Unity will reload the asset from disk as soon as it is accessed.
+もしアセットに対するシーン上のゲームオブジェクトからの参照があり使用中である場合アクセスされた直後に Unity がディスクからアセットをリロードします。

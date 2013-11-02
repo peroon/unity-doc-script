@@ -1,2 +1,2 @@
-Runtime representation of the AnimatorController.
-Used to change at runtime the AnimatorController of an Animator.
+AnimatorController の実行時の表現です。
+実行時にアニメータの AnimatorController を変更するのに使用します。
