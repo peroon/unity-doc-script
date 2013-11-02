@@ -1,6 +1,6 @@
-Uses interpolated normals for sphere collisions instead of flat polygonal normals.
-This smoothes out bumps for sphere's rolling over smooth surfaces.
-The downside is that rolling over steep corners can behave really strangely and appears like it is pulling the sphere in some direction.
+Sphere のコリジョンに、平らなポリゴンの法線の代わりに、補間された法線を使用します。
+これにより Sphere が平らな平面を転がる際の凸凹をスムージングします。
+欠点は深さのある角を転がる際に異常な動作をする場合があり、Sphere がある方向に引っ張られているように見えます。
 CONVERTEXAMPLE
 BEGIN EX
 	transform.collider.smoothSphereCollisions = true;

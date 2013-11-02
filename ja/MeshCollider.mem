@@ -1,2 +1,2 @@
-A mesh collider allows you to do [[wiki:class-MeshCollider|collision detection]] between meshes and primitives.
+メッシュコライダによりメッシュおよびプリミティブの間の [[wiki:class-MeshCollider|衝突判定]] が実現できます。
 SA: [[BoxCollider]], [[CapsuleCollider]], [[PhysicMaterial]], [[Rigidbody]].
