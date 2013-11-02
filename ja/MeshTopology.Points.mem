@@ -1,5 +1,5 @@
-Mesh is made from points.
-In most of use cases, mesh index buffer should be "indendity":
+メッシュは点から構成されます。
+ほとんどのユースケースではメッシュ インデックス バッファは "indendity" であるべきです。
 0, 1, 2, 3, 4, 5, ...
 
-SA: Mesh.SetIndices function.
+SA: Mesh.SetIndices 関数。

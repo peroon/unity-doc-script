@@ -1,4 +1,4 @@
-Mesh is made from triangles.
-Each three indices in the mesh index buffer form a triangular face.
+メッシュは三角形から構成されます。
+メッシュ インデックス バッファの中の各々の三つの index は三角形の面を構成します。
 
-SA: Mesh.SetIndices function.
+SA: Mesh.SetIndices 関数。

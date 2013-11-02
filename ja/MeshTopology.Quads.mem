@@ -1,7 +1,5 @@
-Mesh is made from quads.
-Each four indices in the mesh index buffer form a quadrangular face.
-Note that quad topology is emulated on many platforms, so it's more efficient
-to use a triangular mesh. Unless you really need quads, for example if using
-DirectX 11 tessellation shaders that operate on quad patches.
+メッシュは四角形から構成されます。
+メッシュ インデックス バッファ における各々の四つの index は四角形の面を構成します。
+四角形トポロジーは多くのプラットフォームではエミュレートされるため三角メッシュを使用するほうが効果的です。本当に四角形が必要な場合、例えばDirectX 11 テッセレーション シェーダのように四角形のパッチで動作する時、を除き効果的ではありません。
 
-SA: Mesh.SetIndices function.
+SA: Mesh.SetIndices 関数。
