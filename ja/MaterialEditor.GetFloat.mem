@@ -1,6 +1,6 @@
 <signature>
 GetFloat(string,bool)
 </signature>
-Get the value of a given float shader property.
-@param propertyName Name of the float property.
-@param hasMixedValue Does this property have multiple values?
+与えられた float シェーダプロパティの値を取得します。
+@param propertyName float プロパティの名前。
+@param hasMixedValue このプロパティには複数の値があるか？

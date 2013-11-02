@@ -1,6 +1,6 @@
 <signature>
 GetColor(string,bool)
 </signature>
-Get the value of a given color shader property.
-@param propertyName Name of the color property.
-@param hasMixedValue Does this property have multiple values?
+与えられたカラー シェーダ プロパティの値を取得します。
+@param propertyName カラー プロパティの名前。
+@param hasMixedValue このプロパティには複数の値があるか？

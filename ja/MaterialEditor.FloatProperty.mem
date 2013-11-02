@@ -1,6 +1,6 @@
 <signature>
 FloatProperty(string,string)
 </signature>
-Draw a property field for a float shader property.
-@param propertyName Name of the property to draw.
-@param label Label for the property.
+float シェーダ プロパティのためのプロパティ フィールドを描画します。
+@param propertyName 描画するプロパティの名前。
+@param label プロパティのラベル。
