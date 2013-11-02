@@ -1,10 +1,10 @@
 <signature>
 implop_LayerMask(int)
 </signature>
-Implicitly converts an integer to a LayerMask.
+明示的に integer を LayerMask に変換します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Converts an integer to a layer and prints the layer name.
+	// 明示的に integer を LayerMask に変換しレイヤー名を表示。
 
 	var i : int = 0;
 	var la : LayerMask;

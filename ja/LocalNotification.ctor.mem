@@ -1,4 +1,4 @@
 <signature>
 ctor()
 </signature>
-Creates a new local notification.
+新規のローカル通知を作成します。

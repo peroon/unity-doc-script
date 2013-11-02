@@ -1,4 +1,4 @@
 <signature>
 size
 </signature>
-The size of the LOD object in local space.
+ローカル座標での LOD オブジェクトの大きさ。
