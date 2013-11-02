@@ -1,5 +1,5 @@
 <signature>
 MarkDynamic()
 </signature>
-Optimize mesh for frequent updates.
-Call this before assigning vertices to get better performance when continually updating mesh.
+頻繁な更新に対して、メッシュを最適化します。
+継続的にメッシュを更新するときにより良いパフォーマンスを得るために頂点を割り当てる際、これを呼び出します。
