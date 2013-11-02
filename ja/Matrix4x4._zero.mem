@@ -1,12 +1,12 @@
 <signature>
 zero
 </signature>
-Returns a matrix with all elements set to zero (RO).
-The matrix looks like this:
+全ての要素をゼロにセットしたマトリクスを戻します（読み取り専用）。
+マトリクスは次のようになります：
 BEGIN EX NOCHECK
 	0  0  0  0
 	0  0  0  0
 	0  0  0  0
 	0  0  0  0
 END EX
-SA: ::ref::identity variable.
+SA: ::ref::identity 変数.

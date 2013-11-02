@@ -2,4 +2,4 @@
 ToString()
 ToString(string)
 </signature>
-Returns a nicely formatted string for this matrix.
+マトリクスのために適切にフォーマットされた文字列を戻します。

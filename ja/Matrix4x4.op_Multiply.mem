@@ -1,9 +1,9 @@
 <signature>
 Multiply(Matrix4x4,Matrix4x4)
 </signature>
-Multiplies two matrices.
-The returned result is /lhs/ * /rhs/.
+二つのマトリクスを乗算します。
+戻り値となる結果は /lhs/ * /rhs/ となります。
 <signature>
 Multiply(Matrix4x4,Vector4)
 </signature>
-Transforms a [[Vector4]] by a matrix.
+マトリクスにより [[Vector4]] を変換します。
