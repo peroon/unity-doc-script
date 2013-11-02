@@ -1,6 +1,6 @@
 <signature>
 compensateSensors
 </signature>
-This property controls if input sensors should be compensated for screen orientation.
-Compensated sensors are accelerometer, compass, gyroscope.
-Note : currently it fully affects iOS platform and partially Android platform (on Android compensation can't be turned off at the moment).
+このプロパティは、入力センサーをスクリーンの向きに反映させるかを制御します。
+反映できるセンサーは加速度センサー、コンパス、ジャイロスコープです。
+注意 : 現在は iOS プラットフォームに完全に対応しており、Android プラットフォームは部分的に対応しています（現在 Android でオフにすることが出来ません）。
