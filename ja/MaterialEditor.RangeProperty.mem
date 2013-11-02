@@ -1,8 +1,8 @@
 <signature>
 RangeProperty(string,string,float,float)
 </signature>
-Draw a range slider for a range shader property.
-@param propertyName Name of the property to draw.
-@param label Label for the property.
-@param v2 Left value.
-@param v3 Right value.
+レンジ（範囲）シェーダプロパティのためのレンジ（範囲）スライダを描画します。
+@param propertyName 描画するプロパティ名。
+@param label プロパティのラベル。
+@param v2 左の値。
+@param v3 右の値。

@@ -1,4 +1,4 @@
 <signature>
 PropertiesChanged()
 </signature>
-Whenever a material property is changed call this function. This will rebuild the inspector and validate the properties.
+マテリアル プロパティが変更されたときこの関数を呼び出しして下さい。これによりインスペクタが再ビルドされ、プロパティをチェックします。
