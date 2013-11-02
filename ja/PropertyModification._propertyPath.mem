@@ -1,4 +1,4 @@
 <signature>
 propertyPath
 </signature>
-Property path of the property being modified (Matches as SerializedProperty.propertyPath).
+修正されるプロパティのパス（SerializedProperty.propertyPath と一致します）。

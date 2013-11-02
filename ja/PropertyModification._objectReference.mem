@@ -1,4 +1,4 @@
 <signature>
 objectReference
 </signature>
-The value being applied when it is a object reference (which can not be represented as a string).
+オブジェクト参照である（すなわち文字列として表現できない）場合に適用される値。
