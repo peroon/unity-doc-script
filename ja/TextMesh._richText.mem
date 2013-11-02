@@ -1,15 +1,15 @@
 <signature>
 richText
 </signature>
-Enable HTML-style tags for Text Formatting Markup.
-Supported tags are:
-&lt;color="htmlcolor"&gt;colored text&lt;/color&gt;, where "htmlcolor" is a html color string, like "#ff0000" or "red".
+HTML スタイルタグをテキスト フォーマット マークアップで有効化します。
+サポートされているタグは：
+&lt;color="htmlcolor"&gt;colored text&lt;/color&gt;, ここで "htmlcolor" は HTML カラー文字列であり、例えば "#ff0000" または "red" 。
 &lt;b&gt;bold text&lt;/b&gt;
 &lt;i&gt;italic text&lt;/i&gt;
 &lt;size=20&gt;sized text&lt;/size&gt;
 &lt;material=1&gt;render using custom material index&lt;/material&gt;
-&lt;quad material=1 size=20 x=0.1 y=0.1 width=0.5 height=0.5/&gt;, to render a single quad using the given material and UVs, used for embedding images in text.
-These are only supported for fonts set to use dynamic font rendering, except for the 'color', 'material' and 'quad' tags.
+&lt;quad material=1 size=20 x=0.1 y=0.1 width=0.5 height=0.5/&gt;, テキストに画像イメージを埋め込むため、一つの四角形を与えられたマテリアルおよび UV を使用してレンダリングします。
+これらは 'color', 'material' および 'quad' タグを除いて、ダイナミック フォント レンダリングを使用するフォントでサポートされます。
 CONVERTEXAMPLE
 BEGIN EX
 	GetComponent(TextMesh).richText = true;

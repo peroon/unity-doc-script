@@ -1,6 +1,5 @@
 <signature>
 supportsInstancing
 </signature>
-Is GPU draw call instancing supported? (RO)
-Currently only Graphics.DrawProcedural and Graphics.DrawProceduralIndirect
-use instancing.
+GPU ドローコールのインスタンス化がサポートされているか？（読み取り専用）
+現在は Graphics.DrawProcedural および Graphics.DrawProceduralIndirect のみインスタンス化を使用します。
