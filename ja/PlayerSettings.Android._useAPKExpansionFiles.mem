@@ -1,6 +1,6 @@
 <signature>
 useAPKExpansionFiles
 </signature>
-Use APK Expansion Files.
-When enabled the player executable and data will be split up, with a generated .apk consisting only of the executable (Java and Native) code (~10MB), and the data for the first scene.
-The application data will be serialized separately to an APK Expansion File (.obb).
+APK 拡張ファイルを使用します。
+有効化した場合、プレイヤー実行ファイルおよびデータは分割され、生成された APK は実行ファイル（Java およびネイティブ）コード（10MB上限）および最初のシーンのデータのみとなります。
+アプリケーションのデータは別に APK 拡張ファイル（.obb）に別にシリアライズされます。
