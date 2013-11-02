@@ -1,5 +1,5 @@
 <signature>
 supports3DTextures
 </signature>
-Are 3D (volume) textures supported? (RO)
-SA: [[Texture3D]] class.
+3D (volume) テクスチャがサポートされているか？（読み取り専用）
+SA: [[Texture3D]] クラス。

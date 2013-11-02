@@ -1,5 +1,5 @@
 <signature>
 npotSupport
 </signature>
-What [[NPOT|NPOTSupport]] support does GPU provide? (RO)
+GPU はどのような [[NPOT|NPOTSupport]] を提供しますか？（読み取り専用）
 SA: [[NPOTSupport]] enum.
