@@ -1,10 +1,10 @@
 <signature>
 Combine(GameObject)
 </signature>
-Combine will prepare all children of the @@staticBatchRoot@@ for static batching.
-Once combined children can NOT change their @@Transform@@ properties, however @@staticBatchRoot@@ can be moved.
+Combine 関数により @@staticBatchRoot@@ の子オブジェクト全てを static バッチングの準備を行ないます。
+子オブジェクトを連結するとそれらの @@Transform@@ は変更できなくなりますが、 @@staticBatchRoot@@ を移動することは出来ます。
 <signature>
 Combine(GameObject[],GameObject)
 </signature>
-Combine will prepare all @@gos@@ for the static batching. @@staticBatchRoot@@ will be treated as their parent.
-Once combined @@gos@@ can NOT change their @@Transform@@ properties, however @@staticBatchRoot@@ can be moved.
+Combine 関数により @@staticBatchRoot@@ の子オブジェクト全てを static バッチングの準備を行ないます。 @@staticBatchRoot@@ はそれらの親オブジェクトとして扱われます。
+連結するとそれら複数の @@GameObject@@ の @@Transform@@ は変更できなくなりますが、 @@staticBatchRoot@@ を移動することは出来ます。
