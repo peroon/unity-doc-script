@@ -1,2 +1,2 @@
-Navigation mesh obstacle.
-Affects the avoidance of nearby [[NavMeshAgent]]s.
+ナビゲーションメッシュ障害物。
+近接する [[NavMeshAgent]] のアボイダンス（回避）行動に影響します。

@@ -1,2 +1,2 @@
 現在の速度
-Setting the velocity is not constrained by the maximum ::ref::acceleration.
+この速度をセットするとき、最大の::ref::acceleration により制限されません。
