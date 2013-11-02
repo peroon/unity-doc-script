@@ -1,1 +1,1 @@
-Instructs the build pipeline not to try and validate a type or member for the flash platform.
+この Flash プラットフォームでビルドパイプラインが型またはメンバーのチェックを行なわないように指定します。
