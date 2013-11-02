@@ -1,4 +1,4 @@
 <signature>
 screenRelativeTransitionHeight
 </signature>
-The screen relative height to use for the transition [0-1].
+トランジションに使用するスクリーンに相対的な高さ（値は 0 - 1 の範囲）

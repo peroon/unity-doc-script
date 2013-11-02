@@ -1,11 +1,11 @@
 <signature>
 ctor(float,float)
 </signature>
-Create a keyframe.
+キーフレームを作成します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Make a GameObject follow a Sinus function 
-	// Over the X and Y axis.
+	// ゲームオブジェクトが X 軸および Y 軸上で
+	// Sin 関数の軌跡を辿る
 
 	private var anim : AnimationCurve;
 	private var ks : Keyframe[];
@@ -25,11 +25,11 @@ END EX
 <signature>
 ctor(float,float,float,float)
 </signature>
-Create a keyframe.
+キーフレームを作成します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Make a GameObject follow a Sinus function 
-	// Over the X and Y axis with vertical tangents.
+	// ゲームオブジェクトが X 軸および Y 軸上で垂直の Tangent つきで
+	// Sin 関数の軌跡を辿る
 
 	private var anim : AnimationCurve;
 	private var ks : Keyframe[];
