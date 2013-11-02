@@ -1,4 +1,4 @@
 <signature>
 userData
 </signature>
-An integer for passing custom information to a menu item.
+メニューアイテムにカスタム情報を渡すための integer。
