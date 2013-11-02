@@ -1,7 +1,8 @@
-Add this attribute to a method to get a notification just before building the scene.
+この属性をメソッドに追加してシーンのビルドの直前に通知を取得します。
 BEGIN EX NOCHECK
-	// C# example:
-	// Automatically creates a game object with a primitive mesh renderer and appropriate collider.
+	// C# サンプル:
+	// 自動的にプリミティブなメッシュレンダラおよび適切なコライダ付きのゲームオブジェクトを作成します。
+
 	using UnityEngine;
 	using UnityEditor;
 	using UnityEditor.Callbacks;
