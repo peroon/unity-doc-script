@@ -1,17 +1,17 @@
 <signature>
 GetMonoUsedSize()
 </signature>
-Returns the used size from mono.
-This is the amount of allocated memory for non collected objects in Mono memory
-always call GC.Collect before this call, as non referenced objects will still
-take up space untill they are collected. If not Collecting, this will display an
-ever growing number untill Collect is called elsewhere.
+Mono が使用するサイズを戻り値とします。
+これは割り当てメモリの量であり、 Mono メモリの未回収のオブジェクトは常に
+この呼び出しの前に GC.Collect を呼び出し、未参照のオブジェクトは回収される
+までメモリ空間を消費します。もし 未回収の場合、これは Collect がどこか別で
+呼び出しされるまで数字が増加し続けます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update() {
 		#if ENABLE_PROFILER
 			System.GC.Collect();
-			Debug.Log("Mono used size" + Profiler.GetMonoUsedSize() + "Bytes");
+			Debug.Log("Mono 使用サイズ " + Profiler.GetMonoUsedSize() + "Bytes");
 		#endif
 	}
 END EX

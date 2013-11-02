@@ -1,4 +1,4 @@
-Base class to derive custom property attributes from. Use this to create custom attributes for script variables.
-A custom attributes can be hooked up with a custom [[PropertyDrawer]] class to control how a script variable with that attribute is shown in the Inspector.
+カスタム プロパティ属性を派生させるベースクラス。これを使用してスクリプト変数のカスタム属性を作成します。
+カスタム 属性は [[PropertyDrawer]] クラスと連結して、その属性があるスクリプト変数がインスペクタ上でどう表示されるか制御します。
 
-SA: [[PropertyDrawer]] class.
+SA: [[PropertyDrawer]] クラス。
