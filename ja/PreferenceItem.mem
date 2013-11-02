@@ -1,14 +1,14 @@
-The PreferenceItem attribute allows you to add preferences sections to the Preferences Window.
-The PreferenceItem attribute turns any static function into an OnGUI callback. Only static functions can use the PreferenceItem attribute.
+PreferenceItem 属性により Preferences ウィンドウに Preferences セクションに追加できます。
+PreferenceItem 属性により任意の static 関数を OnGUI コールバックにできます。static 関数のみが PreferenceItem 属性として使用できます。
 BEGIN EX
 public class OurPreferences {
-	// Have we loaded the prefs yet
+	// すでに Preferences がロードされたか
 	private static var prefsLoaded : boolean = false;
 
-	// The Preferences
+	// Preferences
 	public static var boolPreference : boolean = false;
 
-	// Add preferences section named "My Preferences" to the Preferences Window
+	// Preferences セクション として "My Preferences" を Preferences ウィンドウに追加
 	@PreferenceItem ("My Preferences")
 	static function PreferencesGUI () {
 		// Load the preferences
