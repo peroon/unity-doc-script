@@ -1,7 +1,7 @@
 <signature>
 volumeDepth
 </signature>
-Volume extent of a 3D render texture.
-For volumetric render textures (see ::ref::isVolume), this variable determines the volume extent.
+3D Render Texture のボリュームの最大値。
+Volumetric Render Texture (::ref::isVolume を参照)において、この変数はボリュームの最大値を決定します。
 
 SA: ::ref::isVolume.

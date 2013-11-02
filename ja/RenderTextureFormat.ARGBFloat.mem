@@ -1,5 +1,3 @@
-Color render texture format, 32 bit floating point per channel.
-Note that not all graphics cards support floating point render textures.
-Use SystemInfo.SupportsRenderTextureFormat to check for support.
-
-SA: RenderTexture.format, [[RenderTexture]] class, SystemInfo.SupportsRenderTextureFormat.
+カラー Render Texture フォーマット、チャネルごとで32 ビット 浮動小数点。
+浮動小数点 Render Texture が全てのグラフィックスカードではサポートされないことに留意して下さい。
+対応状況を確認するには SystemInfo.SupportsRenderTextureFormat を使用して下さい。SA: RenderTexture.format, [[RenderTexture]] クラス, SystemInfo.SupportsRenderTextureFormat.
