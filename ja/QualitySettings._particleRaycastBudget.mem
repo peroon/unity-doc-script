@@ -1,4 +1,4 @@
 <signature>
 particleRaycastBudget
 </signature>
-Budget for how many ray casts can be performed per frame for approximate collision testing.
+概算での衝突テストのために Raycast が何回実行できるかの計画（Budget）。

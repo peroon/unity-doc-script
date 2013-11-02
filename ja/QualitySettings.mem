@@ -1,4 +1,4 @@
-Script interface for [[wiki:class-QualitySettings|Quality Settings]].
-There can be an arbitrary number of quality settings. The details of each are set up
-in the project's [[wiki:class-QualitySettings|Quality Settings]]. At run time, the
-current quality level can be changed using this class.
+[[wiki:class-QualitySettings|Quality Settings（画質設定）]] のスクリプト インタフェースです。
+任意の数の Quality Settings が出来ます。各々の詳細はプロジェクトの
+[[wiki:class-QualitySettings|Quality Settings]] でセットアップされます。実行時に
+現在の Quality レベルはこのクラスを用いて変更できます。
