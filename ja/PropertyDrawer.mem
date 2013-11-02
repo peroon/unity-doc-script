@@ -5,11 +5,11 @@ PropertyDrawerは「シリアライズ化されているクラス」と「Proper
 
 BEGIN EX
 // Recipe.js
-// This is not an editor script
+// これはエディタスクリプトではありません
 
 enum IngredientUnit { Spoon, Cup, Bowl, Piece }
 
-// Custom serializable class
+// カスタムのシリアライズ クラス
 class Ingredient extends System.Object {
 	var name : String;
 	var amount : int = 1;
@@ -20,64 +20,64 @@ var potionResult : Ingredient;
 var potionIngredients : Ingredient[];
 
 function Update () {
-	// Update logic here...
+	// ここに Update ロジックを記載...
 }
 END EX
 
-Using a custom PropertyDrawer, every appearance of the Ingredient class in the Inspector can be changed.
-Compare the look of the Ingredient properties in the Inspector without and with a custom PropertyDrawer:
+カスタム PropertyDrawer を使用して、 Ingredient クラスのインスペクタでのあらゆる外見を変更することがd系増す。
+インスペクタの Ingredient プロパティの外見をカスタムの PropertyDrawer の有無で比較して下さい：
 
 {img CustomPropertyDrawer_Class.png}\\
-''Class in the Inspector without (left) and with (right) custom PropertyDrawer.''
+''インスペクタ上でカスタムの PropertyDrawer がある場合（左）とない場合（右）のクラス。''
 
-You can attach the PropertyDrawer to a Serializable class by using the [[CustomPropertyDrawer]] attribute and pass in the type of the Serializable class that it's a drawer for.
+PropertyDrawer を Serializable クラスにアタッチするには [[CustomPropertyDrawer]] 属性を使用して Drawer となっている Serializable クラスを渡します。
 BEGIN EX
 // IngredientDrawer.js
 @CustomPropertyDrawer (Ingredient)
 class IngredientDrawer extends PropertyDrawer {
 
-	// Draw the property inside the given rect
+	// 与えられた Rect の中のプロパティを描画
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
-		// Using BeginProperty / EndProperty on the parent property means that
-		// prefab override logic works on the entire property.
+		// 親プロパティの BeginProperty / EndProperty を使用することは
+		// プロパティ全体でプレハブのオーバーライド ロジックが機能します。
 		EditorGUI.BeginProperty (position, label, property);
 		
-		// Draw label
+		// ラベルを描画
 		position = EditorGUI.PrefixLabel (position, GUIUtility.GetControlID (FocusType.Passive), label);
 		
-		// Don't make child fields be indented
+		// 子フィールドがインデントされないようにする
 		var indent = EditorGUI.indentLevel;
 		EditorGUI.indentLevel = 0;
 		
-		// Calculate rects
+		// Rect を計算
 		var amountRect = new Rect (position.x, position.y, 30, position.height);
 		var unitRect = new Rect (position.x+35, position.y, 50, position.height);
 		var nameRect = new Rect (position.x+90, position.y, position.width-90, position.height);
 		
-		// Draw fields - passs GUIContent.none to each so they are drawn without labels
+		// フィールドの描画 GUIContent.none を各々に渡してラベルなしで描画されるようにする
 		EditorGUI.PropertyField (amountRect, property.FindPropertyRelative ("amount"), GUIContent.none);
 		EditorGUI.PropertyField (unitRect, property.FindPropertyRelative ("unit"), GUIContent.none);
 		EditorGUI.PropertyField (nameRect, property.FindPropertyRelative ("name"), GUIContent.none);
 		
-		// Set indent back to what it was
+		// インデントを元に戻す
 		EditorGUI.indentLevel = indent;
 		
 		EditorGUI.EndProperty ();
 	}
 }
 END EX
-The other use of PropertyDrawer is to alter the appearance of members in a script that have custom [[PropertyAttribute]]s.
-Say you want to limit floats or integers in your script to a certain range and show them as sliders in the Inspector.
-Using the built-in [[PropertyAttribute]] called [[RangeAttribute]] you can do just that:
+PropertyDrawer の他の使用方法はカスタムの [[PropertyAttribute]] を持つスクリプトのメンバーの外見を変更することです。
+例えばスクリプトの float や integer を一定の範囲に制限して、インスペクタでスライダーとして表示したいとします。
+これはビルトインの [[RangeAttribute]] という名前の [[PropertyAttribute]] を使用することで実現できます。
 BEGIN EX
-// Show this float in the Inspector as a slider between 0 and 10
+// この float をインスペクタ上で 0 と 10 の間の値をとる スライダーとします。
 @Range (0.0, 10.0)
 var myFloat = 0.0;
 END EX
-You can make your own [[PropertyAttribute]] as well. We'll use the code for the [[RangeAttribute]] as an example.
-The attribute must extend the PropertyAttribute class. If you want, your property can take parameters and store them as public member variables.
+自身の [[PropertyAttribute]] を作成することも出来ます。[[RangeAttribute]] のコードを一例として使用します。
+属性は PropertyAttribute クラスを拡張する必要があります。必要であれば、プロパティは引数を使って、public メンバー変数として格納できます。
 BEGIN EX
-// This is not an editor script. The property attribute class should be placed in a regular script file.
+// これはエディタスクリプトではありません。プロパティ属性クラスは通常のスクリプトファイルに配置されるべきです。
 class RangeAttribute extends PropertyAttribute {
 	var min : float;
 	var max : float;
@@ -88,22 +88,22 @@ class RangeAttribute extends PropertyAttribute {
 	}
 }
 END EX
-Now that you have the attribute, you need to make a PropertyDrawer that draws properties that have that attribute.
-The drawer must extend the PropertyDrawer class, and it must have a [[CustomPropertyDrawer]] attribute to tell it which attribute it's a drawer for.
+属性が出来たので、次にその属性を持つプロパティを描画するように PropertyDrawer を作成します。
+Drawer はPropertyAttribute クラスを拡張する必要があり、また必須である [[CustomPropertyDrawer]] 属性を持ち、どの属性の Drawerであるか明示します。
 BEGIN EX
-// The property drawer class should be placed in an editor script, inside a folder called Editor.
+// PropertyDrawer クラスは Editor という名前のフォルダの中に、エディタ スクリプトとして配置する必要があります。
 
-// Tell the RangeDrawer that it is a drawer for properties with the RangeAttribute.
+// RangeDrawer が RangeAttributeを持つプロパティの Drawer であることを明示します。
 @CustomPropertyDrawer (RangeAttribute)
 class RangeDrawer extends PropertyDrawer {
 
-	// Draw the property inside the given rect
+	// 与えられた Rect の中のプロパティを描画
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
 		
-		// First get the attribute since it contains the range for the slider
+		// スライダーの範囲が含まれるためため、最初に属性を取得
 		var range : RangeAttribute = attribute as RangeAttribute;
 		
-		// Now draw the property as a Slider or an IntSlider based on whether it's a float or integer.
+		// 次にプロパティを、float または integer であるかにもとづき、 Slider または IntSlider として描画します
 		if (property.propertyType == SerializedPropertyType.Float)
 			EditorGUI.Slider (position, property, range.min, range.max, label);
 		else if (property.propertyType == SerializedPropertyType.Integer)
@@ -113,8 +113,8 @@ class RangeDrawer extends PropertyDrawer {
 	}
 }
 END EX
-Note that the PropertyDrawers are designed to work with [[EditorGUIUtility.LookLikeInspector|LookLikeInspector]] indentation by default.
-For now, if you want to use [[EditorGUIUtility.LookLikeControls|LookLikeControls]], please shave off 4 pixels from both left and right side of the provided position:
+PropertyDrawers はデフォルトで [[EditorGUIUtility.LookLikeInspector|LookLikeInspector]] インデントと連携するように設計されています。
+ここでは、 [[EditorGUIUtility.LookLikeControls|LookLikeControls]] を使用したい場合、指定された位置の左右 4 ピクセルを削ります。
 BEGIN EX
 [CustomPropertyDrawer (typeof (MyClass))]
 public class MyDrawer : PropertyDrawer {
@@ -127,6 +127,6 @@ public class MyDrawer : PropertyDrawer {
 	}
 }
 END EX
-Note that for performance reasons, EditorGUILayout functions are not usable with PropertyDrawers.
+パフォーマンス上の理由により EditorGUILayout 関数は PropertyDrawers と共にに使用できません。
 
-SA: [[PropertyAttribute]] class, [[CustomPropertyDrawer]] class.
+SA: [[PropertyAttribute]] クラス, [[CustomPropertyDrawer]] クラス。
