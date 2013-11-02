@@ -1,1 +1,1 @@
-NPOT textures are not supported. Will be upscaled/padded at loading time.
+NPOT テクスチャは対応されません。ローディング時にスケール拡大/パディングされます。

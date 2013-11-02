@@ -1,2 +1,2 @@
-Limited NPOT support: no mip-maps and clamp [[TextureWrapMode|wrap mode]] will be forced.
-If NPOT Texture do have mip-maps it will be upscaled/padded at loading time.
+限定的な NPOT 対応: ミップマップおよび Clamp [[TextureWrapMode|wrap モード]] が強制されます。
+もし NPOT テクスチャがミップマップを含む場合、ロード時にスケール拡大/パディングされます。
