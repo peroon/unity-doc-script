@@ -1,4 +1,4 @@
 <signature>
 forceInternetPermission
 </signature>
-Force internet permission flag.
+インターネット使用パーミッションを強制的に有効にします。
