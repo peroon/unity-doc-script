@@ -1,18 +1,18 @@
 <signature>
 ctor(string,bool,int)
 </signature>
-Creates a menu item and invokes the static function following it, when the menu item is selected.
-The /itemName/ is the menu item represented like a pathname. Eg. "GameObject/Do Something"
-If /isValidateFunction/ is true, this is a validation function and will be called before invoking the menu function with the same name.
-/Priority/ defines the order by which menu items are displayed in the menu bar.
+メニューアイテムを作成し、メニューアイテムが選択されたときに続く static 関数を実行します。
+/itemName/ はパス名の形式で表現されるメニューアイテムです。例.  "GameObject/Do Something"
+/isValidateFunction/ が true である場合、これはチェック関数であり、同名のメニュー関数を実行する前に呼び出しされます。
+/Priority/ はメニューバーにおけるメニューアイテムの表示順を定義します。
 <signature>
 ctor(string,bool)
 </signature>
-Creates a menu item and invokes the static function following it, when the menu item is selected.
-The /itemName/ is the menu item represented like a pathname. Eg. "GameObject/Do Something"
-If /isValidateFunction/ is true, this is a validation function and will be called before invoking the menu function with the same name.
+メニューアイテムを作成し、メニューアイテムが選択されたときに続く static 関数を実行します。
+/itemName/ はパス名の形式で表現されるメニューアイテムです。例.  "GameObject/Do Something"
+/isValidateFunction/ が true である場合、これはチェック関数であり、同名のメニュー関数を実行する前に呼び出しされます。
 <signature>
 ctor(string)
 </signature>
-Creates a menu item and invokes the static function following it, when the menu item is selected.
-The /itemName/ is the menu item represented like a pathname. Eg. "GameObject/Do Something".
+メニューアイテムを作成し、メニューアイテムが選択されたときに続く static 関数を実行します。
+/itemName/ はパス名の形式で表現されるメニューアイテムです。例.  "GameObject/Do Something"

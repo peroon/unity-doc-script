@@ -1,11 +1,11 @@
 メニューを表示するターゲットとなる情報を格納しています
 BEGIN EX
-// Add context menu named "Something" to context menu
+// "Something" というメニューを現在のコンテキストメニューに追加します。
 @MenuItem ("CONTEXT/Rigidbody/Do Something")
 static function Something (command : MenuCommand) {
 	var body : Rigidbody = command.context;
 	body.mass = 5;
-	Debug.Log ("Changed Rigidbody's Mass to " + body.mass + " from Context Menu...");
+	Debug.Log ("Rigidbody の重さを" + body.mass + " に、コンテキストメニューから変更...");
 }
 END EX
 SA: [[MenuItem]].
