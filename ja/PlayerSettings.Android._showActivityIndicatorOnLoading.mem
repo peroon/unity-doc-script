@@ -1,4 +1,4 @@
 <signature>
 showActivityIndicatorOnLoading
 </signature>
-Application should show ActivityIndicator when loading.
+アプリケーションがロードするときに ActivityIndicator を表示させます。
