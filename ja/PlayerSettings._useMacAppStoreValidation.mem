@@ -1,14 +1,13 @@
 <signature>
 useMacAppStoreValidation
 </signature>
+Mac App Store のレシート検証を有効化します。
+これにより Mac App Store のレシート検証を有効化します。もし有効化された場合、
+自身のゲームは Mac App Store のレシート検証が含まれる場合にかぎり実行されます。App Store で Apple にゲームをパブリッシュするときに使用します。これによりコンピュータが購入されたものと異なる場合に実行できないようにします。
 Enable receipt validation for the Mac App Store.
-This enables receipt validation for the Mac App Store. If this is enabled, your game will
-only run when it contains a valid receipt from the Mac App Store. Use this when submitting
-games to Apple for publishing on the App Store. This prevents people from running the game
-on any computer then the one it was purchased on.
 
-Note that this feature does not implement any strong copy protection. In particular, any potential
-crack against one Unity game would work against any other Unity content. For this reason, it is
-recommended that you implement your own receipt validation code on top of this using Unity's
-plugin feature. However, since Apple requires plugin validation to initially happen before showing
-the screen setup dialog, you should still enable this check, or Apple might reject your submission.
+この機能は強力なコピープロテクトを実装していないことに留意して下さい。具体的には、ひとつの Unity ゲームに対する潜在的なクラッキングは他の Unity コンテンツに大しても有効です。この理由のため、
+この機能の上に Unity のプラグイン機能を使用してさらに自身のレシート検証を実装することを
+推奨します。しかし Apple は始めにスクリーンのセットアップ ダイアログの前に
+レシート検証が行なわれることを
+必要としているため、このチェックは有効にする必要があり、そうしなければ Apple 審査でリジェクトされる可能性があります。
