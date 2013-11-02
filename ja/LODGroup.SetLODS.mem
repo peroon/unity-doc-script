@@ -1,19 +1,19 @@
 <signature>
 SetLODS(LOD[])
 </signature>
-Set the LODs for the LOD group. This will remove any existing LODs configured on the LODGroup.
+LOD グループの LOD をセットします。これは LODGroup で設定された既存の LOD を全て削除します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Programmatically create a LOD group and add LOD levels. 
-	// Create a GUI that allows for forcing a specific LOD level.
+	// プログラムにより LOD グループを作成し LOD レベルを追加
+	// 特定の LOD レベルを強制することを許容する GUI を作成します。
 	var group : LODGroup;
 
-	// Use this for initialization
+	// 初期化で使用します。
 	function Start () 
 	{
 		group = gameObject.AddComponent(LODGroup);
 
-		// Add 4 LOD levels
+		// 4つの LOD レベルを追加
 		var lods = new LOD[4];
 
 		for (var i = 0; i < 4; i++)
@@ -65,4 +65,4 @@ BEGIN EX
 			group.ForceLOD (6);
 	}
 END EX
-@param scriptingLODs The LODs to use for this group.
+@param scriptingLODs このグループで使用される LOD。

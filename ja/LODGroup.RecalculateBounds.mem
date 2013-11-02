@@ -1,4 +1,4 @@
 <signature>
 RecalculateBounds()
 </signature>
-Recalculate the bounding region for the LODGroup (Relatively slow, do not call often).
+LODGroup の境界領域を再計算します（比較的遅いため、頻繁に呼び出ししないで下さい）。

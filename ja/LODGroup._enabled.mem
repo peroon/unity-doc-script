@@ -1,4 +1,4 @@
 <signature>
 enabled
 </signature>
-Enable / Disable the LODGroup - Disabling will turn off all renderers.
+LODGroup を有効化 / 無効化します - 無効化することで全てのレンダラをオフにします。
