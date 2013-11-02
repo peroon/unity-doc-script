@@ -2,8 +2,8 @@
 TextureProperty(string,string,ShaderPropertyTexDim)
 TextureProperty(string,string,ShaderPropertyTexDim,bool)
 </signature>
-Draw a property field for a texture shader property.
-@param propertyName Name of the property to draw.
-@param label Label for the field.
-@param texDim Dimensions of the texture.
-@param scaleOffset Draw scale / offset.
+テクスチャ シェーダ プロパティのプロパティフィールドを描画します。
+@param propertyName 描画するプロパティの名前。
+@param label フィールドのラベル。
+@param texDim テクスチャの次元。
+@param scaleOffset スケール / オフセットを描画。
