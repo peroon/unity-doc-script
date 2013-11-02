@@ -1,4 +1,4 @@
 <signature>
 OnEnable()
 </signature>
-Called when the editor is enabled, if overridden please call the base OnEnable() to ensure that the material inspector is set up properly.
+エディタが有効化されるときにコールされ、もし上書きされた場合、ベースの OnEnable() を呼び出しすることでマテリアル インスペクタのセットアップが正しいことを保証する必要があります。

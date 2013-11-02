@@ -1,4 +1,4 @@
 <signature>
 OnDisable()
 </signature>
-Called when the editor is disabled, if overridden please call the base OnDisable() to ensure that the material inspector is set up properly.
+エディタが無効化されるときにコールされ、もし上書きされた場合、ベースの OnDisable() を呼び出しすることでマテリアル インスペクタのセットアップが正しいことを保証する必要があります。
