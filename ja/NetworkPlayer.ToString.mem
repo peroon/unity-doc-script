@@ -1,4 +1,4 @@
 <signature>
 ToString()
 </signature>
-Returns the index number for this network player.
+このネットワークプレイヤーの index 番号を戻り値とします。
