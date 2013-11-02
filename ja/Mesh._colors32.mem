@@ -1,5 +1,5 @@
 <signature>
 colors32
 </signature>
-Vertex colors of the mesh.
-Same as ::ref::colors, except using [[Color32]] structure which is better for performance.
+メッシュの頂点カラー。
+::ref::colors と同様ですが、こちらの場合はより良いパフォーマンスが得られる [[Color32]] 構造体を使用します。

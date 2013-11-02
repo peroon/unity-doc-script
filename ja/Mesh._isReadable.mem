@@ -1,8 +1,7 @@
-Returns state of the Read/Write Enabled checkbox when model was imported.
-For a dynamic Mesh created from script, always returns true.
-
-Meshes not marked readable will throw an error on accessing any data arrays from script at runtime.
-Access is allowed in Unity's editor outside of the game and rendering loop.
+モデルがインポートされたときの読み取り/書き込みが 有効化されたチェックチェックボックスのステータスを戻り値とします。
+スクリプトから作成されたダイナミック メッシュの場合、常に true を戻り値とします。
+読み取り可能でないメッシュの場合実行時に任意のデータ配列をアクセスする際にエラーがスローされます。
+Unity エディタの中で、ゲーム外およびレンダリング ループの中でアクセスが許可されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {

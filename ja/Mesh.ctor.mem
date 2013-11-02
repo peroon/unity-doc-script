@@ -1,10 +1,10 @@
 <signature>
 ctor()
 </signature>
-Creates an empty mesh.
+空のメッシュを作成します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a new mesh and assign it to the mesh filter
+	// 新規のメッシュを作成しメッシュフィルタに割り当てます。
 	function Start () {
 		var mesh : Mesh = new Mesh ();
 		GetComponent(MeshFilter).mesh = mesh;
