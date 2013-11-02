@@ -2,7 +2,7 @@
 ToString()
 ToString(string)
 </signature>
-Returns a nicely formatted string for this Rect.
+この Rect を適切にフォーマットした文字列を戻り値とします。
 CONVERTEXAMPLE
 BEGIN EX
 	var rect = Rect (0, 0, 10, 10);
