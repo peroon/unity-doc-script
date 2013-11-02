@@ -1,6 +1,6 @@
 <signature>
 ctor(float,Renderer[])
 </signature>
-Construct a LOD.
-@param screenRelativeTransitionHeight The screen relative height to use for the transition [0-1].
-@param renderers An array of renderers to use for this LOD level.
+LOD を作成します。
+@param screenRelativeTransitionHeight トランジションで使用されるスクリーンの相対的な高さ [値は 0 - 1 の範囲]
+@param renderers この LOD レベルで使用されるレンダラの配列

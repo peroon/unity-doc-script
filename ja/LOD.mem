@@ -1,1 +1,1 @@
-Structure for building a LOD for passing to the SetLODs function.
+SetLODs 関数に渡す LOD を作成するための構造体

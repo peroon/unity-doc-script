@@ -1,4 +1,4 @@
 <signature>
 ForceLOD(int)
 </signature>
-@param index The LOD level to use. Passing index < 0 will return to standard LOD processing.
+@param index 使用する LOD レベル。0 未満の indexを渡すと標準の LOD 処理になります。
