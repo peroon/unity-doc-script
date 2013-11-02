@@ -1,1 +1,1 @@
-Generate the textures when loading to favor application's size (default on supported platform).
+アプリケーションのサイズを優先してロードする際にテクスチャを生成します（サポートされているプラットフォームではデフォルト設定）。
