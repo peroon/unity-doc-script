@@ -1,6 +1,6 @@
 <signature>
 SetColor(string,Color)
 </signature>
-与えられたテクスチャ プロパティの値をセットします。
+与えられたカラー シェーダ プロパティの値をセットします。
 @param propertyName カラー プロパティの名前。
 @param value セットするカラー。

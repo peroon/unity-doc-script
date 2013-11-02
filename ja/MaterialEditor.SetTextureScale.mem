@@ -1,7 +1,7 @@
 <signature>
 SetTextureScale(string,Vector2,int)
 </signature>
-Set the scale of a given texture property.
-@param propertyName Name of the texture property that you wish to modify the scale of.
-@param value Scale to set.
-@param coord Set the x or y component of the scale (0 for x, 1 for y).
+与えられたテクスチャ プロパティのスケールをセットします。
+@param propertyName スケールを修正したいテクスチャ プロパティの名前。
+@param value セットするスケール。
+@param coord スケールの X または Y コンポーネントをセットします（x の場合 0、y の場合 1）。

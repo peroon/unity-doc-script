@@ -1,7 +1,7 @@
 <signature>
 SetTextureOffset(string,Vector2,int)
 </signature>
-Set the offset of a given texture property.
-@param propertyName Name of the texture property that you wish to modify the offset of.
-@param value Scale to set.
-@param coord Set the x or y component of the offset (0 for x, 1 for y).
+与えられたテクスチャ プロパティのオフセットをセットします。
+@param propertyName オフセットを修正したいテクスチャ プロパティの名前。
+@param value セットするスケール。
+@param coord オフセットの X または Y コンポーネントをセットします（x の場合 0、y の場合 1）。

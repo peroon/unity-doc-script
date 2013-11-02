@@ -2,7 +2,7 @@
 SetShader(Shader)
 SetShader(Shader,bool)
 </signature>
-Set the shader of the material.
-Automatically handles internal inspector rebuilding.
-@param shader Shader to set.
-@param registerUndo Should undo be registered.
+マテリアルのシェーダをセットします。
+自動的に内部インスペクタの再作成をハンドリングします。
+@param shader セットするシェーダ。
+@param registerUndo 取り消しを登録すべきか。
