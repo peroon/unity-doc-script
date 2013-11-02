@@ -1,4 +1,4 @@
-Mesh is made from lines.
-Each two indices in the mesh index buffer form a line.
+メッシュは線から構成されます。
+メッシュ index バッファにおける各々二つの index が線を構成します。
 
-SA: Mesh.SetIndices function.
+SA: Mesh.SetIndices 関数。

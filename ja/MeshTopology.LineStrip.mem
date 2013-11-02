@@ -1,5 +1,4 @@
-Mesh is a line strip.
-First two indices form a line, and then each new index connects a new
-vertex to the existing line strip.
+メッシュは線分です。
+始めに二つの index から線が構成され、次に各々の新規の index が新しい頂点を既存の線分に接続します。
 
-SA: Mesh.SetIndices function.
+SA: Mesh.SetIndices 関数。

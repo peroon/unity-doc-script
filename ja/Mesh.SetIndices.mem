@@ -5,7 +5,7 @@ SetIndices(int[],MeshTopology,int)
 サブメッシュは単なる別の index 配列です。メッシュ レンダラが複数のマテリアルを使用する場合、サブメッシュがマテリアルと確実に同数あることを確認すべきです。
 
 ::ref::SetTriangles および ::triangles によりメッシュが常に三角形の面で構成
-されます。SetIndices により線分または点から構成されるメッシュが作成できます。
+されます。SetIndices により線または点から構成されるメッシュが作成できます。
 
 [[MeshTopology]] enum を参照して下さい。
 
