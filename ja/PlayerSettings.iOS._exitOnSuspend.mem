@@ -1,4 +1,4 @@
 <signature>
 exitOnSuspend
 </signature>
-Application should exit when suspended to background.
+バックグラウンドでサスペンドされたときにアプリケーションを終了します。

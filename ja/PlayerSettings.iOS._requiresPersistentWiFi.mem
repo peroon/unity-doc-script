@@ -1,4 +1,4 @@
 <signature>
 requiresPersistentWiFi
 </signature>
-Application requires persistent WiFi.
+アプリケーションは Persistent（恒常的な接続の）WiFiを必要とします。
