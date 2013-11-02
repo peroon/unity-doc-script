@@ -1,4 +1,4 @@
 <signature>
 NotEqual(NetworkPlayer,NetworkPlayer)
 </signature>
-Returns true if two NetworkPlayers are not the same player.
+もし二人の NetworkPlayers が同一プレイヤーでない場合 true を戻り値とします。

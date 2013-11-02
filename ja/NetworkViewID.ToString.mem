@@ -1,4 +1,4 @@
 <signature>
 ToString()
 </signature>
-Returns a formatted string with details on this NetworkViewID.
+この NetworkViewID の詳細についてのフォーマットされた文字列を戻り値とします。

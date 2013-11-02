@@ -1,4 +1,4 @@
 <signature>
 Equal(NetworkViewID,NetworkViewID)
 </signature>
-Returns true if two NetworkViewIDs are identical.
+もし二つの NetworkViewIDs が同一である場合 true を戻り値とします。
