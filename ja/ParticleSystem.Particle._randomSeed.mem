@@ -1,5 +1,5 @@
 <signature>
 randomSeed
 </signature>
-The random seed of the particle.
-This is used to create the value used to interpolate between the two curves when random between curves is used.
+パーティクルのランダムシード。
+カーブ間のランダムが使用される場合、この関数が二つのカーブの間を補間する値を生成するために使用されます。
