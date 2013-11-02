@@ -1,18 +1,15 @@
 <signature>
 GetNativeTexturePtr()
 </signature>
-Retrieve native ('hardware') pointer to a texture.
-Use this function to retrieve a pointer/handle corresponding to a particular texture
-as it is represented on the native graphics device level.
-This can be used to enable texture manipulation from [[wiki:NativePluginInterface|native code plugins]].
+ネイティブな ('ハードウェア') ポインタをテクスチャに取得します。
+特定のテクスチャに対応するポインタ/ハンドルをネイティブなグラフィックス デバイスのレベルで表現されている形で
+取得するためにこの関数を使用します。
+これは [[wiki:NativePluginInterface|ネイティブ コード プラグイン]] のテクスチャ処理を有効化するのに使用できます。
 
-On Direct3D-like devices this returns a pointer to the base texture type (IDirect3DBaseTexture9
-on D3D9, ID3D11Resource on D3D11). On OpenGL-like devices the texture "name" is returned;
-cast the pointer to integer type to get it. On platforms that do not support native code plugins,
-this function always returns NULL.
+Direct3D 系のデバイスでは、ベーステクスチャタイプ (IDirect3DBaseTexture9
+on D3D9, ID3D11Resource on D3D11)
+へのポインタが戻り値です。OpenGL 系のデバイスではテクスチャ名が戻り値です。ネイティブ コード プラグインをサポートしないプラットフォームではこの関数の戻り値は常に NULL です。
 
-Note that calling this function when using multi-threaded rendering will synchronize with the rendering
-thread (a slow operation), so best practice is to set up needed texture pointers only at initialization
-time.
+マルチスレッド レンダリングをしようするときにこの関数を呼び出しするとレンダリング スレッドが同期化される（遅い処理）ため、ベストプラクティスとしては必要なテクスチャ ポインタのみを初期化のタイミングでセットアップすべきことに留意して下さい。
 
-SA: [[wiki:NativePluginInterface|Native code plugins]].
+SA: [[wiki:NativePluginInterface|ネイティブ コード プラグイン]] 

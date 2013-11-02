@@ -1,39 +1,37 @@
 <signature>
 ctor(int,int)
 </signature>
-Create a new empty texture.
-The texture will be /width/ by /height/ size, with an ARGB32 [[TextureFormat]], with mipmaps and in sRGB color space.
+新規の空のテクスチャを作成します。
+テクスチャのサイズは /width/ × /height/ となり、ARGB32 [[TextureFormat]] （テクスチャ形式）、ミップマップつきおよび sRGB カラー空間です。
 
-Usually you will want to set the colors of the texture after creating it, using
-::ref::SetPixel, ::ref::SetPixels and ::ref::Apply functions.
+一般的にテクスチャ作成後に ::ref::SetPixel, ::ref::SetPixels and ::ref::Apply  関数を使用してカラーをセットします。
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Create a new texture and assign it to the renderer's material
+		// 新規のテクスチャを作成し、レンダラのマテリアルに割り当て
 		var texture = new Texture2D (128, 128);
 		renderer.material.mainTexture = texture;
 	}
 END EX
-SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply functions.
+SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply 関数
 <signature>
 ctor(int,int,TextureFormat,bool)
 </signature>
-Create a new empty texture.
-The texture will be /width/ by /height/ size, with a given /format/, with mipmaps
-or without and in either the linear or sRGB color space.
+新規の空のテクスチャを作成します。
+テクスチャのサイズは /width/ × /height/ となり、与えられた /format/ 、
+ミップマップつき/なし、および線形または sRGB カラー空間です。
 
-Usually you will want to set the colors of the texture after creating it, using
-::ref::SetPixel, ::ref::SetPixels and ::ref::Apply functions.
+一般的にテクスチャ作成後に ::ref::SetPixel, ::ref::SetPixels and ::ref::Apply  関数を使用してカラーをセットします。
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Create a new texture and assign it to the renderer's material
+		// 新規のテクスチャを作成し、レンダラのマテリアルに割り当て
 		var texture = new Texture2D(128, 128, TextureFormat.ARGB32, false);
 		renderer.material.mainTexture = texture;
 	}
 END EX
-SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply functions.
+SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply 関数。
 <signature>
 ctor(int,int,TextureFormat,bool,bool)
 </signature>
-SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply functions.
+SA: ::ref::SetPixel, ::ref::SetPixels, ::ref::Apply 関数。

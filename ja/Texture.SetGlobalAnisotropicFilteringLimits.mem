@@ -1,7 +1,7 @@
 <signature>
 SetGlobalAnisotropicFilteringLimits(int,int)
 </signature>
-Sets Anisotropic limits.
-ForcedMin value controls the minimal anisotropy level set when Anisotropy is forced.
-globalMax value controls the max possible anisotropy level.
-set any to -1 to use default values.
+異方性のリミットをセットします。
+ForcedMin の値は、異方性が強制された場合の、最小の異方性レベルをセットします。
+globalMax の値は、最大の異方性レベルを制御します。
+任意の場合に -1 をセットすることでデフォルト値が使用されます。
