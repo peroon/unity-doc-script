@@ -2,5 +2,5 @@
 ctor()
 ctor(int)
 </signature>
-Attribute used to make a string value be shown in a multiline textarea.
-@param lines How many lines of text to make room for. Default is 3.
+文字列の値が複数行のテキストエリアで表示されるための属性。
+@param lines どれぐらいのテキスト行数を確保すべきか。デフォルト値は 3。
