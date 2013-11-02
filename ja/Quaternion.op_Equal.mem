@@ -1,8 +1,8 @@
 <signature>
 Equal(Quaternion,Quaternion)
 </signature>
-Are two quaternions equal to each other?
-This function tests whether dot product of two quaternions is close to 1.0.
+二つのクォータニオンが互いに一致するか？
+この関数は二つのクォータニオンの内積が 1.0 に近いかテストします。
 
-Note that because quaternions can represent rotations that are up to two full revolutions
-(720 degrees), this comparison can return /false/ even if resulting rotations look the same.
+クォータニオンは二回転（720 度）までの回転を表現できるため、見た目の回転が同一に見えても
+比較結果が /false/ を戻り値とする場合があります。

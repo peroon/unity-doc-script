@@ -2,7 +2,7 @@
 ToString()
 ToString(string)
 </signature>
-Returns a nicely formatted string of the Quaternion.
+クォータニオンを適切にフォーマットした文字列を戻り値とします。
 CONVERTEXAMPLE
 BEGIN EX
 	print(Quaternion.identity);
