@@ -1,5 +1,5 @@
 <signature>
 nextOffMeshLinkData
 </signature>
-The next [[OffMeshLinkData]] on the current path.
-In the case that the current path does not contain an OffMeshLink the [[OffMeshLinkData]] is marked as invalid.
+現在のパスでの次の [[OffMeshLinkData]] 。
+現在のパスにオフメッシュリンクが含まれない場合、 [[OffMeshLinkData]] は無効としてマーキングされます。
