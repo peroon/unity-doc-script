@@ -1,5 +1,5 @@
 <signature>
 NotEqual(Vector2,Vector2)
 </signature>
-Returns true if vectors different.
-Very close vectors are treated as being equal.
+ベクトルが異なる場合 true を戻り値とします。
+相当に近い値のベクトルも等しいとみなされます。
