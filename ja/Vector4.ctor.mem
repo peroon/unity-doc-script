@@ -1,12 +1,12 @@
 <signature>
 ctor(float,float,float,float)
 </signature>
-Creates a new vector with given x, y, z, w components.
+与えられた x, y, z, w  コンポーネントで新規のベクトルを作成します。
 <signature>
 ctor(float,float,float)
 </signature>
-Creates a new vector with given x, y, z components and sets /w/ to zero.
+与えられた x, y, z コンポーネントで新規のベクトルを作成し、その際に /w/ はゼロとします。
 <signature>
 ctor(float,float)
 </signature>
-Creates a new vector with given x, y components and sets /z/ and /w/ to zero.
+与えられた x, y コンポーネントで新規のベクトルを作成し、その際に /z/ および /w/ はゼロとします。

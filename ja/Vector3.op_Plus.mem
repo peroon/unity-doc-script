@@ -1,10 +1,10 @@
 <signature>
 Plus(Vector3,Vector3)
 </signature>
-Adds two vectors.
-Adds corresponding components together.
+二つのベクトルを加算します。
+対応するコンポーネントを互いに加算します。
 CONVERTEXAMPLE
 BEGIN EX
-	// prints (5.0,7.0,9.0)
+	// (5.0,7.0,9.0) を表示
 	print (Vector3(1,2,3) + Vector3(4,5,6));
 END EX
