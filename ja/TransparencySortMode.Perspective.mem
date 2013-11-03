@@ -1,4 +1,4 @@
-Perspective sorting mode.
-Transparent objects will be sorted based on distance from camera position to the object center.
+Perspective ソート モード。
+透明オブジェクトはオブジェクトの中心からカメラ位置までの距離にもとづきソートされます。
 
 SA: Camera.transparencySortMode.

@@ -1,4 +1,6 @@
 Orthographic sorting mode.
 Transparent objects will be sorted based on distance along the camera's view.
+Orthographic ソート モード。
+透明オブジェクトはカメラのビューに沿った距離にもとづきソートされます。
 
 SA: Camera.transparencySortMode.
