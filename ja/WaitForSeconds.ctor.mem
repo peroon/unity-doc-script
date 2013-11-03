@@ -1,13 +1,13 @@
 <signature>
 ctor(float)
 </signature>
-Creates a yield instruction to wait for a given number of seconds.
+特定の秒数だけ待機するという yield 指示を作成します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Prints 0
+	// 0 を表示
 	print (Time.time);
-	// Waits 5 seconds
+	// 5 秒間待機
 	yield WaitForSeconds (5);
-	// Prints 5.0
+	// 5.0 を表示
 	print (Time.time);
 END EX
