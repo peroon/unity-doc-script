@@ -1,4 +1,4 @@
 <signature>
 wasCanceled
 </signature>
-Specifies if input process was canceled. (RO)
+入力処理がキャンセルされたか指定します。（読み取り専用）

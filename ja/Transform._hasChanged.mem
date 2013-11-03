@@ -1,14 +1,14 @@
 <signature>
 hasChanged
 </signature>
-Has the transform changed since the last time the flag was set to 'false'?
-A change to the transform can be anything that causes its matrix to be recalculated: any adjustment to its position, rotation or scale.
+フラグが 'false' にセットされた最終変更時から Transform は変更されているか？
+Transform への変更は、そのマトリクスが再計算を引き起こすものであれば何でも該当します: 任意の位置、回転、またはスケールへの調整。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnUpdate () {
 		if (transform.hasChanged)
 		{
-			print("The transform has changed!");
+			print("Transform が変更されました!");
 			transform.hasChanged = false;
 		}
 	}

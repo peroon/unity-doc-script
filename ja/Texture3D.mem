@@ -1,2 +1,2 @@
-Class for handling 3D Textures, Use this to create [[wiki:class-Texture3D|3D texture assets]].
-3D textures are commonly used as lookup tables by shaders.
+3D テクスチャをハンドリングするクラス、 [[wiki:class-Texture3D|3D テクスチャ アセット]] の作成に使用します。
+3D テクスチャは一般的にシェーダによるルックアップ テーブルとして使用されます。
