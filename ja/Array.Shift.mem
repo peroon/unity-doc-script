@@ -7,10 +7,10 @@ Shift()
 <txttag>
 CSNONE
 </txttag>
-Removes the first element of the array and returns it.
+配列の最初の要素を取り除き、それを戻り値とします。
 BEGIN EX
 var arr = new Array ("Hello", "World");
 arr.Shift();
-// arr now only contains "World"
+// arr 配列は "World" のみ含む
 print ("World");
 END EX

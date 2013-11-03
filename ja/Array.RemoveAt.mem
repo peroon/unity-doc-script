@@ -7,11 +7,11 @@ RemoveAt()
 <txttag>
 CSNONE
 </txttag>
-Removes the element at /index/ from the array.
+配列の /index/ 番目の要素を取り除きます。
 Var arr = new Array ("Hello", "and good morning", "World");
 
-// remove "and good morning"
+// "and good morning" を取り除く
 arr.RemoveAt(1);
 	
-// Prints "Hello,World"
+// "Hello,World" と表示
 print (arr);

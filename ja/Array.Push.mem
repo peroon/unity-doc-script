@@ -7,11 +7,11 @@ Push()
 <txttag>
 CSNONE
 </txttag>
-Adds /value/ to the end of the array.
-And returns the new length of the array.
+配列の最終要素に /value/ を追加します。
+その際、戻り値は変更後の配列の長さとします。
 BEGIN EX
 var arr = new Array ("Hello");
 arr.Push("World");
-// Prints "Hello", "World"
+// "Hello", "World" を表示
 print(arr);
 END EX
