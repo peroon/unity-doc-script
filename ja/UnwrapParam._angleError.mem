@@ -1,4 +1,4 @@
 <signature>
 angleError
 </signature>
-Maximum allowed angle distortion (0..1).
+許容される角度の歪みの最大値（値は 0 - 1 の範囲）。
