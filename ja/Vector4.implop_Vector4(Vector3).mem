@@ -1,13 +1,13 @@
 <signature>
 implop_Vector4(Vector3)
 </signature>
-Converts a [[Vector3]] to a Vector4.
-Vector3s can be implicitly converted to Vector4 (w is set to zero in the result).
+[[Vector3]] を Vector4. に変換します。
+Vector3 は明示的に Vector4 に変換できます（結果としてw 軸が ゼロにセットされます）。
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Shader vectors are always Vector4s.
-		// The value here is converted to a Vector4 from a Vector3.
+		// シェーダ ベクトル は常に Vector4
+		// ここの値は Vector3 から Vector4 に変換
 		var value : Vector3 = Vector3.one;
 		renderer.material.SetVector("_SomeVariable", value);
 	}
