@@ -1,11 +1,11 @@
 <signature>
 Divide(Vector2,float)
 </signature>
-Divides a vector by a number.
-Divides each component of /a/ by a number /d/.
+Vector を 指定の数字により割ります。
+/a/ の各コンポーネントを数字 /d/ により割ります。
 CONVERTEXAMPLE
 BEGIN EX
-	// make the vector twice shorter: prints (0.5,1.0)
+	// ベクトルを 1/2 の長さにする: (0.5,1.0) と表示
 
 	print (Vector2(1,2) / 2.0);
 END EX
