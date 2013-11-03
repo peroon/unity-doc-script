@@ -1,16 +1,14 @@
 <signature>
 ctor(string,int,int,int)
 </signature>
-Create a WebCamTexture.
-Note that if you want to use WebCamTextures in the web player, you need to get the user's
-permission to do so. Call [[Application.RequestUserAuthorization]] before creating a
-WebCamTexture.
-@param deviceName The name of the video input device to be used. Use [[WebCamTexture.devices]] to get a list of supported devices. 
-If no device is supplied by either using one of the constructors which don't have this parameter, or by passing null, the first device
-to be found will be used.
-@param requestedWidth The requested width of the texture. The real width may be different, and will match the closest width supported by the device.
-@param requestedHeight The requested height of the texture. The real height may be different, and will match the closest height supported by the device.
-@param requestedFPS The requested frame rate of the texture. The real frame rate may be different, and will match the closest frame rate supported by the device.
+WebCamTexture を作成します。
+ウェブプレイヤーで WebCamTexture を使用したい場合、ユーザの
+パーミッションを得る必要があることに留意して下さい。WebCamTexture を作成する前に [[Application.RequestUserAuthorization]] を呼び出し下さい。
+@param deviceName 使用すべきビデオ入力デバイス名。[[WebCamTexture.devices]] を使用してサポートされるデバイスの一覧を取得します。
+もしこのパラメータを持たないコンストラクタの一つを使用するか、あるいは Null を渡したことによって、サポートされるデバイスがない場合は最初に見つかったデバイスが使用されます。
+@param requestedWidth リクエストされたテクスチャの幅。実際の幅は異なるかもしれず、デバイスによりサポートされる最も近い幅と一致します。
+@param requestedHeight リクエストされたテクスチャの高さ。実際の高さは異なるかもしれず、デバイスによりサポートされる最も近い高さと一致します。
+@param requestedFPS リクエストされたテクスチャのフレームレート。実際のフレームレートは異なるかもしれず、デバイスによりサポートされる最も近いフレームレートと一致します。
 <signature>
 ctor(string,int,int)
 ctor(string)
