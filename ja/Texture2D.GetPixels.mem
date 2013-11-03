@@ -2,45 +2,42 @@
 GetPixels(int)
 </signature>
 ピクセルのカラー配列を設定する
-This function returns an array of pixel colors of the whole
-mip level of the texture.
+この関数はテクスチャの全体のミップレベルのピクセルカラー配列を戻り値とします。
 
-The returned array is a flattened 2D array, where pixels are laid out left to right,
-bottom to top (i.e. row after row). Array size is width by height of the mip level used.
-The default mip level is zero (the base texture) in which case the size is just the size of the texture.
-In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
-and similarly for height.
+戻り値の配列は、ピクセルが左から右、下から上に（行の次に行を）並べられた平坦化された 2D 配列です。配列の大きさは使用されるミップレベルの幅に高さを掛けた値です。
+デフォルトのミップレベルはゼロ（ベース テクスチャ）であり、大きさは単にテクスチャの大きさに相当します。
+一般的に、ミップレベルの大きさは @@mipWidth=max(1,width>>miplevel)@@ であり、高さについても同様です。
 
-The texture must have the __Read/Write Enabled__ flag set in the import settings, otherwise this function will fail.
+テクスチャは必ず __Read/Write Enabled__ フラグを Import Settings でセットする必要があり、そうしないと関数がエラーとなります。
 
-Using /GetPixels/ can be faster than calling ::ref::GetPixel repeatedly, especially
-for large textures. In addition, /GetPixels/ can access individual mipmap levels.
+特に大きなテクスチャにおいて、 /GetPixels/ を使用するほうが ::ref::GetPixel を繰り返し呼び出しするよりも
+高速です。それに加えて /GetPixels/ の場合、個別のミップマップ レベルにアクセスできます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Get a rectangular area of a texture and place it into a new
-	// texture the size of the rectangle.
+	// テクスチャの Rect 領域を取得して、Rectの大きさを新規の
+	// テクスチャに反映
 
-	// Source texture and the rectangular area we want to extract.
+	// ソースのテクスチャおよび Rect 領域を抽出
 	var sourceTex: Texture2D;
 	var sourceRect: Rect;
 
 
 	function Start () {
-		// The values in the Rect structure are floats, so round them
-		// down to the nearest integer.
+		// Rect 構造体の値は float のため、最も近い整数に
+		// 丸めます
 		var x = Mathf.FloorToInt(sourceRect.x);
 		var y = Mathf.FloorToInt(sourceRect.x);
 		var width = Mathf.FloorToInt(sourceRect.width);
 		var height = Mathf.FloorToInt(sourceRect.height);
 		
-		// Get the pixel block and place it into a new texture.
+		// ピクセル ブロックを取得し、新規のテクスチャに反映
 		var pix = sourceTex.GetPixels(x, y, width, height);
 		var destTex = new Texture2D(width, height);
 		destTex.SetPixels(pix);
 		destTex.Apply();
 		
-		// Set the current object's texture to show the
-		// extracted rectangle.
+		// 現在のオブジェクトのテクスチャに抽出した Rect 
+		// を表示するようにセット
 		renderer.material.mainTexture = destTex;
 	}
 END EX
@@ -49,6 +46,6 @@ SA: ::ref::SetPixels, ::ref::mipmapCount.
 GetPixels(int,int,int,int,int)
 </signature>
 ピクセルカラーの配列を返します。
-This function is an extended version of /GetPixels/ above; it does not return the whole
-mip level but only /blockWidth/ by /blockHeight/ region starting at ''x,y''.
-The block must fit into the used mip level. The returned array is ''blockWidth*blockHeight'' size.
+この関数は上記の /GetPixels/ の拡張版です。ミップレベル全体を戻り値とせず、
+ ''x,y'' を開始地点として /blockWidth/ （幅）と /blockHeight/ （高さ）を掛けた領域のみ戻り値とします。
+ ブロックは使用されたミップレベルにフィットする必要があります。戻り値となる配列の大きさは ''blockWidth*blockHeight'' です。

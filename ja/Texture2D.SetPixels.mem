@@ -1,43 +1,37 @@
 <signature>
 SetPixels(Color[],int)
 </signature>
-ピクセルのカラー配列を取得する
-This function takes a color array and changes the pixel colors of the whole
-mip level of the texture. Call ::ref::Apply to actually upload the changed
-pixels to the graphics card.
+ピクセルのカラー配列を取得します。
+この関数はカラー配列に対してテクスチャのミップレベル全体のピクセルカラーを変更します。変更されたピクセルをグラフィックスカードにアップロードするには ::ref::Apply を呼び出します。
+戻り値の配列は、ピクセルが左から右、下から上に（行の次に行を）並べられた平坦化された 2D 配列です。配列の大きさは使用されるミップレベルの幅に高さを掛けた値です。デフォルトのミップレベルはゼロ（ベース テクスチャ）であり、大きさは単にテクスチャの大きさに相当します。
+一般的に、ミップレベルの大きさは @@mipWidth=max(1,width>>miplevel)@@ であり、高さについても同様です。
 
-The /colors/ array is a flattened 2D array, where pixels are laid out left to right,
-bottom to top (i.e. row after row). Array size must be at least width by height of the mip level used.
-The default mip level is zero (the base texture) in which case the size is just the size of the texture.
-In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
-and similarly for height.
+この関数は /ARGB32/, /RGB24/ および /Alpha8/ テクスチャ形式のみ動作します。
+他のフォーマットの場合に /SetPixels/ は無視されます。
+さらにテクスチャの __Is Readable__ フラグを Import Settings で有効化しておく必要があります。
 
-This function works only on /ARGB32/, /RGB24/ and /Alpha8/ texture formats.
-For other formats /SetPixels/ is ignored.
-The texture also has to have __Is Readable__ flag set in the import settings.
-
-Using /SetPixels/ can be faster than calling ::ref::SetPixel repeatedly, especially
-for large textures. In addition, /SetPixels/ can access individual mipmap levels.
+特に大きなテクスチャにおいて、 /GetPixels/ を使用するほうが ::ref::GetPixel を繰り返し呼び出しするよりも
+高速です。それに加えて /GetPixels/ の場合、個別のミップマップ レベルにアクセスできます。
 
 SA: ::ref::GetPixels, ::ref::Apply, ::ref::mipmapCount.
 BEGIN EX
-	// This script will tint texture's mip levels in different colors
-	// (1st level red, 2nd green, 3rd blue). You can use it to see
-	// which mip levels are actually used and how.
+	// このスクリプトはテクスチャのミップレベルを異なる色に色付けします。
+	// (一つめのレベルは赤、二つめは緑、三つめは青）これを使用して
+	// どのミップレベルが実際にどのようにして使用されるか確認できます。
 
 	function Start () {
-		// duplicate the original texture and assign to the material
+		// 元のテクスチャを複製してマテリアルに割り当て
 		var texture : Texture2D = Instantiate(renderer.material.mainTexture);
 		renderer.material.mainTexture = texture;
 
-		// colors used to tint the first 3 mip levels
+		// 最初の三つのミップレベルを色付けするのに使用
 		var colors = new Color[3];
 		colors[0] = Color.red;
 		colors[1] = Color.green;
 		colors[2] = Color.blue;
 		var mipCount = Mathf.Min( 3, texture.mipmapCount );
 
-		// tint each mip level
+		// 各々のミップレベルを色付け
 		for( var mip = 0; mip < mipCount; ++mip ) {
 			var cols = texture.GetPixels( mip );
 			for( var i = 0; i < cols.Length; ++i ) {
@@ -46,7 +40,7 @@ BEGIN EX
 			texture.SetPixels( cols, mip );
 		}
 
-		// actually apply all SetPixels, don't recalculate mip levels
+		// 実際に全ての SetPixels を適用、ミップレベルを再計算しない
 		texture.Apply( false );
 	}
 END EX
@@ -54,7 +48,7 @@ END EX
 SetPixels(int,int,int,int,Color[],int)
 </signature>
 ピクセルのカラー配列を取得する
-This function is an extended version of /SetPixels/ above; it does not modify the whole
-mip level but modifies only /blockWidth/ by /blockHeight/ region starting at ''x,y''.
-The /colors/ array must be ''blockWidth*blockHeight'' size, and the modified block
-must fit into the used mip level.
+この関数は上記の /GetPixels/ の拡張版です。ミップレベル全体を
+修正しませんが、
+ ''x,y'' を開始地点として /blockWidth/ （幅）と /blockHeight/ （高さ）を掛けた領域のみ修正します。
+/colors/ 配列の大きさは ''blockWidth*blockHeight'' とする必要があり、修正されたブロックは使用されたミップレベルにフィットする必要があります。
