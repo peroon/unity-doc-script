@@ -7,17 +7,16 @@ Concat()
 <txttag>
 CSNONE
 </txttag>
-Concat joins two or more arrays.
-The method does not change the existing arrays and returns a copy of the joined array.
-BEGIN EX
+二つ以上の配列を連結します。
+このメソッドは既存の配列は変更せず、配列を複製して連結した配列を戻り値とします。BEGIN EX
 function Start () {
 		var arr = new Array ("Hello", "World");
 		var arr2 = new Array ("!");
 	
-		// joined now contains all 3 strings		
+		// 連結した joined は 3 つの文字列を含む
 		var joined = arr.Concat(arr2);
 		
-		// prints "Hello","World","!"    
+		// "Hello","World","!" を表示
 		print(joined);
 }
 END EX

@@ -7,13 +7,13 @@ Join()
 <txttag>
 CSNONE
 </txttag>
-Joins the contents of an array into one string.
-The elements are seperated by the /seperator/ string and returns a copy of the joined array.
+配列の要素を一つの文字列に連結します。
+これらの要素を /seperator/ 文字により区切ったうえ、複製した連結後の配列を戻り値とします。
 BEGIN EX
 function Start () {
 		var arr = new Array ("Hello", "World");
 
-		// Prints "Hello, World"
+		// "Hello, World" と表示
 		print(arr.join(", "));
 }
 END EX

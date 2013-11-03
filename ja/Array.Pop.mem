@@ -7,11 +7,11 @@ Pop()
 <txttag>
 CSNONE
 </txttag>
-Removes the last element of the array and returns it.
+配列の最終要素を取り除き、それを戻り値とします。
 BEGIN EX
 var arr = new Array ("Hello", "World");
 arr.Pop();
 
-// Prints only "Hello"
+// "Hello" を表示
 print (arr);
 END EX
