@@ -1,7 +1,7 @@
 <signature>
 Multiply(Vector2,float)
 </signature>
-Vector に 数字を掛けます。
+Vector に数字を掛けます。
 /a/ の各コンポーネントに /d/ の数字を掛けます。
 CONVERTEXAMPLE
 BEGIN EX

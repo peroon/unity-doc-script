@@ -1,20 +1,20 @@
 <signature>
 Multiply(Vector3,float)
 </signature>
-Multiplies a vector by a number.
-Multiplies each component of /a/ by a number /d/.
+Vector に数字を掛けます。
+/a/ の各コンポーネントに /d/ の数字を掛けます。
 CONVERTEXAMPLE
 BEGIN EX
-	// make the vector twice longer: prints (2.0,4.0,6.0)
+	// ベクトルの長さを倍にする: (2.0,4.0,6.0) と表示
 	print (Vector3(1,2,3) * 2.0);
 END EX
 <signature>
 Multiply(float,Vector3)
 </signature>
-Multiplies a vector by a number.
-Multiplies each component of /a/ by a number /d/.
+Vector に数字を掛けます。
+/a/ の各コンポーネントに /d/ の数字を掛けます。
 CONVERTEXAMPLE
 BEGIN EX
-	// make the vector twice longer: prints (2.0,4.0,6.0)
+	// ベクトルの長さを倍にする: (2.0,4.0,6.0) と表示
 	print (2.0 * Vector3(1,2,3));
 END EX

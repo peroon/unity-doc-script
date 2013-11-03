@@ -2,7 +2,7 @@
 Minus(Vector2,Vector2)
 </signature>
 一つのベクトルを他方のベクトルから引き算します。
-/b/ の各コンポーネントから /a/ を引きます。
+/a/ から /b/ の各コンポーネントを引きます。
 CONVERTEXAMPLE
 BEGIN EX
 	// (-2.0,0.0) を表示
