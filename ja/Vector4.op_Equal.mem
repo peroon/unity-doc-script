@@ -1,5 +1,5 @@
 <signature>
 Equal(Vector4,Vector4)
 </signature>
-Returns true if the vectors are equal.
-This will also return true for vectors that are really close to being equal.
+ベクトルが等しい場合に true を戻り値とします。
+これは二つのベクトルが非常に近接している場合も true を戻り値とします。

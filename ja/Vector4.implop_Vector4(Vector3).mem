@@ -1,7 +1,7 @@
 <signature>
 implop_Vector4(Vector3)
 </signature>
-[[Vector3]] を Vector4. に変換します。
+[[Vector3]] を Vector4 に変換します。
 Vector3 は明示的に Vector4 に変換できます（結果としてw 軸が ゼロにセットされます）。
 CONVERTEXAMPLE
 BEGIN EX
