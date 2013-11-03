@@ -1,4 +1,4 @@
 <signature>
 hardAngle
 </signature>
-This angle (or greater) between triangles will cause seam to be created.
+三角形の間がこの角度（またはより大きい角度）の場合にシームが作成されます。

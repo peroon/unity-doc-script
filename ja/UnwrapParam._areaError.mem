@@ -1,4 +1,4 @@
 <signature>
 areaError
 </signature>
-Maximum allowed area distortion (0..1).
+許容されるエリアの歪みの最大値（値は 0 - 1 の範囲）。
