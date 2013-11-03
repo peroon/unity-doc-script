@@ -7,10 +7,10 @@ Add()
 <txttag>
 CSNONE
 </txttag>
-Adds /value/ to the end of the array.
+配列の最終要素に /value/ を追加します。
 BEGIN EX
 var arr = new Array ("Hello");
 arr.Add("World");
-// prints "Hello", "World"
+// "Hello", "World" と表示
 print (arr);
 END EX

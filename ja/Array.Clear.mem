@@ -7,9 +7,9 @@ Clear()
 <txttag>
 CSNONE
 </txttag>
-Empties the array. The length of the array will be zero.
+配列をクリアします。その際、配列の長さをゼロにします。
 BEGIN EX
 var hello = new Array ("Hello", "World");
 hello.Clear();
-// hello now contains zero elements
+// hello 配列の要素数をゼロに
 END EX
