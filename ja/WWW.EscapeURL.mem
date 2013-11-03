@@ -2,15 +2,15 @@
 EscapeURL(string)
 EscapeURL(string,Encoding)
 </signature>
-Escapes characters in a string to ensure they are URL-friendly.
-Certain text characters have special meanings when present in URLs. If you need to include those characters in URL parameters then you must represent them with escape sequences. It is recommended that you use this function on any text supplied by a user before passing the text as a URL parameter. This will ensure that a malicious user can't manipulate the contents of the URL to attack the webserver.
+文字列の文字をエスケープし、URL に親和性があることを保証します。
+特定のテキスト文字は URL で表現するときに特殊記号として扱われてます。もしそれらの文字を URL パラメータの中に含める場合、エスケープ シーケンスを用いて表現する必要があります。ユーザから提供された全てのテキストについて、URL パラメータにテキストを渡す前に、この関数を使用することを推奨します。これにより悪意のあるユーザが URL のコンテンツを操作してウェブサーバを攻撃することを防止します。
 CONVERTEXAMPLE
 BEGIN EX
 function Start () {
-	// Escaped name is "Fish+%26+Chips'.
+	// エスケープ後の名前は "Fish+%26+Chips'.
 	var escName = WWW.EscapeURL('Fish & Chips');
 }
 END EX
 SA: UnEscapeURL.
-@param s A string with characters to be escaped.
-@param e The text encoding to use.
+@param s エスケープする文字を含む文字列
+@param e 使用するテキスト エンコード
