@@ -1,2 +1,2 @@
-The format of the pixel data in the texture (RO).
-Use this to determine the format of the texture.
+テクスチャの中のピクセルデータのフォーマット（読み取り専用）。
+テクスチャのフォーマットを判定するのに使用します。
