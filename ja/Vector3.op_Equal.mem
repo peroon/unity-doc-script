@@ -1,11 +1,11 @@
 <signature>
 Equal(Vector3,Vector3)
 </signature>
-Returns true if the vectors are equal.
-This will also return true for vectors that are really close to being equal.
+ベクトルが等しい場合に true を戻り値とします。
+これは二つのベクトルが非常に近接している場合も true を戻り値とします。
 CONVERTEXAMPLE
 BEGIN EX
 	var other : Transform;
 	if (other && transform.position == other.position)
-		print ("I'm at the same place as the other transform!");
+		print ("他方の Transform と同じ位置です!");
 END EX
