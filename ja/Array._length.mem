@@ -7,13 +7,13 @@ length
 <txttag>
 CSNONE
 </txttag>
-The length property of the array that returns or sets the number of elements in array.
+配列の要素番号をセットするか戻り値とする配列の length プロパティです。
 BEGIN EX
 function Start () {
 	var arr = Array ("Hello", "World");
-	// Prints two
+	// 2 と表示
 	print(arr.Length);
-	// resizes the array to a size of 5
+	// 配列の長さを 5 にリサイズ
 	arr.length = 5;
 }
 END EX

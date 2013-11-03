@@ -7,10 +7,10 @@ Shift()
 <txttag>
 CSNONE
 </txttag>
-Unshift adds one or more elements to the beginning of an array and returns the new length of the array.
+Unshift によりひとつ以上の要素を配列の最初に追加したうえ、戻り値は追加後の配列の長さとします。
 BEGIN EX
 var arr = new Array ("Hello", "World");
 arr.Unshift("This", "is");
-// Prints This, is, Hello, World
+// This, is, Hello, World と表示
 print(arr);
 END EX

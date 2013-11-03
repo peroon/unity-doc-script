@@ -7,8 +7,8 @@ Sort()
 <txttag>
 CSNONE
 </txttag>
-Sorts all Array elements.
+全ての配列要素をソート。
 Var hello = new Array ("c", "a", "b");
 hello.Sort();
 print(hello);
-// prints a, b, c.
+// a, b, c を表示
