@@ -1,2 +1,2 @@
-Remotely this asset was added to version control.
-If the same assets exists on two machine but has only been added to version control on one of them, then it will appear as remotely added on the machine where it has not been added.
+リモート上でアセットはバージョンコントロールに追加されています。
+もし同じアセットが二つのマシンに存在するが、一つのマシンでのみバージョンコントロールに追加されている場合、追加されなかった方のマシンではリモート上で追加されたものとして表示されます。
