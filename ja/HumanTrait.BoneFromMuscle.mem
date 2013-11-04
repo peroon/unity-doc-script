@@ -1,5 +1,5 @@
 <signature>
 BoneFromMuscle(int)
 </signature>
-Return the bone index based on muscle index.
-@param i Muscle Index.
+マッスルのインデックスにもとづきボーンのインデックスを戻り値とします。
+@param i マッスルのインデックス。

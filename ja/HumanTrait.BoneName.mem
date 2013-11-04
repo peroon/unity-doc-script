@@ -1,9 +1,9 @@
 <signature>
 BoneName
 </signature>
-List of all the know human bone.
+全てのヒューマノイド ボーンの一覧。
 BEGIN EX
-// C# example
+// C# サンプル
 using UnityEngine;
 using UnityEditor;
 
