@@ -1,4 +1,4 @@
 <signature>
 blackberryBuildSubtarget
 </signature>
-The texture compression type to be used when building.
+ビルドの際に使用するテクスチャ圧縮タイプ。
