@@ -7,4 +7,4 @@ Length
 <txttag>
 CSNONE
 </txttag>
-Gets the number of characters in this instance (RO).
+このインスタンスの文字数を取得します。（読み取り専用）

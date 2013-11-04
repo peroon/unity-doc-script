@@ -1,33 +1,33 @@
 <signature>
 localUser
 </signature>
-The local user (potentially not logged in).
-Until the user logs in or authenticates himself the profile data will be invalid and no other Social API functionality will work.
+ローカルユーザ（潜在的に未ログイン）。
+ユーザがログインするか認証するまで、プロファイルデータは無効となり他のソーシャル API 機能は動作しません。
 BEGIN EX
 //JavaScript
 Social.localUser.Authenticate (function (success) {
         if (success) {
-            Debug.Log ("Authentication successful");
+            Debug.Log ("認証成功");
             var userInfo : String = "Username: " + Social.localUser.userName + 
                 "\nUser ID: " + Social.localUser.id + 
                 "\nIsUnderage: " + Social.localUser.underage;
             Debug.Log (userInfo);
         }
         else
-            Debug.Log ("Authentication failed");
+            Debug.Log ("認証失敗");
     });
 END EX
 BEGIN EX
 //C#
 Social.localUser.Authenticate (success => {
 		if (success) {
-			Debug.Log ("Authentication successful");
+			Debug.Log ("認証成功");
 			string userInfo = "Username: " + Social.localUser.userName + 
 				"\nUser ID: " + Social.localUser.id + 
 				"\nIsUnderage: " + Social.localUser.underage;
 			Debug.Log (userInfo);
 		}
 		else
-			Debug.Log ("Authentication failed");
+			Debug.Log ("認証失敗");
 	});
 END EX
