@@ -1,12 +1,12 @@
 <signature>
 ReportScore(long,string,Action<bool>)
 </signature>
-Report a score to a specific leaderboard.
+特定の Leaderboard にスコアを報告します。
 BEGIN EX
 void ReportScore (long score, string leaderboardID) {
-		Debug.Log ("Reporting score " + score + " on leaderboard " + leaderboardID);
+		Debug.Log ("スコア " + score + " を次の Leaderboard に報告します。" + leaderboardID);
 		Social.ReportScore (score, leaderboardID, success => {
-			Debug.Log(success ? "Reported score successfully" : "Failed to report score");
+			Debug.Log(success ? "スコア報告は成功しました" : "スコア報告は失敗しました");
 		});
 	}
 END EX
