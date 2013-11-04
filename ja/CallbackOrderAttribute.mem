@@ -1,1 +1,1 @@
-Smaller m_CallbackOrder values will be called first.
+m_CallbackOrder の値が小さいものが先に呼び出しされます。
