@@ -1,2 +1,2 @@
-Signed build used for submission to BlackBerry AppWorld.
-This build should only be used for final submission.  When using submission builds you will not have access to any log files.
+BlackBerry AppWorld への提出に使用される署名つきビルドです。
+このビルドは最終提出でのみ使用すべきです。提出用ビルドを使用するとログファイルへのアクセスは一切出来ません。

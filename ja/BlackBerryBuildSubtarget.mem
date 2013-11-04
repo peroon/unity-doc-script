@@ -1,2 +1,2 @@
-Texture Compression Types.
-ETC1 can be used for universal BAR files or PVRTC and ATC can be used for targeting specific hardware.
+テクスチャ圧縮タイプ。
+ETC1 はユニバーサル BAR ファイルまたは PVRTC で使用でき、ATC は特定のハードウェアをターゲットとして使用できます。

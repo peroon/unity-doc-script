@@ -1,2 +1,2 @@
-Build type for local testing purposes.
-This BuildType requires a debug token to be imported in the editor and deployed to the device.
+ローカル テスト目的のビルド タイプ。
+このビルド タイプはデバッグ トークンがエディタ上でインポートさら、デバイスにデプロイされている必要があります。
