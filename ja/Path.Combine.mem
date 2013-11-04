@@ -7,17 +7,16 @@ Combine(string, string)
 <txttag>
 CSNONE
 </txttag>
-Concatenates two path strings.
+二つのパス文字列を連結します。
 
-If path1 does not end with a valid separator character ::ref::DirectorySeparatorChar
-is appended to path1 prior to the concatenation.
+もし path1 が有効なセパレータ文字で終了しない場合、連結の前に ::ref::DirectorySeparatorChar が path1 に追加されます。
 CONVERTEXAMPLE
 BEGIN EX
-//Remember to import IO to make Path work.
+//Path を正しく動作させるため IO をインポート
 import System.IO;
 
 function Start () {
-	//This will print "/First/Path/To/Some/File/At/foo.txt".
+	//これにより "/First/Path/To/Some/File/At/foo.txt" と表示される
 	Debug.Log(Path.Combine("/First/Path/To", "Some/File/At/foo.txt"));
 }
 END EX
