@@ -1,5 +1,5 @@
 <signature>
 alphaKeys
 </signature>
-All alpha keys defined in the gradient.
-Note that the alpha keys will be automatically sorted by time value and that it is ensured to always have a minimum of 2 alpha keys.
+グラデーションで定義された全てのアルファ キー。
+time の値により自動的にソートされ、最小でも二つのアルファ キーがあることに留意して下さい。

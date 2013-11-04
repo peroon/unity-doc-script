@@ -1,5 +1,5 @@
 <signature>
 colorKeys
 </signature>
-All color keys defined in the gradient.
-Note that the color keys will be automatically sorted by time value and that it is ensured to always have a minimum of 2 color keys.
+グラデーションに定義されている全てのカラーキー。
+time の値により自動的にソートされ、最小でも二つのカラーキーがあることに留意して下さい。
