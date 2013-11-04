@@ -1,12 +1,12 @@
 <signature>
 CreateLeaderboard()
 </signature>
-Create an ILeaderboard instance.
+ILeaderboard インスタンスを作成します。
 BEGIN EX
 ILeaderboard leaderboard = Social.CreateLeaderboard();
 	leaderboard.id = "Leaderboard01";
 	leaderboard.LoadScores (result => {				
-		Debug.Log("Received " + leaderboard.scores.Length + " scores");
+		Debug.Log("スコアを " + leaderboard.scores.Length + " 受信しました。");
 		foreach (IScore score in leaderboard.scores)
 			Debug.Log(score);
 	});
@@ -19,7 +19,7 @@ void DoLeaderboard () {
 	}
 	
 	void DidLoadLeaderboard (bool result) {
-		Debug.Log("Received " + m_Leaderboard.scores.Length + " scores");
+		Debug.Log("スコアを " + m_Leaderboard.scores.Length + " 受信しました。");
 		foreach (IScore score in m_Leaderboard.scores)
 			Debug.Log(score);
 	}
