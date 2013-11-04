@@ -1,5 +1,5 @@
 <signature>
 reports
 </signature>
-Returns all currently available reports in a new array.
+現在の全ての利用可能なレポートを新規の配列を戻り値とします。
 SA: CrashReport.lastReport.

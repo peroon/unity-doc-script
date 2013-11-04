@@ -1,5 +1,5 @@
 <signature>
 lastReport
 </signature>
-Returns last crash report, or null if no reports are available.
+最新のクラッシュレポート、またはレポートが利用可能でない場合は null を戻り値とします。
 SA: CrashReport.reports.
