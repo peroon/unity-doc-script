@@ -1,5 +1,5 @@
 <signature>
 IsOneOfStates(States[])
 </signature>
-Returns true if the version control state of the assets is one of the input states.
-@param states Array of states to test for.
+アセットのバージョンコントロールのステートが入力ステートの一つである場合に true を戻り値とします。
+@param states テストすべきステートの配列。
