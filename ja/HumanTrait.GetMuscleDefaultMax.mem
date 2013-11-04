@@ -1,10 +1,10 @@
 <signature>
 GetMuscleDefaultMax(int)
 </signature>
-Return the default maximum range for this muscle.
-Value is in degrees.
+このマッスルのデフォルト最大範囲を戻り値とします。
+値は角度範囲。
 BEGIN EX
-// C# example
+// C# サンプル
 using UnityEngine;
 using UnityEditor;
 
@@ -21,4 +21,4 @@ public class PrintMuscleMinMax : MonoBehaviour
 	}
 }
 END EX
-@param i Muscle index.
+@param i マッスルのインデックス。
