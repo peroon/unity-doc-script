@@ -1,8 +1,8 @@
 <signature>
 armStretch
 </signature>
-Amount of stretch allow on arm when using IK.
-The value range from 0 to 1.
-Default value is 0.05.
+IK 使用のときに許可される伸びの量。
+値の範囲は 0 から 1。
+デフォルトの値は 0.05。
 
-At 0.05 the arm will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is done by translating both the elbow and wrist transform.
+0.05 の場合、IK ゴールがターゲットの 95% まで到達したとき腕は伸び始め、5% 伸びます。伸びは肘および手首の Transform を移動させることにより実現されます。

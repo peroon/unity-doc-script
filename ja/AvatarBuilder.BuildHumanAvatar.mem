@@ -2,6 +2,6 @@
 BuildHumanAvatar(GameObject,HumanDescription)
 </signature>
 ヒューマノイド型アバターを作成します。
-ヒューマノイド型アバターを作成し、マッスル空間の限界範囲および腕/脚のひねりや腕/脚の伸びといったリターゲットのパラメータをセットアップできます。
+ヒューマノイド型アバターを作成し、マッスル スペース（Muscle Space）の可動域および腕/脚のひねりや腕/脚の伸びといったリターゲットのパラメータをセットアップできます。
 @param go Transform 階層のルートオブジェクト
 @param monoHumanDescription ヒューマノイドの説明。

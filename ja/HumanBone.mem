@@ -1,6 +1,6 @@
-The class stores the mapping for one human transform and the muscle space range limit.
+このクラスは一つのヒューマノイドの Transform およびマッスル スペース（Muscle Space）の可動域を格納します。
 BEGIN EX
-// C# example
+// C# サンプル
 using UnityEngine;
 using UnityEditor;
 
