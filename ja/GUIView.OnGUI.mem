@@ -4,4 +4,4 @@ OnGUI()
 <txttag>
 CSNONE
 </txttag>
-Implement this to do the cool GUI shit.
+GUI で高度なことを行なうために実装します。

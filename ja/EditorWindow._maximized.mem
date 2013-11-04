@@ -1,8 +1,8 @@
 <signature>
 maximized
 </signature>
-Is this window maximized.
-Set this value to maximize / unmaximize a window. If the window is undocked, this value will always be false and setting it will have no effect.
+このウィンドウが最大化されているか。
+ウィンドウを最大化/通常に戻すためにこの値セットします。もしウィンドウがドックされてない場合、この値は常に false となりセットしても効果はありません。
 BEGIN EX
 class Maximizer extends EditorWindow {
 	function OnGUI() {
