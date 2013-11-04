@@ -1,2 +1,2 @@
-The HumanDescription class stores all the information necessary to build a human avatar.
+HumanDescription クラスはヒューマノイド アバターをビルドするのに必要な全ての情報を格納します。
 SA: AvatarBuilder.BuildHumanAvatar.
