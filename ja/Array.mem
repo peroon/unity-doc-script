@@ -7,78 +7,79 @@ CSNONE
 <signature>
 Array
 </signature>
-Arrays allow you to store multiple objects in a single variable.
-The Array class is only available in Javascript.
-For more information about ArrayLists, Dictionaries or Hashtables in C# or Javascript see
-<a href="http://msdn2.microsoft.com/en-us/library/system.collections.arraylist_members(VS.80).aspx">here</a>
+配列によりひとつの変数に複数のオブジェクトを格納できます。
+Array クラスは Javascript でのみ利用可能です。
+C# または Javascript での ArrayList, Dictionarie または Hashtable の詳細については
+<a href="http://msdn2.microsoft.com/en-us/library/system.collections.arraylist_members(VS.80).aspx">ここを参照下さい。</a>
 
-__Here is a basic example of what you can do with an array class: __
+__Array クラスで実現できることの基本的なサンプルです: __
 BEGIN EX
 function Start () {
-	var arr = new Array ();
+        var arr = new Array ();
 
-	// Add one element
-	arr.Push ("Hello");
-	
-	// print the first element ("Hello")
-	print(arr[0]);
+        // ひとつの要素を追加
+        arr.Push ("Hello");
+        
+        // 最初の要素 ("Hello") を表示
+        print(arr[0]);
 
-	// Resize the array
-	arr.length = 2;
-	// Assign "World" to the second element
-	arr[1] = "World";
-	
-	// iterate through the array
-	for (var value : String in arr) {
-		print(value);
-	}
+        // 配列をリサイズ
+        arr.length = 2;
+        // Assign "World" to the second element
+        arr[1] = "World";
+        
+        // 配列全体を反復
+        for (var value : String in arr) {
+                print(value);
+        }
 }
 END EX
-There are two types of arrays in Unity, builtin arrays and normal Javascript Arrays.
-__Builtin arrays (native .NET arrays), are extremely fast and efficient but they can not be resized__
+Unity には二種類の配列があり、ビルトインの配列と通常の Javascript 配列があります。
+__ビルトイン配列（ネイティブ .NET 配列）は非常に高速かつ効率的ですがリサイズできません__
 
-They are statically typed which allows them to be edited in the inspector. Here is a basic example of how you can use builtin arrays:
+これらは static に型宣言されていて、インスペクタで編集可能です。次にビルトインの配列を使用する基本的なサンプルを示します:
 BEGIN EX
-// Exposes an float array in the inspector,
-// which you can edit there.
+// インスペクタで float 配列を公開し
+// そこで編集できるようにする
 var values : float[];
 
 function Start () {
-	// iterate through the array
-	for (var value in values) {
-		print(value);
-	}
+        // 配列全体を反復
+        for (var value in values) {
+                print(value);
+        }
 
-	// Since we can't resize builtin arrays
-	// we have to recreate the array to resize it
-	values = new float[10];
+        // ビルトイン配列はリサイズできないため
+        // リサイズしたい場合は再作成の必要がある
+        values = new float[10];
 
-	// assign the second element
-	values[1] = 5.0;
+        // 二つめの要素を割り当て
+        values[1] = 5.0;
 }
 END EX
-Builtin arrays are useful in performance critical code (With Unity's javascript and builtin arrays you could easily process 2 million vertices using the [[Mesh|mesh interface]] in one second.)
+ビルトイン配列はパフォーマンスが重要なコードでは便利です（Unity の Javascript およびビルトイン配列では [[Mesh|Mesh インタフェース]] を使用して秒間200万頂点を容易に処理できます。）
 
-Normal Javascript Arrays on the other hand can be resized, sorted and can do all other operations you would expect from an array class.
-Javascript Arrays do not show up in the inspector.
-__You can easily convert between Javascript Arrays and builtin arrays. __
+一方で通常の Javascript 配列はリサイズやソートおよび配列クラスで期待する他の全ての操作ができます。
+Javascript 配列はインスペクタで表示されません。
+__Javascript 配列とビルトイン配列どうしで簡単に変換が出来ます。 __
 BEGIN EX
 function Start () {
     var array = new Array (Vector3(0, 0, 0), Vector3(0, 0, 1));
     array.Push(Vector3(0, 0, 2));
     array.Push(Vector3(0, 0, 3));
 
-    // Copy the js array into a builtin array
+    // Javascript 配列をビルトイン配列へと複製
     var builtinArray : Vector3[] = array.ToBuiltin(Vector3) as Vector3[];
     
-    // Assign the builtin array to a js Array
+    // ビルトイン配列をJavascript 配列に割り当て
+    Assign the builtin array to a js Array
     var newarr = new Array (builtinArray);
     
-    // newarr contains the same elements as array
+    // newarr は配列を同じ要素を格納
     print (newarr);
 }
 END EX
-Note that Array's functions are upper case following Unity's naming convention.
-As a convenience for javascript users, Unity also accepts lower case functions for the array class.
+Unity のネーミングルールにもとづき配列の関数が大文字であることに注意して下さい。
+Javascript ユーザにとって便利なことに、配列クラスで Unity は小文字の関数もまた許容します。
 
- __Note:__ Unity doesn't support serialization of a List of Lists, nor an Array of Arrays.
+ __注意:__ Unity は List のリストや Array の配列といったシリアライズはサポートしません。

@@ -7,15 +7,15 @@ GetExtension(string)
 <txttag>
 CSNONE
 </txttag>
-Returns the extension component of the specified path string.
-The extension returned includes the . character used to separate the extension from the rest of the path.
+指定されたパス文字列の拡張子コンポーネントを戻り値とします。
+戻り値となる拡張子には、パスの他の文字と区切るためのピリオドが含まれます。
 CONVERTEXAMPLE
 BEGIN EX
-//Remember to import IO to make Path work.
+//Path を正しく動作させるために IO をインポート
 import System.IO;
 
 function Start () {
-	//This will print ".extension".
+	//これにより ".extension" と表示される
 	Debug.Log(Path.GetExtension("/Some/File/At/foo.extension"));
 }
 END EX

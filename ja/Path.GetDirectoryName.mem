@@ -7,17 +7,17 @@ GetDirectoryName()
 <txttag>
 CSNONE
 </txttag>
-Returns the directory name component of the specified path string.
-The string returned by this method consists of all characters between the first and last 
-::ref::DirectorySeparatorChar or ::ref::AltDirectorySeparatorChar character in the path. 
-The first separator character is included, but the last separator character is not included in the returned string.
+指定されたパス文字列のディレクトリ名コンポーネントを戻り値とします。
+このメソッドの戻り値の文字列はパスの最初と最後の
+::ref::DirectorySeparatorChar または ::ref::AltDirectorySeparatorChar の間の文字を全て含みます。
+最初の区切り記号は含まれますが、最後の区切り記号は戻り値の文字列に含まれません。
 CONVERTEXAMPLE
 BEGIN EX
-	//Remember to import IO to make Path work.
+	//Path を正しく動作させるため IO をインポート
 	import System.IO;
 
 	function Start () {
-	    //This will print "/Path/To/A/File".
+	    //これにより "/Path/To/A/File" と表示される
 	    Debug.Log(Path.GetDirectoryName("/Path/To/A/File/foo.txt"));
 	}
 END EX
