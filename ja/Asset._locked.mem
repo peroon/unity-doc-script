@@ -1,4 +1,4 @@
 <signature>
 locked
 </signature>
-Returns true if the asset is locked by the version control system.
+アセットがローカル管理システムによりロックされている場合 true を戻り値とします。

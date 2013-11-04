@@ -1,4 +1,4 @@
 <signature>
 isMeta
 </signature>
-Returns true if the instance of the Asset class actually refers to a .meta file.
+Asset クラスのインスタンスが実際には .meta ファイルを参照する場合に true を戻り値とします。
