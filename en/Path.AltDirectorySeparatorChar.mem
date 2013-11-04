@@ -7,5 +7,5 @@ AltDirectorySeparatorChar
 <txttag>
 CSNONE
 </txttag>
-ディレクトリ レベルを区切るための特殊記号。（読み取り専用）
-Windowsで '/' 、Mac OS X で '/' にあたります。
+An alternate character used to separate directory levels. (RO)
+This is '/' on Windows and '/' on Mac OS X
