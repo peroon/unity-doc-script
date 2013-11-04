@@ -1,5 +1,5 @@
 <signature>
 Find(int,int[])
 </signature>
-Find property but only search through expanded objects.
-If expanded is null it will search through both expanded and unexpanded elements.
+展開されたオブジェクトのみを対象としてプロパティを検索します。
+もし expanded が null の場合、展開されている/されていない要素の両方を検索します。
