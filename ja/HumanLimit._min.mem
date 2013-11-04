@@ -1,7 +1,7 @@
 <signature>
 min
 </signature>
-The minimum value for this muscle.
-Value range from -180 to 0.
-Value is in degrees.
+このマッスルの最小値。
+値の範囲は -180 から 0。
+値は角度単位。
 SA: HumanLimit.useDefaultValues.
