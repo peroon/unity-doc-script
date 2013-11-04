@@ -1,4 +1,4 @@
 <signature>
 isRequired
 </signature>
-This is true if the configuration field is required for the version control plugin to function correctly.
+コンフィグ フィールド がバージョン管理プラグインが正しく機能するために必要な場合は true を戻り値とします。
