@@ -1,18 +1,18 @@
 <signature>
 LoadScores(string,Action<IScore[]>)
 </signature>
-Load a default set of scores from the given leaderboard.
-This uses default leaderboard parameters.
+与えられた Leaderboard のデフォルトのスコアのセットをロードします。
+これはデフォルトの Leaderboard の引数を使用します。
 BEGIN EX
 Social.LoadScores("Leaderboard01", scores => {
 		if (scores.Length > 0) {
-			Debug.Log ("Got " + scores.Length + " scores");
+			Debug.Log ("保有: " + scores.Length + " 個のスコア");
 			string myScores = "Leaderboard:\n";
 			foreach (IScore score in scores)
 				myScores += "\t" + score.userID + " " + score.formattedValue + " " + score.date + "\n";
 			Debug.Log (myScores);
 		}
 		else
-			Debug.Log ("No scores loaded");
+			Debug.Log ("スコアはロードされませんでした。");
 	});
 END EX

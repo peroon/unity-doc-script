@@ -1,5 +1,5 @@
 <signature>
 ReportProgress(string,double,Action<bool>)
 </signature>
-Reports the progress of an achievement.
-The achievement ID number must match an achievement description associated with this application. Reporting a progress of 0.0 usually means the achievement can be shown if it was hidden before. Depending on the platform, partial progress cannot always be reported, in which case 100.0 is the only other value which can be used.
+Achievement の進捗を報告します。
+Achievement ID 番号はこのアプリケーションに紐づいた Achievement Description と一致する必要があります。一般的に進捗の報告が 0.0 の場合、隠されてた Achievement が表示されるようになったことを意味します。プラットフォーム次第で、部分的な進捗は必ずしも報告できず、結果として進捗の報告が 100.0 以外の値は使用できない場合があります。
