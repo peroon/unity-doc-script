@@ -1,8 +1,8 @@
 <signature>
 lowerArmTwist
 </signature>
-Define how roll is distributed between elbow and wrist.
-The value range from 0 to 1.
-Default value is 0.5.
+Roll 回転が肘および手首でどう配分するか定義します。
+値の範囲は 0 から 1。
+デフォルトの値は 0.5。
 
-This value is used by the retargeter to distribute the roll on elbow and wrist.
+この値はリターゲティングにより、Roll 回転を肘および手首でどう配分するか決めるために活用されます。

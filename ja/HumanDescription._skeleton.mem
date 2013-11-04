@@ -1,2 +1,2 @@
-List of includes transform for this avatar.
-This list define which transform to include or exclude from the final avatar skeleton. If you define a hierarchy with hole you may get unexpected result.
+このアバターに含まれる Transform の一覧。
+この一覧はどの Transform を最終アバター スケルトンに含む/含まないかを定義します。もし抜けのある階層を定義してしまうと予想外の結果が得られる場合があります。
