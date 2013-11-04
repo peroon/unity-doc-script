@@ -7,61 +7,57 @@ CSNONE
 <signature>
 String
 </signature>
-Represents text as a series of Unicode characters.
-Unity uses the .Net @@System.String@@ class for strings.  See the Microsoft MSDN
-documentation for <a href="http://msdn.microsoft.com/en-us/library/system.string.aspx">Strings</a>
-for more details.
+テキストを連続した Unicode 文字として表現します。
+Unity は文字列として .Net @@System.String@@ クラスを使用します。詳細については Microsoft MSDN ドキュメントの <a href="http://msdn.microsoft.com/en-us/library/system.string.aspx">String</a> 
+を参照して下さい。
 
-__Note:__ In c# @@string@@ is an alias for @@System.String@@.  This means that you
-can use either @@string@@ or @@String@@ in your code (if you have added @@using System@@
-to the top of your script.)
-__Note:__ In Javascript strings are represented using @@String@@ which you should use
-in your Unity script code.
-Here are some basic uses of the String class.
+__注意:__ C# で @@string@@ は @@System.String@@ のエイリアスです。つまり @@string@@ または @@String@@ のどちらもコードで使用できます。（@@using System@@ をコード冒頭で追加することが前提。）
+__注意:__ Javascript で string は @@String@@ により表現されるため、これを Unity スクリプトコードで使用すべきです。
+String クラスの基本的な使用方法を次に示します。
 BEGIN EX
 // Javascript
 #pragma strict
 
 function Start () {
     var s : String = "hello";
-    Debug.Log(s);                    // prints hello
+    Debug.Log(s);                    // hello と表示
     s = String.Format("{0} {1}", s, "world");
-    Debug.Log(s);                    // prints hello world
+    Debug.Log(s);                    // hello world と表示
     s = String.Concat("hello","world");
-    Debug.Log(s);                    // prints helloworld
+    Debug.Log(s);                    // helloworld と表示
     s = s.ToUpper(); 
-    Debug.Log(s);                    // prints HELLOWORLD
+    Debug.Log(s);                    // HELLOWORLD と表示
     s = s.ToLower();
-    Debug.Log(s);                    // prints helloworld
+    Debug.Log(s);                    // helloworld と表示
 
-    //Debug.Log(s.CharAt(1));        // CharAt not supported, produces compiler error
-                                     // instead use array syntax below
-    Debug.Log(s[1]);                 // prints e
+    //Debug.Log(s.CharAt(1));        // CharAt は未対応のためコンパイルエラー
     
-    var c : char = 'x'[0];           // slight odd JS way of specifying a char
-                                     // 'x' is a string and [0] means first character
+                                     // 代わりに次の配列の文法を使用
+    Debug.Log(s[1]);                 // e と表示
+    
+    var c : char = 'x'[0];           // Javascript での変わった文字列の指定方法
+                                     // 'x' は文字であり [0] は最初の文字を示すmeans first character
                                      
-    Debug.Log(s.IndexOf(c));         // prints -1 (s does not contain an x)
+    Debug.Log(s.IndexOf(c));         // -1 (s は x を含まない) と表示
     
     var i : int = 42;
     s = i.ToString();
-    Debug.Log(s);                    // prints 42
+    Debug.Log(s);                    // 42 と表示
 
     s = "-43";
     i = int.Parse(s);
-    Debug.Log(i);                    // prints -43
+    Debug.Log(i);                    // -43 と表示
     
     var f : float = 3.14159265358979f;
     s = f.ToString();
-    Debug.Log(s);                    // prints 3.141593 (which is an approximation)
+    Debug.Log(s);                    // 3.141593 と表示 (近似値)
     
     s = "-7.14159265358979";
     f = float.Parse(s);
-    Debug.Log(f);                    // prints -7.141593 (which is an approximation)
+    Debug.Log(f);                    // -7.141593 と表示 (近似値)
 }
 END EX
-This example shows how you can examine the String class and see the methods it
-contains.
+このサンプルで String クラスについて明らかにしたうえ、含まれるメソッドを確認する方法を示します。
 BEGIN EX
 // Javascript
 #pragma strict
@@ -73,9 +69,9 @@ function Start () {
 
     var t : Type = System.String;
 
-    // Iterate over all the methods from the System.String class and display
-    // return type and parameters.
-    // This reveals all the things you can do with a String.
+    // System.String クラスから全てのメソッドについて反復し
+    // 型およびパラメータを戻り値として表示
+    // これで String を用いてできることを明らかにする
     
     for (var mi : MethodInfo in t.GetMethods()) {
     

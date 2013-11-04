@@ -2,7 +2,7 @@
 Invoke(string,object[])
 Invoke(string,AndroidJavaObject[])
 </signature>
-Called by the java vm whenever a method is invoked on the java proxy interface. You can override this to run special code on method invokation, or you can leave the implementation as is, and leave the default behavior which is to look for c# methods matching the signature of the java method.
-@param methodName Name of the invoked java method.
-@param args Arguments passed from the java vm - converted into AndroidJavaObject, AndroidJavaClass or a primitive.
-@param javaArgs Arguments passed from the java vm - all objects are represented by AndroidJavaObject, int for instance is represented by a java.lang.Integer object.
+Java プロキシ インタフェースでメソッドが実行されるときにいつも Java VM により呼び出しされます。これをオーバーライドすることでメソッド実行時に特別なコードを実行すうｒか、実装をそのままとして、デフォルト動作である Java メソッドのシグニチャと一致する C# メソッドを探すようにすることが出来ます。
+@param methodName 実行された Java メソッドの名前。
+@param args Java VM により渡される引数 - AndroidJavaObject, AndroidJavaClass またはプリミティブに変換されたもの。
+@param javaArgs Java VM により渡される引数 - 全てのオブジェクトは AndroidJavaObject により表現され、例えば int は java.lang.Integer により表現されます。
