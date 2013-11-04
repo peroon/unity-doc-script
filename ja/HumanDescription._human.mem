@@ -1,2 +1,2 @@
-Mapping for human bone.
-SA: HumanTrait.BoneName, HumanTrait.RequiredBone for what need to be include in this list.
+ヒューマノイド ボーンのマッピング。
+SA: HumanTrait.BoneName, HumanTrait.RequiredBone で含むべきボーンの一覧を確認できます。

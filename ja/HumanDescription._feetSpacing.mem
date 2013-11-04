@@ -1,7 +1,7 @@
 <signature>
 feetSpacing
 </signature>
-Additionnal offset used when mecanim stabilize feet.
-Default value is 0.
+Mecanim で足を安定化させるのに使用する追加のオフセット
+デフォルトはゼロ。
 
-This offset could be used to avoid mesh interpenetration when your avatar have big foot.
+このオフセットを使用してアバターが大きな足があるときにメッシュの相互反発を回避できます。
