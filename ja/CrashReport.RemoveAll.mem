@@ -1,5 +1,5 @@
 <signature>
 RemoveAll()
 </signature>
-Remove all reports from available reports list.
+利用可能レポートリストから全てのレポートを削除。
 SA: CrashReport.Remove.
