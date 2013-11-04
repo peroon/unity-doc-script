@@ -1,7 +1,7 @@
 <signature>
 gamma
 </signature>
-A version of the color that has had the gamma curve applied.
+ガンマー カーブが適用されたカラーのバージョン。
 CONVERTEXAMPLE
 BEGIN EX
 	var color : Color = Color (.3, .4, .6);

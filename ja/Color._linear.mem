@@ -1,7 +1,7 @@
 <signature>
 linear
 </signature>
-A version of the color that has had the inverse gamma curve applied.
+反対のガンマー カーブが適用されたカラーのバージョン。
 CONVERTEXAMPLE
 BEGIN EX
 	var color : Color = Color (.3, .4, .6);
