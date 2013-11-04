@@ -1,9 +1,9 @@
 <signature>
 RequiredBone(int)
 </signature>
-Return true if bone i is a required human bone.
+ボーンが必須なヒューマノイドのボーンである場合は true を戻り値とします。
 BEGIN EX
-// C# example
+// C# サンプル
 using UnityEngine;
 using UnityEditor;
 
@@ -22,4 +22,4 @@ public class PrintRequiredBone : MonoBehaviour
 
 }
 END EX
-@param i Bone index.
+@param i ボーンのインデックス

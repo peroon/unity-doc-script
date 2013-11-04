@@ -1,9 +1,9 @@
 <signature>
 MuscleName
 </signature>
-List of all the know muscle.
+全てのマッスルの一覧。
 BEGIN EX
-// C# example
+// C# サンプル
 using UnityEngine;
 using UnityEditor;
 
