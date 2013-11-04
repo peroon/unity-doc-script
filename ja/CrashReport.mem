@@ -1,17 +1,17 @@
-Holds data for a single application crash event and provides access to all gathered crash reports.
-If compiled with appropriate settings, Unity will try to gather useful information, like location and thread stack traces, when your application crashes. Upon the next application start, if the data gathering was successful, all crash information will be accessible using this API.
+一つのアプリケーション クラッシュ イベントのデータを保持し、全ての収集されたクラッシュレポートへのアクセスを提供します。
+もし適切な設定でコンパイルされると、Unity はアプリケーションがクラッシュしたときに、ロケーションおよびスレッド スタック トレース有用な情報を収集しようとします。アプリケーションの次の起動時に、もしデータ収集が成功すると、全てのクラッシュ情報はこの API を通してアクセスできます。
 
-To enable crash report generation open your generated Xcode project and edit trampoline file: Classes/CrashReporter.h. Change ENABLE_CUSTOM_CRASH_REPORTER define from 0 to 1.
+クラッシュレポート生成を有効化するため生成さえｒた Xcode プロジェクトを開き、トランポリン ファイルを編集します: Classes/CrashReporter.h. の ENABLE_CUSTOM_CRASH_REPORTER define を 0 から 1 へ変更します。
 
-Note: this API currently is available only for iOS targets.
+注意: この API は現在 iOS ターゲットでのみ利用可能です。
 
-CrashReport API requires __Unity Pro__ license for target platform.
+CrashReport API はターゲットプラットフォームの __Unity Pro__ ライセンスを必要とします。
 
 SA: CrashReport.reports.
 BEGIN EX
-// This example shows a list of crash reports (if available),
-// and allows you to output crash data to console, or
-// delete them.
+// このサンプルではクラッシュレポートの一覧を表示し（利用可能である場合）、
+// クラッシュデータをコンソール出力することを可能にしたうえ、
+// 削除します。
 public class Crashes: MonoBehaviour {
 	void OnGUI() {
 		var reports = CrashReport.reports;
