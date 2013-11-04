@@ -1,7 +1,7 @@
 <signature>
 max
 </signature>
-The maximum value for this muscle.
-Value range from 0 to 180.
-Value is in degrees.
+このマッスルの最大値。
+値の範囲は 0 から 180。
+値は角度単位。
 SA: HumanLimit.useDefaultValues.

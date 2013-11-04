@@ -1,9 +1,9 @@
 <signature>
 center
 </signature>
-The relax value for this bone.
-The center is the angular position your bone will be when the muscle value is 0. 
-Value range from minimum to maximum range.
-Default value is 0,0,0.
-Value is in degrees.
+このボーンの緩み具合（relax）の値。
+中心はマッスルの値が 0 のときの角度の位置。
+値は最小値から最大値の範囲です。
+デフォルトの値は 0,0,0 です。
+値は角度単位です。
 SA: HumanLimit.useDefaultValues.
