@@ -1,5 +1,5 @@
 <signature>
 GetObjectPickerControlID()
 </signature>
-The controlID of the currently showing object picker.
+現在表示されているオブジェクト選択ツールのコントロール ID。
 See ::ref::ShowObjectPicker.
