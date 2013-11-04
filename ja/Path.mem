@@ -7,7 +7,7 @@ CSNONE
 <signature>
 Path
 </signature>
-Performs operations on strings that contain file or directory path information.
+ファイルまたはディレクトリパス情報を含む文字列で処理を実行します。
 
-This is the standard library System.IO.Path class. 
-Documentation for frequently used class members is provided here for your convenience.
+これは標準ライブラリの System.IO.Path クラスです。
+利便性のため、頻繁に使用されるクラスメンバのドキュメントがここに提供されています。

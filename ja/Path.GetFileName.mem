@@ -7,17 +7,17 @@ GetFileName(string)
 <txttag>
 CSNONE
 </txttag>
-Returns the file name, including the extension if any, of the specified path string.
+指定されたパス文字列のファイル名および拡張子（ある場合）を戻り値とします。
 
-The return value consists of the characters after the last directory character in path.
-If the last character of path is a directory separator character, returns an empty string. 
+戻り値は最後のパスでのディレクトリ文字の後の文字を含みます。
+もしパスの最後の文字がディレクトリセパレータ文字（/ など）である場合、空の文字列を戻り値とします。
 CONVERTEXAMPLE
 BEGIN EX
-//Remember to import IO to make Path work.
+//Path を正しく動作させるため IO をインポート
 import System.IO; 
 
 function Start () {
-	//This will print "foo.extension".
+	//これは "foo.extension" と表示される
 	Debug.Log(Path.GetFileName("/Some/File/At/foo.extension"));
 }
 END EX

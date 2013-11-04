@@ -7,16 +7,15 @@ GetFileNameWithoutExtension(string)
 <txttag>
 CSNONE
 </txttag>
-Returns the file base component of the specified path string without the extension.
-The return value consists of the string returned by ::ref::GetFileName(), minus
-the extension separator character and extension.
+指定された拡張子なしのパス文字列のファイルベースのコンポーネントを戻り値とします。
+戻り値の値は ::ref::GetFileName() の戻り値から拡張子のセパレータ文字（ピリオド）および拡張子を取り除いたものとなります。
 CONVERTEXAMPLE
 BEGIN EX
-//Remember to import IO to make Path work.
+//Path を正しく動作させるため IO をインポート
 import System.IO;
 
 function Start () {
-	//This will print "foo".
+	//これにより "foo" と表示される
 	Debug.Log(Path.GetFileNameWithoutExtension("/Some/File/At/foo.extension"));
 }
 END EX
