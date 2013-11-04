@@ -7,11 +7,11 @@ CSNONE
 <signature>
 Serializable
 </signature>
-The Serializable attribute lets you embed a class with sub properties in the inspector.
-You can use this to display variables in the inspector similar to how a [[Vector3]] shows up in the inspector.
-The name and a triangle to expand its properties.
-To do this you need create a class that derives from System.Object and give it the Serializable attribute.
-In JavaScript the Serializable attribute is implicit and not necessary.
+Serializable 属性によりインスペクタ上でクラスにサブプロパティを埋め込むことを許可します。
+これを使用してインスペクタ上で [[Vector3]] を表示するのと同様の方法で変数をできます。
+名前と三角記号が表示されプロパティを展開できます。
+このためには System.Object の派生クラスを作成して Serializable 属性を与える必要があります。
+JavaScript では Serializable 属性は明示的であり不要です。
 BEGIN EX
 class Test extends System.Object {
 	var p = 5;
@@ -21,7 +21,7 @@ var test = Test ();
 END EX
 
 BEGIN EX NOCHECK
-// C# Example
+// C# サンプル
 [System.Serializable]
 class Test
 {

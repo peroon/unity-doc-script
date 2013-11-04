@@ -1,15 +1,15 @@
 <signature>
 CreateAchievement()
 </signature>
-Create an IAchievement instance.
+IAchievement インスタンスを作成します。
 BEGIN EX
 IAchievement achievement = Social.CreateAchievement();
 	achievement.id = "Achievement01";
 	achievement.progressCompleted = 100.0;
 	achievement.ReportProgress( result => {
 		if (result)
-			Debug.Log ("Successfully reported progress");
+			Debug.Log ("進捗状況を正しく報告しました");
 		else
-			Debug.Log ("Failed to report progress");
+			Debug.Log ("進捗状況の報告に失敗しました");
 	});
 END EX

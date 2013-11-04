@@ -1,5 +1,5 @@
 <signature>
 Active
 </signature>
-This is the currently active social platform. 
-If not explicitly set, a default is picked depending on the target platform.
+これは現在有効なソーシャル プラットフォームです。
+もし明示的にセットされてない場合、ターゲット プラットフォームによりデフォルトで選択されます。
