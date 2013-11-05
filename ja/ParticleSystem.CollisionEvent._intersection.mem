@@ -1,5 +1,5 @@
 <signature>
 intersection
 </signature>
-Intersection point of the collision in world coordinates.
-The intersection point is reported in world coordinates regardless of whether the particle system is simulated in local coordinates.
+ワールド座標での衝突の交点。
+交点はパーティクルシステムがローカル座標でシミュレーションされているかどうかに関わらずワールド座標で報告されます。
