@@ -6,8 +6,8 @@ Checkout(Asset,CheckoutMode)
 Checkout(string,CheckoutMode)
 Checkout(Object,CheckoutMode)
 </signature>
-Checkout an asset or list of asset from the version control system.
-Some version control systems like Perforce requires an asset to be checked out before it can be edited.
-@param assets List of assets to checkout.
-@param mode Tell the Provider to checkout the asset, the .meta file or both.
-@param asset Asset to checkout.
+バージョン管理システムからアセットまたはアセットの一覧をチェックアウトします。
+Perforce などいくつかのバージョン管理システムではアセットを編集する前にチェックアウトすることが必要です。
+@param assets チェックアウトするアセットの一覧
+@param mode プロバイダにチェックアウトする対象を示す（アセット、.meta ファイル、または両方）
+@param asset チェックアウトするアセット。
