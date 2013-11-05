@@ -1,4 +1,4 @@
 <signature>
 HasMicrophonePermissions()
 </signature>
-Returns true if microphone access has been requested in player settings.
+プレイヤー設定でマイクへのアクセス許可がリクエストされたときに true を戻り値とします。

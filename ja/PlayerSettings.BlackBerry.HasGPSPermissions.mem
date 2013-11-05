@@ -1,4 +1,4 @@
 <signature>
 HasGPSPermissions()
 </signature>
-Returns true when GPS permission has been requested in the player settings.
+プレイヤー設定でGPSへのアクセス許可がリクエストされたときに true を戻り値とします。

@@ -1,5 +1,5 @@
 <signature>
 HasIdentificationPermissions()
 </signature>
-Returns true when access the device's Unique identifier has been requested.
-If this option is enabled the user will be prompted with a dialog box asking for permission to access the device's unique identifier. If the user declines SystemInfo.deviceUniqueIdentifier will always return as 0.
+プレイヤー設定でデバイスの一意 ID へのアクセス許可がリクエストされたときに true を戻り値とします。
+このオプションが有効化された場合、ユーザはダイアログボックスがプロンプトされデバイスの一意 ID へのアクセス許可を求められます。もしユーザが拒否した場合、SystemInfo.deviceUniqueIdentifier は常に戻り値をゼロとします。
