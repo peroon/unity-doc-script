@@ -1,4 +1,4 @@
 <signature>
 ClearCache()
 </signature>
-This will invalidate the cached state information for all assets.
+全てのアセットのキャッシュ状態情報を無効にします。

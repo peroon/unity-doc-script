@@ -3,8 +3,8 @@ Delete(string)
 Delete(AssetList)
 Delete(Asset)
 </signature>
-This will statt a task for deleting an asset or assets both from disk and from version control system.
-Once the task has completed the resultCode of the task will tell if the assets were successfully deleted.
-@param assetProjectPath Project path of asset.
-@param assets List of assets to delete.
-@param asset Asset to delete.
+これによりディスクおよびバージョン管理システムの両方から、アセットまたはアセットの一覧の削除を実行するタスクが開始します。
+タスクが一回完了すると結果コード（resultCode）によりアセットの削除が成功したか判別できます。
+@param assetProjectPath アセットのプロジェクトパス
+@param assets 削除するアセットの一覧
+@param asset 削除するアセット
