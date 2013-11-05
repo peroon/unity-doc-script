@@ -1,5 +1,5 @@
 <signature>
 requiresNetwork
 </signature>
-This is true if a network connection is required by the currently selected version control plugin to perform any action.
-E.g. before doing anything using Perforce you need to checkout the asset, in order to do that a connection to the server is required where as subversion does not require access to the server to do changes to an asset.
+現在選択されたバージョン管理プラグインが任意のアクションを実行するときにネットワーク接続が必要である場合に戻り値を true とします。
+例．Perforce を使用して何かをする一番初めにアセットのチェックアウトが必要であり、それをするためにはサーバへの接続が必要です。一方で Subversion はアセットへの変更のためにサーバへのアクセスを必要としません。
