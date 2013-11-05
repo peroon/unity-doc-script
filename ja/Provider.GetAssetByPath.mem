@@ -1,6 +1,6 @@
 <signature>
 GetAssetByPath(string)
 </signature>
-Returns version control information about an asset.
-Returns null if the path is not known by the Unity Editor.
-@param unityPath Path to asset.
+アセットに関するバージョン管理情報を戻り値とします。
+もし Unity エディタによりパスが知られてない場合に null を戻り値とします。
+@param unityPath アセットへのパス
