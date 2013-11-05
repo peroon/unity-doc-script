@@ -1,7 +1,7 @@
 <signature>
 MarkRestoreExpected()
 </signature>
-Indicate that there's a RenderTexture restore operation expected.
-When in mobile graphics emulation mode, Unity issues warnings when a RenderTexture "restore" operation is performed. Restore happens when rendering into a texture, without clearing or discarding (::ref::DiscardContents) it first. This is a costly operation on many mobile GPUs and multi-GPU systems and best should be avoided.
+RenderTexture のリストア処理が期待されることを示します。
+モバイル グラフィックス エミュレーション モードのとき、Unity は RenderTexture の "restore" リストア処理が実行されたときに Unity は警告を発行します。リストアは、クリアや破棄 (::ref::DiscardContents) せずに、テクスチャに対してレンダリングするときに発生します。これはモバイル GPU および マルチ GPU システムで高価な処理であり、出来るかぎり回避すべきです。
 
-However, if your rendering effect absolutely needs a RenderTexture restore, you can call this function to indicate that yes, a restore is expected, and Unity will not issue a warning here.
+しかし、もしレンダリング エフェクトが RenderTexture のリストアを必須とする場合、この関数を呼び出してリストアが期待されていて、これについて Unity が警告を発行しないことを示します。

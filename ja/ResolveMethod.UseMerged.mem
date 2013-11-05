@@ -1,2 +1,2 @@
-Used the merged version yours and conflicting assets.
-Provider.Merge() should be issues before calling Provider.Resolve() with this flag.
+自身と競合アセットをマージするバージョンを使用したか。
+このフラグで Provider.Resolve() の呼び出しをする前に Provider.Merge() を発行すべきです。

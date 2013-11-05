@@ -1,5 +1,5 @@
 <signature>
 SupportsStencil(RenderTexture)
 </signature>
-Does the RenderTexture have stencil buffer?
-If rt is null, will report the status for the main screen.
+RenderTexture にステンシル バッファがありますか？
+もし戻り値が null の場合、メイン画面のステータスを報告します。
