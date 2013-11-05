@@ -1,5 +1,5 @@
 <signature>
 SetGPSPermissions(bool)
 </signature>
-Enable / Disable access to the device GPS. (Will prompt for user for access).
-@param enable New permission value.
+デバイスの GPS へのアクセスを有効化/無効化します。（ユーザにアクセス許可を求めるプロンプトを表示します。）
+@param enable 新規のパーミッションの値。

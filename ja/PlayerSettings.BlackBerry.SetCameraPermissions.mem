@@ -1,5 +1,5 @@
 <signature>
 SetCameraPermissions(bool)
 </signature>
-Enable or disable camera permissions. (Will prompt user for access).
-@param enable New permission value.
+カメラのパーミッションを有効化または無効化します（ユーザにアクセス許可を求めるプロンプトを表示します。）。
+@param enable 新規のパーミッションの値。
