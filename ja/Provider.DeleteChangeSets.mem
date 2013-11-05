@@ -1,6 +1,6 @@
 <signature>
 DeleteChangeSets(ChangeSets)
 </signature>
-Starts a task that will attempt to delete the given changeset.
-It is required that the changesets must be empty.
-@param changesets List of changetsets.
+与えられたチェンジセットの削除を試みるタスクを開始します。
+チェンジセットは空である必要があります。
+@param changesets チェンジセットの一覧

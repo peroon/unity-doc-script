@@ -1,6 +1,6 @@
 <signature>
 DiffHead(AssetList,bool)
 </signature>
-Starts a task for showing a diff of the given assest versus their head revision.
-@param assets List of assets.
-@param includingMetaFiles Whether or not to include .meta.
+ヘッドのリビジョンと与えられたアセットとの diff （差分）を表示するタスクを開始します。
+@param assets アセットの一覧
+@param includingMetaFiles .meta ファイルを含むかどうか

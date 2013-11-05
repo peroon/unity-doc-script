@@ -1,5 +1,5 @@
 <signature>
 DeleteChangeSetsIsValid(ChangeSets)
 </signature>
-Test if deleting a changeset is a valid task to perform.
-@param changesets Changeset to test.
+チェンジセットの削除の実行が有効なタスクであるかテストします。
+@param changesets テストするチェンジセット
