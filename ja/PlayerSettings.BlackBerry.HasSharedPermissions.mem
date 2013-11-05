@@ -1,4 +1,4 @@
 <signature>
 HasSharedPermissions()
 </signature>
-Returns true if shared permissions are requested in player settings.
+プレイヤー設定で共有許可がリクエストされたときに true を戻り値とします。
