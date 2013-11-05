@@ -1,11 +1,11 @@
 <signature>
 GetCollisionEvents(GameObject,CollisionEvent[])
 </signature>
-Get the particle collision events for a GameObject. Returns the number of events written to the array.
-This method is typically called from [[MonoBehaviour.OnParticleCollision]] in response to a collision callback.
+ゲームオブジェクトのパーティクル 衝突イベントを取得します。配列に書き込みされたイベントの数を戻り値とします。
+このメソッドは一般的に衝突のコールバックへのレスポンスとして [[MonoBehaviour.OnParticleCollision]] から呼び出しされます。
 
-If the array used is too short events may be truncated. To avoid this use [[ParticleSystem.safeCollisionEventSize]] to determine an appropriate array size prior the call.
+もし使用されている配列が短すぎる場合、イベントは切捨てされる場合があります。これを回避するため [[ParticleSystem.safeCollisionEventSize]] を使用して適切な配列の長さを呼び出しの前に決定できます。
 
 SA: [[MonoBehaviour.OnParticleCollision]].
-@param go The GameObject for which to retrieve collision events.
-@param collisionEvents Array to write collision events to.
+@param go 衝突イベントを受け取るためのゲームオブジェクト
+@param collisionEvents 衝突イベントを書き込む配列
