@@ -1,6 +1,6 @@
 <signature>
 alreadyLightmapped
 </signature>
-Has the light already been lightmapped.
-When manually assembling a lightmapped scene set this property appropriately, so that the light doesn't affect lightmapped objects twice, but at the same time affects dynamic objects.
-SA: [[wiki:class-Light|Light component]].
+ライトはすでにライトマップされているか。
+ライトマップされているシーンを手動で構築するとき、このプロパティを適切にセットすることでライトがすでにライトマップされているオブジェクトを二重に作用することないようにして、同時にダイナミックオブジェクトには作用するようにします。
+SA: [[wiki:class-Light|Light コンポーネント]]
