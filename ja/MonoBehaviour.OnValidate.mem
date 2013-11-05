@@ -4,5 +4,5 @@ OnValidate()
 <txttag>
 CSNONE
 </txttag>
-This function is called when the script is loaded or a value is changed in the inspector (Called in the editor only).
-Use this function to validate the data of your MonoBehaviours. This can be used to ensure that when you modify date in an editor that the data stays within a certain range.
+この関数はスクリプトがロードされたとき、またはインスペクタ上で値が変更されたときに呼び出しされます（エディタでのみ呼び出しされる）。
+この関数を使用して自身の MonoBehaviour スクリプトのデータチェックをします。これを使用してエディタ上で日付を修正したときに値を特定の範囲に収めることが出来ます。

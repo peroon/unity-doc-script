@@ -1,5 +1,5 @@
 <signature>
 clipAnimations
 </signature>
-Animation clips to split animation into.
-SA: [[ModelImporterClipAnimation]].
+アニメーションを分割するアニメーションクリップ。
+SA: [[ModelImporterClipAnimation]]
