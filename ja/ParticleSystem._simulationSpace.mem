@@ -1,7 +1,7 @@
 <signature>
 simulationSpace
 </signature>
-This selects the space in which to simulate particles. It can be either world or local space.
+これによりパーティクルをシミュレーションする空間を選択します。ワールド座標またはローカル座標とすることが出来ます。
 CONVERTEXAMPLE
 BEGIN EX
 var useLocal : boolean = true;

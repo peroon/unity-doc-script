@@ -1,5 +1,5 @@
 <signature>
 safeCollisionEventSize
 </signature>
-Safe array size for use with [[ParticleSystem.GetCollisionEvents]].
-This is guaranteed to be large enough to use with [[ParticleSystem.GetCollisionEvents]] for the current frame. GetCollisionEvents may return fewer elements for some GameObjects though.
+[[ParticleSystem.GetCollisionEvents]] で使用する安全な配列の長さ。
+これにより現在のフレームで [[ParticleSystem.GetCollisionEvents]] で使用するのに十分な大きさであることが保証されます。GetCollisionEvents はいくつかのゲームオブジェクトでは少ない数の要素を戻す場合があります。
