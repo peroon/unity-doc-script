@@ -1,7 +1,7 @@
 <signature>
 back
 </signature>
-Shorthand for writing @@Vector3(0, 0, -1)@@.
+@@Vector3(0, 0, -1)@@ と同義を短く記述
 CONVERTEXAMPLE
 BEGIN EX
 	transform.position += Vector3.back * Time.deltaTime;

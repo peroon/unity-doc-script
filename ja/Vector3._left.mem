@@ -1,7 +1,7 @@
 <signature>
 left
 </signature>
-Shorthand for writing @@Vector3(-1, 0, 0)@@.
+@@Vector3(-1, 0, 0)@@ と同義を短く記述
 CONVERTEXAMPLE
 BEGIN EX
 	transform.position += Vector3.left * Time.deltaTime;
