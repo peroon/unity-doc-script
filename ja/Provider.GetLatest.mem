@@ -2,6 +2,6 @@
 GetLatest(AssetList)
 GetLatest(Asset)
 </signature>
-Start a task for getting the latest version of an asset from the version control server.
-@param assets List of assets to update.
-@param asset Asset to update.
+バージョン管理サーバからアセットの最新バージョンを取得するタスクを開始します。
+@param assets 更新するアセットの一覧
+@param asset 更新するアセット

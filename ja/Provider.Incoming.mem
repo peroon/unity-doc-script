@@ -1,5 +1,5 @@
 <signature>
 Incoming()
 </signature>
-Start a task for quering the version control server for incoming changes.
-The incoming changesets can be accessed through the task instance once it has been completed.
+入力された変更のためのバージョン管理サーバを照会するタスクを開始します。
+入力されたチェンジセットは、完了後にタスクのインスタンスを通してアクセスできます。
