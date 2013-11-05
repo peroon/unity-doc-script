@@ -1,4 +1,4 @@
 <signature>
 HasCameraPermissions()
 </signature>
-Returns true when camera access has been requested in the player settings.
+プレイヤー設定でカメラへのアクセス許可がリクエストされたときに true を戻り値とします。
