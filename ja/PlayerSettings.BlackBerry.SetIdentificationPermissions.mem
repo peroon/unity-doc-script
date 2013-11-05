@@ -1,5 +1,5 @@
 <signature>
 SetIdentificationPermissions(bool)
 </signature>
-Enable / Disable device identification permission. (Will prompt user for access).
-@param enable New permission value.
+デバイス ID パーミッションを有効化 / 無効化します（ユーザにアクセス許可をプロンプトします）。
+@param enable 新規のパーミッションの値。

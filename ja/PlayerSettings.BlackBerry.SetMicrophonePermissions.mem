@@ -1,5 +1,5 @@
 <signature>
 SetMicrophonePermissions(bool)
 </signature>
-Enable / Disable microphone permission level. (Will prompt user for access).
-@param enable New permission value.
+音声マイク パーミッションの有効化 / 無効化します。（ユーザにアクセス許可を求めるプロンプトを表示します。）
+@param enable 新規のパーミッションの値。

@@ -1,5 +1,5 @@
 <signature>
 SetSharedPermissions(bool)
 </signature>
-Enable / Disable access to QNX shared folders (accesible via the rst://drive).
-@param enable New permission value.
+QNX 共有フォルダへのアクセスを有効化 / 無効化します（rst://drive 経由でアクセスできます）。
+@param enable 新規のパーミッションの値。
