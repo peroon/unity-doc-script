@@ -7,18 +7,18 @@ CSNONE
 <signature>
 NonSerializable
 </signature>
-The NonSerialized attribute marks a variable to not be serialized.
-This way you can keep a variable public and Unity will not attempt to serialize it or show it in the inspector
+NonSerialized 属性により変数がシリアライズされないものとしてマーキングされます。
+これにより変数を public のまま保持できるため Unity によりシリアライズされるかインスペクタ上で表示されることを避けられます。
 BEGIN EX
-// p will not be shown in the inspector or serialized
+// p はインスペクタ上で表示されず、シリアライズもされません
 @System.NonSerialized
 var p = 5;
 END EX
 
 BEGIN EX NOCHECK
-// C# Example
+// C# サンプル
 class Test {
-	// p will not be shown in the inspector or serialized
+	// p はインスペクタ上で表示されず、シリアライズもされません
 	[System.NonSerialized]
 	public int p = 5;
 }
