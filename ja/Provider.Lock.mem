@@ -2,8 +2,8 @@
 Lock(AssetList,bool)
 Lock(Asset,bool)
 </signature>
-Attempt to lock an asset for exclusive editing.
-Depening on version control system and server setup this might be an exclusive lock preventing other people from even modifing the asset or or it might simple prevent other people from submitting the asset to the version control server.
-@param assets List of assets to lock/unlock.
-@param locked True to lock assets, false to unlock assets.
-@param asset Asset to lock/unlock.
+編集するアセットに対して排他ロックを試みます。
+バージョン管理サーバおよびサーバのセットアップ次第でこれは他の人がアセットの編集さえも防止する排他ロックの場合もあれば、他の人がバージョン管理サーバに提出することを防止するのみの場合もあります。
+@param assets ロック/アンロックするアセットの一覧
+@param locked アセットに対して、ロックする場合は true、アンロックする場合は false
+@param asset ロック/アンロックするアセット
