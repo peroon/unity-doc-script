@@ -1,4 +1,4 @@
 <signature>
 availablePlugins
 </signature>
-Static property which returns an array of all available plugins.
+全ての利用可能なプラグインの配列を戻り値とする static プロパティ。

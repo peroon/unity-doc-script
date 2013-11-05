@@ -1,6 +1,6 @@
 <signature>
 gpuSkinning
 </signature>
-Enable GPU skinning on capable platforms.
+GPU スキニングを実現可能なプラットフォームで有効化します。
 
-DX11, OpenGL ES 3.0 and Xbox 360 can do mesh skinning on the GPU.
+DirectX 11, OpenGL ES 3.0 および Xbox 360 では GPU スキニングを実現可能です。
