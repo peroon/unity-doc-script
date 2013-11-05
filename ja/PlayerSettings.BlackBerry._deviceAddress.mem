@@ -1,6 +1,6 @@
 <signature>
 deviceAddress
 </signature>
-The address used when accessing the device.
-The device address can be found on the device by accessing: Settings/About/Network
-Either the USB or WiFi address can be used (USB recommended).
+デバイスにアクセスするときに使用されるアドレス。
+デバイス上でデバイス アドレスを検索するためには次の場所にアクセスします: Settings/About/Network
+USB または WiFi アドレスを使用することが出来ます（USB 推奨）。
