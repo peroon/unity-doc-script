@@ -1,6 +1,6 @@
 <signature>
 ResolveIsValid(AssetList)
 </signature>
-Tests if any of the assets in the list is resolvable.
-Returns true if any of the assets are resolvable.
-@param assets The list of asset to be resolved.
+アセットの一覧のどれかが解決できるかテストします。
+もしアセットのどれかが解決できる場合、戻り値を true とします。
+@param assets 解決したいアセットの一覧

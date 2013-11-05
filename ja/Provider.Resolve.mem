@@ -1,7 +1,7 @@
 <signature>
 Resolve(AssetList,ResolveMethod)
 </signature>
-Start a task that will resolve conflicting assets in version control.
-When conflicting assets appear you can resolve it by using your own copy or the incoming copy. A third way of resolving the conflict is by first Provider.Merge() the assets and the resolve using the merged asset. Use the resolveMethod to flag what should be used.
-@param assets The list of asset to mark as resolved.
-@param resolveMethod How the assets should be resolved.
+バージョン管理で競合するアセットを解決するタスクを開始します。
+競合するアセットが表示されたとき、それらを解決するため自身の複製または入力された複製のいずれも使用して解決できまｓ。三つめの競合解決の方法は最初の Provider.Merge() を使用してアセットをマージし、マージされたアセットを解決する方法です。どれを使用すべきかフラグをつけるため resolveMethod を使用して下さい。
+@param assets 解決済みとマーキングするアセットの一覧
+@param resolveMethod アセットを解決する方法
