@@ -2,7 +2,7 @@
 RevertIsValid(AssetList,RevertMode)
 RevertIsValid(Asset,RevertMode)
 </signature>
-Return true if Revert is a valid task to perform.
-@param assets List of assets to test.
-@param mode Revert mode to test for.
-@param asset Asset to test.
+元に戻すことが有効なタスクの場合 true を戻り値とします。
+@param assets テストすべきアセットの一覧
+@param mode 元に戻すことをテストするときのモード
+@param asset テストするアセット
