@@ -1,4 +1,4 @@
 <signature>
 OnInspectorGUI()
 </signature>
-Implement specific MaterialEditor GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.
+特定の MaterialEditor GUI コードをここに実装します。もし既存のエディタを拡張したいだけの場合、あらゆるカスタム GUI コードが実行される前に、ベースの OnInspectorGUI () の呼び出しをします。
