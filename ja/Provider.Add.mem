@@ -2,8 +2,8 @@
 Add(AssetList,bool)
 Add(Asset,bool)
 </signature>
-Adds an assets or list of assets to version control.
-If the input asset is a folder setting the recursive flag will add all assets and assets in subfolders to the version control system.
-@param assets List of assets to add to version control system.
-@param recursive Set this true if adding should be done recursively into subfolders.
-@param asset Single asset to add to version control system.
+バージョン管理にアセットまたはアセットの一覧を追加します。
+もし入力アセットがフォルダの場合、再帰（recursive）フラグをセットすることで全てのアセットおよびサブフォルダに含まれるアセットをバージョン管理システムに追加します。
+@param assets バージョン管理システムに追加するアセットの一覧
+@param recursive もしサブフォルダも再帰的に追加すべきであれば true をセットします。
+@param asset バージョン管理システムに追加する単独アセット
