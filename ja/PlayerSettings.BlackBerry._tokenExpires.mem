@@ -1,5 +1,5 @@
 <signature>
 tokenExpires
 </signature>
-The date in which the debug token is set to expire.
-The debug token can be renewed by pressing 'Renew' in the Publishing Section.
+デバッグトークンの有効期限。
+デバッグトークンを更新するには Publishing セクションで 'Renew' を押下します。
