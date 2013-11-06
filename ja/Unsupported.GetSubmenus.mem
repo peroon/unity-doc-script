@@ -1,4 +1,4 @@
 <signature>
 GetSubmenus(string)
 </signature>
-Extracts a list of all submenus that can be executed.
+実行できる全てのサブメニューの一覧を抽出します。

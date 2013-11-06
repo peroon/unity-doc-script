@@ -1,4 +1,4 @@
 <signature>
 vertices
 </signature>
-The number of vertices rendered in this frame.
+このフレームでレンダリングされた頂点数。

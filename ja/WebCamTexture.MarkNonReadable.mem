@@ -1,5 +1,5 @@
 <signature>
 MarkNonReadable()
 </signature>
-Marks WebCamTexture as unreadable (no GetPixel* functions will be available. (iOS only).
-This might allow unity to do some optimizations.
+WebCamTexture を読み取り不能とマーキングします(GetPixel* 関数が利用できなくなります (iOS のみ)。)
+これにより Unity での最適化を可能にする場合があります。
