@@ -4,17 +4,17 @@ SyncLayer(int)
 <txttag>
 UNDOC
 </txttag>
-Synchronizes playback speed of all animations in the /layer/.
-When blending between two looping animations they often have different lengths.
-For example a walk cycle often takes longer than a run cycle. When blending between them
-you need to make sure that the foot placement of the walk and run cycle happens at the same time.
-In other word playback speed of the animations must be adjusted so that the animations are synchronized.
-SyncLayer will calculate the average normalized playback speed of all animations in the layer based on their blend weight.
-Then it will apply that playback speed to all animations in the layer.
+/layer/ にある全てのアニメーションの再生速度を同期します。
+二つのループ アニメーション間をブレンドするとき異なる長さであることが良くあります。
+例えば歩行サイクルは走行サイクルより長く時間がかかります。それらの間でブレンドするとき
+歩行と走行のサイクルが同時に行なわれることを確かめる必要があります。
+いいかえるとアニメーションの再生速度はアニメーションが同期されてるように調整されている必要があります。
+SyncLayer によりレイヤーの全てのアニメーションは各々のブレンド ウェイトにもとづき平均の正規化された再生速度が計算されます。
+次にレイヤーの全てのアニメーションにその再生速度を適用します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Puts the walk and run animation in the same
-	// layer and synchronizes their speed
+	// 歩行および走行アニメーションを同じ
+	// レイヤーに置き、速度を同期させます。
 	animation["walk"].layer = 1;
 	animation["run"].layer = 1;
 	animation.SyncLayer(1);

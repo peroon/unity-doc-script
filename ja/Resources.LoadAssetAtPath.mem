@@ -1,12 +1,12 @@
 <signature>
 LoadAssetAtPath(string,Type)
 </signature>
-Returns a resource at an asset path (Editor Only).
-This function always return null in the standalone player or web player.
-This is useful for quickly accessing an asset for use in the editor only.
+アセットのパスにおけるリソースを戻り値とします（エディタのみ）。
+この関数はスタンドアローンプレイヤーまたはウェブプレイヤーでは常に Null を戻り値とします。
+これはエディタのみで使用するアセットをクイックにアクセスする場合に便利です。
 
-__Note:__\\
-__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
+__注意:__\\
+__全ての__ Unity でのアセット名およびパスはスラッシュを使用するため、バックスラッシュをしようしたパスは正しく動作 __しません__ 。
 CONVERTEXAMPLE
 BEGIN EX
 	var prefab : GameObject;

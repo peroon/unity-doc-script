@@ -1,5 +1,5 @@
 <signature>
 vendorIdentifier
 </signature>
-Vendor ID.
-UIDevice identifierForVendor.
+ベンダー ID.
+UIDevice identifierForVendor
