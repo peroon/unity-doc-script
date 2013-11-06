@@ -4,6 +4,6 @@ OnReceiveTitle(string,string)
 <txttag>
 CSNONE
 </txttag>
-Called when the title of the current web page has changed. Use this to show the page title somewhere such as in the window title.
-@param newTitle The new title of the current web page.
-@param frame The name of the frame that is loading the content. Empty string if it's the main frame.
+現在のウェブページのタイトルが変更されたときに呼び出しされます。これを使用してウィンドウ タイトルなどでページのタイトルを表示するために使用します。
+@param newTitle 現在のウェブページの新規のタイトル。
+@param frame コンテンツをロードしているフレームの名前。メインフレームである場合、空の文字列。
