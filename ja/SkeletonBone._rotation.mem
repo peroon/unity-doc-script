@@ -1,2 +1,2 @@
-Default T-pose rotation for this bone.
-Should be set in local space.
+このボーンためのデフォルトの T 字型のポーズの回転（Rotation）。
+ローカル座標空間でセットすべきです。
