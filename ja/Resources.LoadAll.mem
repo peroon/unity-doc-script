@@ -1,17 +1,17 @@
 <signature>
 LoadAll(string,Type)
 </signature>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-Only objects of /type/ will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
+Resources フォルダの /path/ におけるフォルダまたはファイルの全てのアセットをロードします。
+もし /path/ がフォルダを示す場合、フォルダの全てのアセットを戻り値とします。
+もし /path/ がファイルを示す場合、そのアセットのみを戻り値とします。
+/type/ のオブジェクトのみを戻り値とします。
+自身のプロジェクトにある Assets フォルダの中の任意の Resources フォルダに対して相対的な /path/ で指定されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
+	// "Resources/Textures" フォルダの中の全てのアセットをロード
+	// 次に一覧からひとつランダムなものを選択
+	// 注意: Random.Range は [low, high] の範囲
+	// すなわち、 high は含まれない
 
 	function Start (){
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -23,16 +23,16 @@ END EX
 <signature>
 LoadAll(string)
 </signature>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
+Resources フォルダの /path/ におけるフォルダまたはファイルの全てのアセットをロードします。
+もし /path/ がフォルダを示す場合、フォルダの全てのアセットを戻り値とします。
+もし /path/ がファイルを示す場合、そのアセットのみを戻り値とします。
+自身のプロジェクトにある Assets フォルダの中の任意の Resources フォルダに対して相対的な /path/ で指定されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
+	// "Resources/Textures" フォルダの中の全てのアセットをロード
+	// 次に一覧からひとつランダムなものを選択
+	// 注意: Random.Range は [low, high] の範囲
+	// すなわち、 high は含まれない
 
 	function Start (){
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
