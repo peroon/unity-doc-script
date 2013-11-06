@@ -1,2 +1,2 @@
-Submit failed because some files need to be added.
-The assets associated with the task will contain assets with the local state set. Those are the files that need to be added to do a keep integrity in you unity project. This will only happen if you have disabled auto add in the editor preferences.
+いくつかのファイルを追加する必要があるため提出が失敗。
+このタスクに関連付けられたアセットはローカル状態セットのアセットを含みます。これらは Unity プロジェクトでの統合性を維持するために追加する必要があるファイルです。これは Editor Preferences で Auto Add を無効化した場合のみ発生します。
