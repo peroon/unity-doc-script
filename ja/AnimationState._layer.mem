@@ -4,11 +4,10 @@ layer
 <txttag>
 UNDOC
 </txttag>
-The layer of the animation. When calculating the final blend weights, animations in higher layers will get their weights.
-Distributed first. Lower layer animations only receive blend weights if the higher layers didn't use up all blend weights.
+アニメーションのレイヤー。最終のブレンド ウェイトを計算するとき、大きい数のレイヤーはウェイトが最初に配分されます。小さい数のレイヤーのアニメーションは大きい数のレイヤーが全てのブレンド ウェイトを使い切らない場合に限りブレンドウェイトを受け取ります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Puts the walk and run animation in layer 1
+	// 歩行および走行アニメーションをレイヤー 1 にする
 	animation["Walk"].layer = 1;
 	animation["Run"].layer = 1;
 END EX
