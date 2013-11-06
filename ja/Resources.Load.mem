@@ -1,22 +1,22 @@
 <signature>
 Load(string)
 </signature>
-Loads an asset stored at /path/ in a Resources folder.
-Returns the asset at /path/ if it can be found otherwise returns null.
-The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
+Resources フォルダの /path/ におけるフォルダのアセットをロードします。
+もし /path/ にアセットが見つかった場合、そのアセットを戻り値とし、見つからない場合は Null を戻り値とします。
+自身のプロジェクトにある Assets フォルダの中の任意の Resources フォルダに対して相対的な /path/ で指定され、拡張子は省く必要があります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Assigns a texture named "Assets/Resources/glass" to a Plane.
+	// Plane に "Assets/Resources/glass" という名前のテクスチャを割り当て
 
 	function Start () {
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Plane);
 		go.renderer.material.mainTexture = Resources.Load("glass") as Texture;
 	}
 END EX
-Another example:
+もうひとつのサンプル
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiates a prefab at the path "Assets/Resources/enemy".
+	// "Assets/Resources/enemy" のパスへプレハブをインスタンス化
 
 	function Start () {
 		var instance : GameObject = Instantiate(Resources.Load("enemy"));
@@ -25,13 +25,13 @@ END EX
 <signature>
 Load(string,Type)
 </signature>
-Loads an asset stored at /path/ in a Resources folder.
-Returns the asset at /path/ if it can be found otherwise returns null.
-Only objects of /type/ will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
+Resources フォルダの /path/ におけるフォルダのアセットをロードします。
+もし /path/ にアセットが見つかった場合、そのアセットを戻り値とし、見つからない場合は Null を戻り値とします。
+/type/ のオブジェクトのみを戻り値とします。
+自身のプロジェクトにある Assets フォルダの中の任意の Resources フォルダに対して相対的な /path/ で指定され、拡張子は省く必要があります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Assigns a texture named "glass" to a Plane.
+	// Plane に "glass" という名前のテクスチャを割り当て
 
 	function Start () {
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -40,8 +40,8 @@ BEGIN EX
 END EX
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiates a prefab named "enemy" located in any Resources
-	// folder in your project's Assets folder.
+	// 自身のプロジェクトの Assets フォルダにある
+	// 任意の Resources で "enemy" という名前のプレハブをインスタンス化
 
 	function Start () {
 		var instance : GameObject = Instantiate(Resources.Load("enemy", GameObject));

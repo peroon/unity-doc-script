@@ -1,17 +1,17 @@
 <signature>
 FindObjectsOfTypeAll(Type)
 </signature>
-Returns a list of all objects of Type /type/.
-This function can return any type of Unity object that is loaded, including game objects, prefabs, materials, meshes, textures, etc. It will also list internal stuff, therefore please be ''extra'' careful the way you handle the returned objects.
-Contrary to Object::ref::FindObjectsOfType this function will also list disabled objects.
+オブジェクトの型が /type/ である全てのオブジェクトの一覧を戻り値とします。
+この関数はロードされた任意のタイプの、ゲームオブジェクト、プレハブ、マテリアル、メッシュ、テクスチャ、その他を含む Unity オブジェクトを戻り値とすることが可能です。さらに内部ファイルも一覧とするため、戻り値のオブジェクトをハンドリングするときは ''最大限に'' 注意して下さい。
+Object::ref::FindObjectsOfType と異なり、この関数は無効化されたオブジェクトも一覧とします。
 
-Please note that this function is very slow and is not recommended to be used every frame.
+この関数は非常に遅く毎フレーム使用することは推奨されないことに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// This script displays the number of allocated Unity objects by type.
-	// This is useful for finding leaks. Knowing the type of object
-	// (mesh, texture, sound clip, game object) that is getting leaked is
-	// the first step. You could then print the names  of all leaked assets of that type.
+	// このスクリプトは割り当てされた Unity オブジェクトをタイプごとに表示します。
+	// これはリークを見つけるのに便利です。リークしているオブジェクトの型
+	// (メッシュ、テクスチャ、音声クリップ、ゲームオブジェクト）を知ることが最初のステップです。
+	// そこから、その型の全てのリークしたアセットの名前を表示できます。
 
 	function OnGUI () {
 		GUILayout.Label("All " + Resources.FindObjectsOfTypeAll(typeof(UnityEngine.Object)).Length);
@@ -26,7 +26,7 @@ END EX
 BEGIN EX
 import System.Collections.Generic;
 
-// This script finds all the objects in scene, excluding prefabs:
+// このスクリプトは、プレハブを除いて、シーンの全てのオブジェクトを見つけます。
 function GetAllObjectsInScene(): List.<GameObject> {
     var objectsInScene: List.<GameObject> = new List.<GameObject>();
     
@@ -44,5 +44,5 @@ function GetAllObjectsInScene(): List.<GameObject> {
     return objectsInScene;
 }
 END EX
-@param type Type of the class to match while searching.
-@return An array of objects whose class is ''type'' or is derived from ''type''.
+@param type 検索する際に一致させたいクラスの型
+@return クラスが ''type'' である、または ''type'' から派生したクラスのオブジェクトの配列。
