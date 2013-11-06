@@ -1,4 +1,4 @@
 <signature>
 supportsStencil
 </signature>
-Is the stencil buffer supported? (RO)
+ステンシル バッファはサポートされているか？（読み取り専用）
