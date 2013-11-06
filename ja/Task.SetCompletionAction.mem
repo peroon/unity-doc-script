@@ -1,5 +1,5 @@
 <signature>
 SetCompletionAction(CompletionAction)
 </signature>
-Upon completion of a task a completion task will be performed if it is set.
-@param action Which completion action to perform.
+セットされた場合、タスク完了時に完了後タスクが実行されます。
+@param action どの完了後タスクを実行するか
