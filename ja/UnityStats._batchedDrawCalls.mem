@@ -1,4 +1,4 @@
 <signature>
 batchedDrawCalls
 </signature>
-The number of batched draw calls made this frame.
+このフレームから呼び出しされたバッチングされたドローコール数。

@@ -1,4 +1,4 @@
 <signature>
 drawCalls
 </signature>
-The number of draw calls made this frame.
+このフレームから呼び出しされたドローコール数。
