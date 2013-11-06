@@ -1,5 +1,5 @@
 <signature>
 pivotMode
 </signature>
-Are we in Center or Pivot mode.
+Center、 Pivot のいずれのモードであるか。
 SA: handlePosition.

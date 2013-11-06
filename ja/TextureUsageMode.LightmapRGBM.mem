@@ -1,2 +1,2 @@
-Range [0;8] packed to [0;1] with multiplier stored in the alpha channel.
-SA: [[wiki:class-Texture2D|texture assets]].
+アルファチャネルに係数を格納して [0;8] を [0;1] パックします。
+SA: [[wiki:class-Texture2D|テクスチャ アセット]]
