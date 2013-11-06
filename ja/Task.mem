@@ -1,1 +1,1 @@
-A UnityEditor.VersionControl.Task is created almost everytime UnityEditor.VersionControl.Provider is ask to perform an action.
+UnityEditor.VersionControl.Provider が アクション実行を求められた場合、ほぼ必ず UnityEditor.VersionControl.Task が作成されます。
