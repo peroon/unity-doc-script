@@ -1,15 +1,15 @@
 <signature>
 GetUniqueTempPathInProject()
 </signature>
-Returns a unique path in the Temp folder within your current project.
-The returned path is relative to the project folder.
+現在のプロジェクト内の Temp フォルダで一意パスを戻り値とします。
+戻り値としたパスはプロジェクトフォルダに対して相対パスで指定されます。
 
-The returned path is of a form @@Temp/UnityTempFile-@@''uniqueID'', where /uniqueID/ is guaranteed to be
-unique over space and time.
+戻り値としたパスは @@Temp/UnityTempFile-@@''uniqueID'' の形式であり、/uniqueID/
+は空間上および時間軸上で一意であることが保証されます。
 
-You can use it to create temporary files/folders and be sure that
-you are not overriding somebody else's files, plus you don't have to
-keep track of the unique IDs yourself.
+一時ファイル/フォルダを作成するために使用することが出来て、
+他人のファイルを上書きしないことを確かめたうえ、自身で一意 ID を
+トラッキングする必要がありません。
 BEGIN EX
 	@MenuItem ("Example/Get Unique Path")
 	static function GetUniqueProjectPath () {
