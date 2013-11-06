@@ -1,7 +1,7 @@
-In the player on Windows Phone 8 device.
-SA: Platform dependent Compilation.
+Windows Phone 8 デバイスのプレイヤー上。
+SA: プラットフォーム依存のコンパイル。
 CONVERTEXAMPLE
 BEGIN EX
 	if (Application.platform == RuntimePlatform.WP8Player)
-		Debug.Log("Do something special here!");
+		Debug.Log("ここで何か特別なことをします!");
 END EX

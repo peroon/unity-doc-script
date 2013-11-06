@@ -4,4 +4,4 @@ OnPostprocessScene()
 <txttag>
 CSNONE
 </txttag>
-Add this function in a subclass to get a notification just before building the scene.
+サブクラスにこの関数を追加してシーンをビルドする直前に通知を発行します。
