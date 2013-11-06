@@ -1,5 +1,5 @@
 <signature>
 description
 </signature>
-A short description of the current task.
-Not all tasks have a description, currently only the longer running task where progress is showed in the Editor UI.
+現在のタスクに関する短い説明。
+全てのタスクに説明があるわけでなく、現在は長く実行されるタスクのみが エディタ UI に表示されます。

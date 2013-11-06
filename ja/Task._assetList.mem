@@ -1,5 +1,5 @@
 <signature>
 assetList
 </signature>
-The result of some types of tasks.
-Most task perform an action and returns the result as list of version control informations about assets, e.g. a Status task will return the result in this list.
+いくつかのタスクのタイプの結果。
+ほとんどのタスクはアクションを実行し、アセットに関するバージョン管理情報の一覧として結果を戻します。例として Status タスクはこの一覧で結果を戻します。
