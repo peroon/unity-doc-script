@@ -4,7 +4,7 @@ OnOpenExternalLink(string,string)
 <txttag>
 CSNONE
 </txttag>
-Called when opening an URL that would have resulted in opening a new window in a normal browser.
-If this handler is not implemented, the default behaviour is to open the URL using the default web application.
-@param url The URL that needs to be opened.
-@param source The reason a new window has been requested.
+通常のブラウザで新規ウィンドウを開く結果となる URL を開くときに呼び出しされます。
+このハンドラが実装されてない場合、デフォルト動作はデフォルト ウェブ アプリケーションを使用して URL を開くことです。
+@param url 開く必要がある URL。
+@param source 新規ウィンドウがリクエストされた理由。

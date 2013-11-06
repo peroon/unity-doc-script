@@ -4,4 +4,4 @@ OnFinishLoading()
 <txttag>
 CSNONE
 </txttag>
-Called when the web view has finished loading all components of a web page.
+WebView がウェブページの全てのコンポーネントをロード完了したとき呼び出しされます。
