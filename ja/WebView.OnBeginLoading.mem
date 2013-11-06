@@ -4,7 +4,7 @@ OnBeginLoading(string,string,string)
 <txttag>
 CSNONE
 </txttag>
-Called when the web view begins loading a resource.
-@param url The URL the view is going to load.
-@param frame The name of the frame that is loading the content. Empty string if it's the main frame.
-@param mimeType The mimeType of the resource being loaded.
+WebView がリソースのロード開始するときに呼び出しされます。
+@param url ロードしようとするビューの URL
+@param frame コンテンツをロードしているフレーム名。もしメインフレームの場合は空の文字列。
+@param mimeType ロードされるリソースの mimeType。
