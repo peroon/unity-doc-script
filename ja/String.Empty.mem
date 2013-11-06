@@ -7,4 +7,4 @@ Empty
 <txttag>
 CSNONE
 </txttag>
-Represents the empty string. (RO)
+空の文字列を表現します。（読み取り専用）

@@ -1,1 +1,1 @@
-This class stores the transform name mapped to this bone and the default T-pose for this bone.
+このクラスはこのボーンにマッピングされた Transform の名前およびこのボーンのデフォルトの T 字型ポーズを格納します。
