@@ -1,4 +1,4 @@
 <signature>
 renderTextureChanges
 </signature>
-The number of render texture changes made this frame.
+このフレームで変更された Render Texture 数。
