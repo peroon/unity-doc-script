@@ -1,5 +1,5 @@
 <signature>
 GetChild(int)
 </signature>
-Returns a transform child by index.
-@param index Index of the child transform to return. Must be smaller then Transform.childCount.
+インデックスにもとづき 子 Transform を戻り値とします。
+@param index 戻り値としたい子 Transform のインデックス。Transform.childCount より小さい値を指定する必要があります。
