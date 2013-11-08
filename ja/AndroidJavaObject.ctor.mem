@@ -2,26 +2,25 @@
 ctor(string,object[])
 ctor(IntPtr)
 </signature>
-Construct an AndroidJavaObject based on the name of the class.
-This essentially means locate the class type, allocate an object and run the specified constructor.
+クラスの名前にもとづいて AndroidJavaObject を作成します。
+要するに、クラス型を見つけてオブジェクトを割り当てたうえ指定されたコンストラクタを実行します。
 BEGIN EX
-	// Create a java.lang.String object holding the string "some string".
+	// "何らかの文字列" を格納した java.lang.String を作成
 	function Start() {
 		var jo = new AndroidJavaObject("java.lang.String", "some string");
 	}
 END EX
 BEGIN EX
-	// Inner (nested) classes must use /$ separators.
-	// Here we create a LayoutParams object with a specified width and height.
+	// 内部（ネストされた）クラスは /$ セパレータを使用する必要がある
+	// ここでは指定された幅、高さで LayoutParams オブジェクトを作成
 	function Start() {
 		var width = 300;
 		var height = 150;
 		var jo = new AndroidJavaObject("android/view/ViewGroup$LayoutParams", width, height);
 	}
 END EX
-@param className Specifies the Java class name (e.g. "<tt>java.lang.String</tt>" or "<tt>java/lang/String</tt>").
-@param args An array of parameters passed to the constructor.
-@param jobject Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
+@param className Java クラス名を指定（例． "<tt>java.lang.String</tt>" or "<tt>java/lang/String</tt>"）
+@param jobject JNI Java クラスの 生のオブジェクト (AndroidJNI.FindClass の呼び出しにより取得）
 <signature>
 </signature>
 <txttag>
