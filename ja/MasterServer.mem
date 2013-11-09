@@ -1,3 +1,3 @@
 サーバーとクライアント間の仲介を行います。
-You can advertise game hosts or fetch host lists for you game type. この関数ではマスターサーバー自身との通信を行います。 If necessary the server itself can be customized. For an overview
-of the Master Server as well as a technical description see the [[wiki:net-MasterServer|Master Server manual page]].
+ゲームホストを立てたり、ゲームタイプに対するホスト一覧をフェッチできます。この関数ではマスターサーバー自身との通信
+を行います。もし必要であればサーバ自身をカスタマイズできます。マスターサーバの概要および技術的な説明については [[wiki:net-MasterServer|マスターサーバ マニュアルのページ]] を参照して下さい。
