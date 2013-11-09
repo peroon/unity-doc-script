@@ -1,6 +1,6 @@
-A UnityGUI event.
+UnityGUI イベントです。
 キーボードまたは同等の入力デバイスのキーアクションを表します。
 
 スクリプトのOnGUI関数内で呼び出され、フレームごとにイベントは複数回呼び出されます。
 
-SA: [[wiki:GUI Scripting Guide|GUI Scripting Guide]], [[EventType]].
+SA: [[wiki:GUI Scripting Guide|GUI スクリプティングガイド]], [[EventType]]

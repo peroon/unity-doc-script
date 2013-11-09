@@ -4,15 +4,15 @@ LogWarning(object)
 コンソールに警告ログを表示する
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("Watch out!, this is a warning!");
+	Debug.LogWarning("注意!これは警告です!");
 END EX
 <signature>
 LogWarning(object,Object)
 </signature>
 コンソールに警告ログを表示する
-When you select the message in the console a connection to the context object will be drawn.
-This is very useful if you want know on which object a warning occurs.
+コンソール上でメッセージを選択するときコンテキストへのつながりが描画されます。
+これはどのオブジェクトで警告が発生したのかを知りたい場合に役に立ちます。
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("A warning assigned to this transform!", transform);
+	Debug.LogWarning("この Transform に割り当てられた警告です!", transform);
 END EX

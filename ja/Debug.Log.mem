@@ -4,13 +4,14 @@ Log(object)
 コンソールにログを表示する
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.Log ("Hello");
+	Debug.Log ("こんにちは");
 END EX
 <signature>
 Log(object,Object)
 </signature>
 コンソールにログを表示する
-コンソールにログを表示します。context引数に、スクリプトを付加しているゲームオブジェクトを指定すれば、どのゲームオブジェクトがログを表示しているかがわかるようになります。
+コンソールにログを表示します。context引数に、スクリプトを付加しているゲームオブジェ
+クトを指定すれば、どのゲームオブジェクトがログを表示しているかがわかるようになります。
 CONVERTEXAMPLE
 BEGIN EX
 	Debug.Log ("Hello", gameObject);

@@ -18,7 +18,6 @@ CONVERTEXAMPLE
 BEGIN EX
 	
 	// イベント コールバック サンプル: デバッグで接触地点(contact)および法線を 2 秒間描画します。
-	Event callback example: Debug-draw all contact points and normals for 2 seconds.
 	function OnCollisionEnter(collision : Collision) {
 		for (var contact : ContactPoint in collision.contacts) {
 			Debug.DrawRay(contact.point, contact.normal, Color.green, 2, false);

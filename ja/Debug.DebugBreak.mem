@@ -1,0 +1,7 @@
+<signature>
+DebugBreak()
+</signature>
+<txttag>
+UNDOC
+</txttag>
+アタッチされているデバッガ（存在する場合）へとブレークします。

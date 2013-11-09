@@ -6,17 +6,16 @@ CONVERTEXAMPLE
 BEGIN EX
 	var memberVariable : Transform;
 	if(memberVariable == null)
-		Debug.LogError("memberVariable must be set to point to a Transform.");
+		Debug.LogError("memberVariable （メンバ変数）は Transform を示すようにセットする必要があります。");
 END EX
 <signature>
 LogError(object,Object)
 </signature>
 コンソールにエラーログを表示する
-When you select the message in the console a connection to the context object will be drawn.
-This is very useful if you want know on which object an error occurs.
-CONVERTEXAMPLE
+コンソール上でメッセージを選択するときコンテキストへのつながりが描画されます。
+これはどのオブジェクトで警告が発生したのかを知りたい場合に役に立ちます。CONVERTEXAMPLE
 BEGIN EX
 	var memberVariable : Transform;
 	if(memberVariable == null)
-		Debug.LogError("memberVariable must be set to point to a Transform.", transform);
+		Debug.LogError("memberVariable （メンバ変数）は Transform を示すようにセットする必要があります。", transform);
 END EX
