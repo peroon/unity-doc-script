@@ -1,15 +1,15 @@
-LayerMask allow you to display the LayerMask popup menu in the inspector.
-Similar to those in the camera.cullingMask.
-レイなどを飛ばして、特定のレイヤーとだけ衝突判定を持たせたりするときに便利です。
+LayerMask によりインスペクタ上で LayerMask ポップアップメニューを表示できます。
+camera.cullingMask と同等の表示ができます。
+Ray などを飛ばして、特定のレイヤーとだけ衝突判定を持たせたりするときに便利です。
 CONVERTEXAMPLE
 BEGIN EX
-// Casts a ray using the layer mask,
-// which can be modified in the inspector.
+// レイヤーマスクを使用して Raycast し、
+// それをインスペクタ上で修正できます。
 
 var mask : LayerMask = -1;
 function Update () {
 	if (Physics.Raycast (transform.position, transform.forward, 100, mask.value)) {
-		Debug.Log("Hit something");
+		Debug.Log("何かヒットしました");
 	}
 }
 END EX

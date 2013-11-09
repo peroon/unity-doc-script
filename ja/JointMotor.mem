@@ -1,4 +1,4 @@
-関節部分にモーターを取り付けるために使用されます。
-For example the [[HingeJoint]] can be told to rotate at a given speed and force.
-The joint will then attempt to reach the velocity with the given maximum force.\\
-SA: [[HingeJoint]].
+ジョイントにモータを取り付けるため JointMotor を使用できます。
+例えば [[HingeJoint]] に指定の速度および力で回転するように指示できます。
+ジョイントはその速度および最大の力に到達しようとします。
+SA: [[HingeJoint]]
