@@ -1,7 +1,4 @@
 RGBA カラーの表現をします。
 Unityでは、各色の成分を0 から1 のFloat型で表すことが
 できます。
-
-Components (::ref::r,::ref::g,::ref::b) define a color in RGB color space. Alpha component (::ref::a)
-defines transparency - alpha of one is completely opaque, alpha of zero is completely
-transparent.
+(::ref::r,::ref::g,::ref::b) 成分は RGB カラー空間上の色を定義します。アルファ成分 (::ref::a) は透明度を定義し、値が 1 の場合は完全に不透明、値が 0 の場合は完全に透明を示します。
