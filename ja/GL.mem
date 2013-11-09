@@ -1,9 +1,15 @@
 低レベルのグラフィックスライブラリです。
-OpenGLの即時モードと同様のアクティブな変換行列、レンダリングコマンドでの出力などの低レベルグラフィックスのタスクを実行します。
+OpenGLの即時モードと同様のアクティブな
+変換行列、レンダリングコマンドでの出力などの低レベルグラフィックスのタスクを実行し
+ます。
 
-ほとんどすべての場合にGraphics.DrawMesh関数を使用していることに、注意してください。GL関数の即時描画モードを使用するよりも効率的です。
+ほとんどすべての場合にGraphics.DrawMesh関数を使用していることに、注意してくだ
+さい。GL関数の即時描画モードを使用するよりも効率的です。
 
-GLクラスの描画コードの中から、他の描画コマンドを呼び出す場合、他のマテリアルを設定することができるので、同じような制御下にあることを確認してください。GLクラスの描画コマンドはすぐ実行されます。Update関数で呼び出した場合、カメラにレンダリングされる前に、それらが実行されることを意味しています。そしてカメラはGLクラスの描画が表示されない場合、スクリーンが映らない可能性が高くなります。GLクラスを描画する場所は、OnPostRender関数が一般的です。
+GLクラスの描画コードの中から、他の描画コマンドを呼び出す場合、他のマテリアルを設
+定することができるので、同じような制御下にあることを確認してください。GLクラスの描
+画コマンドはすぐ実行されます。Update関数で呼び出した場合、カメラにレンダリングされる前に、それらが実行されることを意味しています。そしてカメラはGLクラスの描画が表
+示されない場合、スクリーンが映らない可能性が高くなります。GLクラスを描画する場所は、OnPostRender関数が一般的です。
 BEGIN EX
 static var lineMaterial : Material;
 
@@ -39,17 +45,17 @@ function OnPostRender() {
 	GL.End();
 }
 END EX
-__Note:__ This class is almost always used when you need to draw a couple of lines or triangles, and don't want to deal with meshes.
-If you want to avoid surprises the usage pattern is this:
+__注意:__ このクラスは複数の線や三角形を描画する必要があり、メッシュを扱いたい、という場合にほぼ必ず使用されます。
+予想外の動作をさけるため、基本的な使用方法は:
 BEGIN EX
 function OnPostRender() {
-	 // Set your materials
+	 // マテリアルをセット
 
 	 GL.PushMatrix();
 	 // yourMaterial.SetPass( );
-	 // Draw your stuff
+	 // 何かを描画
 	 GL.PopMatrix();
 }
 END EX
-Where at the "// Draw your stuff" you should do SetPass() on some material previously declared, which will be used for drawing.
-If you dont call SetPass, then you'll get basically a random material (whatever was used before) which is not good. So do it.
+"// 何かを描画" において SetPass() を事前に宣言したマテリアルで使用し、描画のために使用すべきです。
+SetPass を呼び出ししない場合、マテリアルはランダムに選ばれる（過去に使用されたたものの中から）ため必ず呼び出すべきです。

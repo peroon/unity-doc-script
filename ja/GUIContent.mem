@@ -1,4 +1,4 @@
 GUI要素を設定します。
-This works closely in relation with [[GUIStyle]]. GUIContent defines /what/ to render and [[GUIStyle]] defines /how/ to render it.
+これは [[GUIStyle]] と密接な関係で動作します。GUIContent により何をレンダリングするか定義し、 [[GUIStyle]] はどのようにレンダリングするか定義します。
 
-SA: [[GUIStyle]].
+SA: [[GUIStyle]]
