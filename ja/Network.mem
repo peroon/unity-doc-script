@@ -1,4 +1,4 @@
-ネットワークのパラメーターを扱うようなコアの関数があります。
-This class configures the network interface and all the network parameters. You use it to set up a
-server or connect to one and have a row of helper functions to help you with those tasks. 
-For more information on what is exposed in the editor see the [[wiki:class-NetworkManager|Network Manger component reference]].
+ネットワークのパラメータを扱うコアの関数です。
+このクラスはネットワーク インタフェースおよび全てのネットワークのパラメータを設定します。これを使用して
+サーバのセットアップ、サーバのひとつに接続でき、また多くのヘルパー関数によりそれらのタスクをサポートできます。
+エディタで公開されている部分に関する詳細は [[wiki:class-NetworkManager|Network Manger コンポーネント リファレンス]] を参照して下さい。
