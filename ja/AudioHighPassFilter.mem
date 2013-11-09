@@ -1,5 +1,4 @@
 高周波数のみを通過させるフィルターです。
-Attenuates signals with frequencies lower than the Cutoff
-Frequency.
+カットオフ周波数（cutoffFrequency）シグナルより低いシグナルをカットオフします。
 
-__Note:__ This filter is only available on the PRO version.
+__注意:__ このフィルタは Unity Pro のみ利用可能です。

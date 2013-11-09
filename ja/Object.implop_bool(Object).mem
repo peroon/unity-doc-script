@@ -1,7 +1,7 @@
 <signature>
 implop_bool(Object)
 </signature>
-オブジェクトは存在するか？
+オブジェクトが存在するか
 以下の二つのサンプルは同じ結果が得られます。
 CONVERTEXAMPLE
 BEGIN EX

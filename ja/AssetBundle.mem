@@ -1,14 +1,14 @@
-WWWクラスを介してアセットをロードし、インスタンス化することができます。AssetBundles are created via BuildPipeline.BuildAssetBundle.
-Note that bundles are not fully compatible between platforms. A bundle built for any of the standalone
-platforms (including webplayer) can be loaded on any of those platforms but not on iOS or Android.
-Furthermore, a bundle built for iOS is not compatible with Android and vice versa.
+WWWクラスを介してアセットをロードし、インスタンス化することができます。アセットバンドルは BuildPipeline.BuildAssetBundle を通して作成します。
+プラットフォーム間で完全な互換性がないことに注意して下さい。任意のスタンドアローンプラットフォーム
+（ウェブプレイヤー含む）向けに作成されたバンドルは任意のプラットフォームでロードできますが、iOS または Android ではロードできません。
+さらに、 iOS 向けにビルドしたバンドルは Android で互換性がなく、反対も同様です。
 
-SA: WWW.assetBundle, [[wiki:Loading Resources at Runtime|Loading Resources at Runtime]], BuildPipeline.BuildAssetBundle.
+SA: WWW.assetBundle, [[wiki:Loading Resources at Runtime|実行時のリソースのロード]], BuildPipeline.BuildAssetBundle 
 BEGIN EX
 function Start () {
 	var www = WWW ("http://myserver/myBundle.unity3d");
 	yield www;
-	// Get the designated main asset and instantiate it.
+	// 代理のメインアセットを取得しインスタンス化
 	Instantiate(www.assetBundle.mainAsset);
 }
 END EX

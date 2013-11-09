@@ -1,21 +1,23 @@
 オブジェクトのアニメーションを操作することができます。
-スクリプトから、アニメーションのコンポーネントと再生に必要な、AnimationClipクラスにアクセスすることができます。
+スクリプトから、アニメーションのコンポーネントと再生に必要な、AnimationClipクラ
+スにアクセスすることができます。
 Unity のアニメーションシステムは重量に基づいてサポートされていて、アニメーションを組み合わせたり／加えたり／混ぜたり、レイヤーをコントロ
 ールすることができます。
 
-For an overview of animation scripting in Unity please [[wiki:Animation Scripting 40|read this introduction]].
+Unity でのアニメーション スクリプティングに関する概要については [[wiki:Animation Scripting 40|このイントロダクション]] を参照して下さい。
 
 単純なアニメーションを再生する：Animation.Play関数\\
 クロスフェードさせてアニメーションを再生する：Animation.CrossFade関数\\
-アニメーションのラップ（ループ、一度だけ、ピンポン方式）：AnimationClipクラスのwrapMode変数\\
+アニメーションのラップ（ループ、一度だけ、ピンポン方式）：AnimationClipクラス
+のwrapMode変数\\
 アニメーションを組み合わせて再生する：Animation.Blend関数.
 
-Animation also supports enumerators so you can loop through all AnimationStates like this:
+アニメーションは列挙体をサポートするため、次のように全ての AnimationStates をループできます：
 CONVERTEXAMPLE
 BEGIN EX
-// Make all animations in this character play at half speed
+// このキャラクターの全てのアニメーションを半分の速度で再生
 for (var state : AnimationState in animation) {
 	state.speed = 0.5;
 }
 END EX
-SA: An overview of animation scripting in Unity is [[wiki:Animation Scripting 40|here]].
+SA: アニメーション スクリプティングに関する概要については [[wiki:Animation Scripting 40|ここ]] を参照して下さい。

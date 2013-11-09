@@ -1,7 +1,7 @@
 <signature>
 NotEqual(Object,Object)
 </signature>
-二つのオブジェクトが異なるオブジェクトであるか比較します。
+二つのオブジェクトが異なるオブジェクトであるか比較
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Transform;

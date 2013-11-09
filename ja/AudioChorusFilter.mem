@@ -1,6 +1,5 @@
-コーラスエフェクトを作成するときに使用されます。
-The chorus effect modulates the original sound by a sinusoid low frequency
-oscillator (LFO). 1つのオーディオでわずかな変化を発生させ、まるで複数のオーディオがあるような出力をします。
-the same sound with slight variations - resembling a choir.
+コーラス エフェクトを作成するときに使用されます。
+コーラス エフェクトは正弦曲線の低周波数オシレータ(LFO)により元の音声を変調します。1つのオーディオで複数の音源のあるわずかな変調を発
+生させ、まるでコーラスのような出力をします。
 
-__Note:__ This filter is only available on the PRO version.
+__注意:__ このフィルタは Unity Pro のみ利用可能です。

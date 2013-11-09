@@ -1,22 +1,24 @@
-[[wiki:class-Light|light components]]コンポーネントのスクリプトインタフェースです。
-Unity で使われるライトを制御するために使用します。The properties are an exact match for the
-values shown in the Inspector.
+[[wiki:class-Light|Light]] コンポーネントのスクリプトインタフェースです。
+Unity で使われるライトを制御す
+るために使用します。プロパティはインスペクタ上で表示される値
+と全く同じです。
 
-普段はエディター上で作成しますが、スクリプト内でも作成することができます。
+普段はエディター上で作成しますが、スクリプト内でも作成することが
+できます。
 CONVERTEXAMPLE
 BEGIN EX
 function Start () {
-	// Make a game object
+	// ゲームオブジェクトを作成
 	var lightGameObject : GameObject = new GameObject("The Light");
 
-	// Add the light component
+	// Light コンポーネントを追加
 	lightGameObject.AddComponent(Light);
 
-	// Set color and position
+	// カラーと位置をセット
 	lightGameObject.light.color = Color.blue;
 
-	// Set the position (or any transform property) after
-	// adding the light component.
+	// Light コンポーネントを追加した後
+	// 位置（または任意の Transform プロパティ）をセット
 	lightGameObject.transform.position = Vector3(0, 5, 0);
 }
 END EX

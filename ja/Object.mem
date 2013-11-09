@@ -1,3 +1,3 @@
 Unityが参照できるすべてのオブジェクトの基本クラスです。
-Any public variable you make that derives from Object gets shown in the inspector as a drop target, 
-allowing you to set the value from the GUI.
+オブジェクトから派生して作成した任意の public 変数はインスペクタでドロップ先のターゲットとして表示され、
+GUI から値をセットできるようになります。

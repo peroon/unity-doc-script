@@ -1,13 +1,11 @@
 <signature>
 SetData(float[],int)
 </signature>
-クリップにサンプルデータを設定する。サンプルデータは－ 1 から1 の範囲でなければいけない。(exceeding these limits will lead to artifacts and undefined behaviour).
-The sample count is determined by the length of the float array.
-Use offsetSamples to write into a random position in the clip. If the length from the offset is longer than the clip length, the write will wrap around
-and write the remaining samples from the start of the clip.
-CONVERTEXAMPLE
+クリップにサンプルデータを設定する。サンプルデータは -1 から1 の範囲でなければいけない。(これらの限界を超えた場合は違和感や未定義の動作につながります）。
+サンプル カウントは float 配列の長さにより決定されます。
+offsetSamples を使用してクリップのランダム位置に書き込みます。もしオフセットからの長さがクリップの長さを超える場合、書き込みは折り返しされて残りのサンCONVERTEXAMPLE
 BEGIN EX
-	// Read all the samples from the clip and half the gain
+	// クリップから全てのサンプルを読み、半分の長さに
 	function Start () {
 			var samples = new float[audio.clip.samples * audio.clip.channels];
 			audio.clip.GetData(samples, 0);

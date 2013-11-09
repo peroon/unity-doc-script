@@ -1,7 +1,7 @@
 <signature>
 richText
 </signature>
-テキスト フォーマット マークアップのために HTML スタイルのタグを有効化します。
+テキスト フォーマット マークアップのために HTML スタイルのタグを有効化する
 対応しているタグは:
 &lt;color="htmlcolor"&gt;colored text&lt;/color&gt;, ここで "htmlcolor" は HTML カラー文字列であり、 "#ff0000" または "red" と指定します。
 &lt;b&gt;bold text&lt;/b&gt;

@@ -1,8 +1,8 @@
 <signature>
 recorderStartTime
 </signature>
-::ref::StartRecording +MExUfDBzUfowVzBVMIwwXzDVMOww/DDgMGtb/jBXMGZ2+Fv+doQwajDQMMMw1TChMG5nAFIdMG4w1TDsMPww4DBulYtZy2ZClZMwAg
-+T4swSDBwMAEwgjBX 10 +MNUw7DD8MOB27jBnkzJ1OzCSlYtZyzBXMGYwATDQMMMw1TChMEw 5 +MNUw7DD8MOBlcDBnMEIwYzBfWDRUCDAC
-+MIIwVzDQMMMw1TChMExSHWcfUxYwVTCMMGYwajBEWDRUCP8I::ref::StartRecording +MG5UfDBzUfowVzBMW59lvTBVMIwwZjBqMET/CTABMFMwbjDXMO0w0TDGMKMwblAkMG8 -1 +MGgwajCKMH4wWTAC
+バッファの最初のフレームの開始時刻。 ::ref::StartRecording が呼び出しされたフレームからみて相対的な時刻
+例えば、フレーム 10 から録画を開始して、バッファが 5 フレームの長さである場合、
+もしバッファが初期化されてなければ (::ref::StartRecording が呼び出しされてない場合）、このプロパティの値は -1 となります。
 
-SA: ::ref::recorderStopTime.
+SA: ::ref::recorderStopTime

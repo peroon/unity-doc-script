@@ -1,4 +1,4 @@
 有効にすると、アニメーションが物理演算上で実行される。
-This is only useful in conjunction with kinematic rigidbodies
-An animated platform can apply velocity and friction to rigid bodies sitting on top of it.
-rigid bodyクラスを付加しておく必要がある。
+これは Kinematic Rigidbody とともに使用した場合のみに役立ちます。
+アニメーションされた土台はその上にある Rigidbody に対して速度や摩擦を適用できます。
+Rigidbody クラスを付加しておく必要がある。

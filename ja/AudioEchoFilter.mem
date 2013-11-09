@@ -1,4 +1,4 @@
 減衰しながら、設定したディレイの後に、音を繰り返す表現をします。
-The repetitions based on the Decay Ratio.
+decayRation (減衰比率)にもとづいて繰り返します。
 
-__Note:__ This filter is only available on the PRO version.
+__注意:__ このフィルタは Unity Pro のみ利用可能です。

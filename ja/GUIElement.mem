@@ -1,2 +1,1 @@
-GUIオブジェクトに表示されている、GUITextコンポーネントやGUITextureコンポーネントなどの基本クラスです。
-This class holds the base functionality for any GUI elements.
+GUI オブジェクトに表示されている、GUIText コンポーネントや GUITexture コンポーネントなどの基本クラスです。このクラスは任意の GUI 要素の基本機能を保持します。

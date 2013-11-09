@@ -1,4 +1,3 @@
-意図的な音の歪みを表現します。
-Sounds reaching the AudioListener.
+Audio Distortion フィルタはオーディオ ソースからの音声、またはオーディオ リスナーに到達する音声に歪みを与えます。
 
-__Note:__ This filter is only available on the PRO version.
+__注意:__ このフィルタは Unity Pro のみ利用可能です。

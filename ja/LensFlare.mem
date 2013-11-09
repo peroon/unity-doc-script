@@ -1,2 +1,3 @@
-[[wiki:class-LensFlare|Lens flare component]]コンポーネント用のスクリプトインタフェースです。
-レンズフレアの明るさと色を設定することができます。
+[[wiki:class-LensFlare|LensFlare]] コンポーネント用のスクリプトインタフェースです。
+レンズフレアの明るさと色を設定する
+ことができます。

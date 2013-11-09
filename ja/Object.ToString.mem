@@ -1,7 +1,7 @@
 <signature>
 ToString()
 </signature>
-ゲームオブジェクトの名前を戻り値とします。
+ゲームオブジェクトの名前を返す
 CONVERTEXAMPLE
 BEGIN EX
 	Debug.Log(gameObject);

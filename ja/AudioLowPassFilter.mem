@@ -1,5 +1,4 @@
-低周波数のみを通過させるフィルターです。
-AudioSource, or all sound reaching an AudioListener, and attenuates
-frequencies higher than the Cutoff Frequency.
+オーディオ ソースからの音声、またはオーディオ リスナーに到達する音声に対して低周波数のみを通過させるフィルターです。
+カットオフ周波数（cutoffFrequency）シグナルより高いシグナルをカットオフします。
 
-__Note:__ This filter is only available on the PRO.
+__注意:__ このフィルタは Unity Pro のみ利用可能です

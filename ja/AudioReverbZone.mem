@@ -1,7 +1,7 @@
 リバーブポイントを移動させたいときに使います。
-As the Audio Listener moves into a Reverb Zone, the ambient effect associated with the zone is gradually applied.
-At the max distance there is no effect and at the min distance the effect is fully applied.
+オーディオリスナーがリバーブゾーンに入ると、ゾーンに伴うアンビエント エフェクトが徐々に適用されます。
+Max Distance だけ離れた位置ではエフェクトは全く適用されず、Min Distance まで近づくとエフェクトが完全に適用されます。
 洞窟に入っていくような感じで、徐々に足音を変更したりすることができます。
 
-You can always mix reverb zones to have combined effects.
-For more info check [[wiki:class-AudioReverbZone|Reverb Zones]] in the manual.
+複合効果をもつようにリバーブゾーンを混ぜることが常にできます。
+詳細についてはマニュアルの [[wiki:class-AudioReverbZone|リバーブゾーン]] を確認下さい。

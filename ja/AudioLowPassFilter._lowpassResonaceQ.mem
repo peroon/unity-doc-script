@@ -1,9 +1,10 @@
-Determines how much the filter's self-resonance is dampened.
-振動がよりゆっくりと消えてしまうようなエネルギー損失率を表す。1 から10 の間で設定（デフォルトは1）
+フィルタの自己共鳴が抑制される度合いを決定します。
+より高い値は振動がよりゆっくりと消えてしまうようなエネルギー損失率を表します。
+1 から10 の間で設定（デフォルトは1）
 CONVERTEXAMPLE
 BEGIN EX
-	// Moves the Lowpass Resonance Quality Factor from 0 to 10 following a Sinus function
-	// Attach this to an audio source with a LowPassFilter to listen it working.
+	// lowpassResonaceQ（自己共鳴係数）を 0 から 10 まで正弦曲線に沿って変化
+	// LowPassFilter つきのオーディオソースにアタッチして動作するところを試聴
 
 	@script RequireComponent(AudioSource)
 	@script RequireComponent(AudioLowPassFilter)

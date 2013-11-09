@@ -1,7 +1,7 @@
 <signature>
 Equal(Object,Object)
 </signature>
-二つのオブジェクトが同じオブジェクトであるか比較します。
+二つのオブジェクトが同じオブジェクトであるか比較
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Collider;

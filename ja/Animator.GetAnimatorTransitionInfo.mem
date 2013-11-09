@@ -1,6 +1,6 @@
 <signature>
 GetAnimatorTransitionInfo(int)
 </signature>
-Gets the Transition information on a specified AnimatorController layer.
-Only valid when during a transition.
-@param layerIndex The layer's index.
+指定の AnimatorController レイヤーでトランジション情報を取得します。
+トランジションの最中のみ有効です。
+@param layerIndex レイヤーのインデックス。

@@ -1,9 +1,9 @@
 どのスクリプトからも派生する基本クラスです。
-Using Javascript every script automatically derives from MonoBehaviour.
-When using C# or Boo you have to explicitly derive from MonoBehaviour.
+Javascript を使用すると全てのスクリプトは自動的に MonoBehaviour から派生します。
+C# または Boo を使用するとスクリプトを明示的に MonoBehaviour から派生させる必要があります。
 
-__Note:__ The checkbox for disabling a MonoBehavior (on the editor) will only 
-prevent Start(), Awake(), Update(), FixedUpdate(), and OnGUI() from executing. 
-If none of these functions are present, the checkbox is not displayed.
+__注意:__ MonoBehavior チェックボックス（エディタ上で）でを無効化させることにより
+Start(), Awake(), Update(), FixedUpdate(), および OnGUI() は実行することのみ防止します。
+もしこれらの関数が存在しない場合、チェックボックスは表示されません。
 
-SA: The [[wiki:Scripting|chapter on scripting]] in the manual.
+SA: マニュアル上の [[wiki:Scripting|スクリプティングに関するチャプター]] 
