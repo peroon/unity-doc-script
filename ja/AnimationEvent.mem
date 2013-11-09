@@ -1,3 +1,1 @@
-アニメーションの再生の一部として、SendMessage関数のようなスクリプトの関数を呼び出すことができます。
-関数は引数なし、または引数1 つの場合のみ可能です。
-The parameter can be a float, a string, an object reference, or an AnimationEvent.
+アニメーションの再生の一部として、SendMessage関数のようなスクリプトの関数を呼び出すことができます。関数は引数なし、または引数1 つの場合のみ可能です。引数は float、文字列、オブジェクト参照、またはアニメーションイベントとすることが出来ます。

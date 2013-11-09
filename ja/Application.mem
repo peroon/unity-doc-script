@@ -1,2 +1,2 @@
 アプリケーション実行時のデータにアクセスします。
-This class contains static methods for looking up information about and controlling the run-time data.
+このクラスは実行データに関するデータをルックアップして制御する static メソッドを含みます。

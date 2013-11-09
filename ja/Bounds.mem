@@ -1,6 +1,8 @@
 3 次元空間の範囲を表します。
-軸に平行なバウンディングボックス（略してAABB）は、座標軸に整列し、いくつかのオブジェクトを囲むボックスです。このボックスが軸に対して回転することはなく、最小値と最大値を設定してボックスの中心と範囲を決めることができます。
-it can be defined by just its
-::ref::center and ::ref::extents, or alternatively by ::ref::min and ::ref::max points.
+軸に平行なバウンディングボックス（略してAABB）は、座標軸に整列し、いくつかのオブ
+ジェクトを囲むボックスです。このボックスが軸に対して回転することはなく、最小値と最大
+値を設定してボックスの中心と範囲を決めることができます。
+これは単に ::ref::center および ::ref::extents 、
+または別の方法として ::ref::min および ::ref::max points により定義することが出来ます。
 
-/Bounds/ is used by Collider.bounds, Mesh.bounds, Renderer.bounds.
+/Bounds/ は Collider.bounds, Mesh.bounds, Renderer.bounds により使用されます。
