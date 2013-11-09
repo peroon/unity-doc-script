@@ -1,4 +1,4 @@
 接続したマイクでオーディオクリップに記録する際に使用します。
-To get a list of connected microphone(s) use [[Microphone.devices|Microphone.devices]].
-To start a recording session, use [[Microphone.Start|Microphone.Start]] with a device name (or null/empty string to use the default device).
-To stop a recording, use [[Microphone.End|Microphone.End]] with the device ID you used when starting a recording.
+接続したマイクの一覧を取得するには [[Microphone.devices|Microphone.devices]] を使用します。
+録音セッションを開始するには [[Microphone.Start|Microphone.Start]] にデバイス名（または null / 空の文字列によりデフォルトデバイスを使用）を指定して使用します。
+録音セッションを停止するには [[Microphone.End|Microphone.End]] に録画を開始したときのデバイス ID を指定して使用します。
