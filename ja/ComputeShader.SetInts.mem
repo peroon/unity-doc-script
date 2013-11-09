@@ -1,7 +1,6 @@
 <signature>
 SetInts(string,int[])
 </signature>
-Set multiple consecutive integer parameters at once.
-This function can be used to set int vector, int array or int vector array
-values. For example, int4 myArray[4] in the compute shader
-can be filled by passing 16 integers.
+同時に複数の連続した integer 引数をセット
+この関数は int ベクトル、 int 配列、int ベクトル配列の値に使用できます。
+例えば ComputeShader の int4 myArray[4] を埋めるには 16 個の integer を渡します。

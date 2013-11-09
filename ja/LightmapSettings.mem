@@ -1,6 +1,6 @@
 ライトマップの設定を行います。
-A scene can have several lightmaps stored in it, and [[Renderer]] components can use those
-lightmaps. This makes it possible to use the same material on multiple objects, while
-each object can refer to a different lightmap or different portion of the same lightmap.
+シーンには複数のライトマップを格納することができ、そして [[Renderer]] コンポーネントはそれらの
+ライトマップを使用できます。これにより複数のオブジェクトで同一のマテリアルを使用することが可能であり
+一方で各オブジェクトは同じライトマップの異なるライトマップまたは異なる部分を参照できます。
 
-SA: [[LightmapData]] class, Renderer.lightmapIndex property.
+SA: [[LightmapData]] クラス, Renderer.lightmapIndex プロパティ

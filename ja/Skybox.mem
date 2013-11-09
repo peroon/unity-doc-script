@@ -1,5 +1,4 @@
-主に背景として使用されます。
-[[wiki:class-Skybox|skybox component]].
-マテリアルの特性を持っています。
+[[wiki:class-Skybox|Skybox]] コンポーネントのスクリプトインタフェース
+Skybox クラスのプロパティはマテリアルのみです。
 
-SA: [[wiki:class-Skybox|skybox component]].
+SA: [[wiki:class-Skybox|Skybox コンポーネント]]

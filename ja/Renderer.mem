@@ -1,14 +1,14 @@
-オブジェクトやメッシュ、パーティクルなどを画面に表示するレンダラーの一般的機能です。
-A renderer is what makes an object appear on the screen. For any game object or component its
-renderer can be accessed trough a GameObject::pref::renderer property:
+オブジェクトやメッシュ、パーティクルなどを画面に表示するレンダラの一般的機能です。
+レンダラによりオブジェクトがスクリーンに表示されます。任意のゲームオブジェクトまたはコンポーネントにおいて
+レンダラは GameObject::pref::renderer プロパティを通してアクセスできます。
 CONVERTEXAMPLE
 BEGIN EX
-// make the object invisible!
+// オブジェクトを透明に!
 renderer.enabled = false;
 END EX
-Use this class to access the renderer of any object, mesh or particle system.
-Renderers can be disabled to make objects invisible (see ::ref::enabled), and the materials can be accessed
-and modified through them (see ::ref::material).
+このクラスを使用して任意のオブジェクト、メッシュ、またはパーティクルシステムのレンダラにアクセスします。
+レンダラを無効化することでオブジェクトを透明にでき ( ::ref::enabled を参照)、そしてマテリアルは
+それらを通してアクセスおよび修正できます( ::ref::material を参照)。
 
-SA: Renderer components for [[wiki:class-MeshRenderer|meshes]], [[wiki:class-ParticleRenderer|particles]],
-[[wiki:class-LineRenderer|lines]] and [[wiki:class-TrailRenderer|trails]].
+SA: [[wiki:class-MeshRenderer|メッシュ]], [[wiki:class-ParticleRenderer|パーティクル]],
+[[wiki:class-LineRenderer|Line]] および [[wiki:class-TrailRenderer|トレイル]] の Renderer コンポーネント

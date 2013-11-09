@@ -1,6 +1,6 @@
-The HingeJoint groups together 2 rigid bodies, constraining them to move like connected by a hinge.
-ドアなどに利用できます。
+HingeJoint は二つの Rigidbody をグルーピングし、ヒンジで接合されているように動作を制限します。
+ドアなどに最適ですが、チェーンなどモデリングする際にも利用できます。
 
-The HingeJoint has a motor which can be used to make the hinge spin around the joints axis.
-A spring which attempts to reach for a target angle by spinning around the joints axis.
-And a limit which constrains the joint angle.
+HingeJoint にはモーターがあり、ヒンジがジョイントの軸周りに回転できるように、
+スプリングがジョイントの軸周りに回転することでターゲット角度に到達しようとするように、
+ジョイント角度が制限されるように、使用できます。

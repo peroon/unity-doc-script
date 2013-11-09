@@ -1,4 +1,4 @@
-BoxColliderクラスやSphereColliderクラスなどの基盤となるクラスです。
+BoxCollider クラスや SphereCollider クラスなどの基盤となるクラスです。
 SA: [[BoxCollider]], [[SphereCollider]], [[CapsuleCollider]], [[MeshCollider]], [[PhysicMaterial]], [[Rigidbody]].
 
-If you intend to move the collider around a lot it is recommended to also attach a kinematic rigidbody to it.
+もしコライダをかなり動き回らせる想定であれば Kinematic Rigidbody をアタッチすることを推奨します。

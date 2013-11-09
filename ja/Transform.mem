@@ -1,12 +1,14 @@
 オブジェクトの位置、回転、サイズを扱うクラスです。
-シーン内のすべてのものはオブジェクトに変換され、位置、回転、サイズが格納されています。また、階層構造も判断し、最上位以外のオブジェクトは親を持つことになります。Transformオブジェクトを操作すると、子の関係にあるオブジェクトも同時に操作すること
+シーン内のすべてのものはオブジェクトに変換され、位置、回転、サイズが格納されて
+います。また、階層構造も判断し、最上位以外のオブジェクトは親を持つことになります。
+Transformオブジェクトを操作すると、子の関係にあるオブジェクトも同時に操作すること
 になります。
 CONVERTEXAMPLE
 BEGIN EX
-// Moves all transform children 10 units upwards!
+// 全ての子 Transform を上向きに 10 ユニット移動!
 
 for (var child : Transform in transform) {
     child.position += Vector3.up * 10.0;
 }
 END EX
-SA: [[wiki:class-Transform|The component reference]], [[Physics]] class.
+SA: [[wiki:class-Transform|コンポーネント リファレンス]], [[Physics]] クラス

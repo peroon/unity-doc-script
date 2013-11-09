@@ -1,4 +1,4 @@
 バネの力を適用する場合に使用します。
-The Spring attempts to maintain the distance it has when it starts out.
-So if your joint's start at a rest position where the two rigidbodies are far apart, then the joint will attempt to maintain that distance.
-The minDistance and maxDistance properties add on top of this implicit distance.
+スプリングは開始時の距離を維持しようとします。
+例えばジョイントが開始時に二つの Rigidbody が遠く離れた位置関係にあるとき、ジョイントはその距離を保とうとします。
+この暗黙的に保とうとする距離に minDistance および maxDistance を加えます。

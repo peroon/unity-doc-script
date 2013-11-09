@@ -1,15 +1,12 @@
 ホイール状のコライダーです。
-Wheel collider is used to model vehicle wheels. It simulates a spring and damper suspension setup, 
-and uses a slip based tire friction model to calculate wheel contact forces.
+ホイール コライダは車両のタイヤをモデル化するために使用します。スプリングやダンパーのサスペンションのセットアップをシミュレーションし、
+スリップにもとづいたタイヤ摩擦モデルを使用してホイールの設置の力を計算できます。
 
-Wheel's collision detection is performed by casting a ray from ::ref::center downwards the local
-y-axis. The wheel has a ::ref::radius and can extend downwards by ::ref::suspensionDistance
-amount.
+ホイールの衝突検知は ::ref::center （中心）からローカル座標 Y 軸下向きに Raycast により行ないます。
+ホイールには ::ref::radius （半径）があり、 ::ref::suspensionDistance の長さだけ下向きに拡張できます。
 
-The wheel is controlled with ::ref::motorTorque, ::ref::brakeTorque and ::ref::steerAngle properties.
+ホイールは ::ref::motorTorque, ::ref::brakeTorque および ::ref::steerAngle により制御できます。
 
-Wheel collider computes friction separately from the rest of physics engine, using a slip based
-friction model. This allows for more realistic behaviour, but makes
-wheel colliders ignore standard [[PhysicMaterial]] settings. Simulation of different road materials
-is done by changing the ::ref::forwardFriction and ::ref::sidewaysFriction
-based on what material the wheel is hitting. SA: ::ref::GetGroundHit and [[WheelFrictionCurve]].
+ホイール コライダは摩擦を物理エンジンとは別に計算し、スリップにもとづいたタイヤ摩擦モデルを使用
+します。これによって、リアリティの高い動作を実現しますが、通常の [[PhysicMaterial]] 設定は無視されます。異なる道路のマテリアル
+をシミュレーションするには ::ref::forwardFriction および ::ref::sidewaysFriction をホイールが当たってるマテリアルにもとづき変更します。 SA: ::ref::GetGroundHit および [[WheelFrictionCurve]]
