@@ -1,5 +1,1 @@
-Rigidbodyオブジェクトの物理演算でスムーズな動きを行うように、補間を行う際に使用します。
-For the main characters or vehicles that are followed by the camera it is recommended to
-use interpolation. For any other rigidbodies it is recommended not to use interpolation.
-
-SA: Rigidbody.interpolation variable.
+Rigidbodyオブジェクトの物理演算でスムーズな動きを行うように、補間を行う際に使用します。カメラにより追跡されるメイン キャラクターや車体については、補間を使用することを推奨します。他の Rigidibody の場合は使用しないことを推奨します。SA: Rigidbody.interpolation 変数

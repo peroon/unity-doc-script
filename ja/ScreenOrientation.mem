@@ -1,4 +1,4 @@
 スクリーンの向きを選択します。
-Currently this is only relevant on mobile devices.
+現在、これはモバイルデバイスでのみ意味があります。
 
-SA: Screen.orientation.
+SA: Screen.orientation

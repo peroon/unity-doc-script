@@ -1,53 +1,53 @@
-Force Unity to serialize a private field.
-You will almost never need this.
-When Unity serializes your scripts, it will only serialize public fields.
-If in addition to that you also want Unity to serialize one of your private fields
-you can add the SerializeField attribute to the field.
+Unity De強制的に private フィールドをシリアライズします。
+これが必要な場合はほとんどありません。
+Unity がスクリプトをシリアライズするとき、 public フィールドのみをシリアライズします。
+もし追加で Unity により private フィールドのひとつをシリアライズしたいとき
+フィールドに SerializeField を追加します。
 
-Unity will serialize all your script components, reload the new assemblies,
-and recreate your script components from the serialized verions. This
-serialization does not happen with .NET's serialization functionality, but
-with an internal Unity one.
+Unity は全てのスクリプト コマンドをシリアライズし、新規のアセンブリをリロードし、
+スクリプト コンポーネントをシリアライズされたバージョンから再作成します。
+このシリアライズ処理は .NET のシリアライズ機能でなく、 Unity 内部の処理で
+実行されます。
 
-The serialization system used can do the following:
+シリアライズのシステムにより次のことが出来ます:
 
-- CAN serialize public nonstatic fields (of serializable types)\\
-- CAN serialize nonpublic nonstatic fields marked with the [SerializeField] attribute.\\
-- CANNOT serialize static fields.\\
-- CANNOT serialize properties.\\
+- public な非 static フィールドをシリアライズ（Serializable 型）\\
+- [SerializeField] 属性でマーキングされた非 public 非 static フィールドをシリアライズ\\
+- static フィールドはシリアライズ出来ない\\
+- プロパティはシリアライズ出来ない\\
 
-Your field will only serialize if it is of a type that Unity can serialize:
+フィールドは Unity がシリアライズできる型の場合のみシリアライズされます。
 
-__Serializable types are:__
+__シリアライズできる型:__
 
-- All classed inheriting from UnityEngine.Object, for example Gameobject, Commponent, MonoBehaviour, Texture2D, AnimationClip..
-- All basic data types like int, string, float, bool.
-- Some built in types like Vector2, Vector3, Vector4, Quaternion, Matrix4x4, Color, Rect, Layermask..
-- Arrays of a serializable type\\
-- List of a serializable type (new in Unity2.6)\\
-- Enums
+- UnityEngine.Object から派生した全てのクラス、例えば Gameobject, Commponent, MonoBehaviour, Texture2D, AnimationClip 等々
+- int, string, float, bool など全ての基本データ型
+- いくつかのビルトインの型、例えば Vector2, Vector3, Vector4, Quaternion, Matrix4x4, Color, Rect, Layermask 等々
+- Serialize 型の配列 \\
+- Serialize 型のリスト（Unity 2.6 より登場）\\
+- 列挙体
 
-Headsup note: if you put one element in a list (or array) twice, when the
-list gets serialized, you'll get two copies of that element, instead of one copy being in the new list twice.
+重要な注意: リスト（または配列）にひとつの要素を二回入れると、
+リストがシリアライズされるとき、新規のリストで二回複製が存在するのでなく、代わりにその要素が二つ発生します。
 
-__Hint:__ Unity won't serialize Dictionary, however you could store a List<> for
-keys and a List<> for values, and sew them up in a non serialized dictionary
-on Awake(). This doesn't solve the problem of when you want to modify the
-dictionary and have it "saved" back, but it is a handy trick in a lot of other cases.
+__ヒント:__ Unity は Dictionary をシリアライズしませんが、キーのための List<> 、
+値のための List<> を格納し、非シリアライズされたディクショナリに Awake() で連結できます。
+これによりディクショナリを修正して "保存" したい場合の問題の解決策にはなりませんが、
+他の場合には便利なテクニックです。
 
-For UnityScript users: Fields in c# is a script variable in UnityScript, and
-[SerializeField] becomes @SerializeField. [Serializable] on a class becomes @script Serializable in a UnityScript.
+UnityScript ユーザ向け: C# のフィールドは UnityScript ではスクリプト変数であり
+[SerializeField] は @SerializeField と表現します。クラスで [Serializable] は UnityScript において @script Serializable となります。
 BEGIN EX
-// Javascript example
+// Javascript サンプル
 
-//This field gets serialized because it is public.
+// public であるためシリアライズされるフィールド
 var name = "John";
 
-//This field does not get serialized because it is private.
+// private であるためシリアライズされないフィールド
 private var age = 40;
 
-//This field gets serialized even though it is private
-//because it has the SerializeField attribute applied.
+// SerializeField 属性が適用されているため
+// private であるがシリアライズされるフィールド
 @SerializeField
 private var hasHealthPotion:boolean = true;
 
@@ -55,18 +55,18 @@ function Update () {
 }
 END EX
 BEGIN EX NOCHECK
-//C# example
+//C# サンプル
 using UnityEngine;
 
 public class SomePerson : MonoBehaviour {
-	//This field gets serialized because it is public.
+	// public であるためシリアライズされるフィールド
 	public string name = "John";
 
-	//This field does not get serialized because it is private.
+	// private であるためシリアライズされないフィールド
 	private int age = 40;
 
-	//This field gets serialized even though it is private
-	//because it has the SerializeField attribute applied.
+	// SerializeField 属性が適用されているため
+	// private であるがシリアライズされるフィールド
 	[SerializeField]
 	private bool hasHealthPotion = true;
 

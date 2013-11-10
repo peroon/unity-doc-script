@@ -1,2 +1,2 @@
 プロシージャルに使用されるプロセッサーの数を選択します。
-The values refer to the number of physical processor cores used for material generation.
+この値はマテリアル生成に使用される物理プロセッサーの数を意味します。

@@ -1,2 +1,2 @@
 パーティクルのレンダリング方法を選択します。
-This is used by the [[ParticleRenderer]] to determine how to render the particles.
+パーティクルのレンダリング方法を決めるため [[ParticleRenderer]] により使用されます。

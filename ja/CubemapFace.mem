@@ -1,2 +1,2 @@
 Cubemapオブジェクトの面の表示を行います。
-Used by Cubemap.GetPixel and Cubemap.SetPixel.
+Cubemap.GetPixel および Cubemap.SetPixel により使用されます。

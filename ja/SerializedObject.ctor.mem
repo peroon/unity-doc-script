@@ -1,10 +1,10 @@
 <signature>
 ctor(Object)
 </signature>
-Create SerializedObject for inspected object.
-SA: ::ref::Update.
+インスペクタ上のオブジェクトで SerializedObject を作成
+SA: ::ref::Update
 <signature>
 ctor(Object[])
 </signature>
-Create SerializedObject for inspected object.
-SA: ::ref::Update.
+インスペクタ上のオブジェクトで SerializedObject を作成
+SA: ::ref::Update

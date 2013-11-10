@@ -1,5 +1,5 @@
-カリングを有効にしているときのアニメーションの動作について設定します。
-When culling is enabled, Unity might stop animating if it thinks that the results of the animation won't be visible to the user.
-スクリーン外の場合にアニメーションを停止することで、少なからず処理の軽減につながります。
-when the user can actually see the thing that is being animated. When Animation component is culled it
-won't do anything: it won't update animation states, execute events or sample animations.
+この列挙体によりアニメーション コンポーネントののカリングを制御
+カリングを有効にしている場合、 Unity はアニメーション結果がユーザに表示されないと判断した場合、アニメーションを停止する場合があります。
+ユーザが実際にアニメーションされているものをみることが重要な場合、ビュー ポートの外にあるアニメーションを停止することで、少なからず
+処理の軽減につながります。アニメーション コンポーネントがカリングされた場合何もしません: ステートを更新せず、イベントを実行せず、
+アニメーションのサンプリングを行ないません。

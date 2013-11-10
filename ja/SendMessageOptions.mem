@@ -1,2 +1,2 @@
 SendMessage関数の受信について選択します。
-This is used by SendMessage & BroadcastMessage in [[GameObject]] & [[Component]].
+[[GameObject]] および [[Component]] において、SendMessage および BroadcastMessage で使用されます。

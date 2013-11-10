@@ -1,23 +1,24 @@
 スクリプトのコンテキストメニューに項目を追加します。
-In the inspector of the attached script. When the user selects the context menu,
-the function will be executed.
 
-This is most useful for automatically setting up scene data from the script.
-The function has to be non-static.
+アタッチされたスクリプトのインスペクタ上で、ユーザがコンテキストメニューを選択すると
+関数が実行されます。
+
+自動的にシーン上のデータをスクリプトからセットアップするときに最も役立ちます。
+この関数は非 static の必要があります。
 BEGIN EX
 @ContextMenu ("Do Something")
 function DoSomething () {
-	Debug.Log ("Perform operation");
+	Debug.Log ("処理を実行");
 }
 END EX
 BEGIN EX NOCHECK
 // C# example:
 public class ContextTesting : MonoBehaviour {
-	/// Add a context menu named "Do Something" in the inspector
-	/// of the attached script.
+	/// アタッチされたスクリプトのインスペクタ上で "Do Something" （何かを処理する）という名の
+	/// コンテキストメニューを追加
 	[ContextMenu ("Do Something")]
 	void DoSomething () {
-		Debug.Log ("Perform operation");
+		Debug.Log ("処理を実行");
 	}
 }
 END EX

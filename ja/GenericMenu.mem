@@ -1,6 +1,6 @@
 コンテキストメニューやドロップダウンメニューを作成するクラスです
 BEGIN EX
-// This example shows how to create a context menu inside a custom EditorWindow.
+// このサンプルによりカスタム EditorWindow でコンテキストメニューを作成する方法を示します。
 
 class MyWindow extends EditorWindow {
     
@@ -12,7 +12,7 @@ class MyWindow extends EditorWindow {
 	}
 
 	function Callback (obj:Object) {
-		Debug.Log ("Selected: " + obj);
+		Debug.Log ("選択: " + obj);
 	}
 
     function OnGUI() {
@@ -24,7 +24,7 @@ class MyWindow extends EditorWindow {
             var mousePos : Vector2 = evt.mousePosition;
             if (contextRect.Contains (mousePos))
             {
-				// Now create the menu, add items and show it
+				// メニューを作成し、アイテムを追加し表示
 				var menu : GenericMenu = new GenericMenu ();
             	
 				menu.AddItem (new GUIContent ("MenuItem1"), false, Callback, "item 1");

@@ -2,6 +2,6 @@
 デフォルトでは Perspective カメラはオブジェクトの中心からカメラ位置までの距離にもとづきオブジェクトをソートし、Orthographic カメラはカメラのビュー方向に沿った距離にもとづきソートします。
 
 もし 2D ゲームを Perspective カメラで作成する場合、 TransparencySortMode.Orthographic ソートモードを使用して、
-If you're making a 2D game with a perspective camera, you might want to use TransparencySortMode.Orthographic カメラのビュー方向に沿った距離にもとづきソートさせるのが良いです。
+カメラのビュー方向に沿った距離にもとづきソートさせるのが良いです。
 
 SA: Camera.transparencySortMode.

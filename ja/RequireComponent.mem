@@ -1,10 +1,12 @@
 自動でコンポーネントを追加する場合に使用する属性です。
-この属性の付いたスクリプトをゲームオブジェクトにアタッチすると、設定したコンポーネントも自動でアタッチされるようになります。
-This is useful to avoid setup errors.
-For example a script might require that a rigid body is always added to the same game object.
-Using RequireComponent this will be done automatically, thus you can never get the setup wrong.
+この属性の付いたスクリプトを
+ゲームオブジェクトにアタッチすると、設定したコンポーネントも自動でアタッチされるよう
+になります。
+これはセットアップエラーを回避するのに役に立ちます。
+例えばあるスクリプトが Rigidbody が同じゲームオブジェクトに常に追加されることが必要な場合があります。
+RequireComponent を使用することでこれを自動的に実行し、セットアップで間違えることがなくなります。
 BEGIN EX NOCHECK
-// Mark the PlayerScript as requiring a rigidbody in the game object.
+// ゲームオブジェクトで Rigidbody が必要と PlayerScript をマーキング
 @script RequireComponent(Rigidbody)
 
 function FixedUpdate() {

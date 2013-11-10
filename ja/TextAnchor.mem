@@ -1,4 +1,4 @@
 アンカーテキストの位置を選択します。
-This is used by GUIText.anchor property.
+GUIText.anchor により使用されます。
 
-SA: [[wiki:class-GUIText|GUI Text component]].
+SA: [[wiki:class-GUIText|GUIText コンポーネント]]
