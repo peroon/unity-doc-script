@@ -29,7 +29,7 @@ static function CreateLineMaterial() {
 
 function OnPostRender() {
 	CreateLineMaterial();
-	// set the current material
+	// 現在のマテリアルをセット
 	lineMaterial.SetPass( 0 );
 	GL.Begin( GL.LINES );
 	GL.Color( Color(1,1,1,0.5) );

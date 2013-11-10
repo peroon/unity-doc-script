@@ -72,7 +72,6 @@ function Start () {
     var builtinArray : Vector3[] = array.ToBuiltin(Vector3) as Vector3[];
     
     // ビルトイン配列をJavascript 配列に割り当て
-    Assign the builtin array to a js Array
     var newarr = new Array (builtinArray);
     
     // newarr は配列を同じ要素を格納
