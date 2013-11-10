@@ -1,6 +1,6 @@
 3 次元座標を扱います。
-This structure is used throughout Unity to pass 3D positions and directions around.
-It also contains functions for doing common vector operations.
+Unity 全体を通して 3D 位置や向きに使用されます。
+共通的なベクトル操作を行なうための関数も含まれます。
 
-Besides the functions listed below, other classes can be used to manipulate vectors and points as well.
-For example the [[Quaternion]] and the [[Matrix4x4]] classes are useful for rotating or transforming vectors and points.
+下記の関数以外に、他のクラスを使用してベクトルおよび点の編集も出来ます。
+例えば [[Quaternion]] および [[Matrix4x4]] はベクトルおよび点の回転または変換に役に立ちます。

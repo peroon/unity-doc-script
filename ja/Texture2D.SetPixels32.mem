@@ -1,42 +1,43 @@
 <signature>
 SetPixels32(Color32[],int)
 </signature>
-Color32形式のピクセルのカラー配列を取得する
-This function takes a Color32 array and changes the pixel colors of the whole
-mip level of the texture. Call ::ref::Apply to actually upload the changed
-pixels to the graphics card.
+Color32 形式のピクセルのカラー配列を取得する
+この関数は Color32 配列によりテクスチャのミップレベル全体のピクセルカラーを変更します。
+::ref::Apply を呼び出しして変更されたピクセルをグラフィックス カードに実際に
+アップロードします。
 
-The /colors/ array is a flattened 2D array, where pixels are laid out left to right,
-bottom to top (i.e. row after row). Array size must be at least width by height of the mip level used.
-The default mip level is zero (the base texture) in which case the size is just the size of the texture.
-In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
-and similarly for height.
+/colors/ 配列は、ピクセルが左から右、下から上に（行の次に行を）並べられた平坦化された 2D 配列です。配列の大きさは使用されるミップレベルの幅に高さを掛けた値です。
+デフォルトのミップレベルはゼロ（ベース テクスチャ）であり、大きさは単にテクスチャの大きさに相当します。
+一般的に、ミップレベルの大きさは @@mipWidth=max(1,width>>miplevel)@@ であり、高さについても同様です。
 
-This function works only on /ARGB32/ texture formats.
-For other formats /SetPixels32/ is ignored.
-The texture also has to have __Is Readable__ flag set in the import settings.
+この関数は /ARGB32/ テクスチャ形式でのみ動作します。
+他の形式では /SetPixels32/ は無視されます。
+テクスチャは必ず __Is Readable__ フラグを Import Settings でセットする必要があります。
 
-Using /SetPixels32/ is faster than calling ::ref::SetPixels.
+特に大きなテクスチャにおいて、 /GetPixels/ を使用するほうが ::ref::GetPixel を繰り返し呼び出しするよりも
+高速です。それに加えて /GetPixels/ の場合、個別のミップマップ レベルにアクセスできます。
+
+/SetPixels32/ を使用するほうが ::ref::SetPixels の呼び出しよりも高速です。
 
 SA: ::ref::SetPixels, ::ref::GetPixels32, ::ref::GetPixels, ::ref::Apply, ::ref::mipmapCount.
 BEGIN EX
-	// This script will tint texture's mip levels in different colors
-	// (1st level red, 2nd green, 3rd blue). You can use it to see
-	// which mip levels are actually used and how.
+	// このスクリプトでテクスチャのミップレベルを異なるカラーで色付けします
+	// (第一レベル 赤、第二レベル 赤、第三レベル 青）。どのミップレベルがどのように
+	// 使用されているか確認するのに使用できます。
 
 	function Start () {
-		// duplicate the original texture and assign to the material
+		// 元のテクスチャを複製し、マテリアルを割り当て
 		var texture : Texture2D = Instantiate(renderer.material.mainTexture);
 		renderer.material.mainTexture = texture;
 
-		// colors used to tint the first 3 mip levels
+		// 最初の 3 つのミップレベルを色付けするのに使用するカラー
 		var colors = new Color32[3];
 		colors[0] = Color.red;
 		colors[1] = Color.green;
 		colors[2] = Color.blue;
 		var mipCount = Mathf.Min( 3, texture.mipmapCount );
 
-		// tint each mip level
+		// 各々のミップレベルを色付け
 		for( var mip = 0; mip < mipCount; ++mip ) {
 			var cols = texture.GetPixels32( mip );
 			for( var i = 0; i < cols.Length; ++i ) {
@@ -45,7 +46,7 @@ BEGIN EX
 			texture.SetPixels32( cols, mip );
 		}
 
-		// actually apply all SetPixels32, don't recalculate mip levels
+		// 全ての SetPixels32 を実際に適用、ミップレベルは再計算しない
 		texture.Apply( false );
 	}
 END EX

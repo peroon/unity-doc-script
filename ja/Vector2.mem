@@ -1,4 +1,3 @@
 2 次元座標を扱います。
-This structure is used in some places to represent 2D positions and vectors (e.g. texture
-coordinates in a [[Mesh]] or texture offsets in [[Material]]). In the majority of other cases a Vector3
-is used.
+この構造体により 2D 位置およびベクトル（例． [[Mesh]] のテクスチャ座標
+または [[Material]] のテクスチャオフセット)）を表現できます。他の大部分の場合は Vector3 が使用されます。

@@ -1,18 +1,19 @@
-MonoBehaviour.StartCoroutine returns a Coroutine. Instances of this class are only used to reference these coroutines and do not hold any exposed properties or functions.
-何秒待つ、という処理や非同期のループ処理を行う場合に使用します。
+MonoBehaviour.StartCoroutine はコルーチンを返します。このクラスのインスタンスはこれらのコルーチンを参照するためだけに使用され、公開されたプロパティや関数を一切もちません。
+何秒待つ、という
+処理や非同期のループ処理を行う場合に使用します。
 CONVERTEXAMPLE
 BEGIN EX
-// - prints "Starting 0.0"
-// - prints "WaitAndPrint 5.0"
-// - prints "Done 5.0"
+// - "Starting 0.0" と表示
+// - "WaitAndPrint 5.0" と表示
+// - "Done 5.0" と表示
 
 print ("Starting " + Time.time);
-// Start function WaitAndPrint as a coroutine
+// WaitAndPrint 関数をコルーチンとして開始
 yield WaitAndPrint();
 print ("Done " + Time.time);
 
 function WaitAndPrint () {
-	// suspend execution for 5 seconds
+	// 5 秒間の間、実行をサスペンド
 	yield WaitForSeconds (5);
 	print ("WaitAndPrint "+ Time.time);
 }

@@ -1,7 +1,8 @@
-Shaderクラスは、すべてのレンダリングに使用します
-高度なレンダリングであるShaderクラスは、マテリアルのクラスを介して制御されています。 
-Shader class is mostly
-used just to check whether a shader can run on the user's hardware (::ref::isSupported property)
-and to find shaders by name (::ref::Find method).
+Shader クラスは、すべてのレンダリングに使用します
+高度なレンダリングである Shader
+クラスは、マテリアルのクラスを介して制御されています。 
+Shader クラスは
+主にシェーダがユーザのハードウェア上で動作するかチェックするため ( ::ref::isSupported property )、および
+シェーダを名前により見つけるため ( ::ref::Find method )のみの目的で使用します。
 
-SA: [[Material]] class, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+SA: [[Material]] クラス, [[wiki:Materials]], [[wiki:Shaders|ShaderLab ドキュメント]] 

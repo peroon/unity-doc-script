@@ -1,6 +1,6 @@
 FixedUpdate関数が呼び出されるまで待ちます。
 SA: MonoBehaviour::pref::FixedUpdate.
-WaitForFixedUpdate can only be used with a /yield/ statement in coroutines.
+WaitForFixedUpdate はコルーチンの /yield/ ステートメントとともにしか使用できません。
 CONVERTEXAMPLE
 BEGIN EX
 yield new WaitForFixedUpdate ();

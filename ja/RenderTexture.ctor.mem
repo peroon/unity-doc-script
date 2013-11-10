@@ -1,16 +1,15 @@
 <signature>
 ctor(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
 </signature>
-Creates a new RenderTexture object.
-The render texture is created with /width/ by /height/ size, with a depth buffer
-of /depth/ bits (depth can be 0, 16 or 24), and in /format/ format and with sRGB read / write on or off.
+新規の RenderTexture オブジェクトを作成します。
+レンダーテクスチャは /width/ かける /height/ のサイズで、/depth/ ビットの
+デプスバッファ（デプスは 0, 16, または 24）つきで、/format/ 形式かつ sRGB 読取 / 書込 を有効化 / 無効化して作成できます。
 
-Note that constructing a RenderTexture object does not create the hardware representation immediately.
-The actual render texture is created upon first use or when ::ref::Create is called manually. So after
-constructing the render texture, it is possible to set additional variables, like ::ref::format,
-::ref::isCubemap and so on.
+RenderTexture オブジェクトの作成により、ハードウェア表現が直ちに作成されないことに留意して下さい。
+実際のレンダーテクスチャは最初の使用時、または ::ref::Create が呼び出し時に作成されます。
+このためレンダーテクスチャ作成時に ::ref::format, ::ref::isCubemap 等々、追加の変数をセットすることが出来ます。
 
-SA: ::ref::format variable.
+SA: ::ref::format 変数
 CONVERTEXAMPLE
 BEGIN EX
 var rt: RenderTexture;
@@ -22,27 +21,25 @@ END EX
 <signature>
 ctor(int,int,int,RenderTextureFormat)
 </signature>
-Creates a new RenderTexture object.
-The render texture is created with /width/ by /height/ size, with a depth buffer
-of /depth/ bits (depth can be 0, 16 or 24), and in /format/ format.
+新規の RenderTexture オブジェクトを作成します。
+レンダーテクスチャは /width/ かける /height/ のサイズで、/depth/ ビットの
+デプスバッファ（デプスは 0, 16, または 24）つきで、/format/ 形式 で作成できます。
 
-Note that constructing a RenderTexture object does not create the hardware representation immediately.
-The actual render texture is created upon first use or when ::ref::Create is called manually. So after
-constructing the render texture, it is possible to set additional variables, like ::ref::format,
-::ref::isCubemap and so on.
+RenderTexture オブジェクトの作成により、ハードウェア表現が直ちに作成されないことに留意して下さい。
+実際のレンダーテクスチャは最初の使用時、または ::ref::Create が呼び出し時に作成されます。
+このためレンダーテクスチャ作成時に ::ref::format, ::ref::isCubemap 等々、追加の変数をセットすることが出来ます。
 
-SA: ::ref::format variable.
+SA: ::ref::format 変数
 <signature>
 ctor(int,int,int)
 </signature>
-Creates a new RenderTexture object.
-The render texture is created with /width/ by /height/ size, with a depth buffer
-of /depth/ bits (depth can be 0, 16 or 24). The render texture is set to be
-in [[RenderTextureFormat.Default|color format]] by default.
+新規の RenderTexture オブジェクトを作成します。
+レンダーテクスチャは /width/ かける /height/ のサイズで、/depth/ ビットの
+デプスバッファ（デプスは 0, 16, または 24）つきで作成できます。レンダーテクスチャは
+デフォルトで [[RenderTextureFormat.Default|Color フォーマット]] にてセットされます。
 
-Note that constructing a RenderTexture object does not create the hardware representation immediately.
-The actual render texture is created upon first use or when ::ref::Create is called manually. So after
-constructing the render texture, it is possible to set additional variables, like ::ref::format,
-::ref::isCubemap and so on.
+RenderTexture オブジェクトの作成により、ハードウェア表現が直ちに作成されないことに留意して下さい。
+実際のレンダーテクスチャは最初の使用時、または ::ref::Create が呼び出し時に作成されます。
+このためレンダーテクスチャ作成時に ::ref::format, ::ref::isCubemap 等々、追加の変数をセットすることが出来ます。
 
-SA: ::ref::format variable.
+SA: ::ref::format 変数

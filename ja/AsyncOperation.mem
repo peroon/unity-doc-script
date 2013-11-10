@@ -1,5 +1,5 @@
 非同期動作のコルーチンで使用します。
-You can __yield__ until asynchronous operation continues, or manually check whether it's done
-(::ref::isDone) or progress (::ref::progress).
+非同期処理が継続するまで __yield__ するか、手動で完了 (::ref::isDone) または進行中 (::ref::progress) 
+というステータスのチェックすることが出来ます。
 
-SA: Application.LoadLevelAsync, Application.LoadLevelAdditiveAsync, AssetBundle.LoadAsync.
+SA: Application.LoadLevelAsync, Application.LoadLevelAdditiveAsync, AssetBundle.LoadAsync

@@ -1,2 +1,2 @@
-Rectクラスでのオフセットのボーダーなどを設定します。
-Used all over the place by [[GUIStyle]].
+Rect クラスでのオフセットのボーダーなどを設定します。
+[[GUIStyle]] のあらゆるところで使用されます。

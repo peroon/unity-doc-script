@@ -1,12 +1,12 @@
 回転を表現するために使用されます。
-They are compact, don't suffer from gimbal lock and can easily be interpolated.
-Unity internally uses Quaternions to represent all rotations.
+コンパクトであり、ジンバル ロックの問題がなく、簡単に補間できます。
+Unity は全ての回転を表現するのにクォータニオンを内部的に使用します。
 
-However, they are based on complex numbers and are not easy to understand intuitively.
-Thus you almost never access or modify individual Quaternion components (x,y,z,w);
-most often you would just take existing rotations (e.g. from the [[Transform]]) and use them
-to construct new rotations (e.g. to smoothly interpolate between two rotations).
-The Quaternion functions that you use 99% of the time (The other functions are only for exoctic uses)
+しかし複雑な数字にもとづいており、直感的でない側面があります。
+このため個別のクォータニオン成分 (x,y,z,w) をアクセスまたは修正することは殆どありません。
+主に既存の回転（例． [[Transform]] など）にもとづき
+新規の回転を作成します（例．二つの回転の間をスムーズに補間させる）。
+使用する Quaternion 関数の 99% は以下です（他の関数は極めて稀な用途）
 Quaternion.LookRotation, Quaternion.Angle, Quaternion.Euler, Quaternion.Slerp, Quaternion.FromToRotation, Quaternion.identity
 
-You can use Quaternion.operator * to rotate one rotation by another, or to rotate a vector by a rotation.
+Quaternion.operator * を使用してひとつの回転を別のものにより回転させる、またはベクトルを回転により回転させることが出来ます。

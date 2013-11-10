@@ -1,87 +1,88 @@
-WWWクラスを使用して、Webサーバーにポストするフォームデータを生成するヘルパークラスです。
+WWWクラスを使用して、Webサーバーにポストするフォームデータを生成するヘルパークラ
+スです。
 BEGIN EX
-// Grab a screen shot and upload it to a CGI script.
-// The CGI script must be able to hande form uploads.
+// スクリーンショットを取得し CGI スクリプトにアップロード
+// CGI スクリプトがフォームのアップロードをハンドリングできる必要があります
 
 var screenShotURL= "http://www.my-server.com/cgi-bin/screenshot.pl";
 
-// Take a screen shot immediately
+// ただちにスクリーンショットを取得
 function Start() {
     UploadPNG();
 }
 
 function UploadPNG() {
-    // We should only read the screen after all rendering is complete
+    // 全てのレンダリングが完了した後にスクリーンを読み込み
     yield WaitForEndOfFrame();
 
-    // Create a texture the size of the screen, RGB24 format
+    // スクリーン サイズ と同等の大きさのテクスチャを作成、 RGB24 形式
     var width = Screen.width;
     var height = Screen.height;
     var tex = new Texture2D( width, height, TextureFormat.RGB24, false );
-    // Read screen contents into the texture
+    // テクスチャにスクリーンのコンテンツを読み込み
     tex.ReadPixels( Rect(0, 0, width, height), 0, 0 );
     tex.Apply();
 
-    // Encode texture into PNG
+    // テクスチャを PNG へとエンコード
     var bytes = tex.EncodeToPNG();
     Destroy( tex );
 
-    // Create a Web Form
+    // ウェブフォームを作成
     var form = new WWWForm();
     form.AddField("frameCount", Time.frameCount.ToString());
     form.AddBinaryData("fileUpload", bytes, "screenShot.png", "image/png");
 
-    // Upload to a cgi script
+    // CGI スクリプトへアップロード
     var w = WWW(screenShotURL, form);
     yield w;
     if (!String.IsNullOrEmpty(w.error))
         print(w.error);
     else
-        print("Finished Uploading Screenshot");
+        print("スクリーンショットのアップロード完了");
 }
 END EX
-Here is a sample script that retrieves the high scores stored
-in a table in an SQL database.
+次のサンプルスクリプトにより、SQL データベースに格納されたテーブルから
+ハイスコアを取得します。
 BEGIN EX
-// This example assumes that the user has entered his name into a
-// variable called /name/ and that /score/ contains the user's current
-// score.
+// このサンプルはユーザが自身の名前を /name/ 変数に入力し
+// /score/ が現在のユーザのスコアを格納していることを
+// 前提としています。
 
 var highscore_url = "http://www.my-site.com/highscores.pl";
 var playName = "Player 1";
 var score = -1;
 
 function Start() {
-	// Create a form object for sending high score data to the server
+	// サーバにハイスコアデータを送信するフォームオブジェクトを作成
 	var form = new WWWForm();
-	// Assuming the perl script manages high scores for different games
+	// Perl スクリプトが異なるゲームのハイスコアを管理すると想定
 	form.AddField( "game", "MyGameName" );
-	 // The name of the player submitting the scores
+	 // スコアを提出するプレイヤー名
 	form.AddField( "playerName", playName );
-	 // The score
+	 // スコア
 	form.AddField( "score", score );
 
-	// Create a download object
+	// ダウンロードオブジェクトを作成
 	var download = new WWW( highscore_url, form );
 
-	// Wait until the download is done
+	// ダウンロード完了を待機
 	yield download;
 
 	if(download.error) {
 		print( "Error downloading: " + download.error );
 		return;
 	} else {
-		// show the highscores
+		// ハイスコアを表示
 		Debug.Log(download.text);
 	}
 }
 END EX
-Here is a sample Perl script that processes the high scores stored
-in a table in an SQL database.
+次の Perl スクリプト サンプルにより SQL データベースに格納された
+ハイスコアを処理します。
 BEGIN EX NOCHECK
 #!/usr/bin/perl
-# The SQL database needs to have a table called highscores
-# that looks something like this:
+# SQL データベースは highscores という名前の
+# 次のようなテーブルが必要です:
 #
 #   CREATE TABLE highscores (
 #     game varchar(255) NOT NULL,
@@ -93,10 +94,10 @@ use strict;
 use CGI;
 use DBI;
 
-# Read form data etc.
+# フォームデータ等を読み込み
 my $cgi = new CGI;
 
-# The results from the high score script will be in plain text
+# ハイスコア スクリプトからの結果はプレーン テキストに入ります
 print $cgi->header("text/plain");
 
 my $game = $cgi->param('game');
@@ -105,17 +106,17 @@ my $score = $cgi->param('score');
 
 exit 0 unless $game; # This parameter is required
 
-# Connect to a database
+# データベースに接続
 my $dbh = DBI->connect( 'DBI:mysql:databasename', 'username', 'password' )
 	|| die "Could not connect to database: $DBI::errstr";
 
-# Insert the player score if there are any
+# 存在する場合はプレイヤー スコアを挿入
 if( $playerName && $score) {
 	$dbh->do( "insert into highscores (game, player, score) values(?,?,?)",
 		undef, $game, $playerName, $score );
 }
 
-# Fetch the high scores
+# ハイスコアをフェッチ
 my $sth = $dbh->prepare(
 	'SELECT player, score FROM highscores WHERE game=? ORDER BY score desc LIMIT 10' );
 $sth->execute($game);

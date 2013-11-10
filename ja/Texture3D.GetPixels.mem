@@ -2,5 +2,5 @@
 GetPixels()
 GetPixels(int)
 </signature>
-This function returns an array of pixel colors representing one mip level of the 3D texture.
-Call ::ref::Apply to actually upload the changed.
+3D テクスチャのひとつのミップ レベルを表現するピクセルのカラー配列を返します。
+::ref::Apply の呼び出しにより変更を実際にアップロードします。

@@ -1,2 +1,2 @@
 メッシュの位置の詳細、ツリーインスタンス、地形テクスチャのアルファマップなどを格納します。
-The [[Terrain]] component links to the terrain data and renders it.
+[[Terrain]] コンポーネントは地形データにリンクして、レンダリングを行ないます。

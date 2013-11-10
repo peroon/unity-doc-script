@@ -1,16 +1,16 @@
 スクリーン上のレンダリングが完了するまで待ちます。
-You can use it to read the display into a texture, encode it as an image file (see Texture2D.ReadPixels and Texture2D.EncodeToPNG) and send it somewhere.
+ディスプレイをテクスチャに読み込み、画像イメージ ファイルとしてエンコードして（Texture2D.ReadPixels および Texture2D.EncodeToPNG）、どこかに送信するために使用できます。
 CONVERTEXAMPLE
 BEGIN EX
 yield new WaitForEndOfFrame ();
 END EX
-Another example:
+別のサンプル:
 CONVERTEXAMPLE
 BEGIN EX
-// Saves screenshot as PNG file.
+// スクリーンショットを PNG ファイルとして保存
 import System.IO;
 
-// Take a shot immediately
+// ただちにスクリーンショットを取得
 function Start() {
 	UploadPNG();
 }
@@ -19,44 +19,44 @@ function UploadPNG() {
 	// We should only read the screen bufferafter rendering is complete
 	yield WaitForEndOfFrame();
 
-	// Create a texture the size of the screen, RGB24 format
+	// スクリーン サイズ と同等の大きさのテクスチャを作成、 RGB24 形式
 	var width = Screen.width;
 	var height = Screen.height;
 	var tex = new Texture2D( width, height, TextureFormat.RGB24, false );
-	// Read screen contents into the texture
+	// テクスチャにスクリーンのコンテンツを読み込み
 	tex.ReadPixels( Rect(0, 0, width, height), 0, 0 );
 	tex.Apply();
 
-	// Encode texture into PNG
+	// テクスチャを PNG へとエンコード
 	var bytes = tex.EncodeToPNG();
 	Destroy( tex );
 
-	// For testing purposes, also write to a file in the project folder
+	// テスト目的で、ファイルをプロジェクトフォルダにも書き込み
 	// File.WriteAllBytes(Application.dataPath + "/../SavedScreen.png", bytes);
 
 
-	// Create a Web Form
+	// ウェブフォームを作成
 	var form = new WWWForm();
 	form.AddField("frameCount", Time.frameCount.ToString());
 	form.AddBinaryData("fileUpload",bytes);
 
-	// Upload to a cgi script
+	// CGI スクリプトへアップロード
 	var w = WWW("http://localhost/cgi-bin/env.cgi?post", form);
 	yield w;
 	if (w.error != null)
 		print(w.error);
 	else
-		print("Finished Uploading Screenshot");
+		print("スクリーンショットのアップロード完了");
 }
 END EX
 CONVERTEXAMPLE
 BEGIN EX
-// Shows alpha channel contents in the game view.
+// ゲームビューでアルファ チャネルのコンテンツを表示
 
 private var mat : Material;
 
-// After the frame is completely rendered, we'll
-// draw a full screen quad that extracts the alpha channel.
+// フレームが完全にレンダリングされた後、
+// アルファ チャネルを抽出するフルスクリーンの Quad を描画
 function Start() {
 	while (true) {
 		yield WaitForEndOfFrame();

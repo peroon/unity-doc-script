@@ -1,26 +1,22 @@
 車輪の摩擦特性を設定するために、WheelColliderオブジェクトによって使用されます。
-The curve takes a measure of tire slip as an input and gives a force as output. The curve is approximated by
-a two-piece spline. The first section goes from ''(0,0)'' to ''(extremumSlip,extremumValue)'', at which
-point the curve's tangent is zero. The second section goes from ''(extremumSlip,extremumValue)''
-to ''(asymptoteSlip,asymptoteValue)'', where curve's tangent is again zero:
+カーブは測定したタイヤのスリップを入力値として、力を出力値とします。カーブは二つのセグメントに
+分かれたスプライン曲線により近似化されます。最初のセグメントでは ''(0,0)'' から ''(extremumSlip,extremumValue)'' の
+終端まで構成されていて、この終点で曲線の接線がゼロとなります。二つめのセグメントでは ''(extremumSlip,extremumValue)'' から 
+ ''(asymptoteSlip,asymptoteValue)'' の終点まで構成されていて、この終点で再び、曲線の接線がゼロになります。
 
 {img WheelFrictionCurve.png}
 
-Wheel collider computes friction separately from the rest of physics engine, using a slip based
-friction model. It separates the overall friction force into a "forwards" component (in the
-direction of rolling, and responsible for acceleration and braking) and "sideways" component
-(orthogonal to rolling, responsible for keeping the car oriented). Tire friction is described
-separately in these directions using WheelCollider.forwardFriction and WheelCollider.sidewaysFriction.
-In both directions it is first determined how much the tire is slipping (what is the speed difference between
-the rubber and the road). Then this slip value is used to find out tire force exerted on the contact.
+ホイール コライダは摩擦を物理エンジンとは別に計算し、スリップにもとづいたタイヤ摩擦モデルを
+使用します。全体的な摩擦力を要素に分解して（前進方向、アクセルとブレーキを担当する） "forwards" 成分および（横方向、車体の向きの維持を担当する） "sideways" 成分とします。タイヤの摩擦は
+これらの方向に WheelCollider.forwardFriction および WheelCollider.sidewaysFriction に分解して表現されます。
+両方向で、タイヤがスリップする量を最初に決定します (タイヤのゴムと道路間の速度差に基づきます)。 次に、接点にかけられるタイヤの力を突き止めるのにこのスリップ値が使用されます。
 
-The property of real tires is that for low slip they can exert high forces as the rubber compensates
-for the slip by stretching. Later when the slip gets really high, the forces are reduced as the tire
-starts to slide or spin. Thus tire friction curves have a shape like in the image above.
+実際のタイヤのプロパティは、小さなスリップではタイヤのゴムが伸縮することでスリップを考慮するため大きな力を
+出力します。その後にスリップが大きくなると、タイヤがスライドまたはスピンし始めるため力が減少します。
+このためタイヤの摩擦は上記のイメージ画像のような形状となります。
 
-Because the friction for the tires is computed separately, the [[PhysicMaterial]] of the ground
-does not affect the wheels. Simulation of different road materials is done by changing
-the WheelCollider::pref::forwardFriction and WheelCollider::pref::sidewaysFriction of the wheel,
-based on what material the wheel is hitting. SA: WheelCollider.GetGroundHit, [[WheelHit]].
+タイヤの摩擦は別に計算されるため地面の [[PhysicMaterial]] はホイールに影響しません。。異なる道路のマテリアル
+をシミュレーションするにはホイールの WheelCollider::pref::forwardFriction および WheelCollider::pref::sidewaysFriction をホイールが当たってる
+マテリアルにもとづき変更します。 SA: WheelCollider.GetGroundHit, [[WheelHit]].
 
-SA: [[WheelCollider]], WheelCollider.forwardFriction, WheelCollider.sidewaysFriction.
+SA: [[WheelCollider]], WheelCollider.forwardFriction, WheelCollider.sidewaysFriction

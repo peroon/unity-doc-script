@@ -1,11 +1,11 @@
 指定した秒数待ちます。
-WaitForSeconds can only be used with a /yield/ statement in coroutines.
+WaitForSeconds はコルーチンの /yield/ ステートメントとともにしか使用できません。
 CONVERTEXAMPLE
 BEGIN EX
-// Prints 0
+// 0 と表示
 print (Time.time);
-// Waits 5 seconds
+// 5 秒間待機
 yield WaitForSeconds (5);
-// Prints 5.0
+// 5.0 と表示
 print (Time.time);
 END EX

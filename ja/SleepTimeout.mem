@@ -1,2 +1,2 @@
 ゲーム画面がスリープするまでの設定を行う際に使用されます。
-Use them to specify something other than a fixed amount of seconds before dimming the screen.
+スクリーンを暗くする前に、スリープまでの秒数以外の要素を指定するために使用できます。

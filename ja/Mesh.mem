@@ -1,19 +1,19 @@
 スクリプトからメッシュを作成または変更できるようにするクラスです。
-メッシュは頂点と複数の三角形の配列を含んで作成されています。
-See the <a href="http://unity3d.com/support/resources/example-projects/procedural-examples.html">Procedural example project</a>
-for examples of using the mesh interface.
+メッシュは頂点と
+複数の三角形の配列を含んで作成されています。
+メッシュ インタフェースを使用したサンプルについては <a href="http://unity3d.com/support/resources/example-projects/procedural-examples.html">プロシージャル のサンプル プロジェクト</a> 
 
-The triangle arrays are simply indices into the vertex arrays; three indices for each triangle.
+三角配列は頂点配列のインデックスであり、各々の三角ごとに3つの頂点を使用します。
 
-For every vertex there can be a normal, two texture coordinates, color and tangent.
-These are optional though and can be removed at will. All vertex information is stored in separate
-arrays of the same size, so if your mesh has 10 vertices, you would also have 10-size arrays
-for normals and other attributes.
+全ての頂点に、法線、二つのテクスチャ座標、カラー、および接線を保持できます。
+これらはオプションであり、希望により削除できます。全ての頂点情報は同じ大きさの別の
+配列に格納されるため、もし自身のメッシュが 10 個の頂点がある場合、10 個の法線や他の属性も
+また存在します。
 
-There are probably 3 things you might want to use the modifyable mesh interface for:
+修正できるメッシュ インタフェースを使用する目的は通常は 3 つほどあります:
 
-__1. Building a mesh from scratch__:
-should always be done in the following order: 1) assign ::ref::vertices 2) assign ::ref::triangles.
+__1. ゼロからメッシュを作成__:
+必ず次の手順で行なうべきです: 1) ::ref::vertices を割り当て、2) ::ref::triangles を割り当て
 CONVERTEXAMPLE
 BEGIN EX
 var newVertices : Vector3[];
@@ -28,8 +28,8 @@ function Start () {
 	mesh.triangles = newTriangles;
 }
 END EX
-__2. Modifying vertex attributes every frame__:
-1) get vertices, 2) modify them, 3) assign them back to the mesh.
+__2. 毎フレームごとに頂点属性を修正__:
+1) 頂点を取得 2) それらを修正 3) それらをメッシュに再び割り当て
 CONVERTEXAMPLE
 BEGIN EX
 function Update () {
@@ -43,12 +43,12 @@ function Update () {
 	mesh.vertices = vertices;
 }
 END EX
-__3. Continously changing the mesh triangles and vertices__:
-1) call ::ref::Clear to start fresh, 2) assign vertices and other attributes, 3) assign triangle indices.
+__3. 継続的にメッシュ三角および頂点を変化させる__:
+1) ::ref::Clear の呼び出しによりゼロから開始 2) 頂点および他の属性を割り当て 3) 三角頂点を割り当て
 
-It is important to call Clear before assigning new vertices or triangles.
-Unity always checks the supplied triangle indices whether they don't reference out of bounds vertices.
-Calling Clear then assigning vertices then triangles makes sure you never have out of bounds data.
+新しい頂点や三角を割り当てする前に Clear を呼び出しすることが大切です。
+Unity により提供された三角頂点は常に、範囲外の頂点が参照されてないかチェックされます。
+Clear を呼び出し、頂点を割り当て、三角を割り当て、という順番を守ることにより範囲外のデータがないことが保証されます。
 CONVERTEXAMPLE
 BEGIN EX
 var newVertices : Vector3[];
@@ -59,7 +59,7 @@ function Update () {
 	var mesh : Mesh = GetComponent(MeshFilter).mesh;
 
 	mesh.Clear();
-	// Do some calculations...
+	// 何らかの計算を行なう
 	mesh.vertices = newVertices;
 	mesh.uv = newUV;
 	mesh.triangles = newTriangles;

@@ -2,32 +2,32 @@
 SetPixel(int,int,Color)
 </signature>
 座標(x,y)のピクセルのカラーを取得する
-Call ::ref::Apply to actually upload the changed pixels to the graphics card.
-Uploading is an expensive operation, so you'll want to change as many pixels
-as possible between /Apply/ calls.
+::ref::Apply の呼び出しにより変更を実際にグラフィックス カードにアップロードします。
+アップロードは高価な処理であるため、 /Apply/ 呼び出しの間で出来るかぎり多くのピクセル
+を変更すべきです。
 
-If you're constantly regenerating a texture at runtime, it may be faster
-to generate an array of pixel colors and set all of them at once with ::ref::SetPixels.
+もし実行時に継続的にテクスチャを再生成する場合、ピクセルのカラー配列を
+生成して ::ref::SetPixels により全て同時にセットするほうが高速です。
 
-This function works only on /ARGB32/, /RGB24/ and /Alpha8/ texture formats.
-For other formats /SetPixel/ is ignored.
-The texture also has to have __Read/Write Enabled__ flag set in the import settings.
+この関数は /ARGB32/, /RGB24/ および /Alpha8/ テクスチャ形式でのみ動作します。
+他の形式で /SetPixel/ は無視されます。
+テクスチャは必ず __Read/Write Enabled__ フラグを Import Settings でセットする必要があります。
 SA: ::ref::SetPixels, ::ref::GetPixel, ::ref::Apply.
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Create a new texture and assign it to the renderer's material
+		// 新規のテクスチャを作成し、レンダラのマテリアルに割り当て
 		var texture = new Texture2D(128, 128);
 		renderer.material.mainTexture = texture;
 
-		// Fill the texture with Sierpinski's fractal pattern!
+		// シエルピンスキーのフラクタル パターンでテクスチャを埋める
 		for (var y : int = 0; y < texture.height; ++y) {
 			for (var x : int = 0; x < texture.width; ++x) {
 				var color = (x&y) ? Color.white : Color.gray;
 				texture.SetPixel (x, y, color);
 			}
 		}
-		// Apply all SetPixel calls
+		// 全ての SetPixel 呼び出しを適用
 		texture.Apply();
 	}
 END EX

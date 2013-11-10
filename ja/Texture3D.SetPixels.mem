@@ -1,14 +1,14 @@
 <signature>
 SetPixels(Color[])
 </signature>
-This function takes a color array and changes the pixel colors of the 3D texture.
-Call ::ref::Apply to actually upload the changed.
-@param colors The colors to set the pixels to.
+この関数はカラー配列にもとづき 3D テクスチャのピクセルカラーを変更
+::ref::Apply の呼び出しにより変更を実際にアップロードします。
+@param colors ピクセルにセットするカラー
 <signature>
 SetPixels(Color[],int)
 </signature>
-Sets pixel colors of a 3D texture.
-This function takes a color array and changes the pixel colors of the 3D texture.
-Call ::ref::Apply to actually upload the changed.
-@param colors The colors to set the pixels to.
-@param miplevel The mipmap level to be affected by the new colors.
+3D テクスチャのピクセルカラーをセット
+この関数はカラー配列にもとづき 3D テクスチャのピクセルカラーを変更
+::ref::Apply の呼び出しにより変更を実際にアップロードします。
+@param colors ピクセルにセットするカラー
+@param miplevel 新規のカラーの反映先となるミップレベル

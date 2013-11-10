@@ -1,43 +1,41 @@
 <signature>
 GetPixels32(int)
 </signature>
-Color32形式のピクセルのカラー配列を設定する
-This function returns an array of pixel colors of the whole
-mip level of the texture.
+Color32 形式のピクセルのカラー配列を取得する
+この関数はテクスチャのミップレベル全体のピクセルのカラー配列を
+返します。
 
-The returned array is a flattened 2D array, where pixels are laid out left to right,
-bottom to top (i.e. row after row). Array size is width by height of the mip level used.
-The default mip level is zero (the base texture) in which case the size is just the size of the texture.
-In general case, mip level size is @@mipWidth=max(1,width>>miplevel)@@
-and similarly for height.
+戻り値の配列は、ピクセルが左から右、下から上に（行の次に行を）並べられた平坦化された 2D 配列です。配列の大きさは使用されるミップレベルの幅に高さを掛けた値です。
+デフォルトのミップレベルはゼロ（ベース テクスチャ）であり、大きさは単にテクスチャの大きさに相当します。
+一般的に、ミップレベルの大きさは @@mipWidth=max(1,width>>miplevel)@@ であり、高さについても同様です。
 
-The texture must have the __Read/Write Enabled__ flag set in the import settings, otherwise this function will fail.
+テクスチャは必ず __Read/Write Enabled__ フラグを Import Settings でセットする必要があり、そうしないと関数がエラーとなります。
 
-Using /GetPixels32/ can be faster than calling ::ref::GetPixel repeatedly, especially
-for large textures. In addition, /GetPixels32/ can access individual mipmap levels.
+特に大きなテクスチャにおいて、 /GetPixels/ を使用するほうが ::ref::GetPixel を繰り返し呼び出しするよりも
+高速です。それに加えて /GetPixels32/ の場合、個別のミップマップ レベルにアクセスできます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Rotate an image 180 degrees by reversing the order
-	// of the pixels.
+	// ピクセルの順番を入れ替えることにより
+	// 画像イメージを 180 度回転
 
-	// Source texture.
+	// ソースのテクスチャ
 	var sourceTex: Texture2D;	
 
 
 	function Start () {
-		// Get the pixel block and reverse the array to
-		// rotate the image.
+		// ピクセルブロックを取得し配列を反転させることで
+		// 画像イメージを回転
 		var pix = sourceTex.GetPixels32();
 		System.Array.Reverse(pix);
 		
-		// Copy the reversed image data to a new texture.
+		// 反転した画像イメージデータを新規のテクスチャに複製
 		var destTex = new Texture2D(sourceTex.width, sourceTex.height);
 		destTex.SetPixels32(pix);
 		destTex.Apply();
 		
-		// Set the current object's texture to show the
-		// rotated image.
+		// 現在のオブジェクトのテクスチャが回転されたイメージを
+		// 表示するようにセット
 		renderer.material.mainTexture = destTex;
 	}
 END EX
-SA: ::ref::SetPixels, ::ref::mipmapCount.
+SA: ::ref::SetPixels, ::ref::mipmapCount

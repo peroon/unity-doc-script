@@ -1,6 +1,6 @@
 スクリプトからプロファイラーを扱います。
-You can add custom Profiler sections in your scripts with Profiler.BeginSample and Profiler.EndSample.
+Profiler.BeginSample および Profiler.EndSample により自身のスクリプトにカスタムの Profiler セクションを追加できます。
 
-In standalone games, Profiler can dump all profiling information using Profiler.logFile and Profiler.enabled.
+スタンドアローン ゲームでは、Profiler.logFile および Profiler.enabled を使用して、Profiler は全てのプロファイリング情報をダンプできます。
 
-Profiler is only available in __Unity Pro__.
+Profiler は __Unity Pro__ でのみ利用可能です。
