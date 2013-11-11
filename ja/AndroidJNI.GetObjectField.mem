@@ -1,7 +1,8 @@
 <signature>
 GetObjectField(IntPtr,IntPtr)
 </signature>
-フィールドIDを使い、staticでないObject型のフィールドを取得する。
-The result is a reference to a <tt>java.lang.Object</tt>, or a subclass thereof.
+フィールドIDを使い、staticでないObject型のフィールドを取得
+する。
+結果は <tt>java.lang.Object</tt> に対する参照、またはそれについてのサブクラスです。
 
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

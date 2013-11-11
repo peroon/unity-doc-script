@@ -2,6 +2,6 @@
 GetDoubleArrayElement(IntPtr,int)
 </signature>
 作成したDouble配列の指定するindexを取得する。
-This function is a special case of GetDoubleArrayRegion(), called with region size set to 1.
+この関数は Region Size を 1 にセットした特殊な GetDoubleArrayRegion() です。
 
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

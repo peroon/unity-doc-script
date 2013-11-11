@@ -4,7 +4,7 @@ Call(string,object[])
 staticでないJava メソッドを呼び出す。
 TODO.
 BEGIN EX
-	// Create a android.content.res.Configuration object and call setToDefaults.
+	// android.content.res.Configuration を作成し setToDefaults を呼び出します。
 	function Start() {
 		var jo = new AndroidJavaObject("android.content.res.Configuration");
 		jo.Call("setToDefaults");
@@ -17,8 +17,8 @@ Call<ReturnType>(string,object[])
 </signature>
 TODO.
 BEGIN EX
-	// Create a java.lang.String object holding the string "some string",
-	// and retrieve it's hash code.
+	//  "some string" (何らかの文字列)を持つ java.lang.String object を作成し
+	// そのハッシュコードを取得
 	function Start() {
 		var jo = new AndroidJavaObject("java.lang.String", "some string");
 		var hash = jo.Call.<int>("hashCode");

@@ -2,6 +2,6 @@
 DetachCurrentThread()
 </signature>
 Java（Dalvik）VM から現行のスレッドをデタッチする。
-A thread must be detached from the VM before exiting.
+終了する前に VM からスレッドはデタッチしておく必要があります。
 
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

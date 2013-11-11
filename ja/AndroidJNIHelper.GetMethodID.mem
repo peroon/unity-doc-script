@@ -2,22 +2,23 @@
 GetMethodID(IntPtr,string,string,bool)
 </signature>
 特定のシグネチャと名前に一致するメソッドのJava クラスを読み込む。
-The signature comparison is done to allow sub-/base-classes of a class types.
-If no signature is provided the first method with the correct name will be returned.
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+もしシグネチャが提供されない場合、正しい名前を持った最初のフィールドが返されます。
 
 SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetConstructorID, 
 AndroidJNIHelper.GetFieldID.
 @param javaClass Java クラスオブジェクト
 @param methodName メソッド名
-@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチャ。
+@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチ
+ャ。
 @param isStatic staticかどうか。デフォルトは<tt>false</tt>
 <signature>
 GetMethodID(IntPtr,string,object[],bool)
 </signature>
-Get a JNI method ID based on calling arguments.
-Generic parameter represents the method return type, and the regular method assumes 'void' return type.
-Scans a particular Java class for a method matching a signature based on passed arguments.
-The signature comparison is done to allow for sub-/base-classes of the class types.
+呼び出しの引数にもとづいて JNI メソッド ID を取得します。
+ジェネリック引数はメソッドの戻り型を表し、通常のメソッドは void の戻り型を前提とします。
+渡された引数にもとづくシグネチャに一致するメソッドがないか特定の Java クラスをスキャンします。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
 @param javaClass Java クラスオブジェクト
 @param methodName メソッド名
 @param args 引数として渡される値の配列
@@ -25,10 +26,11 @@ The signature comparison is done to allow for sub-/base-classes of the class typ
 <signature>
 GetMethodID<ReturnType>(IntPtr,string,object[],bool)
 </signature>
-Get a JNI method ID based on calling arguments.
-Generic parameter represents the method return type, and the regular method assumes 'void' return type.
-Scans a particular Java class for a method matching a signature based on passed arguments.
-The signature comparison is done to allow for sub-/base-classes of the class types.
+呼び出しの引数にもとづいて JNI メソッド ID を取得します。
+ジェネリック引数はメソッドの戻り型を表し、通常のメソッドは void の戻り型を前提とします。
+渡された引数にもとづくシグネチャに一致するメソッドがないか特定の Java クラスをスキャンします。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+
 @param javaClass Java クラスオブジェクト
 @param methodName メソッド名
 @param args 引数として渡される値の配列

@@ -1,21 +1,23 @@
 <signature>
 GetFieldID(IntPtr,string,string,bool)
 </signature>
-特定のシグネチャと名前に一致するフィールドのJava クラスを読み込む。
-The signature comparison is done to allow sub-/base-classes of a class types.
-If no signature is provided the first field with the correct name will be returned.
+特定のシグネチャと名前に一致するフィールドのJava クラスを読み込
+む。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+もしシグネチャが提供されない場合、正しい名前を持った最初のフィールドが返されます。
 
 SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetConstructorID, AndroidJNIHelper.GetMethodID.
 @param javaClass Java クラスオブジェクト
 @param fieldName フィールド名
-@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチャ。
+@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチ
+ャ。
 @param isStatic staticかどうか。デフォルトは<tt>false</tt>
 <signature>
 GetFieldID<FieldType>(IntPtr,string,bool)
 </signature>
-Get a JNI field ID based on type detection. Generic parameter represents the field type.
-If no signature is provided the first field with the correct name will be returned.
-The signature comparison is done to allow for sub-/base-classes of the class types.
+型検知にもとづき JNI フィールド ID を取得します。ジェネリック引数はフィールド型を表します。
+もしシグネチャが提供されない場合、正しい名前を持った最初のフィールドが返されます。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
 @param javaClass Java クラスオブジェクト
 @param fieldName フィールド名
 @param isStatic staticかどうか。デフォルトは<tt>false</tt>

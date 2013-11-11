@@ -1,7 +1,8 @@
 <signature>
 SetObjectField(IntPtr,IntPtr,IntPtr)
 </signature>
-フィールドID を使い、staticでないObject型のフィールドに値を設定する。
-The value to set is a reference to either a <tt>java.lang.Object</tt>, or a subclass thereof.
+フィールドID を使い、staticでないObject型のフィールドに値を
+設定する。
+セットする値は <tt>java.lang.Object</tt> に対する参照、またはそれについてのサブクラスです。
 
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

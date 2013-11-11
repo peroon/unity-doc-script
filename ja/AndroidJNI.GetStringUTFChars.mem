@@ -2,6 +2,6 @@
 GetStringUTFChars(IntPtr)
 </signature>
 IntPtr型のStringオブジェクトをString型に変換する。
-This method is a modification of the original <tt>GetStringUTFChars</tt>, which returns a pointer to an array of bytes.
+このメソッドは、バイト配列に対するポインタを返す <tt>GetStringUTFChars</tt> を元に修正したものです。
 
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>
