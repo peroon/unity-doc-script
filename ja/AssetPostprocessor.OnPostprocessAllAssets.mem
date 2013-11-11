@@ -4,12 +4,12 @@ OnPostprocessAllAssets(string[],string[],string[],string[])
 <txttag>
 CSNONE
 </txttag>
-This is called after importing of any number of assets is complete (when the Assets progress bar has reached the end).
-This call can occur after a manual reimport, or any time you move an asset or folder of assets to a new location in the Project View. All string arrays are filepaths relative to the Project's root Assets folder. /importedAssets/ contains paths of all assets used in the operation. Each consecutive index of /movedAssets/ and /movedFromAssetPaths/ will always refer to the same asset.
+任意の数のアセットのインポートが完了した後に呼び出しされます（アセットの進捗バーが最後まで到達したとき）。
+さらに手動の再インポート後、またはアセットまたはフォルダをプロジェクトビューの新規の場所に移動した場合も呼び出しされる場合があります。全ての文字列配列はプロジェクトのルート Assets フォルダに相対的なファイルパスです。/importedAssets/ は処理で使用される全てのアセットのパスを含みます。/movedAssets/ および /movedFromAssetPaths/ の連番のインデックスは常に同じアセットを参照します。
 
-If you perform a bulk operation on several individual assets instead of a folder containing those assets, this function will be called once per asset with each individual asset as the only item in the various arrays.
+もしバルクオペレーションをフォルダではなく、いくつかの個別のアセットで実行した場合、この関数は個別のアセットが複数の配列での唯一のアイテムとしてアセットごとに一回だけ呼び出しされます。
 
-Note that this function must be declared /static/ - it will not be called correctly if declared as an instance function.
+この関数は /static/ 宣言する必要があります - インスタンス関数として宣言した場合は正しく呼び出しされません。
 BEGIN EX
 	class MyAllPostprocessor extends AssetPostprocessor {
 
@@ -19,13 +19,13 @@ BEGIN EX
 			movedAssets : String[],
 			movedFromAssetPaths : String[]) {
 			for (var str in importedAssets)
-				Debug.Log("Reimported Asset: " + str);
+				Debug.Log("アセットを再インポート: " + str);
 
 			for (var str in deletedAssets)
-				Debug.Log("Deleted Asset: " + str);
+				Debug.Log("アセットを削除: " + str);
 
 			for (var i=0;i<movedAssets.Length;i++)
-				Debug.Log("Moved Asset: " + movedAssets[i] + " from: " + movedFromAssetPaths[i]);
+				Debug.Log("アセットを移動: " + movedAssets[i] + " 移動元: " + movedFromAssetPaths[i]);
 		}
 	}
 END EX

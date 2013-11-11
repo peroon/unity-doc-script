@@ -4,4 +4,4 @@ OnPostprocessAudio(AudioClip)
 <txttag>
 CSNONE
 </txttag>
-Add this function in a subclass to get a notification when an audio clip has completed importing.
+この関数をサブクラスに追加してオーディオクリップがインポート完了した時に通知を取得します。

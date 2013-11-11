@@ -4,7 +4,7 @@ OnPostprocessTexture(Texture2D)
 <txttag>
 CSNONE
 </txttag>
-Add this function in a subclass to get a notification when a texture has completed importing just before.
+この関数をサブクラスに追加してテクスチャのインポート完了の直後に通知を取得します。
 The texture is optionally compressed and saved to disk.
 
 At this point it is too late to choose compression format, it is still possible to compress the texture

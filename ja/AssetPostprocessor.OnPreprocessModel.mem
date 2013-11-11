@@ -4,11 +4,11 @@ OnPreprocessModel()
 <txttag>
 CSNONE
 </txttag>
-Add this function in a subclass to get a notification just before a model (.fbx, .mb file etc.) is imported.
-This lets you control the import settings through code.
+この関数をサブクラスに追加してモデル (.fbx, .mb ファイル等) のインポート完了の直前に通知を取得します。
+これによりインポート設定をコードにより制御できます。
 BEGIN EX
-	// Disable import of materials if the file contains
-	// the @ sign marking it as an animation.
+	// もしファイルが @ マークをアニメーションとして含む場合
+	// マテリアルのインポートを無効化
 
 	class DisableMaterialImport extends AssetPostprocessor {
 		function OnPreprocessModel () {

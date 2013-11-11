@@ -4,16 +4,16 @@ OnPreprocessTexture()
 <txttag>
 CSNONE
 </txttag>
-Add this function in a subclass to get a notification just before the texture importer is run.
-This lets you setup default values for the import settings.
+この関数をサブクラスに追加してテクスチャ インポートツール実行の直前に通知を取得します。
+これによりインポート設定でデフォルト値をセットアップできます。
 
-Use textureImporter.isReadable to make the texture readable in OnPostprocessTexture if you wish
-to change the texture data eg. to do premultiplication of alpha.
+textureImporter.isReadable を使用して OnPostprocessTexture で、テクスチャデータを変更して
+例えばアルファ値の事前演算をしたい場合など、テクスチャを読み取り可能にします。
 
-Should you want to change compression format of the texture this is where it should be done.
+テクスチャの圧縮フォーマットを変更したい場合、ここで行なうべきです。
 BEGIN EX
-	// Automatically convert any texture file with "_bumpmap"
-	// in its file name into a normal map.
+	// ファイル名に "_bumpmap" つきのテクスチャファイルを
+	// 自動的に法線マップに変換します。
 
 	class MyTexturePostprocessor extends AssetPostprocessor {
 		function OnPreprocessTexture () {

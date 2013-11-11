@@ -4,7 +4,7 @@ OnPostprocessGameObjectWithUserProperties(GameObject,string[],object[])
 <txttag>
 CSNONE
 </txttag>
-Gets called for each GameObject that had at least one userpropery attached to it in the imported file.
+インポートファイルで少なくとも一つのユーザプロパティがアタッチされた各々のゲームオブジェクトごとに呼び出しされます。
 The propNames is a string array containing all the names of the properties found.
 The values is an System.Object array containing all the actual values.
 These can be of type string, Vector4, bool, Color, float, int.
