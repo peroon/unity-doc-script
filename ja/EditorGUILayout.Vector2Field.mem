@@ -5,7 +5,7 @@ Vector2Field(string,Vector2,GUILayoutOption[])
 Vector2型のフィールドを作成します
 XとYのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
-	// Simple Script that measures the distance between 2 points
+	// 二点間の距離を測定する簡易的なスクリプトです。
 
 	class EditorGUILayoutVector2Field extends EditorWindow {
 		
@@ -36,4 +36,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。

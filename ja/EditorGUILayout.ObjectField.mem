@@ -8,10 +8,10 @@ ObjectField(GUIContent,Object,Type,bool,GUILayoutOption[])
 ヒエラルキーやプロジェクトウィンドウからドラッグしてオブジェクトを格納することが出来ます
 CONVERTEXAMPLE
 BEGIN EX
-	// EditorScript that quickly searches for a help page
-	// about the selected Object.
+	// 選択されたオブジェクトのヘルプページをクイック検索する
+	// エディタスクリプトです。
 	//
-	// If no such page is found in the Manual it opens the Unity forum.
+	// もし該当するページがマニュアルで見つからない場合、 Unity フォーラムを開きます
 
 	import UnityEditor;
 
@@ -50,4 +50,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The object that has been set by the user.
+@return ユーザによりセットされたオブジェクト

@@ -10,7 +10,7 @@ TextField(GUIContent,string,GUIStyle,GUILayoutOption[])
 テキストフィールドを作成します
 GUILayout.TextFieldとは少し違い、ラベルを表示することが出来ます
 BEGIN EX
-	// Automatically change the name of the selected object via a text field
+	// テキスト フィールド経由で選択されたオブジェクトの名前を自動的に変更します。
 
 	class EditorGUILayoutTextField extends EditorWindow {	
 		var objectName : String = "";
@@ -20,7 +20,7 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			GUILayout.Label("Select an object in the hierarchy view");
+			GUILayout.Label("階層ビューでオブジェクトを選択します。");
 			if(Selection.activeGameObject)
 				Selection.activeGameObject.name = 
 					EditorGUILayout.TextField("Object Name: ", Selection.activeGameObject.name);
@@ -34,4 +34,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The text entered by the user.
+@return ユーザにより入力されたテキスト。

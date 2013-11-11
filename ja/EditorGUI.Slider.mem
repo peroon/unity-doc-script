@@ -35,7 +35,7 @@ END EX
 @param value 現在値
 @param leftValue 最小値
 @param rightValue 最大値
-@return The value that has been set by the user.
+@return ユーザによりセットされた値。
 <signature>
 Slider(Rect,SerializedProperty,float,float)
 Slider(Rect,SerializedProperty,float,float,string)

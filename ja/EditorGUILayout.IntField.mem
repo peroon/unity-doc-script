@@ -10,7 +10,7 @@ IntField(GUIContent,int,GUIStyle,GUILayoutOption[])
 Int型の値を操作するフィールドを作成します
 数値を直接入力するだけでなく、ラベル部分をマウスでドラッグすると数値を変動させることが可能です
 BEGIN EX
-	// Editor Script that clones the selected GameObject a number of times.
+	// 選択されたゲームオブジェクトを複数回クローンするエディタスクリプトです。
 
 	class EditorGUILayoutIntField extends EditorWindow {
 
@@ -24,7 +24,7 @@ BEGIN EX
 		
 		function OnGUI() {
 			sizeMultiplier = EditorGUILayout.IntField("Number of clones:", clones);
-			if(GUILayout.Button("Clone!"))
+			if(GUILayout.Button("クローンします!"))
 				for(var i = 0; i < clones; i++)
 					Instantiate(Selection.activeGameObject, Vector3.zero, Quaternion.identity);
 		}
@@ -36,4 +36,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。

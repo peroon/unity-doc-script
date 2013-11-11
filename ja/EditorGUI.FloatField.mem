@@ -37,4 +37,4 @@ END EX
 @param label 左側に表示する文字列
 @param value Float型の値
 @param style スタイル
-@return The value entered by the user.
+@return ユーザにより入力された値。

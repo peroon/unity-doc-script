@@ -6,9 +6,9 @@ BeginVertical(GUIStyle,GUILayoutOption[])
 必ずBeginVerticalとEndVerticalで囲む必要があります
 
 {img BeginEndVerticalExample.png}\\
-''Vertical Compound group.''
+''垂直に配置する複合グループ''
 BEGIN EX
-	// Create a Vertical Compound Button 
+	// 垂直に配置する複合ボタンを作成
 	
 	class BeginEndVerticalExample extends EditorWindow {
 	
@@ -21,15 +21,15 @@ BEGIN EX
 		function OnGUI() {
 			var r : Rect = EditorGUILayout.BeginVertical("Button");
 				if (GUI.Button(r, GUIContent.none))
-					Debug.Log("Go here");
-				GUILayout.Label("I'm inside the button");
-				GUILayout.Label("So am I");	
+					Debug.Log("ここに移動");
+				GUILayout.Label("これはボタンの中です");
+				GUILayout.Label("これも同様です");	
 			EditorGUILayout.EndVertical();
 		}
 	}
 END EX
-@param style Optional [[GUIStyle]].
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+@param style オプションとしての [[GUIStyle]]
+@param options オプションとしてのレイアウト オプションの一覧により追加的なレイアウト プロパティを指定。ここに渡される任意の値は /style/ により定義された設定を上書きします。<br>
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
 <signature>

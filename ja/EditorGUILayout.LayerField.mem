@@ -11,7 +11,7 @@ LayerField(GUIContent,int,GUIStyle,GUILayoutOption[])
 表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのLayerの値になります
 戻り値として選択したレイヤー番号が返されます
 BEGIN EX
-	// Simple editor script that lets you set the layer for the selected GameObjects.
+	// 選択されたゲームオブジェクトのレイヤーをセットする簡易的なエディタスクリプト
 
 	class EditorGUILayoutLayerField extends EditorWindow {
 
@@ -29,7 +29,7 @@ BEGIN EX
 		
 		function OnGUI() {
 			selectedLayer = EditorGUILayout.LayerField("Layer for Objects:",selectedLayer);
-			if(GUILayout.Button("Set Layer!"))
+			if(GUILayout.Button("レイヤーをセット!"))
 				SetLayer();
 		}
 		function SetLayer() {
@@ -44,4 +44,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The layer selected by the user.
+@return ユーザにより選択されたレイヤー。

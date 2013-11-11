@@ -7,7 +7,7 @@ ColorField(GUIContent,Color,GUILayoutOption[])
 Color型のフィールドを作成します
 カラーピッカーを表示して色を設定します
 BEGIN EX
-	// Change The color of the selected Game Objects
+	// 選択されたゲームオブジェクトのカラーを変更
 
 	class MassiveColorChange extends EditorWindow {
 		
@@ -19,9 +19,9 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			matColor = EditorGUILayout.ColorField("New Color", matColor);
+			matColor = EditorGUILayout.ColorField("新規のカラー", matColor);
 			
-			if(GUILayout.Button("Change!"))
+			if(GUILayout.Button("変更!"))
 				ChangeColors();
 		}
 		
@@ -38,4 +38,4 @@ END EX
 @param options 左側に表示する文字列
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The color selected by the user.
+@return ユーザにより選択されたカラー

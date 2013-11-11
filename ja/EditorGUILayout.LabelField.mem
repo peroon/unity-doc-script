@@ -12,7 +12,7 @@ LabelField(GUIContent,GUIContent,GUIStyle,GUILayoutOption[])
 ラベルを作成します
 GUI.Labelとは少し違い、特徴的なのは１つでラベルが２つ作成できるという点です
 BEGIN EX
-	// Shows a label in the editor with the seconds since the editor started
+	// エディタの開始から経過した秒数を示すラベルを表示
 
 	class EditorGUILayoutLabel extends EditorWindow {	
 		@MenuItem("Examples/Editor GUILayout Label Usage")
@@ -21,7 +21,7 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			EditorGUILayout.LabelField("Time since start: ", 
+			EditorGUILayout.LabelField("開始から経過した秒数: ", 
 				EditorApplication.timeSinceStartup.ToString());
 			this.Repaint();
 		}

@@ -5,8 +5,8 @@ Space()
 レイアウト間の空間を作成します
 GUILayoutUtility.GetRect (6, 6)と同じ効果をもたらします
 BEGIN EX
-	// Create a custom transform inspector that shows the X,Y,Z,W quaternion components
-	// instead of the rotation angles.
+	// 回転 Angle の代わりにクォータニオンの X,Y,Z,W 成分を表示する Transform インスペクタを
+	// 作成します。
 
 	class InspectorTitlebarUsage extends EditorWindow {
 		

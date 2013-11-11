@@ -11,7 +11,7 @@ TagField(GUIContent,string,GUIStyle,GUILayoutOption[])
 表示される値は「Editor→ProjectSettings→Tags」で表示されるTagManagerのTagsの値になります
 戻り値として選択したタグ名が返されます
 BEGIN EX
-	// Simple editor script that lets you set a tag for the selected GameObjects.
+	// 選択されたゲームオブジェクトにタグをセットする簡易的なスクリプトです
 
 	class EditorGUILayoutTagField extends EditorWindow {
 
@@ -29,7 +29,7 @@ BEGIN EX
 		
 		function OnGUI() {
 			tagStr = EditorGUILayout.TagField("Tag for Objects:",tagStr);
-			if(GUILayout.Button("Set Tag!"))
+			if(GUILayout.Button("タグをセット!"))
 				SetTags();
 		}
 		function SetTags() {
@@ -44,4 +44,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The tag selected by the user.
+@return ユーザにより選択されたタグ

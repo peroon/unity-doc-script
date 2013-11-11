@@ -5,9 +5,9 @@ BeginHorizontalを使用した場合は必ずEndHorizontalを使用する必要�
 SA: EditorGUILayout.BeginHorizontal
 
 {img BeginEndHorizontalExample.png}\\
-''Horizontal Compound group.''
+''水平に配置する複合グループ''
 BEGIN EX
-	// Create a Horizontal Compound Button
+	// 水平に配置する複合ボタンを作成
 
 	class BeginEndHorizontalExample extends EditorWindow {
 
@@ -20,9 +20,9 @@ BEGIN EX
 		function OnGUI() {
 			var r : Rect = EditorGUILayout.BeginHorizontal("Button");
 				if (GUI.Button(r, GUIContent.none))
-					Debug.Log("I Got Pressed!");
-				GUILayout.Label("I'm inside the button");
-				GUILayout.Label("So am I");	
+					Debug.Log("押下されました!");
+				GUILayout.Label ("これはボタンの中です");
+				GUILayout.Label ("これも同様です");	
 			EditorGUILayout.EndHorizontal();
 		}
 	}

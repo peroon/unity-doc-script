@@ -20,4 +20,4 @@ END EX
 @param slider スライドさせるバーのスタイル
 @param thumb スライドさせる範囲のスタイル
 @param options 幅・高さ
-@return The value that has been set by the user.
+@return ユーザによりセットされた値。

@@ -6,8 +6,8 @@ InspectorTitlebar(bool,Object[])
 折りたたみ式のタイトルバーを作成します
 foldoutがtrueの場合、展開されます
 BEGIN EX
-	// Create a custom transform inspector that shows the X,Y,Z,W quaternion components
-	// instead of the rotation angles.
+	// 回転 Angle の代わりに X,Y,Z,W クォータニン コンポーネントを表示するカスタムの
+	// Transform インスペクタを作成
 
 	class InspectorTitlebarUsage extends EditorWindow {
 		
@@ -51,7 +51,7 @@ BEGIN EX
 		}
 	}
 END EX
-The titlebar has an arrow for foling out, a help icon, and a settings menu that depends on the type of the object supplied.
+タイトルバーには折りたたみの矢印、ヘルプアイコン、および提供されたオブジェクトにもとづいた設定メニューがあります。
 @param foldout タイトルバーの状態。trueの場合、展開されている状態です
 @param targetObj 対象となるオブジェクト
-@return The foldout state selected by the user.
+@return ユーザにより選択された foldout 状態。

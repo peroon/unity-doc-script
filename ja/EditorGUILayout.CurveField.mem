@@ -10,11 +10,11 @@ CurveField(GUIContent,AnimationCurve,Color,Rect,GUILayoutOption[])
 AnimationCurve型のフィールドを作成します
 フィールドをクリックすることで編集ウィンドウが表示されます
 BEGIN EX
-	// Makes the selected GameObject follow the animation curve.
+	// 選択されたゲームオブジェクトがアニメーションカーブを追跡するようにします。
 	//
-	// Usage: Generate the curves for X,Y and Z axis of your desired GameObject
-	// Select an Object and click Generate Curve.
-	// Press Play and see your object moving.
+	// 使用方法: 指定のゲームオブジェクトの X, Y および Z 軸カーブを生成
+	// オブジェクトを選択し、Generate Curve （カーブ生成）をクリック
+	// 再生してオブジェクトが移動するところを確認して下さい
 
 
 	class FollowCurve extends EditorWindow {
@@ -46,14 +46,14 @@ BEGIN EX
 					Selection.activeGameObject.AddComponent(FollowAnimationCurve);
 				comp.SetCurves(curveX, curveY, curveZ);
 			} else {
-				Debug.LogError("No Game Object selected for adding an animation curve");
+				Debug.LogError("アニメーションカーブを追加するゲームオブジェクトが選択されてません。");
 			}
 		}
 	}
 END EX
-And the script that works with the example:
+サンプルとともに動作するスクリプト
 BEGIN EX
-	// This script has to go outside of the Editor Folder.
+	// このスクリプトは Editor フォルダの外に配置することが必要
 
 	var curveX : AnimationCurve;
 	var curveY : AnimationCurve;
@@ -77,7 +77,7 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The curve edited by the user.
+@return ユーザにより編集されたカーブ
 <signature>
 CurveField(SerializedProperty,Color,Rect,GUILayoutOption[])
 </signature>

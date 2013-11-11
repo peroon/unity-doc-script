@@ -49,4 +49,4 @@ END EX
 @param obj 格納されるオブジェクト
 @param objType オブジェクトの型
 @param allowSceneObjects シーンにあるゲームオブジェクトを格納するかどうか。デフォルトはtrue
-@return The object that has been set by the user.
+@return ユーザによりセットされたオブジェクト

@@ -72,4 +72,4 @@ END EX
 @param label 左側に表示する文字列
 @param selected 選択されたEnum値
 @param style スタイル
-@return The enum option that has been selected by the user.
+@return ユーザにより列挙体の中から選択されたオプション。

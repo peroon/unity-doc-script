@@ -6,11 +6,11 @@ TextArea(string,GUIStyle,GUILayoutOption[])
 テキストエリアを作成します
 GUILayout.TextAreaとは少し違い、文字列のコピーやペースト等が使用することが出来ます
 BEGIN EX
-	// Simple script that lets you visualize your scripts in an editor window
-	// This can be expanded to save your scripts also in the editor window.
+	// エディタウィンドウでスクリプトを視覚化する簡易的なスクリプトです。
+	// これを拡張することでエディタウィンドウでスクリプトを保存できます。
 
 	class EditorGUILayoutTextArea extends EditorWindow {	
-		var text : String = "Nothing Opened...";
+		var text : String = "何も開かれていません...";
 		var txtAsset : TextAsset;
 		var scroll : Vector2;
 
@@ -41,4 +41,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The text entered by the user.
+@return ユーザにより入力されたテキスト

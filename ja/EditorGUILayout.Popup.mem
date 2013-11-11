@@ -12,7 +12,7 @@ Popup(GUIContent,int,GUIContent[],GUIStyle,GUILayoutOption[])
 
 {img EditorGUILayoutPopup.png}\\
 BEGIN EX
-	// Creates an instance of a primitive depending on the option selected by the user.
+	// ユーザがオプションの一覧の中から選択したプリミティブについて、インスタンスを作成します。
 
 	class EditorGUILayoutPopup extends EditorWindow {
 		var options : String[] = ["Cube", "Sphere", "Plane"];
@@ -25,7 +25,7 @@ BEGIN EX
 		}
 		function OnGUI() {
 			index = EditorGUILayout.Popup(index, options);
-			if(GUILayout.Button("Create"))
+			if(GUILayout.Button("作成"))
 				InstantiatePrimitive();
 		}
 		function InstantiatePrimitive() {
@@ -43,7 +43,7 @@ BEGIN EX
 					plane.transform.position = Vector3.zero;
 					break;
 				default:
-					Debug.LogError("Unrecognized Option");
+					Debug.LogError("未知のオプションです。");
 					break;
 			}
 		}
@@ -56,4 +56,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The index of the option that has been selected by the user.
+@return ユーザが選択したオプションのインデックス。

@@ -7,9 +7,9 @@ RectField(GUIContent,Rect,GUILayoutOption[])
 Rect型のフィールドを作成します
 X,Y,W,Hのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
-	// Simple Script that lets you modify another's window position value
+	// 別のウィンドウのポジションの値を修正する簡易的なスクリプトです
 	//
-	// To use this script you need to open first the DummyWindow window.
+	// このスクリプトを使用するには最初に DummyWindow ウィンドウを開く必要があります
 
 	class MoveResizeSelectedWindow extends EditorWindow {
 
@@ -23,18 +23,18 @@ BEGIN EX
 		
 		function OnGUI() {
 			DummyWindow.instance.position = 
-				EditorGUILayout.RectField("Window's position:", 
+				EditorGUILayout.RectField("ウィンドウの位置:", 
 											DummyWindow.instance.position);
-			if(GUILayout.Button("Reset position"))
+			if(GUILayout.Button("位置をリセット"))
 				DummyWindow.instance.position = Rect(0,0,200,200);	
-			if(GUILayout.Button("Close"))
+			if(GUILayout.Button("クローズ"))
 				this.Close();
 		}
 	}
 END EX
-And the script that works with the example:
+サンプルとともに動作するスクリプト:
 BEGIN EX
-	// Dummy window that is going to be moved.
+	// 移動される DummyWindow
 
 	class DummyWindow extends EditorWindow {
 
@@ -54,4 +54,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。

@@ -6,8 +6,8 @@ MinMaxSlider(GUIContent,float,float,float,float,GUILayoutOption[])
 最小値・最大値を決めるスライダーを作成します
 最小値・最大値の範囲だけでなく、位置もスライドするだけで変更することが出来ます
 BEGIN EX
-	// Place the selected object randomly between the interval of the Min Max Slider
-	// in the X,Y,Z coords
+	// 選択されたオブジェクトを MinMaxSlider の間に
+	// X,Y,Z 座標で配置します
 
 	class EditorGUILayoutMinMaxSlider extends EditorWindow {
 
@@ -26,7 +26,7 @@ BEGIN EX
 			EditorGUILayout.LabelField("Min Val:", minVal.ToString());
 			EditorGUILayout.LabelField("Max Val:", maxVal.ToString());
 			EditorGUILayout.MinMaxSlider(minVal, maxVal, minLimit, maxLimit);
-			if(GUILayout.Button("Move!"))
+			if(GUILayout.Button("移動!"))
 				PlaceRandomly();
 		}
 		
@@ -37,12 +37,12 @@ BEGIN EX
 							Random.Range(minVal, maxVal),
 							Random.Range(minVal, maxVal));
 			else 
-				Debug.LogError("Select a GameObject to randomize its position.");
+				Debug.LogError("ゲームオブジェクトを選択して位置をランダムにします。");
 		}
 	}
 END EX
 @param label 左側に表示する文字列、テクスチャ、ツールチップ
-@param value The value the slider shows. This determines the position of the draggable thumb.
+@param value スライダーが表示する値。これによりドラッグできるつまみの位置を決めます。
 @param minValue 現在の最小の値
 @param maxValue 現在の最大の値
 @param minLimit 設定できる範囲の最小値

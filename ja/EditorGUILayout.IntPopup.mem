@@ -12,7 +12,7 @@ IntPopup(GUIContent,int,GUIContent[],int[],GUIStyle,GUILayoutOption[])
 ポップアップで表示されるセレクトボックスを作成します
 Popupとは少し違い、戻り値で返される値はoptionValuesで指定した値が返されます
 BEGIN EX
-	// Simple Editor Script that lets you rescale the current selected GameObject.
+	// 現在選択されたゲームオブジェクトを再スケールする簡単なエディタスクリプト
 
 	class EditorGUILayoutIntPopup extends EditorWindow {
 		var selectedSize : int = 1;
@@ -25,15 +25,15 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			selectedSize = EditorGUILayout.IntPopup("Resize Scale: ", selectedSize, names, sizes);
-			if(GUILayout.Button("Scale"))
+			selectedSize = EditorGUILayout.IntPopup("再スケール: ", selectedSize, names, sizes);
+			if(GUILayout.Button("スケールします"))
 				ReScale();
 		}
 		function ReScale() {
 			if(Selection.activeTransform)
 				Selection.activeTransform.localScale =
 					Vector3(selectedSize, selectedSize, selectedSize);
-			else	Debug.LogError("No Object selected, please select an object to scale.");
+			else	Debug.LogError("オブジェクトが選択されていません。スケールするオブジェクトを選択して下さい。");
 		}
 	}
 END EX
@@ -45,7 +45,7 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value of the option that has been selected by the user.
+@return ユーザにより選択されたオプションの値
 <signature>
 IntPopup(SerializedProperty,GUIContent[],int[],GUIContent,GUIStyle,GUILayoutOption[])
 IntPopup(SerializedProperty,GUIContent[],int[],GUILayoutOption[])

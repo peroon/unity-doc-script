@@ -5,8 +5,8 @@ Vector3Field(string,Vector3,GUILayoutOption[])
 Vector3型のフィールドを作成します
 X,Y,Zのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
-	// Simple Script that measures the distance between 2 GameObjects
-	// or measure the distance between 2 positions in 3D space
+	// 二つのゲームオブジェクトの距離、または
+	// 3D 空間における 2 つの位置の間の距離を測定する簡易的なスクリプトです。
 
 	class EditorGUILayoutVector3Field extends EditorWindow {
 		
@@ -20,20 +20,20 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			GUILayout.Label("Select an object in the Hierarchy view and click 'Capture Position'");
+			GUILayout.Label("階層ビューでオブジェクトを選択して "位置のキャプチャ"をクリックして下さい");
 			EditorGUILayout.BeginHorizontal();
 				obj1 = EditorGUILayout.Vector3Field("GameObject 1:", obj1);
-				if(GUILayout.Button("Capture Position"))
+				if(GUILayout.Button("位置をキャプチャ"))
 					obj1 = Selection.activeTransform.position;
 			EditorGUILayout.EndHorizontal();
 			
 			EditorGUILayout.BeginHorizontal();
 				obj2 = EditorGUILayout.Vector3Field("GameObject 2:", obj2);
-				if(GUILayout.Button("Capture Position"))
+				if(GUILayout.Button("位置をキャプチャ"))
 					obj2 = Selection.activeTransform.position;
 			EditorGUILayout.EndHorizontal();
 			EditorGUILayout.LabelField("Distance:", distance.ToString());
-			if(GUILayout.Button("Close"))
+			if(GUILayout.Button("クローズ"))
 				this.Close();		
 		}
 		function OnInspectorUpdate() {
@@ -47,4 +47,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。

@@ -26,8 +26,8 @@ BEGIN EX
 END EX
 @param label 左側に表示する文字列
 @param mask マスクの合計値
-@param displayedOption A string array containing the labels for each flag.
+@param displayedOption 各々のフラグのラベルを格納する文字列の配列
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value modified by the user.
+@return ユーザにより修正された値。

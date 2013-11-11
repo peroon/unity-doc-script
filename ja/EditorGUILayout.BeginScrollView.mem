@@ -9,12 +9,12 @@ BeginScrollView(Vector2,bool,bool,GUIStyle,GUIStyle,GUIStyle,GUILayoutOption[])
 スクロールタイプのGUIグループを作成します
 必ずBeginScrollView とEndScrollViewで囲む必要があります
 BEGIN EX
-	// Simple Editor Window that creates a scroll view with a Label inside
+	// ラベルを含んだスクロールビューを中に作成する簡易的なエディタ ウィンドウです。
 
 	class BeginEndScrollView extends EditorWindow {
 
 		var scrollPos : Vector2;
-		var t : String = "This is a string inside a Scroll view!";
+		var t : String = "これはスクロールビューの中の文字列です!";
 
 		@MenuItem("Examples/Write text on ScrollView")
 		static function Init() {
@@ -28,10 +28,10 @@ BEGIN EX
 				EditorGUILayout.BeginScrollView(scrollPos, GUILayout.Width (100), GUILayout.Height (100));
 					GUILayout.Label(t);
 				EditorGUILayout.EndScrollView();
-				if(GUILayout.Button("Add More Text", GUILayout.Width (100), GUILayout.Height (100)))
-					t += " \nAnd this is more text!";
+				if(GUILayout.Button("テキストをさらに追加", GUILayout.Width (100), GUILayout.Height (100)))
+					t += " \nこれでさらにテキストを追加!";
 			EditorGUILayout.EndHorizontal();
-			if(GUILayout.Button("Clear"))
+			if(GUILayout.Button("クリア"))
 				t = "";
 		}
 	}
@@ -41,4 +41,4 @@ END EX
 @param alwayShowVertical Optional parameter to always show the vertical scrollbar. If false or left out, it is only shown when content inside the ScrollView is taller than the scrollview itself.
 @param horizontalScrollbar 水平スクロールバーのGUIStyleオブジェクトを設定
 @param verticalScrollbar 垂直スクロールバーのGUIStyleオブジェクトを設定
-@return The modified scrollPosition. Feed this back into the variable you pass in, as shown in the example.
+@return 修正された scrollPosition。サンプルで示されたように、これを渡す変数にフィードします。

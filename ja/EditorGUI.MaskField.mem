@@ -30,4 +30,4 @@ END EX
 @param displayedOption A string array containing the labels for each flag.
 @param style スタイル
 @param displayedOptions ポップアップで表示される文字列
-@return The value modified by the user.
+@return ユーザにより修正された値。

@@ -8,10 +8,10 @@ Foldout(bool,GUIContent,GUIStyle)
 折りたたみ式のラベルを作成します
 foldoutがtrueの場合、展開されます
 BEGIN EX
-	// Create a foldable menu that hides/shows the selected transform
-	// position.
-	// if no Transform is selected, the Foldout item will be folded until
-	// a transform is selected.
+	// 選択された Transform 位置を隠す/表示する折りたたみ式の
+	// メニューを作成します。
+	// もし Transform が選択された場合、折りたたみ式のアイテムは
+	// Transform が選択されるまで折りたたみ続けます
 
 	class FoldoutUsage extends EditorWindow {
 
@@ -45,4 +45,4 @@ END EX
 @param foldout タイトルバーの状態。trueの場合、展開されている状態です
 @param content 表示する文字列
 @param style スタイル
-@return The foldout state selected by the user. If true, you should render sub-objects.
+@return ユーザにより選択された foldout 状態。もし true である場合、サブオブジェクトをレンダリングすべきです。

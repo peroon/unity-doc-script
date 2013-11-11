@@ -8,7 +8,7 @@ IntSlider(GUIContent,int,int,int,GUILayoutOption[])
 値はInt型になります
 スライダーで値を変更するだけでなく、数値を直接入力する事もできます
 BEGIN EX
-	// Simple editor script that lets you clone your object in a grid
+	// グリッドの中のゲームオブジェクトを複製する簡易的なスクリプトです
 
 	class EditorGUILayoutIntSlider extends EditorWindow {
 		
@@ -26,12 +26,12 @@ BEGIN EX
 			cloneTimesY = EditorGUILayout.IntSlider(cloneTimesY, 1, 10);
 			cloneTimesZ = EditorGUILayout.IntSlider(cloneTimesZ, 1, 10);
 			
-			if(GUILayout.Button("Duplicate object"))
+			if(GUILayout.Button("オブジェクトを複製"))
 				CloneSelected();
 		}
 		function CloneSelected() {
 			if(!Selection.activeGameObject) {
-				Debug.LogError("Select a GameObject first");
+				Debug.LogError("最初にゲームオブジェクトを選択して下さい。);
 				return;
 			}
 			for(var i = 0; i < cloneTimesX; i++)
@@ -51,7 +51,7 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value that has been set by the user.
+@return ユーザによりセットされた値。
 <signature>
 IntSlider(SerializedProperty,int,int,GUILayoutOption[])
 IntSlider(SerializedProperty,int,int,string,GUILayoutOption[])

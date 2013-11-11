@@ -8,7 +8,7 @@ Slider(GUIContent,float,float,float,GUILayoutOption[])
 値はFloat型になります
 スライダーで値を変更するだけでなく、数値を直接入力する事もできます
 BEGIN EX
-	// Editor script that lets you scale the selected GameObject between 1 and 100
+	// 選択されたゲームオブジェクトを 1 から 100 の間でスケールできるエディタスクリプト
 
 	class EditorGUILayoutSlider extends EditorWindow {
 
@@ -36,7 +36,7 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value that has been set by the user.
+@return ユーザによりセットされた値。
 <signature>
 Slider(SerializedProperty,float,float,GUILayoutOption[])
 Slider(SerializedProperty,float,float,string,GUILayoutOption[])

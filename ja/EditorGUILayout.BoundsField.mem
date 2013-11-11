@@ -10,4 +10,4 @@ X,Y,Zのラベル部分をドラッグして数値を変動させることも出
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値

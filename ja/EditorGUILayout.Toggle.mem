@@ -10,7 +10,7 @@ Toggle(GUIContent,bool,GUIStyle,GUILayoutOption[])
 トグルを作成します
 GUILayout.Toggleとは少し違い、チェックボックスが右側に表示されます
 BEGIN EX
-	// Show a button if the toggle control is selected.
+	// トグル コントロールが選択されている場合、ボタンを表示します
 
 	class EditorGUILayoutToggle extends EditorWindow {
 		
@@ -24,7 +24,7 @@ BEGIN EX
 		function OnGUI() {
 			showBtn = EditorGUILayout.Toggle("Show Button", showBtn);
 			if(showBtn)
-				if(GUILayout.Button("Close"))
+				if(GUILayout.Button("クローズ"))
 					this.Close();
 		}
 	}
@@ -35,4 +35,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The selected state of the toggle.
+@return トグルの選択状態

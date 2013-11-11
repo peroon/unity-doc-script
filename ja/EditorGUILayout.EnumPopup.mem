@@ -10,7 +10,7 @@ EnumPopup(GUIContent,Enum,GUIStyle,GUILayoutOption[])
 ポップアップで表示されるセレクトボックスを作成します
  Popupと少し違い、Enumを使用します
 BEGIN EX
-	// Creates an instance of a primitive depending on the option selected by the user.
+	// ユーザによりオプションの中から選択されたプリミティブのインスタンスを作成
 
 	enum OPTIONS { 
 		CUBE = 0, 
@@ -26,8 +26,8 @@ BEGIN EX
 			window.Show();
 		}
 		function OnGUI() {
-			op = EditorGUILayout.EnumPopup("Primitive to create:", op);
-			if(GUILayout.Button("Create"))
+			op = EditorGUILayout.EnumPopup("作成するプリミティブ:", op);
+			if(GUILayout.Button("作成"))
 				InstantiatePrimitive(op);
 		}
 		function InstantiatePrimitive(op : OPTIONS) {
@@ -45,7 +45,7 @@ BEGIN EX
 					plane.transform.position = Vector3.zero;
 					break;
 				default:
-					Debug.LogError("Unrecognized Option");
+					Debug.LogError("オプションが未知のものです");
 					break;
 			}
 		}
@@ -57,4 +57,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The enum option that has been selected by the user.
+@return ユーザにより列挙体の中から選択されたオプション。

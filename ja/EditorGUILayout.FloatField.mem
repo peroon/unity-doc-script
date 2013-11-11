@@ -10,7 +10,7 @@ FloatField(GUIContent,float,GUIStyle,GUILayoutOption[])
 Float型の値を操作するフィールドを作成します
 数値を直接キーボードで打ちこむだけでなく、ラベル部分をマウスでドラッグすると数値を変動させることが可能です
 BEGIN EX
-	// Editor Script that multiplies the scale of the current selected GameObject 
+	// 現在選択されたゲームオブジェクトのスケールに係数をかけるエディタスクリプトです
 
 	class EditorGUILayoutFloatField extends EditorWindow {
 
@@ -23,8 +23,8 @@ BEGIN EX
 		}
 		
 		function OnGUI() {
-			sizeMultiplier = EditorGUILayout.FloatField("Increase scale by:", sizeMultiplier);
-			if(GUILayout.Button("Scale"))
+			sizeMultiplier = EditorGUILayout.FloatField("スケールを次の係数だけ大きくします:", sizeMultiplier);
+			if(GUILayout.Button("スケール"))
 				Selection.activeTransform.localScale = 
 					Selection.activeTransform.localScale * sizeMultiplier;
 		}
@@ -36,4 +36,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。

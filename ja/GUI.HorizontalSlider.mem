@@ -18,4 +18,4 @@ END EX
 @param rightValue 最大値
 @param slider スライドさせるバーのスタイル設定
 @param thumb スライドさせる範囲のスタイル設定
-@return The value that has been set by the user.
+@return ユーザによりセットされた値。

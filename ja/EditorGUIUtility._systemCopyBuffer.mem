@@ -5,7 +5,7 @@ systemCopyBuffer
 control+Cでクリップボードにコピーした情報を取得します
 パスワード等、重要な情報も文字列として取得しているので扱いに注意してください
 BEGIN EX
-	// Simple editor Window that lets you have more than 1 saved "copy" command
+	// 一つ以上の "複製" をコマンドで保存できる簡易的なエディタウィンドウです。
 
 	class EditorGUISystemCopyBuffer extends EditorWindow {
 

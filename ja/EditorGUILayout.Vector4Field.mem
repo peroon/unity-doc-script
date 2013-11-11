@@ -5,8 +5,8 @@ Vector4Field(string,Vector4,GUILayoutOption[])
 Vector4型のフィールドを作成します
 X,Y,Z,Wのラベル部分をドラッグして数値を変動させることも出来ます
 BEGIN EX
-	// Simple script that lets you modify the X,Y,Z and W 
-	// Quaternion values of the selected GameObject
+	// 選択されたゲームオブジェクトのクォータニオンの
+	// X,Y,Z および W 成分を修正する簡易的なスクリプト
 
 	class ModifyQuaternionDirectly extends EditorWindow {
 		
@@ -22,9 +22,9 @@ BEGIN EX
 		function OnGUI() {
 			
 			values = EditorGUILayout.Vector4Field("Components:",values);
-			if(GUILayout.Button("Capture Rotation"))
+			if(GUILayout.Button("回転のキャプチャ"))
 				values = QuaternionToVector4(Selection.activeTransform.rotation);
-			if(GUILayout.Button("Close"))
+			if(GUILayout.Button("クローズ"))
 				this.Close();
 		}
 		function OnInspectorUpdate() {
@@ -42,4 +42,4 @@ END EX
 @param options 幅・高さ
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
 GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
-@return The value entered by the user.
+@return ユーザにより入力された値。
