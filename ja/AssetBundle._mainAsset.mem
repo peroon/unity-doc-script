@@ -2,12 +2,14 @@
 mainAsset
 </signature>
 アセットバンドルをビルドするときに、必ず使うアセットを設定する（読み取り専用）。
-mainAsset変数に特別な機能はありません。基本は、Load関数でパスを設定して呼び出す必要がありますが、mainAsset変数はパスを設定することなく呼び出すことができます。必ず使うようなモデルやプレハブなどを格納しておくと便利です。
+mainAsset変数に特別な機能はありません。基本は、Load関数でパスを設定して呼び
+出す必要がありますが、mainAsset変数はパスを設定することなく呼び出すことができます。
+必ず使うようなモデルやプレハブなどを格納しておくと便利です。
 BEGIN EX
 	function Start () {
 		var www = WWW ("http://myserver/myBundle.unity3d");
 		yield www;
-		// Get the designated main asset and instantiate it.
+		// 代理のメインアセットを取得し、インスタンス化
 		Instantiate(www.assetBundle.mainAsset);
 	}
 END EX

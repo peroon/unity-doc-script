@@ -2,4 +2,4 @@
 Contains(string)
 </signature>
 特定のオブジェクトがアセットバンドルに含まれているか確認する。
-Returns true if an object referred to by /name/ is contained in the AssetBundle, false otherwise.
+もし /name/ に該当するオブジェクトがアセットバンドルに含まれている場合は true 、そうでない場合は false

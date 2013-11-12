@@ -2,4 +2,4 @@
 assetBundle
 </signature>
 ロードされているアセットバンドルを返す（読み込み専用）
-Note that accessing asset before AsyncOperation::pref::isDone is true will stall the loading process.
+AsyncOperation::pref::isDone が true となる前にアセットにアクセスすると、ロード処理が遅れることに留意して下さい。
