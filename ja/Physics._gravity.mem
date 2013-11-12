@@ -2,7 +2,7 @@
 gravity
 </signature>
 重力の設定。重力はシーン内のすべてのRigidbodyオブジェクトに適用される
-Gravity can be turned off for an individual rigidbody using its Rigidbody::pref::useGravity property.
+個別の Rigidbody で重力を無効にするには Rigidbody::pref::useGravity を使用します。
 CONVERTEXAMPLE
 BEGIN EX
 	Physics.gravity = Vector3(0, -1.0, 0);

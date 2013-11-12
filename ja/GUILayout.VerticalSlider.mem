@@ -4,10 +4,10 @@ VerticalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
 </signature>
 垂直のスライダーを作成します。
 {img GUILayoutVerticalSlider.png}\\
-''Vertical slider in the Game View.''
+''ゲームビュー上の垂直のスライダー''
 CONVERTEXAMPLE
 BEGIN EX
-	// Draws a vertical slider control that goes from  10 (top) to 0 (bottom)
+	// 10 (最上部) から 0 (最下部)まで変化する垂直のスライダー コントロールを描画
 	var vSliderValue : float = 0.0;
 
 	function OnGUI () {

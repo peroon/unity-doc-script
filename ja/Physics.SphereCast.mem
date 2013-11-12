@@ -1,15 +1,16 @@
 <signature>
 SphereCast(Vector3,float,Vector3,RaycastHit,float,int)
 </signature>
-球体のレイを飛ばし、オブジェクトコライダーの付いたオブジェクトがヒットするかを調べます。ヒットした場合、trueを返します。
-This is useful when a Raycast does not give enough precision, because you want to find out if an object of a specific size,
-such as a character, will be able to move somewhere without colliding with anything on the way.
-Think of the sphere cast like a thick raycast.
+球体のレイを飛ばし、オブジェクトコライダーの付いたオブジェクトがヒットするかを調べ
+ます。ヒットした場合、trueを返します。
+Raycast で十分な精度が得られない場合に役に立ち、例えばキャクラターが何かに衝突せずに移動できるか調べるために、なオブジェクトの具体的な大きさを知りたい場合などです。
+SphereCast は厚みのある Raycast のようなものです。
 
-__Note:__ The sphere cast does not work against colliders configured as triggers.
-If you move colliders from scripting or by animation, there needs to be at
-least one FixedUpdate executed so that the physics library can update it's data
-structures, before a SphereCast will hit the collider at it's new position.
+__注意:__ SphereCast はトリガーとして設定されたコライダーに対しては動作しません。
+もしスクリプトまたはアニメーションによりコライダを移動すると、少なくとも
+ひとつの FixedUpdate が実行されないと Physics ライブラリは SphereCast が
+新規のポジションでコライダにヒットする前にデータ構造を更新できません。
+
 
 SA: [[Physics.SphereCastAll]], [[Physics.CapsuleCast]], [[Physics.Raycast]], [[Rigidbody.SweepTest]].
 CONVERTEXAMPLE
@@ -18,7 +19,7 @@ BEGIN EX
 		var hit : RaycastHit;
 		var charCtrl : CharacterController = GetComponent(CharacterController);
 		var p1 : Vector3 = transform.position + charCtrl.center;
-		// Cast a sphere wrapping character controller 10 meters forward, to see if it is about to hit anything
+		// キャラクター コントローラの 10 メートル先まで SphereCast をして、何かヒットするか確認
 		if (Physics.SphereCast (p1, charCtrl.height / 2, transform.forward, hit, 10)) {
 			distanceToObstacle = hit.distance;
 		}
@@ -30,20 +31,21 @@ END EX
 @param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
 @param distance 距離の長さ
 @param layerMask レイヤーの設定。衝突を無視することもできる
-@return True when the capsule sweep intersects any collider, otherwise false.
+@return カプセル部分が何かのコライダと交わる場合は true 、その他の場合は false です。
 <signature>
 SphereCast(Ray,float,float,int)
 SphereCast(Ray,float,RaycastHit,float,int)
 </signature>
-球体のレイを飛ばし、オブジェクトコライダーの付いたオブジェクトがヒットするかを調べます。ヒットした場合、trueを返します。
-This is useful when a Raycast does not give enough precision, because you want to find out if an object of a specific size,
-such as a character, will be able to move somewhere without colliding with anything on the way.
-Think of the sphere cast like a thick raycast.
+球体のレイを飛ばし、オブジェクトコライダーの付いたオブジェクトがヒットするかを調べ
+ます。ヒットした場合、trueを返します。
+Raycast で十分な精度が得られない場合に役に立ち、例えばキャクラターが何かに衝突せずに移動できるか調べるために、なオブジェクトの具体的な大きさを知りたい場合などです。
+SphereCast は厚みのある Raycast のようなものです。
 
-__Note:__ The sphere cast does not work against colliders configured as triggers.
-If you move colliders from scripting or by animation, there needs to be at
-least one FixedUpdate executed so that the physics library can update it's data
-structures, before a SphereCast will hit the collider at it's new position.
+
+__注意:__ SphereCast はトリガーとして設定されたコライダーに対しては動作しません。
+もしスクリプトまたはアニメーションによりコライダを移動すると、少なくとも
+ひとつの FixedUpdate が実行されないと Physics ライブラリは SphereCast が
+新規のポジションでコライダにヒットする前にデータ構造を更新できません。
 
 SA: [[Physics.SphereCastAll]], [[Physics.CapsuleCast]], [[Physics.Raycast]], [[Rigidbody.SweepTest]].
 @param ray SphereCast関数に使用するレイを設定する
@@ -52,4 +54,4 @@ SA: [[Physics.SphereCastAll]], [[Physics.CapsuleCast]], [[Physics.Raycast]], [[R
 @param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
 @param distance 距離の長さ
 @param layerMask レイヤーの設定。衝突を無視することもできる
-@return True when the capsule sweep intersects any collider, otherwise false.
+@return カプセル部分が何かのコライダと交わる場合は true 、その他の場合は false です。

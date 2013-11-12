@@ -2,10 +2,11 @@
 sleepVelocity
 </signature>
 線速度が設定値以下になると、Rigidbodyオブジェクトはスリープ状態になる。必ず正の値を設定（デフォルトは0.15）
-See [[wiki:RigidbodySleeping|Rigidbody Sleeping]] for more information.
-This value can be overridden per rigidbody using Rigidbody.sleepVelocity. 
+詳細については [[wiki:RigidbodySleeping|Rigidbody のスリープ]] を参照して下さい。
+Rigidbody 毎にこの値を Rigidbody.sleepVelocity により上書きできます。
 
-This value is usually changed in @@Edit->Project Settings->Physics@@ inspector instead of from scripts.
+
+通常この値はスクリプトからではなく、メニューから @@Edit->Project Settings->Physics@@ によりインスペクタ上で変更されます。
 CONVERTEXAMPLE
 BEGIN EX
 	Physics.sleepVelocity = 0.1;

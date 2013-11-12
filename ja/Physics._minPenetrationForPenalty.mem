@@ -3,7 +3,7 @@ minPenetrationForPenalty
 </signature>
 ペナルティの力を適用するために、最低限の貫通値を設定する。必ず
 正の値を設定（デフォルトは0.05）
-This value is usually changed in @@Edit->Project Settings->Physics@@ inspector instead of from scripts.
+通常この値はスクリプトからではなく、メニューから @@Edit->Project Settings->Physics@@ によりインスペクタ上で変更されます。
 CONVERTEXAMPLE
 BEGIN EX
 	Physics.minPenetrationForPenalty = 0.1;

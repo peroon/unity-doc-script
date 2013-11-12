@@ -2,16 +2,16 @@
 IgnoreCollision(Collider,Collider,bool)
 </signature>
 2 つのコライダーの衝突判定の無効化を設定します。
-This is most useful for making eg. projectiles not collide with the object shooting them.
+これは例えば発射物が発射したオブジェクトに衝突しないようにする場合などに役に立ちます。
 
-IgnoreCollision has a few limitations:
-1) It is not persistent. This means ignore collision state will not be stored in the editor when saving a scene.
-2) You can only apply the ignore collision to colliders in active game objects.
-When deactivating the collider or attached rigidbody the IgnoreCollision state will be lost and you have to call Physics.IgnoreCollision again.
+IgnoreCollision にはいくつかの制約があります:
+1) 永続しない。つまりシーン保存したとき IgnoreCollision 状態はエディタに格納されません。
+2) 有効なゲームオブジェクトにしか IgnoreCollision を適用できません。
+コライダーまたはアタッチされた Rigidbody を無効化するとき IgnoreCollision 状態は失われ、再び Physics.IgnoreCollision を呼び出しする必要があります。
 SA: [[Physics.IgnoreLayerCollision]].
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiate a bullet and make it ignore collisions with this object.
+	// 弾丸をインスタンス化し、このオブジェクトとの衝突を無視させます
 
 	var bulletPrefab : Transform;
 	function Start () {

@@ -1,7 +1,8 @@
 <signature>
 Linecast(Vector3,Vector3,int)
 </signature>
-始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用します。センサーのような扱いができます。
+始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用しま
+す。センサーのような扱いができます。
 CONVERTEXAMPLE
 BEGIN EX
 	var target : Transform;
@@ -11,10 +12,11 @@ BEGIN EX
 		}
 	}
 END EX
-[[wiki:Layers|Layer mask]] is used to selectively ignore colliders when casting a ray.
+[[wiki:Layers|レイヤー マスク]] は Raycast するときに選択的に衝突を無視するために使用します。
 <signature>
 Linecast(Vector3,Vector3,RaycastHit,int)
 </signature>
-始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用します。センサーのような扱いができます。
-If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
-[[wiki:Layers|Layer mask]] is used to selectively ignore colliders when casting a ray.
+始点と終点を設定してそこに線を張り、オブジェクトがヒットするか調べる場合に使用しま
+す。センサーのような扱いができます。
+もし true が返されると /hitInfo/ にはコライダーのヒットに関する情報をより多く含みます (SA: [[RaycastHit]])
+[[wiki:Layers|レイヤー マスク]] は Raycast するときに選択的に衝突を無視するために使用します。

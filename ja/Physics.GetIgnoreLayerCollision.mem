@@ -1,5 +1,6 @@
 <signature>
 GetIgnoreLayerCollision(int,int)
 </signature>
-レイヤーの衝突判定が無効化されているか確認します。無効化されている場合、trueを返します
-Returns the value set by [[Physics.IgnoreLayerCollision]] or in the Physics inspector.
+レイヤーの衝突判定が無効化されているか確認します。無効化されている場合、trueを返
+します。
+[[Physics.IgnoreLayerCollision]] または Physics インスペクタによりセットされた値を返す。

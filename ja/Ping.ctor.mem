@@ -2,5 +2,5 @@
 ctor(string)
 </signature>
 指定したIPアドレスへのpingを実行する
-This does not perform DNS lookups on host names so it only
-accepts IP addresses in dot notation.
+ホスト名に対する DNS ルックアップは実行しないため、
+ドット記法の IP アドレスのみ受け付けます。

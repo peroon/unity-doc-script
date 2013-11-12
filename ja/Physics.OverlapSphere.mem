@@ -2,11 +2,11 @@
 OverlapSphere(Vector3,float,int)
 </signature>
 球体のセンサーを作成し、そこにヒットしたすべてのコライダーを取得します。
-NOTE: Currently this only checks against the bounding volumes of the colliders not against the actual colliders.
+注意: 現在は実際のコライダに対してではなく、コライダの境界部分に対してのみチェックを行ないます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Call a damage function on all objects caught in the
-	// radius of an explosion.
+	// 爆発の半径でキャッチできた全てのオブジェクトで
+	// ダメージを与える関数を呼び出す
 	function ExplosionDamage(center: Vector3, radius: float) {
 		var hitColliders = Physics.OverlapSphere(center, radius);
 		
