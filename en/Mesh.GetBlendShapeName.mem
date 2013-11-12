@@ -1,0 +1,5 @@
+<signature>
+GetBlendShapeName(int)
+</signature>
+Returns name of BlendShape by given index.
+SA: ::ref::blendShapes, ::ref::blendShapeCount.

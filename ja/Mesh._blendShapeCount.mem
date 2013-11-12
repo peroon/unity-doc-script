@@ -1,0 +1,5 @@
+<signature>
+blendShapeCount
+</signature>
+Returns BlendShape count on this mesh.
+SA: ::ref::blendShapes.

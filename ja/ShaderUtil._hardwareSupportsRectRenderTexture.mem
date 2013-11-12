@@ -1,0 +1,4 @@
+<signature>
+hardwareSupportsRectRenderTexture
+</signature>
+Does the current hardware support render textues.

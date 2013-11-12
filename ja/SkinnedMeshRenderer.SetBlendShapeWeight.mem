@@ -1,0 +1,9 @@
+<signature>
+SetBlendShapeWeight(int,float)
+</signature>
+Sets weight of BlendShape on this renderer.
+Index must be smaller than Mesh::ref::blendShapeCount of a mesh attached to this renderer. 
+At weight 0 BlendShape has no influence, at weight 1 BlendShape is fully active, 
+but weight is not limited to [0; 1] range.
+
+SA: ::ref::GetBlendShapeWeight, Mesh::ref::blendShapes.
