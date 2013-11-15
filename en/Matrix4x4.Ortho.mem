@@ -8,4 +8,4 @@ The returned matrix is such that views /left/ to /right/, /bottom/ to /top/ area
 If you want to use orthogonal for pixel-correct rendering, it is better to use GL.LoadPixelMatrix,
 as that would apply proper half-texel offsets for Direct3D renderer.
 
-SA: GL.LoadPixelMatrix, GL.LoadProjectionMatrix, GUI.matrix.
+SA: GL::ref::LoadPixelMatrix, GL::ref::LoadProjectionMatrix, GUI::ref::matrix.

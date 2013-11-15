@@ -1,0 +1,13 @@
+<suggestedtype>
+class
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Hashtable
+</signature>
+You can use a Hashtable to store key+value pairs.
+For detailed information see <a href="http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx">http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx</a>
+
+For C# users: the generic alternative to Hashtable is called Dictionary.

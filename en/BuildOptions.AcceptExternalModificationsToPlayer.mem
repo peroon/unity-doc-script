@@ -1,3 +1,6 @@
-Do not overwrite player directory, but accept user's modifications.
-On iPhone this setting will append changes to already existing and potentially user modified XCode project.
+Used when building XCode (iPhone) or Eclipse (Android) projects.
+On iPhone, this setting will append an existing XCode project. Existing XCode project setting changes will be preserved.
+
+On Android, this setting will create a new Eclipse project. Existing Eclipse project setting changes will be discarded.
+
 SA: BuildPipeline.BuildPlayer.

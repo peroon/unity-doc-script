@@ -1,6 +1,28 @@
 <signature>
 SetIKPositionWeight(AvatarIKGoal,float)
 </signature>
-IK ゴールの移転したウェイトをセットします（0 = IK 前の元のアニメーション位置、1 = ゴール位置）。
-@param goal セットされた AvatarIKGoal。
-@param value 移転したウェイト。
+Sets the translative weight of an IK goal (0 = at the original animation before IK, 1 = at the goal).
+An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+
+This function sets a weight value in the range 0..1 to determine how far between the start and goal positions the IK will aim. The position itself is set separately using ::ref::SetIKPosition.
+CONVERTEXAMPLE
+BEGIN EX
+var objToPickUp: Transform;
+
+private var animator: Animator;
+
+
+function Start() {
+	animator = GetComponent.<Animator>();
+}
+
+
+function OnAnimatorIK(layerIndex: int) {
+	var reach: float = animator.GetFloat("RightHandReach");
+	animator.SetIKPositionWeight(AvatarIKGoal.RightHand, reach);
+	animator.SetIKPosition(AvatarIKGoal.RightHand, objToPickUp.position);                    
+}
+END EX
+SA: ::ref::SetIKPosition, ::ref::SetIKRotationWeight.
+@param goal The AvatarIKGoal that is set.
+@param value The translative weight.

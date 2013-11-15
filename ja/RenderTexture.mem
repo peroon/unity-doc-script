@@ -1,17 +1,20 @@
-レンダリングが可能なテクスチャを作成します。
-画像ベースのレンダリングエフェクト、ダ
-イナミックシャドウ、プロジェクター、反射や監視カメラなどに使うことができます。
+Render textures are textures that can be rendered to.
+They can be used to implement image based rendering effects, dynamic shadows,
+projectors, reflections or surveillance cameras.
 
-レンダリングされるRenderTextureオブジェクトはactive変数の中に入ります。
-active変数がnullの場合、メインのウィンドウにレンダリングされます。
+All rendering goes into the active RenderTexture (::ref::active class property).
+If the active RenderTexture is /null/ everything is rendered to the main window.
 
-[[wiki:class-RenderTexture|RenderTexture アセット]] が 2 のべき乗のサイズに限定されますが、
-2 のべき乗でない（''Rect''）レンダーテクスチャをスクリプトから作成することが出来ます。
-これらはイメージの後処理エフェクトで主に使用されます。
+For short-lived temporary render textures, use ::ref::GetTemporary and ::ref::ReleaseTemporary
+functions. These are most often useful in image post processing effects.
 
-レンダーテクスチャのコンテンツは特定のイベントにより "ロスト" することがあり、
-例えば新規のレベルのロードや、システムのスクリーンセーバ モードに入る場合、フルスクリーンへの切り替えなどです。
-これが発生すると、既存のレンダーテクスチャは再び "未作成" 状態となります。
-これらは ::ref::IsCreated 関数によりチェックできます。
+Note that while [[wiki:class-RenderTexture|RenderTexture assets]] can be only power-of-two
+size, it is possible to create a non-power-of-two render textures from scripts.
+These are most often used for image post processing effects.
 
-RenderTexture クラスは __Unity Pro__ でのみ利用可能です。
+Keep in mind that render texture contents can become "lost" on certain events, like loading
+a new level, system going to a screensaver mode, in and our of fullscreen and so on.
+When that happens, your existing render textures will become "not yet created" again,
+you can check for that with ::ref::IsCreated function.
+
+RenderTexture class is only available in __Unity Pro__.

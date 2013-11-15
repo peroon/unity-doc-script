@@ -1,0 +1,2 @@
+Joint that restricts the motion of a Rigidbody2D object to a single line.
+SA: [[Rigidbody2D]] class, [[DistanceJoint2D]] class, [[HingeJoint2D]] class, [[SpringJoint2D]] class.

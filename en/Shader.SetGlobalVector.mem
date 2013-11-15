@@ -1,5 +1,6 @@
 <signature>
 SetGlobalVector(string,Vector4)
+SetGlobalVector(int,Vector4)
 </signature>
 Sets a global vector property for all shaders.
 Global properties are used if a shader needs them but the material does

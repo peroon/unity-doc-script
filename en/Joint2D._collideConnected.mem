@@ -1,0 +1,5 @@
+<signature>
+collideConnected
+</signature>
+Can the joint collide with the other Rigidbody2D object to which it is attached?
+SA: [[Rigidbody2D]] class, ::ref::connectedBody.

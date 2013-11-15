@@ -1,2 +1,5 @@
-エージェントが移動先に着いたり、途中で破棄された場合、次のセットされた移動先へ向かうかどうかの設定
-A new path is also attempted aquired if the agent reaches the end of a partial and stale path.
+<signature>
+autoRepath
+</signature>
+Should the agent attempt to acquire a new path if the existing path becomes invalid?
+A new path calculation is also attempted aquired if the agent reaches the end of a partial and stale path.

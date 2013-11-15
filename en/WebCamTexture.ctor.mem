@@ -1,20 +1,20 @@
 <signature>
+ctor()
+ctor(int,int,int)
+ctor(int,int)
+ctor(string)
+ctor(string,int,int)
 ctor(string,int,int,int)
 </signature>
 Create a WebCamTexture.
+Use [[WebCamTexture.devices]] to get a list of the names of available camera devices. If no device name is supplied to the constructor or is passed as a null string, the first device found will be used.
+
+The requested width, height and framerate specified by the parameters may not be supported by the chosen camera. In such cases, the closest available values will be used.
+
 Note that if you want to use WebCamTextures in the web player, you need to get the user's
 permission to do so. Call [[Application.RequestUserAuthorization]] before creating a
 WebCamTexture.
-@param deviceName The name of the video input device to be used. Use [[WebCamTexture.devices]] to get a list of supported devices. 
-If no device is supplied by either using one of the constructors which don't have this parameter, or by passing null, the first device
-to be found will be used.
-@param requestedWidth The requested width of the texture. The real width may be different, and will match the closest width supported by the device.
-@param requestedHeight The requested height of the texture. The real height may be different, and will match the closest height supported by the device.
-@param requestedFPS The requested frame rate of the texture. The real frame rate may be different, and will match the closest frame rate supported by the device.
-<signature>
-ctor(string,int,int)
-ctor(string)
-ctor(int,int,int)
-ctor(int,int)
-ctor()
-</signature>
+@param deviceName The name of the video input device to be used.
+@param requestedWidth The requested width of the texture.
+@param requestedHeight The requested height of the texture.
+@param requestedFPS The requested frame rate of the texture.

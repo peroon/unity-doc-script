@@ -1,6 +1,5 @@
-毎フレーム更新するかどうかを設定
-インスペクター上ではチェックボックスとして表示されます
-CONVERTEXAMPLE
-BEGIN EX
-	GetComponent(PlayerScript).enabled = false;
-END EX
+<signature>
+enabled
+</signature>
+Enabled Behaviours are Updated, disabled Behaviours are not.
+This is shown as the small checkbox in the inspector of the behaviour.

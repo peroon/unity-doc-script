@@ -1,0 +1,2 @@
+The generic Social API interface which implementations must inherit.
+See [[Social]] for details on usage.

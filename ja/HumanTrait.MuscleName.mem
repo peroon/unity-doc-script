@@ -1,22 +1,14 @@
 <signature>
 MuscleName
 </signature>
-全てのマッスルの一覧。
+Array of the names of all human muscle types defined by Mecanim.
+CONVERTEXAMPLE
 BEGIN EX
-// C# サンプル
-using UnityEngine;
-using UnityEditor;
-
-public class PrintMuscleName : MonoBehaviour
-{
-	[MenuItem("Mecanim/PrintMuscleName")]
-	public static void DoPrintMuscleName()
-	{
-		string[] muscleName = HumanTrait.MuscleName;
-		for (int i = 0; i < HumanTrait.MuscleCount; ++i)
-		{
-			Debug.Log(muscleName[i]);
-		}
+function Start() {
+	var muscleName: String[] = HumanTrait.MuscleName;
+	
+	for (var i = 0; i < HumanTrait.MuscleCount; i++) {
+		Debug.Log(muscleName[i]);
 	}
 }
 END EX

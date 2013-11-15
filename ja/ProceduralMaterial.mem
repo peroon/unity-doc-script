@@ -1,3 +1,5 @@
+Class for ProceduralMaterial handling.
+A reference to a ProceduralMaterial is usually assigned using "renderer.sharedMaterial as ProceduralMaterial".
 CONVERTEXAMPLE
 BEGIN EX
 var floatRangeProperty : String = "Saturation";
@@ -6,10 +8,11 @@ var cycleTime : float = 10;
 function Update () {
 	var substance : ProceduralMaterial = renderer.sharedMaterial as ProceduralMaterial;
 	if (substance) {
-		// 時間とともにプロパティの値を大きくしたり小さくしたりする
+		// Make the property go up and down over time
 		var lerp = Mathf.PingPong (Time.time * 2 / cycleTime, 1);
 		substance.SetProceduralFloat (floatRangeProperty, lerp);
 		substance.RebuildTextures ();
 	}
 }
 END EX
+Note that accessing a ProceduralMaterial via renderer.material will create a runtime clone of the original ProceduralMaterial and can negatively impact performance.

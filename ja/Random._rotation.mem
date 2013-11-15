@@ -1,11 +1,9 @@
 <signature>
 rotation
 </signature>
-ランダムなQuaternion型の値を返す（読み込み専用）。
+Returns a random rotation (RO).
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiates a prefab with a random rotation at the world-origin
-
-	var prefab : GameObject;
-	Instantiate(prefab, Vector3.zero, Random.rotation);
+// Sets a random orientation for the object.
+transform.rotation = Random.rotation;
 END EX

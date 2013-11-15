@@ -1,0 +1,3 @@
+A mask containing all the transform in the file will be created internally.
+For Humanoid rig, unity will convert all the transforms animation into muscle animation, these transforms cannot be edited in the mask.
+SA: ModelImporterClipAnimation.maskType.

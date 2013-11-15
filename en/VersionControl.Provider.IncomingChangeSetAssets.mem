@@ -1,0 +1,7 @@
+<signature>
+IncomingChangeSetAssets(ChangeSet)
+IncomingChangeSetAssets(string)
+</signature>
+Given an incoming changeset this will start a task to query the version control server for which assets are part of the changeset.
+@param changeset Incoming changeset.
+@param changesetID Incoming changesetid.

@@ -7,7 +7,7 @@ Box(string,GUIStyle,GUILayoutOption[])
 Box(GUIContent,GUIStyle,GUILayoutOption[])
 </signature>
 Make an auto-layout box.
-This will make a solid box. If you want to make a box with some contents inside, use the style paramenter of one of the subgroup functions (::ref::BeginHorizontal, ::ref::BeginVertical, etc...).
+This will make a box that contains static text or images but not other GUI controls. If you want to make a rectangular container for a set of GUI controls, use one of the grouping functions (::ref::BeginHorizontal, ::ref::BeginVertical, ::ref::BeginArea, etc...).
 
 {img GUILayoutBox.png}\\
 ''Boxes in the Game View.''

@@ -2,6 +2,7 @@
 ImportAsset(string)
 ImportAsset(string,ImportAssetOptions)
 </signature>
-アセットをパス名からインポートすることが出来ます
-アセットに何らかの変更が加えられた時に更新目的で使用します
+Import asset at path.
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
+
 SA: [[ImportAssetOptions]].

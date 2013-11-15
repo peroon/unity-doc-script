@@ -1,0 +1,7 @@
+<signature>
+velocityIterations
+</signature>
+The number of iterations of the physics solver when considering objects' velocities.
+A higher number of interations will improve accuracy at the expense of processing overhead.
+
+SA: ::ref::positionIterations.

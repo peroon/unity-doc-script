@@ -2,8 +2,8 @@
 GetAssetPath(int)
 GetAssetPath(Object)
 </signature>
-アセット、またはアセットのインスタンスIDからパスを取得します
-アセットとして存在しないオブジェクトの場合、空文字が返されます
+Returns the path name relative to the project folder where the asset is stored.
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {

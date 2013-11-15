@@ -1,2 +1,2 @@
-The HumanDescription class stores all the information necessary to build a human avatar.
+Class that holds humanoid avatar parameters to pass to the AvatarBuilder::ref::BuildHumanAvatar function.
 SA: AvatarBuilder.BuildHumanAvatar.

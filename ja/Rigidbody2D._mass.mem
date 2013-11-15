@@ -1,0 +1,7 @@
+<signature>
+mass
+</signature>
+Mass of the rigidbody.
+The mass is given in arbitrary units but the basic physical principles of mass apply. From Newton's classic equation force = mass x accelelation, it is apparent that the larger an object's mass, the more force it requires to accelerate it to a given velocity. Also, mass affects momentum, which is significant during collisions; an object with large mass will be moved less by a collision than an object with lower mass.
+
+SA: ::ref::AddForce, Rigidbody::ref::mass.

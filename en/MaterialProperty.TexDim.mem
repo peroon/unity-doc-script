@@ -1,0 +1,4 @@
+Texture dimension of a property.
+Texture properties can accept regular (2D) textures, Cubemaps etc.
+
+SA: MaterialProperty::ref::textureDimension.

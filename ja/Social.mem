@@ -1,11 +1,14 @@
-ソーシャル API へのジェネリック アクセス。
-[[Social.Active]] を使用して特定のソーシャル プラットフォーム 実装をターゲットとすることができますがデフォルトで GameCenter は iOS で使用されます。他の全ての
-プラットフォームの場合デフォルトはテストで使用できるローカル実装となります。
-概要については [[wiki:net-SocialAPI|ソーシャル API リファレンス マニュアル]] を参照して下さい。
+Generic access to the Social API.
+[[Social.Active]] can be used to target a specific social platform implementation, but by default GameCenter is used on iOS. All other 
+platforms default to the Local implementation which can be used for testing. 
+See [[wiki:net-SocialAPI|Social API Reference Manual]] for an overview.
 
-[[Social]] クラスは常にエントリーポイントとして使用されるべきです。現在の有効な実装をアクセスするためのヘルパー関数を含む、他のソーシャル API クラスのインタフェースを常に使用します。これにより、実装によりジェネリック API から拡張されたインタフェースのバージョンを使用することが容易となります。
-
-ソーシャル API に紐付けられた様々なクラスがあり、これは全て
-__UnityEngine.SocialPlatforms__ 名前空間に依存します。この名前空間をインポート/使用しないとこれらのクラスを使用できません。
+The [[Social]] class should always be used as an entry point. It contains
+helper functions for accessing the current active implementation and always
+uses the interfaces of the other Social API classes. This way it is easier
+to use versions of the interfaces which have been extended beoynd the generic API by the implementation.
  
- SA: [[GameCenterPlatform]]
+There are varoius classes accociated with the Social API and all of these reside
+in the __UnityEngine.SocialPlatforms__ namespace. You need to import/use this namespace in order to use these classes.
+ 
+ SA: [[SocialPlatforms.GameCenter.GameCenterPlatform]].

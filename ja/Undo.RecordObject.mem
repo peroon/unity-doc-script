@@ -1,0 +1,36 @@
+<signature>
+RecordObject(Object,string)
+</signature>
+Records any changes done on the object after the RecordObject function.
+Almost all property changes can be recorded with this function. The transform parent, AddComponent, object destruction  can not be recorded with this function, for that you should use the dedicated functions. 
+
+Internally this will create a temporary copy of the objects state and at the end of the frame Unity will diff the state and thus detect what exactly has changed. The changed properties are then recorded on the undo stack. If nothing has actually changed (Binary exact comparison is used for all properties), no undo operation will be stored on the stack.
+CONVERTEXAMPLE
+BEGIN EX
+Undo.RecordObject (Selection.activeTransform, "Edit Transform");
+Selection.activeTransform.position = Vector3(0, 0, 0);
+END EX
+BEGIN EX
+	// Editor Script Side
+	// Create a position Handle and make the target always look at the position handle.
+	// This is an editor Script, this should go inside the Editor Folder.
+
+	[CustomEditor (typeof(LookAtPoint))]
+	class SnapshotTargetEx extends Editor {
+
+		void OnSceneGUI () {
+			
+			LookAtPoint lookAtScript;
+
+			EditorGUI.BeginChangeCheck ();
+			Vector3 pos = Handles.PositionHandle(target.lookAtPoint, Quaternion.identity);
+	        if (EditorGUI.EndChangeCheck ()) {
+	        	Undo.RecordObject ("Move point");
+	        	target.lookAtPoint = pos;
+
+	        	// Make sure to call SetDirty otherwise the inspector will not know that the script properties were modified
+	            EditorUtility.SetDirty (target);
+	        }
+	    }
+	}
+END EX

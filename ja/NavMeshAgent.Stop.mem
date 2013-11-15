@@ -1,5 +1,7 @@
 <signature>
+Stop()
 Stop(bool)
 </signature>
-現在のパスに沿ってエージェントの動きを止める
-@param stopUpdates falseの場合、減速しながら停止を行う。デフォルトはfalse
+Stop movement of this agent along its current path.
+@param stopUpdates If true, the [[GameObject]] is stopped immediately and not affected by the avoidance system.
+If false, the [[NavMeshAgent]] controls the deceleration.

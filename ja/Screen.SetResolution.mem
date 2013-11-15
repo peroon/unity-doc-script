@@ -1,11 +1,12 @@
 <signature>
+SetResolution(int,int,bool)
 SetResolution(int,int,bool,int)
 </signature>
-画面の解像度を切り替える
+Switches the screen resolution.
 A /width/ by /height/ resolution will be used.
 If no matching resolution is supported, the closest one will be used.
 
-preferredRefreshRate引数を設定しない場合は0が設定され、自動的に最適なリフレッシュレートを設定します。
+If /preferredRefreshRate/ is 0 (default) Unity will switch to the highest refresh rate supported by the monitor.\\
 If /preferredRefreshRate/ is not 0 Unity will use it if the monitor supports it, otherwise will choose
 the highest supported one.
 
@@ -14,6 +15,8 @@ The recommended way of doing it is to switch resolutions only when the user clic
 
 On Android /fullscreen/ controls the SYSTEM_UI_FLAG_LOW_PROFILE flag to View.setSystemUiVisibility(), on
 devices running Honeycomb (OS 3.0 / API 11) or later.
+
+On Windows Store Apps, switching to non-native resolution is only supported starting from Windows 8.1 and newer.
 
 A resolution switch does not happen immediately; it will actually happen when the current frame is finished.
 CONVERTEXAMPLE

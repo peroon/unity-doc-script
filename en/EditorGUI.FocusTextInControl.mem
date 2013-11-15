@@ -1,0 +1,25 @@
+<signature>
+FocusTextInControl(string)
+</signature>
+Move keyboard focus to a named text field and begin editing of the content.
+In Editor GUI, text fields can have keyboard focus without the text being edited. For example you may switch focus between text fields or other controls by using the up and down arrow keys. Once you click inside the text field, editing of the text itself begins and the arrow keys are then used to navigate the text content. [[EditorGUI.FocusTextInControl]] is like [[GUI.FocusControl]] in that it gives keyboard focus to a control, but it also begins editing of the text itself.
+
+SA: [[GUI.SetNextControlName]], [[GUI.GetNameOfFocusedControl]].
+BEGIN EX
+	// When pressed the button, selects the "username" Textfield.
+	var username : String = "username";
+	var pwd : String = "a pwd";
+	function OnInspectorGUI () {
+		// Set the internal name of the textfield
+		GUI.SetNextControlName ("MyTextField");
+		
+		// Make the actual text field.
+		username = EditorGUI.TextField (Rect (10,10,100,20), username);
+		pwd = EditorGUI.TextField (Rect (10,40,100,20), pwd);
+
+		// If the user presses this button, keyboard focus will move.
+		if (GUI.Button (Rect (10,70,80,20), "Move Focus"))
+			EditorGUI.FocusTextInControl ("MyTextField");	
+	}
+END EX
+@param name Name set using [[GUI.SetNextControlName]].

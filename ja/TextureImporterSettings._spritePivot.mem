@@ -1,0 +1,4 @@
+<signature>
+spritePivot
+</signature>
+Pivot point of the Sprite relative to its graphic's rectangle.

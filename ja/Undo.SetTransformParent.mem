@@ -1,0 +1,5 @@
+<signature>
+SetTransformParent(Transform,Transform,string)
+</signature>
+Sets the parent of transform to the new parent and records an undo operation.
+This is equivalent to calling transform.parent = newParent, but it additionally records the undo operation.

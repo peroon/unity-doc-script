@@ -2,8 +2,11 @@
 DisplayDialog(string,string,string)
 DisplayDialog(string,string,string,string)
 </signature>
-2つボタンのあるダイアログを表示します
-戻り値として、OKを押すとtrue、キャンセルを押すとfalseを返します
+Displays a modal dialog.
+Use it for displaying message boxes in the editor.
+
+/ok/ and /cancel/ are labels to be displayed on the dialog buttons. If /cancel/ is empty (the default), then only
+one button is displayed. DisplayDialog returns /true/ if /ok/ button is pressed.
 
 SA: ::ref::DisplayDialogComplex function.
 
@@ -28,7 +31,7 @@ BEGIN EX
 				+ " on the surface?", "Place", "Do Not Place")) {
 				foreach (Transform transform in transforms) {
 					RaycastHit hit;
-					if (Physics.Raycast(transform.position, Vector3.down, out hit)) {
+					if (Physics.Raycast(transform.position, -Vector3.up, out hit)) {
 						transform.position = hit.point;
 						Vector3 randomized = Random.onUnitSphere;
 						randomized = new Vector3(randomized.x, 0F, randomized.z);
@@ -39,7 +42,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param title ダイアログウィンドウのタイトル
-@param message ダイアログに表示されるメッセージ
-@param ok OK（許可）ボタンに表示する文字列
-@param cancel キャンセルボタンに表示する文字列
+@param title The title of the message box.
+@param message The text of the message.
+@param ok Label displayed on the OK dialog button.
+@param cancel Label displayed on the Cancel dialog button.

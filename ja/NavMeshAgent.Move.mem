@@ -1,6 +1,6 @@
 <signature>
 Move(Vector3)
 </signature>
-現在の位置から相対的に移動する
-エージェントを移動させます。
-@param offset 現在の位置から相対的な位置を設定する
+Apply relative movement to current position.
+If the agent has a path it will be adjusted.
+@param offset The relative movement vector.

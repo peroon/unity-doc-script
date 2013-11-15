@@ -2,9 +2,9 @@
 PropertyToID(string)
 </signature>
 Gets unique identifier for a shader property name.
-Shader property identifiers are used by [[MaterialPropertyBlock]] functions.
+Using property identifiers is more efficient than passing strings to all material property functions. For example if you are calling Material.SetColor a lot, or using [[MaterialPropertyBlock]], then it is better to get the identifiers of the properties you need just once.
 
 Each name of shader property (for example, @@_MainTex@@ or @@_Color@@) is assigned an unique
-integer number in Unity, that stays the same for the whole game.
+integer number in Unity, that stays the same for the whole game. The numbers will not be the same between different runs of the game or between machines, so do not store them or send them over network.
 
-SA: [[MaterialPropertyBlock]].
+SA: [[Material]], [[MaterialPropertyBlock]].

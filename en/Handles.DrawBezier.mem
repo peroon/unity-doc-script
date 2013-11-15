@@ -17,7 +17,7 @@ BEGIN EX
 	    	Handles.DrawBezier(target.transform.position, 
     					Vector3.zero, 
     					Vector3.up, 
-    					Vector3.down,
+    					-Vector3.up,
     					Color.red, 
     					null,
     					width);

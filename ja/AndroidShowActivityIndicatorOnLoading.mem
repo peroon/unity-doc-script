@@ -1,2 +1,2 @@
-ロード時によく使われるインジケーターのスタイルを選択します
-SA: PlayerSettings.Android.showActivityIndicatorOnLoading
+Application should show ActivityIndicator when loading.
+SA: [[PlayerSettings.Android.showActivityIndicatorOnLoading]].

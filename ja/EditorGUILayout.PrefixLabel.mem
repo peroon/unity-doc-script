@@ -6,8 +6,14 @@ PrefixLabel(string,GUIStyle,GUIStyle)
 PrefixLabel(GUIContent,GUIStyle)
 PrefixLabel(GUIContent,GUIStyle,GUIStyle)
 </signature>
+Make a label in front of some control.
 {img SimplePrefixLabelUsage.png}\\
-各フィールドの前にラベルを表示するために使用されます
+''Simple window that shows the prefix label.''
+
+Note that most editor controls already have built-in optional labels that can be specified as one of the parameters. PrefixLabel can be used when there is no such built-in label available, or when you're creating your own editor control from scratch. 
+
+PrefixLabel also ensures that when the label is clicked, the linked control will get keyboard focus (if the control supports keyboard focus). The label is automatically linked to the following control coming after it.
+
 BEGIN EX
 	class SimplePrefixLabelUsage extends EditorWindow {
 
@@ -26,4 +32,4 @@ BEGIN EX
 		}
 	}
 END EX
-@param label 左側に表示する文字列、テクスチャ、ツールチップ
+@param label Label to show in front of the control.

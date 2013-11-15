@@ -1,1 +1,5 @@
-移動先
+<signature>
+destination
+</signature>
+Destination point for the agent to navigate towards.
+When the value of this property is set, the effect is much the same as using the ::ref::SetDestination function - a path will be plotted to the newly set destination and by default, the agent will start to move toward it. The destination point can also be read while the agent is moving.

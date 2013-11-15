@@ -1,0 +1,3 @@
+AnimationClip mask options for [[ModelImporterClipAnimation]].
+Mask can be used to specify which transforms animation should be imported when generating the clip.
+SA: ModelImporterClipAnimation.maskType.

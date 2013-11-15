@@ -1,0 +1,6 @@
+<signature>
+ApplyMaterialPropertyDrawers(Material)
+ApplyMaterialPropertyDrawers(Object[])
+</signature>
+Apply initial [[MaterialPropertyDrawer]] values.
+This calls all MaterialPropertyDrawer.Apply functions on all properties that have custom drawers.

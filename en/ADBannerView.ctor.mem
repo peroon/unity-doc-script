@@ -1,4 +1,5 @@
 <signature>
-ctor()
+ctor(Type,Layout)
 </signature>
-Creates a banner view.
+Creates a banner view with given type and auto-layout params.
+Please check if given type is available by calling ADBannerView.IsAvailable.

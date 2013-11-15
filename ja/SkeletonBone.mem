@@ -1,1 +1,1 @@
-このクラスはこのボーンにマッピングされた Transform の名前およびこのボーンのデフォルトの T 字型ポーズを格納します。
+Details of the Transform name mapped to a model's skeleton bone and its default position and rotation in the T-pose.

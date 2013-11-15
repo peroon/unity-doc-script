@@ -1,0 +1,5 @@
+<signature>
+RevertAllDownToGroup(int)
+</signature>
+Performs all undo operations up to the group index without storing a redo operation in the process.
+SA: Undo.GetCurrentGroup.

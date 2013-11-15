@@ -1,4 +1,1 @@
-<signature>
-name
-</signature>
-The name of the Procedural property. Used to get and set the values.
+The name of the ProceduralProperty. Used to get and set the values.

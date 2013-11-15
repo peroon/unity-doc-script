@@ -3,6 +3,7 @@ Call(string,object[])
 </signature>
 Calls a Java method on an object (non-static).
 To call a method with return type 'void', use the regular version.
+CONVERTEXAMPLE
 BEGIN EX
 	// Create a android.content.res.Configuration object and call setToDefaults.
 	function Start() {
@@ -17,6 +18,7 @@ Call<ReturnType>(string,object[])
 </signature>
 Call a Java method on an object.
 To call a Java method with a non-void return type, use the generic version.
+CONVERTEXAMPLE
 BEGIN EX
 	// Create a java.lang.String object holding the string "some string",
 	// and retrieve it's hash code.

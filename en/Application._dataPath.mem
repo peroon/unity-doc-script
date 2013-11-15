@@ -4,11 +4,16 @@ dataPath
 Contains the path to the game data folder (RO).
 The value depends on which platform you are running on:
 
-__Unity Editor:__ &lt;''path tp project folder''&gt;/Assets
-__Mac player:__ &lt;''path to player app bundle''&gt;/Contents
-__iPhone player:__ &lt;path to player app bundle&gt;/&lt;AppName.app&gt;/Data
-__Win player:__ &lt;''path to executablename_Data folder&gt;
+__Unity Editor:__ <''path to project folder''>/Assets
+
+__Mac player:__ <''path to player app bundle''>/Contents
+
+__iPhone player:__ <''path to player app bundle''>/<''AppName.app''>/Data
+
+__Win player:__ <''path to executablename_Data folder''>
+
 __Web player:__ The absolute url to the player data file folder (without the actual data file name)
+
 __Flash:__ The absolute url to the player data file folder (without the actual data file name)
 
 

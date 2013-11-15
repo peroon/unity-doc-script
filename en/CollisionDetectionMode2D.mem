@@ -1,0 +1,2 @@
+Options for the detection mode used by a Rigidbody2D.
+SA: Rigidbody2D::ref::collisionDetectionMode.

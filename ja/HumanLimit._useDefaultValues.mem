@@ -1,5 +1,5 @@
 <signature>
 useDefaultValues
 </signature>
-この限界値はデフォルト値を使用すべきか。
-他のメンバーをセットすると同時にこのメンバーを false とセットする必要があります。
+Should this limit use the default values?
+You should set useDefaultValues to false if you want to use your own limit values, otherwise the defaults will override your settings.

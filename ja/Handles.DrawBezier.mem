@@ -1,15 +1,14 @@
 <signature>
 DrawBezier(Vector3,Vector3,Vector3,Vector3,Color,Texture2D,float)
 </signature>
-ベジエ曲線を描画します
-開始するポイント・接線、終了するポイント・接線を設定して描画を行います
-またアンチエイリアスをかけることが出来ます
-デフォルトでは、透明に近い白色のピクセルカラーと不透明な白色のピクセルカラーの1×2のテクスチャを用意して取得しています
+Draw textured bezier line through start and end points with the given tangents.  To get an anti-aliased effect use a texture that is 1x2 pixels with one transparent white pixel and one opaque white pixel.  The bezier curve will be swept using this texture.
+__Note:__ Use HandleUtility.GetHandleSize where you might want to have constant screen-sized handles.
 
 {img DrawBezier.png}\\
+''Bezier Line in the Scene View.''
 BEGIN EX
 	// Draws a red bezier curve from (0,0,0) to the transform's position
-
+	
 	@CustomEditor (BezierScript)
 	class DrawBezierHandle extends Editor {
 		
@@ -18,7 +17,7 @@ BEGIN EX
 	    	Handles.DrawBezier(target.transform.position, 
     					Vector3.zero, 
     					Vector3.up, 
-    					Vector3.down,
+    					-Vector3.up,
     					Color.red, 
     					null,
     					width);
@@ -28,6 +27,6 @@ END EX
 And the script attached to this Handle:
 BEGIN EX
 	//BezierScript.js
-
+	
 	Debug.Log("I have a bezier curve handle attached!");
 END EX

@@ -2,4 +2,4 @@
 ToBooleanArray(bool[])
 </signature>
 Convert a managed array of System.Boolean to a Java array of <tt>boolean</tt>.
-SA: AndroidJNI.NewBooleanArray, AndroidJNI.SetBooleanArrayElement.
+SA: [[AndroidJNI.NewBooleanArray]], [[AndroidJNI.SetBooleanArrayElement]].

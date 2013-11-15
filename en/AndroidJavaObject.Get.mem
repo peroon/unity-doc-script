@@ -3,6 +3,7 @@ Get<FieldType>(string)
 </signature>
 Get the value of a field in an object (non-static).
 The generic parameter determines the field type.
+CONVERTEXAMPLE
 BEGIN EX
 	// Create a android.os.Message object, and retrieve the default value of the field 'what'.
 	function Start() {

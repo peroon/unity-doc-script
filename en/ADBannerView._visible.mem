@@ -1,4 +1,20 @@
 <signature>
 visible
 </signature>
-Is the banner view visible? (RO)
+Banner visibility. Initially banner is not visible.
+Please note that if you hide banner, ads might not be reloaded with time, so if you no longer need banner it is better to delete it completely.
+BEGIN EX
+void OnBannerClicked()
+{
+	Debug.Log("Clicked!\n");
+	banner.visible = false;
+	banner = null;
+}
+END EX
+BEGIN EX
+void OnBannerLoaded()
+{
+	Debug.Log("Loaded!\n");
+	banner.visible = true;
+}
+END EX

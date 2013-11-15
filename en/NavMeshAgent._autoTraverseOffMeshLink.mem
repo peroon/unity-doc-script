@@ -1,1 +1,7 @@
-Automate movement onto and off of OffMeshLinks.
+<signature>
+autoTraverseOffMeshLink
+</signature>
+Should the agent move via OffMeshLinks automatically?
+Off-mesh links are used to connect disjoint regions of the NavMesh. Usually, a character should be able to pass through or ''traverse'' a link automatically, which will happen if this property is set to true. However, it can also be set to false in cases where a link represents a door or other obstacle that a character needs "permission" to cross.
+
+SA: CompleteOffMeshLink.

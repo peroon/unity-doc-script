@@ -1,5 +1,6 @@
 <signature>
 SetTexture(string,Texture)
+SetTexture(int,Texture)
 </signature>
 Set a named texture.
 Many shaders use more than one texture. Use SetTexture to change the /propertyName/ texture.
@@ -9,7 +10,7 @@ Common texture names used by Unity's builtin shaders: \\
 @@"_BumpMap"@@ is the normal map. \\
 @@"_Cube"@@ is the reflection cubemap.
 
-SA: ::ref::mainTexture property, ::ref::GetTexture.
+SA: ::ref::mainTexture property, ::ref::GetTexture, Shader.PropertyToID.
 CONVERTEXAMPLE
 BEGIN EX
 	var bumpMap : Texture;

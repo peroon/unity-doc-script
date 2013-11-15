@@ -4,28 +4,28 @@ OnAnimatorIK(int)
 <txttag>
 CSNONE
 </txttag>
-アニメーション IK をセットアップするコールバック（インバース キネマティクス）。
-アニメータ コンポーネントにより OnAnimatorIK() が内部的な IK システムの呼び出し前のタイミングで呼び出しされます。
-  
-IK ゴールおよび関連するウェイトの位置をセットアップためにこのコールバックを使用すべきです。.\\
+Callback for setting up animation IK (inverse kinematics).
+OnAnimatorIK() is called by the Animator Component immediately before it updates its internal IK system. This callback can be used to set the positions of the IK goals and their respective weights.
+CONVERTEXAMPLE
 BEGIN EX
-		using UnityEngine;
-		using System;
-		[RequireComponent(typeof(Animator))]  
-		public class Example: MonoBehaviour {
-			protected Animator animator; 
-			void Start () 
-			{
-				animator = GetComponent<Animator>();
-			}
-			
-			void OnAnimatorIK(int layerIndex)
-			{
-				animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot,leftFootWeightPosition);
-				animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot,leftFootWeightRotation);     
-				animator.SetIKPosition(AvatarIKGoal.LeftFoot,leftFootObj.position);                    
-				animator.SetIKRotation(AvatarIKGoal.LeftFoot,leftFootObj.rotation);
-			}
-		}
+var leftFootPositionWeight: float;
+var leftFootRotationWeight: float;
+var leftFootObj: Transform;
+
+private var animator: Animator;
+
+
+function Start() {
+	animator = GetComponent.<Animator>();
+}
+
+
+function OnAnimatorIK(layerIndex: int) {
+	animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot,leftFootPositionWeight);
+	animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot,leftFootRotationWeight);     
+	animator.SetIKPosition(AvatarIKGoal.LeftFoot,leftFootObj.position);                    
+	animator.SetIKRotation(AvatarIKGoal.LeftFoot,leftFootObj.rotation);
+}
 END EX
+SA: Animator::ref::SetIKPosition, Animator::ref::SetIKPositionWeight, Animator::ref::SetIKRotation, Animator::ref::SetIKRotationWeight.
 @param layerIndex The index of the layer on which the IK solver is called.

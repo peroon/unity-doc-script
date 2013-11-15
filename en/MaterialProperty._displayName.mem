@@ -1,0 +1,7 @@
+<signature>
+displayName
+</signature>
+Display name of the property (RO).
+This is the user-visible property name, for example "Main Texture" that is declared in the shader's Properties block.
+
+SA: ::ref::name.

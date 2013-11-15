@@ -1,5 +1,6 @@
 <signature>
 Vector3Field(Rect,string,Vector3)
+Vector3Field(Rect,GUIContent,Vector3)
 </signature>
 Make an X, Y & Z field for entering a [[Vector3]].
 {img EditorGUIVector3Field.png}\\

@@ -1,0 +1,5 @@
+<signature>
+Exists(string)
+</signature>
+Determines whether the given path refers to an existing directory.
+@param path The path to test.

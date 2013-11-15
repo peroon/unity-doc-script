@@ -1,9 +1,14 @@
 <signature>
-Load(string)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 Loads an asset stored at /path/ in a Resources folder.
 Returns the asset at /path/ if it can be found otherwise returns null.
 The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
+
+__Note:__\\
+__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
 CONVERTEXAMPLE
 BEGIN EX
 	// Assigns a texture named "Assets/Resources/glass" to a Plane.
@@ -23,12 +28,16 @@ BEGIN EX
 	}
 END EX
 <signature>
+Load(string)
 Load(string,Type)
 </signature>
 Loads an asset stored at /path/ in a Resources folder.
 Returns the asset at /path/ if it can be found otherwise returns null.
-Only objects of /type/ will be returned.
+Only objects of /type/ will be returned if this parameter is supplied.
 The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
+
+__Note:__\\
+__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
 CONVERTEXAMPLE
 BEGIN EX
 	// Assigns a texture named "glass" to a Plane.
@@ -47,3 +56,34 @@ BEGIN EX
 		var instance : GameObject = Instantiate(Resources.Load("enemy", GameObject));
 	}
 END EX
+@param path Pathname of the target folder.
+@param systemTypeInstance Type filter for objects returned.
+<signature>
+Load<T>(string)
+</signature>
+Loads an asset stored at /path/ in a Resources folder.
+Returns the asset at /path/ if it can be found otherwise returns null.
+Only objects of type /T/ will be returned.
+The /path/ is relative to any Resources folder inside the Assets folder of your project, extensions must be omitted.
+
+__Note:__\\
+__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
+CONVERTEXAMPLE
+BEGIN EX
+	// Assigns a texture named "glass" to a Plane.
+
+	function Start () {
+		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
+		go.renderer.material.mainTexture = Resources.Load.<Texture2D>("glass");
+	}
+END EX
+CONVERTEXAMPLE
+BEGIN EX
+	// Instantiates a prefab named "enemy" located in any Resources
+	// folder in your project's Assets folder.
+
+	function Start () {
+		var instance = Instantiate(Resources.Load.<GameObject>("enemy"));
+	}
+END EX
+@param path Pathname of the target folder.

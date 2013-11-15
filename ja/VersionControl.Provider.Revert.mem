@@ -1,0 +1,9 @@
+<signature>
+Revert(AssetList,RevertMode)
+Revert(Asset,RevertMode)
+</signature>
+Reverts the specified assets by undoing any changes done since last time you synced.
+The last sync time is usually when Provider.GetLatest() was last issued but may be something else if an external version control client is used at the same time.
+@param assets The list of assets to be reverted.
+@param mode How to revert the assets.
+@param asset The asset to be reverted.

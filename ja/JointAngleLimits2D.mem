@@ -1,0 +1,2 @@
+Angular limits on the rotation of a Rigidbody2D object around a HingeJoint2D.
+SA: [[Rigidbody2D]] class, [[HingeJoint2D]] class.

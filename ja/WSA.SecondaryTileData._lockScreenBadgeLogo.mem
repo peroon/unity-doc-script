@@ -1,0 +1,2 @@
+Uri to logo, shown for secondary tile on lock screen.
+Only used if lockScreenDisplayBadgeAndTileText is true.

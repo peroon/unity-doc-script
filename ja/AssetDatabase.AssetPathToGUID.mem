@@ -1,4 +1,6 @@
 <signature>
 AssetPathToGUID(string)
 </signature>
-アセットのパスからGUIDを生成します
+Get the GUID for the asset at /path/.
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
+@param path Filesystem path for the asset.

@@ -1,0 +1,1 @@
+MediaState enumeration specifies all three possible values of media playback state: stopped, playing and paused.

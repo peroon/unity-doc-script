@@ -1,8 +1,32 @@
 <signature>
 Raycast(Ray,float)
 </signature>
-飛ばしたレイが平面にヒットした際にtrueを返します。
+Intersects a ray with the plane.
 This function sets /enter/ to the distance along the ray, where it intersects the plane.
 If the ray is parallel to the plane, function returns /false/ and sets /enter/ to zero.
 If the ray is pointing in the opposite direction than the plane, function returns /false/ 
 and sets /enter/ to the distance along the ray (negative value).
+CONVERTEXAMPLE
+BEGIN EX
+// Position a marker object at the point on the "ground" where the
+// mouse is clicked. The ground is represented by a Plane object.
+var groundPlane: Plane;
+var markerObject: Transform;
+
+function Update() {
+	// If the mouse button is clicked...
+	if (Input.GetMouseButtonDown(0)) {
+		// Get a ray corresponding to the screen position of the mouse.
+		var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		var rayDistance: float;
+		
+		// If the ray makes contact with the ground plane then
+		// position the marker at the distance along the ray where it
+		// crosses the plane.
+		if (groundPlane.Raycast(ray, rayDistance)) {
+			markerObject.position = ray.GetPoint(rayDistance);
+		}
+	}
+}
+END EX
+SA: Physics::ref::Raycast.

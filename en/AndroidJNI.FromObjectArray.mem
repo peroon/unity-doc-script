@@ -2,4 +2,4 @@
 FromObjectArray(IntPtr)
 </signature>
 Convert a Java array of <tt>java.lang.Object</tt> to a managed array of System.IntPtr, representing Java objects.
-SA: AndroidJNI.GetObjectArrayElement, AndroidJNI.GetArrayLength.
+SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]].

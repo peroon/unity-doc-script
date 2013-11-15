@@ -1,2 +1,2 @@
-何も変更を加えません
-SA: EditorUserBuildSettings.androidBuildSubtarget.
+Don't override texture compression.
+SA: [[EditorUserBuildSettings.androidBuildSubtarget]].

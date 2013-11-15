@@ -1,0 +1,15 @@
+<signature>
+OnTriggerStay2D(Collider2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent each frame where another object is within a trigger collider attached to this object (2D physics only).
+Further information about the other collider is reported in the Collider2D parameter passed during the call.
+
+SA: [[Collider2D]] class, ::ref::OnTriggerEnter2D, ::ref::OnTriggerExit2D.
+BEGIN EX
+function OnTriggerStay2D(other: Collider2D) {
+	other.attachedRigidbody.AddForce(-0.1 * other.attachedRigidbody.velocity);
+}
+END EX

@@ -1,4 +1,7 @@
 <signature>
 isOnOffMeshLink
 </signature>
-Is agent currently positioned on an OffMeshLink. (RO)
+Is the agent currently positioned on an OffMeshLink? (RO)
+This property is used when ::ref::autoTraverseOffMeshLink is false and the script is making its own decision about letting the agent cross the link.
+
+See ::ref::CompleteOffMeshLInk for an example that uses this property to allow only certain agents to cross a link.

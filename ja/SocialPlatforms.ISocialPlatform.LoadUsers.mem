@@ -1,0 +1,4 @@
+<signature>
+LoadUsers(string[],Action<IUserProfile[]>)
+</signature>
+See [[Social.LoadUsers]].

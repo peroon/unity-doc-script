@@ -1,0 +1,14 @@
+<signature>
+ToggleLeft(string,bool,GUILayoutOption[])
+ToggleLeft(GUIContent,bool,GUILayoutOption[])
+ToggleLeft(string,bool,GUIStyle,GUILayoutOption[])
+ToggleLeft(GUIContent,bool,GUIStyle,GUILayoutOption[])
+</signature>
+Make a toggle field where the toggle is to the left and the label immediately to the right of it.
+[[EditorGUILayout.ToggleLeft]] is similar to [[GUILayout.Toggle]] but respects the [[EditorGUI.showMixedValue]] property and handles keyboard focus consistent with other Editor controls.
+@param label Label to display next to the toggle.
+@param value The value to edit.
+@param labelStyle Optional [[GUIStyle]] to use for the label.
+@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.<br>
+SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
+GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.

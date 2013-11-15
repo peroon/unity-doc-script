@@ -1,23 +1,14 @@
 <signature>
 BoneName
 </signature>
-List of all the know human bone.
+Array of the names of all human bone types defined by Mecanim.
+CONVERTEXAMPLE
 BEGIN EX
-// C# example
-using UnityEngine;
-using UnityEditor;
-
-public class PrintBoneName : MonoBehaviour
-{
-	[MenuItem("Mecanim/PrintBoneName")]
-	public static void DoPrintBoneName()
-	{
-		string[] boneName = HumanTrait.BoneName;
-		for(int i=0;i<HumanTrait.BoneCount;++i)
-		{
-			Debug.Log(boneName[i]);
-		}
+function Start() {
+	var boneName: String[] = HumanTrait.BoneName;
+	
+	for (var i = 0; i < HumanTrait.BoneCount; i++) {
+		Debug.Log(boneName[i]);
 	}
-
 }
 END EX

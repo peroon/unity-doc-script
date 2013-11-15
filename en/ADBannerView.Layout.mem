@@ -1,0 +1,5 @@
+Specifies how banner should be layed out on screen.
+Please note that Traditional Banner and Rect Banner (introduced in ios6) use different enum values.
+If you use "wrong" enum value for current ad type:
+for Traditional Banner Top* and Center* will be considered Top, and Bottom* will be considered Bottom*
+for Rect Banner Top will be considered TopLeft and Bottom - BottomLeft.

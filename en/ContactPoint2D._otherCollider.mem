@@ -1,0 +1,4 @@
+<signature>
+otherCollider
+</signature>
+The incoming collider involved in the collision at this contact point.

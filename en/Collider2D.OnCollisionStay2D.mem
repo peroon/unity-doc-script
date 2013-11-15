@@ -1,0 +1,20 @@
+<signature>
+OnCollisionStay2D(Collision2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent each frame where a collider on another object is touching this object's collider (2D physics only).
+Further information about the objects involved is reported in the Collision2D parameter passed during the call.
+
+SA: [[Collision2D]] class, ::ref::OnCollisionEnter2D, ::ref::OnCollisionExit2D.
+CONVERTEXAMPLE
+BEGIN EX
+var rechargeRate = 10.0;
+var batteryLevel: float;
+
+function OnCollisionStay2D(coll: Collision2D) {
+	if (coll.gameObject.tag == "RechargePoint")
+		batteryLevel = Mathf.Min(batteryLevel + rechargeRate * Time.deltaTime, 100.0);
+}
+END EX

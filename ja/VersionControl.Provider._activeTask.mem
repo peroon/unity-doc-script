@@ -1,0 +1,4 @@
+<signature>
+activeTask
+</signature>
+Gets the currently executing task.

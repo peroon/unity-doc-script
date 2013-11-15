@@ -1,0 +1,7 @@
+<signature>
+InvokeOnAppThread(AppCallbackItem,bool)
+</signature>
+Executes callback item on application thread.
+More information on UI and application threads can be found [wiki:man:windowsstore-appcallbacks|here]].
+@param item Item to execute.
+@param waitUntilDone Wait until item is executed.

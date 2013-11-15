@@ -1,18 +1,19 @@
 <signature>
 Vector3Field(Rect,string,Vector3)
+Vector3Field(Rect,GUIContent,Vector3)
 </signature>
+Make an X, Y & Z field for entering a [[Vector3]].
 {img EditorGUIVector3Field.png}\\
-Vector3型のフィールドを作成します
-X,Y,Zのラベル部分をドラッグして数値を変動させることも出来ます
+''Vector3 field in an Editor Window.''
 BEGIN EX
 	// Editor window that shows the detailed rotation (X,Y,Z and W components), 
 	// the position in 3D space and position in Screen space of the selected 
 	// transform.
-
+	
 	class CustomTransformInspector extends EditorWindow {
 		var showing : boolean = true;
 		var rotationComp : Vector4;
-
+	
 		@MenuItem("Examples/GameObject detailed inspector")
 		static function Init() {
 			var window = GetWindow(CustomTransformInspector);
@@ -60,7 +61,7 @@ BEGIN EX
 		}	
 	}
 END EX
-@param position 表示位置
-@param label 左側に表示する文字列
-@param value 現在値
-@return ユーザにより入力された値。
+@param position Rectangle on the screen to use for the field.
+@param label Label to display above the field.
+@param value The value to edit.
+@return The value entered by the user.

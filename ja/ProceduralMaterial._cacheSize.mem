@@ -1,4 +1,4 @@
 <signature>
 cacheSize
 </signature>
-キャッシュバジェットを設定／取得する
+Set or get the Procedural cache budget.

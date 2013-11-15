@@ -1,17 +1,28 @@
-直前に行ったオブジェクト操作を取り消し、元に戻す動作を実装するさに使用されるクラスです
+Lets you register undo operations on specific objects you are about to perform changes on.
+The Undo system stores delta changes in the undo stack. Undo operations are automatically combined together based on events Eg. mouse down events will split undo groups.
 
-UnityでのUndo処理は、1つ前のオブジェクト状態を保存することによって実現されています
-これはバックアップを取ることに似ています
+Undo operations store either per property or per object state. This way they scale well with any scene size.
+The most important operations are outlined below.
 
-Editor拡張でUndo処理を実現させるには、RegisterUndo関数やRegisterSceneUndo関数でオブジェクト・シーンの登録を行う必要があります
-PerformUndo関数とPerformRedo関数の実装は、独自にUIを実装しない限りお勧めしません
-出来るだけ標準のUndo・Redoを使用するようにして下さい
-
-1つ/複数のオブジェクトを登録する場合はRegisterUndo関数、シーン内すべてのオブジェクトを登録する場合はRegisterSceneUndo関数を使用します
-RegisterSceneUndo関数はメモリ使用量が多くなりますが、すべての状態を丸ごと登録することが出来ます
-また、オブジェクトを生成/破壊する作業が必要になります
-
-シーンビュー内でのドラッグのような操作で変更された値は微増なことが多く、このUndo処理をRegisterUndo関数で実装することはお勧めしません。
-また、「ユーザーがキャンセルを行う操作」が存在する場合はSnapshotを使用します。
-Snapshotを使用せずにRegisterUndoで実装は可能ですがキャンセルのための処理をUndoに登録するべきではありません。
-
+__Modifying a single property:__
+BEGIN EX NOCHECK
+Undo.RecordObject (myGameObject.light, "Set Light Range");
+myGameObject.light.range = 5;
+END EX
+__Adding a component :__
+BEGIN EX
+Undo.AddComponent<RigidBody> (myGameObject);
+END EX
+__Creating a new game object:__
+BEGIN EX NOCHECK
+var go = new GameObject ();
+Undo.RegisterCreatedObjectUndo (go, "Created go");
+END EX
+__Destroying a game object or component:__
+BEGIN EX NOCHECK
+Undo.DestroyObjectImmediate (myGameObject);
+END EX
+__Changing transform parenting:__
+BEGIN EX NOCHECK
+Undo.SetTransformParent (myGameObject.transform, newTransformParent);
+END EX

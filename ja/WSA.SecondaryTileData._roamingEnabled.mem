@@ -1,0 +1,3 @@
+Defines whether secondary tile is copied to another device when application is installed by the same users account.
+Note: when true on Windows 8 this sets CopyOnDeployment tile option.
+Defaults to true (matches the Windows 8.1 default).

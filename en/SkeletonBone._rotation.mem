@@ -1,2 +1,1 @@
-Default T-pose rotation for this bone.
-Should be set in local space.
+The T-pose rotation of the bone in local space.

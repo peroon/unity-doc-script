@@ -1,0 +1,5 @@
+<signature>
+rank
+</signature>
+The rank or position of the score in the leaderboard. 
+Only valid when the score is retreived from a server.

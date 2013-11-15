@@ -1,0 +1,5 @@
+<signature>
+edgeCount
+</signature>
+Gets the number of edges.
+This is one less than the number of points.

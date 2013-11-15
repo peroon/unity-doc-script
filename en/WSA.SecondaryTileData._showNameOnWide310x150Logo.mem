@@ -1,0 +1,2 @@
+Defines whether the displayName should be shown on a wide secondary tile.
+Defaults to false.

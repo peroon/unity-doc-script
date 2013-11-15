@@ -1,0 +1,7 @@
+<signature>
+GetCurrentGroup()
+</signature>
+Unity automatically groups undo operations by the current group index.
+The current group index is automatically increased on mouse down, clicking on menu items and other operations.
+
+SA: Undo.RevertAllDownToGroup.

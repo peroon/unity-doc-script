@@ -1,0 +1,2 @@
+Parent class for collider types used with 2D gameplay.
+SA: [[BoxCollider2D]] class, [[CircleCollider2D]] class, [[PolygonCollider2D]] class.

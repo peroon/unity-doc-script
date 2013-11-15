@@ -1,0 +1,3 @@
+Whether secondary tile is pinned to start screen.
+When hasUserConsent is /true/, this property determines, whether tile is present on start screen.
+Always true for the main tile.

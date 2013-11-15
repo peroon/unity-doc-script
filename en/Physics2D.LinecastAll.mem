@@ -1,0 +1,20 @@
+<signature>
+LinecastAll(Vector2,Vector2,int,float,float)
+</signature>
+Casts a line against colliders in the scene.
+A ''linecast'' is an imaginary line between two points in world space. Any object making contact with the beam can be detected and reported.
+
+This function is similar to the ::ref::Linecast function except that all colliders that are in contact with the line are reported. The line is assumed to run from its start point to its end point; colliders will be placed in the returned array in order of distance from the start of the line.
+
+Linecasts are useful for determining lines of sight, targets hit by gunfire and for many other purposes in gameplay.
+
+Note that this function will allocate memory for the returned RaycastHit2D array. You can use ::ref::LinecastNonAlloc to avoid this overhead if you need to make linecasts frequently.
+
+Additionally, this will also detect Collider(s) at the start of the line.  In this case the line is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the line vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+
+SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::Linecast, ::ref::LinecastNonAlloc, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
+@param start The start point of the line in world space.
+@param end The end point of the line in world space.
+@param layerMask Filter to detect Colliders only on certain layers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.

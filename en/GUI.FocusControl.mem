@@ -3,6 +3,8 @@ FocusControl(string)
 </signature>
 Move keyboard focus to a named control.
 SA: ::ref::SetNextControlName, ::ref::GetNameOfFocusedControl.
+
+For focusing text in Editor GUI text fields, see [[EditorGUI.FocusTextInControl]].
 CONVERTEXAMPLE
 BEGIN EX
 	// When pressed the button, selects the "username" Textfield.
@@ -21,3 +23,4 @@ BEGIN EX
 			GUI.FocusControl ("MyTextField");	
 	}
 END EX
+@param name Name set using ::ref::SetNextControlName.

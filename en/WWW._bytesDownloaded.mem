@@ -1,0 +1,5 @@
+<signature>
+bytesDownloaded
+</signature>
+The number of bytes downloaded by this WWW query (read only).
+Returns the number of bytes downloaded when fetching content from a WWW source.

@@ -6,4 +6,4 @@ __Note:__ The checkbox for disabling a MonoBehavior (on the editor) will only
 prevent Start(), Awake(), Update(), FixedUpdate(), and OnGUI() from executing. 
 If none of these functions are present, the checkbox is not displayed.
 
-SA: The [[wiki:Scripting|chapter on scripting]] in the manual.
+SA: The [[wiki:Scripting42|chapter on scripting]] in the manual.

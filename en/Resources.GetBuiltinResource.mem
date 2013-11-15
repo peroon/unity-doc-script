@@ -4,3 +4,10 @@ GetBuiltinResource(Type,string)
 <txttag>
 UNDOC
 </txttag>
+<signature>
+GetBuiltinResource<T>(string)
+</signature>
+<txttag>
+UNDOC
+</txttag>
+TODO.

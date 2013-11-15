@@ -1,7 +1,7 @@
 <signature>
 SetProceduralBoolean(string,bool)
 </signature>
-プロパティ名を指定してBoolean型のプロパティを設定する
-Used for Procedural properties of type Boolean.
+Set a named Procedural boolean property.
+Used for ProceduralProperties of type Boolean.
 
 SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralBoolean.

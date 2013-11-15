@@ -1,10 +1,10 @@
 <signature>
 SetDestination(Vector3)
 </signature>
-移動先のパスを設定します。既に移動先が設定されていた場合、破棄されます。
+Sets or updates the destination thus triggering the calculation for a new path.
 Note that the path may not become available until after a few frames later.
 While the path is being computed, ::ref::pathPending will be true.
-If a valid path becomes available - the agent will resume movement.
+If a valid path becomes available then the agent will resume movement.
 CONVERTEXAMPLE
 BEGIN EX
 // Script to move a NavMeshAgent to the place where
@@ -30,3 +30,4 @@ BEGIN EX
 		}
 	}
 END EX
+@param target The target point to navigate to.

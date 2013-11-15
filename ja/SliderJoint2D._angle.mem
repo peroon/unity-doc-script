@@ -1,0 +1,7 @@
+<signature>
+angle
+</signature>
+The angle of the line in space.
+The line along which the joint can slide is specified by its angle (relative to the coordinate system) and optionally by endpoint limits along its length.
+
+SA: ::ref::limits.

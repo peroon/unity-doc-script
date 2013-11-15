@@ -1,0 +1,13 @@
+<signature>
+Update(string)
+Update(string,string,string,string)
+</signature>
+Send a notification for tile (update tiles look).
+A tile is updated by providing and XML document with new look.
+The second version is a convenience method to make tile display image, text or both. At least one of medium and text argumets must be provided, and these two are used to determine whether this is image-only, text-only or image-and-text tile.
+Uris ms-appx:/// and ms-appdata:///local/ can be used to access local application resources. If uri points to network resource, internet access capability must be enabled in applications manifest.
+@param xml A string containing XML document for new tile look.
+@param medium An /uri/ to 150x150 image, shown on medium tile.
+@param wide An /uri/ to a 310x150 image to be shown on a wide tile (if such issupported).
+@param large An /uri/ to a 310x310 image to be shown on a large tile (if such is supported).
+@param text A text to shown on a tile.

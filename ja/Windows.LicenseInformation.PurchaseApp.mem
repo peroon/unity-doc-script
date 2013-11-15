@@ -1,0 +1,22 @@
+<signature>
+PurchaseApp()
+</signature>
+Attempts to purchase the app if it is in installed in trial mode. This API is supported only on Windows Phone 8 and Windows Store Apps.
+Behaviour on Windows Phone 8:
+Redirects the user to application page on the Store. Returns an empty string. You can use ::ref::isOnAppTrial afterwards to find out whether the user bought the application.
+
+Behaviour on Windows Store Apps:
+Pops up a dialog for a user asking whether he wants to buy the application. If use buys an app, returns a valid purchase receipt string. Otherwise, returns an empty string.
+CONVERTEXAMPLE
+BEGIN EX
+var m_Receipt : string;
+function OnGUI () {
+	if (LicenseInformation.isOnAppTrial) {
+		if (GUI.Button (Rect (10, 10, 100, 40), "Buy full version")) {
+			m_Receipt = LicenseInformation.PurchaseApp ();
+		}
+	} else {
+		GUI.Label (Rect (10, 10, 100, 40), "You have full application version installed");
+	}
+}
+END EX

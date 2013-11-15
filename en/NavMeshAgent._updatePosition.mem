@@ -1,1 +1,4 @@
-Should the agent update the transform position.
+<signature>
+updatePosition
+</signature>
+Should the agent update the transform position?

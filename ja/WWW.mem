@@ -1,38 +1,42 @@
-Webページにアクセスできます。
-URL のコンテンツを取得するために使用できる簡単なユーティリティのモジュールです。
+Simple access to web pages.
+This is a small utility module for retrieving the contents of URLs.
 
-WWWオブジェクトにURLをセットすることによって、ゲ
-ームの裏側でデータのダウンロードを行います。
+You start a download in the background by calling @@WWW(url)@@ which returns a new WWW object.
 
-/isDone/ プロパティを確認して、ダウンロードが完了しているか、またはダウンロードする
-オブジェクトを自動的に完了するまで yield により待機させることが出来ます（ゲームの残りをブロックすることなく）。
+You can inspect the /isDone/ property to see if the download has completed or yield
+the download object to automatically wait until it is (without blocking the rest of the game).
 
-ウェブサーバから何らかのデータを取得することおで、ハイスコア取得したり何かの理由で自宅へ電話する、といったゲームの統合機能が必要な場合に
-使用します。さらにウェブからダウロードした画像イメージからテクスチャを作成して新規のウェブプレイヤーデータを
-ストリーミングおよびロードする機能もあります。
+Use it if you want to get some data from a web server for integration with a game
+such as highscore lists or calling home for some reason. There is also functionality
+to create textures from images downloaded from the web and to stream & load new web
+player data files.
 
-WWW クラスは GET および POST 両方のリクエストをサーバに送信するのに使用できます。 WWW クラスはデフォルトで GET
-を使用し、postData 引数を提供した場合は POST を使用します。
+The WWW class can be used to send both GET and POST requests to the server. The WWW class will use GET
+by default and POST if you supply a postData parameter.
 
-SA: postData 引数のデータから有効なフォームデータを作成する方法について [[WWWForm]] を参照
+SA: [[WWWForm]] for a way to build valid form data for the postData parameter.
 
-__''注意:''__ __http://__, __https://__ および __file://__ が iPhone の場合サポートされています。
-__ftp://__ プロトコルのサポートは匿名ダウンロードに限定されています。他のプロトコルはサポートされていません。
+__''Note:''__ URLs passed to WWW class must be '%' escaped.
 
-__''注意:''__ ウェブプレイヤー ビルドでのセキュリティ サンドボックスによりウェブプレイヤーがホストされているサーバに
-ホストされてないコンテンツへのアクセスを防止します。
+__''Note:''__ __http://__, __https://__ and __file://__ protocols are supported on iPhone.
+__ftp://__ protocol support is limited to anonymous downloads only. Other protocols are not supported.
+
+__''Note:'' When using file protocol on Windows and Windows Store Apps for accessing local files, you have to specify __file:///__ (with three slashes).
+
+__''Note:''__ The security sandbox present in web-player builds prevents you from accessing content
+not hosted the server where the webplayer is hosted.
 CONVERTEXAMPLE
 BEGIN EX
-// タイムズスクエアの "Friday's" の外観の最新のウェブカムショットを取得
+// Get the latest webcam shot from outside "Friday's" in Times Square
 var url = "http://images.earthcam.com/ec_metros/ourcams/fridays.jpg";
 function Start () {
-	 // 指定された URL のダウンロードを開始
+	 // Start a download of the given URL
 	var www : WWW = new WWW (url);
 
-	// ダウンロード完了を待機
+	// Wait for download to complete
 	yield www;
 
-	// テクスチャを割り当て
+	// assign texture
 	renderer.material.mainTexture = www.texture;
 }
 END EX

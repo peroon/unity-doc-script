@@ -2,4 +2,4 @@
 deviceUniqueIdentifier
 </signature>
 A unique device identifier. It is guaranteed to be unique for every device (RO).
-On iOS devices this does not call into any iOS API.
+iOS: on pre-iOS7 devices it will return hash of MAC address. On iOS7 devices it will be UIDevice identifierForVendor or, if that fails for any reason, ASIdentifierManager advertisingIdentifier.

@@ -1,8 +1,8 @@
 <signature>
 error
 </signature>
-ダウンロードでエラーが出た場合、エラーメッセージを返す（読み取り専用）
-If there was no error, /error/ will return /null/.
+Returns an error message if there was an error during the download (RO).
+If there was no error, /error/ will return /null/ or an empty string (this is because some platforms don't allow nulls for string values). We recommend that you use String.IsNullOrEmpty to check for the presence of an error so that both cases are covered.
 
 If the object has not finished downloading the data, it will block until the download has finished.
 Use ::ref::isDone or /yield/ to see if the data is available.

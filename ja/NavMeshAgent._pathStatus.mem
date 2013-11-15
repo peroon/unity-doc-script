@@ -1,1 +1,4 @@
-現在のパスの状態。終了、到達不可、無効などの状態を返す
+<signature>
+pathStatus
+</signature>
+The status of the current path (complete, partial or invalid).

@@ -1,5 +1,6 @@
 <signature>
 SetTargetBuffers(RenderBuffer,RenderBuffer)
+SetTargetBuffers(RenderBuffer[],RenderBuffer)
 </signature>
 Sets the Camera to render to the chosen buffers of one or more RenderTextures.
 SA: [[RenderBuffer]], [[RenderTexture]].

@@ -1,1 +1,5 @@
-Obstacle height.
+<signature>
+height
+</signature>
+Height of the obstacle's cylinder shape.
+SA: ::ref::radius.

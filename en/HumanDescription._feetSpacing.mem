@@ -1,7 +1,5 @@
 <signature>
 feetSpacing
 </signature>
-Additionnal offset used when mecanim stabilize feet.
-Default value is 0.
-
-This offset could be used to avoid mesh interpenetration when your avatar have big foot.
+Modification to the minimum distance between the feet of a humanoid model.
+When a humanoid model has unusually large feet (a cartoon-like character, say) the meshes for the feet can sometimes interpenetrate during IK movement. The default value for /feetSpacing/ is zero, but using a larger value will increase the minimum distance that is maintained between the feet and avoid interpenetration.

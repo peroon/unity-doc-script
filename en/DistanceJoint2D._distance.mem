@@ -1,0 +1,5 @@
+<signature>
+distance
+</signature>
+The distance separating the two ends of the joint.
+SA: ::ref::anchor, ::ref::connectedAnchor.

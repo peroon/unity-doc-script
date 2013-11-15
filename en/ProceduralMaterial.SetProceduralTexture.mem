@@ -2,7 +2,7 @@
 SetProceduralTexture(string,Texture2D)
 </signature>
 Set a named Procedural texture property.
-Used for Procedural properties of type Texture.
+Used for ProceduralProperties of type Texture.
 The texture needs to be setup with Advanced texture type and Read-Write enabled.
 
 SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralTexture.

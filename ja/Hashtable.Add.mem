@@ -1,0 +1,19 @@
+<suggestedtype>
+method
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Add(object, object)
+</signature>
+Adds an element with the specified key and value into the Hashtable.
+CONVERTEXAMPLE
+BEGIN EX
+// Adds 2 elements to a hash table.
+
+var h : Hashtable;
+h = new Hashtable();
+h.Add(1,"one");
+h.Add(2,"two");
+END EX

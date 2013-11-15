@@ -1,0 +1,7 @@
+<signature>
+friction
+</signature>
+Coefficient of friction.
+A value of zero indicates a surface with no friction while a value of 1 indicates maximum friction (eg, rubber).
+
+SA: PhysicMaterial::ref::staticFriction.

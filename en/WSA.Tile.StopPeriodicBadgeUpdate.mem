@@ -1,0 +1,4 @@
+<signature>
+StopPeriodicBadgeUpdate()
+</signature>
+Stops previously started periodic update of a tile.

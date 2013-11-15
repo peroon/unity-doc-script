@@ -1,5 +1,5 @@
 <signature>
 ToBooleanArray(bool[])
 </signature>
-Boolean配列をIntPtr型へ変換する。
-SA: AndroidJNI.NewBooleanArray, AndroidJNI.SetBooleanArrayElement.
+Convert a managed array of System.Boolean to a Java array of <tt>boolean</tt>.
+SA: [[AndroidJNI.NewBooleanArray]], [[AndroidJNI.SetBooleanArrayElement]].

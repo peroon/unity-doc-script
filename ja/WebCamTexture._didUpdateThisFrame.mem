@@ -1,7 +1,11 @@
-最後のフレームから更新されているかどうか
+<signature>
+didUpdateThisFrame
+</signature>
+Did the video buffer update this frame?
 Use this to check if the video buffer has changed since the last frame. When setting a low frame rate,
 it is likely that the video updates slower then the game, so it does not make sense to do expensive video
 processing in each Update call, so check this value before doing any processing.
+CONVERTEXAMPLE
 BEGIN EX
 	var webcamTexture : WebCamTexture;
 	var data : Color32[];

@@ -1,7 +1,5 @@
-<signature>
-AndroidJavaRunnable()
-</signature>
 AndroidJavaRunnable is the Unity representation of a java.lang.Runnable object.
+CONVERTEXAMPLE
 BEGIN EX
 // Pass execution context over to the Java UI thread.
 function Start () {

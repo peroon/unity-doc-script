@@ -1,7 +1,8 @@
 <signature>
 SetGlobalColor(string,Color)
+SetGlobalColor(int,Color)
 </signature>
-すべてのシェーダーのグローバルのColor型プロパティを設定する
+Sets a global color property for all shaders.
 Global properties are used if a shader needs them but the material does
 not have them defined (for example, if the shader does not expose them
 in /Properties/ block).

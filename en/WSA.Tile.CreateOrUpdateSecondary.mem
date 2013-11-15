@@ -1,0 +1,12 @@
+<signature>
+CreateOrUpdateSecondary(SecondaryTileData)
+CreateOrUpdateSecondary(SecondaryTileData,Vector2)
+CreateOrUpdateSecondary(SecondaryTileData,Rect)
+</signature>
+Creates new or updates existing secondary tile.
+TileId is required to be set in data, displayName is required when creating and can not be updated.
+When used to create new tile, this function displays a request on the screen. Tile will be created if user agrees to pin it to start screen.
+@param data The data used to create or update secondary tile.
+@param pos The coordinates for a request to create new tile.
+@param area The area on the screen above which the request to create new tile will be displayed.
+@return New Tile object, that can be used for further work with the tile.

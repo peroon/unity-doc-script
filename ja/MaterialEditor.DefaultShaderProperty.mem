@@ -1,0 +1,6 @@
+<signature>
+DefaultShaderProperty(MaterialProperty,string)
+DefaultShaderProperty(Rect,MaterialProperty,string)
+</signature>
+Handles UI for one shader property ignoring any custom drawers.
+This is similar to ::ref::ShaderProperty function, except it ignores any custom [[MaterialPropertyDrawer]] objects.

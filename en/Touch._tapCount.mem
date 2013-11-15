@@ -2,3 +2,4 @@
 tapCount
 </signature>
 Number of taps.
+This is intended as a way to detect "double-clicks", etc, from the finger in a particular position. In some circumstances, two fingers may be tapped alternately and this may incorrectly register as a single finger tapping and simultaneously moving.

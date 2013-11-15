@@ -1,0 +1,5 @@
+<signature>
+DisableKeyword(string)
+</signature>
+Unset a shader keyword.
+SA: ::ref::EnableKeyword, ::ref::shaderKeywords.

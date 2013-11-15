@@ -1,0 +1,7 @@
+<signature>
+velocity
+</signature>
+Linear velocity of the rigidbody.
+The velocity is specified as a vector with components in the X and Y directions (there is no Z direction in 2D physics). The value is not usually set directly but rather by using ''forces''. The velocity can also gradually decay due to the effect of ''drag'' if this is enabled.
+
+SA: ::ref::AddForce, ::ref::drag, ::ref::angularVelocity, Rigidbody::ref::velocity.

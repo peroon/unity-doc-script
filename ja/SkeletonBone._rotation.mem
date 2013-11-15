@@ -1,2 +1,1 @@
-このボーンためのデフォルトの T 字型のポーズの回転（Rotation）。
-ローカル座標空間でセットすべきです。
+The T-pose rotation of the bone in local space.

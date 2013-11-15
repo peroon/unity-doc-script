@@ -1,0 +1,5 @@
+<signature>
+hasMixedValue
+</signature>
+Does this property have multiple different values? (RO)
+When multiple materials are selected at once, some of their properties can have different values.

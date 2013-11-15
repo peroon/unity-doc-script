@@ -1,0 +1,5 @@
+<signature>
+qualifiesForSpritePacking
+</signature>
+Returns true if this [[TextureImporter]] is setup for Sprite packing.
+If it returns true, texture is imported uncompressed for Sprite packing.

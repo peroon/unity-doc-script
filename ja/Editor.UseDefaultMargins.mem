@@ -1,0 +1,9 @@
+<signature>
+UseDefaultMargins()
+</signature>
+Override this method in subclasses to return false if you don't want default margins.
+By default, content in the Inspector has a large left margin and a small right margin. This is because the entire Editor::ref::OnInspectorGUI callback is wrapped in a vertical group with the EditorStyles::ref::inspectorDefaultMargins style. For a consistent look, these default margins should be used for most GUI with regular controls.
+
+However, some special GUI elements may benefit from occupying the full width of the Inspector, with only a small margin in both sides. To disable the default margins, override the Editor::ref::UseDefaultMargins method in your custom Editor and make it return false. Then you can wrap your GUI content inside a vertical groups to your liking. For example, you can wrap some of the GUI inside a vertical group with the EditorStyles::ref::inspectorFullWidthMargins style and wrap other parts of the GUI inside a vertical group with the EditorStyles::ref::inspectorDefaultMargins style.
+
+SA: EditorGUILayout::ref::BeginVertical, EditorGUILayout::ref::EndVertical, EditorStyles::ref::inspectorDefaultMargins, EditorStyles::ref::inspectorFullWidthMargins.

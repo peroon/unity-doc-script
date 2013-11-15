@@ -1,0 +1,33 @@
+<signature>
+Authenticate(Action<bool>)
+</signature>
+Authenticate the local user to the current active Social API implementation and fetch his profile data.
+This should be done before any other calls into the API. Depending on the platform this might trigger a blocking dialog for providing login details.
+BEGIN EX
+// JavaScript
+	Social.localUser.Authenticate (function (success) {
+        if (success) {
+            Debug.Log ("Authentication successful");
+            var userInfo : String = "Username: " + Social.localUser.userName + 
+                "\nUser ID: " + Social.localUser.id + 
+                "\nIsUnderage: " + Social.localUser.underage;
+            Debug.Log (userInfo);
+        }
+        else
+            Debug.Log ("Authentication failed");
+    });
+END EX
+BEGIN EX
+// C#
+Social.localUser.Authenticate (success => {
+		if (success) {
+			Debug.Log ("Authentication successful");
+			string userInfo = "Username: " + Social.localUser.userName + 
+				"\nUser ID: " + Social.localUser.id + 
+				"\nIsUnderage: " + Social.localUser.underage;
+			Debug.Log (userInfo);
+		}
+		else
+			Debug.Log ("Authentication failed");
+	});
+END EX

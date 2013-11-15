@@ -1,0 +1,2 @@
+Texture property accepts any texture type.
+SA: MaterialProperty::ref::textureDimension.

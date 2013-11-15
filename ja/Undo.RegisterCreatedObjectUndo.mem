@@ -1,7 +1,25 @@
 <signature>
 RegisterCreatedObjectUndo(Object,string)
 </signature>
-Undo操作を行う直前にRedo操作として元に戻すオブジェクトを登録します
-SA: Undo.RegisterUndo.
-@param objectToUndo Undoを行うオブジェクト
-@param name Undo処理の名前
+Register an undo operations for a newly created object.
+When the undo is performed the object will be destroyed. All newly created objects that are part of undoable state should be registered with this function.
+CONVERTEXAMPLE
+BEGIN EX
+// Creates a new game object as an operation that can be undone
+
+using UnityEditor;
+using UnityEngine;
+
+class CreateGameObjectMenu
+{
+	[MenuItem ("Example/Create GameObject")]
+	static void CreateGameObject ()
+	{
+		GameObject go = new GameObject ("my GameObject");
+		go.transform.position = new Vector3 (5, 5, 5);
+		go.RegisterCreatedObject (go, "Create object");
+	}
+}
+END EX
+@param objectToUndo The object that was created.
+@param name The name of the action to undo. Think "Undo ...." in the main menu.

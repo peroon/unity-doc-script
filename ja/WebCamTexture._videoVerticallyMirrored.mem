@@ -1,8 +1,8 @@
 <signature>
 videoVerticallyMirrored
 </signature>
-テクスチャ画像が垂直に反転されているか戻り値とします。
+Returns if the texture image is vertically flipped.
 BEGIN EX
-float scaleY = webcam.videoVerticallyMirrored ? -1.0f : 1.0f;
-texture.transform.localScale = new Vector3(width, scaleY * height, 0.0f);
+scaleY = webcam.videoVerticallyMirrored ? -1.0 : 1.0;
+texture.transform.localScale = new Vector3(width, scaleY * height, 0.0);
 END EX

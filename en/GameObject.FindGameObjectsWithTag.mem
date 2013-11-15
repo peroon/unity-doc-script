@@ -13,7 +13,7 @@ BEGIN EX
 	function Start()
 	{
 		if (respawns == null)
-			GameObject.FindGameObjectsWithTag ("Respawn");
+			respawns = GameObject.FindGameObjectsWithTag ("Respawn");
 		for (var respawn in respawns)
 			Instantiate (respawnPrefab, respawn.transform.position, respawn.transform.rotation);
 	}

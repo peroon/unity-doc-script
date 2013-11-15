@@ -1,2 +1,4 @@
-スクリプトデバッガを有効にします
+Allow script debuggers to attach to the player remotely.
+Note that script debugging is not supported on the webplayer.
+
 SA: BuildPipeline.BuildPlayer.

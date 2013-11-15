@@ -1,5 +1,6 @@
 <signature>
 Vector3Field(string,Vector3,GUILayoutOption[])
+Vector3Field(GUIContent,Vector3,GUILayoutOption[])
 </signature>
 Make an X, Y & Z field for entering a [[Vector3]].
 {img EditorGUILayoutVector3Field.png}\\

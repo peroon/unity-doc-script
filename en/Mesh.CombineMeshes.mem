@@ -13,7 +13,7 @@ BEGIN EX
 	@script RequireComponent(MeshFilter)
 	@script RequireComponent(MeshRenderer)
 	function Start () {
-		var meshFilters = GetComponentsInChildren(MeshFilter);
+		var meshFilters: MeshFilter[] = GetComponentsInChildren(MeshFilter);
 		var combine : CombineInstance[] = new CombineInstance[meshFilters.Length];
 		for (var i = 0; i < meshFilters.Length; i++){
 			combine[i].mesh = meshFilters[i].sharedMesh;

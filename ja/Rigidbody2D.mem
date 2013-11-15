@@ -1,0 +1,4 @@
+Rigidbody physics component for 2D sprites.
+The Rigidbody2D class essentially provides the same functionality in 2D that the Rigidbody class provides in 3D. Adding a Rigidbody2D component to a sprite puts in under the control of the physics engine. By itself, this means that the sprite will be affected by gravity and can be controlled from scripts using forces. By adding the appropriate collider component, the sprite will also respond to collisions with other sprites. This behaviour comes entirely from Unity's physics system; very little code is required to get impressive and authentic physical behaviour and allows for "emergent" gameplay that was not explicitly coded into the game.
+
+SA: [[Rigidbody]] class, [[SpriteRenderer]] class, [[Collider2D]] class, [[Joint2D]] class.

@@ -1,5 +1,6 @@
 <signature>
 SetGlobalFloat(string,float)
+SetGlobalFloat(int,float)
 </signature>
 Sets a global float property for all shaders.
 Global properties are used if a shader needs them but the material does

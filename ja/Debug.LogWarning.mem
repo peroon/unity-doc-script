@@ -1,18 +1,25 @@
 <signature>
-LogWarning(object)
 </signature>
-コンソールに警告ログを表示する
+<txttag>
+UNDOC
+</txttag>
+A variant of Debug.Log that logs a warning message to the console.
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("注意!これは警告です!");
+	Debug.LogWarning("Watch out!, this is a warning!");
 END EX
 <signature>
+LogWarning(object)
 LogWarning(object,Object)
 </signature>
-コンソールに警告ログを表示する
-コンソール上でメッセージを選択するときコンテキストへのつながりが描画されます。
-これはどのオブジェクトで警告が発生したのかを知りたい場合に役に立ちます。
+A variant of Debug.Log that logs a warning message to the console.
+When you select the message in the console a connection to the context object will be drawn.
+This is very useful if you want know on which object a warning occurs.
+
+When the message is a string, rich text markup can be used to add emphasis. See the manual page about [[wiki:StyledText|rich text]] for details of the different markup tags available.
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("この Transform に割り当てられた警告です!", transform);
+	Debug.LogWarning("A warning assigned to this transform!", transform);
 END EX
+@param message String or object to be converted to string representation for display.
+@param context Object to which the message applies.

@@ -1,2 +1,2 @@
-プロシージャルのキャッシュサイズを選択します。
-値が大きいほど、ワーキングメモリに影響が出ます。
+Substance memory budget.
+This also affects the amount of working memory for the generation of the ProceduralMaterial.

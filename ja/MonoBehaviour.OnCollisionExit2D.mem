@@ -1,0 +1,19 @@
+<signature>
+OnCollisionExit2D(Collision2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent when a collider on another object stops touching this object's collider (2D physics only).
+Further information about the objects involved is reported in the Collision2D parameter passed during the call.
+
+SA: [[Collision2D]] class, ::ref::OnCollisionEnter2D, ::ref::OnCollisionStay2D.
+CONVERTEXAMPLE
+BEGIN EX
+var bumpCount: int;
+
+function OnCollisionExit2D(coll: Collision2D) {
+	if (coll.gameObject.tag == "DodgemCar")
+		bumpCount++;
+}
+END EX

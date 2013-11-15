@@ -1,0 +1,6 @@
+<signature>
+GetAssetByPath(string)
+</signature>
+Returns version control information about an asset.
+Returns null if the path is not known by the Unity Editor.
+@param unityPath Path to asset.

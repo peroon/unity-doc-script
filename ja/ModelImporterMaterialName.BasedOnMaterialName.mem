@@ -1,2 +1,4 @@
-マテリアル名をそのまま使用します
+Use a material name of the form ''<materialName>.mat''.
+Material names will be accepted in the form ''<materialName>.mat'' when searching for existing materials or creating new ones.
+
 SA: ModelImporter.materialName.

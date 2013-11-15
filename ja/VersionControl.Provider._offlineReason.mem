@@ -1,0 +1,4 @@
+<signature>
+offlineReason
+</signature>
+Returns the reason for the version control provider being offline (if it is offline).

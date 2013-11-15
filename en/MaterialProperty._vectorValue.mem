@@ -1,0 +1,7 @@
+<signature>
+vectorValue
+</signature>
+Vector value of the property.
+Setting a new value will apply it to all material ::ref::targets, and will automatically record an undo operation.
+
+SA: ::ref::type, [[MaterialEditor]].

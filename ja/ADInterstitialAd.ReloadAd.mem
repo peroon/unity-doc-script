@@ -1,0 +1,5 @@
+<signature>
+ReloadAd()
+</signature>
+Reload advertisement.
+Call it when you are done with current one (if you want more ads downloaded).

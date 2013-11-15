@@ -1,1 +1,2 @@
-テクスチャをベイクして依存関係を取り除きます（未サポートのプラットフォームでのデフォルト値）。
+Bake the textures to speed up loading and discard the ProceduralMaterial data (default on unsupported platform).
+SA: [[ProceduralLoadingBehavior.BakeAndKeep]].

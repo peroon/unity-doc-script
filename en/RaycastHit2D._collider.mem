@@ -1,0 +1,7 @@
+<signature>
+collider
+</signature>
+The collider hit by the ray.
+This can be useful if the hit object has more than one collider - this property can be used to determine the specific collider rather than just the object.
+
+Note that some functions that return a single RaycastHit2D will leave the collider as NULL which indicates nothing hit.  RaycastHit2D implements an implicit conversion operator converting to bool which checks this property allowing it to be used as a simple condition check for whether a hit occurred or not.

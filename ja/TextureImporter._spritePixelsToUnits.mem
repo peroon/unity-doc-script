@@ -1,0 +1,4 @@
+<signature>
+spritePixelsToUnits
+</signature>
+Scale factor for mapping pixels in the graphic to units in world space.

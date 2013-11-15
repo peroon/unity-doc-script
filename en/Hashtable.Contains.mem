@@ -1,0 +1,25 @@
+<suggestedtype>
+method
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Contains(object)
+</signature>
+Determines whether the Hashtable contains a specific key.
+This method implements IDictionary.Contains. It behaves exactly like ContainsKey.
+This method is an O(1) operation.
+CONVERTEXAMPLE
+BEGIN EX
+// Searchs for a value on the hash table
+
+var h : Hashtable;
+h = new Hashtable();
+h.Add(1,"one");
+h.Add(2,"two");
+h.Add(3,"two");
+if(h.Contains(1)) {
+	Debug.Log("Key '1', has been found!");
+}
+END EX

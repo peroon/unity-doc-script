@@ -1,1 +1,2 @@
 Navigation mesh agent.
+This component is attached to a mobile character in the game to allow it to navigate the scene using the NavMesh. See the [[wiki:NavmeshandPathfinding|NavMesh and Pathfinding]] section of the manual for further details.

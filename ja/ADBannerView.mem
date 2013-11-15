@@ -1,25 +1,23 @@
-Apple iAd フレームワークにあるADBannerViewクラスのラッパーです。iPhone, iPad, iPod Touch のみに対応しています。
-バナー広告を表示するために使用されます。
+ADBannerView is a wrapper around the ADBannerView class found in the Apple iAd framework and is only available on iOS.
+It provides a view that displays banner advertisements to the user.
 BEGIN EX
-private var banner : ADBannerView = null;
-	
-function ShowBanner() {
-    while (!banner.loaded && banner.error == null)
-        yield;
-        
-    if (banner.error == null)
-        banner.Show();
-    else banner = null;
+private ADBannerView banner = null;
+
+void Start()
+{
+	banner = new ADBannerView(ADBannerView.Type.Banner, ADBannerView.Layout.Top);
+	ADBannerView.onBannerWasClicked += OnBannerClicked;
+	ADBannerView.onBannerWasLoaded  += OnBannerLoaded;
 }
 
-function OnGUI() {
-    GUI.enabled = (banner == null ? true : false);
-    
-    if (GUILayout.Button("Show Banner")) {
-        banner = new ADBannerView();
-        banner.autoSize = true;
-        banner.autoPosition = ADPosition.Bottom;
-        StartCoroutine(ShowBanner());
-    }
+void OnBannerClicked()
+{
+	Debug.Log("Clicked!\n");
+}
+
+void OnBannerLoaded()
+{
+	Debug.Log("Loaded!\n");
+	banner.visible = true;
 }
 END EX

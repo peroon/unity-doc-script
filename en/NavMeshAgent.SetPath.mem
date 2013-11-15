@@ -1,8 +1,8 @@
 <signature>
 SetPath(NavMeshPath)
 </signature>
-Assign path to this agent.
-__Notes:__ If succesfully assigned this agent will resume movement.
-If the path cannot be assigned this agent will have its path cleared (see ::ref::ResetPath).
+Assign a new path to this agent.
+If the path is succesfully assigned the agent will resume movement toward the new target.
+If the path cannot be assigned the path will be cleared (see ::ref::ResetPath).
 @param path New path to follow.
 @return True if the path is succesfully assigned.

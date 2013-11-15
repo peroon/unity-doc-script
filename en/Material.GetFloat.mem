@@ -1,8 +1,9 @@
 <signature>
 GetFloat(string)
+GetFloat(int)
 </signature>
 Get a named float value.
-SA: ::ref::SetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+SA: ::ref::SetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader::ref::PropertyToID.
 CONVERTEXAMPLE
 BEGIN EX
 	function Start() {

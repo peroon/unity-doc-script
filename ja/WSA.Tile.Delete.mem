@@ -1,0 +1,8 @@
+<signature>
+Delete()
+Delete(Vector2)
+Delete(Rect)
+</signature>
+Show a request to unpin secondary tile from start screen.
+@param pos The coordinates for a request to unpin tile.
+@param area The area on the screen above which the request to unpin tile will be displayed.

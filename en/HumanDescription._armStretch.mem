@@ -1,8 +1,11 @@
 <signature>
 armStretch
 </signature>
-Amount of stretch allow on arm when using IK.
-The value range from 0 to 1.
-Default value is 0.05.
+Amount by which the arm's length is allowed to stretch when using IK.
+Inverse Kinematics (IK) can often be handled more smoothly if a small amount of "slack" is allowed in the positions of bones relative to each other. This property controls how much slack is available in the arm joints. 
 
-At 0.05 the arm will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is done by translating both the elbow and wrist transform.
+The value is given in world distance units in the range 0..1. For example, with the default setting of 0.05, the arm will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is carried out by translating both the elbow and wrist transforms.
+
+The ideal value will depend on the rig and the animation but in general, a larger value will make for a smoother IK computation at the expense of more unrealistic stretching of the arm.
+
+SA: legStretch.

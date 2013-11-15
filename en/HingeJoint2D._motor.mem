@@ -1,0 +1,5 @@
+<signature>
+motor
+</signature>
+Parameters for the motor force applied to the joint.
+SA: ::ref::useMotor.

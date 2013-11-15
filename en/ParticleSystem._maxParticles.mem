@@ -1,0 +1,16 @@
+<signature>
+maxParticles
+</signature>
+The maximum number of particles to emit.
+CONVERTEXAMPLE
+BEGIN EX
+var hSliderValue : float = 0.0;
+
+function Update () {
+	particleSystem.maxParticles = hSliderValue;
+}
+
+function OnGUI() {
+	hSliderValue = GUI.HorizontalSlider(new Rect(25, 25, 100, 30), hSliderValue, 0.0F, 100.0F);
+}
+END EX

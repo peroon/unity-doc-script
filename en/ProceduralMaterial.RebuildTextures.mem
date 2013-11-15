@@ -1,0 +1,4 @@
+<signature>
+RebuildTextures()
+</signature>
+Triggers an asynchronous rebuild of this ProceduralMaterial's dirty textures.

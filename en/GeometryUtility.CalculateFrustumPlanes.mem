@@ -8,7 +8,7 @@ that form it.
 SA: [[Plane]], GeometryUtility.TestPlanesAABB.
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates 6 planes that represent the camera frustrum.
+	// Creates 6 planes that represent the camera frustum.
 
 	private var cam : Camera;
 	private var planes : Plane[];

@@ -1,0 +1,5 @@
+<signature>
+useMotor
+</signature>
+Should a motor force be applied automatically to the Rigidbody2D?
+SA: ::ref::motor.

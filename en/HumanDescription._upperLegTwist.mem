@@ -1,8 +1,7 @@
 <signature>
 upperLegTwist
 </signature>
-Define how roll is distributed between thigh and knee.
-The value range from 0 to 1.
-Default value is 0.5.
+Defines how the upper leg's roll/twisting is distributed between the thigh and knee joints.
+When the upper leg needs to twist or "roll" for the IK, the rotation can be applied at the thigh or knee joints or some twist can be applied at both. The /upperLegTwist/ is a weighting value in the range 0..1 that determines the fraction of the twist applied at the thigh and knee. For example, a value of zero means the twist should be handled entirely at the thigh, while a value of one means it should be applied entirely at the knee. The default value of 0.5 distributes the twisting evenly between thigh and knee.
 
-This value is used by the retargeter to distribute the roll on thigh and knee.
+SA: lowerArmTwist, lowerLegTwist, upperArmTwist.

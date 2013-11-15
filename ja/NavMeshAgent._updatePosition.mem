@@ -1,1 +1,4 @@
-エージェントの位置を更新すべきかどうか
+<signature>
+updatePosition
+</signature>
+Should the agent update the transform position?

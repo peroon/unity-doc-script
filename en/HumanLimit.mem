@@ -1,1 +1,1 @@
-This class stores the muscle range limit for one human bone.
+This class stores the rotation limits that define the ''muscle'' for a single human bone.

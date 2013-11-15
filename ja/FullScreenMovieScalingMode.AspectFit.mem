@@ -1,4 +1,5 @@
-幅または高さがスクリーンと合うまでムービーをスケールします。スクリーンと
-合う側と反対側（つまり幅または高さ）ではムービーの端とスクリーンの端の間は
-黒いバーにより塗りつぶされます。ムービーのアスペクト比は
-維持されます。
+Scale the movie until one dimension fits on the screen exactly.
+
+In the other dimension, the region between the edge of the movie and the
+edge of the screen is filled with a black bar. The aspect ratio of the
+movie is preserved.

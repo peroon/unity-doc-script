@@ -1,0 +1,4 @@
+<signature>
+collider
+</signature>
+The collider attached to the object receiving the collision message.

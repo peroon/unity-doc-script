@@ -1,0 +1,4 @@
+<signature>
+isAvailable
+</signature>
+Checks if InterstitialAd is available (it is iPad-only and was added in iOS 4.3).

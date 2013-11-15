@@ -1,7 +1,7 @@
 <signature>
 SetProceduralColor(string,Color)
 </signature>
-プロパティ名を指定してColor型のプロパティを設定する
-Used for Procedural properties of types Color3 and Color4.
+Set a named Procedural color property.
+Used for ProceduralProperties of types Color3 and Color4.
 
 SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralColor.

@@ -2,4 +2,4 @@
 FromLongArray(IntPtr)
 </signature>
 Convert a Java array of <tt>long</tt> to a managed array of System.Int64.
-SA: AndroidJNI.GetLongArrayElement, AndroidJNI.GetArrayLength.
+SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]].

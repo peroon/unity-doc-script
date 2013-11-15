@@ -1,0 +1,7 @@
+<signature>
+GetIgnoreLayerCollision(int,int)
+</signature>
+Should collisions between the specified layers be ignored?
+SA: ::IgnoreLayerCollision.
+@param layer1 ID of first layer.
+@param layer2 ID of second layer.

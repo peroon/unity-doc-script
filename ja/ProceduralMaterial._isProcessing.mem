@@ -1,4 +1,4 @@
 <signature>
 isProcessing
 </signature>
-テクスチャの再レンダリング中に、Procedural<aterialオブジェクトかを判断する
+Check if the ProceduralTextures from this ProceduralMaterial are currently being rebuilt.

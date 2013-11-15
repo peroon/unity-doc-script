@@ -1,0 +1,5 @@
+<signature>
+Delete(string)
+</signature>
+Deletes the specified file.
+@param path The name of the file to be deleted.

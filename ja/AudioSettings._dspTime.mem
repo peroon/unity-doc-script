@@ -1,11 +1,12 @@
 <signature>
 dspTime
 </signature>
-現在のオーディオシステムの現在時刻を戻します。これは秒単位で指定された値であり、オーディオシステムが処理する実際のサンプル数にもとづくため、Time.time プロパティから取得される時間よりも正確です。
+Returns the current time of the audio system.
+This is a value specified in seconds and based on the actual number of samples the audio system processes and is therefore much more precise than the time obtained via the Time::ref::time property.
 CONVERTEXAMPLE
 BEGIN EX
-// 次のコードサンプルにより、メトロノームでクリック音声を OnAudioFilterRead コールバックによりプロシージャル生成します。
-// ゲームがポーズまたはサスペンドされるとき、この時間は更新されず、また再生中の音声はポーズされます。このためミュージック開発者がルーチンをスケジュールする場合、アプリのポーズが解除された後に再度スケジューリングをする必要はありません。
+// The code example shows how to implement a metronome that procedurally generates the click sounds via the OnAudioFilterRead callback.
+// While the game is paused or the suspended, this time will not be updated and sounds playing will be paused. Therefore developers of music scheduling routines do not have to do any rescheduling after the app is unpaused 
 
 @script RequireComponent(AudioSource)
 

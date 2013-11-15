@@ -1,0 +1,4 @@
+Layer mask constant for the default layer that ignores raycasts.
+The value of the mask is the bitwise complement of the ::ref::DefaultRaycastLayers mask.
+
+SA: ::ref::Raycast, ::ref::DefaultRaycastLayers, ::ref::AllLayers.

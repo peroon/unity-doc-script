@@ -1,0 +1,5 @@
+<signature>
+size
+</signature>
+The size of the banner view.
+It uses unity GUI coords.

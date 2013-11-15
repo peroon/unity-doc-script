@@ -1,1 +1,2 @@
-Do not generate the textures, allowing a custom loading.
+Do not generate the textures. RebuildTextures() or RebuildTexturesImmediately() must be called to generate the textures.
+SA: [[ProceduralMaterial.RebuildTextures]], [[ProceduralMaterial.RebuildTexturesImmediately]].

@@ -1,0 +1,5 @@
+<signature>
+id
+</signature>
+Version control specific ID of a changeset.
+E.g. Perforce changetset have unique IDs, while sibversion has no ID at all in which case it is simply -1.

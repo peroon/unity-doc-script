@@ -1,6 +1,6 @@
 <signature>
 SetGenerateAllOutputs(ProceduralMaterial,bool)
 </signature>
-Specifies if the Procedural Material need to force generation of all its outputs.
-If enabled, the Procedural Material will generate all its outputs.
-If disabled, the Procedural Material will generate only the outputs required by the shader.
+Specify if the ProceduralMaterial needs to force generation of all its outputs.
+If enabled, the ProceduralMaterial will generate all its outputs.
+If disabled, the ProceduralMaterial will generate only the outputs required by the shader.

@@ -2,6 +2,27 @@
 SetIKRotation(AvatarIKGoal,Quaternion)
 </signature>
 Sets the rotation of an IK goal.
-Rotation is in world space.
+An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+
+This function sets the rotation of the ultimate goal in world space; the actual rotation where the body part ends up is also influenced by a weight parameter that specifies how far between the start and the goal the IK should aim (a value in the range 0..1).
+CONVERTEXAMPLE
+BEGIN EX
+var objToAimAt: Transform;
+
+private var animator: Animator;
+
+
+function Start() {
+	animator = GetComponent.<Animator>();
+}
+
+
+function OnAnimatorIK(layerIndex: int) {
+	var handRotation = Quaternion.LookRotation(objToAimAt.position - transform.position);
+	animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1.0);
+	animator.SetIKRotation(AvatarIKGoal.RightHand, handRotation);                    
+}
+END EX
+SA: ::ref::SetIKRotationWeight, ::ref::SetIKPosition.
 @param goal The AvatarIKGoal that is set.
-@param goalRotation The rotation  in world space.
+@param goalRotation The rotation in world space.

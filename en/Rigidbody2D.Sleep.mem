@@ -1,0 +1,7 @@
+<signature>
+Sleep()
+</signature>
+Make the rigidbody "sleep".
+''Sleeping'' is an optimisation that is used to temporarily remove an object from physics simulation when it is at rest. This function makes the rigidbody sleep - it is sometimes desirable to enable this manually rather than allowing automatic sleeping with the ''sleepMode'' property.
+
+SA: ::ref::IsSleeping, ::ref::WakeUp, ::ref::sleepMode.

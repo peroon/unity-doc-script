@@ -1,0 +1,2 @@
+Returns applications main tile
+This object always exists, regardless whether tile is pinned to start screen or not.

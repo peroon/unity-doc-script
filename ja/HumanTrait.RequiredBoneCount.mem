@@ -1,4 +1,4 @@
 <signature>
 RequiredBoneCount
 </signature>
-ヒューマノイドの必要なボーンのカウント。
+The number of bone types that are required by Mecanim for any human model.

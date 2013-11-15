@@ -1,0 +1,4 @@
+<signature>
+runtimeAnimatorController
+</signature>
+The Controller that the AnimatorOverrideController overrides.

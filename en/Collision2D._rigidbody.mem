@@ -1,0 +1,4 @@
+<signature>
+rigidbody
+</signature>
+The incoming Rigidbody2D involved in the collision.

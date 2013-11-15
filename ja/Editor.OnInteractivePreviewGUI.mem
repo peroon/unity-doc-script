@@ -1,8 +1,12 @@
 <signature>
 OnInteractivePreviewGUI(Rect,GUIStyle)
 </signature>
-インタラクティブなプレビューを作成するために使用されます
-つまり、こちら側から何らかの入力を行うものです
-それ以外はすべてEditor.OnPreviewGUIを使用しています
-現在ではOnInteractivePreviewGUIを使用できるのはアセット（私達はScriptableObject）のみです
+Implement to create your own interactive custom preview. Interactive custom previews are used in the preview area of the inspector and the object selector.
+Implement this instead of ::ref::OnPreviewGUI if you only want to display interactive custom previews (you can implement both if some previews are interactive and others aren't).
+The overidden method should use the rectangle passed in and render a preview of the asset into it.
+The default implementation is a no-op.
 
+__Note:__ Inspector previews are limited to the primary editor of persistent objects (assets), e.g., GameObjectInspector, MaterialEditor, TextureInspector.
+This means that it is currently not possible for a component to have its own inspector preview.
+@param r Rectangle in which to draw the preview.
+@param background Background image.

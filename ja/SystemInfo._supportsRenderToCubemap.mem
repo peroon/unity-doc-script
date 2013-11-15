@@ -1,0 +1,7 @@
+<signature>
+supportsRenderToCubemap
+</signature>
+Are cubemap render textures supported? (RO)
+Returns /true/ if graphics card supports render into cubemap Render Textures.
+
+SA: [[wiki:class-RenderTexture|Render Texture assets]], [[RenderTexture]] class.

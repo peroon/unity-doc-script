@@ -19,5 +19,3 @@ This function is not called on objects that belong to Ignore Raycast layer.
 
 OnMouseDown can be a co-routine, simply use the yield statement in the function.
 This event is sent to all scripts attached to the [[Collider]] or [[GUIElement]].
-
-__IMPORTANT:__ This function has no effect on touchscreen mobile platforms.  Use the [[Event]] class instead.

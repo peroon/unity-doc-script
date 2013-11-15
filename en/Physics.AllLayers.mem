@@ -1,0 +1,3 @@
+Layer mask constant to select all layers.
+This can be used in the layermask field of [[Physics.Raycast]] and other methods to select all layers.
+SA: [[Physics.DefaultLayers]], [[Physics.IgnoreRaycastLayer]].

@@ -1,0 +1,5 @@
+<signature>
+StopAnimationMode()
+</signature>
+Stops Animation mode, reverts all properties that were animated in animation mode.
+AnimationMode stores per property modifications. They are added either via AnimationMode.SampleClip or AnimationMode.AddPropertyModification. StopAnimationMode reverts all of these properties.

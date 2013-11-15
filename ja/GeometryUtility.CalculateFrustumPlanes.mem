@@ -1,14 +1,14 @@
 <signature>
 CalculateFrustumPlanes(Camera)
 </signature>
-錐台平面を計算する
+Calculates frustum planes.
 This function takes given camera's view frustum and returns six planes
 that form it.
 
 SA: [[Plane]], GeometryUtility.TestPlanesAABB.
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates 6 planes that represent the camera frustrum.
+	// Creates 6 planes that represent the camera frustum.
 
 	private var cam : Camera;
 	private var planes : Plane[];
@@ -28,7 +28,7 @@ END EX
 <signature>
 CalculateFrustumPlanes(Matrix4x4)
 </signature>
-錐台平面を計算する
+Calculates frustum planes.
 This function returns six planes of a frustum defined by given view & projection matrix.
 
 SA: [[Plane]], GeometryUtility.TestPlanesAABB.

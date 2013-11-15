@@ -1,0 +1,4 @@
+Templates for various toast styles.
+Each template represents an XML document for presenting toast notification.
+For more detailed information, see:
+http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx

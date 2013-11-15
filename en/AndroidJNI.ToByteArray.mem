@@ -2,4 +2,4 @@
 ToByteArray(byte[])
 </signature>
 Convert a managed array of System.Byte to a Java array of <tt>byte</tt>.
-SA: AndroidJNI.NewByteArray, AndroidJNI.SetByteArrayElement.
+SA: [[AndroidJNI.NewByteArray]], [[AndroidJNI.SetByteArrayElement]].

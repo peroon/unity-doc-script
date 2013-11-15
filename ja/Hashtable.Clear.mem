@@ -1,0 +1,24 @@
+<suggestedtype>
+method
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Clear()
+</signature>
+Count is set to zero, and references to other objects from elements of the collection are also released.
+The capacity remains unchanged.
+/This method is an O(n) operation, where n is Hashtable.Count.
+CONVERTEXAMPLE
+BEGIN EX
+// Creates a Hashtable, adds 2 elements and then clears it
+
+var h : Hashtable;
+h = new Hashtable();
+h.Add("1","one");
+h.Add("2","two");
+Debug.Log(h.Count);
+h.Clear();
+Debug.Log(h.Count);
+END EX

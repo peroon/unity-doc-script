@@ -1,0 +1,7 @@
+<signature>
+rigidbody2D
+</signature>
+The Rigidbody2D that is attached to the Component's GameObject.
+This property will be null if no Rigidbody2D::ref:: is attached.
+
+SA: ::ref::rigidbody.

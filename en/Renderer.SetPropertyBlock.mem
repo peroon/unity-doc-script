@@ -4,3 +4,5 @@ SetPropertyBlock(MaterialPropertyBlock)
 Lets you add per-renderer material parameters without duplicating a material.
 This is recommended when changing material properties often. With multithreaded rendering,
 it is more efficient than setting properties directly on the material.
+
+SA: [[MaterialPropertyBlock]].

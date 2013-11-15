@@ -1,0 +1,7 @@
+<signature>
+UpdateBadgeImage(string)
+</signature>
+Sets or updates badge on a tile to an image.
+An image on a badge must be one of predefined glyphs:
+http://msdn.microsoft.com/en-us/library/windows/apps/hh779719.aspx.
+@param image Image identifier.

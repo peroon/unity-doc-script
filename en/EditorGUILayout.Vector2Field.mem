@@ -1,5 +1,6 @@
 <signature>
 Vector2Field(string,Vector2,GUILayoutOption[])
+Vector2Field(GUIContent,Vector2,GUILayoutOption[])
 </signature>
 Make an X & Y field for entering a [[Vector2]].
 {img EditorGUILayoutVector2Field.png}\\

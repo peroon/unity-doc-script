@@ -1,0 +1,5 @@
+<signature>
+maxMotorTorque
+</signature>
+The maximum force that can be applied to the Rigidbody2D at the joint to attain the target speed.
+SA: [[Rigidbody2D]] class, ::ref::motorSpeed.

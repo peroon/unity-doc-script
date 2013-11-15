@@ -1,12 +1,9 @@
 <signature>
 GetControlID(FocusType)
-GetControlID(int,FocusType)
-GetControlID(GUIContent,FocusType)
 GetControlID(FocusType,Rect)
-GetControlID(int,FocusType,Rect)
-GetControlID(GUIContent,FocusType,Rect)
 </signature>
 Get a unique ID for a control.
+For Editor GUI, use [[EditorGUIUtility.GetControlID]] instead.
 CONVERTEXAMPLE
 BEGIN EX
 	// Prints a not used ID that can be assigned to a control
@@ -16,3 +13,13 @@ BEGIN EX
 		Debug.Log("Available id: " + GUIUtility.GetControlID(FocusType.Passive));
 	}
 END EX
+<signature>
+GetControlID(int,FocusType)
+GetControlID(int,FocusType,Rect)
+</signature>
+Get a unique ID for a control, using an integer as a hint to help ensure correct matching of IDs to controls.
+<signature>
+GetControlID(GUIContent,FocusType)
+GetControlID(GUIContent,FocusType,Rect)
+</signature>
+Get a unique ID for a control, using a the label content as a hint to help ensure correct matching of IDs to controls.

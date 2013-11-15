@@ -1,0 +1,7 @@
+<signature>
+UpdateExternalTexture(IntPtr)
+</signature>
+Updates Unity Texture to use different native texture object.
+Native texture object on Direct3D-like devices is a pointer to the base type, from which a texture can be created
+(IDirect3DBaseTexture9 on D3D9, ID3D11ShaderResourceView on D3D11). On OpenGL/OpenGL ES it is GLuint.
+@param nativeTex Native texture object.

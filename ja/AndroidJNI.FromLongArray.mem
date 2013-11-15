@@ -1,5 +1,5 @@
 <signature>
 FromLongArray(IntPtr)
 </signature>
-IntPtr型をLong配列へ変換する。
-SA: AndroidJNI.GetLongArrayElement, AndroidJNI.GetArrayLength.
+Convert a Java array of <tt>long</tt> to a managed array of System.Int64.
+SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]].

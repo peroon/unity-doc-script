@@ -1,28 +1,31 @@
 <signature>
 Call(string,object[])
 </signature>
-staticでないJava メソッドを呼び出す。
-TODO.
+Calls a Java method on an object (non-static).
+To call a method with return type 'void', use the regular version.
+CONVERTEXAMPLE
 BEGIN EX
-	// android.content.res.Configuration を作成し setToDefaults を呼び出します。
+	// Create a android.content.res.Configuration object and call setToDefaults.
 	function Start() {
 		var jo = new AndroidJavaObject("android.content.res.Configuration");
 		jo.Call("setToDefaults");
 	}
 END EX
-@param methodName TODO.
-@param args TODO.
+@param methodName Specifies which method to call.
+@param args An array of parameters passed to the method.
 <signature>
 Call<ReturnType>(string,object[])
 </signature>
-TODO.
+Call a Java method on an object.
+To call a Java method with a non-void return type, use the generic version.
+CONVERTEXAMPLE
 BEGIN EX
-	//  "some string" (何らかの文字列)を持つ java.lang.String object を作成し
-	// そのハッシュコードを取得
+	// Create a java.lang.String object holding the string "some string",
+	// and retrieve it's hash code.
 	function Start() {
 		var jo = new AndroidJavaObject("java.lang.String", "some string");
 		var hash = jo.Call.<int>("hashCode");
 	}
 END EX
-@param methodName TODO.
-@param args TODO.
+@param methodName Specifies which method to call.
+@param args An array of parameters passed to the method.

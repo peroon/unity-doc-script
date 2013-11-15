@@ -1,0 +1,2 @@
+Blend mode for controlling the blending.
+The blend mode is set separately for source and destination, and it controls the blend factor of each component going into the blend eqquation. It is also possible to set the blend mode for color and alpha components separately. Note: the blend modes are ignored if logical blend operations are in use.

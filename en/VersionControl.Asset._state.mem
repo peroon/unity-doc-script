@@ -1,0 +1,4 @@
+<signature>
+state
+</signature>
+Gets the version control state of the asset.

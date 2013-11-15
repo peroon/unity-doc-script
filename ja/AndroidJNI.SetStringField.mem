@@ -1,8 +1,7 @@
 <signature>
 SetStringField(IntPtr,IntPtr,string)
 </signature>
-フィールドID を使い、staticでないString型のフィールドに値を
-設定する。
-これは SetObjectField() を同様のパラメータで呼び出しつつ文字列の値に必要な Marshal を実行します。
+This function sets the value of an instance (nonstatic) field of an object.
+This is a convenience function that calls SetObjectField() with the same parameters, but performs the necessary marshalling of the string value.
 
-SA: AndroidJNI.SetObjectField.
+SA: [[AndroidJNI.SetObjectField]].

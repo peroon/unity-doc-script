@@ -1,4 +1,4 @@
 <signature>
 ResetMaterial(ProceduralMaterial)
 </signature>
-Resets the Procedural Material to its default values.
+Reset the ProceduralMaterial to its default values.

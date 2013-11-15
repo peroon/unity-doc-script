@@ -1,0 +1,2 @@
+Parameters for the optional motor force applied to a Joint2D.
+SA: [[HingeJoint2D]] class, [[SliderJoint]] class.

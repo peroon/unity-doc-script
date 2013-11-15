@@ -1,0 +1,12 @@
+<signature>
+GetRayIntersection(Ray,float,int)
+</signature>
+Cast a 3D ray against the colliders in the scene returning the first collider along the ray.
+This is useful for finding colliders intersecting an arbitrary 3D ray.
+
+Note that this function will allocate memory for the returned RaycastHit2D object. You can use ::ref::GetRayIntersectionNonAlloc to avoid this overhead if you need to make such calls frequently.
+
+Additionally that this function is a 3D intersection test therefore any collision normals returned in the RaycastHit2D will be zero.
+@param ray The 3D ray defining origin and direction to test.
+@param distance Maximum distance over which to cast the ray.
+@param layerMask Filter to detect colliders only on certain layers.

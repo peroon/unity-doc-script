@@ -1,0 +1,4 @@
+<signature>
+LoadScores(Action<bool>)
+</signature>
+Load scores according to the filters set on this leaderboard.

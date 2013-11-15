@@ -1,0 +1,4 @@
+<signature>
+OnGroupAtlases(BuildTarget,PackerJob,TextureImporter[])
+</signature>
+Implement custom atlas grouping here.

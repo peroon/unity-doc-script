@@ -1,4 +1,30 @@
 <signature>
 corners
 </signature>
-パスのコーナーポイント(読み込み専用)
+Corner points of the path. (RO)
+Also known as "waypoints", the corners define the places along a path where it changes direction (ie, the path consists of a number of straight-line moves between corners).
+CONVERTEXAMPLE
+BEGIN EX
+// Calculate the length of a NavMeshPath. A character will
+// typically move a slightly longer distance than this as a
+// result of its steering behaviour.
+function PathLength(path: NavMeshPath) {
+	// The length is implicitly zero if there aren't at least
+	// two corners in the path.
+	if (path.corners.Length < 2)
+		return;
+	
+	var previousCorner = path.corners[0];
+	var lengthSoFar = 0.0;
+	
+	// Calculate the total distance by adding up the lengths
+	// of the straight lines between corners.
+	for (var i = 1; i < path.corners.Length; i++) {
+		var currentCorner = path.corners[i];
+		lengthSoFar = Vector3.Distance(previousCorner, currentCorner);
+		previousCorner = currentCorner;
+	}
+	
+	return lengthSoFar;
+}
+END EX

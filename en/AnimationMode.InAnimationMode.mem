@@ -1,0 +1,4 @@
+<signature>
+InAnimationMode()
+</signature>
+Are we currently in AnimationMode.

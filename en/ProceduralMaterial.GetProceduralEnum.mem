@@ -2,7 +2,7 @@
 GetProceduralEnum(string)
 </signature>
 Get a named Procedural enum property.
-Used for Procedural properties of type Enum.
+Used for ProceduralProperties of type Enum.
 The function does not return an actual enum but an integer specifying the index of the selected option.
 The available options are contained in the array [[ProceduralPropertyDescription.enumOptions]].
 

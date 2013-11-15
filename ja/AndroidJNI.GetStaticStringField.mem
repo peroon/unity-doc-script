@@ -1,8 +1,8 @@
 <signature>
 GetStaticStringField(IntPtr,IntPtr)
 </signature>
-フィールドIDを使い、staticのString型のフィールドを取得する。
-これは GetStaticObjectField() を同様のパラメータで呼び出しつつ結果から Managed String を作成する便利な関数です。
+This function returns the value of a static field of an object.
+This is a convenience function that calls GetStaticObjectField() with the same parameters, but creates a managed string from the result.
 
-SA: AndroidJNI.GetStaticObjectField
+SA: [[AndroidJNI.GetStaticObjectField]]
 SA: <a href="http://download.oracle.com/javase/1.5.0/docs/guide/jni/spec/jniTOC.html">Java Native Interface Specification (Oracle)</a>

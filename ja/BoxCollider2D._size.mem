@@ -1,0 +1,7 @@
+<signature>
+size
+</signature>
+The width and height of the rectangle.
+The X coordinate of the vector represents the width while the Y represents the height. These values are specified relative to a center point, so the distance from the center to the left edge is actually width/2.
+
+SA: ::ref::center.

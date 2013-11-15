@@ -1,7 +1,7 @@
 <signature>
 CreatePrimitive(PrimitiveType)
 </signature>
-プリミティブなゲームオブジェクトを生成します。
+Creates a game object with a primitive mesh renderer and appropriate collider.
 CONVERTEXAMPLE
 BEGIN EX
 	// Create a plane, sphere and cube in the scene.
@@ -22,3 +22,4 @@ BEGIN EX
 		cylinder.transform.position = Vector3(-2, 1, 0);
 	}
 END EX
+@param type The type of primitive object to create.

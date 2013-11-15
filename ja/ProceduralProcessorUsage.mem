@@ -1,2 +1,4 @@
-プロシージャルに使用されるプロセッサーの数を選択します。
-この値はマテリアル生成に使用される物理プロセッサーの数を意味します。
+The global Substance engine processor usage (as used for the ProceduralMaterial.substanceProcessorUsage property).
+The values refer to the number of physical processor cores used for ProceduralMaterial generation.
+
+SA: [[ProceduralMaterial.substanceProcessorUsage]].

@@ -2,4 +2,4 @@
 ToIntArray(int[])
 </signature>
 Convert a managed array of System.Int32 to a Java array of <tt>int</tt>.
-SA: AndroidJNI.NewIntArray, AndroidJNI.SetIntArrayElement.
+SA: [[AndroidJNI.NewIntArray]], [[AndroidJNI.SetIntArrayElement]].

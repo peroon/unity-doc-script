@@ -5,8 +5,11 @@ projectors, reflections or surveillance cameras.
 All rendering goes into the active RenderTexture (::ref::active class property).
 If the active RenderTexture is /null/ everything is rendered to the main window.
 
+For short-lived temporary render textures, use ::ref::GetTemporary and ::ref::ReleaseTemporary
+functions. These are most often useful in image post processing effects.
+
 Note that while [[wiki:class-RenderTexture|RenderTexture assets]] can be only power-of-two
-size, it is possible to create a non-power-of-two (''rect'') render textures from scripts.
+size, it is possible to create a non-power-of-two render textures from scripts.
 These are most often used for image post processing effects.
 
 Keep in mind that render texture contents can become "lost" on certain events, like loading

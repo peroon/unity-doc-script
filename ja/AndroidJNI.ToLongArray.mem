@@ -1,5 +1,5 @@
 <signature>
 ToLongArray(long[])
 </signature>
-Long配列をIntPtr型へ変換する。
-SA: AndroidJNI.NewLongArray, AndroidJNI.SetLongArrayElement.
+Convert a managed array of System.Int64 to a Java array of <tt>long</tt>.
+SA: [[AndroidJNI.NewLongArray]], [[AndroidJNI.SetLongArrayElement]].

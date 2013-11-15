@@ -21,7 +21,7 @@ structures, before a Raycast will hit the collider at it's new position.
 @param origin The starting point of the ray in world coordinates.
 @param direction The direction of the ray.
 @param distance The length of the ray.
-@param layerMask A [[wiki:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Vector3,Vector3,RaycastHit)
@@ -54,7 +54,7 @@ END EX
 @param direction The direction of the ray.
 @param distance The length of the ray.
 @param hitInfo If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
-@param layerMask A [[wiki:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Ray)
@@ -74,7 +74,7 @@ function Update() {
 END EX
 @param ray The starting point and direction of the ray.
 @param distance The length of the ray.
-@param layerMask A [[wiki:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
 @return True when the ray intersects any collider, otherwise false.
 <signature>
 Raycast(Ray,RaycastHit)
@@ -95,5 +95,5 @@ END EX
 @param ray The starting point and direction of the ray.
 @param distance The length of the ray.
 @param hitInfo If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
-@param layerMask A [[wiki:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
 @return True when the ray intersects any collider, otherwise false.

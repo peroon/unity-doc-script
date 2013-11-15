@@ -2,5 +2,7 @@
 IsSubAsset(Object)
 IsSubAsset(int)
 </signature>
-Is asset a sub asset?
-For eample a procedural material can be part of a material package.
+Does the asset form part of another asset?
+Some assets may form part of another asset (for example, a procedural material can be part of a material package). This function tells if an asset is subordinated in this way.
+@param obj The asset Object to query.
+@param instanceID Instance ID of the asset Object to query.

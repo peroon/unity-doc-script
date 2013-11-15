@@ -1,4 +1,6 @@
 <signature>
+ctor(int,int,int)
+ctor(int,int,int,RenderTextureFormat)
 ctor(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
 </signature>
 Creates a new RenderTexture object.
@@ -10,7 +12,7 @@ The actual render texture is created upon first use or when ::ref::Create is cal
 constructing the render texture, it is possible to set additional variables, like ::ref::format,
 ::ref::isCubemap and so on.
 
-SA: ::ref::format variable.
+SA: ::ref::format variable, ::ref::GetTemporary.
 CONVERTEXAMPLE
 BEGIN EX
 var rt: RenderTexture;
@@ -19,9 +21,16 @@ function Start () {
 	rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
 }
 END EX
+@param width Texture width in pixels.
+@param height Texture height in pixels.
+@param depth Number of bits in depth buffer.
+@param format Data format for the pixel information.
+@param readWrite Is reading and writing of pixel data enabled?
 <signature>
-ctor(int,int,int,RenderTextureFormat)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 Creates a new RenderTexture object.
 The render texture is created with /width/ by /height/ size, with a depth buffer
 of /depth/ bits (depth can be 0, 16 or 24), and in /format/ format.
@@ -33,8 +42,10 @@ constructing the render texture, it is possible to set additional variables, lik
 
 SA: ::ref::format variable.
 <signature>
-ctor(int,int,int)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 Creates a new RenderTexture object.
 The render texture is created with /width/ by /height/ size, with a depth buffer
 of /depth/ bits (depth can be 0, 16 or 24). The render texture is set to be

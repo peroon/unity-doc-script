@@ -1,0 +1,5 @@
+<signature>
+useLimits
+</signature>
+Should motion limits be used?
+SA: ::ref::limits.

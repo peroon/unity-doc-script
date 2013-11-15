@@ -1,5 +1,6 @@
 <signature>
 GetTexture(string)
+GetTexture(int)
 </signature>
 Get a named texture.
 Many shaders use more than one texture. Use GetTexture to get the /propertyName/ texture.
@@ -9,7 +10,7 @@ Common texture names used by Unity's builtin shaders: \\
 @@"_BumpMap"@@ is the normal map. \\
 @@"_Cube"@@ is the reflection cubemap.
 
-SA: ::ref::mainTexture property, ::ref::SetTexture.
+SA: ::ref::mainTexture property, ::ref::SetTexture,  Shader::ref::PropertyToID.
 BEGIN EX
 	function Start () {
 		var tex : Texture = renderer.material.GetTexture ("_BumpMap");

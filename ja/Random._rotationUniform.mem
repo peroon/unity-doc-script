@@ -1,11 +1,9 @@
 <signature>
 rotationUniform
 </signature>
-均一分布でのランダム回転を戻り値とします（読み取り専用）。
+Returns a random rotation with uniform distribution (RO).
 CONVERTEXAMPLE
 BEGIN EX
-	// 原点にて、ランダムな回転を持つプレハブをインスタンス化
-
-	var prefab : GameObject;
-	Instantiate(prefab, Vector3.zero, Random.rotationUniform);
+// Sets a random orientation for the object.
+transform.rotation = Random.rotationUniform;
 END EX

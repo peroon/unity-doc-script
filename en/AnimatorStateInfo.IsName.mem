@@ -1,4 +1,5 @@
 <signature>
 IsName(string)
 </signature>
-Does /name/ match the name of the active state in the statemachine.
+Does /name/ match the name of the active state in the statemachine?
+The name should be in the form ''Layer.Name'', for example "Base.Idle".

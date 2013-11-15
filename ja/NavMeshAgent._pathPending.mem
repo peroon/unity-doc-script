@@ -1,1 +1,4 @@
-移動先へのパスがセットされていて、計算中である場合、trueを返す(読み取り専用)
+<signature>
+pathPending
+</signature>
+Is a path in the process of being computed but not yet ready? (RO)

@@ -1,0 +1,4 @@
+<signature>
+Stop()
+</signature>
+Stops the active highlight.

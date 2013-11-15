@@ -1,4 +1,1 @@
-<signature>
-group
-</signature>
-GUIグループの名前を返す。グループ単位でプロパティを表示するために使用される
+The name of the GUI group. Used to display ProceduralProperties in groups.

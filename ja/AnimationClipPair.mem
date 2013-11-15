@@ -1,0 +1,2 @@
+This class define a pair of clip used by SA: [[AnimationSet]].
+Each original clip from the controller can be overriden with another clip.

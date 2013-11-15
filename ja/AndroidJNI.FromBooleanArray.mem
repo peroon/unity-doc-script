@@ -1,5 +1,5 @@
 <signature>
 FromBooleanArray(IntPtr)
 </signature>
-IntPtr型をBoolean配列へ変換する。
-SA: AndroidJNI.GetBooleanArrayElement, AndroidJNI.GetArrayLength.
+Convert a Java array of <tt>boolean</tt> to a managed array of System.Boolean.
+SA: [[AndroidJNI.GetBooleanArrayElement]], [[AndroidJNI.GetArrayLength]].

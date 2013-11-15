@@ -1,0 +1,6 @@
+<signature>
+GetSecondaries()
+</signature>
+Gets all secondary tiles.
+Secondary tile exists if it's pinned to start screen or a request to pin it is not yet complete.
+@return An array of Tile objects.

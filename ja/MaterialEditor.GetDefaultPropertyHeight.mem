@@ -1,0 +1,5 @@
+<signature>
+GetDefaultPropertyHeight(MaterialProperty)
+</signature>
+Calculate height needed for the property, ignoring custom drawers.
+This is similar to ::ref::GetPropertyHeight, except it ignores any custom [[MaterialPropertyDrawer]] objects.

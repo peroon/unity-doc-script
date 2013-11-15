@@ -1,0 +1,5 @@
+<signature>
+arguments
+</signature>
+Arguments passed to application.
+Arguments can be passed by secondary tiles and toast notifications. Note, that arguments are only available in XAML builds.

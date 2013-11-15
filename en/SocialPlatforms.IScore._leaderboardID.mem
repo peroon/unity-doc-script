@@ -1,0 +1,4 @@
+<signature>
+leaderboardID
+</signature>
+The ID of the leaderboard this score belongs to.

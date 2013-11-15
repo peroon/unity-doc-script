@@ -1,2 +1,3 @@
-最低限の機能を使用できる。
-OS により異なる
+Display minimal set of controls controlling movie playback.
+
+The set of controls displayed might differ between OS versions.

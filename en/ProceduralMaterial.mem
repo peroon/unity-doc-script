@@ -1,3 +1,5 @@
+Class for ProceduralMaterial handling.
+A reference to a ProceduralMaterial is usually assigned using "renderer.sharedMaterial as ProceduralMaterial".
 CONVERTEXAMPLE
 BEGIN EX
 var floatRangeProperty : String = "Saturation";
@@ -13,3 +15,4 @@ function Update () {
 	}
 }
 END EX
+Note that accessing a ProceduralMaterial via renderer.material will create a runtime clone of the original ProceduralMaterial and can negatively impact performance.

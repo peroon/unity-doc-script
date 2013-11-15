@@ -1,0 +1,3 @@
+Interface to control AnimationSet.
+AnimationSet are used to override clips from a controller to specialize some animation for a given avatar.
+SA: Animator.animationSet.

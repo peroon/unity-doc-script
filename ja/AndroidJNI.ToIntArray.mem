@@ -1,5 +1,5 @@
 <signature>
 ToIntArray(int[])
 </signature>
-Int配列をIntPtr型へ変換する。
-SA: AndroidJNI.NewIntArray, AndroidJNI.SetIntArrayElement.
+Convert a managed array of System.Int32 to a Java array of <tt>int</tt>.
+SA: [[AndroidJNI.NewIntArray]], [[AndroidJNI.SetIntArrayElement]].

@@ -2,6 +2,8 @@
 BuildHumanAvatar(GameObject,HumanDescription)
 </signature>
 Create a humanoid avatar.
-Lets you create a humanoid avatar and setup muscle space range limit and retargeting parameter like arm/leg twist and arm/leg stretch.
+The avatar is created using the supplied HumanDescription object which specifies the muscle space range limits and retargeting parameters like arm/leg twist and arm/leg stretch.
+
+SA: HumanDescription.
 @param go Root object of your transform hierachy.
-@param monoHumanDescription Human description.
+@param monoHumanDescription Description of the avatar.

@@ -1,5 +1,7 @@
 <signature>
 ResetPath()
 </signature>
-現在のパスを削除します。SetPath関数やSetDestination関数を使用して新しいパスが設定されるまで動かなくなります。
-__Notes:__ If this agent is occupying an OffMeshLink it will complete the link immediately.
+Clears the current path.
+When the path is cleared, the agent will not start looking for a new path until SetDestination is called.
+
+Note that if the agent is on an OffMeshLink when this function is called, it will complete the link immediately.

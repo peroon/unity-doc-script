@@ -1,2 +1,2 @@
-Runtime representation of the AnimatorController.
-Used to change at runtime the AnimatorController of an Animator.
+Runtime reprentation of the AnimationController. It can be used to change the Animator's AnimationSource during runtime.
+This class is deprecated, RuntimeAnimationController should be used.

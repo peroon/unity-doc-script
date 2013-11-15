@@ -1,0 +1,5 @@
+<signature>
+min
+</signature>
+Minimum distance the Rigidbody2D object can move from the Slider Joint's anchor.
+SA: [[Rigidbody2D]] class, SliderJoint::ref::connectedAnchor.

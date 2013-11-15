@@ -1,0 +1,7 @@
+<signature>
+fieldWidth
+</signature>
+The minimum width in pixels reserved for the fields of Editor GUI controls.
+Most Editor GUI controls consist of a label as well as the control field itself. The minimum width of the field is controlled by the [[fieldWidth]] value. Fields often appear wider than the minimum width, since Editor GUI controls are usually set to occupy a [[Rect]] that expands to fill the available horizontal space. Within this Rect, the field will take up all the space not used by the [[EditorGUIUtility.labelWidth]].
+
+The [[fieldWidth]] also controls the width of the text field in [[EditorGUI.Slider]] controls.

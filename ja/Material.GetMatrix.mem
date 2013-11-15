@@ -1,8 +1,10 @@
 <signature>
 GetMatrix(string)
+GetMatrix(int)
 </signature>
-シェーダーの行列を取得する。
+Get a named matrix value from the shader.
 This is mostly used with custom shaders that need extra matrix
-parameters. プロパティ名から行列を取得します。行列は、インスペクター上で確認することができません。スクリプトで確認／設定します。
+parameters. Matrix parameters are not exposed in the material inspector,
+but can be set and queried with /SetMatrix/ and /GetMatrix/ from scripts.
 
-SA: ::ref::SetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+SA: ::ref::SetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader::ref::PropertyToID.

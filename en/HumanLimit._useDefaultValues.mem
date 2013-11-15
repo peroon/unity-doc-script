@@ -1,5 +1,5 @@
 <signature>
 useDefaultValues
 </signature>
-Should this limit use the default values.
-As soon as you set other member you need to set this member to false.
+Should this limit use the default values?
+You should set useDefaultValues to false if you want to use your own limit values, otherwise the defaults will override your settings.

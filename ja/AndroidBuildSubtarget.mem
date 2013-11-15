@@ -1,2 +1,2 @@
-Android端末用のテクスチャ圧縮方法について選択します
-SA: EditorUserBuildSettings.androidBuildSubtarget.
+Target Android build platform.
+SA: [[EditorUserBuildSettings.androidBuildSubtarget]].

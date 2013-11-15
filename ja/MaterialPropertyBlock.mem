@@ -1,14 +1,14 @@
-マテリアル情報を適用するブロック要素を作成します。
-Graphics.DrawMesh関数に使用
-されます。同じマテリアルを使用してオブジェクトを描画するとき、わずかに異なる性質を持
-たせたいときなどに使用します。 例えば、
-描画する各メッシュの色をわずかに変えたい場合などがあります。
+A block of material values to apply.
+MaterialPropertyBlock is used by Graphics.DrawMesh and Renderer::ref::SetPropertyBlock. Use
+it in situations where you want to draw
+multiple objects with the same material, but slightly different properties. For example, if you
+want to slightly change the color of each mesh drawn.
 
-Unity の地形（Terrain）エンジンは MaterialPropertyBlock を使用して樹木（Tree）を描画します。
-全てが同じマテリアルを使用しますが、各々の樹木はカラー、スケール、および風（Wind）要素を変えています。
+Unity's terrain engine uses MaterialPropertyBlock to draw trees; all of them use the
+same material, but each tree has different color, scale & wind factor.
 
-Graphics.DrawMesh は渡されたプロパティブロックを複製するため、もっとも効率的な使用方法は
-すべての DrawMesh 呼び出しでひとつのブロックを作成してそれを再利用することです。 ::ref::Clear を使用してブロックの値をクリアし、
-::ref::AddFloat, ::ref::AddVector, ::ref::AddColor, ::ref::AddMatrix により値を追加します。
+The block passed to Graphics.DrawMesh or Renderer::ref::SetPropertyBlock is copied, so the most efficient way of using it is
+to create one block and reuse it for all DrawMesh calls. Use ::ref::Clear to clear block's values,
+and ::ref::AddFloat, ::ref::AddVector, ::ref::AddColor, ::ref::AddMatrix to add values.
 
-SA: Graphics.DrawMesh, [[Material]]
+SA: Graphics.DrawMesh, [[Material]].

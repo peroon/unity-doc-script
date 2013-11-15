@@ -1,0 +1,7 @@
+<signature>
+IsAwake()
+</signature>
+Is the rigidbody "awake"?
+''Sleeping'' is an optimisation that is used to temporarily remove an object from physics simulation when it is at rest. This function tells if the rigidbody is currently awake.
+
+SA: ::ref::Sleep, ::ref::WakeUp, ::ref::IsSleeping.

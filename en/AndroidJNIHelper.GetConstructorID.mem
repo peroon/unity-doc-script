@@ -6,7 +6,7 @@ Scans a particular Java class for a constructor method matching a signature.
 The signature comparison is done to allow for sub-/base-classes of the class types.
 If no signature is provided the first constuctor found will be returned.
 
-SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetMethodID, AndroidJNIHelper.GetFieldID.
+SA: [[AndroidJNIHelper.GetSignature]], [[AndroidJNIHelper.GetMethodID]], [[AndroidJNIHelper.GetFieldID]].
 @param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
 @param signature Constructor method signature (e.g. obtained by calling AndroidJNIHelper.GetSignature).
 <signature>

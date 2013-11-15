@@ -1,0 +1,6 @@
+<signature>
+WriteAllBytes(string,byte[])
+</signature>
+Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.
+@param path The file to write to.
+@param bytes The bytes to write to the file.

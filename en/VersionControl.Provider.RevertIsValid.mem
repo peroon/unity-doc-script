@@ -1,0 +1,8 @@
+<signature>
+RevertIsValid(AssetList,RevertMode)
+RevertIsValid(Asset,RevertMode)
+</signature>
+Return true if Revert is a valid task to perform.
+@param assets List of assets to test.
+@param mode Revert mode to test for.
+@param asset Asset to test.

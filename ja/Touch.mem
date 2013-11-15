@@ -1,1 +1,6 @@
-スクリーンでのタッチ情報を扱うときに使用します。
+Structure describing the status of a finger touching the screen.
+Devices can track a number of different pieces of data about a touch on a touchscreen, including its /phase/ (ie, whether it has just started, ended or moved), its position and whether the touch was a single contact or several taps. Furthermore, the continuity of a touch between frame updates can be detected by the device, so a consistent ID number can be reported across frames and used to determine how a particular finger is moving.
+
+The Touch struct is used by Unity to store data relating to a single touch instance and is returned by the Input::ref::GetTouch function. Fresh calls to GetTouch will be required on each frame update to obtain the latest touch information from the device but the ::ref::fingerID property can be used to identify the same touch between frames.
+
+SA: Input::ref::GetTouch, [[TouchPhase]] enum.

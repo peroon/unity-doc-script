@@ -1,0 +1,6 @@
+<signature>
+SetUserFilter(string[])
+</signature>
+Only search for these user IDs.
+This will ignore conflicting filters like the UserScope.
+@param userIDs List of user ids.

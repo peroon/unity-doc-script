@@ -1,0 +1,7 @@
+<signature>
+PeriodicUpdate(string,float)
+</signature>
+Starts periodic update of a tile.
+A remote uri will be checked periodically to retrieve an update for a tile.
+@param uri a remote location fromwhere to retrieve tile update
+@param interval a time interval in minutes, will be rounded to a value, supported by the system

@@ -1,18 +1,29 @@
 <signature>
-Log(object)
 </signature>
-コンソールにログを表示する
+<txttag>
+UNDOC
+</txttag>
+Logs /message/ to the Unity Console.
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.Log ("こんにちは");
+	Debug.Log ("Hello");
 END EX
 <signature>
+Log(object)
 Log(object,Object)
 </signature>
-コンソールにログを表示する
-コンソールにログを表示します。context引数に、スクリプトを付加しているゲームオブジェ
-クトを指定すれば、どのゲームオブジェクトがログを表示しているかがわかるようになります。
+Logs /message/ to the Unity Console.
+When you select the message in the console a connection to the context object will be drawn.
+This can be useful for locating the object on which an error occurs.
+
+When the message is a string, rich text markup can be used to add emphasis. See the manual page about [[wiki:StyledText|rich text]] for details of the different markup tags available.
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.Log ("Hello", gameObject);
+// Message with a link to an object.
+Debug.Log ("Hello", gameObject);
+
+// Message using rich text.
+Debug.Log("<color=red>Fatal error:</color> AssetBundle not found");
 END EX
+@param message String or object to be converted to string representation for display.
+@param context Object to which the message applies.

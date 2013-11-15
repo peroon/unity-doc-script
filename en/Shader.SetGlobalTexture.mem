@@ -1,5 +1,6 @@
 <signature>
 SetGlobalTexture(string,Texture)
+SetGlobalTexture(int,Texture)
 </signature>
 Sets a global texture property for all shaders.
 Global properties are used if a shader needs them but the material does

@@ -8,15 +8,14 @@ In most cases you can use the singleton pattern instead.
 SA: Object.FindObjectsOfType.
 CONVERTEXAMPLE
 BEGIN EX
-	// Search for any object of Type GUITexture, 
-	// if found print its name, else print a message
-	// that says that it was not found.
-
-	function Start() { 
-	    var s : GUITexture = FindObjectOfType(GUITexture);
-	    if(s)
-	        Debug.Log("GUITexture object found: " + s.name);
-	    else
-	        Debug.Log("No GUITexture object could be found");
-	}
+// Search for any object of Type GUITexture, 
+// if found print its name, else print a message
+// that says that it was not found.
+function Start() {
+  var texture : GUITexture = FindObjectOfType(GUITexture);
+  if(texture)
+    Debug.Log("GUITexture object found: " + texture.name);
+  else
+    Debug.Log("No GUITexture object could be found");
+}
 END EX

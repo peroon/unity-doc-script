@@ -1,11 +1,10 @@
 <signature>
 AddObjectToAsset(Object,string)
 </signature>
-オブジェクトを下の階層（子）へ追加します
-これは自作したデータを扱う際に最適です
-追加されたObjectは削除を行うことは出来ません
-再度全てを生成することになります
-削除を行うとインスタンスIDも変更されてしまい、参照が外れてしまうので気をつけてください
+Adds /objectToAdd/ to an existing asset at /path/.
+Please note that you should only add assets to '.asset' assets, imported models or texture assets for example will lose their data.
+
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {
@@ -26,14 +25,13 @@ BEGIN EX
 		Debug.Log(AssetDatabase.GetAssetPath(material));
 	}
 END EX
+@param objectToAdd Object to add to the existing asset.
+@param assetPath Filesystem path to the asset.
 <signature>
 AddObjectToAsset(Object,Object)
 </signature>
-オブジェクトを下の階層（子）へ追加します
-これは自作したデータを扱う際に最適です
-追加されたObjectは削除を行うことは出来ません
-再度全てを生成することになります
-削除を行うとインスタンスIDも変更されてしまい、参照が外れてしまうので気をつけてください
+Adds /objectToAdd/ to an existing asset identified by /assetObject/.
+Please note that you should only add assets to '.asset' files, imported models or texture assets for example will lose their data when reimporting or quitting Unity.
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {

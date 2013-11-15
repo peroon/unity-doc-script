@@ -1,0 +1,5 @@
+<signature>
+rangeLimits
+</signature>
+Min/max limits of a ranged float property (RO).
+This is only relevant for [[MaterialProperty.PropType.Range]] properties.

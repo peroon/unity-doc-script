@@ -1,0 +1,5 @@
+<signature>
+collider
+</signature>
+The incoming Collider2D involved in the collision.
+SA: [[Collider2D]] class.

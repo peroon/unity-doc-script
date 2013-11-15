@@ -1,8 +1,7 @@
 <signature>
 upperLegTwist
 </signature>
-Roll 回転が太ももおよび膝でどう配分するか定義します。
-値の範囲は 0 から 1。
-デフォルトの値は 0.5。
+Defines how the upper leg's roll/twisting is distributed between the thigh and knee joints.
+When the upper leg needs to twist or "roll" for the IK, the rotation can be applied at the thigh or knee joints or some twist can be applied at both. The /upperLegTwist/ is a weighting value in the range 0..1 that determines the fraction of the twist applied at the thigh and knee. For example, a value of zero means the twist should be handled entirely at the thigh, while a value of one means it should be applied entirely at the knee. The default value of 0.5 distributes the twisting evenly between thigh and knee.
 
-この値はリターゲティングにより、Roll 回転を太ももおよび膝でどう配分するか決めるために活用されます。
+SA: lowerArmTwist, lowerLegTwist, upperArmTwist.

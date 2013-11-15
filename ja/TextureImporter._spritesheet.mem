@@ -1,0 +1,5 @@
+<signature>
+spritesheet
+</signature>
+Array representing the sections of the atlas corresponding to individual sprite graphics.
+SA: [[SpriteMetaData]] class.

@@ -11,4 +11,4 @@ to use versions of the interfaces which have been extended beoynd the generic AP
 There are varoius classes accociated with the Social API and all of these reside
 in the __UnityEngine.SocialPlatforms__ namespace. You need to import/use this namespace in order to use these classes.
  
- SA: [[GameCenterPlatform]].
+ SA: [[SocialPlatforms.GameCenter.GameCenterPlatform]].

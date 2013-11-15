@@ -1,5 +1,5 @@
 <signature>
 ToShortArray(short[])
 </signature>
-Short配列をIntPtr型へ変換する。
-SA: AndroidJNI.NewShortArray, AndroidJNI.SetShortArrayElement.
+Convert a managed array of System.Int16 to a Java array of <tt>short</tt>.
+SA: [[AndroidJNI.NewShortArray]], [[AndroidJNI.SetShortArrayElement]].

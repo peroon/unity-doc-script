@@ -1,13 +1,19 @@
 <signature>
+PlayClipAtPoint(AudioClip,Vector3)
 PlayClipAtPoint(AudioClip,Vector3,float)
 </signature>
-指定の座標でクリップを再生する。再生が終了した後は、自動的に削除される。
+Plays an AudioClip at a given position in world space.
+This function creates an audio source but automatically disposes of it once the clip has finished playing.
 CONVERTEXAMPLE
 BEGIN EX
 	@script RequireComponent(AudioSource)
-	// Plays the clip at position
+
 	public var clip : AudioClip; //make sure you assign an actual clip here in the inspector
-	function Start(){
-		audio.PlayClipAtPoint(clip, Vector3 (5, 1, 2));
+
+	function Start() {
+		AudioSource.PlayClipAtPoint(clip, new Vector3 (5, 1, 2));
 	}
 END EX
+@param clip Audio data to play.
+@param position Position in world space from which sound originates.
+@param volume Playback volume.

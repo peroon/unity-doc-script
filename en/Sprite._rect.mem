@@ -1,0 +1,5 @@
+<signature>
+rect
+</signature>
+Location of the Sprite on the original Texture, specified in pixels.
+SA: ::ref::bounds, ::ref::size.

@@ -1,0 +1,7 @@
+<signature>
+collider2D
+</signature>
+The Collider2D component attached to the object.
+This returns null if no Collider2D is attached.
+
+SA: [[Collider2D]] class.

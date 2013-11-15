@@ -1,0 +1,7 @@
+<signature>
+bounciness
+</signature>
+The degree of elasticity during collisions.
+A value of zero indicates no elasticity (ie, no bounce at all) while a value of one indicates perfect elasticity.
+
+SA: PhysicMaterial::ref::bounciness.

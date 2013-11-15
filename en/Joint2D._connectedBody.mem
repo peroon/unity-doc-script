@@ -1,0 +1,7 @@
+<signature>
+connectedBody
+</signature>
+The Rigidbody2D object to which the other end of the joint is attached (ie, the object without the joint component).
+If this property is set to null then the joint attaches to a fixed point in space rather than another Rigidbody2D.
+
+SA: [[Rigidbody2D]] class, ::ref::collideConnected.

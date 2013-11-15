@@ -1,4 +1,27 @@
 <signature>
 seed
 </signature>
-乱数を生成する初期値を設定する。
+Sets the seed for the random number generator.
+The random number generator is not truly random but produces numbers in a preset sequence (the values in the sequence "jump" around the range in such a way that they appear random for most purposes).
+
+The point in the sequence where a particular run of pseudo-random values begins is selected using an integer called the ''seed'' value. The seed is normally set from some arbitrary value like the system clock before the random number functions are used. This prevents the same run of values from occurring each time a game is played and thus avoids predictable gameplay. However, it is sometimes useful to produce the same run of pseudo-random values on demand by setting the seed yourself.
+
+You might set your own seed, for example,  when you generate a game level procedurally. You can use randomly-chosen elements to make the scene look arbitrary and natural but set the seed to a preset value before generating. This will make sure that the same "random" pattern is produced each time the game is played. This can often be an effective way to reduce a game's storage requirements - you can generate as many levels as you like procedurally and store each one using nothing more than an integer seed value.
+CONVERTEXAMPLE
+BEGIN EX
+private var noiseValues: float[];
+
+function Start () {
+	// If you comment out the following line, the sequence of random
+	// values will be different each time you run. However, the sequence
+	// will always be the same for any particular seed value.
+	Random.seed = 42;
+	
+	noiseValues = new float[10];
+	
+	for (var i = 0; i < noiseValues.Length; i++) {
+		noiseValues[i] = Random.value;
+		print(noiseValues[i]);
+	}
+}
+END EX

@@ -1,9 +1,9 @@
 <signature>
 speakerMode
 </signature>
-スピーカーのモードを設定／取得する（デフォルトは2チャンネルのステレオ）。
-Be aware that the audio system is bootstrapped, when a new speaker mode is set,
-meaning that all playing [[class-AudioSource|AudioSources]] are stopped.
+Sets or gets the current speaker mode. Default is 2 channel stereo.
+Be aware that the audio system is restarted when a new speaker mode is set.
+This means that playback on all [[class-AudioSource|AudioSources]] is stopped; any sounds that should be continuous (such as music) will need to be started again after the speaker mode is changed.
 If a speaker mode is set beyond the drivers capability, the audio behaviour is undefined.
 Use [[AudioSettings.driverCaps]] to get the capabilities of the current driver.
 CONVERTEXAMPLE

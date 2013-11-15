@@ -1,8 +1,12 @@
 <signature>
 Instantiate(Object,Vector3,Quaternion)
+Instantiate(Object)
 </signature>
-オブジェクトを複製する
-オブジェクトを複製します。複製されるのはGameObjectクラスです。TransfromクラスやRigidbodyクラスを複製すると、付加しているゲームオブジェクト丸ごと付加されるので気を付けてください。
+Clones the object /original/ and returns the clone.
+This function makes a copy of an object in a similar way to the Duplicate command in the editor. If you are cloning a [[GameObject]] then you can also optionally specify its position and rotation (these will default to Vector3::ref::zero and Quaternion::ref::identity respectively). If you are cloning a [[Component]] then the GameObject is is attached to will also be cloned, again with an optional position and rotation.
+
+When you clone a [[GameObject]] or [[Component]], all child objects and components will also be cloned with their properties set like those of the original object. However, the ''parent'' of the new object will be null, so it will not be a "sibling" of the original. However, you can still set the parent explicitly if you wish. Also, the active status of a GameObject at the time of cloning will be passed on, so if the original is inactive then the clone will be created in an inactive state too.
+
 SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
 CONVERTEXAMPLE
 BEGIN EX
@@ -54,16 +58,22 @@ BEGIN EX
 	}
 END EX
 After cloning an object you can also use GetComponent to set properties on a specific component attached to the cloned object.
+@param original An existing object that you want to make a copy of.
+@param position Position for the new object.
+@param rotation Orientation of the new object.
 <signature>
-Instantiate(Object)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 Clones the object /original/ and returns the clone.
 This function preserves the position and rotation of the cloned object.
 This is essentially the same as using duplicate command (cmd-d) in Unity.
 If the object is a [[Component]] or a [[GameObject]] then entire game object including all components
 will be cloned. 
-If the game object has a transform all children are cloned as well. All game objects are activated after cloning them.
-\\SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
+If the game object has a transform all children are cloned as well. Note that the active status of a GameObject will be passed to its clone, so if the original is inactive at the time of cloning, the new clone will initially be inactive too.
+
+SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
 CONVERTEXAMPLE
 BEGIN EX
 	// Instantiates prefab when any rigid body enters the trigger.
@@ -76,6 +86,7 @@ BEGIN EX
 	}
 END EX
 Note that the Instantiate can clone any type of Object including scripts.
+@param original An existing object that you want to make a copy of.
 <signature>
 Instantiate<T>(T)
 </signature>

@@ -1,0 +1,18 @@
+<signature>
+GetPixels32(int,int,int,int)
+</signature>
+Grab pixel values from a ProceduralTexture.
+This only works for ProceduralMaterial instances that have been marked as "Readable" and whose texture format is set to RAW.
+
+The correct sequence to use GetPixels32() is:\\
+ - Set the ProceduralMaterial "Readable" flag using [[ProceduralMaterial.isReadable]]\\
+ - Rebuild the ProceduralMaterial's textures using [[ProceduralMaterial.RebuildTexturesImmediately]]\\
+ - Call GetPixels32().
+
+SA: [[ProceduralMaterial.isReadable]], [[ProceduralMaterial.RebuildTexturesImmediately]], Texture2D::ref::GetPixels32.
+@param x X-coord of the top-left corner of the rectangle to grab.
+@param y Y-coord of the top-left corner of the rectangle to grab.
+@param blockWidth Width of rectangle to grab.
+@param blockHeight Height of the rectangle to grab.
+Get the pixel values from a rectangular area of a ProceduralTexture into an array.
+The block is specified by its x,y offset in the texture and by its width and height. The block is "flattened" into the array by scanning the pixel values across rows one by one.

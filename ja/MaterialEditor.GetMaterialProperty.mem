@@ -1,0 +1,9 @@
+<signature>
+GetMaterialProperty(Object[],string)
+GetMaterialProperty(Object[],int)
+</signature>
+Get information about a single shader property.
+SA: ::ref::GetMaterialProperties, [[MaterialProperty]].
+@param mats Selected materials.
+@param name Property name.
+@param propertyIndex Property index.

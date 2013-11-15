@@ -1,1 +1,5 @@
-Remaining distance along the current path - or infinity when not known. (RO)
+<signature>
+remainingDistance
+</signature>
+The distance between the agent's position and the destination on the current path. (RO)
+If the remaining distance is unknown then this will have a value of infinity.

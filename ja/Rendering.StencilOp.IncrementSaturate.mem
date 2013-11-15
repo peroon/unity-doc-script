@@ -1,0 +1,1 @@
+Increments the current stencil buffer value. Clamps to the maximum representable unsigned value.

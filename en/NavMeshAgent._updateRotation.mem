@@ -1,1 +1,4 @@
-Should the agent update the transform orientation.
+<signature>
+updateRotation
+</signature>
+Should the agent update the transform orientation?

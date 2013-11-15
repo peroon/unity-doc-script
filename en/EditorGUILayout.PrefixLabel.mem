@@ -9,6 +9,11 @@ PrefixLabel(GUIContent,GUIStyle,GUIStyle)
 Make a label in front of some control.
 {img SimplePrefixLabelUsage.png}\\
 ''Simple window that shows the prefix label.''
+
+Note that most editor controls already have built-in optional labels that can be specified as one of the parameters. PrefixLabel can be used when there is no such built-in label available, or when you're creating your own editor control from scratch. 
+
+PrefixLabel also ensures that when the label is clicked, the linked control will get keyboard focus (if the control supports keyboard focus). The label is automatically linked to the following control coming after it.
+
 BEGIN EX
 	class SimplePrefixLabelUsage extends EditorWindow {
 

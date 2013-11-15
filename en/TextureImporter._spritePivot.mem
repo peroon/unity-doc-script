@@ -1,0 +1,4 @@
+<signature>
+spritePivot
+</signature>
+The point in the Sprite object's coordinate space where the graphic is located.

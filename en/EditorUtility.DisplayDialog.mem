@@ -31,7 +31,7 @@ BEGIN EX
 				+ " on the surface?", "Place", "Do Not Place")) {
 				foreach (Transform transform in transforms) {
 					RaycastHit hit;
-					if (Physics.Raycast(transform.position, Vector3.down, out hit)) {
+					if (Physics.Raycast(transform.position, -Vector3.up, out hit)) {
 						transform.position = hit.point;
 						Vector3 randomized = Random.onUnitSphere;
 						randomized = new Vector3(randomized.x, 0F, randomized.z);

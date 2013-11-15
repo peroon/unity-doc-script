@@ -24,3 +24,4 @@ BEGIN EX
 		}
 	}
 END EX
+@param activated Is the link activated?

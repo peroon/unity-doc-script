@@ -1,0 +1,2 @@
+Logical No-op (d) (D3D11.1 only).
+Performs logical no-op (dest) operation, effectively leaving the render target unchanged. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.

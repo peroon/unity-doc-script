@@ -1,0 +1,15 @@
+<signature>
+GetRayIntersectionNonAlloc(Ray,RaycastHit2D[],float,int)
+</signature>
+Cast a 3D ray against the colliders in the scene returning the colliders along the ray.
+This is useful for finding colliders intersecting an arbitrary 3D ray.
+
+This function is similar to the GetRayIntersectionAll function except that the results are returned in the supplied array. The integer return value is the number of objects that intersect the ray (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when such calls are performed frequently. The colliders will be placed in the returned array in order of distance from the start of the ray.
+
+Note that this function will allocate memory for the returned RaycastHit2D array. You can use ::ref::GetRayIntersectionNonAlloc to avoid this overhead if you need to make such calls frequently.
+
+Additionally this function is a 3D intersection test therefore any collision normals returned in the RaycastHit2D will be zero.
+@param ray The 3D ray defining origin and direction to test.
+@param distance Maximum distance over which to cast the ray.
+@param layerMask Filter to detect colliders only on certain layers.
+@param results Array to receive results.

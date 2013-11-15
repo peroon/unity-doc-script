@@ -1,0 +1,5 @@
+<signature>
+anchor
+</signature>
+The joint's anchor point on the object that has the HingeJoint2D component.
+SA: ::ref::connectedAnchor.

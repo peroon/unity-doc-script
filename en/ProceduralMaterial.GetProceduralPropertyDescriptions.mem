@@ -1,9 +1,9 @@
 <signature>
 GetProceduralPropertyDescriptions()
 </signature>
-Get an array of descriptions of all the properties this Procedural Material has.
-This can be used to build generic GUI that can be used to edit the properties of any Procedural Material
-without knowing the properties of it in advance.
+Get an array of descriptions of all the ProceduralProperties this ProceduralMaterial has.
+This can be used to build generic GUI that can be used to edit the properties of any ProceduralMaterial
+without knowing its properties in advance.
 CONVERTEXAMPLE
 BEGIN EX
 var scrolling : Vector2;

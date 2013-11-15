@@ -1,0 +1,2 @@
+Layer mask constant that includes all layers.
+SA: ::ref::DefaultRaycastLayers, ::ref::IgnoreRaycastLayer.

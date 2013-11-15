@@ -1,0 +1,9 @@
+<signature>
+Create(Texture2D,Rect,Vector2,float)
+</signature>
+Create a new Sprite object.
+SA: [[SpriteRenderer]] class.
+@param texture Texture from which to obtain the sprite graphic.
+@param rect Rectangular section of the texture to use for the sprite.
+@param pivot Sprite's pivot point relative to its graphic rectangle.
+@param pixelsToUnits Scaling to map pixels in the image to world space units.

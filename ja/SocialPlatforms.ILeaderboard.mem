@@ -1,0 +1,3 @@
+The leaderboard contains the scores of all players for a particular game.
+Each game can have multiple leaderboards with different scores. A leaderboard object can be customized to perform a particular query. The leaderboard ID defines which leaderboard is being queried and there are filters to narrow down the results, [[ILeaderboard.userScope| UserScope]], [[ILeaderboard.timeScope| TimeScope]],  [[ILeaderboard.range| Range]] and [[ILeaderboard.SetUserFilter|SetUserFilter]].
+Use Social.CreateLeaderboard to create an instance of this object.

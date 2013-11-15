@@ -1,1 +1,7 @@
-Does the agent currently have a path. (RO)
+<signature>
+hasPath
+</signature>
+Does the agent currently have a path? (RO)
+This property will be true if the agent has a path calculated to the desired destination and false otherwise.
+
+SA: pathPending.

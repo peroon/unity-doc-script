@@ -1,3 +1,4 @@
-<modelFileName>-<materialName>.mat material name.
-Name materials <modelFileName>-<materialName>.mat when searching for existing or creating new materials.
+Use material names in the form ''<modelFileName>-<materialName>.mat''.
+Material names will be accepted in the form ''<modelFileName>-<materialName>.mat'' when searching for existing materials or creating new ones.
+
 SA: ModelImporter.materialName.

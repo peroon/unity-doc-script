@@ -1,1 +1,2 @@
-Bake the textures and remove dependencies (default on unsupported platform).
+Bake the textures to speed up loading and discard the ProceduralMaterial data (default on unsupported platform).
+SA: [[ProceduralLoadingBehavior.BakeAndKeep]].

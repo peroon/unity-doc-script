@@ -1,16 +1,18 @@
 <signature>
 GetColor(string)
+GetColor(int)
 </signature>
-対応するプロパティネームからカラーを取得する。
+Get a named color value.
 Many shaders use more than one color. Use GetColor to get the /propertyName/ color.
 
-Unityのビルドインシェーダーでは、色を設定するプロパティは4 つあります。: \\
-@@"_Color"@@ メインとなるプロパティ。::ref::colorでもアクセスすることができる。 \\
-@@"_SpecColor"@@ 鏡面の色を設定する。specular/glossy/vertexlit のシェーダーで使用できる。 \\
-@@"_Emission"@@発光する色を設定する。vertexlit のシェーダーで使用できる。 \\
-@@"_ReflectColor"@@反射する色を設定する。reflective のシェーダーで使用できる。
+Common color names used by Unity's builtin shaders: \\
+@@"_Color"@@ is the main color of a material. This can also be accessed via ::ref::color property. \\
+@@"_SpecColor"@@ is the specular color of a material (used in specular/glossy/vertexlit shaders). \\
+@@"_Emission"@@ is the emissive color of a material (used in vertexlit shaders). \\
+@@"_ReflectColor"@@ is the reflection color of the material (used in reflective shaders).
 
-SA: ::ref::color property, ::ref::SetColor.
+SA: ::ref::color property, ::ref::SetColor, Shader::ref::PropertyToID.
+CONVERTEXAMPLE
 BEGIN EX
 	print (renderer.material.GetColor("_SpecColor"));
 END EX

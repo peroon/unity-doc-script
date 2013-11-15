@@ -1,1 +1,4 @@
+<signature>
+desiredVelocity
+</signature>
 The desired velocity of the agent including any potential contribution from avoidance. (RO)

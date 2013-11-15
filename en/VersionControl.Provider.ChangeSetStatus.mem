@@ -1,0 +1,7 @@
+<signature>
+ChangeSetStatus(ChangeSet)
+ChangeSetStatus(string)
+</signature>
+Retrieves the list of assets belonging to a changeset.
+@param changeset Changeset to query for assets.
+@param changesetID ChangesetID to query for assets.

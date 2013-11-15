@@ -1,42 +1,27 @@
 <signature>
 CollectDeepHierarchy(Object[])
 </signature>
-Calculates and returns a list of all assets the assets listed in /roots/ depend on.
-{img EditorUtilityCollectDeepHierarchy.png}\\
-''Show list of all assets the assets listed in roots depend on.''
+Collect all objects in the hierarchy rooted at each of the given objects. This is most useful for linearizing entire GameObject hierarchies including all their components.
+Note that the traversal will not include assets referenced from within the hierarchy. For example, having a MeshFilter component in the hierarchy will not cause the referenced Mesh to be included in the resulting list.
 BEGIN EX
-	// Show list of all assets the assets listed in roots depend on.
-	// on the selected GameObject
+function Start () {
 
-	class EditorUtilityCollectDeepHierarchy extends EditorWindow {
+    // Create two GameObjects.
+    var parent = new GameObject(); parent.name = "Parent";
+    var child = new GameObject(); child.name = "Child";
 
-		var obj : GameObject = null;
+    // Make one a child of the other.
+    child.transform.parent = parent.transform;
 
-		@MenuItem("Examples/Select Dependencies")
-		static function Init() {
-			var window = GetWindow(EditorUtilityCollectDeepHierarchy);
-			window.position = Rect(0, 0, 250, 80);
-			window.Show();
-		}
+    // Collect entire hierarchy.
+    var result = EditorUtility.CollectDeepHierarchy([parent]);
 
-		function OnInspectorUpdate() {
-			Repaint();
-		}
-
-		function OnGUI() {
-			obj = EditorGUI.ObjectField(Rect(3,3,position.width - 6, 20),
-					"Find Dependency",
-					obj,
-					GameObject);
-
-			if(obj)	{
-				if(GUI.Button(Rect(3,25,position.width - 6, 20), "Check Dependencies"))
-					Selection.objects = EditorUtility.CollectDeepHierarchy([obj]);
-			} else {
-				EditorGUI.LabelField(Rect(3,25,position.width - 6,20),
-					"Missing:",
-					"Select an object first");
-			}
-		}
-	}
+    // Dump results.  Will log four objects to the console;
+    // two GameObjects ("Parent" and "Child") and two Transform
+    // components (one belonging to "Parent" and one belonging to
+    // "Child").
+    for (var obj in result) {
+        Debug.Log(obj);
+    }
+}
 END EX

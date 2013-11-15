@@ -1,0 +1,7 @@
+<signature>
+point
+</signature>
+The point in world space where the ray hit the collider's surface.
+The exact point of contact can be useful for positioning graphic effects (such as explosion or blood splatters) and for determining which specific part of an object was hit.
+
+SA: ::ref::fraction.

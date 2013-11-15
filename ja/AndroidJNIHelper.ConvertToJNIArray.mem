@@ -1,6 +1,6 @@
 <signature>
 ConvertToJNIArray(Array)
 </signature>
-Array配列からIntPtr型のJava 配列を作成する
-SA: AndroidJNIHelper.ConvertFromJNIArray.
-@param array System.Arrayの配列。
+Creates a Java array from a managed array.
+SA: [[AndroidJNIHelper.ConvertFromJNIArray]].
+@param array Managed array to be converted into a Java array object.

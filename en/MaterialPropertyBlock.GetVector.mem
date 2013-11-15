@@ -1,0 +1,6 @@
+<signature>
+GetVector(string)
+GetVector(int)
+</signature>
+Get a vector from the property block.
+Returns zero vector if not found.

@@ -1,12 +1,12 @@
 <signature>
 ctor(Keyframe[])
 </signature>
-任意の数のキーフレームからアニメーションカーブを作成します。
-これにより複数の変数にあたる [[Keyframe]] 引数からカーブが作成されます。もしキーフレームの配列から
-カーブを作成したい場合、空のカーブを作成し ::ref::keys プロパティを割り当てます。
+Creates an animation curve from arbitrary number of keyframes.
+This creates a curve from variable number of [[Keyframe]] parameters. If you want to create curve
+from an array of keyframes, create an empty curve and assign ::ref::keys property.
 CONVERTEXAMPLE
 BEGIN EX
-	// Ease In, Ease Out によるアニメーションカーブ（接線は全て平ら）
+	// An ease in, ease out animation curve (tangents are all flat)
 	var curve = new AnimationCurve(Keyframe(0, 0), Keyframe(1, 1));
 	
 	function Update () {
@@ -15,7 +15,6 @@ BEGIN EX
 	}
 END EX
 <signature>
-ctor(IntPtr)
 </signature>
 <txttag>
 UNDOC
@@ -23,4 +22,4 @@ UNDOC
 <signature>
 ctor()
 </signature>
-空のアニメーションカーブを作成します。
+Creates an empty animation curve.

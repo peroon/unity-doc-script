@@ -1,4 +1,5 @@
 <signature>
 status
 </signature>
-パスのステータス(読み込み専用)
+Status of the path. (RO)
+This reports whether the path reaches to the target, partway to the target or is completely invalid.

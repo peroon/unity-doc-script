@@ -11,7 +11,8 @@ BEGIN EX
 		vSbarValue = GUI.VerticalScrollbar(Rect (25, 25, 100, 30), vSbarValue, 1.0, 10.0, 0.0);
 	}
 END EX
-<b>Finding extra elements:</b><br>
+__Finding extra elements:__
+
 The styles of the buttons at the end of the scrollbar are searched for in the current skin by adding "upbutton" and "downbutton" to the style name. 
 The name of the scrollbar thumb (the thing you drag) is found by appending "thumb" to the style name.
 BEGIN EX

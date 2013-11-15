@@ -1,0 +1,11 @@
+<signature>
+SetPlatformTextureSettings(string,string,int,int,int,int)
+</signature>
+Set the import settings for the input ProceduralMaterial for the input platform (width and height, RAW/Compressed format, loading behavior).
+@param materialName The name of the Procedural Material.
+@param platform The name of the platform (can be empty).
+@param maxTextureWidth The maximum texture width for this Procedural Material.
+@param maxTextureHeight The maximum texture height for this Procedural Material.
+@param textureFormat The texture format (0=Compressed, 1=RAW) for this Procedural Material.
+@param loadBehavior The load behavior for this Procedural Material.
+Values match the ProceduralMaterial::ProceduralLoadingBehavior enum.

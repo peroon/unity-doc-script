@@ -1,0 +1,7 @@
+<signature>
+normal
+</signature>
+Surface normal at the contact point.
+This is the normal vector (ie, the vector perpendicular to the surface) of the incoming Collider2D at the contact point.
+
+SA: [[Collider2D]] class.

@@ -3,8 +3,28 @@ GetTemporary(int,int)
 GetTemporary(int,int,int)
 GetTemporary(int,int,int,RenderTextureFormat)
 GetTemporary(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
+GetTemporary(int,int,int,RenderTextureFormat,RenderTextureReadWrite,int)
 </signature>
 Allocate a temporary render texture.
 This function is optimized for when you need a quick RenderTexture to do some temporary calculations.
 Release it using ::ref::ReleaseTemporary as soon as you're done with it, so another call can
 start reusing it if needed.
+
+Internally Unity keeps a pool of temporary render textures, so a call to GetTemporary most often
+just returns an already created one (if the size and format matches). These temporary render textures
+are actually destroyed when they aren't used for a couple of frames.
+
+If you are doing a series of post-processing "blits", it's best for performance to get and release
+a temporary render texture for each blit, instead of getting one or two render textures upfront and reusing
+them. This is mostly beneficial for mobile (tile-based) and multi-GPU systems: GetTemporary will internally
+do a ::ref::DiscardContents call which helps to avoid costly restore operations on the previous
+render texture contents.
+
+You can not depend on any particular contents of the RenderTexture you get from GetTemporary function.
+It might be garbage, or it might be cleared to some color, depending on the platform.
+@param width Width in pixels.
+@param height Height in pixels.
+@param depthBuffer Depth buffer bits (0, 16 or 24).
+@param format Render texture format.
+@param readWrite sRGB handling mode.
+@param antiAliasing Anti-aliasing (1,2,4,8).

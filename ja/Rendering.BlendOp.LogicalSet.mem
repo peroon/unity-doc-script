@@ -1,0 +1,2 @@
+Logical SET (1) (D3D11.1 only).
+Performs logical SET (1) operation, effectively setting all bits in the render target. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.

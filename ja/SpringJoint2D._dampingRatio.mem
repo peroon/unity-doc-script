@@ -1,0 +1,7 @@
+<signature>
+dampingRatio
+</signature>
+The amount by which the spring force is reduced in proportion to the movement speed.
+The spring will oscillate with a certain frequency as it attempts to reestablish the desired distance between the objects. The higher the damping ratio, the quicker the oscillation will die down to zero.
+
+SA: ::ref::frequency.

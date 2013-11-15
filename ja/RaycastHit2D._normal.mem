@@ -1,0 +1,7 @@
+<signature>
+normal
+</signature>
+The normal vector of the surface hit by the ray.
+The ''normal vector'' of a surface is the vector that points outward perpenidularly at a given point on that surface. This vector can be useful in raycasting as a way to determine reflections or ricochets from projectiles or to align a character so that it stands upright on the surface.
+
+Note that if a hit occurs starting inside a collider then the collision normal will be simply the opposite direction of the line/ray query.

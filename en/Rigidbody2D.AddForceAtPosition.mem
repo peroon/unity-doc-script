@@ -1,0 +1,9 @@
+<signature>
+AddForceAtPosition(Vector2,Vector2)
+</signature>
+Apply a force at a given position in space.
+The ::ref::AddForce function applies a force that acts straight through the rigidbody's centre of mass and so produces only positional movement and no rotation. ''AddForceAtPosition'' can apply the force at any position in world space and will typically also apply a ''torque'' to the object which will set it rotating. Note that for the purposes of this function, the rigidbody is just a coordinate space of infinite size, so there is no reason why the force needs to be applied within the confines of the object's graphic or colliders.
+
+SA:: ::ref::AddForce, ::ref::AddTorque, Rigidbody::ref::AddForceAtPosition.
+@param force Components of the force in the X and Y axes.
+@param position Position in world space to apply the force.

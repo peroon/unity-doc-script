@@ -1,5 +1,6 @@
 <signature>
 SetGlobalMatrix(string,Matrix4x4)
+SetGlobalMatrix(int,Matrix4x4)
 </signature>
 Sets a global matrix property for all shaders.
 Global properties are used if a shader needs them but the material does

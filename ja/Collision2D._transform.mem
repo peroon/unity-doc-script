@@ -1,0 +1,5 @@
+<signature>
+transform
+</signature>
+The Transform of the incoming object involved in the collision.
+SA: [[Transform]] class.

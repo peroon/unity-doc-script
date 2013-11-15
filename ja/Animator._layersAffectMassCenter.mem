@@ -1,5 +1,8 @@
 <signature>
 layersAffectMassCenter
 </signature>
-内部の値。
-もし追加レイヤーが重心に影響する場合 True。
+<txttag>
+UNDOC
+</txttag>
+Internal.
+True if additional layers affect the center of mass.

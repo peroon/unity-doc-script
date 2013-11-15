@@ -1,0 +1,2 @@
+Collider for 2D physics representing an circle.
+SA: [[BoxCollider]] class, [[PolygonCollider2D]] class.

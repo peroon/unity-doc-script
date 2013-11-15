@@ -1,2 +1,4 @@
-List of includes transform for this avatar.
-This list define which transform to include or exclude from the final avatar skeleton. If you define a hierarchy with hole you may get unexpected result.
+List of bone Transforms to include in the model.
+This list define which transforms to include in the final avatar skeleton. Strange results can occur if a parent transform (ie, one with children in the hierarchy) is omitted from the list.
+
+SA: SkeletonBone.

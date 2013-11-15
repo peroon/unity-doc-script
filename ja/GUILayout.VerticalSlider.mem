@@ -2,22 +2,22 @@
 VerticalSlider(float,float,float,GUILayoutOption[])
 VerticalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
 </signature>
-垂直のスライダーを作成します。
+A vertical slider the user can drag to change a value between a min and a max.
 {img GUILayoutVerticalSlider.png}\\
-''ゲームビュー上の垂直のスライダー''
+''Vertical slider in the Game View.''
 CONVERTEXAMPLE
 BEGIN EX
-	// 10 (最上部) から 0 (最下部)まで変化する垂直のスライダー コントロールを描画
+	// Draws a vertical slider control that goes from  10 (top) to 0 (bottom)
 	var vSliderValue : float = 0.0;
 
 	function OnGUI () {
 		vSliderValue = GUILayout.VerticalSlider (vSliderValue, 10.0, 0.0);
 	}
 END EX
-@param value 現在値
-@param topValue 最小値
-@param bottomValue 最大値
-@param slider スライドさせるバーのスタイル
-@param thumb スライドさせる範囲のスタイル
-@param options 幅・高さ
-@return ユーザによって設定された値
+@param value The value the slider shows. This determines the position of the draggable thumb.
+@param topValue The value at the top end of the slider.
+@param bottomValue The value at the bottom end of the slider.
+@param slider The [[GUIStyle]] to use for displaying the dragging area. If left out, the /horizontalSlider/ style from the current [[GUISkin]] is used.
+@param thumb The [[GUIStyle]] to use for displaying draggable thumb. If left out, the /horizontalSliderThumb/ style from the current [[GUISkin]] is used.
+@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.
+@return The value that has been set by the user.

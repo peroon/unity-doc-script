@@ -1,0 +1,5 @@
+<signature>
+UpdatePositions()
+</signature>
+Explicitly update the link endpoints.
+Updates the OffMeshLink endpoints to match the transforms specified by the start and end transforms.

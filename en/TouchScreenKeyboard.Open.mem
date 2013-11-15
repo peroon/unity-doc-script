@@ -20,6 +20,7 @@ typed character.
 The keyboard can be opened in the /alert/ mode too.
 The /placeholder/ string will be displayed when there is no other text
 in the input field of the keyboard.
+CONVERTEXAMPLE
 BEGIN EX
 	var inputURL : String = "http://www.unity3d.com";
 	private var keyboard : TouchScreenKeyboard;
@@ -32,3 +33,10 @@ BEGIN EX
 			inputURL = keyboard.text;
 		}
 END EX
+@param text Text to edit.
+@param keyboardType Type of keyboard (eg, any text, numbers only, etc).
+@param autocorrection Is autocorrection applied?
+@param multiline Can more than one line of text be entered?
+@param secure Is the text masked (for passwords, etc)?
+@param alert Is the keyboard opened in alert mode?
+@param textPlaceholder Text to be used if no other text is present.

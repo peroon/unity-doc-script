@@ -1,8 +1,8 @@
 <signature>
 Perspective(float,float,float,float)
 </signature>
-パースペクティブ射影行列を作成する。
+Creates a perspective projection matrix.
 /fov/ is the vertical field-of-view in degrees of the perspective matrix, /aspect/ is the aspect ratio (width divided by height).
 /zNear/ and /zFar/ set up the depth clipping planes.
 
-SA: GL.LoadPixelMatrix, GL.LoadProjectionMatrix, GUI.matrix.
+SA: GL::ref::LoadPixelMatrix, GL::ref::LoadProjectionMatrix, GUI::ref::matrix.

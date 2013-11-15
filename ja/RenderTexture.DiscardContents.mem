@@ -1,8 +1,13 @@
 <signature>
 DiscardContents()
+DiscardContents(bool,bool)
 </signature>
-RenderTextureオブジェクトの内容を破棄する。
+Discards the contents of the RenderTexture.
 On some platforms, it can be good for performance if you indicate when the
 current contents of a RenderTexture aren't needed anymore. This can save
 copying it from one kind of memory to another when the texture is reused.
 Xbox 360 and many mobile GPUs benefit from this.
+
+Both the colour buffer and depth buffer are discarded by default but either can be selected individually using the optional boolean parameters.
+@param discardColor Should the colour buffer be discarded?
+@param discardDepth Should the depth buffer be discarded?

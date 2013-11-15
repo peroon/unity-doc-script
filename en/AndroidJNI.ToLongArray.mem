@@ -2,4 +2,4 @@
 ToLongArray(long[])
 </signature>
 Convert a managed array of System.Int64 to a Java array of <tt>long</tt>.
-SA: AndroidJNI.NewLongArray, AndroidJNI.SetLongArrayElement.
+SA: [[AndroidJNI.NewLongArray]], [[AndroidJNI.SetLongArrayElement]].

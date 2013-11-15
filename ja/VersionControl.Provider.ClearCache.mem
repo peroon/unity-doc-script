@@ -1,0 +1,4 @@
+<signature>
+ClearCache()
+</signature>
+This will invalidate the cached state information for all assets.

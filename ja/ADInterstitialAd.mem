@@ -1,1 +1,16 @@
-Apple iADフレームワークのADInterstitialAdクラスのラッパーです。iPad のみ利用可能です。iPad アプリケーションがユーザに表示できるフルスクリーン広告を提供します。
+ADInterstitialAd is a wrapper around the ADInterstitialAd class found in the Apple iAd framework and is only available on iPad.
+It provides full-screen advertisements that your iPad application can display to the user.
+BEGIN EX
+private ADInterstitialAd fullscreenAd = null;
+
+void Start()
+{
+	fullscreenAd = new ADInterstitialAd();
+	ADInterstitialAd.onInterstitialWasLoaded  += OnFullscreenLoaded;
+}
+
+void OnFullscreenLoaded()
+{
+	fullscreenAd.Show();
+}
+END EX

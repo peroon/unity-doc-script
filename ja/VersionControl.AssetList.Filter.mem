@@ -1,0 +1,6 @@
+<signature>
+Filter(bool,States[])
+</signature>
+Based on the current list and the states a new list is returned which only contains the assets with the requested states.
+@param includeFolder Whether or not folders should be included.
+@param states Which states to filter by.

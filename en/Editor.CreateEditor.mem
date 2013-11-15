@@ -8,3 +8,72 @@ Make a custom editor for /obj/ or /objects/.
 By default an appropriate editor is chosen that has a matching CustomEditor attribute.
 If an editorType is specified, an editor of that type is created instead.
 Returns NULL if obj doesn't have a custom editor class defined.
+
+Consider a script WaypointPathEditor for editing  the Transforms of a wayPoint array.
+BEGIN EX
+import System.Linq;
+
+@CustomEditor (WaypointPath)
+class WaypointPathEditor extends Editor {
+	
+	var currentTransformEditor;
+	var waypoints : Transform[];
+	var selectedTransform :Transform;
+	var optionsList : String[];
+	var index = 0;
+	var myWayPath : WaypointPath; 
+
+	function GetWaypoints () {
+    	var myWayPath = target as WaypointPath;
+		
+        // Gets only the valid objects from WaypointPath
+		if (myWayPath.wayPointArray != null) {
+			waypoints = myWayPath.wayPointArray.Where (function(obj) { return obj != null; }).ToArray ();
+			optionsList = waypoints.Select (function(obj, index){index.ToString () + ". " + obj.name;}).ToArray ();	
+			}
+		
+      		
+	}
+	
+	function OnInspectorGUI () {
+    	GetWaypoints ();
+        DrawDefaultInspector ();
+        EditorGUILayout.Space ();
+        EditorGUI.BeginChangeCheck ();
+		
+		if (optionsList != null)
+        	index = EditorGUILayout.Popup ("Select Waypoint", index, optionsList);
+		
+		if (EditorGUI.EndChangeCheck ()) {
+			var tmpEditor;
+			if (index < waypoints.Length) {
+				selectedTransform = waypoints[index];
+
+                //Creates an Editor for selected Component from a Popup
+				tmpEditor = Editor.CreateEditor (selectedTransform);
+			}else {
+			
+ 				selectedTransform = null;
+			}
+			
+ 			// If there isn't a Transform currently selected then destroy the existing editor
+			if (currentTransformEditor != null) {
+				DestroyImmediate (currentTransformEditor);
+			}
+			
+			currentTransformEditor = tmpEditor;
+		}
+
+	    //Shows the created Editor beneath CustomEditor
+		if (currentTransformEditor != null && selectedTransform != null) {
+			currentTransformEditor.OnInspectorGUI ();
+		}
+    }
+}
+END EX
+And the script attached to a waypath GameObject:
+BEGIN EX
+//WaypointPath.js
+// This is not an editor script.
+var wayPointArray : Transform[];
+END EX

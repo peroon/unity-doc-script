@@ -1,0 +1,5 @@
+<signature>
+textureDimension
+</signature>
+Texture dimension (2D, Cubemap etc.) of the property (RO).
+SA: ::ref::type, ::ref::textureValue.

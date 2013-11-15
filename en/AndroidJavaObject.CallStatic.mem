@@ -3,6 +3,7 @@ CallStatic(string,object[])
 </signature>
 Call a static Java method on a class.
 To call a static method with return type 'void', use the regular version.
+CONVERTEXAMPLE
 BEGIN EX
 	// Create a android.os.Binder object and call statich method flushPendingCommands().
 	function Start() {
@@ -17,6 +18,7 @@ CallStatic<ReturnType>(string,object[])
 </signature>
 Call a static Java method on a class.
 To call a static method with a non-void return type, use the generic version.
+CONVERTEXAMPLE
 BEGIN EX
 	// Create a java.lang.String object, and call static method valueOf(float value).
 	function Start() {

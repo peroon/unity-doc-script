@@ -1,0 +1,5 @@
+<signature>
+hidden
+</signature>
+Hidden achievement are not shown in the list until the percentCompleted has been touched (even if it's 0.0).
+Can be used for achievements which are enabled when an addon is bought.

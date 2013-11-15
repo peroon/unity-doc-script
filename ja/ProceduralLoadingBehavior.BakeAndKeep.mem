@@ -1,1 +1,2 @@
-テクスチャをベイクしてロードを高速化し、また後ほど生成される場合があります。
+Bake the textures to speed up loading and keep the ProceduralMaterial data so that it can still be tweaked and regenerated later on.
+SA: [[ProceduralLoadingBehavior.BakeAndDiscard]].

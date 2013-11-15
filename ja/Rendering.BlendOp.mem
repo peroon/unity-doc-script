@@ -1,0 +1,2 @@
+Blend operation.
+The blend operation that is used to combine the pixel shader output with the render target. Note that the logical operations are only supported in Gamma (non-sRGB) colorspace, on DX11.1 hardware running on DirectX 11.1 runtime.

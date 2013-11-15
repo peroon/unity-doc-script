@@ -1,0 +1,6 @@
+<signature>
+GetFloat(string)
+GetFloat(int)
+</signature>
+Get a float from the property block.
+Returns zero if not found.

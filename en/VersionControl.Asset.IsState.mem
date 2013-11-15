@@ -1,0 +1,5 @@
+<signature>
+IsState(States)
+</signature>
+Returns true if the version control state of the asset exactly matches the input state.
+@param state State to check for.

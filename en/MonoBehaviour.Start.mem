@@ -4,13 +4,12 @@ Start()
 <txttag>
 CSNONE
 </txttag>
-Start is called just before any of the Update methods is called the first time.
-Start is only called once in the lifetime of the behaviour.
-The difference between Awake and Start is that Start is only called if the script instance is enabled.
-This allows you to delay any initialization code, until it is really needed.
-Awake is always called before any Start functions. This allows you to order initialization of scripts.
+Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+Like the Awake function, Start is called exactly once in the lifetime of the script. However, Awake is called when the script object is initialised, regardless of whether or not the script is enabled. Start may not be called on the same frame as Awake if the script is not enabled at initialisation time.
 
-The Start function is called after all Awake functions on all script instances have been called.
+The Awake function is called on all objects in the scene before any object's Start function is called. This fact is useful in cases where object A's initialisation code needs to rely on object B's already being initialised; B's initialisation should be done in Awake while A's should be done in Start.
+
+Where objects are instantiated during gameplay, their Awake function will naturally be called after the Start functions of scene objects have already completed.
 CONVERTEXAMPLE
 BEGIN EX
 	// Initializes the target variable.

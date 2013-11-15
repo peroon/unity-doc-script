@@ -1,0 +1,13 @@
+<signature>
+Checkout(AssetList,CheckoutMode)
+Checkout(string[],CheckoutMode)
+Checkout(Object[],CheckoutMode)
+Checkout(Asset,CheckoutMode)
+Checkout(string,CheckoutMode)
+Checkout(Object,CheckoutMode)
+</signature>
+Checkout an asset or list of asset from the version control system.
+Some version control systems like Perforce requires an asset to be checked out before it can be edited.
+@param assets List of assets to checkout.
+@param mode Tell the Provider to checkout the asset, the .meta file or both.
+@param asset Asset to checkout.

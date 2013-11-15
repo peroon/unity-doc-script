@@ -1,4 +1,1 @@
-<signature>
-group
-</signature>
-The name of the GUI group. Used to display Procedural property in groups.
+The name of the GUI group. Used to display ProceduralProperties in groups.

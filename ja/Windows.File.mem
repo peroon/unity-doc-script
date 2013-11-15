@@ -1,0 +1,2 @@
+Provides static methods for file operations.
+This is an alternative for System.IO.File class.

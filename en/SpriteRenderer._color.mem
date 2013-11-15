@@ -1,0 +1,5 @@
+<signature>
+color
+</signature>
+Rendering color for the Sprite graphic.
+Becomes the vertex color and can be accessed in a pixel shader.

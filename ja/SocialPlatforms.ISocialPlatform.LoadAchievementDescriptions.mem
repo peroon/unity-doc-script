@@ -1,0 +1,4 @@
+<signature>
+LoadAchievementDescriptions(Action<IAchievementDescription[]>)
+</signature>
+See [[Social.LoadAchievementDescriptions]].

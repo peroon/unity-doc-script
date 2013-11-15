@@ -1,22 +1,19 @@
 <signature>
+GetConstructorID(IntPtr)
 GetConstructorID(IntPtr,string)
 </signature>
-特定のシグネチャに一致するコンストラクタメソッドのJava クラスを
-読み込む
-クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
-シグネチャが空文字の場合、
-最初にヒットしたコンストラクタのIDを返します。
+Scans a particular Java class for a constructor method matching a signature.
+The signature comparison is done to allow for sub-/base-classes of the class types.
+If no signature is provided the first constuctor found will be returned.
 
-SA: AndroidJNIHelper.GetSignature, AndroidJNIHelper.GetMethodID, AndroidJNIHelper.GetFieldID.
-@param javaClass Java クラスオブジェクト
-@param signature AndroidJNIHelper.GetSignature関数で取得したシグネチ
-ャ。デフォルトは空文字列
+SA: [[AndroidJNIHelper.GetSignature]], [[AndroidJNIHelper.GetMethodID]], [[AndroidJNIHelper.GetFieldID]].
+@param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
+@param signature Constructor method signature (e.g. obtained by calling AndroidJNIHelper.GetSignature).
 <signature>
 GetConstructorID(IntPtr,object[])
 </signature>
-Java クラスオブジェクトからコンストラクタID を取得します。
-特定のシグネチャに一致するコンストラクタメソッドのJava クラスを
-読み込む。
-クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
-@param javaClass Java クラスオブジェクト
-@param args コンストラクタに必要な引数を配列として渡す
+Get a JNI method ID for a constructor based on calling arguments.
+Scans a particular Java class for a constructor method matching a signature based on passed arguments.
+The signature comparison is done to allow for sub-/base-classes of the class types.
+@param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
+@param args Array with parameters to be passed to the constructor when invoked.

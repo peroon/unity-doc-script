@@ -1,0 +1,18 @@
+<suggestedtype>
+property
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Count
+</signature>
+Returns how many elements are in the hashtable.
+CONVERTEXAMPLE
+BEGIN EX
+// Prints the number of elements in a new Hashtable
+
+var ht : Hashtable;
+ht = new Hashtable();
+Debug.Log("Hashtable has " + ht.Count + " elements.");
+END EX

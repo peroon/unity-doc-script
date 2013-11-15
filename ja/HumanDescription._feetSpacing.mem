@@ -1,7 +1,5 @@
 <signature>
 feetSpacing
 </signature>
-Mecanim で足を安定化させるのに使用する追加のオフセット
-デフォルトはゼロ。
-
-このオフセットを使用してアバターが大きな足があるときにメッシュの相互反発を回避できます。
+Modification to the minimum distance between the feet of a humanoid model.
+When a humanoid model has unusually large feet (a cartoon-like character, say) the meshes for the feet can sometimes interpenetrate during IK movement. The default value for /feetSpacing/ is zero, but using a larger value will increase the minimum distance that is maintained between the feet and avoid interpenetration.

@@ -1,4 +1,2 @@
-接続したマイクでオーディオクリップに記録する際に使用します。
-接続したマイクの一覧を取得するには [[Microphone.devices|Microphone.devices]] を使用します。
-録音セッションを開始するには [[Microphone.Start|Microphone.Start]] にデバイス名（または null / 空の文字列によりデフォルトデバイスを使用）を指定して使用します。
-録音セッションを停止するには [[Microphone.End|Microphone.End]] に録画を開始したときのデバイス ID を指定して使用します。
+Use this class to record to an [[AudioClip]] using a connected microphone.
+You can get a list of connected microphone(s) from the ::ref::devices property and then use the ::ref::Start and ::ref::End functions to start or end a recording session using one of the available devices.

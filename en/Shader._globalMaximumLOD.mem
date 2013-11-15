@@ -2,4 +2,4 @@
 globalMaximumLOD
 </signature>
 Shader LOD level for all shaders.
-SA: [[SL-ShaderLOD|Shader Level of Detail]], Shader.maximumLOD.
+SA: [[wiki:SL-ShaderLOD|Shader Level of Detail]], ::ref::maximumLOD.

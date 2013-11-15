@@ -1,0 +1,5 @@
+<signature>
+rigidbody
+</signature>
+The Rigidbody2D attached to the object that was hit.
+SA: [[Rigidbody2D]] class.

@@ -1,0 +1,18 @@
+<signature>
+OnTriggerEnter2D(Collider2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent when another object enters a trigger collider attached to this object (2D physics only).
+Further information about the other collider is reported in the Collider2D parameter passed during the call.
+
+SA: [[Collider2D]] class, ::ref::OnTriggerExit2D, ::ref::OnTriggerStay2D.
+CONVERTEXAMPLE
+BEGIN EX
+var characterInQuicksand: boolean;
+
+function OnTriggerEnter2D(other: Collider2D) {
+	characterInQuicksand = true;
+}
+END EX

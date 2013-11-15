@@ -1,0 +1,8 @@
+<signature>
+AddForce(Vector2)
+</signature>
+Apply a force to the rigidbody.
+The force is specified as two separate components in the X and Y directions (there is no Z direction in 2D physics). The object will be accelerated by the force according to the law ''force = mass x acceleration'' - the larger the mass, the greater the force required to accelerate to a given speed.
+
+SA: ::ref::AddForceAtPosition, ::ref::AddTorque, ::ref::mass, ::ref::velocity, Rigidbody::ref::AddForce.
+@param force Components of the force in the X and Y axes.

@@ -1,8 +1,7 @@
 <signature>
 GetStringField(IntPtr,IntPtr)
 </signature>
-フィールドIDを使い、staticでないString型のフィールドを取得
-する。
-これは GetObjectField() を同様のパラメータで呼び出しつつ結果から Managed String を作成する便利な関数です。
+This function returns the value of an instance (nonstatic) field of an object.
+This is a convenience function that calls GetObjectField() with the same parameters, but creates a managed string from the result.
 
-SA: AndroidJNI.GetObjectField.
+SA: [[AndroidJNI.GetObjectField]].

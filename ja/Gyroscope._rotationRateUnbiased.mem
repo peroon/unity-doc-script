@@ -1,8 +1,8 @@
 <signature>
 rotationRateUnbiased
 </signature>
-測定された回転速度を返す
-The rotation rate is given as a Vector3 representing the speed of rotation around each of the three axes in degrees per second. This value has been processed to remove "bias" and give a more accurate measurement. The raw value reported by the gyroscope hardware can be obtained with the ::ref::rotationRate property.
+Returns unbiased rotation rate as measured by the device's gyroscope.
+The rotation rate is given as a Vector3 representing the speed of rotation around each of the three axes in radians per second. This value has been processed to remove "bias" and give a more accurate measurement. The raw value reported by the gyroscope hardware can be obtained with the ::ref::rotationRate property.
 CONVERTEXAMPLE
 BEGIN EX
 	var shakeSpeed: float;

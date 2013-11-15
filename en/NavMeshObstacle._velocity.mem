@@ -1,1 +1,25 @@
-Obstacle velocity.
+<signature>
+velocity
+</signature>
+Velocity at which the obstacle moves around the NavMesh.
+CONVERTEXAMPLE
+BEGIN EX
+// Simple behaviour to block the player who we assume is controlled
+// by a NavMeshAgent.
+var obs: NavMeshObstacle;
+var player: Transform;
+var moveSpeed: float;
+
+function Start () {
+	obs = GetComponent.<NavMeshObstacle>();
+}
+
+function Update() {
+	// Find the heading to a target point five units in front of the player.
+	var targetPoint = player.TransformPoint(Vector3.forward * 5.0);
+	var heading = (player.position - transform.position).normalized;
+	
+	// Set the obstacle to move to the target at a predetermined speed.
+	obs.velocity = heading * moveSpeed;
+}
+END EX

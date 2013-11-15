@@ -1,0 +1,6 @@
+<signature>
+GetInt(string)
+GetInt(int)
+</signature>
+Get a named integer value.
+This function is just an alias to ::ref::GetFloat that casts the resulting value to an integer.

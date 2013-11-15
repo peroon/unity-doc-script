@@ -1,8 +1,6 @@
 <signature>
-RangeProperty(string,string,float,float)
+RangeProperty(MaterialProperty,string)
+RangeProperty(Rect,MaterialProperty,string)
 </signature>
 Draw a range slider for a range shader property.
-@param propertyName Name of the property to draw.
 @param label Label for the property.
-@param v2 Left value.
-@param v3 Right value.

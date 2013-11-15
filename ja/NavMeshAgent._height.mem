@@ -1,1 +1,4 @@
-エージェントの高さ
+<signature>
+height
+</signature>
+The height of the agent for purposes of passing under obstacles, etc.

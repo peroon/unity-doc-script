@@ -1,7 +1,10 @@
 <signature>
+DrawTexture(Rect,Texture)
+DrawTexture(Rect,Texture,ScaleMode)
+DrawTexture(Rect,Texture,ScaleMode,bool)
 DrawTexture(Rect,Texture,ScaleMode,bool,float)
 </signature>
-テクスチャを描画する
+Draw a texture within a rectangle.
 SA: GUI.color, GUI.contentColor.
 CONVERTEXAMPLE
 BEGIN EX
@@ -21,8 +24,8 @@ BEGIN EX
 		GUI.DrawTexture(Rect(10,10,60,60), aTexture, ScaleMode.ScaleToFit, true, 10.0f);
 	}
 END EX
-@param position 表示位置
-@param image 表示する画像
-@param scaleMode 表示範囲が画像の大きさと異なる場合、どう処理するかを決定する。デフォルトでは表示範囲いっぱいに表示する
-@param alphaBlend アルファチャンネルを扱うかの設定。デフォルトはtrue
-@param imageAspect 画像のアスペクト比を設定。デフォルトは0で、画像の縦横比を使用
+@param position Rectangle on the screen to draw the texture within.
+@param image [[Texture]] to display.
+@param scaleMode How to scale the image when the aspect ratio of it doesn't fit the aspect ratio to be drawn within.
+@param alphaBlend Whether to apply alpha blending when drawing the image (enabled by default).
+@param imageAspect Aspect ratio to use for the source image. If 0 (the default), the aspect ratio from the image is used.  Pass in w/h for the desired aspect ratio.  This allows the aspect ratio of the source image to be adjusted without changing the pixel width and height.

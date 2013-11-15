@@ -1,2 +1,3 @@
-画面いっぱいに拡大する
-アスペクト比は保たない
+Scale the movie until both dimensions fit the screen exactly.
+
+The aspect ratio of the movie is not preserved.

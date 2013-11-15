@@ -1,4 +1,1 @@
-<signature>
-enumOptions
-</signature>
-Enum型のプロパティにアクセスするString配列を設定する
+The available options for a ProceduralProperty of type Enum.

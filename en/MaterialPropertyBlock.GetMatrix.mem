@@ -1,0 +1,6 @@
+<signature>
+GetMatrix(string)
+GetMatrix(int)
+</signature>
+Get a matrix from the property block.
+Returns identity matrix if not found.

@@ -1,0 +1,22 @@
+<suggestedtype>
+method
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+ContainsValue(object)
+</signature>
+Determines whether the Hashtable contains a specific value.
+CONVERTEXAMPLE
+BEGIN EX
+// Searchs for a value on the hash table
+
+var h : Hashtable;
+h = new Hashtable();
+h.Add("1","one");
+h.Add("2","two");
+if(h.ContainsValue("one")) {
+	Debug.Log("Value 'one', has been found!");
+}
+END EX

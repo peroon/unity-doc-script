@@ -1,0 +1,2 @@
+Do not show the property in inspector.
+[[MaterialEditor]] will not show this property. This corresponds to "[HideInInspector]" attribute in front of property in the shader code.

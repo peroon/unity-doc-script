@@ -2,8 +2,10 @@
 Start(string,bool,int,int)
 </signature>
 Start Recording with device.
+If you pass a null or empty string for the device name then the default microphone will be used. You can get a list of available microphone devices from the ::ref::devices property. You can find the range of sample rates supported by a microphone using the ::ref::GetDeviceCaps property.
+
 Note that if you want to use the Microphone class in the web player, you need to get the
-user's permission to do so. Call [[Application.RequestUserAuthorization]] before calling
+user's permission to do so. Call Application::ref::RequestUserAuthorization before calling
 any Microphone methods.
 CONVERTEXAMPLE
 BEGIN EX
@@ -13,8 +15,8 @@ BEGIN EX
 		audio.Play();
 	}
 END EX
-@param deviceName The name of the device. Passing null or an empty string will pick the default device. Get device names with [[Microphone.devices|Microphone.devices]].
+@param deviceName The name of the device.
 @param lengthSec Is the length of the AudioClip produced by the recording.
 @param loop Indicates whether the recording should continue recording if lengthSec is reached, and wrap around and record from the beginning of the AudioClip.
-@param frequency Is the smaplerate of the AudioClip produced by the recording. Get minimum and maximum supported rates from [GetDeviceCaps].
+@param frequency The sample rate of the AudioClip produced by the recording.
 @return The function returns null if the recording fails to start.

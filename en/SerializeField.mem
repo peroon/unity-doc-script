@@ -21,9 +21,9 @@ Your field will only serialize if it is of a type that Unity can serialize:
 
 __Serializable types are:__
 
-- All classed inheriting from UnityEngine.Object, for example Gameobject, Commponent, MonoBehaviour, Texture2D, AnimationClip..
+- All classes inheriting from UnityEngine.Object, for example GameObject, Component, MonoBehaviour, Texture2D, AnimationClip..
 - All basic data types like int, string, float, bool.
-- Some built in types like Vector2, Vector3, Vector4, Quaternion, Matrix4x4, Color, Rect, Layermask..
+- Some built-in types like Vector2, Vector3, Vector4, Quaternion, Matrix4x4, Color, Rect, LayerMask..
 - Arrays of a serializable type\\
 - List of a serializable type (new in Unity2.6)\\
 - Enums

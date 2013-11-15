@@ -1,0 +1,2 @@
+Collider for 2D physics representing an axis-aligned rectangle.
+SA: [[CircleCollider2D]] class, [[PolygonCollider2D]] class.

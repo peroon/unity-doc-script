@@ -1,0 +1,4 @@
+<signature>
+AssignToAtlas(string,Sprite,SpritePackingMode,SpritePackingRotation)
+</signature>
+Assigns a Sprite to an already registered atlas.

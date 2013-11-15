@@ -2,4 +2,4 @@
 FromIntArray(IntPtr)
 </signature>
 Convert a Java array of <tt>int</tt> to a managed array of System.Int32.
-SA: AndroidJNI.GetIntArrayElement, AndroidJNI.GetArrayLength.
+SA: [[AndroidJNI.GetIntArrayElement]], [[AndroidJNI.GetArrayLength]].

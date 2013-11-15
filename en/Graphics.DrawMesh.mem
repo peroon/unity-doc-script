@@ -1,5 +1,11 @@
 <signature>
+DrawMesh(Mesh,Vector3,Quaternion,Material,int)
 DrawMesh(Mesh,Vector3,Quaternion,Material,int,Camera,int,MaterialPropertyBlock)
+DrawMesh(Mesh,Vector3,Quaternion,Material,int,Camera)
+DrawMesh(Mesh,Vector3,Quaternion,Material,int,Camera,int)
+DrawMesh(Mesh,Matrix4x4,Material,int)
+DrawMesh(Mesh,Matrix4x4,Material,int,Camera)
+DrawMesh(Mesh,Matrix4x4,Material,int,Camera,int)
 DrawMesh(Mesh,Matrix4x4,Material,int,Camera,int,MaterialPropertyBlock)
 </signature>
 Draw a mesh.

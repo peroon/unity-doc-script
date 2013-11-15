@@ -1,0 +1,6 @@
+<signature>
+GetTexture(string)
+GetTexture(int)
+</signature>
+Get a texture from the property block.
+Returns null if not found.

@@ -1,2 +1,2 @@
-アプリケーションのインストール先を選択します
-SA: PlayerSettings.Android.preferredInstallLocation.
+Preferred application install location.
+SA: [[PlayerSettings.Android.preferredInstallLocation]].

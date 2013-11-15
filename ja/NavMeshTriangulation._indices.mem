@@ -1,0 +1,2 @@
+Triangle indices for the navmesh triangulation.
+Contains 3 integers for each triangle. These integers refer to the vertices array.

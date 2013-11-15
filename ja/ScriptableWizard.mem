@@ -1,13 +1,10 @@
-ウィザードを作成します
-OnGUI関数を使用することが出来ますが、使用するとウィザード画面が上書きされますので注意して下さい
-
-
-
+Derive from this class to create an editor wizard.
+Editor wizards are typically opened using a menu item.
 BEGIN EX NOCHECK
 // C#
-// シンプルなウィザードにより Light ゲームオブジェクトを作成、または
-// ユーザが Apply をクリックしたとき、現在選択されたオブジェクトの色を
-// 赤にセット
+// Creates a simple wizard that lets you create a Light GameObject
+// or if the user clicks in "Apply", it will set the color of the currently
+// object selected to red
 
 using UnityEditor;
 using UnityEngine;
@@ -19,7 +16,7 @@ public class WizardCreateLight : ScriptableWizard {
     [MenuItem ("GameObject/Create Light Wizard")]
     static void CreateWizard () {
         ScriptableWizard.DisplayWizard<WizardCreateLight>("Create Light", "Create", "Apply");
-        //もし二つめのボタンを使用したくない場合は取り除く:
+        //If you don't want to use the secondary button simply leave it out:
         //ScriptableWizard.DisplayWizard<WizardCreateLight>("Create Light", "Create");
     }
     void OnWizardCreate () {
@@ -31,7 +28,7 @@ public class WizardCreateLight : ScriptableWizard {
     void OnWizardUpdate () {
         helpString = "Please set the color of the light!";
     }   
-    // ユーザが Apply ボタンを押下したとき OnWizardOtherButton を呼び出し
+    // When the user pressed the "Apply" button OnWizardOtherButton is called.
     void OnWizardOtherButton () {
         if (Selection.activeTransform == null ||
             Selection.activeTransform.light == null) return;

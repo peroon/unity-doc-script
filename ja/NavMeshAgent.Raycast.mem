@@ -1,7 +1,7 @@
 <signature>
 Raycast(Vector3,NavMeshHit)
 </signature>
-エージェントから目標値へレイを飛ばし、ヒットしたナビメッシュオブジェクトの情報を返します。
+Trace a straight path towards a target postion in the NavMesh without moving the agent.
 This function follows the path of a "ray" between the agent's
 position and the specified target position. If an obstruction is 
 encountered along the line then a true value is returned and
@@ -29,6 +29,6 @@ var target: Transform;
 		}
 	}
 END EX
-@param targetPosition 目標値
-@param hit ナビメッシュオブジェクトのヒット情報を格納する
-@return True If terminated before reaching target position. Otherwise returns false.
+@param targetPosition The desired end position of movement.
+@param hit Properties of the obstacle detected by the ray (if any).
+@return True if there is an obstacle between the agent and the target position, otherwise false.

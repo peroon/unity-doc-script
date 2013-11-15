@@ -2,6 +2,7 @@
 LoadMainAssetAtPath(string)
 </signature>
 Returns the main asset object at /assetPath/.
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png"
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
 
 SA: AssetDatabase.LoadAssetAtPath, AssetDatabase.LoadAllAssetsAtPath.
+@param assetPath Filesystem path of the asset to load.

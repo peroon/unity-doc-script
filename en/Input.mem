@@ -34,6 +34,3 @@ Detecting a change in orientation can be useful if you want to create game behav
 Note that the accelerometer hardware can be polled more than once per frame.
 To access all accelerometer samples since the last frame, you can read the Input.accelerationEvents property array.
 This can be useful when reconstructing player motions, feeding acceleration data into a predictor, or implementing other precise motion analysis.
-
-The Unity mobile devices input API is based on Apple's iOS API. It may help to learn more about the native API to better understand Unity's Input API.
-If you're a registered iOS developer, you can find Apple's input API documentation online.

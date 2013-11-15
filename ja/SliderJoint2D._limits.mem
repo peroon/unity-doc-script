@@ -1,0 +1,7 @@
+<signature>
+limits
+</signature>
+Restrictions on how far the joint can slide in each direction along the line.
+The line along which the joint can slide is specified by its angle (relative to the coordinate system) and optionally by endpoint limits along its length.
+
+SA: ::ref::angle.

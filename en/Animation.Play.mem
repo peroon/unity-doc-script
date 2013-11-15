@@ -31,13 +31,11 @@ BEGIN EX
 	animation.Play("walk", PlayMode.StopAll);
 END EX
 <signature>
-Play(AnimationPlayMode)
 </signature>
 <txttag>
 UNDOC
 </txttag>
 <signature>
-Play(string,AnimationPlayMode)
 </signature>
 <txttag>
 UNDOC

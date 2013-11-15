@@ -2,4 +2,4 @@
 ToFloatArray(float[])
 </signature>
 Convert a managed array of System.Single to a Java array of <tt>float</tt>.
-SA: AndroidJNI.NewFloatArray, AndroidJNI.SetFloatArrayElement.
+SA: [[AndroidJNI.NewFloatArray]], [[AndroidJNI.SetFloatArrayElement]].

@@ -1,0 +1,6 @@
+<signature>
+GetSecondary(string)
+</signature>
+Returns the secondary tile, identified by tile id.
+@param tileId A tile identifier.
+@return A Tile object or null if secondary tile does not exist (not pinned to start screen and user request is complete).

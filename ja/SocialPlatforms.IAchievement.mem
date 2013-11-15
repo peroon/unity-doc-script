@@ -1,0 +1,5 @@
+Information for a users achievement.
+This defines the relation between a particular achievement (described by
+[[IAchievementDescription|IAchievementDescription]]) and the local user, what progress he has, last date he reported progress and so on.
+
+Use [[Social.CreateAchievement]] to create an instance of this object.

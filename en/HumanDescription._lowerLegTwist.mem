@@ -1,8 +1,7 @@
 <signature>
 lowerLegTwist
 </signature>
-Define how roll is distributed between knee and ankle.
-The value range from 0 to 1.
-Default value is 0.5.
+Defines how the lower leg's roll/twisting is distributed between the knee and ankle.
+When the lower leg needs to twist or "roll" for the IK, the rotation can be applied at the knee or ankle joints or some twist can be applied at both. The /lowerLegTwist/ is a weighting value in the range 0..1 that determines the fraction of the twist applied at the knee and ankle. For example, a value of zero means the twist should be handled entirely at the knee, while a value of one means it should be applied entirely at the ankle. The default value of 0.5 distributes the twisting evenly between knee and ank;e.
 
-This value is used by the retargeter to distribute the roll on knee and ankle.
+SA: upperArmTwist, lowerArmTwist, upperLegTwist.

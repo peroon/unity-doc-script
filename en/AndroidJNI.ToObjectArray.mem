@@ -2,4 +2,4 @@
 ToObjectArray(IntPtr[])
 </signature>
 Convert a managed array of System.IntPtr, representing Java objects, to a Java array of <tt>java.lang.Object</tt>.
-SA: AndroidJNI.NewObjectArray, AndroidJNI.SetObjectArrayElement.
+SA: [[AndroidJNI.NewObjectArray]], [[AndroidJNI.SetObjectArrayElement]].

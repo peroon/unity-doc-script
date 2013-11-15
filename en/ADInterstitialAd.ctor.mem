@@ -1,4 +1,5 @@
 <signature>
 ctor()
+ctor(bool)
 </signature>
 Creates an interstitial ad.

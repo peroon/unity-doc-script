@@ -2,5 +2,5 @@
 CreateJavaRunnable(AndroidJavaRunnable)
 </signature>
 Creates a UnityJavaRunnable object (implements java.lang.Runnable).
-SA: AndroidJavaRunnable.
+SA: [[AndroidJavaRunnable]].
 @param runnable A delegate representing the java.lang.Runnable.

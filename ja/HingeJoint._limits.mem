@@ -1,4 +1,7 @@
-JointLimit情報を返す
+<signature>
+limits
+</signature>
+Limit of angular rotation on the hinge joint.
 The joint will be limited so that the angle is always between /limits.min/ and /limits.max/.
 The joint angle is in degrees relative to the rest angle. The rest angle between the bodies is always zero at the beginning of the simulation.
 CONVERTEXAMPLE
@@ -11,4 +14,3 @@ BEGIN EX
 	limits.maxBounce = 0;
 	hingeJoint.limits = limits;
 END EX
-Modifying the limit automatically enables it.

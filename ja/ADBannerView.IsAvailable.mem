@@ -1,0 +1,4 @@
+<signature>
+IsAvailable(Type)
+</signature>
+Checks if the banner type is available (e.g. MediumRect is available only starting with ios6).

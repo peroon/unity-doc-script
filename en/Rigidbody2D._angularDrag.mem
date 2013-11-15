@@ -1,0 +1,7 @@
+<signature>
+angularDrag
+</signature>
+Coefficient of angular drag.
+''Drag'' is the tendency of an object to slow down due to friction with the air or water that surrounds it. The ''angular drag'' applies to rotational movement and is set up separately from the ''linear drag'' that affects positional movement. A higher value of angular drag will cause an object's rotation to come to rest more quickly following a collision or torque.
+
+SA: ::ref::AddTorque, ::ref::AddForceAtPosition, ::ref::angularVelocity, ::ref::drag, Rigidbody::ref::angularDrag.

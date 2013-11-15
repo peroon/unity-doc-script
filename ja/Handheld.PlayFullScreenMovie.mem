@@ -1,7 +1,10 @@
 <signature>
+PlayFullScreenMovie(string)
+PlayFullScreenMovie(string,Color)
+PlayFullScreenMovie(string,Color,FullScreenMovieControlMode)
 PlayFullScreenMovie(string,Color,FullScreenMovieControlMode,FullScreenMovieScalingMode)
 </signature>
-ムービーをフルスクリーンで再生する
+Plays a full-screen movie (pro only feature).
 Note that player will stream movie directly
 from the device storage, therefore you have to provide movie as a
 separate files and not as a usual asset. You will have to create a
@@ -25,11 +28,12 @@ movie or audio files that already play correctly on an iPod or iPhone.
 For movie files, this typically means files with the extensions .mov,
 .mp4, .mpv, and .3gp and using one of the following compression
 standards:
-<ul>
-<li>H.264 Baseline Profile Level 3.0 video, up to 640 x 480 at 30 fps.
-Note that B frames are not supported in the Baseline profile.</li>
-<li>MPEG-4 Part 2 video (Simple Profile).</li>
-</ul>
+
+H.264 Baseline Profile Level 3.0 video, up to 640 x 480 at 30 fps.
+Note that B frames are not supported in the Baseline profile.
+
+MPEG-4 Part 2 video (Simple Profile).
+
 
 Calling this function will initiate a transition that fades the screen
 from your current content to the designated background color of the
@@ -43,3 +47,7 @@ BEGIN EX
 		Handheld.PlayFullScreenMovie ("StarWars.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
 	}
 END EX
+@param path Filesystem path to the movie file.
+@param bgColor Background color.
+@param controlMode How the playback controls are to be displayed.
+@param scalingMode How the movie is to be scaled to fit the screen.

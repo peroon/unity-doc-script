@@ -1,0 +1,7 @@
+<signature>
+CreatePrimitive(int,Vector2,Vector2)
+</signature>
+Creates as regular primitive polygon with the specified number of sides.
+@param sides The number of sides in the polygon.  This must be greater than two.
+@param scale The X/Y scale of the polygon.  These must be greater than zero.
+@param offset The X/Y offset of the polygon.

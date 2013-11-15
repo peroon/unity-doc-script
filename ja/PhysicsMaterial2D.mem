@@ -1,0 +1,4 @@
+Asset type that defines the surface properties of a Collider2D.
+Note: the 3D equivalent of this class is spelt as "PhysicMaterial" with no S, but this class is spelt "Physic__s__Material" with an S.
+
+SA: PhysicMaterial::ref:: class.

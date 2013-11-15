@@ -2,3 +2,4 @@
 shaderKeywords
 </signature>
 Additional shader keywords set by this material.
+SA: ::ref::EnableKeyword, ::ref::DisableKeyword.

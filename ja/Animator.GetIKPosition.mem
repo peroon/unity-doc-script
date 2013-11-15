@@ -1,6 +1,10 @@
 <signature>
 GetIKPosition(AvatarIKGoal)
 </signature>
-IK ゴールの位置を取得します。
-位置はワールド座標単位。
-@param goal 照会された AvatarIKGoal。
+Gets the position of an IK goal.
+An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+
+This function gets the current position of the specified goal in world space.
+
+SA: ::ref::GetIKPositionWeight, ::ref::SetIKPosition.
+@param goal The AvatarIKGoal that is queried.

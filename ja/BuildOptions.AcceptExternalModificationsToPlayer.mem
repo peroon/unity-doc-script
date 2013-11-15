@@ -1,4 +1,6 @@
-アプリケーションのディレクトリは上書き出来ないが変更は受け入れるようにする場合に設定します
-この設定はiOSでXcodeプロジェクトに於いて何らかの変更を行う場合に有効です
-また、Androidプロジェクトを生成する場合もこのオプションを設定します
+Used when building XCode (iPhone) or Eclipse (Android) projects.
+On iPhone, this setting will append an existing XCode project. Existing XCode project setting changes will be preserved.
+
+On Android, this setting will create a new Eclipse project. Existing Eclipse project setting changes will be discarded.
+
 SA: BuildPipeline.BuildPlayer.

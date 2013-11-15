@@ -1,0 +1,5 @@
+<signature>
+useMotor
+</signature>
+Should the joint be rotated automatically by a motor torque?
+SA: ::ref::motor.

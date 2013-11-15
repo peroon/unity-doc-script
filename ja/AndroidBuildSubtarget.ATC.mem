@@ -1,2 +1,2 @@
-ATC圧縮を行います
-SA: EditorUserBuildSettings.androidBuildSubtarget
+ATI texture compression. Available on devices running Adreno GPU, including HTC Nexus One, Droid Incredible, EVO, and others.
+SA: [[EditorUserBuildSettings.androidBuildSubtarget]].

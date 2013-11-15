@@ -1,0 +1,5 @@
+<signature>
+AddIsValid(AssetList)
+</signature>
+Given a list of assets this function returns true if Add is a valid task to perform.
+@param assets List of assets to test.

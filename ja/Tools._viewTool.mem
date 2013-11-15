@@ -1,5 +1,7 @@
 <signature>
 viewTool
 </signature>
-現在のViewToolを取得します
+The option that is currently active for the View tool in the Scene view.
+The View tool has options for Orbit, Pan, Zoom and FPS, depending on which combination mouse buttons and modifier keys is used. This property reports which option is currently active.
 
+SA: current.

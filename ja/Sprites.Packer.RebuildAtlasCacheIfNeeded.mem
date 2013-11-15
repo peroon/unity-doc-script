@@ -1,0 +1,5 @@
+<signature>
+RebuildAtlasCacheIfNeeded(BuildTarget,bool,Execution)
+</signature>
+Rebuilds the Sprite atlas cache.
+If Sprite atlas files are available, they will be remapped.

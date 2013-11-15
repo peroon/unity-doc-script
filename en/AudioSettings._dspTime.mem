@@ -1,7 +1,8 @@
 <signature>
 dspTime
 </signature>
-Returns the current time of the audio system. This is a value specified in seconds and based on the actual number of samples the audio system processes and is therefore much more precise than the time obtained via the Time.time property.
+Returns the current time of the audio system.
+This is a value specified in seconds and based on the actual number of samples the audio system processes and is therefore much more precise than the time obtained via the Time::ref::time property.
 CONVERTEXAMPLE
 BEGIN EX
 // The code example shows how to implement a metronome that procedurally generates the click sounds via the OnAudioFilterRead callback.

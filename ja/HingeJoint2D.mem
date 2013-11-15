@@ -1,0 +1,2 @@
+Joint that allows a Rigidbody2D object to rotate around a point in space or a point on another object.
+SA: [[DistanceJoint2D]] class, [[SliderJoint2D]] class, [[SpringJoint2D]] class,.

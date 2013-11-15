@@ -1,0 +1,2 @@
+Will be fired when banner was clicked.
+Please note, that app will loose focus on banner click, so the delegate will be called on first frame after ad was shown.

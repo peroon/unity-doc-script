@@ -1,0 +1,6 @@
+<signature>
+DrawHeader()
+</signature>
+Call this function to draw the header of the editor.
+This function is relevant if you are creating and managing your own Editor objects.
+SA: [[Editor.CreateEditor]].

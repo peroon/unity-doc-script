@@ -2,3 +2,7 @@
 Set3Points(Vector3,Vector3,Vector3)
 </signature>
 Sets a plane using three points that lie within it.  The points go around clockwise as you look down on the top surface of the plane.
+SA: ::ref::SetNormalAndPosition.
+@param a First point in clockwise order.
+@param b Second point in clockwise order.
+@param c Third point in clockwise order.

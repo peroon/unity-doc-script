@@ -2,4 +2,4 @@
 ToCharArray(char[])
 </signature>
 Convert a managed array of System.Char to a Java array of <tt>char</tt>.
-SA: AndroidJNI.NewCharArray, AndroidJNI.SetCharArrayElement.
+SA: [[AndroidJNI.NewCharArray]], [[AndroidJNI.SetCharArrayElement]].

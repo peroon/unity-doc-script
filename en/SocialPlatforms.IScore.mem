@@ -1,0 +1,2 @@
+A game score.
+It can be received from a ILeaderboard instance or using the Social.LoadScores call which uses the default leaderboard filters.

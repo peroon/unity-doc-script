@@ -1,0 +1,7 @@
+<signature>
+WakeUp()
+</signature>
+Disables the "sleeping" state of a rigidbody.
+''Sleeping'' is an optimisation that is used to temporarily remove an object from physics simulation when it is at rest. This function wakes up a rigidbody that is currently sleeping.
+
+SA: ::ref::IsSleeping, ::ref::Sleep, ::ref::sleepMode.

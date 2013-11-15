@@ -2,3 +2,4 @@
 status
 </signature>
 Status of the path. (RO)
+This reports whether the path reaches to the target, partway to the target or is completely invalid.

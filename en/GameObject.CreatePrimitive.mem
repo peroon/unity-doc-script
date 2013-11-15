@@ -22,3 +22,4 @@ BEGIN EX
 		cylinder.transform.position = Vector3(-2, 1, 0);
 	}
 END EX
+@param type The type of primitive object to create.

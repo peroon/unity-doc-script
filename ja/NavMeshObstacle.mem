@@ -1,2 +1,4 @@
-ナビゲーションメッシュ障害物。
-近接する [[NavMeshAgent]] のアボイダンス（回避）行動に影響します。
+An obstacle for NavMeshAgents to avoid.
+A NavMeshObstacle is cylindrical in shape and can move around the surface of the NavMesh with a specified velocity. By default, the obstacle will only affect the agent's ''avoidance'' behaviour rather than the pathfinding. This means that the agent will ignore the obstacle when plotting a path but will sidestep around it while moving along the path. If ''carving'' is enabled, the obstacle will create a temporary "hole" in the NavMesh. The hole will be recognised by the pathfinding, so paths will be plotted to avoid the obstacle. This means that if, say, an obstacle blocks a narrow gap, the pathfinding will seek an alternative route to the target. Without carving, the agent will head for the gap but won't be able to pass until the obstacle is clear.
+
+SA: [[NavMeshAgent]].

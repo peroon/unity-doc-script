@@ -1,0 +1,2 @@
+This event occurs when window completes activation or deactivation, it also fires up when you snap and unsnap the application.
+See http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.activated for more information.

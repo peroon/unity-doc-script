@@ -1,8 +1,10 @@
 <signature>
+Play()
+Play(string)
 Play(PlayMode)
 Play(string,PlayMode)
 </signature>
-アニメーションの組み合せなしで再生する。
+Plays animation without any blending.
 Play() will start animation with name /animation/, or play the default animation.
 The animation will be played abruptly without any blending.
 
@@ -29,8 +31,12 @@ BEGIN EX
 	animation.Play("walk", PlayMode.StopAll);
 END EX
 <signature>
-Play(AnimationPlayMode)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 <signature>
-Play(string,AnimationPlayMode)
 </signature>
+<txttag>
+UNDOC
+</txttag>

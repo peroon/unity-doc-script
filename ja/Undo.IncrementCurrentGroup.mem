@@ -1,0 +1,5 @@
+<signature>
+IncrementCurrentGroup()
+</signature>
+Unity automatically groups undo operations by the current group index.
+The current group is automatically incremented based on events eg. mouse down events, executing a menu item increments the current group. But sometimes it is necessary to manually group undo operations.

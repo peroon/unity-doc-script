@@ -1,0 +1,5 @@
+<signature>
+antiAliasing
+</signature>
+The antialiasing level for the RenderTexture.
+The value is specified as a power of two (0, 1, 2, 4 or 8) indicating the number of multisamples per pixel.

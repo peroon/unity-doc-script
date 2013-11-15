@@ -1,0 +1,2 @@
+Represents a toast notification in Windows Store Apps.
+Application must be declared "Toast capable" in manifest for toast notifications to work.

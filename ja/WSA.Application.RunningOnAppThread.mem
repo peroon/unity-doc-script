@@ -1,0 +1,5 @@
+<signature>
+RunningOnAppThread()
+</signature>
+Returns true if you're running on application thread.
+More information on UI and application threads can be found [wiki:man:windowsstore-appcallbacks|here]].

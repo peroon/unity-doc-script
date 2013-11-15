@@ -1,0 +1,14 @@
+<signature>
+OverlapAreaAll(Vector2,Vector2,int,float,float)
+</signature>
+Get a list of all colliders that fall within a rectangular area.
+This function is similar to ::ref::OverlapArea except that all colliders that fall within the area are returned. The colliders in the returned array are sorted in order of increasing Z coordinate. An empty array is returned if there are no colliders within the area.
+
+Note that this function will allocate memory for the returned Collider2D array. You can use ::ref::OverlapAreaNonAlloc to avoid this overhead if you need to make the check frequently.
+
+SA: ::ref::OverlapArea, ::ref::OverlapAreaNonAlloc.
+@param pointA One corner of the rectangle.
+@param pointB Diagonally opposite corner of the rectangle.
+@param layerMask Filter to check objects only on specific layers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.

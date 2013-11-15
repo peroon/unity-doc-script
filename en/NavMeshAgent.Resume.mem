@@ -1,4 +1,5 @@
 <signature>
 Resume()
 </signature>
-Resumes the movement along the current path.
+Resumes the movement along the current path after a pause.
+SA: Stop.

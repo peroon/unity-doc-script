@@ -12,7 +12,6 @@ This function is preferable to the similar ::ref::Physics.Raycast
 because the line tracing is performed in a simpler way using the navmesh and has a lower processing overhead.
 CONVERTEXAMPLE
 BEGIN EX
-	var mesh: NavMesh;
 	var target: Transform;
 
 	function Update () {
@@ -20,11 +19,10 @@ BEGIN EX
 		
 		// Note the negative test condition! Using -1 for the mask 
 		// indicates all layers are to be used.
-		if (!mesh.Raycast(transform.position, target.position, hit, -1)) {
+		if (!NavMesh.Raycast(transform.position, target.position, hit, -1)) {
 			// Target is "visible" from our position.
 		}
 	}
-
 END EX
 @param sourcePosition The origin of the ray.
 @param targetPosition The end of the ray.

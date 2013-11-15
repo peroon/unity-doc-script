@@ -2,3 +2,6 @@
 deltaPosition
 </signature>
 The position delta since last change.
+The absolute position of the touch is recorded periodically and available in the ::ref::position property. The deltaPosition value is a Vector2 that represents the difference between the touch position recorded on the most recent update and that recorded on the previous update. The ::ref::deltaTime value gives the time that elapsed between the previous and current updates; you can calculate the touch's speed of motion by dividing deltaPosition.magnitude by deltaTime.
+
+SA: deltaTime.

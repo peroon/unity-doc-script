@@ -1,0 +1,5 @@
+<signature>
+percentCompleted
+</signature>
+Progress for this achievement.
+Progress towards an achievement can be reported, when this reaches 100.0 it is considered complete.

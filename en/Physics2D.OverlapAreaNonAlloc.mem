@@ -1,0 +1,13 @@
+<signature>
+OverlapAreaNonAlloc(Vector2,Vector2,Collider2D[],int,float,float)
+</signature>
+Get a list of all colliders that fall within a specified area.
+This function is similar to ::ref::OverlapAreaAll except that the results are returned in the supplied array. The integer return value is the number of objects that fall within the area (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when the check is performed frequently.
+
+SA: ::ref::OverlapArea, ::ref::OverlapAreaAll.
+@param pointA One corner of the rectangle.
+@param pointB Diagonally opposite corner of the rectangle.
+@param results Array to receive results.
+@param layerMask Filter to check objects only on specified layers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.

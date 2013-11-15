@@ -1,0 +1,4 @@
+<signature>
+packingMode
+</signature>
+If Sprite is packed (see [[Sprite.packed]]), returns its SpritePackingMode.

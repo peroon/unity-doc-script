@@ -1,0 +1,5 @@
+<signature>
+GetTotalPointCount()
+</signature>
+Return the total number of points in the polygon in all paths.
+SA: ::ref::points.

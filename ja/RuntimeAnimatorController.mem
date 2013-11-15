@@ -1,2 +1,2 @@
-AnimatorController の実行時の表現です。
-実行時にアニメータの AnimatorController を変更するのに使用します。
+Runtime reprentation of the AnimationController. It can be used to change the Animator's AnimationSource during runtime.
+This class is deprecated, RuntimeAnimationController should be used.

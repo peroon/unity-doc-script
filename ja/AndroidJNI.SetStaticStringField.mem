@@ -1,7 +1,7 @@
 <signature>
 SetStaticStringField(IntPtr,IntPtr,string)
 </signature>
-フィールドIDを使い、staticのString型のフィールドを取得する。
-これは SetStaticObjectField() を同様のパラメータで呼び出しつつ文字列の値に必要な Marshal を実行します。
+This function ets the value of a static field of an object.
+This is a convenience function that calls SetStaticObjectField() with the same parameters, but performs the necessary marshalling of the string value.
 
-SA: AndroidJNI.SetStaticObjectField
+SA: [[AndroidJNI.SetStaticObjectField]].

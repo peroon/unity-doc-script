@@ -1,35 +1,6 @@
 <signature>
 PerformUndo()
 </signature>
-Undo操作を実行します
+Perform an Redo operation.
+This performs a undo operation. It is the same as clicking on the Edit->Undo menu.
 SA: ::ref::PerformRedo.
-
-{img PerformVariousUndo.png}\\
-''Simple Scriptable Wizard that lets you perform an undo several times.''
-BEGIN EX
-	using UnityEngine;
-	using UnityEditor;
-
-	//Performs an Undo the number of times specified.
-
-	public class PerformVariousUndo : ScriptableWizard {
-		public int numberOfSteps = 5;
-
-		[MenuItem ("Example/Perform Various Undo %#u")]
-		static void ExecuteMenu() {
-			ScriptableWizard.DisplayWizard(
-				"Perform various Undo at the same time",
-				typeof(PerformVariousUndo),
-				"Undo!");
-		}
-
-		void OnWizardCreate() {
-			// We have to make this in order to make the undo
-			// dont reset the value entered in the inspector
-			int savedNumberOfSteps = numberOfSteps + 1;
-			for(int i = 0; i < savedNumberOfSteps; i++) {
-				Undo.PerformUndo();
-			}
-		}
-	}
-END EX

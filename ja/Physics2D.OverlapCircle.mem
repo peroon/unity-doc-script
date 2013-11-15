@@ -1,0 +1,16 @@
+<signature>
+OverlapCircle(Vector2,float,int,float,float)
+</signature>
+Check if a collider falls within a circular area.
+The circle is defined by its centre coordinate in world space and by its radius. The optional ''layerMask'' allows the test to check only for objects on specific layers.
+
+Although the Z axis is not relevant for rendering or collisions in 2D, you can use the ''minDepth'' and ''maxDepth'' parameters to filter objects based on their Z coordinate. If more than one collider falls within the circle then the one returned will be the one with the lowest Z coordinate value. Null is returned if there are no colliders in the circle.
+
+Note that this function will allocate memory for the returned Collider2D object. You can use ::ref::OverlapCircleNonAlloc to avoid this overhead if you need to make the check frequently.
+
+SA: ::ref::OverlapArea, ::ref::OverlapPoint, ::ref::OverlapCircleAll, ::ref::OverlapCircleNonAlloc.
+@param point Centre of the circle.
+@param radius Radius of the circle.
+@param layerMask Filter to check objects only on specific layers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.

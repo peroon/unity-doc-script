@@ -7,10 +7,9 @@ private static DateTime selectedDate = DateTime.Now;
 class DateCallback : AndroidJavaProxy
 {
 	public DateCallback() : base("android.app.DatePickerDialog$OnDateSetListener") { }
-	int onDateSet(AndroidJavaObject view, int year, int monthOfYear, int dayOfMonth)
+	void onDateSet(AndroidJavaObject view, int year, int monthOfYear, int dayOfMonth)
 	{
 		selectedDate = new DateTime(year, monthOfYear+1, dayOfMonth);
-		return 1024;
 	}
 }
 

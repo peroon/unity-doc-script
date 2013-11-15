@@ -16,6 +16,8 @@ The recommended way of doing it is to switch resolutions only when the user clic
 On Android /fullscreen/ controls the SYSTEM_UI_FLAG_LOW_PROFILE flag to View.setSystemUiVisibility(), on
 devices running Honeycomb (OS 3.0 / API 11) or later.
 
+On Windows Store Apps, switching to non-native resolution is only supported starting from Windows 8.1 and newer.
+
 A resolution switch does not happen immediately; it will actually happen when the current frame is finished.
 CONVERTEXAMPLE
 BEGIN EX

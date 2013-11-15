@@ -1,0 +1,10 @@
+<signature>
+Delete(string)
+Delete(AssetList)
+Delete(Asset)
+</signature>
+This will statt a task for deleting an asset or assets both from disk and from version control system.
+Once the task has completed the resultCode of the task will tell if the assets were successfully deleted.
+@param assetProjectPath Project path of asset.
+@param assets List of assets to delete.
+@param asset Asset to delete.

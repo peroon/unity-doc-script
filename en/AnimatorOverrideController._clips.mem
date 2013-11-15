@@ -1,0 +1,4 @@
+<signature>
+clips
+</signature>
+Returns the list of orignal clip from the controller and their override clip.

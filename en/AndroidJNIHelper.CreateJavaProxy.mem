@@ -2,5 +2,5 @@
 CreateJavaProxy(AndroidJavaProxy)
 </signature>
 Creates a java proxy object which connects to the supplied proxy implementation.
-SA: AndroidJavaProxy.
+SA: [[AndroidJavaProxy]].
 @param proxy An implementatinon of a java interface in c#.

@@ -1,6 +1,8 @@
 <signature>
-LogError(object)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 A variant of Debug.Log that logs an error message to the console.
 CONVERTEXAMPLE
 BEGIN EX
@@ -9,14 +11,20 @@ BEGIN EX
 		Debug.LogError("memberVariable must be set to point to a Transform.");
 END EX
 <signature>
+LogError(object)
 LogError(object,Object)
 </signature>
 A variant of Debug.Log that logs an error message to the console.
 When you select the message in the console a connection to the context object will be drawn.
 This is very useful if you want know on which object an error occurs.
+
+When the message is a string, rich text markup can be used to add emphasis. See the manual page about [[wiki:StyledText|rich text]] for details of the different markup tags available.
 CONVERTEXAMPLE
 BEGIN EX
 	var memberVariable : Transform;
+
 	if(memberVariable == null)
 		Debug.LogError("memberVariable must be set to point to a Transform.", transform);
 END EX
+@param message String or object to be converted to string representation for display.
+@param context Object to which the message applies.

@@ -1,0 +1,7 @@
+<signature>
+name
+</signature>
+Name of the property (RO).
+This is the variable name that is used in the shader, for example _MainTex.
+
+SA: ::ref::displayName.

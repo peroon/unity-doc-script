@@ -1,4 +1,5 @@
 <signature>
 Resume()
 </signature>
-現在のパスに沿ってエージェントの動きを再開する
+Resumes the movement along the current path after a pause.
+SA: Stop.

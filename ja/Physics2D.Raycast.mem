@@ -1,0 +1,47 @@
+<signature>
+Raycast(Vector2,Vector2,float,int,float,float)
+</signature>
+Casts a ray against colliders in the scene.
+A ''raycast'' is conceptually like a laser beam that is fired from a point in space along a particular direction. Any object making contact with the beam can be detected and reported.
+
+This function returns a RaycastHit object when a collider is hit by the ray or null otherwise. The ''layerMask'' can be used to detect objects selectively only on certain layers (this allows you to apply the detection only to enemy characters, for example).
+
+Raycasts are useful for determining lines of sight, targets hit by gunfire and for many other purposes in gameplay.
+
+Additionally, this will also detect Collider(s) at the start of the ray.  In this case the ray is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the ray vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+
+SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::RaycastAll, ::ref::Linecast, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
+CONVERTEXAMPLE
+BEGIN EX
+// Float a rigidbody object a set distance above a surface.
+
+var floatHeight: float;     // Desired floating height.
+var liftForce: float;       // Force to apply when lifting the rigidbody.
+var damping: float;         // Force reduction proportional to speed (reduces bouncing).
+
+function FixedUpdate() {
+	// Cast a ray straight down.
+	var hit: RaycastHit2D = Physics2D.Raycast(transform.position, -Vector2.up);
+	
+	// If it hits something...
+	if (hit != null) {
+		// Calculate the distance from the surface and the "error" relative
+		// to the floating height.
+		var distance = Mathf.Abs(hit.point.y - transform.position.y);
+		var heightError: float = floatHeight - distance;
+		
+		// The force is proportional to the height error, but we remove a part of it
+		// according to the object's speed.
+		var force = liftForce * heightError - rigidbody2D.velocity.y * damping;
+		
+		// Apply the force to the rigidbody.
+		rigidbody2D.AddForce(Vector3.up * force);
+	}
+}
+END EX
+@param origin The point in 2D space where the ray originates.
+@param direction Vector representing the direction of the ray.
+@param distance Maximum distance over which to cast the ray.
+@param layerMask Filter to detect Colliders only on certain layers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.

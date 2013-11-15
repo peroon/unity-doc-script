@@ -1,4 +1,5 @@
 <signature>
 ctor()
+ctor(bool)
 </signature>
-インタースティシャル広告を作成します。
+Creates an interstitial ad.

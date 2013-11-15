@@ -1,7 +1,10 @@
 <signature>
-ShaderProperty(Shader,int)
+ShaderProperty(MaterialProperty,string)
+ShaderProperty(Rect,MaterialProperty,string)
 </signature>
-与えられたシェーダの与えられたインデックスからシェーダプロパティを自動的に描画します。
+Handes UI for one shader property.
+This function will draw appropriate UI for the given shader property, depending on its type.
 
-@param shader マテリアルが使用するシェーダ。
-@param propertyIndex 描画するプロパティのインデックス。
+Any custom [[MaterialPropertyDrawer]] objects defined for this property in the shader will also be applied. If you want to draw the "default" UI without any custom drawers, use ::ref::DefaultShaderProperty function.
+
+SA: [[MaterialProperty]], [[MaterialPropertyDrawer]].

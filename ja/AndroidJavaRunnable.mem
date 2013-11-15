@@ -1,9 +1,7 @@
-<signature>
-AndroidJavaRunnable()
-</signature>
-AndroidJavaRunnable は java.lang.Runnable object の Unity 表現です。
+AndroidJavaRunnable is the Unity representation of a java.lang.Runnable object.
+CONVERTEXAMPLE
 BEGIN EX
-// 実行コンテキストを Java UI スレッドへと渡す
+// Pass execution context over to the Java UI thread.
 function Start () {
 	var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 	var activity = unityPlayer.GetStatic.<AndroidJavaObject>("currentActivity");
@@ -11,6 +9,6 @@ function Start () {
 }
 
 function runOnUiThread() {
-	Debug.Log("Java UI スレッドで実行されています!");
+	Debug.Log("I'm running on the Java UI thread!");
 }
 END EX

@@ -1,9 +1,17 @@
 <signature>
+PrefixLabel(Rect,GUIContent)
 PrefixLabel(Rect,int,GUIContent)
 </signature>
+Make a label in front of some control.
 {img EditorGUIPrefixLabel.png}\\
-各フィールドの前にラベルを表示するために使用されます
-フィールドが表示されるべき位置のRect情報を返します
+''Prefix Label in an Editor Window.''
+
+Note that most editor controls already have built-in optional labels that can be specified as one of the parameters. PrefixLabel can be used when there is no such built-in label available, or when you're creating your own editor control from scratch. 
+
+PrefixLabel takes a rect that's the rect for the entire control, including the label, and returns a rect that's for just the control itself, without the label.
+
+PrefixLabel also ensures that when the label is clicked, the linked control will get keyboard focus (if the control supports keyboard focus). The ID of the linked control can optionally be specified, or if no ID is given, the label is automatically linked to the following control coming after it.
+
 BEGIN EX
 	// Inflates a mesh
 	//
@@ -12,38 +20,37 @@ BEGIN EX
 	//
 	// Note: To control the ratio of inflation just change the increaseRatio 
 	// var in the "InflateMesh.js" sript
-
+	
 	class InflateMeshEditor extends EditorWindow {
-
+	
 		var object : MeshFilter;
-
+	
 		@MenuItem("Examples/Inflate Mesh")
-		static function Init() {
-			var window = GetWindow(InflateMeshEditor);
-			window.Show();
+		static function Init () {
+			var window = GetWindow (InflateMeshEditor);
+			window.Show ();
 		}
-
-		function OnGUI() {
-			EditorGUI.PrefixLabel(Rect(3,3,position.width-6, 15),
-				0,
-				GUIContent("Select a mesh"));
-			object = EditorGUI.ObjectField(Rect(3,20,position.width-6,20),
+	
+		function OnGUI () {
+			var rect = EditorGUILayout.GetControlRect ();
+			rect = EditorGUI.PrefixLabel (rect, GUIContent ("Select a mesh"));
+			object = EditorGUI.ObjectField (rect,
 					"Calculate:",
 					object,
 					MeshFilter);
 			
 			EditorGUI.BeginDisabledGroup (!object);
-			if(GUI.Button(Rect(3,45,position.width-6,25),"Calculate!"))
-				Calculate();
+			if(GUI.Button (EditorGUILayout.GetControlRect (), "Calculate!"))
+				Calculate ();
 			EditorGUI.EndDisabledGroup ();
 		}
 		
-		function Calculate() {
+		function Calculate () {
 			var finalNormals = new Vector3[0];
 			var mesh = object.sharedMesh;
 			var vertices = mesh.vertices;
 			var normals = mesh.normals;
-
+	
 			// Find identical vertices	
 			// this will hold an ID for each vertex, vertices at 
 			// the same position will share the same ID!
@@ -52,34 +59,34 @@ BEGIN EX
 
 			for (var i = 0; i < vertices.length; i++) {
 				for (var j = 0; j < vertices.length; j++) {
-	 				if(vertexIDs[i] == 0) {
+	 				if (vertexIDs[i] == 0) {
 	  					counter++;
 	  					vertexIDs[i] = counter;
 	 				}
-	 				if(i != j)
-	  					if(vertices[i] == vertices[j] && vertices[i] != 0)
+	 				if (i != j)
+	  					if (vertices[i] == vertices[j] && vertices[i] != 0)
 	   						vertexIDs[j] = vertexIDs[i];
 				}
 			}
-
+	
 			finalNormals = normals;
 			calculated = 0.5;
 			// Calcualte average normals		
 			// counter is the highest vertexID, now go through all the groups and collect normal data
-			for(var k = 1; k <= counter; k++) { 
+			for (var k = 1; k <= counter; k++) { 
 				var curAvgNormal : Vector3 = Vector3.zero;
-				for(var l = 0; l < vertexIDs.length; l++)
-		 			if(vertexIDs[l] == k) {
+				for (var l = 0; l < vertexIDs.length; l++)
+		 			if (vertexIDs[l] == k) {
 		 				// Add up all the normals of the vertices with identical positions
 	  					curAvgNormal += normals[l]; 
 					}
 				curAvgNormal.Normalize(); //Normalize the result
-				for(var m = 0; m < vertexIDs.length; m++)
-	 				if(vertexIDs[m] == k) 
+				for (var m = 0; m < vertexIDs.length; m++)
+	 				if (vertexIDs[m] == k) 
 	 					finalNormals[m] = curAvgNormal;
 			}
-			object.gameObject.AddComponent("InflateMesh").fNormals = finalNormals;
-			Debug.Log("Done Adding Component, press play and see your mesh being inflated!");
+			object.gameObject.AddComponent ("InflateMesh").fNormals = finalNormals;
+			Debug.Log ("Done Adding Component, press play and see your mesh being inflated!");
 		}
 	}
 END EX
@@ -92,11 +99,11 @@ BEGIN EX
 	var fNormals = new Vector3[0];
 	var increaseRatio = 0.005;
 	function Start () {
-		mesh = GetComponent(MeshFilter).mesh;
+		mesh = GetComponent (MeshFilter).mesh;
 		vertices = mesh.vertices;
 		normals = mesh.normals;
 	}
-
+	
 	function Update () {
 		for (var i = 0; i < vertices.length; i++) {
 			vertices[i] += fNormals[i]  * Time.deltaTime * increaseRatio;
@@ -104,7 +111,7 @@ BEGIN EX
 		mesh.vertices = vertices;
 	}
 END EX
-@param totalPosition ラベルと各フィールドで使用するRect情報の合計値
-@param id コントロールID
-@param label 表示する文字列、テクスチャ、ツールチップ
+@param totalPosition Rectangle on the screen to use in total for both the label and the control.
+@param id The unique ID of the control. If none specified, the ID of the following control is used.
+@param label Label to show in front of the control.
 @return Rectangle on the screen to use just for the control itself.

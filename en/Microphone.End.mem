@@ -2,4 +2,5 @@
 End(string)
 </signature>
 Stops recording.
-@param deviceName The name of the device. Passing null or an empty string will pick the default device. Get device names with [[Microphone.devices|Microphone.devices]].
+If you pass a null or empty string for the device name then the default microphone will be used. You can get a list of available microphone devices from the ::ref::devices property.
+@param deviceName The name of the device.

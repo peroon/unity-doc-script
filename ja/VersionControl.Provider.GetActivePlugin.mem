@@ -1,0 +1,4 @@
+<signature>
+GetActivePlugin()
+</signature>
+Gets the currently user selected verson control plugin.

@@ -1,0 +1,5 @@
+<signature>
+hierarchyMode
+</signature>
+Is the Editor GUI is hierarchy mode?
+In hierarchy mode, [[EditorGUI.Foldout]] controls are positioned with the foldout triangle to the left of the specified [[Rect]] for the control, rather than being inside the Rect. This way, the label of the foldout is aligned together with labels of other Editor GUI controls.

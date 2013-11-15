@@ -1,5 +1,6 @@
 <signature>
 BoneFromMuscle(int)
 </signature>
-Return the bone index based on muscle index.
-@param i Muscle Index.
+Return the bone to which a particular muscle is connected.
+The bone and muscle indices used by this function are the same as those of the ::ref::BoneName and ::ref::MuscleName arrays respectively.
+@param i Muscle index.

@@ -27,5 +27,5 @@ END EX
 @param position Rectangle on the screen to draw the texture within.
 @param image [[Texture]] to display.
 @param scaleMode How to scale the image when the aspect ratio of it doesn't fit the aspect ratio to be drawn within.
-@param alphaBlend Whether to alpha blend the image on to the display (the default). If false, the picture is drawn on to the display.
+@param alphaBlend Whether to apply alpha blending when drawing the image (enabled by default).
 @param imageAspect Aspect ratio to use for the source image. If 0 (the default), the aspect ratio from the image is used.  Pass in w/h for the desired aspect ratio.  This allows the aspect ratio of the source image to be adjusted without changing the pixel width and height.

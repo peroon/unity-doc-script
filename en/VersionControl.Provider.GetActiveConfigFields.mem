@@ -1,0 +1,4 @@
+<signature>
+GetActiveConfigFields()
+</signature>
+Returns the configuration fields for the currently active version control plugin.

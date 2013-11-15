@@ -1,1 +1,4 @@
-Query the state of the current path.
+<signature>
+pathStatus
+</signature>
+The status of the current path (complete, partial or invalid).

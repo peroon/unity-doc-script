@@ -1,5 +1,6 @@
 <signature>
 HasProperty(string)
+HasProperty(int)
 </signature>
 Checks if material's shader has a property of a given name.
 SA: [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].

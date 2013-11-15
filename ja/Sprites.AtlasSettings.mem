@@ -1,0 +1,2 @@
+Describes the final atlas texture.
+Note that if not all Sprites can be fit to an area defined by maxWidth and maxHeight, multiple atlas pages will be generated.

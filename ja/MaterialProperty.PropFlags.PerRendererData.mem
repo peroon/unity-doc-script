@@ -1,0 +1,1 @@
+Texture value for this property will be queried from renderer's [[MaterialPropertyBlock]], instead of from the material. This corresponds to "[PerRendererData]" attribute in front of property in the shader code.

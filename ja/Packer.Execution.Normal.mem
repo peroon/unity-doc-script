@@ -1,0 +1,1 @@
+Normal execution. Will not trigger IPackerPolicy.OnGroupAtlases unless IPackerPolicy, IPackerPolicy version or TextureImporter settings have changed.

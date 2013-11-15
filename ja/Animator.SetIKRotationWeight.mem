@@ -1,6 +1,28 @@
 <signature>
 SetIKRotationWeight(AvatarIKGoal,float)
 </signature>
-IK ゴールの回転 (Rotation) によるウェイトをセットします（0 = IK 前の回転、1 = IKゴールでの回転）。
-@param goal セットされた AvatarIKGoal。
-@param value 回転 (Rotation) によるウェイト。
+Sets the rotational weight of an IK goal (0 = rotation before IK, 1 = rotation at the IK goal).
+An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+
+This function sets a weight value in the range 0..1 to determine how far between the start and goal rotations the IK will aim. The goal itself is set separately using ::ref::SetIKRotation.
+CONVERTEXAMPLE
+BEGIN EX
+var objToAimAt: Transform;
+
+private var animator: Animator;
+
+
+function Start() {
+	animator = GetComponent.<Animator>();
+}
+
+
+function OnAnimatorIK(layerIndex: int) {
+	var handRotation = Quaternion.LookRotation(objToAimAt.position - transform.position);
+	animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1.0);
+	animator.SetIKRotation(AvatarIKGoal.RightHand, handRotation);                    
+}
+END EX
+SA: ::ref::SetIKRotation, ::ref::SetIKPositionWeight.
+@param goal The AvatarIKGoal that is set.
+@param value The rotational weight.

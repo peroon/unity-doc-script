@@ -1,0 +1,5 @@
+<signature>
+Delete(string)
+</signature>
+Deletes a directory from a specified path.
+@param path The name of the directory to remove.

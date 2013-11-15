@@ -1,0 +1,6 @@
+<signature>
+SetInt(string,int)
+SetInt(int,int)
+</signature>
+Set a named integer value.
+This function is just an alias to ::ref::SetFloat that casts the passed value to a float.

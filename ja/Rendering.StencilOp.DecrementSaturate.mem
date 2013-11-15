@@ -1,0 +1,1 @@
+Decrements the current stencil buffer value. Clamps to 0.

@@ -1,0 +1,5 @@
+<signature>
+LoadScores(string,Action<IScore[]>)
+LoadScores(ILeaderboard,Action<bool>)
+</signature>
+See [[Social.LoadScores]].

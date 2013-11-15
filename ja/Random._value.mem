@@ -1,11 +1,14 @@
 <signature>
 value
 </signature>
-0 から1 の範囲を返す（読み込み専用）。
-Both 0.0 and 1.0 may be returned by this function.
+Returns a random number between 0.0 [inclusive] and 1.0 [inclusive] (RO).
+Both 0.0 and 1.0 may be returned by this property. This behaviour is different to that of many other random number generators which return a value less than but never exactly equal to 1.0.
 CONVERTEXAMPLE
 BEGIN EX
-	// Prints something between 0 and 1
-
-	print(Random.value);
+// Generate a random color value.
+function RandomColor() {
+	// A different random value is used for each color component (if
+	// the same is used for R, G and B, a shade of grey is produced).
+	return new Color(Random.value, Random.value, Random.value);
+}
 END EX

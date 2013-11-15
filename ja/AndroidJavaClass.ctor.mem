@@ -1,26 +1,27 @@
 <signature>
 ctor(string)
 </signature>
-クラス名にもとづいて AndroidJavaObject を作成します。
-要するに、クラス型を見つけて <tt>java.lang.Class</tt> を割り当てたうえ指定されたコンストラクタを実行します。
+Construct an AndroidJavaClass from the class name.
+This essentially means locate the class type and allocate a <tt>java.lang.Class</tt> object of that particular type.
+CONVERTEXAMPLE
 BEGIN EX
-	// Java ガーベージコレクションを試行
+	// Try to collect som Java garbage..
 	function Start() {
 		var jc = new AndroidJavaClass("java.lang.System");
 		jc.CallStatic("gc");
 	}
 END EX
+CONVERTEXAMPLE
 BEGIN EX
-	// プロダクト / ハードウェアの製造元を取得
+	// Retrieve the manufacturer of the product/hardware.
 	function Start() {
 		var jc = new AndroidJavaClass("android.os.Build");
 		var manufacturer = jc.Get.<string>("MANUFACTURER");
 	}
 END EX
-@param className Java クラス（例． "<tt>java.lang.String</tt>" または "<tt>java/lang/String</tt>"）
+@param className Specifies the Java class name (e.g. <tt>java.lang.String</tt>).
 <signature>
 </signature>
 <txttag>
 UNDOC
 </txttag>
-TODO.

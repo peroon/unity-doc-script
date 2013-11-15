@@ -1,7 +1,8 @@
 <signature>
 SetGlobalMatrix(string,Matrix4x4)
+SetGlobalMatrix(int,Matrix4x4)
 </signature>
-すべてのシェーダーのグローバルのMatrix型プロパティを設定する
+Sets a global matrix property for all shaders.
 Global properties are used if a shader needs them but the material does
 not have them defined (for example, if the shader does not expose them
 in /Properties/ block).

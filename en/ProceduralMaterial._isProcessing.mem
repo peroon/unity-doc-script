@@ -1,4 +1,4 @@
 <signature>
 isProcessing
 </signature>
-Checks if the Procedural Material is currently in the process of rebuilding the textures.
+Check if the ProceduralTextures from this ProceduralMaterial are currently being rebuilt.

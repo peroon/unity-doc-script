@@ -1,0 +1,2 @@
+AnimationMode is used by the AnimationWindow to store properties modifed by the AnimationClip playback.
+When exiting AnimationMode all properties are reverted to their default state. Animated properties are also highlighted by the inspector. Use AnimationMode.StartAnimationMode to enter animation mode. In Animation mode the editor is tinted to show that it is animating. Properties can be animated via AnimationMode.SampleAnimationClip.

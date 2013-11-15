@@ -1,5 +1,5 @@
 <signature>
 axisLength
 </signature>
-Length of this bone.
+Length of the bone to which the limit is applied.
 SA: HumanLimit.useDefaultValues.

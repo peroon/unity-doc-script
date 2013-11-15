@@ -1,0 +1,5 @@
+<signature>
+autoUpdatePositions
+</signature>
+Automatically update endpoints.
+The OffMeshLink component will try to match endpoint transforms specified by ::ref::startTransform and ::ref::endTransform . See also ::ref::UpdatePositions.

@@ -1,5 +1,6 @@
 <signature>
 Vector2Field(Rect,string,Vector2)
+Vector2Field(Rect,GUIContent,Vector2)
 </signature>
 Make an X & Y field for entering a [[Vector2]].
 {img EditorGUIVector2Field.png}\\

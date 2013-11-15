@@ -1,0 +1,2 @@
+The type of the banner view.
+Please check availability of banner type with ADBannerView.IsAvailable. Traditional banner is always available, though.

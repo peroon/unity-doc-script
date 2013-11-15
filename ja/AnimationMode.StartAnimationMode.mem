@@ -1,0 +1,5 @@
+<signature>
+StartAnimationMode()
+</signature>
+Starts the animation mode.
+When the Animation Mode is enabled, the editor is tinted in a special color to indicated that animations are playing and recorded.

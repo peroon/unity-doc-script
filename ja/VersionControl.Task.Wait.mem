@@ -1,0 +1,4 @@
+<signature>
+Wait()
+</signature>
+A blocking wait for the task to complete.

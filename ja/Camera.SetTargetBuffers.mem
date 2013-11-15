@@ -1,7 +1,8 @@
 <signature>
 SetTargetBuffers(RenderBuffer,RenderBuffer)
+SetTargetBuffers(RenderBuffer[],RenderBuffer)
 </signature>
-カメラがひとつ以上の レンダー テクスチャの選択されたバッファをレンダリングするようにセットします。
+Sets the Camera to render to the chosen buffers of one or more RenderTextures.
 SA: [[RenderBuffer]], [[RenderTexture]].
-@param colorBuffer 色情報がレンダリングされる先の RenderBuffer
-@param depthBuffer デプス情報がレンダリングされる先の RenderBuffer
+@param colorBuffer The RenderBuffer to which color information will be rendered.
+@param depthBuffer The RenderBuffer to which depth information will be rendered.

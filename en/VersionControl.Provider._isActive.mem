@@ -1,0 +1,4 @@
+<signature>
+isActive
+</signature>
+Returns true if a version control plugin has been selected and configured correctly.

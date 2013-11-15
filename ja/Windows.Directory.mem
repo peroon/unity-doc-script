@@ -1,0 +1,2 @@
+Exposes static methods for directory operations.
+This is an alternative to System.IO.Directory class.

@@ -1,1 +1,4 @@
-エージェントの回転を更新すべきかどうか
+<signature>
+updateRotation
+</signature>
+Should the agent update the transform orientation?

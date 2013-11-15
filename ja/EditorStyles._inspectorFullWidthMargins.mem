@@ -1,0 +1,9 @@
+<signature>
+inspectorFullWidthMargins
+</signature>
+Wrap content in a vertical group with this style to get full width margins in the Inspector.
+By default, content in the Inspector has a large left margin and a small right margin. For a consistent look, these default margins should be used for most GUI with regular controls.
+
+However, some special GUI elements may benefit from occupying the full width of the Inspector, with only a small margin in both sides. To disable the default margins, override the Editor::ref::UseDefaultMargins method in your custom Editor. Then you can wrap your GUI content inside a vertical groups to your liking. For example, you can wrap some of the GUI inside a vertical group with the EditorStyles::ref::inspectorFullWidthMargins style and wrap other parts of the GUI inside a vertical group with the EditorStyles::ref::inspectorDefaultMargins style.
+
+SA: EditorGUILayout::ref::BeginVertical, EditorGUILayout::ref::EndVertical, Editor::ref::UseDefaultMargins, EditorStyles::ref::inspectorDefaultMargins.

@@ -1,7 +1,7 @@
 <signature>
 Dispose()
 </signature>
-IDisposableのコールバック。
-using() { }と組み合わせて使用します。
+IDisposable callback.
+Used in conjunction with using() { }
 
-SA: <a href=http://msdn.microsoft.com/en-us/library/system.idisposable.aspx>IDisposable Interface (MSDN)</a>
+SA: <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.aspx">IDisposable Interface (MSDN)</a>

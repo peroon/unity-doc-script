@@ -1,10 +1,9 @@
 <signature>
 GetProceduralPropertyDescriptions()
 </signature>
-指定した名前のプロパティがキャッシュされているかを確
-認する
-This can be used to build generic GUI that can be used to edit the properties of any Procedural Material
-without knowing the properties of it in advance.
+Get an array of descriptions of all the ProceduralProperties this ProceduralMaterial has.
+This can be used to build generic GUI that can be used to edit the properties of any ProceduralMaterial
+without knowing its properties in advance.
 CONVERTEXAMPLE
 BEGIN EX
 var scrolling : Vector2;
@@ -19,9 +18,9 @@ function OnGUI () {
 
 function ProceduralPropertiesGUI (windowId : int) {	
 	scrolling = GUILayout.BeginScrollView (scrolling);
-
+	
 	var substance = renderer.sharedMaterial as ProceduralMaterial;
-
+	
 	// Get a list of all the Procedural properties
 	var inputs = substance.GetProceduralPropertyDescriptions ();
 	// Iterate through all the properties
@@ -112,7 +111,7 @@ function ProceduralPropertiesGUI (windowId : int) {
 	}
 	// Rebuild the textures to show the changes
 	substance.RebuildTextures();
-
+	
 	GUILayout.EndScrollView();
 }
 END EX

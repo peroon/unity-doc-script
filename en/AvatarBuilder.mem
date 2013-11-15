@@ -1,1 +1,2 @@
-A class that allows creating avatar from scripts.
+Class to build avatars from user scripts.
+The Unity editor has tools for setting up and editing avatars but this class can be useful for creating custom editors and inspectors for your characters.

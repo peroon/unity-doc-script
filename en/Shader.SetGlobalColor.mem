@@ -1,5 +1,6 @@
 <signature>
 SetGlobalColor(string,Color)
+SetGlobalColor(int,Color)
 </signature>
 Sets a global color property for all shaders.
 Global properties are used if a shader needs them but the material does

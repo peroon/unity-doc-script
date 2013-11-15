@@ -1,2 +1,2 @@
-グラデーション（Gradient）で使用されるカラーキー。
-SA: GradientAlphaKey, Gradient.
+Color key used by Gradient.
+SA: [[GradientAlphaKey]], [[Gradient]].

@@ -1,0 +1,9 @@
+<signature>
+spriteMode
+</signature>
+Sprite texture import mode.
+This value corresponds to the SpriteImportMode enum as follows:
+
+None = 0, Single = 1, Manual = 2.
+
+SA: [[SpriteImportMode]] enum.

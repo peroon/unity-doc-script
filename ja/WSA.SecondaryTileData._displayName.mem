@@ -1,0 +1,3 @@
+Display name for secondary tile.
+Required when creating secondary tile, not used when updating.
+On Windows 8 this is also used as short name.

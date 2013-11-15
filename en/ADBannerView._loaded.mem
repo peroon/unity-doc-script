@@ -1,4 +1,9 @@
 <signature>
 loaded
 </signature>
-Has the banner view downloaded an advertisement? (RO)
+Checks if banner contents are loaded.
+You should hide banner if it is not loaded to avoid showing blank view.
+BEGIN EX
+if(banner.visible && !banner.loaded)
+	banner.visible = false;
+END EX

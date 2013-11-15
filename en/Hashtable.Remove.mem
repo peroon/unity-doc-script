@@ -1,0 +1,21 @@
+<suggestedtype>
+method
+</suggestedtype>
+<txttag>
+CSNONE
+</txttag>
+<signature>
+Remove(object)
+</signature>
+Removes the element with the specified key from the Hashtable.
+CONVERTEXAMPLE
+BEGIN EX
+// Creates a Hashtable with two values and removes one
+
+var h : Hashtable;
+h = new Hashtable();
+h.Add("1","one");
+h.Add("2","two");
+h.Remove("1");
+Debug.Log(h.Count);
+END EX

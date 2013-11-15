@@ -1,9 +1,11 @@
 <signature>
 Atan2(float,float)
 </signature>
-Atan2 関数
+Returns the angle in radians whose ::ref::Tan is @@y/x@@.
 Return value is the angle between the x-axis and a 2D vector starting at zero and terminating
 at (x,y).
+
+Note that this function takes account of the cases where x is zero and returns the correct angle rather than throwing a division by zero exception.
 CONVERTEXAMPLE
 BEGIN EX
 	// Usually you use transform.LookAt for this.

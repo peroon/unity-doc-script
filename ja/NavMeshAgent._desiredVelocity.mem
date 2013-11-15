@@ -1,1 +1,4 @@
-エージェントに期待する速度、アボイダンス（回避）行動による潜在的な貢献も含みます（読み取り専用）。
+<signature>
+desiredVelocity
+</signature>
+The desired velocity of the agent including any potential contribution from avoidance. (RO)

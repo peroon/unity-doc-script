@@ -1,0 +1,4 @@
+Material property type.
+Material properties can be textures, colors, floats and so on.
+
+SA: MaterialProperty::ref::type.

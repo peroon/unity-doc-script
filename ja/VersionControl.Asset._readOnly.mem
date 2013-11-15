@@ -1,0 +1,4 @@
+<signature>
+readOnly
+</signature>
+Returns true is the asset is read only.

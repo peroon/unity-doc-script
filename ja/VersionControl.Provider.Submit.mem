@@ -1,0 +1,9 @@
+<signature>
+Submit(ChangeSet,AssetList,string,bool)
+</signature>
+Start a task that submits the assets to version control.
+In some version control systems submit is known as commit.
+@param changeset The changeset to submit.
+@param list The list of assets to submit.
+@param description The description of the changeset.
+@param saveOnly If true then only save the changeset to be submitted later.

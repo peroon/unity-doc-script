@@ -1,8 +1,10 @@
 <signature>
+CombineMeshes(CombineInstance[])
+CombineMeshes(CombineInstance[],bool)
 CombineMeshes(CombineInstance[],bool,bool)
 </signature>
-メッシュに複数のメッシュを組み合わせる。
-メッシュを結合することで、最適化につながります。
+Combines several meshes into this mesh.
+Combining meshes is useful for performance optimization.
 If /mergeSubMeshes/ is true, all the meshes will be combined to a single submesh. Otherwise each mesh will
 go into a different submesh. If all meshes share the same material, set this to true.
 If /useMatrices/ is false, the transform matrices in [[CombineInstance]] structs will be ignored.
@@ -11,7 +13,7 @@ BEGIN EX
 	@script RequireComponent(MeshFilter)
 	@script RequireComponent(MeshRenderer)
 	function Start () {
-		var meshFilters = GetComponentsInChildren(MeshFilter);
+		var meshFilters: MeshFilter[] = GetComponentsInChildren(MeshFilter);
 		var combine : CombineInstance[] = new CombineInstance[meshFilters.Length];
 		for (var i = 0; i < meshFilters.Length; i++){
 			combine[i].mesh = meshFilters[i].sharedMesh;
@@ -23,3 +25,6 @@ BEGIN EX
 		transform.gameObject.active = true;
 	}
 END EX
+@param combine Descriptions of the meshes to combine.
+@param mergeSubMeshes Should all meshes be combined into a single submesh?
+@param useMatrices Should the transforms supplied in the CombineInstance array be used or ignored?

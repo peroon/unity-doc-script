@@ -1,2 +1,1 @@
-Substanceをインポートする際に使用されるクラスです
-Substance専用のプロセッサーが用意されていません。なのでOnPostprocessAllAssetsを使用します。
+The SubstanceImporter class lets you access the imported ProceduralMaterial instances.

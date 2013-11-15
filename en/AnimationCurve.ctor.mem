@@ -15,7 +15,6 @@ BEGIN EX
 	}
 END EX
 <signature>
-ctor(IntPtr)
 </signature>
 <txttag>
 UNDOC

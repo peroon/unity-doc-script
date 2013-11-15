@@ -1,1 +1,2 @@
-Path navigation.
+A path as calculated by the navigation system.
+The path is represented as a list of waypoints stored in the ::ref::corners array. These points are not set directly from user scripts but a NavMeshPath with points correctly assigned is returned by the NavMesh::ref::CalculatePath function and the NavMeshAgent::ref::path property.

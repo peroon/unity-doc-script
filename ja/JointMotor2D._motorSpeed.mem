@@ -1,0 +1,5 @@
+<signature>
+motorSpeed
+</signature>
+The desired speed for the Rigidbody2D to reach as it moves with the joint.
+SA: [[Rigidbody2D]] class, ::ref::maxMotorTorque.

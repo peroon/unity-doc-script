@@ -1,4 +1,1 @@
-<signature>
-name
-</signature>
-プロパティ名を設定する
+The name of the ProceduralProperty. Used to get and set the values.

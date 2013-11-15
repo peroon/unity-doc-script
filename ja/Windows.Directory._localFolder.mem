@@ -1,0 +1,6 @@
+<signature>
+localFolder
+</signature>
+Returns a path to local folder.
+On Windows Store Apps, it will be <main drive>:\Users\<user name>\AppData\Local\Packages\<package id>\LocalState, directory is writeable, so you can create, read and write files to it.
+In Editor, it will be <your project path>\LocalState.

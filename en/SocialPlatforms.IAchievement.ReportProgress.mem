@@ -1,0 +1,4 @@
+<signature>
+ReportProgress(Action<bool>)
+</signature>
+Send notification about progress on this achievement.

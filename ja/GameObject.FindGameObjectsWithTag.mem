@@ -1,20 +1,19 @@
 <signature>
 FindGameObjectsWithTag(string)
 </signature>
-タグに該当する、アクティブ状態のすべてのゲームオブジェクトを取得します。該当するも
-のがない場合は、nullを返します。
-タグは使用する前に Tag manager 上で宣言しておく必要があります。
+Returns a list of active GameObjects tagged /tag/. Returns empty array if no GameObject was found.
+Tags must be declared in the tag manager before using them.  A @@UnityException@@ will be thrown if the tag does not exist or an empty string or @@null@@ is passed as the tag.
 CONVERTEXAMPLE
 BEGIN EX
-	// "Respawn"（再作成）とタグされた全てのゲームオブジェクトの位置に
-	// respawnPrefab をインスタンス化
+	// Instantiates respawnPrefab at the location 
+	// of all game objects tagged "Respawn".
 
 	var respawnPrefab : GameObject;
 	var respawns;
 	function Start()
 	{
 		if (respawns == null)
-			GameObject.FindGameObjectsWithTag ("Respawn");
+			respawns = GameObject.FindGameObjectsWithTag ("Respawn");
 		for (var respawn in respawns)
 			Instantiate (respawnPrefab, respawn.transform.position, respawn.transform.rotation);
 	}
@@ -22,18 +21,18 @@ END EX
 Another example:
 CONVERTEXAMPLE
 BEGIN EX
-	// 最も近い敵の名前を表示
+	// Print the name of the closest enemy
 	print(FindClosestEnemy().name); 
 	
-	// 最も近い敵の名前を探す
+	// Find the name of the closest enemy
 	function FindClosestEnemy () : GameObject {
-		// Enemy タグの付いた全てのゲームオブジェクトを探す
+		// Find all game objects with tag Enemy
 		var gos : GameObject[];
 		gos = GameObject.FindGameObjectsWithTag("Enemy"); 
 		var closest : GameObject; 
 		var distance = Mathf.Infinity; 
 		var position = transform.position; 
-		// 反復により最も近いものを探す
+		// Iterate through them and find the closest one
 		for (var go : GameObject in gos)  { 
 			var diff = (go.transform.position - position);
 			var curDistance = diff.sqrMagnitude; 
@@ -45,3 +44,17 @@ BEGIN EX
 		return closest;	
 	}
 END EX
+Another example, testing for empty array:
+BEGIN EX
+    // Search for game objects with a tag that is not used
+
+    function Start () {
+        var gos : GameObject[];
+        gos = GameObject.FindGameObjectsWithTag("fred"); 
+  
+        if (gos.length == 0) {
+            Debug.Log("No game objects are tagged with fred");
+        }
+}
+END EX
+@param tag The name of the tag to search @@GameObjects@@ for.

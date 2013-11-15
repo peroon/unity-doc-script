@@ -1,0 +1,5 @@
+<signature>
+gameObject
+</signature>
+The incoming GameObject involved in the collision.
+SA: [[GameObject]] class.

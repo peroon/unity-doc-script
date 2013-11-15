@@ -1,0 +1,5 @@
+<signature>
+CollapseUndoOperations(int)
+</signature>
+Collapses all undo operation up to group index together into one step.
+This is used by the color picked to combine all color modifications into a single step once the color picker is closed, while they are seperate operations when the color picker is still open.

@@ -1,7 +1,7 @@
 <signature>
 activeSelf
 </signature>
-The local active state of this GameObject.
+The local active state of this GameObject. (RO)
 This returns the local active state of this GameObject, which is set using [[GameObject.SetActive]].
 Note that a GameObject may be inactive because a parent is not active, even if this returns true. This 
 state will then be used once all parents are active. Use

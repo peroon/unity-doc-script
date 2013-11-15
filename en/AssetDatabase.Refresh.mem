@@ -5,4 +5,6 @@ Refresh(ImportAssetOptions)
 Import any changed assets.
 This will import any assets that have changed their content modification data or have been added-removed to the project folder.
 
+This method implicitly triggers an asset garbage collection (see [[Resources.UnloadUnusedAssets]]).
+
 SA: [[ImportAssetOptions]].

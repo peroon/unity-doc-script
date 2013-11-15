@@ -1,0 +1,5 @@
+<signature>
+targets
+</signature>
+Material objects being edited by this property (RO).
+Changes done to property values via ::ref::floatValue, ::ref::colorValue, ::ref::vectorValue, ::ref::textureValue will be applied to these objects.

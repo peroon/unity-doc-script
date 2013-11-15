@@ -1,0 +1,4 @@
+<signature>
+activeRect
+</signature>
+The rect in screenspace of the current active highlight.

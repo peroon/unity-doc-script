@@ -1,8 +1,8 @@
 <signature>
 devices
 </signature>
-マイクのデバイス名のリスト。
-Use this name to start and stop a recording.
+A list of available microphone devices, identified by name.
+You can use the name with the ::ref::Start and ::ref::End functions to specify which microphone you wish to start/stop recording.
 CONVERTEXAMPLE
 BEGIN EX
 	// Get list of Microphone devices and print the names to the log
@@ -13,3 +13,4 @@ BEGIN EX
 		}
 	}
 END EX
+SA: ::ref::Start, ::ref::End, ::ref::IsRecording.

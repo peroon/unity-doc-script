@@ -1,0 +1,4 @@
+<signature>
+packed
+</signature>
+Returns true if this Sprite is packed in an atlas.

@@ -1,24 +1,17 @@
 <signature>
 GetMuscleDefaultMax(int)
 </signature>
-このマッスルのデフォルト最大範囲を戻り値とします。
-値は角度範囲。
+Get the default maximum value of rotation for a muscle in degrees.
+The default maximum applies to all three axes of rotation for the muscle. The indexing order for the muscles is the same as that of the ::ref::MuscleName array.
+CONVERTEXAMPLE
 BEGIN EX
-// C# サンプル
-using UnityEngine;
-using UnityEditor;
-
-public class PrintMuscleMinMax : MonoBehaviour
-{
-	[MenuItem("Mecanim/PrintMuscleMinMax")]
-	public static void DoPrintMuscleMinMax()
-	{
-		string[] muscleName = HumanTrait.MuscleName;
-		for (int i = 0; i < HumanTrait.MuscleCount; ++i)
-		{
-			Debug.Log(muscleName[i] +" min: " + HumanTrait.GetMuscleDefaultMin(i) + " max: " + HumanTrait.GetMuscleDefaultMax(i));
-		}
+function Start() {
+	var muscleName: String[] = HumanTrait.MuscleName;
+	
+	for (var i = 0; i < HumanTrait.MuscleCount; i++) {
+		Debug.Log(muscleName[i] + " min: " + HumanTrait.GetMuscleDefaultMin(i) + " max: " + HumanTrait.GetMuscleDefaultMax(i));
 	}
 }
 END EX
-@param i マッスルのインデックス。
+SA: HumanLimit.max, GetMuscleDefaultMin.
+@param i Muscle index.

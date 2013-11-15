@@ -1,8 +1,7 @@
 <signature>
 upperArmTwist
 </signature>
-Define how roll is distributed between shoulder and elbow.
-The value range from 0 to 1.
-Default value is 0.5.
+Defines how the lower arm's roll/twisting is distributed between the shoulder and elbow joints.
+When the upper arm needs to twist or "roll" for the IK, the rotation can be applied at the shoulder or elbow joints or some twist can be applied at both. The /upperArmTwist/ is a weighting value in the range 0..1 that determines the fraction of the twist applied at the shoulder and elbow. For example, a value of zero means the twist should be handled entirely at the shoulder, while a value of one means it should be applied entirely at the elbow. The default value of 0.5 distributes the twisting evenly between shoulder and elbow.
 
-This value is used by the retargeter to distribute the roll on shoulder and elbow.
+SA: lowerArmTwist, lowerLegTwist, upperLegTwist.

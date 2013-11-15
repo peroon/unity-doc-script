@@ -1,0 +1,17 @@
+<signature>
+LinecastNonAlloc(Vector2,Vector2,RaycastHit2D[],int,float,float)
+</signature>
+Casts a line against colliders in the scene.
+A ''linecast'' is an imaginary line between two points in world space. Any object making contact with the beam can be detected and reported. This differs from the similar ''raycast'' in that the raycast specifies the line using an origin and directtion.
+
+This function is similar to the LinecastAll function except that the results are returned in the supplied array. The integer return value is the number of objects that intersect the line (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when linecasts are performed frequently. The line is assumed to run from its start point to its end point; colliders will be placed in the returned array in order of distance from the start of the line.
+
+Additionally, this will also detect Collider(s) at the start of the line.  In this case the line is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the line vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+
+SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::Linecast, ::ref::LinecastAll,  ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
+@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
+@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+@param start The start point of the line in world space.
+@param end The end point of the line in world space.
+@param results Returned array of objects that intersect the line.
+@param layerMask Filter to detect Colliders only on certain layers.

@@ -1,6 +1,5 @@
 <signature>
 CloneMaterial(ProceduralMaterial)
 </signature>
-ProceduralMaterialを複製します
-複製された場合trueを返します
-これは新しくインスタンスを作成するので再インポートが必要になります
+Clone an existing ProceduralMaterial instance.
+NOTE: This requires a re-import to actually create the new instance !

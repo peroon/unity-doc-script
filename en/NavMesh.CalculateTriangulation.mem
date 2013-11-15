@@ -1,0 +1,6 @@
+<signature>
+CalculateTriangulation()
+</signature>
+Triangulation of the current navmesh.
+Calculates and returns a simple triangulation of the current navmesh - containing the vertices, triangle
+indices and navmesh layers.

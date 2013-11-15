@@ -1,0 +1,7 @@
+<signature>
+PeriodicBadgeUpdate(string,float)
+</signature>
+Starts periodic update of a  badge on a tile.
+A remote uri will be checked periodically to retrieve an update for a badge.
+@param uri A remote location from where to retrieve tile update
+@param interval A time interval in minutes, will be rounded to a value, supported by the system

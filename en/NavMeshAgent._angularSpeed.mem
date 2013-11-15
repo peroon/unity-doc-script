@@ -1,1 +1,7 @@
-Maximum rotation speed in (deg/s).
+<signature>
+angularSpeed
+</signature>
+Maximum turning speed in (deg/s) while following a path.
+This is the maximum rate at which the agent can turn as it rounds the "corner" defined by a waypoint. The actual turning circle is also influenced by the speed of the agent on approach and also the maximum acceleration.
+
+SA: acceleration, velocity.

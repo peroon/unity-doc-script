@@ -1,0 +1,17 @@
+<signature>
+OnCollisionEnter2D(Collision2D)
+</signature>
+<txttag>
+CSNONE
+</txttag>
+Sent when an incoming collider makes contact with this object's collider (2D physics only).
+Further information about the collision is reported in the Collision 2D parameter passed during the call.
+
+SA: [[Collision2D]] class, ::ref::OnCollisionExit2D, ::ref::OnCollisionStay2D.
+CONVERTEXAMPLE
+BEGIN EX
+function OnCollisionEnter2D(coll: Collision2D) {
+	if (coll.gameObject.tag == "Enemy")
+		coll.gameObject.SendMessage("ApplyDamage", 10);
+}
+END EX

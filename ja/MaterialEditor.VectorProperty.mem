@@ -1,6 +1,6 @@
 <signature>
-VectorProperty(string,string)
+VectorProperty(MaterialProperty,string)
+VectorProperty(Rect,MaterialProperty,string)
 </signature>
-ベクトルシェーダ プロパティのプロパティフィールドを描画します。
-@param propertyName 描画するプロパティ名。
-@param label フィールドのラベル。
+Draw a property field for a vector shader property.
+@param label Label for the field.

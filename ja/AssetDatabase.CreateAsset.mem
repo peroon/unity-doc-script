@@ -1,17 +1,18 @@
 <signature>
 CreateAsset(Object,string)
 </signature>
-オブジェクトをアセットとして保存します
-アセットを保存する際は必ずUnityがサポートしている必要があります
-AddObjectToAssetと組み合わせることによって親子関係のアセットも作成することができます
+Creates a new asset at path.
+You must ensure that the path uses a supported extension ('.mat' for materials, '.cubemap' for cubemaps,
+'.GUISkin' for skins, '.anim' for animations and '.asset' for arbitrary other assets.)
 
-### 作成できるアセット
+You can add more assets to the file using AssetDatabase.AddObjectToAsset after the asset has been created.
+If an asset already exists at /path/ it will be deleted prior to creating a new asset.
+All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
 
-* AnimationClip (.anim)
-* Material (.mat)
-* Cubemap (.cubemap)
-* ScriptableObject (.asset)
-
+Be aware that if adding multiple objects to an asset, the order in which the objects are added does not
+really matter.  In other words, /asset/ will not be special within the asset and not be any form of "root"
+to objects added later.  The object displayed as the asset's main object in the project view is the one
+that is considered most important (decided based on type) within the collection of objects.
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {
@@ -23,3 +24,5 @@ BEGIN EX
 		Debug.Log(AssetDatabase.GetAssetPath(material));
 	}
 END EX
+@param asset Object to use in creating the asset.
+@param path Filesystem path for the new asset.

@@ -1,12 +1,13 @@
 <signature>
 SetMatrix(string,Matrix4x4)
+SetMatrix(int,Matrix4x4)
 </signature>
 Set a named matrix for the shader.
 This is mostly used with custom shaders that need extra matrix
 parameters. Matrix parameters are not exposed in the material inspector,
 but can be set and queried with /SetMatrix/ and /GetMatrix/ from scripts.
 
-SA: ::ref::GetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]].
+SA: ::ref::GetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader.PropertyToID.
 BEGIN EX
 	var rotateSpeed = 30;
 	var texture : Texture;

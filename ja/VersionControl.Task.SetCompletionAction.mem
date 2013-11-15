@@ -1,0 +1,5 @@
+<signature>
+SetCompletionAction(CompletionAction)
+</signature>
+Upon completion of a task a completion task will be performed if it is set.
+@param action Which completion action to perform.

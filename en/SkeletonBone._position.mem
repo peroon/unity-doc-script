@@ -1,2 +1,1 @@
-Default T-pose position for this bone.
-Should be set in local space.
+The T-pose position of the bone in local space.

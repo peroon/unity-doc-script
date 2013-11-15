@@ -1,6 +1,8 @@
 <signature>
-LogException(Exception)
 </signature>
+<txttag>
+UNDOC
+</txttag>
 A variant of Debug.Log that logs an error message from an exception to the console.
 BEGIN EX
 	try
@@ -13,6 +15,7 @@ BEGIN EX
 	}
 END EX
 <signature>
+LogException(Exception)
 LogException(Exception,Object)
 </signature>
 A variant of Debug.Log that logs an error message to the console.

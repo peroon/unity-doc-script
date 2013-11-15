@@ -1,1 +1,1 @@
-このクラスは一つのヒューマノイド ボーンのマッスル 可動域を格納します。
+This class stores the rotation limits that define the ''muscle'' for a single human bone.

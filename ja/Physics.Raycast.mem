@@ -1,32 +1,34 @@
 <signature>
+Raycast(Vector3,Vector3)
+Raycast(Vector3,Vector3,float)
 Raycast(Vector3,Vector3,float,int)
 </signature>
-シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得
-する
+Casts a ray against all colliders in the scene.
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
 		var fwd = transform.TransformDirection (Vector3.forward);
 		if (Physics.Raycast (transform.position, fwd, 10)) {
-			print ("オブジェクトの前に何かあります!");
+			print ("There is something in front of the object!");
 		}
 	}
 END EX
-__注意:__ この関数は球の中から外に向けて Raycast
-すると false を返しますが、それは意図通りの動作です。
-もしスクリプトまたはアニメーションによりコライダを移動すると、少なくとも
-ひとつの FixedUpdate が実行されないと Physics ライブラリは Raycast が
-新規のポジションでコライダにヒットする前にデータ構造を更新できません。
+__Notes:__ This function will return false if you cast a ray from
+inside a sphere to the outside; this in an intended behaviour.
+If you move colliders from scripting or by animation, there needs to be at
+least one FixedUpdate executed so that the physics library can update it's data
+structures, before a Raycast will hit the collider at it's new position.
 @param origin The starting point of the ray in world coordinates.
-@param direction 方向
-@param distance 距離
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
-きる
-@return レイが任意のコライダーと交わる場合は true 、その他の場合は false 。
+@param direction The direction of the ray.
+@param distance The length of the ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@return True when the ray intersects any collider, otherwise false.
 <signature>
+Raycast(Vector3,Vector3,RaycastHit)
+Raycast(Vector3,Vector3,RaycastHit,float)
 Raycast(Vector3,Vector3,RaycastHit,float,int)
 </signature>
-シーン上の全てのコライダーに対して Raycast をしてヒットした相手に対する詳細な情報を返す
+Casts a ray against all colliders in the scene and returns detailed information on what was hit.
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
@@ -36,9 +38,10 @@ BEGIN EX
 		}
 	}
 END EX
+Another example:
 CONVERTEXAMPLE
 BEGIN EX
-	// 下方向に100 メートル先まで Raycast
+	// Raycast up to 100 meters down
 
 	function Update () {
 		var hit : RaycastHit;
@@ -47,44 +50,50 @@ BEGIN EX
 		}
 	}
 END EX
-@param origin 原点
-@param direction 方向
-@param distance 距離
-@param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
-きる
-@return レイが任意のコライダーと交わる場合は true 、その他の場合は false 。
+@param origin The starting point of the ray in world coordinates.
+@param direction The direction of the ray.
+@param distance The length of the ray.
+@param hitInfo If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@return True when the ray intersects any collider, otherwise false.
 <signature>
+Raycast(Ray)
+Raycast(Ray,float)
 Raycast(Ray,float,int)
 </signature>
-上記と同様だが /ray.origin/ と /ray.direction/ を、 /origin/ および /direction/ の代わりに使用
+Same as above using /ray.origin/ and /ray.direction/ instead of /origin/ and /direction/.
 CONVERTEXAMPLE
 BEGIN EX
+function Update() {
 	var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+
 	if (Physics.Raycast (ray, 100)) {
-		print ("何かにヒット");
+		print ("Hit something");
 	}
+}
 END EX
-@param ray 使用するレイを設定する
-@param distance 距離
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
-きる
-@return レイが任意のコライダーと交わる場合は true 、その他の場合は false 。
+@param ray The starting point and direction of the ray.
+@param distance The length of the ray.
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@return True when the ray intersects any collider, otherwise false.
 <signature>
+Raycast(Ray,RaycastHit)
+Raycast(Ray,RaycastHit,float)
 Raycast(Ray,RaycastHit,float,int)
 </signature>
-上記と同様だが /ray.origin/ と /ray.direction/ を、 /origin/ および /direction/ の代わりに使用
+Same as above using /ray.origin/ and /ray.direction/ instead of /origin/ and /direction/.
 CONVERTEXAMPLE
 BEGIN EX
+function Update() {
 	var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 	var hit : RaycastHit;
 	if (Physics.Raycast (ray, hit, 100)) {
 		Debug.DrawLine (ray.origin, hit.point);
 	}
+}
 END EX
-@param ray 使用するレイを設定する
-@param distance 距離
-@param hitInfo ヒットした場合、ヒットしたオブジェクト情報が格納される
-@param layerMask レイヤーの設定。特定のオブジェクトとの衝突を無視することもで
-きる
-@return レイが任意のコライダーと交わる場合は true 、その他の場合は false 。
+@param ray The starting point and direction of the ray.
+@param distance The length of the ray.
+@param hitInfo If true is returned, /hitInfo/ will contain more information about where the collider was hit (SA: [[RaycastHit]]).
+@param layerMask A [[wiki:comp:Layers|Layer mask]] that is used to selectively ignore colliders when casting a ray.
+@return True when the ray intersects any collider, otherwise false.

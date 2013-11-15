@@ -1,4 +1,4 @@
 <signature>
 GetRawObject()
 </signature>
-Retrieve the <i>raw</i> jobject pointer to the Java object.
+Retrieve the ''raw'' jobject pointer to the Java object.

@@ -1,0 +1,4 @@
+<signature>
+packingRotation
+</signature>
+If Sprite is packed (see [[Sprite.packed]]), returns its SpritePackingRotation.

@@ -1,0 +1,6 @@
+<signature>
+AddTexture(string,Texture)
+AddTexture(int,Texture)
+</signature>
+Add a texture material property.
+Note that texture properties in the MaterialPropertyBlock will not work with fixed-function shaders.

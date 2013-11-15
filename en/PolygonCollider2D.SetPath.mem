@@ -1,0 +1,9 @@
+<signature>
+SetPath(int,Vector2[])
+</signature>
+Define a path by its constituent points.
+A ''path'' is cyclic sequence of line segments between points that define the outline of the polygon. Since the polygon can have holes and discontinuous parts, its shape is not necessarily defined by a single path.
+
+SA: ::ref::pathCount, ::ref::GetPath.
+@param index Index of the path to set.
+@param points Points that define the path.

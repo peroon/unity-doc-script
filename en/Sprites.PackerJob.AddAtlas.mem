@@ -1,0 +1,4 @@
+<signature>
+AddAtlas(string,AtlasSettings)
+</signature>
+Registers a new atlas.

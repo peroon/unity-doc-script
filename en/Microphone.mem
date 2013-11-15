@@ -1,4 +1,2 @@
-Use this class to record to an [[AudioClip|audio clip]] using a connected microphone.
-To get a list of connected microphone(s) use [[Microphone.devices|Microphone.devices]].
-To start a recording session, use [[Microphone.Start|Microphone.Start]] with a device name (or null/empty string to use the default device).
-To stop a recording, use [[Microphone.End|Microphone.End]] with the device ID you used when starting a recording.
+Use this class to record to an [[AudioClip]] using a connected microphone.
+You can get a list of connected microphone(s) from the ::ref::devices property and then use the ::ref::Start and ::ref::End functions to start or end a recording session using one of the available devices.

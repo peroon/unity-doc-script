@@ -1,7 +1,8 @@
 <signature>
 SetGlobalVector(string,Vector4)
+SetGlobalVector(int,Vector4)
 </signature>
-すべてのシェーダーのグローバルのVector型プロパティを設定する
+Sets a global vector property for all shaders.
 Global properties are used if a shader needs them but the material does
 not have them defined (for example, if the shader does not expose them
 in /Properties/ block).

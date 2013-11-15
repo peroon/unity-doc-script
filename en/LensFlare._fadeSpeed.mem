@@ -1,0 +1,16 @@
+<signature>
+fadeSpeed
+</signature>
+The fade speed of the flare.
+SA: [[wiki:class-LensFlare|Lens flare component]], [[wiki:class-Flare|flare assets]].
+CONVERTEXAMPLE
+BEGIN EX
+	// Sets the fade speed of the flare
+
+	var lf : LensFlare;
+	var tr : Transform;
+
+	function Update() {
+		lf.fadeSpeed = 0.5;
+	}
+END EX

@@ -1,0 +1,8 @@
+<signature>
+OnGUI(Rect,MaterialProperty,string,MaterialEditor)
+</signature>
+Override this method to make your own GUI for the property.
+@param position Rectangle on the screen to use for the property GUI.
+@param prop The [[MaterialProperty]] to make the custom GUI for.
+@param label The label of this property.
+@param editor Current material editor.

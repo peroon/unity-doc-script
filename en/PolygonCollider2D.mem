@@ -1,0 +1,2 @@
+Collider for 2D physics representing an arbitrary polygon defined by its vertices.
+SA: [[BoxCollider2D]] class, [[CircleCollider2D]] class.

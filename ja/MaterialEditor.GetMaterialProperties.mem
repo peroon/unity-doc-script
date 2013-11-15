@@ -1,0 +1,7 @@
+<signature>
+GetMaterialProperties(Object[])
+</signature>
+Get shader property information of the passed materials.
+When implementing custom MaterialEditors, you'd usually pass this.targets array to this function, i.e. all the selected materials.
+
+SA: [[MaterialProperty]].

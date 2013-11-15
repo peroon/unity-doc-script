@@ -1,4 +1,12 @@
 <signature>
 GetPlatformTextureSettings(string,string,int,int,int,int)
 </signature>
-Platform settings.
+Get the import settings for a given ProceduralMaterial for a given platform (width and height, RAW/Compressed format, loading behavior).
+Returns a default set of settings (512x512, compressed outputs, "Generate at load" behavior) if no settings are found for the input materialName or for the input platform.
+@param materialName The name of the ProceduralMaterial.
+@param platform The name of the platform (can be empty).
+@param maxTextureWidth The maximum texture width for this ProceduralMaterial (output value).
+@param maxTextureHeight The maximum texture height for this ProceduralMaterial (output value).
+@param textureFormat The texture format (0=Compressed, 1=RAW) for this ProceduralMaterial (output value).
+@param loadBehavior The load behavior for this ProceduralMaterial (output value).
+Values match the ProceduralMaterial::ProceduralLoadingBehavior enum.

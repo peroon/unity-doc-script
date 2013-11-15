@@ -1,0 +1,5 @@
+<signature>
+fieldInfo
+</signature>
+The reflection FieldInfo for the member this property represents. (RO)
+For advanced uses, this allows you to get information about the member the property represents using reflection, such as the type of the property and which attributes it might have. Most PropertyDrawers will not need to make use of the FieldInfo.

@@ -1,0 +1,4 @@
+<signature>
+animatedPropertyColor
+</signature>
+The color used to show that a property is currently being animated.

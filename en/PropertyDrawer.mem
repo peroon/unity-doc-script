@@ -5,6 +5,7 @@ PropertyDrawers have two uses:\\
 
 If you have a custom [[Serializable]] class, you can use a PropertyDrawer to control how it looks in the Inspector.
 Consider the Serializable class Ingredient in the script below:
+CONVERTEXAMPLE
 BEGIN EX
 // Recipe.js
 // This is not an editor script
@@ -32,6 +33,7 @@ Compare the look of the Ingredient properties in the Inspector without and with 
 ''Class in the Inspector without (left) and with (right) custom PropertyDrawer.''
 
 You can attach the PropertyDrawer to a Serializable class by using the [[CustomPropertyDrawer]] attribute and pass in the type of the Serializable class that it's a drawer for.
+CONVERTEXAMPLE
 BEGIN EX
 // IngredientDrawer.js
 @CustomPropertyDrawer (Ingredient)
@@ -70,6 +72,7 @@ END EX
 The other use of PropertyDrawer is to alter the appearance of members in a script that have custom [[PropertyAttribute]]s.
 Say you want to limit floats or integers in your script to a certain range and show them as sliders in the Inspector.
 Using the built-in [[PropertyAttribute]] called [[RangeAttribute]] you can do just that:
+CONVERTEXAMPLE
 BEGIN EX
 // Show this float in the Inspector as a slider between 0 and 10
 @Range (0.0, 10.0)
@@ -91,6 +94,7 @@ class RangeAttribute extends PropertyAttribute {
 END EX
 Now that you have the attribute, you need to make a PropertyDrawer that draws properties that have that attribute.
 The drawer must extend the PropertyDrawer class, and it must have a [[CustomPropertyDrawer]] attribute to tell it which attribute it's a drawer for.
+CONVERTEXAMPLE
 BEGIN EX
 // The property drawer class should be placed in an editor script, inside a folder called Editor.
 
@@ -111,20 +115,6 @@ class RangeDrawer extends PropertyDrawer {
 			EditorGUI.IntSlider (position, property, range.min, range.max, label);
 		else
 			EditorGUI.LabelField (position, label.text, "Use Range with float or int.");
-	}
-}
-END EX
-Note that the PropertyDrawers are designed to work with [[EditorGUIUtility.LookLikeInspector|LookLikeInspector]] indentation by default.
-For now, if you want to use [[EditorGUIUtility.LookLikeControls|LookLikeControls]], please shave off 4 pixels from both left and right side of the provided position:
-BEGIN EX
-[CustomPropertyDrawer (typeof (MyClass))]
-public class MyDrawer : PropertyDrawer {
-	public override void OnGUI (Rect position, SerializedProperty prop, GUIContent label) {
-		EditorGUIUtility.LookLikeControls ();
-		position.xMin += 4;
-		position.xMax -= 4;
-		
-		// Actual drawing code goes here...
 	}
 }
 END EX
