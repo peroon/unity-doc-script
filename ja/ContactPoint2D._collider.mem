@@ -1,4 +1,4 @@
 <signature>
 collider
 </signature>
-The collider attached to the object receiving the collision message.
+衝突メッセージを受信したオブジェクトにアタッチされたコライダー
