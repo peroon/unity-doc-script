@@ -1,4 +1,4 @@
 <signature>
 shapeCount
 </signature>
-The number of separate shaped regions in the collider.
+コライダーに含まれる領域の数

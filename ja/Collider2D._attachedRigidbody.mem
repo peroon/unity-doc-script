@@ -1,7 +1,7 @@
 <signature>
 attachedRigidbody
 </signature>
-The Rigidbody2D attached to the Collider2D's GameObject.
-This property will be null if no Rigidbody2D is attached.
+Collider2D のゲームオブジェクトにアタッチされた Rigidbody2D
+もし Rigidbody2D がアタッチされてない場合、このプロパティは null
 
 SA: Rigidbody2D::ref::

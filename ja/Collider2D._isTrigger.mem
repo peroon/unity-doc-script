@@ -1,4 +1,4 @@
 <signature>
 isTrigger
 </signature>
-Is this collider configured as a trigger?
+コライダーはトリガーとして設定されているか
