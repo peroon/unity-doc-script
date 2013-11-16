@@ -1,8 +1,8 @@
 <signature>
 loaded
 </signature>
-Checks if banner contents are loaded.
-You should hide banner if it is not loaded to avoid showing blank view.
+バナーコンテンツがロード済みかチェック
+空白のビュー表示をさけるため、ロードされてない場合はバナーをを隠すべきです。
 BEGIN EX
 if(banner.visible && !banner.loaded)
 	banner.visible = false;
