@@ -1,5 +1,5 @@
 <signature>
 center
 </signature>
-Center point of the circle in local space.
-SA: ::ref::radius.
+ローカル座標の円の中心
+SA: ::ref::radius
