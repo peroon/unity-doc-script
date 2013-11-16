@@ -1,7 +1,7 @@
 <signature>
 size
 </signature>
-The width and height of the rectangle.
-The X coordinate of the vector represents the width while the Y represents the height. These values are specified relative to a center point, so the distance from the center to the left edge is actually width/2.
+四角形の幅および高さ
+ベクトルの X 座標は幅を表し、 Y 座標は高さを表します。これらの値は中心点に対して相対的に指定されるため、中心から左端までの距離は実際には幅の半分です。
 
-SA: ::ref::center.
+SA: ::ref::center

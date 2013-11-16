@@ -1,4 +1,4 @@
 <signature>
 isBuildingPlayer
 </signature>
-Is a player currently being built?
+現在プレイヤーがビルド中であるか判定

@@ -1,2 +1,2 @@
-Collider for 2D physics representing an axis-aligned rectangle.
-SA: [[CircleCollider2D]] class, [[PolygonCollider2D]] class.
+軸に位置を合わせた四角形を表す 2D 物理挙動のコライダー
+SA: [[CircleCollider2D]] クラス, [[PolygonCollider2D]] クラス
