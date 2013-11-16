@@ -4,10 +4,10 @@ OnCollisionEnter2D(Collision2D)
 <txttag>
 CSNONE
 </txttag>
-Sent when an incoming collider makes contact with this object's collider (2D physics only).
-Further information about the collision is reported in the Collision 2D parameter passed during the call.
+オブジェクトのコライダーが別のコライダーに衝突したときに呼び出されます（2D 物理挙動のみ）
+衝突に関する詳細な情報は呼び出し時に渡される Collision2D 引数で報告されます。
 
-SA: [[Collision2D]] class, ::ref::OnCollisionExit2D, ::ref::OnCollisionStay2D.
+SA: [[Collision2D]] クラス, ::ref::OnCollisionExit2D, ::ref::OnCollisionStay2D.
 CONVERTEXAMPLE
 BEGIN EX
 function OnCollisionEnter2D(coll: Collision2D) {
