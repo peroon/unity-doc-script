@@ -1,10 +1,10 @@
 <signature>
 relativeVelocity
 </signature>
-The relative linear velocity of the two colliding objects (RO).
+衝突したオブジェクトの相対的な速度（読み込み専用）
 CONVERTEXAMPLE
 BEGIN EX
-	// Play a sound when we hit an object with a big velocity
+	// 大きな速度でオブジェクトに衝突した場合は音を鳴らす
 	function OnCollisionEnter2D(collision : Collision2D) {
 		if (collision.relativeVelocity.magnitude > 2)
 			audio.Play();
