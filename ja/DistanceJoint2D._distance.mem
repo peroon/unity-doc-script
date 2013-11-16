@@ -1,5 +1,5 @@
 <signature>
 distance
 </signature>
-The distance separating the two ends of the joint.
-SA: ::ref::anchor, ::ref::connectedAnchor.
+ジョイントの二つの端を隔てた距離
+SA: ::ref::anchor, ::ref::connectedAnchor

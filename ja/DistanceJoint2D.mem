@@ -1,4 +1,5 @@
-Joint that keeps two Rigidbody2D objects a fixed distance apart.
+二つの Rigidbody2D を固定の距離だけ離れた位置のままとするジョイント
+SpringJoint2D コンポーネントと異なり、オブジェクトを隔てる距離は完全に固定されていて、ストレッチなども許容していません。
 Note that unlike the SpringJoint2D component, the distance separating the objects is truly fixed and does not allow for any stretching.
 
-SA: [[HingeJoint2D]] class, [[SliderJoint2D]] class, [[SpringJoint2D]] class.
+SA: [[HingeJoint2D]] クラス, [[SliderJoint2D]] クラス, [[SpringJoint2D]] クラス

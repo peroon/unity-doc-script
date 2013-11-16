@@ -4,10 +4,10 @@ ToggleLeft(Rect,string,bool,GUIStyle)
 ToggleLeft(Rect,GUIContent,bool)
 ToggleLeft(Rect,GUIContent,bool,GUIStyle)
 </signature>
-Make a toggle field where the toggle is to the left and the label immediately to the right of it.
-[[EditorGUI.ToggleLeft]] is similar to [[GUI.Toggle]] but respects the [[EditorGUI.showMixedValue]] property and handles keyboard focus consistent with other Editor controls.
-@param position Rectangle on the screen to use for the toggle.
-@param label Label to display next to the toggle.
-@param value The value to edit.
-@param labelStyle Optional [[GUIStyle]] to use for the label.
-@return The value set by the user.
+トグルが左にあり、すぐ右にラベルがある形式のトグル フィールドを作成
+[[EditorGUI.ToggleLeft]] は [[GUI.Toggle]] とほぼ同様ですが、 [[EditorGUI.showMixedValue]] プロパティに従い、他のエディタ コントロールとのキーボード フォーカスを整合性を保ってハンドリングします。
+@param position トグルに使用する際のスクリーン上の Rect
+@param label トグルのすぐ隣に表示するラベル
+@param value 編集する値
+@param labelStyle Optional ラベルで使用する [[GUIStyle]]
+@return ユーザによりセットされた値
