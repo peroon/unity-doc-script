@@ -1,2 +1,2 @@
-Options for the detection mode used by a Rigidbody2D.
-SA: Rigidbody2D::ref::collisionDetectionMode.
+Rigidbody2D により使用される検知モードのオプション
+SA: Rigidbody2D::ref::collisionDetectionMode
