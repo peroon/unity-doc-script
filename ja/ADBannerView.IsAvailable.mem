@@ -1,4 +1,4 @@
 <signature>
 IsAvailable(Type)
 </signature>
-Checks if the banner type is available (e.g. MediumRect is available only starting with ios6).
+バナータイプが利用可能かチェックする（例． MediumRect は iOS6 以降でのみ利用可能）
