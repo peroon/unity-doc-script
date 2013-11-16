@@ -1,2 +1,2 @@
-Will be fired when banner was clicked.
-Please note, that app will loose focus on banner click, so the delegate will be called on first frame after ad was shown.
+バナークリック時に起動される。
+このアプリケーションはバナークリックのフォーカスを失うため広告が表示された後の最初のフレームでデリゲートは呼び出しされることに留意して下さい。

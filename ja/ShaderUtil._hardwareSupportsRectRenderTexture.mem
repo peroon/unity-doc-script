@@ -1,4 +1,4 @@
 <signature>
 hardwareSupportsRectRenderTexture
 </signature>
-Does the current hardware support render textues.
+現在のハードウェアがテクスチャ レンダリングをサポートするか判定する
