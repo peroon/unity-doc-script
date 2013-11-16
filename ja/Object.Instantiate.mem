@@ -2,15 +2,15 @@
 Instantiate(Object,Vector3,Quaternion)
 Instantiate(Object)
 </signature>
-Clones the object /original/ and returns the clone.
-This function makes a copy of an object in a similar way to the Duplicate command in the editor. If you are cloning a [[GameObject]] then you can also optionally specify its position and rotation (these will default to Vector3::ref::zero and Quaternion::ref::identity respectively). If you are cloning a [[Component]] then the GameObject is is attached to will also be cloned, again with an optional position and rotation.
+/original/ のオブジェクトをクローンしたうえで返り値とします
+この関数はオブジェクトをエディタ上の Duplicate コマンドと同様の方法で複製します。もし[[GameObject]] をクローンする場合、さらにその位置および回転を任意で指定できます（各々 Vector3::ref::zero および Quaternion::ref::identity がデフォルト値）。もし [[Component]] をクローンする場合、アタッチされているゲームオブジェクトも位置および回転を任意で指定したうえでクローンされます。
 
-When you clone a [[GameObject]] or [[Component]], all child objects and components will also be cloned with their properties set like those of the original object. However, the ''parent'' of the new object will be null, so it will not be a "sibling" of the original. However, you can still set the parent explicitly if you wish. Also, the active status of a GameObject at the time of cloning will be passed on, so if the original is inactive then the clone will be created in an inactive state too.
+[[GameObject]] または [[Component]] をクローンするとき、全ての子オブジェクトおよびコンポーネントは元のオブジェクトと同様のプロパティの値でさらにクローンします。しかし新規オブジェクトの ''parent'' は null となるため、元のオブジェクトの "子" とはなりません。しかし、必要であれば明示的に親を指定することは可能です。さらにクローンするときのゲームオブジェクトの有効状態は次に渡されるため、もし元が無効だった場合、クローンもまた無効状態となります。
 
 SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiates 10 copies of prefab each 2 units apart from each other
+	// 互いに 2 ユニット離してプレハブを 10 個複製してインスタンス化
 
 	var prefab : Transform;
 
@@ -18,66 +18,66 @@ BEGIN EX
 		Instantiate (prefab, Vector3(i * 2.0, 0, 0), Quaternion.identity);
 	}
 END EX
-Instantiate is most commonly used to instantiate projectiles, AI Enemies, particle explosions or wrecked object replacements.
+Instantiate は発射物、AI 付き敵キャラクター、爆発のパーティクル、または破壊されたオブジェクトの Replacement のインスタンス化の場合にもっとも使用されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiate a rigidbody then set the velocity
+	// Rigidbody をインスタンス化して速度をセット
 
 	var projectile : Rigidbody;
 
 	function Update () {
-		// Ctrl was pressed, launch a projectile
+		// ボタンが押されたら発射
 		if (Input.GetButtonDown("Fire1")) {
-			// Instantiate the projectile at the position and rotation of this transform
+			// 発射物を次の Trasnform の位置、回転でインスタンス化
 			var clone : Rigidbody;
 			clone = Instantiate(projectile, transform.position, transform.rotation);
 			
-			// Give the cloned object an initial velocity along the current 
-			// object's Z axis
+			// クローンされたオブジェクトに現在のオブジェクトの Z 軸に沿った
+			// 初期速度を与える
 			clone.velocity = transform.TransformDirection (Vector3.forward * 10);
 		}
 	}
 END EX
-Instantiate can also clone script instances directly.
-The entire game object hierarchy will be cloned and the cloned script instance will be returned.
+Instantiate によりスクリプトのインスタンスを直接クローンすることもできます。
+ゲームオブジェクト全体の階層がクローンされ、クローンされたスクリプトのインスタンスが返されます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiate a prefab with an attached Missile script
+	// Missile スクリプトがアタッチされたプレハブをインスタンス化
 	var projectile : Missile;
 
 	function Update () {
-		// Ctrl was pressed, launch a projectile
+		// ボタンが押されたら発射
 		if (Input.GetButtonDown("Fire1")) {
-			// Instantiate the projectile at the position and rotation of this transform
+			// 発射物を次の Trasnform の位置、回転でインスタンス化
 			var clone : Missile;
 			clone = Instantiate(projectile, transform.position, transform.rotation);
 			
-			// Set the missiles timeout destructor to 5
+			// ミサイルを破壊するまえでの時間を 5 秒にセット
 			clone.timeoutDestructor = 5;
 		}
 	}
 END EX
-After cloning an object you can also use GetComponent to set properties on a specific component attached to the cloned object.
-@param original An existing object that you want to make a copy of.
-@param position Position for the new object.
-@param rotation Orientation of the new object.
+オブジェクトをクローンした後。さらに GetComponent を使用して、クローンされたオブジェクトの特定コンポーネントのプロパティをセット出来ます。
+@param original 複製したい既存オブジェクト
+@param position 新規オブジェクトの位置
+@param rotation 新規オブジェクトの回転
 <signature>
 </signature>
 <txttag>
 UNDOC
 </txttag>
-Clones the object /original/ and returns the clone.
-This function preserves the position and rotation of the cloned object.
+/original/ のオブジェクトをクローンしたうえで返り値とします
+この関数はクローンされたオブジェクトの位置および回転を保存します。
+これは Unity で Cmd + D による複製コマンドと同等です。
+[[GameObject]] または [[Component]] をクローンするとき、ゲームオブジェクト全体および全てのコンポーネントをクローンします。
+もしゲームオブジェクトに Transform がある場合、全ての子もまたクローンされます。さらにクローンするときのゲームオブジェクトの有効状態は次に渡されるため、もし元が無効だった場合、クローンもまた無効状態となることに留意して下さい。
 This is essentially the same as using duplicate command (cmd-d) in Unity.
-If the object is a [[Component]] or a [[GameObject]] then entire game object including all components
-will be cloned. 
-If the game object has a transform all children are cloned as well. Note that the active status of a GameObject will be passed to its clone, so if the original is inactive at the time of cloning, the new clone will initially be inactive too.
 
 SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
 CONVERTEXAMPLE
 BEGIN EX
-	// Instantiates prefab when any rigid body enters the trigger.
-	// It preserves the prefab's original position and rotation.
+	// 任意の Rigidbody がトリガーに入ったときプレハブをインスタンス化
+	// プレハブの元の位置および回転を保持します
 
 	var prefab : Transform;
 
@@ -85,9 +85,9 @@ BEGIN EX
 		Instantiate (prefab);
 	}
 END EX
-Note that the Instantiate can clone any type of Object including scripts.
-@param original An existing object that you want to make a copy of.
+Instantiate によりスクリプトを含む任意の型のオブジェクトをクローンできることに留意して下さい。
+@param original 複製したい既存のオブジェクト
 <signature>
 Instantiate<T>(T)
 </signature>
-Generic version. See the [[wiki:Generic Functions|Generic Functions]] page for more details.
+ジェネリックにした関数。詳細については [[wiki:Generic Functions|ジェネリック関数]] を参照して下さい。
