@@ -1,4 +1,4 @@
 <signature>
 rigidbody
 </signature>
-The incoming Rigidbody2D involved in the collision.
+衝突に関連した Rigidbody2D
