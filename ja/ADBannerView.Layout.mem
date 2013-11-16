@@ -1,5 +1,5 @@
-Specifies how banner should be layed out on screen.
-Please note that Traditional Banner and Rect Banner (introduced in ios6) use different enum values.
-If you use "wrong" enum value for current ad type:
-for Traditional Banner Top* and Center* will be considered Top, and Bottom* will be considered Bottom*
-for Rect Banner Top will be considered TopLeft and Bottom - BottomLeft.
+バナーのスクリーンでのレイアウト方法を指定
+従来のバナーおよび四角形のバナー（iOS 6 から導入）は異なる列挙体の値を使用することに注意して下さい。
+もし現在の広告タイプで誤った列挙体を使用した場合:
+従来のバナーで Top* および Center* は Top と判断され、Bottom* は Bottom* と判断されます。
+四角形のバナーで Top は TopLeft および Bottom - BottomLeft と判断されます。
