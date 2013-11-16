@@ -1,3 +1,3 @@
-Interface to control AnimationSet.
-AnimationSet are used to override clips from a controller to specialize some animation for a given avatar.
+アニメーションセットを制御するインタフェース
+アニメーションセットは与えられたアバターで何らかのアニメーションを専用に加工してアニメーションクリップを上書きするためにコントローラから使用されます。
 SA: Animator.animationSet.

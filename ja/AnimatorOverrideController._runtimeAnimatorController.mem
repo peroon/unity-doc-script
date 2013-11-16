@@ -1,4 +1,4 @@
 <signature>
 runtimeAnimatorController
 </signature>
-The Controller that the AnimatorOverrideController overrides.
+AnimatorOverrideController が上書きするコントローラ

@@ -1,5 +1,5 @@
 ローカル座標でのコライダーの中心座標を返す
 BEGIN EX
-	// Reset the center to the transform's position
+	// コライダーの中心座標を Transform の位置にリセット
 	collider.center = Vector3.zero;
 END EX
