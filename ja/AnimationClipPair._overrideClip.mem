@@ -1,2 +1,2 @@
-The override animation clip.
-Can be null if no override is define.
+上書きするアニメーションクリップ
+もし上書きが定義されてない場合は null の場合があります。
