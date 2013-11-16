@@ -1,2 +1,2 @@
-Collider for 2D physics representing an circle.
-SA: [[BoxCollider]] class, [[PolygonCollider2D]] class.
+円を表す 2D 物理挙動のコライダー
+SA: [[BoxCollider]] クラス, [[PolygonCollider2D]] クラス

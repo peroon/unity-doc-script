@@ -1,2 +1,2 @@
-Use a mask from your project to specify which transforms animation should be imported.
-SA: ModelImporterClipAnimation.maskType.
+プロジェクトでのマスクを使用してどの Transform のアニメーションがインポートされるべきか示します。
+SA: ModelImporterClipAnimation.maskType

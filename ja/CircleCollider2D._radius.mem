@@ -1,5 +1,5 @@
 <signature>
 radius
 </signature>
-Radius of the circle.
-SA: ::ref::center.
+円の半径
+SA: ::ref::center
