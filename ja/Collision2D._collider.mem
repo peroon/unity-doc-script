@@ -1,5 +1,5 @@
 <signature>
 collider
 </signature>
-The incoming Collider2D involved in the collision.
-SA: [[Collider2D]] class.
+衝突してきた Collider2D 
+SA: [[Collider2D]] クラス

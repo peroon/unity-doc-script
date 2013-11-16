@@ -1,5 +1,5 @@
 <signature>
 sharedMaterial
 </signature>
-The PhysicsMaterial2D that is applied to this collider.
-SA: [[PhysicsMaterial2D]] class.
+コライダーに適用された PhysicsMaterial2D 
+SA: [[PhysicsMaterial2D]] クラス

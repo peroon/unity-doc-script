@@ -1,2 +1,2 @@
-Parent class for collider types used with 2D gameplay.
-SA: [[BoxCollider2D]] class, [[CircleCollider2D]] class, [[PolygonCollider2D]] class.
+2D ゲームプレイで使用されるコライダー型の親クラス
+SA: [[BoxCollider2D]] クラス, [[CircleCollider2D]] クラス, [[PolygonCollider2D]] クラス
