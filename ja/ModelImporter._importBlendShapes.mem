@@ -1,2 +1,2 @@
-Controlls import of BlendShapes.
-SA: Mesh::ref::blendShapes, [[MeshBlendShape]].
+BlendShapes のインポートを制御
+SA: Mesh::ref::blendShapes, [[MeshBlendShape]]
