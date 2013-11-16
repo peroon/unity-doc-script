@@ -1,6 +1,6 @@
 <signature>
 OverlapPoint(Vector2)
 </signature>
-Check if a collider overlaps a point in space.
-This will always return false when used on a ::ref::EdgeCollider2D.
-@param point A point in world space.
+空間上でコライダーがある地点を含むかチェックする
+::ref::EdgeCollider2D で使用された場合は常に false を返す
+@param point ワールド空間上の点
