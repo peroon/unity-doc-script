@@ -1,4 +1,4 @@
-Callback attribute for opening an asset in Unity (e.g the callback is fired when double clicking an asset in the Project Browser).
-Adding this attribute to a static method will make the method be called when Unity is about to open an asset. The method should have the following signature:\\ 
+Unity でアセットを開くためのコールバック属性（例．プロジェクトブラウザでアセットをダブルクリックされたときコールバックは起動されます）
+この属性を static メソッドに追加することでUnity がアセットを開こうとするときメソッドが呼ばれます。メソッドは次のシグニチャを持つべきです:\\ 
 @@static bool OnOpenAsset(int instanceID, int line)@@ \\
-Return true if you handled the opening of the asset or false if an external tool should open it.
+自身でアセットを開く時のハンドリングした場合は true 、あるいは外部ツールで開いた場合は false
