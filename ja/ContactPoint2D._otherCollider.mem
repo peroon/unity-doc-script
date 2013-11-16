@@ -1,4 +1,4 @@
 <signature>
 otherCollider
 </signature>
-The incoming collider involved in the collision at this contact point.
+衝突地点で衝突してきたオブジェクトのコライダー

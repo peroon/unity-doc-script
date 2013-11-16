@@ -1,7 +1,7 @@
 <signature>
 normal
 </signature>
-Surface normal at the contact point.
-This is the normal vector (ie, the vector perpendicular to the surface) of the incoming Collider2D at the contact point.
+衝突した面の法線
+衝突地点の Collider2D の法線ベクトルです（すなわち、衝突面に垂直なベクトル）。
 
-SA: [[Collider2D]] class.
+SA: [[Collider2D]] クラス
