@@ -1,2 +1,2 @@
-The type of the banner view.
-Please check availability of banner type with ADBannerView.IsAvailable. Traditional banner is always available, though.
+バナービューの型
+バナーの型が利用可能かチェックするには ADBannerView.IsAvailable を使用します。ただし従来のバナーは常に利用可能です。
