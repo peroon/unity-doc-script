@@ -1,5 +1,5 @@
 <signature>
 color
 </signature>
-The initial color of the particle. The current color of the particle is calculated procedurally based on this value and the active color modules.
-Alpha channel of the color is used to fade out particles.
+パーティクルの初期カラー。パーティクルの現在のカラーはこの値および有効なカラーモジュールにもとづいてプロシージャルに計算されます。
+このカラーのアルファーチャネルはパーティクルをフェードアウトするのに使用されます。

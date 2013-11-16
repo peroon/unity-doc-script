@@ -1,21 +1,23 @@
 <signature>
 FindObjectOfType(Type)
 </signature>
-Returns the first active loaded object of Type /type/.
-Please note that this function is very slow. It is not recommended to use this function every frame.
-In most cases you can use the singleton pattern instead.
+型が /type/ である最初に有効にロードされたオブジェクトを返す
+この関数は非常に動作が遅いため、毎フレーム使用することは推奨しません。
+多くの場合は変わりにシングルトン パターンが使用できます。
 
 SA: Object.FindObjectsOfType.
 CONVERTEXAMPLE
 BEGIN EX
-// Search for any object of Type GUITexture, 
-// if found print its name, else print a message
-// that says that it was not found.
+// 型が GUITexture の任意のオブジェクトを探します
+// 見つかった場合は名前を表示し、それ以外の場合は
+// 見つからなかったことを示すメッセージを表示します。
 function Start() {
-  var texture : GUITexture = FindObjectOfType(GUITexture);
+
+  var texture : GUITexture = FindObjectOfType(GUITexture);
   if(texture)
-    Debug.Log("GUITexture object found: " + texture.name);
+    Debug.Log("次の GUITexture オブジェクトが見つかりました: " + texture.name);
   else
-    Debug.Log("No GUITexture object could be found");
-}
+    Debug.Log("GUITexture オブジェクトは見つかりませんでした");
+
+}
 END EX
