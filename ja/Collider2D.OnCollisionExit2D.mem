@@ -4,10 +4,10 @@ OnCollisionExit2D(Collision2D)
 <txttag>
 CSNONE
 </txttag>
-Sent when a collider on another object stops touching this object's collider (2D physics only).
-Further information about the objects involved is reported in the Collision2D parameter passed during the call.
+オブジェクトのコライダーと別のオブジェクトコライダーが衝突から離れた瞬間に呼び出されます（2D 物理挙動のみ）
+衝突に関連するオブジェクトに関する詳細な情報は呼び出し時に渡される Collision2D 引数で報告されます。
 
-SA: [[Collision2D]] class, ::ref::OnCollisionEnter2D, ::ref::OnCollisionStay2D.
+SA: [[Collision2D]] クラス, ::ref::OnCollisionEnter2D, ::ref::OnCollisionStay2D.
 CONVERTEXAMPLE
 BEGIN EX
 var bumpCount: int;
