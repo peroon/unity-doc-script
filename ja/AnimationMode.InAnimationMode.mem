@@ -1,4 +1,4 @@
 <signature>
 InAnimationMode()
 </signature>
-Are we currently in AnimationMode.
+現在アニメーションモードか判定

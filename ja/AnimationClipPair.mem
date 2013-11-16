@@ -1,2 +1,2 @@
-This class define a pair of clip used by SA: [[AnimationSet]].
-Each original clip from the controller can be overriden with another clip.
+SA: [[AnimationSet]] により使用されるアニメーションクリップのペアを定義するクラス。
+コントローラからの各々の下のアニメーションクリップは別のアニメーションクリップで上書きできます。

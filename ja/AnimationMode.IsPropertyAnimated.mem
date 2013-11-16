@@ -1,4 +1,4 @@
 <signature>
 IsPropertyAnimated(Object,string)
 </signature>
-Is the specified property currently in animation mode and being animated?
+指定されたプロパティが現在アニメーションモードでアニメーションされているか判定
