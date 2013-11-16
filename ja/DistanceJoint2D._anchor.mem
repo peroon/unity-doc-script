@@ -1,5 +1,5 @@
 <signature>
 anchor
 </signature>
-The joint's anchor point on the object that has the DistanceJoint2D component.
-SA: ::ref::connectedAnchor, ::ref::distance.
+DistanceJoint2D コンポーネントを持つほうのオブジェクトのジョイントのアンカー地点
+SA: ::ref::connectedAnchor, ::ref::distance

@@ -1,2 +1,2 @@
-Details about a specific point of contact involved in a 2D physics collision.
-SA: [[Collision2D]] class.
+2D 物理挙動の衝突に関連した衝突地点に関する詳細
+SA: [[Collision2D]] クラス
