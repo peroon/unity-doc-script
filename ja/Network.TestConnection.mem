@@ -19,6 +19,7 @@ TestConnection(bool)
 <li>Symmetric</li>
 </ul>
 
+最初の二つのタイプは NAT パンチスルーを完全にサポートし、任意のタイプに接続できます。Port restricted のタイプは Symmetric タイプを接続元あるいは接続先とすることが出来ません。Symmetric はもっとも限定されており他の Symmetric タイプまたは Port restricted タイプに接続できません。後半の二つは
 First two types offer full NAT punchthrough support and can connect to any type. Port restricted type cannot connect to or receive a connection from symmetric
 type. Symmetric if worst and cannot connect to other symmetric types or port restricted type. The latter two are labelled
 as offering limited NAT punchthrough support.
