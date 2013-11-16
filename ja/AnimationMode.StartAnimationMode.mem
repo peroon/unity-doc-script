@@ -1,5 +1,5 @@
 <signature>
 StartAnimationMode()
 </signature>
-Starts the animation mode.
-When the Animation Mode is enabled, the editor is tinted in a special color to indicated that animations are playing and recorded.
+アニメーションモードを開始します。
+アニメーションモードが有効化されると、エディタが特別なカラーで色付けがされて、アニメーションが再生および録画されていることを示します。

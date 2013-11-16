@@ -1,8 +1,9 @@
 <signature>
 SampleAnimationClip(GameObject,AnimationClip,float)
 </signature>
-Samples an AnimationClip on the object and also records any modified properties in AnimationMode.
-This function must always be surrounded by AnimationMode.BeginSample and AnimationMode.EndSample. When a property is no longer sampled (through SampleAnimationClip or AddPropertyModification) between BeginSample and EndSample it will automatically revert to the original value when EndSample is called.
+オブジェクトのアニメーションクリップをサンプリングして、さらにアニメーションモードで修正された任意のプロパティを記録します。
+この関数は AnimationMode.BeginSample および AnimationMode.EndSample により必ず囲む必要があります。もしプロパティが BeginSample および EndSample の間でサンプリングされなくなった場合（SampleAnimationClip または AddPropertyModification）、EndSample が呼び出しされたときに自動的に元の値に戻します。
+
 BEGIN EX
 AnimationMode.BeginSample ();
 AnimationMode.SampleAnimationClip (gameObject, clip, 0.3F);
