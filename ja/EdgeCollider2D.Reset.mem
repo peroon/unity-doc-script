@@ -1,4 +1,4 @@
 <signature>
 Reset()
 </signature>
-Reset to a single edge consisting of two points.
+リセットして、二つの点で構成される一つの辺に戻す

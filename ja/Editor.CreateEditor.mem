@@ -4,12 +4,12 @@ CreateEditor(Object,Type)
 CreateEditor(Object[])
 CreateEditor(Object[],Type)
 </signature>
-Make a custom editor for /obj/ or /objects/.
-By default an appropriate editor is chosen that has a matching CustomEditor attribute.
-If an editorType is specified, an editor of that type is created instead.
-Returns NULL if obj doesn't have a custom editor class defined.
+/obj/ または複数の /objects/ のためのカスタムエディタを作成
+デフォルトでは CustomEditor が一致する適切なエディタが選択されます。
+もし editorType が指定された場合その型のエディタが代わりに作成されます。
+もしオブジェクトに対してカスタムエディタが定義されてない場合 null を返します。
 
-Consider a script WaypointPathEditor for editing  the Transforms of a wayPoint array.
+wayPoint 配列の複数の Transform を編集するには WaypointPathEditor スクリプトを検討して下さい。
 BEGIN EX
 import System.Linq;
 
@@ -26,7 +26,7 @@ class WaypointPathEditor extends Editor {
 	function GetWaypoints () {
     	var myWayPath = target as WaypointPath;
 		
-        // Gets only the valid objects from WaypointPath
+        // WaypointPath の有効なオブジェクトのみを取得
 		if (myWayPath.wayPointArray != null) {
 			waypoints = myWayPath.wayPointArray.Where (function(obj) { return obj != null; }).ToArray ();
 			optionsList = waypoints.Select (function(obj, index){index.ToString () + ". " + obj.name;}).ToArray ();	
@@ -49,14 +49,14 @@ class WaypointPathEditor extends Editor {
 			if (index < waypoints.Length) {
 				selectedTransform = waypoints[index];
 
-                //Creates an Editor for selected Component from a Popup
+                // ポップアップで選択されたコンポーネントのためのエディタを作成
 				tmpEditor = Editor.CreateEditor (selectedTransform);
 			}else {
 			
  				selectedTransform = null;
 			}
 			
- 			// If there isn't a Transform currently selected then destroy the existing editor
+ 			// 現在選択されている Transform がない場合、既存のエディタを破棄
 			if (currentTransformEditor != null) {
 				DestroyImmediate (currentTransformEditor);
 			}
@@ -64,16 +64,16 @@ class WaypointPathEditor extends Editor {
 			currentTransformEditor = tmpEditor;
 		}
 
-	    //Shows the created Editor beneath CustomEditor
+	    // CustomEditorの背後にある作成済みのエディタを作成
 		if (currentTransformEditor != null && selectedTransform != null) {
 			currentTransformEditor.OnInspectorGUI ();
 		}
     }
 }
 END EX
-And the script attached to a waypath GameObject:
+そしてスクリプトは waypath ゲームオブェクトにアタッチされてます。
 BEGIN EX
 //WaypointPath.js
-// This is not an editor script.
+// これはエディタスクリプトではありません
 var wayPointArray : Transform[];
 END EX
