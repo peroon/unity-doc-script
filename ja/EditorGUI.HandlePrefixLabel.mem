@@ -3,10 +3,10 @@ HandlePrefixLabel(Rect,Rect,GUIContent)
 HandlePrefixLabel(Rect,Rect,GUIContent,int)
 HandlePrefixLabel(Rect,Rect,GUIContent,int,GUIStyle)
 </signature>
-Make a label for some control.
-HandlePrefixLabel is like PrefixLabel but allows custom control over the label position by supplying its [[Rect]] explicitly. PrefixLabel or HandlePrefixLabel should be used when creating a control with a connected label. It ensures that when the label is clicked, the control will get keyboard focus. For this reason it is important that the same ID is supplied to PrefixLabel or HandlePrefixLabel as to the control itself. It is also possible to not supply a Control ID, in which case the one from the immediately following control is automatically used.
-@param totalPosition Rectangle on the screen to use in total for both the label and the control.
-@param labelPosition Rectangle on the screen to use for the label.
-@param label Label to show for the control.
-@param id The unique ID of the control. If none specified, the ID of the following control is used.
-@param style Optional [[GUIStyle]] to use for the label.
+何かのコントロールのラベルを作成
+HandlePrefixLabel は PrefixLabel と同等ですが、明示的に [[Rect]] を指定することでラベル位置をカスタムに制御できます。つなげたラベル付きのコントロールを作成するときは PrefixLabel または HandlePrefixLabel を使用すべきです。ラベルがクリックされたとき、コントロールにキーボードのフォーカスが当たります。このため、コントロールと同じ ID が PrefixLabel または HandlePrefixLabel に提供されることが重要です。さらに続くコントロールがただちに自動的に使用される場合はコントロール ID を提供しないことが可能です。
+@param totalPosition ラベルおよびコントロールの両方で使用されるスクリーン上の Rect
+@param labelPosition ラベルで使用されるスクリーン上の Rect
+@param label コントロールで表示するラベル
+@param id コントロールの一意 ID 。もし何も指定されないと続くコントロールの ID が使用される
+@param style ラベルで使用する任意の [[GUIStyle]]

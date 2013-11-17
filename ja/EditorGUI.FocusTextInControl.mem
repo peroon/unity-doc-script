@@ -1,25 +1,25 @@
 <signature>
 FocusTextInControl(string)
 </signature>
-Move keyboard focus to a named text field and begin editing of the content.
-In Editor GUI, text fields can have keyboard focus without the text being edited. For example you may switch focus between text fields or other controls by using the up and down arrow keys. Once you click inside the text field, editing of the text itself begins and the arrow keys are then used to navigate the text content. [[EditorGUI.FocusTextInControl]] is like [[GUI.FocusControl]] in that it gives keyboard focus to a control, but it also begins editing of the text itself.
+名前付きテキストフィールドにキーボードのフォーカスを当て、コンテンツ編集を開始する
+エディタ GUI では、テキストを編集することなくテキストフィールドにキーボードのフォーカスを当てられます。例えばテキストフィールド間または他のコントロールにフォーカスを当てるには上の矢印キーまたは下の矢印キーを使用します。テキストフィールドの中でクリックするとテキストの編集が開始され、矢印キーをしようしてテキストコンテンツの中を移動できます。[[EditorGUI.FocusTextInControl]] はキーボードのフォーカスを当てるという観点で [[GUI.FocusControl]] に似てますが、さらにテキスト編集を開始します。
 
 SA: [[GUI.SetNextControlName]], [[GUI.GetNameOfFocusedControl]].
 BEGIN EX
-	// When pressed the button, selects the "username" Textfield.
-	var username : String = "username";
-	var pwd : String = "a pwd";
+	// ボタンを押すと "username" テキストフィールドを選択
+	var username : String = "ユーザ名";
+	var pwd : String = "パスワード";
 	function OnInspectorGUI () {
-		// Set the internal name of the textfield
+		// テキストフィールドの内部名称をセット
 		GUI.SetNextControlName ("MyTextField");
 		
-		// Make the actual text field.
+		// テキストフィールドを作成
 		username = EditorGUI.TextField (Rect (10,10,100,20), username);
 		pwd = EditorGUI.TextField (Rect (10,40,100,20), pwd);
 
-		// If the user presses this button, keyboard focus will move.
-		if (GUI.Button (Rect (10,70,80,20), "Move Focus"))
+		// ユーザがボタンを押すと、キーボードのフォーカスを当てる
+		if (GUI.Button (Rect (10,70,80,20), "フォーカスを当てる"))
 			EditorGUI.FocusTextInControl ("MyTextField");	
 	}
 END EX
-@param name Name set using [[GUI.SetNextControlName]].
+@param name [[GUI.SetNextControlName]] を使用してセットした名前
