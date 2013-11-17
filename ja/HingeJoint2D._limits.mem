@@ -1,5 +1,5 @@
 <signature>
 limits
 </signature>
-Limit of angular rotation on the joint.
-SA: ::ref::useLimits.
+ジョイント上の回転角度の リミット
+SA: ::ref::useLimits

@@ -1,4 +1,4 @@
-秒単位のJoint􀀿􀁤􀁞􀁣􀁩オブジェクトの角速度を返す
+秒単位のJoint オブジェクトの角速度を返す
 CONVERTEXAMPLE
 BEGIN EX
 	print(hingeJoint.velocity);
