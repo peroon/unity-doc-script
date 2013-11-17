@@ -1,4 +1,4 @@
 <signature>
 points
 </signature>
-Get or set the points defining multiple continuous edges.
+複数の連続辺を定義する点を取得またはセット

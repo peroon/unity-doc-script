@@ -1,5 +1,5 @@
 <signature>
 pointCount
 </signature>
-Gets the number of points.
-This cannot be less than two which will form a single edge.
+点の数を取得
+一つの辺を形成するには二つより少なくできません
