@@ -1,6 +1,6 @@
 <signature>
 singleLineHeight
 </signature>
-Get the height used for a single Editor control such as a one-line EditorGUI.TextField or EditorGUI.Popup.
-When creating your own multi-line controls, such as controls for custom classes with multiple fields, you can use [[EditorGULayout.GetControlRect]] and pass in a height value that is a multiple of [[EditorGUIUtility.singleLineHeight]]. This is advisable over hardcoding specific pixel values.
-SA: [[EditorGUILayout.GetControlRect]].
+一行の EditorGUI.TextField または EditorGUI.Popup など一つのエディタコントロールで使用される高さを取得
+複数行に対応したカスタムクラスのためのコントロールなど、自身で複数行に対応したコントロールを作成するとき、 [[EditorGUIUtility.singleLineHeight]] を複数行に対応させた [[EditorGULayout.GetControlRect]] を使用して高さの値を渡すことが出来ます。これは特定のピクセル値をハードコードすることなく、推奨できる対応方法です。
+SA: [[EditorGUILayout.GetControlRect]]

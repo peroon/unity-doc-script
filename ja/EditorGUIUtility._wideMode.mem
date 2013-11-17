@@ -1,7 +1,7 @@
 <signature>
 wideMode
 </signature>
-Is the Editor GUI currently in wide mode?
-Wide mode is a mode for Editor GUI where the controls for structs such as Vector3 and Rect are inlined so they take up less vertical space. For example, in wide mode a Vector3Field takes up one line height instead of two, and a RectField takes up two line heights instead of three.
+エディタ GUI が現在ワイドモードであるか判定
+ワイドモードは Vector3 および Rect などの構造体のためのコントロールがインライン化されて垂直のスペースをあまり使用しない、エディタ GUI のためのモードです。例えばワイドモードでは Vector3Field が二行でなく一行の高さを、RectField が三行でなく二行を、確保します。
 
-When creating your own multi-line controls, you can query wideMode and make the layout of your control follow the same logic.
+自身の複数行に対応したコントロールを作成するとき wideMode を照会して自身のコントロールが同じロジックを踏襲させることが出来ます。
