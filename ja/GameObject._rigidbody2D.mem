@@ -1,7 +1,7 @@
 <signature>
 rigidbody2D
 </signature>
-The Rigidbody2D component attached to this GameObject. (RO)
-This property will be null if no Rigidbody2D is attached.
+ゲームオブジェクトにアタッチされた Rigidbody2D コンポーネント。（読み取り専用）
+Rigidbody2D がアタッチされてない場合 null を返す
 
-SA: ::ref::rigidbody.
+SA: ::ref::rigidbody

@@ -7,10 +7,10 @@ CSNONE
 <signature>
 Add(object, object)
 </signature>
-Adds an element with the specified key and value into the Hashtable.
+指定したキーおよび値でハッシュテーブルに要素を追加
 CONVERTEXAMPLE
 BEGIN EX
-// Adds 2 elements to a hash table.
+// ハッシュテーブルに 2 要素を追加
 
 var h : Hashtable;
 h = new Hashtable();

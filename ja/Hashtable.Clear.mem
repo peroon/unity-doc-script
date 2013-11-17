@@ -7,12 +7,12 @@ CSNONE
 <signature>
 Clear()
 </signature>
-Count is set to zero, and references to other objects from elements of the collection are also released.
-The capacity remains unchanged.
-/This method is an O(n) operation, where n is Hashtable.Count.
+カウンタをゼロにセットし、コレクションの要素から他のオブジェクトへの参照がリリースされます。
+キャパシティが変更されないままとなります。
+// このメソッドは O(n) 処理であり、n が Hashtable.Count.
 CONVERTEXAMPLE
 BEGIN EX
-// Creates a Hashtable, adds 2 elements and then clears it
+// ハッシュテーブルを作成、 2 要素を追加してクリア
 
 var h : Hashtable;
 h = new Hashtable();
