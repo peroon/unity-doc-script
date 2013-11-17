@@ -1,7 +1,7 @@
 <signature>
 Expression<T>(string,object[])
 </signature>
-Emits an ActionScript expression translating variable and field references to their ActionScript names.
+変数およびフィールド参照を ActionScript 名に変換する ActionScript 表現を実行
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;
