@@ -1,7 +1,7 @@
 <signature>
 Statement(string,object[])
 </signature>
-Emits a block of ActionScript code in the current method translating variable and field references to their ActionScript names.
+現在のメソッドの変数およびフィールド参照を ActionScript 名に変換して ActionScript コードを実行
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;

@@ -1,6 +1,6 @@
-Inline ActionScript support.
-When targetting the Flash Player, it is often convenient to be able to execute some manually written ActionScript.
-Examples of this would be: talking to some flash API (think networking, sockets), running some existing ActionScript code, or integrating with some 3rd party ActionScript library. You can call "handwritten" ActionScript methods, and get return values from them most easily like this:
+インラインの ActionScript の対応
+Flash Player をターゲットすると、手動で記載した ActionScript を実行できると便利です。
+例えば: Flash API の通信（ネットワークのソケット、等）、既存の ActionScript コードの実行、サードパーティの ActionScript ライブラリの統合。手動の ActionScript メソッドを呼び出し、そして戻り値を取得するには次の方法が良いです:
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;
@@ -12,7 +12,7 @@ BEGIN EX
 		var protocolversion = ActionScript.Expression.<int>("com.mycompany.mytool.GetProtocolVersionFromServer({0})", name);
 	}
 END EX
-You then also have to provide the ActionScript file that contains the com.mycompany.mytool actionscript class. You can do this by creating a folder called "ActionScript" anywhere in your Project Folder, and adding the ActionScript class file in there, respecting ActionScripts requirements that the path needs to match the class namespace. In this example, you would place this ActionScript file:
+com.mycompany.mytool の ActionScript クラスを含む ActionScript ファイルを提供を提供する必要があります。これをするにはプロジェクトフォルダの任意の場所に "ActionScript" フォルダを作成し、パスがクラスの名前空間と一致する必要がある ActionScript 要件を満たしつつ ActionScript クラスファイルをそこに追加します。このサンプルではこの ActionScript ファイルを配置します:
 BEGIN EX NOCHECK
 	package com.mycompany 
 	{
@@ -20,7 +20,7 @@ BEGIN EX NOCHECK
 		{
 			public static function GetProtocolVersionFromServer(name: String): int
 			{
-				//talk the the flash api here.
+				// talk the the flash api here.
 				return 18;
 			}
 		}
