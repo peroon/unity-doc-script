@@ -1,7 +1,7 @@
 <signature>
 collider2D
 </signature>
-The Collider2D component attached to this object.
-This returns null if no Collider2D is attached.
+オブジェクト にアタッチされた Collider2D コンポーネント
+Collider2D がアタッチされてない場合 null を返す
 
-SA: [[Collider2D]] class.
+SA: [[Collider2D]] クラス
