@@ -1,7 +1,7 @@
 <signature>
 fieldWidth
 </signature>
-The minimum width in pixels reserved for the fields of Editor GUI controls.
-Most Editor GUI controls consist of a label as well as the control field itself. The minimum width of the field is controlled by the [[fieldWidth]] value. Fields often appear wider than the minimum width, since Editor GUI controls are usually set to occupy a [[Rect]] that expands to fill the available horizontal space. Within this Rect, the field will take up all the space not used by the [[EditorGUIUtility.labelWidth]].
+エディタ GUI コントロールのフィールドに予約されたピクセル最小幅。
+ほとんどの GUI コントロールはコントロールフィールドのみならずラベルから構成されます。フィールドの最小幅は [[fieldWidth]] 値により制御されます。エディタ GUI コントロールは一般的にフィールドは利用可能な水平スペースを埋めるように [[Rect]] がセットされるため最小幅より広く見えます。この Rect の中で [[EditorGUIUtility.labelWidth]] により使用されてないスペースを全てフィールドが占有します。
 
-The [[fieldWidth]] also controls the width of the text field in [[EditorGUI.Slider]] controls.
+[[fieldWidth]] は更に [[EditorGUI.Slider]] コントロールのテキストフィールドの幅を制御します。

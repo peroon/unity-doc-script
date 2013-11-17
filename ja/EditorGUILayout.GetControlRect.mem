@@ -4,13 +4,13 @@ GetControlRect(bool,GUILayoutOption[])
 GetControlRect(bool,float,GUILayoutOption[])
 GetControlRect(bool,float,GUIStyle,GUILayoutOption[])
 </signature>
-Get a rect for an Editor control.
-When creating a new Editor control it is a sound design to implement the actual control without relying on GUILayout and instead have the control take a [[Rect]] as parameter, similar to the controls in the [[EditorGUI]] class. This ensures the control can also be used in for example a [[PropertyDrawer]], which does not allow GUILayout.
+エディタ コントロールの Rect を取得
+新規のエディタ コントロールを作成するとき、コントロールの [[Rect]] を引数とする代わりに、 [[EditorGUI]] クラスと同様に GUILayout に依存せずに実際のコントロールを実装することが優れた設計方法です。これにより例えば [[PropertyDrawer]] のような GUILayout を許可しないコントロールでも使用できます。
 
-Once a non-layout version of the control is implemented, a layout version can easily be made as well, which simply calls into the non-layout version. In order to get a rect fitting for the control, the [[GetControlRect]] function can be used.
-@param hasLabel Optional boolean to specify if the control has a label. Default is true.
-@param height The height in pixels of the control. Default is [[EditorGUIUtility.singleLineHeight]].
-@param style Optional [[GUIStyle]] to use for the control.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.
+レイアウトなしのコントロールが一回実装された後は、レイアウトつきのコントロールも容易に作成でき、レイアウトなしのコントロールを呼び出します。このコントロールに合った Rect を取得するには [[GetControlRect]] 関数を使用します。
+@param hasLabel コントロールがラベル付きかを示す任意の boolean 値。デフォルトは true
+@param height ピクセル単位で示されるコントロールの高さ。デフォルトは [[EditorGUIUtility.singleLineHeight]]
+@param style コントロールで使用される [[GUIStyle]]
+@param options 追加のレイアウトプロパティを示すレイアウト オプションの一覧。ここに渡される値は /style/ で定義された設定を上書きます
 SA: GUILayout::ref::Width, GUILayout::ref::Height, GUILayout::ref::MinWidth, GUILayout::ref::MaxWidth, GUILayout::ref::MinHeight, 
-GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight.
+GUILayout::ref::MaxHeight, GUILayout::ref::ExpandWidth, GUILayout::ref::ExpandHeight
