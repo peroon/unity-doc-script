@@ -4,6 +4,6 @@ OnSceneGUI()
 <txttag>
 CSNONE
 </txttag>
-Lets the Editor handle an event in the scene view.
-In the OnSceneGUI you can do eg. mesh editing, terrain painting or advanced gizmos
-If call Event.current.Use(), the event will be "eaten" by the editor and not be used by the scene view itself.
+Editor がシーンビューでイベントをハンドリング可能とします
+OnSceneGUI では例えばメッシュ編集、 Terrain ペインティングまたは上級者向けの Gizmoを使用できます。
+もし Event.current.Use() を呼び出しすると、イベントは エディタにより "横取り" されシーンビュー自身では使用されません。

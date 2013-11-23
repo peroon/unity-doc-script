@@ -1,2 +1,2 @@
-Use this class to record to an [[AudioClip]] using a connected microphone.
-You can get a list of connected microphone(s) from the ::ref::devices property and then use the ::ref::Start and ::ref::End functions to start or end a recording session using one of the available devices.
+このクラスにより接続されたマイクを使用して [[AudioClip]] を録音できます。
+接続されたマイクの一覧を ::ref::devices プロパティから取得して ::ref::Start 関数および ::ref::End 関数を使用して、利用可能なデバイスのどれか一つで録音セッションを開始または終了できます。

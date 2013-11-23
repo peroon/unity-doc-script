@@ -1,7 +1,7 @@
 <signature>
 supportsRenderToCubemap
 </signature>
-Are cubemap render textures supported? (RO)
-Returns /true/ if graphics card supports render into cubemap Render Textures.
+キューブマップがサポートされているかを返す（読み取り専用）
+グラフィックス カードがキューブマップ Render Texture へのレンダリングをサポートしている場合 /true/ を返します。
 
-SA: [[wiki:class-RenderTexture|Render Texture assets]], [[RenderTexture]] class.
+SA: [[wiki:class-RenderTexture|Render Texture アセット]], [[RenderTexture]] クラス

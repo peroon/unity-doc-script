@@ -3,8 +3,7 @@ Start()
 Start(float)
 Start(float,float)
 </signature>
-Starts location service updates.  Last location coordinates could be.
-Retrieved via @@Input.location.lastData@@.
+ロケーションの更新を開始する。最後のロケーション座標は @@Input.location.lastData@@ により取得できる
 Service does not start to send location data immediately. Code should
 check @@Input.location.status@@ for current service status.
 desiredAccuracyInMeters - desired service accuracy in meters. Using

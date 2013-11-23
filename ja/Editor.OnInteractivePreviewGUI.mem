@@ -1,7 +1,7 @@
 <signature>
 OnInteractivePreviewGUI(Rect,GUIStyle)
 </signature>
-Implement to create your own interactive custom preview. Interactive custom previews are used in the preview area of the inspector and the object selector.
+自身のカスタムのインタラクティブなプレビューを作成するために実装。カスタムのインタラクティブなプレビューはインスペクタ上のプレビューエリアおよびオブジェクト選択ツールで使用されます。
 Implement this instead of ::ref::OnPreviewGUI if you only want to display interactive custom previews (you can implement both if some previews are interactive and others aren't).
 The overidden method should use the rectangle passed in and render a preview of the asset into it.
 The default implementation is a no-op.

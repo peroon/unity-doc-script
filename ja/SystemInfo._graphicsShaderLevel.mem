@@ -1,9 +1,9 @@
 <signature>
 graphicsShaderLevel
 </signature>
-Graphics device shader capability level (RO).
-This is approximate "shader capability" level of the graphics device, expressed in DirectX shader model terms.
-Possible values are:
+グラフィックス デバイス の シェーダ モデル名（読み取り専用）。
+これはグラフィックス デバイスのDirectX 用語の "シェーダ モデル名" です。
+取りうる値は:
 
 __50__ Shader Model 5.0 (DX11.0)
 __41__ Shader Model 4.1 (DX10.1)
@@ -12,11 +12,11 @@ __30__ Shader Model 3.0
 __20__ Shader Model 2.x
 
 
-SA: SystemInfo.graphicsPixelFillrate.
+SA: SystemInfo.graphicsPixelFillrate
 CONVERTEXAMPLE
 BEGIN EX
-	// Check for shader model 3.0 or better support
+	// シェーダ モデル 3.0 以降のサポートをチェック
 
 	if (SystemInfo.graphicsShaderLevel >= 30)
-		print ("Woohoo, decent shaders supported!");
+		print ("十分なシェーダがサポートされています!");
 END EX

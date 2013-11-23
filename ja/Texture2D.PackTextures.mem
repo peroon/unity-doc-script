@@ -2,37 +2,36 @@
 PackTextures(Texture2D[],int,int,bool)
 </signature>
 テクスチャアトラスに複数のテクスチャをパックする
-This function will replace the current texture with the atlas made from the supplied textures.
-The size, format and mipmaps of any of the textures can change after packing.
+この関数により現在のテクスチャを指定されたテクスチャで作成されたアトラスで置き換えます。
+任意のテクスチャの大きさ、形式およびミニマップはパッキングの後に変更できます。
 
-The resulting texture atlas will be as large as needed to fit all input textures but only up to /maximumAtlasSize/ in
-each dimension. If the input textures can't all fit into a texture atlas of the desired size then they will be
-scaled down to fit.
+結果として得られるテクスチャ アトラスは全ての入力のテクスチャを収めるのに必要な多きさとなりますが上限は各次元で /maximumAtlasSize/ が
+最大となります。もし入力のテクスチャが希望するサイズのテクスチャ アトラスに収まらない場合、収まるように縮小されます。
 
-The atlas will have TextureFormat::pref::DXT1 format if all input textures are DXT1 compressed.
-If all input textures are compressed in TextureFormat::pref::DXT1 or TextureFormat::pref::DXT5 formats
-then the atlas will be in DXT5 format. If any input texture is not compressed then the atlas will
-be in TextureFormat::pref::ARGB32 uncompressed format.
+全ての入力のテクスチャが DXT1 圧縮されていればアトラスは TextureFormat::pref::DXT1 形式となります。
+もし全ての入力のテクスチャが TextureFormat::pref::DXT1 あるいは TextureFormat::pref::DXT5 形式で圧縮されていれば
+アトラスは DXT5 形式となります。もしいずれかの入力のテクスチャが圧縮されてない場合、アトラスは
+TextureFormat::pref::ARGB32 の非圧縮形式となります。
 
-If none of the input textures have mipmaps then the atlas will also have no mipmaps.
+もし全ての入力のテクスチャがミニマップを持たない場合、アトラスもまたミニマップを持ちません。
 
-If you use non-zero padding and the atlas is compressed and has mipmaps then the lower-level mipmaps might not be
-exactly the same as in the original texture due to compression restrictions.
+もしゼロでないパディングを使用していてアトラスが圧縮されていて、ミニマップがある場合、低レベルのミニマップは
+圧縮の制限により元のテクスチャと全く同じとならない場合があります。
 
-If /makeNoLongerReadable/ is /true/ then the texture will be marked as no longer readable
-and memory will be freed after uploading to the GPU.
-By default /makeNoLongerReadable/ is set to /false/.
+もし /makeNoLongerReadable/ が /true/ の場合、テクスチャは読み取り不能としてマーキングされ、
+メモリは GPU にアップロードした後に解放されます。
+デフォルトで /makeNoLongerReadable/ は /false/ にセットされます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Source textures.
+	// ソースとなるテクスチャ
 	var atlasTextures: Texture2D[];
 
-	// Rectangles for individual atlas textures.
+	// 個別のアトラス テクスチャのための Rect
 	var rects: Rect[];
 
 	function Start () {
-		// Pack the individual textures into the smallest possible space,
-		// while leaving a two pixel gap between their edges.
+		// 個別のテクスチャを出来るかぎり小さい空間にパッキングし、
+		// 縁に 2 ピクセルのスペースを残す
 		var atlas = new Texture2D(8192, 8192);
 		rects = atlas.PackTextures(atlasTextures, 2, 8192);
 	}
@@ -42,4 +41,4 @@ END EX
 @param maximumAtlasSize 取得できる画像の最大サイズ。デフォルトは2048
 @param makeNoLongerReadable 解放してメモリとしてマークするかどうか。デフォル
 トはfalse
-@return An array of rectangles containing the UV coordinates in the atlas for each input texture, or null if packing fails.
+@return 各々の入力テクスチャのアトラスにおける UV 座標を含む Rect 配列、またはパッキングが失敗した場合は null

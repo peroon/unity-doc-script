@@ -1,16 +1,16 @@
 <signature>
 devices
 </signature>
-A list of available microphone devices, identified by name.
-You can use the name with the ::ref::Start and ::ref::End functions to specify which microphone you wish to start/stop recording.
+名前により識別された、利用可能なマイクデバイスの一覧
+この名前とともに ::ref::Start 関数および ::ref::End 関数を使用して、録音を開始/終了するマイクを指定します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Get list of Microphone devices and print the names to the log
+	// マイクデバイスの一覧を取得し、ログに名前を出力
 	function Start () {
 		for (var device in Microphone.devices)
 		{
-			Debug.Log("Name: " + device);
+			Debug.Log("名前: " + device);
 		}
 	}
 END EX
-SA: ::ref::Start, ::ref::End, ::ref::IsRecording.
+SA: ::ref::Start, ::ref::End, ::ref::IsRecording

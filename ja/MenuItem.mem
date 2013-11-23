@@ -1,80 +1,80 @@
-The MenuItem attribute allows you to add menu items to the main menu and inspector context menus.
-The MenuItem attribute turns any static function into a menu command. Only static functions can use the MenuItem attribute.
+MenuItem 属性によりメインメニューおよびインスペクタのコンテキストメニューにメニューアイテムを追加できます。
+MenuItem 属性により任意の static 関数をメニューコマンドに使用できます。MenuItem 属性では static 関数のみが使用できます。
 
-To create a hotkey you can use the following special characters: __%__ (ctrl on Windows, cmd on OS X), __#__ (shift), __&__ (alt), <b>_</b> (no key modifiers). For example to create a menu with hotkey shift-alt-g use <tt>"MyMenu/Do Something #&g"</tt>. To create a menu with hotkey __g__ and no key modifiers pressed use <tt>"MyMenu/Do Something _g"</tt>.
+ホットキーを作成するには次の特殊記号が使用できます： __%__ (Windows上で Ctrlキー, OS X上で Cmdキー), __#__ (Shiftキー), __&__ (Altキー), <b>_</b> (キー修飾子なし). 例えば Shift + Alt + G のメニューを作成するには <tt>"MyMenu/Do Something #&g"</tt> を使用します。__G__ キーのみ（キー修飾子なし）でホットキーを作成するには <tt>"MyMenu/Do Something _g"</tt> を使用します。
 
-Some special keyboard keys are supported as hotkeys, for example "#LEFT" would map to shift-left. The keys supported like this are: LEFT, RIGHT, UP, DOWN, F1 .. F12, HOME, END, PGUP, PGDN.
+いくつかの特殊記号はホットキーとしてサポートされていて、例えば "#LEFT" は Shift + 左矢印キーにマッピングされます。このようにサポートされているキーは 上下左右の矢印キー、F1 ～ F12 キー、Home キー、 End キー、 Page Up キー、Page Down キーです。（LEFT, RIGHT, UP, DOWN, F1 .. F12, HOME, END, PGUP, PGDN）
 
-A hotkey text must be preceded with a space character (<tt>"MyMenu/Do_g"</tt> won't be interpreted as hotkey, while <tt>"MyMenu/Do _g"</tt> will).
+ホットキーの文字列の前にスペース文字を含める必要があります(<tt>"MyMenu/Do_g"</tt> はホットキーとして認識されず, 一方で <tt>"MyMenu/Do _g"</tt> は認識されます)。
 BEGIN EX
-// JavaScript example:
+// JavaScript サンプル:
 
-// Add a menu item named "Do Something" to MyMenu in the menu bar.
+// メニューバー上で "Do Something" を MyMenuに追加
 @MenuItem ("MyMenu/Do Something")
 static function DoSomething () {
 	Debug.Log ("Doing Something...");
 }
 
 
-// Validated menu item.
-// Add a menu item named "Log Selected Transform Name" to MyMenu in the menu bar.
-// We use a second function to validate the menu item
-// so it will only be enabled if we have a transform selected.
+// 条件つきメニューアイテム
+// メニューバー上で "Log Selected Transform Name" を MyMenuに追加
+// 二つ目の関数によりメニューアイテムに条件をつけて
+// Transform が選択されている場合のみ有効化されます
 @MenuItem ("MyMenu/Log Selected Transform Name")
 static function LogSelectedTransformName () {
-	Debug.Log ("Selected Transform is on " + Selection.activeTransform.gameObject.name + ".");
+	Debug.Log ("選択された Transform があるオブジェクトは " + Selection.activeTransform.gameObject.name + "。");
 }
 
-// Validate the menu item defined by the function above.
-// The menu item will be disabled if this function returns false.
+// 上記の関数に定義されたメニューアイテムに条件をつける
+// 関数が false を返した場合メニューアイテムを無効化
 @MenuItem ("MyMenu/Log Selected Transform Name", true)
 static function ValidateLogSelectedTransformName () {
-	// Return false if no transform is selected.
+	// Transform が選択されてない場合 false を返す
 	return Selection.activeTransform != null;
 }
 
 
-// Add a menu item named "Do Something with a Shortcut Key" to MyMenu in the menu bar
-// and give it a shortcut (ctrl-g on Windows, cmd-g on OS X).
+// メニューバー上で "Do Something with a Shortcut Key" を MyMenuに追加し
+// ショートカットキーを追加（Windows 上で Ctrl + G, OS X 上で Cmd + G）
 @MenuItem ("MyMenu/Do Something with a Shortcut Key %g")
 static function DoSomethingWithAShortcutKey () {
-	Debug.Log ("Doing something with a Shortcut Key...");
+	Debug.Log ("ショートカットキー付きで Doing something...");
 }
 
 
-// Add a menu item called "Double Mass" to a Rigidbody's context menu.
+// Rigidbody のコンテキストメニューに "Double Mass" という名前のメニューアイテムを追加
 @MenuItem ("CONTEXT/Rigidbody/Double Mass")
 static function DoubleMassFromContext (command : MenuCommand) {
 	var body : Rigidbody = command.context;
 	body.mass = body.mass * 2;
-	Debug.Log ("Doubled Rigidbody's Mass to " + body.mass + " from Context Menu.");
+	Debug.Log ("Rigidbody の Mass を " + body.mass + " にコンテキストメニューより変更");
 }
 END EX
 BEGIN EX NOCHECK
-// C# example:
+// C# サンプル:
 using UnityEditor;
 using UnityEngine;
 public class MenuTest : MonoBehaviour {
 
-	// Add a menu item named "Do Something" to MyMenu in the menu bar.
+	// メニューバー上で "Do Something" を MyMenuに追加
 	[MenuItem ("MyMenu/Do Something")]
 	static void DoSomething () {
 		Debug.Log ("Doing Something...");
 	}
 
 
-	// Validated menu item.
-	// Add a menu item named "Log Selected Transform Name" to MyMenu in the menu bar.
-	// We use a second function to validate the menu item
-	// so it will only be enabled if we have a transform selected.
+	// 条件つきメニューアイテム
+	// メニューバー上で "Log Selected Transform Name" を MyMenuに追加
+	// 二つ目の関数によりメニューアイテムに条件をつけて
+	// Transform が選択されている場合のみ有効化されます
 	[MenuItem ("MyMenu/Log Selected Transform Name")]
 	static void LogSelectedTransformName ()
 	{
-		Debug.Log ("Selected Transform is on " + Selection.activeTransform.gameObject.name + ".");
+		Debug.Log ("選択された Transform があるオブジェクトは " + Selection.activeTransform.gameObject.name + "。");
 	}
 
-	// Validate the menu item defined by the function above.
-	// The menu item will be disabled if this function returns false.
+	// 上記の関数に定義されたメニューアイテムに条件をつける
+	// 関数が false を返した場合メニューアイテムを無効化
 	[MenuItem ("MyMenu/Log Selected Transform Name", true)]
 	static bool ValidateLogSelectedTransformName () {
 		// Return false if no transform is selected.
@@ -82,19 +82,19 @@ public class MenuTest : MonoBehaviour {
 	}
 
 
-	// Add a menu item named "Do Something with a Shortcut Key" to MyMenu in the menu bar
-	// and give it a shortcut (ctrl-g on Windows, cmd-g on OS X).
+	// メニューバー上で "Do Something with a Shortcut Key" を MyMenuに追加し
+	// ショートカットキーを追加（Windows 上で Ctrl + G, OS X 上で Cmd + G）
 	[MenuItem ("MyMenu/Do Something with a Shortcut Key %g")]
 	static void DoSomethingWithAShortcutKey () {
-		Debug.Log ("Doing something with a Shortcut Key...");
+		Debug.Log ("ショートカットキー付きで Doing something...");
 	}
 
-	// Add a menu item called "Double Mass" to a Rigidbody's context menu.
+	// Rigidbody のコンテキストメニューに "Double Mass" という名前のメニューアイテムを追加
 	[MenuItem ("CONTEXT/Rigidbody/Double Mass")]
 	static void DoubleMass (MenuCommand command) {
 		Rigidbody body = (Rigidbody)command.context;
 		body.mass = body.mass * 2;
-		Debug.Log ("Doubled Rigidbody's Mass to " + body.mass + " from Context Menu.");
+		Debug.Log ("Rigidbody の Mass を " + body.mass + " にコンテキストメニューより変更");
 	}
 }
 END EX

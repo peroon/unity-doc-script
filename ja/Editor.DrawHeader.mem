@@ -1,6 +1,6 @@
 <signature>
 DrawHeader()
 </signature>
-Call this function to draw the header of the editor.
-This function is relevant if you are creating and managing your own Editor objects.
-SA: [[Editor.CreateEditor]].
+Editor のヘッダを描画するためにはこの関数を呼び出し
+この関数は自身の Editor オブジェクトを作成、管理している場合に関係があります。
+SA: [[Editor.CreateEditor]]

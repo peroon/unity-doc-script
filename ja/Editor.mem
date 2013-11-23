@@ -1,30 +1,30 @@
 インスペクターの拡張を行う基本クラスです
 BEGIN EX
 // MyPlayer.js
-// This is not an editor script.
+// これはエディタスクリプトではありません
 
 var armor : int = 75;
 var damage : int = 25;
 var gun : GameObject;
 
 function Update () {
-	// Update logic here...
+	// Update ロジックを記述
 }
 END EX
-Using a custom Editor, the apperance of the script in the Inspector can be changed, for example to look like this:
+カスタムエディタを使用して、インスペクタ上のスクリプトの表示を例えば次のように変更することが出来ます:
 
 {img CustomEditor.png}\\
-''Custom editor in the Inspector.''
+''インスペクタ上のカスタム エディタ''
 
-You can attach the Editor to a custom component by using the [[CustomEditor]] attribute.
+エディタをカスタムのコンポーネントにアタッチするために [[CustomEditor]] 属性を使用できます。
 
-There are multiple ways to design custom Editors.
-If you want the Editor to support multi-object editing, you can use the [[CanEditMultipleObjects]] attribute.
-Instead of modifying script variables directly, it's advantageous to use the [[SerializedObject]] and [[SerializedProperty]]
-system to edit them, since this automatically handles multi-object editing, undo, and prefab overrides.
+カスタム エディタ を設計するには複数の方法があります。
+エディタが複数オブジェクトの編集をサポートするためには [[CanEditMultipleObjects]] 属性を使用できます。
+スクリプト変数を直接編集する代わりに、 [[SerializedObject]] および [[SerializedProperty]] システムを使用するほうが
+マルチオブジェクト編集のハンドリング、取り消し、およびプレハブの上書きが出来るというメリットがあります。
 BEGIN EX
-// Custom Editor using SerializedProperties.
-// Automatic handling of multi-object editing, undo, and prefab overrides.
+// SerializedProperties を使用したカスタム エディタ
+// マルチオブジェクト編集、取り消し、およびプレハブの上書きの自動ハンドリング
 #pragma strict
 @CustomEditor(MyPlayer)
 @CanEditMultipleObjects
@@ -34,50 +34,49 @@ class MyPlayerEditor extends Editor {
 	var gunProp : SerializedProperty;
 
 	function OnEnable () {
-		// Setup the SerializedProperties
+		// SerializedProperties のセットアップ
 		damageProp = serializedObject.FindProperty ("damage");
 		armorProp = serializedObject.FindProperty ("armor");
 		gunProp = serializedObject.FindProperty ("gun");
 	}
 
 	function OnInspectorGUI() {
-		// Update the serializedProperty - always do this in the beginning of OnInspectorGUI.
+		// serializedProperty を Update。OnInspectorGUIの始めに必ず実行して下さい
 		serializedObject.Update ();
 
-		// Show the custom GUI controls
+		// カスタム GUI コントロールを表示
 
 		EditorGUILayout.IntSlider (damageProp, 0, 100, new GUIContent ("Damage"));
-		// Only show the damage progress bar if all the objects have the same damage value:
+		// 全てのオブジェクトが同じダメージ値の場合のみ damage 進捗バーを表示
 		if (!damageProp.hasMultipleDifferentValues)
 			ProgressBar (damageProp.intValue / 100.0, "Damage");
 
 		EditorGUILayout.IntSlider (armorProp, 0, 100, new GUIContent ("Armor"));
-		// Only show the armor progress bar if all the objects have the same armor value:
+		// 全てのオブジェクトが同じ armor値の場合のみ armor 進捗バーを表示
 		if (!armorProp.hasMultipleDifferentValues)
 			ProgressBar (armorProp.intValue / 100.0, "Armor");
 
 		EditorGUILayout.PropertyField (gunProp, new GUIContent ("Gun Object"));
 
-		// Apply changes to the serializedProperty - always do this in the end of OnInspectorGUI.
+		// serializedProperty への変更を Apply。OnInspectorGUIの最後に必ず実行して下さい
 		serializedObject.ApplyModifiedProperties ();
 	}
 
-	// Custom GUILayout progress bar.
+	// カスタム GUILayout 進捗バー
 	function ProgressBar (value : float, label : String) {
-		// Get a rect for the progress bar using the same margins as a textfield:
+		// マージンを TextField と同じ設定として進捗バーのための Rect を取得:
 		var rect : Rect = GUILayoutUtility.GetRect (18, 18, "TextField");
 		EditorGUI.ProgressBar (rect, value, label);
 		EditorGUILayout.Space ();
 	}
 }
 END EX
-Alternatively, if automatic handling of multi-object editing, undo,
-and prefab overrides is not needed, the script variables can be
-modified directly by the editor without using the [[SerializedObject]]
-and [[SerializedProperty]] system, as in the example below.
+代わりに、もしマルチオブジェクト編集のハンドリング、取り消し、およびプレハブの上書きが
+自動ハンドリングが必要な場合、スクリプト変数は [[SerializedObject]]
+および [[SerializedProperty]] を使用せずに次のサンプルのようにエディタ上で直接編集できます:
 BEGIN EX
-// Custom Editor the "old" way by modifying the script variables directly.
-// No handling of multi-object editing, undo, and prefab overrides!
+// 旧来の方法でのカスタムエディタによりスクリプト変数を直接編集
+// マルチオブジェクト編集のハンドリング、取り消し、およびプレハブの上書きハンドリングはしない
 @CustomEditor (MyPlayer)
 class MyPlayerEditor extends Editor {
 
@@ -92,9 +91,9 @@ class MyPlayerEditor extends Editor {
 		target.gun = EditorGUILayout.ObjectField ("Gun Object", target.gun, GameObject, allowSceneObjects);
 	}
 
-	// Custom GUILayout progress bar.
+	// カスタム GUILayout 進捗バー
 	function ProgressBar (value : float, label : String) {
-		// Get a rect for the progress bar using the same margins as a textfield:
+		// マージンを TextField と同じ設定として進捗バーのための Rect を取得:
 		var rect : Rect = GUILayoutUtility.GetRect (18, 18, "TextField");
 		EditorGUI.ProgressBar (rect, value, label);
 		EditorGUILayout.Space ();

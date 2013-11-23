@@ -1,6 +1,6 @@
 <signature>
 End(string)
 </signature>
-Stops recording.
-If you pass a null or empty string for the device name then the default microphone will be used. You can get a list of available microphone devices from the ::ref::devices property.
-@param deviceName The name of the device.
+録音を終了
+デバイス名にもし null または空の文字列を渡すと、デフォルトのマイクが使用されます。利用可能なマイクデバイスの一覧を ::ref::devices プロパティにより取得できます。
+@param deviceName デバイスの名前

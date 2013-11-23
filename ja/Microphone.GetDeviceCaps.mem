@@ -1,10 +1,10 @@
 <signature>
 GetDeviceCaps(string,int,int)
 </signature>
-Get the frequency capabilities of a device.
-Passing null or an empty string for the device name will select the default device. You can use the ::ref::devices property to get a list of all available microphones.
+デバイスの周波数のレンジを取得
+デバイス名にもし null または空の文字列を渡すと、デフォルトのマイクが使用されます。利用可能なマイクデバイスの一覧を ::ref::devices プロパティにより取得できます。
 
-When a value of zero is returned in the ''minFreq'' and ''maxFreq'' parameters, this indicates that the device supports any frequency.
-@param deviceName The name of the device.
-@param minFreq Returns the minimum sampling frequency of the device.
-@param maxFreq Returns the maximum sampling frequency of the device.
+''minFreq'' および ''maxFreq''引数でゼロの値が返されるとデバイスが任意の周波数をサポートすることを示します。
+@param deviceName デバイスの名前
+@param minFreq デバイスの最小サンプリング周波数
+@param maxFreq デバイスの最大サンプリング周波数

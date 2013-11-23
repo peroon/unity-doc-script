@@ -9,8 +9,8 @@ SetDirty(Object)
 エディタ拡張を行う時で、パラメータを操作する場合には必ず使用するようにして下さい
 BEGIN EX
 	#pragma strict
-	// This example shows a custom inspector for an
-	// object "MyPlayerEditor", which has two variables, speed and ammo.
+	// このサンプルではspeed および ammo の二つの変数をもつ "MyPlayerEditor" 
+	// オブジェクトのカスタムインスペクタを表示します
 	@CustomEditor(MyPlayer)
 	class MyPlayerEditor extends Editor {
 		function OnInspectorGUI()

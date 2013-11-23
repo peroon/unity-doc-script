@@ -1,5 +1,5 @@
 <signature>
 deviceUniqueIdentifier
 </signature>
-A unique device identifier. It is guaranteed to be unique for every device (RO).
-iOS: on pre-iOS7 devices it will return hash of MAC address. On iOS7 devices it will be UIDevice identifierForVendor or, if that fails for any reason, ASIdentifierManager advertisingIdentifier.
+一意のデバイス識別子。全てのデバイスで一意であることが保証されています（読み取り専用）。
+iOS: iOS 7より前のデバイスでは MAC アドレスのハッシュを返す。iOS 7 デバイスでは UIDevice identifierForVendor またはそれが何らかの場合で失敗した場合は ASIdentifierManager advertisingIdentifier を返す。
