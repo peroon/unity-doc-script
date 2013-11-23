@@ -3,7 +3,7 @@
 <txttag>
 UNDOC
 </txttag>
-A variant of Debug.Log that logs an error message to the console.
+Debug.Log の派生でエラーメッセージをコンソール出力
 CONVERTEXAMPLE
 BEGIN EX
 	var memberVariable : Transform;

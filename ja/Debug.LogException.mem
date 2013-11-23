@@ -3,7 +3,7 @@
 <txttag>
 UNDOC
 </txttag>
-A variant of Debug.Log that logs an error message from an exception to the console.
+Debug.Log の派生で例外からのエラーメッセージをコンソール出力
 BEGIN EX
 	try
 	{

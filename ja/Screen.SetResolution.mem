@@ -2,41 +2,40 @@
 SetResolution(int,int,bool)
 SetResolution(int,int,bool,int)
 </signature>
-Switches the screen resolution.
-A /width/ by /height/ resolution will be used.
-If no matching resolution is supported, the closest one will be used.
+画面解像度を変更
+/width/ かける /height/ の解像度が使用されます。
+もし一致する解像度がサポートされていない場合、もっとも近いものが使用されます。
 
-If /preferredRefreshRate/ is 0 (default) Unity will switch to the highest refresh rate supported by the monitor.\\
-If /preferredRefreshRate/ is not 0 Unity will use it if the monitor supports it, otherwise will choose
-the highest supported one.
+/preferredRefreshRate/ が 0 (デフォルト) の場合、 Unity はモニターが対応している最も大きいリフレッシュレートに切り替えます。
+/preferredRefreshRate/ が 0 (デフォルト) 以外の場合、 Unity はモニターが対応していればそれを使用し、
+そうでなければ対応しているもののうち、最も大きいリフレッシュレートに切り替えます。
 
-In the web player you may only switch resolutions after the user has clicked on the content.
-The recommended way of doing it is to switch resolutions only when the user clicks on a designated button.
+ウェブプレイヤーではユーザがコンテンツをクリックした後にユーザにのみ解像度を切り替えます。
+ユーザが専用のボタンをクリックした場合のみに解像度を切り替えることを推奨します。
 
-On Android /fullscreen/ controls the SYSTEM_UI_FLAG_LOW_PROFILE flag to View.setSystemUiVisibility(), on
-devices running Honeycomb (OS 3.0 / API 11) or later.
+Android では /fullscreen/ は SYSTEM_UI_FLAG_LOW_PROFILE フラグを Honeycomb (OS 3.0 / API 11) 以降 View.setSystemUiVisibility() で制御します。
 
-On Windows Store Apps, switching to non-native resolution is only supported starting from Windows 8.1 and newer.
+Windows ストア アプリ では、 Windows 8.1 以降でのみ非ネイティブ解像度に切り替えることがサポートされています。
 
-A resolution switch does not happen immediately; it will actually happen when the current frame is finished.
+解像度の切り替えは直ちに行なわれません。現在のフレーム完了後に実際に行なわれます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Switch to 640 x 480 fullscreen
+	// 640 x 480 フルスクリーンに切り替え
 
 	Screen.SetResolution (640, 480, true);
 END EX
 Another example:
 CONVERTEXAMPLE
 BEGIN EX
-	// Switch to 640 x 480 fullscreen at 60 hz
+	// 640 x 480 フルスクリーン、60Hzに切り替え
 
 	Screen.SetResolution (640, 480, true, 60);
 END EX
 Another example:
 CONVERTEXAMPLE
 BEGIN EX
-	// Switch to 800 x 600 windowed
+	// 800 x 600 ウィンドウに切り替え
 
 	Screen.SetResolution (800, 600, false);
 END EX
-SA: ::ref::resolutions property.
+SA: ::ref::resolutions プロパティ

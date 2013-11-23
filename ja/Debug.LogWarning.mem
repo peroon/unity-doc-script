@@ -3,7 +3,7 @@
 <txttag>
 UNDOC
 </txttag>
-A variant of Debug.Log that logs a warning message to the console.
+Debug.Log の派生で警告メッセージをコンソール出力
 CONVERTEXAMPLE
 BEGIN EX
 	Debug.LogWarning("Watch out!, this is a warning!");

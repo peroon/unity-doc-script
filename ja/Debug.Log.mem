@@ -3,7 +3,7 @@
 <txttag>
 UNDOC
 </txttag>
-Logs /message/ to the Unity Console.
+Unity コンソール出力へ /message/ を記録
 CONVERTEXAMPLE
 BEGIN EX
 	Debug.Log ("Hello");

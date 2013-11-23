@@ -4,7 +4,7 @@ DrawLine(Vector3,Vector3,Color)
 DrawLine(Vector3,Vector3,Color,float)
 DrawLine(Vector3,Vector3,Color,float,bool)
 </signature>
-Draws a line between specified start and end points.
+指定された開始地点および終了地点の間に線を描画
 The line will be drawn in the scene view of the editor. If gizmo drawing is enabled in the game view, the line will also be drawn there. The /duration/ is the time (in seconds) for which the line will be visible after it is first displayed. A duration of zero shows the line for just one frame.
 
 Note: This is for debugging playmode only. Editor gizmos should be drawn with Gizmos.Drawline or Handles.DrawLine instead.

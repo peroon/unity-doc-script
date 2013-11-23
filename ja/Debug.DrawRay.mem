@@ -4,8 +4,7 @@ DrawRay(Vector3,Vector3,Color)
 DrawRay(Vector3,Vector3,Color,float)
 DrawRay(Vector3,Vector3,Color,float,bool)
 </signature>
-Draws a line from /start/ to /start/ + /dir/ in world coordinates.
-The /duration/ parameter determines how long the line will be visible after the frame it is drawn. If duration is 0 (the default) then the line is rendered 1 frame.
+ワールド座標にて /start/ （開始地点）から /start/ + /dir/ （開始地点＋方向）まで線を描画
 
 If /depthTest/ is set to true then the line will be obscured by other objects in the scene that are nearer to the camera. 
 
