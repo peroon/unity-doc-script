@@ -3,17 +3,17 @@
 <txttag>
 UNDOC
 </txttag>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-Only objects of /type/ will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
+/path/ における Resources フォルダにあるフォルダまたはファイルに含まれる全てのアセットをロード
+もし /path/ がフォルダの場合、フォルダに含まれる全てのアセットを返す
+もし /path/ がファイルの場合、そのアセットのみ返す
+オブジェクトのうち、型が /type/ のものだけ返す
+/path/ は プロジェクトの Assets フォルダ配下の任意の Resources フォルダに対する相対パスです。
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
+	// "Resources/Textures" フォルダにある全てのアセットをロードし、
+	// リストからランダムなものを選択。
+	// 注意: Random.Range は [最小、最大] の範囲で返しますが
+	// 最大の値そのものは含まれません
 
 	function Start (){
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -26,19 +26,19 @@ END EX
 LoadAll(string)
 LoadAll(string,Type)
 </signature>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
+/path/ における Resources フォルダにあるフォルダまたはファイルに含まれる全てのアセットをロード
+もし /path/ がフォルダの場合、フォルダに含まれる全てのアセットを返す
+もし /path/ がファイルの場合、そのアセットのみ返す
+/path/ は プロジェクトの Assets フォルダ配下の任意の Resources フォルダに対する相対パスです。
 
-__Note:__\\
-__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
+注意:__\\
+Unity における __全ての__ アセット名およびパスはスラッシュを使用し、バックスラッシュを使用したパスは __正しく動作しません__ 。
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
+	// "Resources/Textures" フォルダにある全てのアセットをロードし、
+	// リストからランダムなものを選択。
+	// 注意: Random.Range は [最小、最大] の範囲で返しますが
+	// 最大の値そのものは含まれません
 
 	function Start (){
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -52,17 +52,18 @@ END EX
 <signature>
 LoadAll<T>(string)
 </signature>
-Loads all assets in a folder or file at /path/ in a Resources folder.
-If /path/ refers to a folder, all assets in the folder will be returned.
-If /path/ refers to a file, only that asset will be returned.
-Only objects of type /T/ will be returned.
-The /path/ is relative to any Resources folder inside the Assets folder of your project.
+/path/ における Resources フォルダにあるフォルダまたはファイルに含まれる全てのアセットをロード
+もし /path/ がフォルダの場合、フォルダに含まれる全てのアセットを返す
+もし /path/ がファイルの場合、そのアセットのみ返す
+/path/ は プロジェクトの Assets フォルダ配下の任意の Resources フォルダに対する相対パスです。
+オブジェクトのうち、型が /T/ のものだけ返す
+
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads all assets in the "Resources/Textures" folder
-	// Then picks a random one from the list.
-	// Note: Random.Range in this case returns [low,high)
-	// range, i.e. the high value is not inclusive.
+	// "Resources/Textures" フォルダにある全てのアセットをロードし、
+	// リストからランダムなものを選択。
+	// 注意: Random.Range は [最小、最大] の範囲で返しますが
+	// 最大の値そのものは含まれません
 
 	function Start (){
 		var go = new GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -71,4 +72,4 @@ BEGIN EX
 		go.renderer.material.mainTexture = texture;
 	}
 END EX
-@param path Pathname of the target folder.
+@param path ターゲットフォルダのパス名
