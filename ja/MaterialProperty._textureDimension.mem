@@ -1,5 +1,5 @@
 <signature>
 textureDimension
 </signature>
-Texture dimension (2D, Cubemap etc.) of the property (RO).
-SA: ::ref::type, ::ref::textureValue.
+プロパティのテクスチャ次元（2D、キューブマップ、等）（読み取り専用）。
+SA: ::ref::type, ::ref::textureValue

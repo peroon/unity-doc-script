@@ -1,7 +1,7 @@
 <signature>
 textureValue
 </signature>
-Texture value of the property.
-Setting a new value will apply it to all material ::ref::targets, and will automatically record an undo operation.
+プロパティのテクスチャ値。
+新しい値をセットすることで全てのマテリアルの ::ref::targetsに適用し、自動的に取り消し処理を記録
 
-SA: ::ref::type, ::ref::textureDimension, [[MaterialEditor]].
+SA: ::ref::type, ::ref::textureDimension, [[MaterialEditor]]

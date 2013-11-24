@@ -1,5 +1,5 @@
 <signature>
 type
 </signature>
-Type of the property (RO).
-Material properties can be textures, colors, floats and so on. Depending on the type, you should use ::ref::textureValue, ::ref::colorValue, ::ref::vectorValue or ::ref::floatValue to access the property value.
+プロパティの型（読み取り専用）。
+マテリアル プロパティはテクスチャ、カラー、 float 等とすることが出来ます。型によっては ::ref::textureValue, ::ref::colorValue, ::ref::vectorValue or ::ref::floatValue を使用してプロパティ値にアクセスすべきです。
