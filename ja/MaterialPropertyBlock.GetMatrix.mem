@@ -2,5 +2,5 @@
 GetMatrix(string)
 GetMatrix(int)
 </signature>
-Get a matrix from the property block.
-Returns identity matrix if not found.
+プロパティ ブロックからマトリクスを取得
+見つからない場合、単位行列を返す

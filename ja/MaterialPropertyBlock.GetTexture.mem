@@ -2,5 +2,5 @@
 GetTexture(string)
 GetTexture(int)
 </signature>
-Get a texture from the property block.
-Returns null if not found.
+プロパティ ブロックからテクスチャを取得
+もし見つからない場合は null を返す

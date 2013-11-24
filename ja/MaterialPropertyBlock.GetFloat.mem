@@ -2,5 +2,5 @@
 GetFloat(string)
 GetFloat(int)
 </signature>
-Get a float from the property block.
-Returns zero if not found.
+プロパティ ブロックから float を取得
+見つからない場合はゼロを返す
