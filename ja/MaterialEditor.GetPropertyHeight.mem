@@ -2,4 +2,4 @@
 GetPropertyHeight(MaterialProperty)
 GetPropertyHeight(MaterialProperty,string)
 </signature>
-Calculate height needed for the property.
+プロパティに必要な高さを算出
