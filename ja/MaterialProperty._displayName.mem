@@ -1,7 +1,7 @@
 <signature>
 displayName
 </signature>
-Display name of the property (RO).
-This is the user-visible property name, for example "Main Texture" that is declared in the shader's Properties block.
+プロパティ名を表示（読み取り専用）。
+これはユーザに表示されるプロパティ名であり、例えばシェーダの Properties ブロックで宣言される "Main Texture" です。
 
-SA: ::ref::name.
+SA: ::ref::name

@@ -1,4 +1,4 @@
-Texture dimension of a property.
-Texture properties can accept regular (2D) textures, Cubemaps etc.
+プロパティのテクスチャ次元
+テクスチャプロパティは通常のテクスチャ（2D）、キューブマップ、等を使用できます。
 
-SA: MaterialProperty::ref::textureDimension.
+SA: MaterialProperty::ref::textureDimension
