@@ -2,5 +2,5 @@
 GetInt(string)
 GetInt(int)
 </signature>
-Get a named integer value.
-This function is just an alias to ::ref::GetFloat that casts the resulting value to an integer.
+名前つき integer 値を取得
+この関数は渡された値を integer に型キャストする ::ref::GetFloat のエイリアスです。

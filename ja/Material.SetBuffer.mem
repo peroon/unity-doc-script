@@ -1,4 +1,4 @@
 <signature>
 SetBuffer(string,ComputeBuffer)
 </signature>
-Set a [[ComputeBuffer]] value.
+[[ComputeBuffer]] の値をセット
