@@ -1,4 +1,4 @@
 <signature>
 Stop()
 </signature>
-Stops the active highlight.
+有効なハイライトを停止します。
