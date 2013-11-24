@@ -1,2 +1,2 @@
-Angular limits on the rotation of a Rigidbody2D object around a HingeJoint2D.
-SA: [[Rigidbody2D]] class, [[HingeJoint2D]] class.
+HingeJoint2D の周りを Rigidbody2D オブジェクトが回転する際の角度の制限
+SA: [[Rigidbody2D]] クラス, [[HingeJoint2D]] クラス
