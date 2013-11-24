@@ -7,16 +7,16 @@ CSNONE
 <signature>
 ContainsKey(object)
 </signature>
-Determines whether the Hashtable contains a specific key.
+ハッシュテーブルに特定のキーが格納されているか判定
 CONVERTEXAMPLE
 BEGIN EX
-// Searchs for a key on the hash table
+// ハッシュテーブルに特定のキーが格納されているか判定
 
 var h : Hashtable;
 h = new Hashtable();
 h.Add("1","one");
 h.Add("2","two");
 if(h.ContainsKey("1")) {
-	Debug.Log("Key '1', has been found!");
+	Debug.Log("'1'のキーは見つかりました!");
 }
 END EX

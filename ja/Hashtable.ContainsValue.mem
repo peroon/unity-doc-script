@@ -7,16 +7,16 @@ CSNONE
 <signature>
 ContainsValue(object)
 </signature>
-Determines whether the Hashtable contains a specific value.
+ハッシュテーブルに特定の値が格納されているか判定
 CONVERTEXAMPLE
 BEGIN EX
-// Searchs for a value on the hash table
+// ハッシュテーブルで値を検索
 
 var h : Hashtable;
 h = new Hashtable();
 h.Add("1","one");
 h.Add("2","two");
 if(h.ContainsValue("one")) {
-	Debug.Log("Value 'one', has been found!");
+	Debug.Log("'one'の値は見つかりました!");
 }
 END EX
