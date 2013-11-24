@@ -1,5 +1,5 @@
 <signature>
 rangeLimits
 </signature>
-Min/max limits of a ranged float property (RO).
-This is only relevant for [[MaterialProperty.PropType.Range]] properties.
+範囲付き float プロパティの最大 / 最小値
+これは [[MaterialProperty.PropType.Range]] プロパティでのみ有効です。

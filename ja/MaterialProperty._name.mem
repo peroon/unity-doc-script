@@ -1,7 +1,7 @@
 <signature>
 name
 </signature>
-Name of the property (RO).
-This is the variable name that is used in the shader, for example _MainTex.
+プロパティ名（読み取り専用）。
+これはシェーダで使用される変数名、例えば _MainTex です。
 
-SA: ::ref::displayName.
+SA: ::ref::displayName
