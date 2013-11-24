@@ -1,2 +1,2 @@
-Do not show the property in inspector.
-[[MaterialEditor]] will not show this property. This corresponds to "[HideInInspector]" attribute in front of property in the shader code.
+インスペクタ上でプロパティを表示しない
+[[MaterialEditor]] はこのプロパティを表示しません。これはシェーダ コードにおけるプロパティの前の "[HideInInspector]" 属性に相当します。

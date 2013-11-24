@@ -1,1 +1,1 @@
-Texture value for this property will be queried from renderer's [[MaterialPropertyBlock]], instead of from the material. This corresponds to "[PerRendererData]" attribute in front of property in the shader code.
+このプロパティのテクスチャ値はマテリアルからではなく、レンダラの [[MaterialPropertyBlock]] から照会されます。これはシェーダ コードにおけるプロパティの前の "[PerRendererData]" 属性に相当します。
