@@ -1,4 +1,4 @@
 <signature>
 activeRect
 </signature>
-The rect in screenspace of the current active highlight.
+現在の有効なハイライトのスクリーンスペースに対応する Rect
