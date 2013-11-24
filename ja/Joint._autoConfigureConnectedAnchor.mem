@@ -1,5 +1,5 @@
 <signature>
 autoConfigureConnectedAnchor
 </signature>
-Should the /connectedAnchor/ be calculated automatically?
-If this is enabled, then the /connectedAnchor/ property will be calculated automatically to match the global position of the /anchor/ property. This is the default behavior. If this is disabled, you can configure the position of the connected anchor using the /connectedAnchor/ property.
+自動的に /connectedAnchor/ を計算すべきか
+有効にすると /connectedAnchor/ がグローバル座標の /anchor/ プロパティと一致するように自動的に計算されます。これがデフォルトの動作です。もし無効にすると /connectedAnchor/ プロパティを使用して接続された別の anchor の位置を設定できます。

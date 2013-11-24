@@ -1,5 +1,5 @@
 <signature>
 connectedAnchor
 </signature>
-Position of the anchor relative to the connected Rigidbody.
-If /Joint.autoConfigureConnectedAnchor/ is not enabled, then this will be used to set the position of the anchor on the connected rigidbody. The position is given in local coordinates of the connected rigidbody, or in world coordinates if there is no connected rigidbody.
+接続された Rigidbody に相対的な anchor の位置。
+もし /Joint.autoConfigureConnectedAnchor/ が有効化されないと、これを使用して接続された Rigidbody のアンカー位置をセットします。位置は接続された Rigidbody のローカル座標、または接続された Rigidbody がない場合はワールド座標で示されます。
