@@ -1,5 +1,5 @@
 <signature>
 useLimits
 </signature>
-Should limits be placed on the range of rotation?
-SA: ::ref::limits.
+回転の範囲にリミットをつけるか
+SA: ::ref::limits

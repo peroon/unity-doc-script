@@ -1,2 +1,2 @@
-Joint that allows a Rigidbody2D object to rotate around a point in space or a point on another object.
-SA: [[DistanceJoint2D]] class, [[SliderJoint2D]] class, [[SpringJoint2D]] class,.
+Rigidbody2D が空間上の点または別のオブジェクト上の点、の周りを回転できるようにするジョイント
+SA: [[DistanceJoint2D]] クラス, [[SliderJoint2D]] クラス, [[SpringJoint2D]] クラス
