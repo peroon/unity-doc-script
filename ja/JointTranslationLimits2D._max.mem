@@ -1,5 +1,5 @@
 <signature>
 max
 </signature>
-Maximum distance the Rigidbody2D object can move from the Slider Joint's anchor.
-SA: [[Rigidbody2D]] class, SliderJoint::ref::connectedAnchor.
+Rigidbody2D オブジェクトがスライダ ジョイントのアンカーから移動できる最大距離
+SA: [[Rigidbody2D]] クラス, SliderJoint::ref::connectedAnchor
