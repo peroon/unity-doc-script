@@ -1,5 +1,5 @@
 <signature>
 DisableKeyword(string)
 </signature>
-Unset a shader keyword.
-SA: ::ref::EnableKeyword, ::ref::shaderKeywords.
+セットしたシェーダ キーワードを取り消す
+SA: ::ref::EnableKeyword, ::ref::shaderKeywords

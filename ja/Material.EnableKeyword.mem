@@ -1,5 +1,5 @@
 <signature>
 EnableKeyword(string)
 </signature>
-Set a shader keyword that is enabled by this material.
-SA: ::ref::DisableKeyword, ::ref::shaderKeywords.
+このマテリアルにより有効化されるシェーダ キーワードをセット
+SA: ::ref::DisableKeyword, ::ref::shaderKeywords

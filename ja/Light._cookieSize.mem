@@ -1,5 +1,5 @@
 <signature>
 cookieSize
 </signature>
-The size of a directional light's cookie.
-SA: ::ref::cookie.
+方向性ライトのクッキーの大きさ
+SA: ::ref::cookie
