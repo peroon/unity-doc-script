@@ -1,2 +1,2 @@
-Motion limits of a Rigidbody2D object along a SliderJoint2D.
-SA: [[Rigidbody2D]] class, [[SliderJoint2D]] class.
+SliderJoint2D に沿った Rigidbody2D オブジェクトの移動の制限
+SA: [[Rigidbody2D]] クラス, [[SliderJoint2D]] クラス

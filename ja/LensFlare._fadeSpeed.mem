@@ -1,11 +1,11 @@
 <signature>
 fadeSpeed
 </signature>
-The fade speed of the flare.
-SA: [[wiki:class-LensFlare|Lens flare component]], [[wiki:class-Flare|flare assets]].
+フレアをフェードさせる速度
+SA: [[wiki:class-LensFlare|レンズ フレア コンポーネント]], [[wiki:class-Flare|フレア アセット]]
 CONVERTEXAMPLE
 BEGIN EX
-	// Sets the fade speed of the flare
+	// フレアをフェードさせる速度をセット
 
 	var lf : LensFlare;
 	var tr : Transform;
