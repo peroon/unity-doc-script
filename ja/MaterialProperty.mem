@@ -1,4 +1,4 @@
-Describes information and value of a single shader property.
-MaterialProperty is used with [[MaterialEditor]] when writing custom material editors, or implementing custom [[MaterialPropertyDrawer]] classes.
+ひとつのシェーダ プロパティの情報および値を説明
+MaterialProperty はカスタムのマテリアル エディタの記述、またはカスタムの [[MaterialPropertyDrawer]] クラスを実装する際に [[MaterialEditor]] とともに使用されます。
 
-SA: [[MaterialEditor]], [[MaterialPropertyDrawer]].
+SA: [[MaterialEditor]], [[MaterialPropertyDrawer]]
