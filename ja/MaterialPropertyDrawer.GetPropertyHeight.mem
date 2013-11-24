@@ -1,8 +1,8 @@
 <signature>
 GetPropertyHeight(MaterialProperty,string,MaterialEditor)
 </signature>
-Override this method to specify how tall the GUI for this property is in pixels.
-The default is one line high.
-@param prop The [[MaterialProperty]] to make the custom GUI for.
-@param label The label of this property.
-@param editor Current material editor.
+GUI の高さを指定するにはこのメソッドのプロパティをピクセル単位でオーバーライドします。
+デフォルトは 1 行の高さです。
+@param prop カスタム GUI を作成する [[MaterialProperty]]
+@param label このプロパティのラベル
+@param editor 現在のマテリアル エディタ
