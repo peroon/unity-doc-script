@@ -1,4 +1,4 @@
-Material property type.
-Material properties can be textures, colors, floats and so on.
+マテリアル プロパティ型
+マテリアル プロパティはテクスチャ、カラー、 float 等々とすることが出来ます。
 
-SA: MaterialProperty::ref::type.
+SA: MaterialProperty::ref::type
