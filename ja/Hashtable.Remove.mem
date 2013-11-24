@@ -7,10 +7,10 @@ CSNONE
 <signature>
 Remove(object)
 </signature>
-Removes the element with the specified key from the Hashtable.
+ハッシュテーブルから特定のキーを持った要素を削除します。
 CONVERTEXAMPLE
 BEGIN EX
-// Creates a Hashtable with two values and removes one
+// 二つの値を持ったハッシュテーブルを作成した後、ひとつの値を削除します。
 
 var h : Hashtable;
 h = new Hashtable();

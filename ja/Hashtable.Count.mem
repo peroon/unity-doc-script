@@ -7,12 +7,12 @@ CSNONE
 <signature>
 Count
 </signature>
-Returns how many elements are in the hashtable.
+ハッシュテーブルの要素数を返す
 CONVERTEXAMPLE
 BEGIN EX
-// Prints the number of elements in a new Hashtable
+// 新規のハッシュテーブルの要素数を出力
 
 var ht : Hashtable;
 ht = new Hashtable();
-Debug.Log("Hashtable has " + ht.Count + " elements.");
+Debug.Log("ハッシュテーブルには " + ht.Count + " 個の要素があります。");
 END EX

@@ -7,7 +7,7 @@ CSNONE
 <signature>
 Hashtable
 </signature>
-You can use a Hashtable to store key+value pairs.
-For detailed information see <a href="http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx">http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx</a>
+ハッシュテーブルを使用してキー バリュー ペアが格納できます。
+詳細については <a href="http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx">http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx</a> を参照して下さい。
 
-For C# users: the generic alternative to Hashtable is called Dictionary.
+C# ユーザ向け: Hashtable の Generic な代替手段は Dictionary と呼ばれます。
