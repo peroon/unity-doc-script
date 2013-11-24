@@ -1,2 +1,2 @@
-Ranged float (with min/max values) property.
-SA: MaterialProperty::ref::type.
+範囲付き float （最大値 / 最小値つき）プロパティ
+SA: MaterialProperty::ref::type
