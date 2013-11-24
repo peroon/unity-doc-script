@@ -1,7 +1,6 @@
 <signature>
 connectedBody
 </signature>
-The Rigidbody2D object to which the other end of the joint is attached (ie, the object without the joint component).
-If this property is set to null then the joint attaches to a fixed point in space rather than another Rigidbody2D.
-
-SA: [[Rigidbody2D]] class, ::ref::collideConnected.
+ジョイントの端にアタッチされた Rigidboy2D オブジェクト（すなわちジョイント コンポーネントのないオブジェクト）
+もしこのプロパティに null をセットするとジョイントは 別の Rigidbody2D オブジェクトでなく空間上の固定地点にアタッチされます。
+SA: [[Rigidbody2D]] クラス, ::ref::collideConnected

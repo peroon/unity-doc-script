@@ -1,2 +1,2 @@
-Parent class for joints to connect Rigidbody2D objects.
-SA: [[DistanceJoint2D]] class, [[HingeJoint2D]] class, [[SliderJoint2D]] class, [[SpringJoint2D]] class.
+Rigidbody2D オブジェクトを接続するジョイントの親クラス
+SA: [[DistanceJoint2D]] クラス, [[HingeJoint2D]] クラス, [[SliderJoint2D]] クラス, [[SpringJoint2D]] クラス
