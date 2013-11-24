@@ -1,5 +1,5 @@
 <signature>
 hasMixedValue
 </signature>
-Does this property have multiple different values? (RO)
-When multiple materials are selected at once, some of their properties can have different values.
+プロパティが複数の異なる値があるか（読み取り専用）
+複数のマテリアルが同時に選択されたとき、プロパティのいくつかは異なる値を持つ場合があります。

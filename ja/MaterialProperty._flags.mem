@@ -1,4 +1,4 @@
 <signature>
 flags
 </signature>
-Flags that control how property is displayed (RO).
+プロパティの表示方法を制御するフラグ（読み取り専用）。
