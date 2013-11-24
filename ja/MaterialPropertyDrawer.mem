@@ -1,107 +1,104 @@
-Base class to derive custom material property drawers from.
-Use this to create custom UI drawers for your material properties, without having to write custom [[MaterialEditor]] classes. This is similar to how [[PropertyDrawer]] enables custom UI without writing custom inspectors.
+プロパティ Drawer の派生元ベースクラス
+これを使用して自身のマテリアルプロパティのためのカスタム UI Drawer を、カスタムの [[MaterialEditor]] クラスを記述することなく、作成できます。このクラスは [[PropertyDrawer]] がカスタムのインスペクタを記述することなくカスタム UI を可能にする方法に似ています。
 
-In shader code, C#-like attribute syntax can be used in front of shader properties to add drawers to them. Unity has several built-in drawers, and you can write your own. Here's a shader code snippet demonstrating the syntax:
+シェーダ コーdおでは C# のような属性の文法を、シェーダ プロパティの前に使用して Drawer を追加できます。Unity には幾つかのビルトインの Drawer があり、自身で記述することも出来ます。次に文法を示すシェーダ コードのスニペットを示します:
 
 BEGIN EX NOCHECK
 Shader "Custom/Example" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 
-		// Display a popup with None,Add,Multiply choices,
-		// and setup corresponding shader keywords.
+		// None,Add,Multiply を選択肢としたポップアップを表示したうえ
+		// 対応するシェーダ キーワードをセットアップ
 		[KeywordEnum(None, Add, Multiply)] _Overlay ("Overlay mode", Float) = 0
 
 		_OverlayTex ("Overlay", 2D) = "black" {}
 
-		// Display as a toggle.
+		// トグルとして表示
 		[Toggle] _Invert ("Invert color?", Float) = 0
 	}
-	// rest of shader code...
+	// 残りのシェーダ コードをここに記述...
 }
 END EX
 
 {img MaterialPropertyDrawer_UI.png}\\
-''Material inspector with built-in property drawers.''
+''ビルトイン プロパティ Drawer 付きマテリアル インスペクタ。''
 
-
-When implementing your own drawers, you should override OnGUI function. You can also optionally override GetPropertyHeight and Apply functions. Here's an example of a property drawer that displays a checkbox for a float property, with the value set to 0 or 1 depending on the state:
+自身の Drawer を実装するとき、OnGUI 関数をオーバーライドすべきです。さらにGetPropertyHeight および Apply 関数のオーバーライドするオプションがあります。次のサンプルでは、プロパティ Drawer により float プロパティのチェックボックスを表示したうえ、状態にもとづき値を 0 または 1 にセットします。
 
 CONVERTEXAMPLE
 BEGIN EX
-// The property drawer class should be placed in an editor script, inside a folder called Editor.
+// プロパティ Drawer クラスはエディタ スクリプトとして、 Editor という名前のフォルダの中に配置すべきです。
 
-// Use with "[MyToggle]" before a float shader property
+// float シェーダ プロパティの前に "[MyToggle]" と共に使用すべきです
 class MyToggleDrawer extends MaterialPropertyDrawer {
 
-	// Draw the property inside the given rect
+	// プロパティを指定された Rect の中に描画
 	function OnGUI (position : Rect, prop : MaterialProperty, label : String, editor : MaterialEditor) {
 
-		// Setup
+		// セットアップ
 		EditorGUI.BeginChangeCheck ();
 		var value : boolean = prop.floatValue != 0.0f;
 		EditorGUI.showMixedValue = prop.hasMixedValue;
 
-		// Show the toggle control
+		// トグル コントロールを表示
 		value = EditorGUI.Toggle (position, label, value);
 
 		EditorGUI.showMixedValue = false;
 		if (EditorGUI.EndChangeCheck ()) {
-			// Set the new value if it has changed
+			// 変更された場合は新規の値をセット
 			prop.floatValue = value ? 1.0f : 0.0f;
 		}
 	}
 }
 END EX
 
+ビルトインの MaterialPropertyDrawer は:  ToggleDrawer, EnumDrawer, KeywordEnumDrawer, PowerSliderDrawer。シェーダ コードでは、クラス名の末尾の "Drawer" 修飾子は異彩されません。Unity が Drawer クラスを検索したとき、自動的に "Drawer" を付加します。
 
-The built-in MaterialPropertyDrawers are: ToggleDrawer, EnumDrawer, KeywordEnumDrawer, PowerSliderDrawer. In shader code, the "Drawer" suffix of the class name is not written; when Unity searches for the drawer class it adds "Drawer" automatically.
 
-
-__Toggle__ displays a float as a toggle. The property value will be 0 or 1, depending on the toggle state. When it is on, a shader keyword with the uppercase property name +"_ON" will be set, or an explicitly specified shader keyword.
+__Toggle__ により float をトグルとして表示します。プロパティの値はトグルの状態により 0 または 1 となります。有効であるときシェーダ キーワードで大文字のプロパティ名 + "_ON" 、または明示的に指定されたシェーダ キーワードがセットされます。
 
 BEGIN EX NOCHECK
-// Will set "_INVERT_ON" shader keyword when set
+// セットされたとき "_INVERT_ON" シェーダ キーワードをセット
 [Toggle] _Invert ("Invert?", Float) = 0
 
-// Will set "ENABLE_FANCY" shader keyword when set
+// セットされたとき "ENABLE_FANCY" シェーダ キーワードをセット
 [Toggle(ENABLE_FANCY)] _Fancy ("Fancy?", Float) = 0
 END EX
 
 
-__Enum__ displays a popup menu for a float property. You can supply either an enum type name (preferably fully qualified with namespaces, in case there are multiple types), or explicit name/value pairs to display. Up to 7 name/value pairs can be specified.
+__Enum__ により float プロパティにポップアップ メニューを表示します。列挙体の型名（望ましいのは、複数の型がある場合を想定して完全修飾された名前空間）、または明示的な名前 / 値のペアを指定できます。最大で 7 つの名前 / 値のペアを指定できます。
 
 BEGIN EX NOCHECK
-// Blend mode values
+// Blend モードの値
 [Enum(UnityEngine.Rendering.BlendMode)] _Blend ("Blend mode", Float) = 1
 
-// A subset of blend mode values, just "One" (value 1) and "SrcAlpha" (value 5)
+// Blend モードの値のサブセット、"One" (値は 1) および "SrcAlpha" (値は 5) のみ
 [Enum(One,1,SrcAlpha,5] _Blend2 ("Blend mode subset", Float) = 1
 END EX
 
 
-__KeywordEnum__ displays a popup menu for a float property, and enables corresponding shader keyword. This is used with "#pragma multi_compile" in shaders, to enable or disable parts of shader code. Each name will
-enable "property name" + underscore + "enum name", uppercased, shader keyword. Up to 9 names can be provided.
+__KeywordEnum__ により float プロパティにポップアップ メニューを表示して、対応するシェーダ キーワードを有効化します。これはシェーダにおいて、シェーダ コードの一部を有効化 / 無効化するために "#pragma multi_compile" とともに使用されます。各々の名前は大文字で "プロパティ名" + "_" + "列挙体名" のシェーダ キーワードを有効化します。最大で 9 つの名前を指定できます。
 
 BEGIN EX NOCHECK
-// Display a popup with None,Add,Multiply choices.
-// Each option will set _OVERLAY_NONE, _OVERLAY_ADD, _OVERLAY_MULTIPLY shader keywords.
+// None,Add,Multiply を選択肢としたポップアップを表示します。
+// 各々のオプションは _OVERLAY_NONE, _OVERLAY_ADD, _OVERLAY_MULTIPLY シェーダ キーワードをセットアップ
 [KeywordEnum(None, Add, Multiply)] _Overlay ("Overlay mode", Float) = 0
 
-// ...later on in CGPROGRAM code:
+// ...その後のCGPROGRAM コードで:
 #pragma multi_compile _OVERLAY_NONE, _OVERLAY_ADD, _OVERLAY_MULTIPLY
 // ...
 END EX
 
 
-__PowerSlider__ displays a slider with a non-linear response for a Range shader property.
+__PowerSlider__ により Range シェーダ プロパティに対する線形でない反応曲線のスライダーを表示します。
 
 BEGIN EX NOCHECK
-// A slider with 3.0 response curve
+// 3.0 反応曲線のスライダー
 [PowerSlider(3.0)] _Shininess ("Shininess", Range (0.01, 1)) = 0.08
 END EX
 
 
-Note that for performance reasons, EditorGUILayout functions are not usable with MaterialPropertyDrawers.
+パフォーマンス理由により、 EditorGUILayout 関数は MaterialPropertyDrawer と共に使用できません。
 
-SA: [[MaterialProperty]] class, [[MaterialHelper]] class.
+SA: [[MaterialProperty]] クラス, [[MaterialHelper]] クラス
