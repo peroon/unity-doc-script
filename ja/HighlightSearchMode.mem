@@ -1,12 +1,12 @@
-Used to specify how to find a given element in the editor to highlight.
-Let's consider various approaches to highlighting the Scale control in the Transform component.
+エディタの指定された要素を見つける方法を指定します。
+例として Transform で Scale コントロールをスケールするアプローチを複数みていきます。
 
-Using the HighlightSearchMode::ref::PrefixLabel mode you can specify the label text "Scale" as the identifier to highlight the entire Scale control with both label and all three number fields included. This mode can't be used if you want to only highlight the X component of the Scale control. Since the label text of the X component is simply "X", you would get the X component of the Position control instead if you attempted that. The HighlightSearchMode::ref::PrefixLabel mode works for any control that uses EditorGUI::ref::PrefixLabel or EditorGUI::ref::HandlePrefixLabel.
+HighlightSearchMode::ref::PrefixLabel モードを使用してラベルのテキストに相当する "Scale" を識別子として指定し、 ラベルおよび含まれる 3 つの数字のフィールドの両方を含む Scale コントロール全体をハイライトできます。このモードは Scale コントロールの X コンポーネントのみハイライトしたい場合は使用できません。 X コンポーネントのラベルのテキストは単に "X" であるため、試した場合はPosition コントロールの  X コンポーネントのみが代わりに得られます。 HighlightSearchMode::ref::PrefixLabel モードは EditorGUI::ref::PrefixLabel または EditorGUI::ref::HandlePrefixLabel を使用する任意のコントロールで適用できます。
 
-If you use the HighlightSearchMode::ref::Content mode to seach for the text "Scale", only the label itself will be highlighted. This mode can highlight what corresponds to a single GUIStyle::ref::Draw call and hence cannot highlight composite controls. It is particularly useful for highlighting buttons.
+もし HighlightSearchMode::ref::Content モードを使用して "Scale" のテキストを検索すると、そのラベル自身のみがハイライトされます。このモードにより一つの GUIStyle::ref::Draw 呼び出しに相当するものをハイライトするため、コンポジット コントロールをハイライトできません。これはボタンをハイライトするのに役に立ちます。
 
-The HighlightSearchMode::ref::Identifier mode searches for rects explicitly marked to be highlightable using the Highlighter::ref::HighlightIdentifier function. This is for example done for all controls that uses the [[SerializedProperty]] system, using the SerializedProperty::ref::propertyPath as the identifier. This means you could use this mode to highlight the X component of the Scale control by searching for "m_LocalScale.x".
+HighlightSearchMode::ref::Identifier モードは Highlighter::ref::HighlightIdentifier 関数を使用して明示的にハイライト可能とマーキングされた Rect を検索します。これは例えば [[SerializedProperty]] を使用する全てのコントロールで行なわれ、SerializedProperty::ref::propertyPath を識別子として使用します。つまりこのモードを使用して Scale コントロールの  X コンポーネントをハイライトするには "m_LocalScale.x" と検索します。
 
-The HighlightSearchMode::ref::Auto mode searches using all the above modes and can be used in most cases. Searching for "Scale" using this mode will highlight the entire Scale control rather than just the label, since the PrefixLabel handling is hit before the GUIStyle::ref::Draw call of the label.
+HighlightSearchMode::ref::Auto モードは前述の全てのモードを使用して検索し、多くの場合で使用できます。このモードを使用して "Scale" を検索することでラベルのみではなく Scale コントロール全体がハイライトされます。理由は PrefixLabel のハンドリングがラベルの GUIStyle::ref::Draw 呼び出しの前にヒットするためです。
 
-SA: [[Highlighter]].
+SA: [[Highlighter]]
