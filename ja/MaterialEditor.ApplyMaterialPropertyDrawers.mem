@@ -2,5 +2,5 @@
 ApplyMaterialPropertyDrawers(Material)
 ApplyMaterialPropertyDrawers(Object[])
 </signature>
-Apply initial [[MaterialPropertyDrawer]] values.
-This calls all MaterialPropertyDrawer.Apply functions on all properties that have custom drawers.
+初期の [[MaterialPropertyDrawer]] の値を適用します。
+これはカスタム Drawer を持つ全てのプロパティで MaterialPropertyDrawer.Apply 関数を呼び出します。

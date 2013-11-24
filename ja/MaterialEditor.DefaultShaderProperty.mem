@@ -2,5 +2,5 @@
 DefaultShaderProperty(MaterialProperty,string)
 DefaultShaderProperty(Rect,MaterialProperty,string)
 </signature>
-Handles UI for one shader property ignoring any custom drawers.
-This is similar to ::ref::ShaderProperty function, except it ignores any custom [[MaterialPropertyDrawer]] objects.
+全てのカスタム Drawer を無視して一つのシェーダ プロパティの UI をハンドリングします。
+これは ::ref::ShaderProperty 関数と似ていますが、カスタム [[MaterialPropertyDrawer]] オブジェクトを無視します。
