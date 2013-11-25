@@ -4,10 +4,10 @@ OnCollisionStay2D(Collision2D)
 <txttag>
 CSNONE
 </txttag>
-Sent each frame where a collider on another object is touching this object's collider (2D physics only).
-Further information about the objects involved is reported in the Collision2D parameter passed during the call.
+コライダーや Rigidbody オブジェクトが他のコライダーや Rigidbody オブジェクトに触れ続けているときに毎フレーム呼び出される。(2D 物理挙動のみ)
+関連するオブジェクトの詳細については呼び出しの際に渡される Collision2D で報告されます。
 
-SA: [[Collision2D]] class, ::ref::OnCollisionEnter2D, ::ref::OnCollisionExit2D.
+SA: [[Collision2D]] クラス, ::ref::OnCollisionEnter2D, ::ref::OnCollisionExit2D.
 CONVERTEXAMPLE
 BEGIN EX
 var rechargeRate = 10.0;
