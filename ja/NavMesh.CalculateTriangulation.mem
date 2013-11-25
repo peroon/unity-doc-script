@@ -1,6 +1,5 @@
 <signature>
 CalculateTriangulation()
 </signature>
-Triangulation of the current navmesh.
-Calculates and returns a simple triangulation of the current navmesh - containing the vertices, triangle
-indices and navmesh layers.
+現在のナビメッシュの三角形分割
+現在のナビメッシュの三角形分割を計算したうえで、頂点、三角形要素およびナビメッシュレイヤを返す
