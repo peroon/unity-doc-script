@@ -1,5 +1,5 @@
 <signature>
 UpdatePositions()
 </signature>
-Explicitly update the link endpoints.
-Updates the OffMeshLink endpoints to match the transforms specified by the start and end transforms.
+明示的にリンクの両端の地点を更新
+OffMeshLink 両端の地点を更新して、指定された開始および終了の Transform と一致するようにします。

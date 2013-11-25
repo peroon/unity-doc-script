@@ -1,5 +1,5 @@
 <signature>
 autoUpdatePositions
 </signature>
-Automatically update endpoints.
-The OffMeshLink component will try to match endpoint transforms specified by ::ref::startTransform and ::ref::endTransform . See also ::ref::UpdatePositions.
+両端の地点を自動更新
+OffMeshLink コンポーネントは自動的に ::ref::startTransform および ::ref::endTransform で指定された Tranform と両端の地点を一致させようとします。::ref::UpdatePositions も参照して下さい。

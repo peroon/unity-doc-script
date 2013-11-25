@@ -1,2 +1,2 @@
-Can link be traversed in both directions.
-When false the link can only be traversed from start to end.
+双方向にリンクを移動させることができるか
+false の場合、リンクは開始地点から終了地点までしか移動させることができません。
