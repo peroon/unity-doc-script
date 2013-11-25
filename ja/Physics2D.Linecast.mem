@@ -1,20 +1,20 @@
 <signature>
 Linecast(Vector2,Vector2,int,float,float)
 </signature>
-Casts a line against colliders in the scene.
-A ''linecast'' is an imaginary line between two points in world space. Any object making contact with the beam can be detected and reported. This differs from the similar ''raycast'' in that raycasting specifies the line using an origin and directtion.
+シーン上のコライダーに対して線がヒットするか調べる
+''Linecast'' とはワールド座標上の二点間に張った仮想の線です。このセンサーと接触した任意オブジェクトを検知して報告することができます。''Raycast'' と似ていますが、この場合は原点と方向で線を指定します。
 
-This function returns a RaycastHit2D object when the line contacts a Collider in the scene. The ''layerMask'' can be used to detect objects selectively only on certain layers (this allows you to apply the detection only to enemy characters, for example). The direction of the line is assumed to extend from the start point to the end point. Only the first collider encountered in that direction will be reported. Although the Z axis is not relevant for rendering or collisions in 2D, you can use the ''minDepth'' and ''maxDepth'' parameters to filter objects based on their Z coordinate.
+この関数は線がシーン上のコライダーと接触したとき RaycastHit2D を返します。''layerMask'' は Linecast するときに特定のレイヤーのみ選択的に接触を検知するために使用します（例えば敵キャラクターの場合のみ検知する、など）。線の向きは開始地点から終了地点とみなされます。その向きにおいて最初に検知されてコライダーのみが報告されます。 Z 軸は 2D で衝突を検知するにあたって無関係ですが、 ''minDepth'' および ''maxDepth'' 引数を使用して Z 座標に基づいてオブジェクトをフィルタリングできます。
 
-Linecasts are useful for determining lines of sight, targets hit by gunfire and for many other purposes in gameplay.
+Linecast は視界の範囲の判定、銃弾によりターゲットの当たり判定、さらに多くのゲーム シーンで役に立ちます。
 
-Note that this function will allocate memory for the returned RaycastHit2D object. You can use ::ref::LinecastNonAlloc to avoid this overhead if you need to make linecasts frequently.
+この関数は返された RaycastHit2D 配列にメモリ割り当てを行ないます。::ref::LinecastNonAlloc を使用して、そのようなコールを頻繁に行なう必要があればこのオーバーヘッドを回避できます。
 
-Additionally, this will also detect Collider(s) at the start of the line.  In this case the line is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the line vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+さらにこの関数は線の開始地点のコライダーを検知します。この場合線がコライダーの中で開始していてコライダーの表面と交差していません。つまり返された衝突の法線がテストする線のベクトルの反対にセットされた場合、衝突の法線が計算できません。このような結果は RaycastHit2D のゼロ地点で得られるため、これを検知するのは容易です。
 
-SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::LinecastAll, ::ref::LinecastNonAlloc, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
-@param start The start point of the line in world space.
-@param end The end point of the line in world space.
-@param layerMask Filter to detect Colliders only on certain layers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+SA: LayerMask::ref:: クラス, RaycastHit2D::ref:: クラス, ::ref::LinecastAll, ::ref::LinecastNonAlloc, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers
+@param start ワールド座標での線の開始地点
+@param end ワールド座標での線の終了地点
+@param layerMask 特定のレイヤーでのみコライダーを検知するフィルター
+@param minDepth Z 座標（デプス）がこの値より大きいオブジェクトのみを含む
+@param maxDepth Z 座標（デプス）がこの値より小さいオブジェクトのみを含む
