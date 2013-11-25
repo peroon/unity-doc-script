@@ -1,8 +1,8 @@
 <signature>
 IgnoreLayerCollision(int,int,bool)
 </signature>
-Choose whether to detect or ignore collisions between a specified pair of layers.
+指定されたレイヤーのペア間の衝突を検知するか無視するか選択
 SA: ::ref::GetIgnoreLayerCollision.
-@param layer1 ID of the first layer.
-@param layer2 ID of the second layer.
-@param ignore Should collisions between these layers be ignored?
+@param layer1 一つ目のレイヤーの ID
+@param layer2 二つ目のレイヤーの ID
+@param ignore これらのレイヤーの間の衝突は無視するか

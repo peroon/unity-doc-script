@@ -1,4 +1,4 @@
-Layer mask constant for the default layer that ignores raycasts.
-The value of the mask is the bitwise complement of the ::ref::DefaultRaycastLayers mask.
+デフォルトのレイヤーマスク定数であるIgonore Raycast
+マスクの値は ::ref::DefaultRaycastLayers マスクのビット補間です。
 
-SA: ::ref::Raycast, ::ref::DefaultRaycastLayers, ::ref::AllLayers.
+SA: ::ref::Raycast, ::ref::DefaultRaycastLayers, ::ref::AllLayers
