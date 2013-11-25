@@ -1,4 +1,4 @@
 <signature>
 endTransform
 </signature>
-The transform representing link end position.
+リンク終了地点を表す Transform

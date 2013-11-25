@@ -1,4 +1,4 @@
 <signature>
 startTransform
 </signature>
-The transform representing link start position.
+リンク開始地点を表す Transform
