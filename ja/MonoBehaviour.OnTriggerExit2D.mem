@@ -4,10 +4,10 @@ OnTriggerExit2D(Collider2D)
 <txttag>
 CSNONE
 </txttag>
-Sent when another object leaves a trigger collider attached to this object (2D physics only).
-Further information about the other collider is reported in the Collider2D parameter passed during the call.
+トリガー オブジェクトに他のコライダー オブジェクトが出たときに呼び出される。（2D 物理挙動のみ）
+関連するオブジェクトの詳細については呼び出しの際に渡される Collision2D で報告されます。
 
-SA: [[Collider2D]] class, ::ref::OnTriggerEnter2D, ::ref::OnTriggerStay2D.
+SA: [[Collider2D]] クラス, ::ref::OnTriggerEnter2D, ::ref::OnTriggerStay2D.
 BEGIN EX
 var characterInQuicksand: boolean;
 
