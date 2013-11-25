@@ -1,3 +1,3 @@
-Layer mask constant to select default raycast layers.
-This can be used in the layermask field of [[Physics.Raycast]] and other methods to select the default raycast layers. The default layers are all layers execpt for the ignore raycast layer.
-SA: [[Physics.AllLayers]], [[Physics.IgnoreRaycastLayer]].
+デフォルトの Raycast レイヤーを選択するレイヤーマスク定数
+[[Physics.Raycast]] および他のメソッドの layermask フィールドで使用してデフォルトの Raycast レイヤーを選択できます。デフォルトレイヤーは Ignore Raycast レイヤーを除いた全てのレイヤーです。
+SA: [[Physics.AllLayers]], [[Physics.IgnoreRaycastLayer]]

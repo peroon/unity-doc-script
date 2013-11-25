@@ -1,7 +1,7 @@
 <signature>
 maxParticles
 </signature>
-The maximum number of particles to emit.
+発生させるパーティクルの最大数
 CONVERTEXAMPLE
 BEGIN EX
 var hSliderValue : float = 0.0;
