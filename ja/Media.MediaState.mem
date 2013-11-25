@@ -1,1 +1,1 @@
-MediaState enumeration specifies all three possible values of media playback state: stopped, playing and paused.
+MediaState 列挙体はメディアにおける 3 つの再生ステータスを指定します:停止、再生、ポーズ
