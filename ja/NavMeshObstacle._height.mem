@@ -1,5 +1,5 @@
 <signature>
 height
 </signature>
-Height of the obstacle's cylinder shape.
-SA: ::ref::radius.
+障害物の円柱形の高さ
+SA: ::ref::radius

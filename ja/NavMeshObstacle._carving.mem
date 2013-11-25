@@ -1,7 +1,7 @@
 <signature>
 carving
 </signature>
-Should this obstacle make a cut-out in the navmesh.
-When enabled, this changes the navmesh by cutting out a hole. The shape of the hole is based on the bounding volume of the [[NavMeshObstacle]] and the navmesh bake settings for radius and height.
+障害物がナビメッシュにカットアウトを作成するか
+有効化すると、虫食い状にカットアウトすることでナビメッシュを変更します。虫食いの形状は [[NavMeshObstacle]] の境界面積（bounding volume）および半径、高さのナビメッシュ ベーキング設定に依存します。
 
-When the obstacle moves, the carved hole will also move but to reduce CPU overhead the hole is only recalculated when the obstacle is a certain distance from its previous position.- the ::ref::carvingMoveThreshold property sets this distance.
+障害物が移動するとき、カットアウトもまた移動しますが、CPU オーバーヘッドを削減するため虫食い部分は障害物が前回位置から特定距離の場合のみ再計算されます。 ::ref::carvingMoveThreshold プロパティによりその距離を設定できます。

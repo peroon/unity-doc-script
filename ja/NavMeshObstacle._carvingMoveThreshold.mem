@@ -1,7 +1,7 @@
 <signature>
 carvingMoveThreshold
 </signature>
-Threshold distance for updating a moving carved hole (when carving is enabled).
-If the [[NavMeshObstacle]] has moved a distance shorter than the threshold since last carving then the navmesh will not be updated.
+移動ナビメッシュのカットアウトを更新するしきい値となる距離（カービングを有効としている場合）
+最後のカービングの時点から [[NavMeshObstacle]] がしきい値より短い距離を移動した場合、ナビメッシュは更新されません。
 
-SA: ::ref::carving.
+SA: ::ref::carving
