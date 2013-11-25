@@ -1,12 +1,12 @@
 <signature>
 GetRayIntersection(Ray,float,int)
 </signature>
-Cast a 3D ray against the colliders in the scene returning the first collider along the ray.
-This is useful for finding colliders intersecting an arbitrary 3D ray.
+シーン上のコライダーに対して 3D の Raycast をして、ヒットする最初のコライダーを全て返す
+これは任意の 3D の Raycast と交差するコライダーを見つけるのに役に立ちます。
 
-Note that this function will allocate memory for the returned RaycastHit2D object. You can use ::ref::GetRayIntersectionNonAlloc to avoid this overhead if you need to make such calls frequently.
+この関数は返された RaycastHit2D 配列にメモリ割り当てを行ないます。::ref::GetRayIntersectionNonAlloc を使用して、そのようなコールを頻繁に行なう必要があればこのオーバーヘッドを回避できます。
 
-Additionally that this function is a 3D intersection test therefore any collision normals returned in the RaycastHit2D will be zero.
-@param ray The 3D ray defining origin and direction to test.
-@param distance Maximum distance over which to cast the ray.
-@param layerMask Filter to detect colliders only on certain layers.
+さらにこの関数は 3D 交差テストであるため RaycastHit2D で返された任意の衝突の法線はゼロとなります。
+@param ray テストすべき Ray を定義づける原点と方向
+@param distance Raycast を行う最大距離
+@param layerMask 特定レイヤーのみのコライダーを検知するフィルター
