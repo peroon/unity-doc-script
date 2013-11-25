@@ -1,2 +1,2 @@
-Vertices for the navmesh triangulation.
-Vertices are referenced by the indices.
+ナビメッシュ三角形分割の頂点
+頂点は要素により参照されます。

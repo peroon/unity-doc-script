@@ -1,2 +1,2 @@
-NavMeshLayer values for the navmesh triangulation.
-Contains one element for each triangle.
+ナビメッシュ三角形分割のための NavMeshLayer 値
+各々の三角形ごとに一つの要素を含みます。
