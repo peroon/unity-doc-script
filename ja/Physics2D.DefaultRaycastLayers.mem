@@ -1,4 +1,4 @@
-Layer mask constant that includes all layers participating in raycasts by default.
-The value of the mask is the bitwise complement of the ::ref::IgnoreRaycastLayer mask.
+デフォルトで Raycast に関係する全てのレイヤーを含むレイヤー定数
+マスクの値は ::ref::IgnoreRaycastLayer マスクのビット補間に相当します。
 
-SA: ::ref::Raycast, ::ref::IgnoreRaycastLayer, ::ref::AllLayers.
+SA: ::ref::Raycast, ::ref::IgnoreRaycastLayer, ::ref::AllLayers
