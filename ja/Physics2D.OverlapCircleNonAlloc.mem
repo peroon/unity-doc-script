@@ -1,13 +1,12 @@
 <signature>
 OverlapCircleNonAlloc(Vector2,float,Collider2D[],int,float,float)
 </signature>
-Get a list of all colliders that fall within a circular area.
-This function is similar to ::ref::OverlapCircleAll except that the results are returned in the supplied array. The integer return value is the number of objects that fall within the circle (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when the check is performed frequently.
+円の領域にコライダーがあるか判定
+::ref::OverlapCircleAll と似ていますが、結果は引数の配列に返されます。integer の戻り値は線にヒットしたオブジェクト数（ゼロもありえます）ですが、もし返された要素を全て格納できない場合にリサイズはされません。重要なことは、結果のためにメモリ割り当てが行なわれないために、判定が頻繁に実行された場合もガーベージコレクションのパフォーマンスが改善されます。
 
 SA: ::ref::OverlapCircle, ::ref::OverlapCircleAll.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
-@param point Center of the circle.
-@param radius Radius of the circle.
-@param results Array to receive results.
-@param layerMask Filter to check objects only on specific layers.
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める@param point Center of the circle.
+@param point 円の中心
+@param radius 円の半径
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター
