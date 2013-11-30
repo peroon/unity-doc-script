@@ -1,14 +1,14 @@
 <signature>
 OverlapAreaAll(Vector2,Vector2,int,float,float)
 </signature>
-Get a list of all colliders that fall within a rectangular area.
-This function is similar to ::ref::OverlapArea except that all colliders that fall within the area are returned. The colliders in the returned array are sorted in order of increasing Z coordinate. An empty array is returned if there are no colliders within the area.
+四角形の領域にあるコライダーの一覧を取得
+::ref::OverlapArea 関数と似ていますが、領域にある全てのコライダーが返されるところが異なります。返された配列のコライダーは Z 座標が大きくなる順に並べられてます。また領域にコライダーがない場合は空の配列が返されます。
 
-Note that this function will allocate memory for the returned Collider2D array. You can use ::ref::OverlapAreaNonAlloc to avoid this overhead if you need to make the check frequently.
+この関数は返された Collider2D オブジェクトにメモリを割り当てることに留意して下さい。頻繁に判定を行なう必要がある場合 ::ref::OverlapAreaNonAlloc を使用することでオーバーヘッドを回避できます。
 
 SA: ::ref::OverlapArea, ::ref::OverlapAreaNonAlloc.
-@param pointA One corner of the rectangle.
-@param pointB Diagonally opposite corner of the rectangle.
-@param layerMask Filter to check objects only on specific layers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+@param pointA 四角形のひとつの隅
+@param pointB 四角形の斜め反対の隅
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める

@@ -1,16 +1,16 @@
 <signature>
 OverlapCircle(Vector2,float,int,float,float)
 </signature>
-Check if a collider falls within a circular area.
-The circle is defined by its centre coordinate in world space and by its radius. The optional ''layerMask'' allows the test to check only for objects on specific layers.
+円の領域にコライダーがあるか判定
+円はワールド座標の中心点および半径により定義されます。オプションとして layerMask 設定することで特定レイヤーのオブジェクトのみ判定できます。
 
-Although the Z axis is not relevant for rendering or collisions in 2D, you can use the ''minDepth'' and ''maxDepth'' parameters to filter objects based on their Z coordinate. If more than one collider falls within the circle then the one returned will be the one with the lowest Z coordinate value. Null is returned if there are no colliders in the circle.
+2D のレンダリングまたはコリジョンにおいて Z 軸は無関係であるもの、 minDepth および maxDepth パラメータを使用することで Z 軸にもとづいてオブジェクトをフィルタリングすることが出来ます。もし一つ以上のコライダーが円の領域にある場合は最も小さい Z 座標の値を持ったものが返されます。また円の領域にコライダーがない場合は null が返されます。
 
-Note that this function will allocate memory for the returned Collider2D object. You can use ::ref::OverlapCircleNonAlloc to avoid this overhead if you need to make the check frequently.
+この関数は返された Collider2D オブジェクトにメモリを割り当てることに留意して下さい。頻繁に判定を行なう必要がある場合 ::ref::OverlapAreaNonAlloc を使用することでオーバーヘッドを回避できます。
 
 SA: ::ref::OverlapArea, ::ref::OverlapPoint, ::ref::OverlapCircleAll, ::ref::OverlapCircleNonAlloc.
-@param point Centre of the circle.
-@param radius Radius of the circle.
-@param layerMask Filter to check objects only on specific layers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+@param point 円の中心
+@param radius 円の半径
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める

@@ -1,13 +1,13 @@
 <signature>
 OverlapAreaNonAlloc(Vector2,Vector2,Collider2D[],int,float,float)
 </signature>
-Get a list of all colliders that fall within a specified area.
-This function is similar to ::ref::OverlapAreaAll except that the results are returned in the supplied array. The integer return value is the number of objects that fall within the area (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when the check is performed frequently.
+特定領域にあるコライダーの一覧を取得
+::ref::OverlapAreaAll に似ていますが、結果は引数の配列に格納されます。integer の戻り値は線にヒットしたオブジェクト数（ゼロもありえます）ですが、もし返された要素を全て格納できない場合にリサイズはされません。重要なことは、結果のためにメモリ割り当てが行なわれないために、Linecast が頻繁に実行された場合もガーベージコレクションのパフォーマンスが改善されます。
 
 SA: ::ref::OverlapArea, ::ref::OverlapAreaAll.
-@param pointA One corner of the rectangle.
-@param pointB Diagonally opposite corner of the rectangle.
-@param results Array to receive results.
-@param layerMask Filter to check objects only on specified layers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+@param pointA 四角形の片方の隅
+@param pointB 四角形の斜め反対の隅
+@param results 線と交差するオブジェクトの配列を返す
+@param layerMask 特定のレイヤーでのみコライダーを検知するフィルター
+@param minDepth Z 座標（デプス）がこの値より大きいオブジェクトのみを含む
+@param maxDepth Z 座標（デプス）がこの値より小さいオブジェクトのみを含む
