@@ -1,13 +1,13 @@
 <signature>
 OverlapPointAll(Vector2,int,float,float)
 </signature>
-Get a list of all colliders that overlap a point in space.
-This function is similar to ::ref::OverlapPoint except that all colliders that overlap the point are returned. The colliders in the returned array are sorted in order of increasing Z coordinate. An empty array is returned if there are no colliders over the point.
+コライダーが空間上の点を含むか判定
+::ref::OverlapPoint に似ていますが、空間上の点を含む全てのコライダーが返される点が異なります。変えされた配列のコライダーは Z 座標の昇順に並べられます。また点を含むコライダーがない場合は null が返されます。
 
-Note that this function will allocate memory for the returned Collider2D array. You can use ::ref::OverlapPointNonAlloc to avoid this overhead if you need to make the check frequently.
+この関数は返された Collider2D オブジェクトにメモリを割り当てることに留意して下さい。頻繁に判定を行なう必要がある場合 ::ref::OverlapPointNonAlloc を使用することでオーバーヘッドを回避できます。
 
 SA: ::ref::OverlapPoint, ::ref::OverlapPointNonAlloc.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
-@param point A point in space.
-@param layerMask Filter to check objects only on specific layers.
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める
+@param point 空間上の点
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター
