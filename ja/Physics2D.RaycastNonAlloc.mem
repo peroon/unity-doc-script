@@ -1,16 +1,17 @@
 <signature>
 RaycastNonAlloc(Vector2,Vector2,RaycastHit2D[],float,int,float,float)
 </signature>
-Casts a ray into the scene.
-This function is similar to the ::ref::RaycastAll function except that the results are returned in the supplied array. The integer return value is the number of objects that intersect the line (possibly zero) but the results array will not be resized if it doesn't contain enough elements to report all the results. The significance of this is that no memory is allocated for the results and so garbage collection performance is improved when raycasts are performed frequently.
+シーンに対してレイを飛ばす
+::ref::RaycastAll 関数に似ていますが、結果は引数の配列に返されるところが異なります。integer の戻り値はレイがヒットするオブジェクト数（ゼロもありえます）ですが、もし返された要素を全て格納できない場合にリサイズはされません。重要なことは、結果のためにメモリ割り当てが行なわれないために、Raycast が頻繁に実行された場合もガーベージコレクションのパフォーマンスが改善されます
 
-Additionally, this will also detect Collider(s) at the start of the ray.  In this case the ray is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the ray vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+さらにこの関数は線の開始地点のコライダーを検知します。この場合線がコライダーの中で開始していてコライダーの表面と交差していません。つまり返された衝突の法線がテストする線のベクトルの反対にセットされた場合、衝突の法線が計算できません。このような結果は RaycastHit2D のゼロ地点で得られるため、これを検知するのは容易です。
 
-SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::Raycast, ::ref::Linecast, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
-@param origin The point in 2D space where the ray originates.
-@param direction Vector representing the direction of the ray.
-@param results Array to receive results.
-@param distance Maximum distance over which to cast the ray.
-@param layerMask Filter to check objects only on specific layers.
+
+SA: LayerMask::ref:: クラス, RaycastHit2D::ref:: クラス, ::ref::Raycast, ::ref::Linecast, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める
+@param origin 2D 空間上の レイの 原点
+@param direction レイの方向を示すベクトル
+@param results 結果を受け取る配列
+@param distance Raycast を行う最大距離
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター

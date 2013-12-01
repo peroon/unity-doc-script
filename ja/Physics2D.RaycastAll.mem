@@ -1,19 +1,19 @@
 <signature>
 RaycastAll(Vector2,Vector2,float,int,float,float)
 </signature>
-Casts a ray against colliders in the scene, returning all colliders that contact with it.
-A ''raycast'' is conceptually like a laser beam that is fired from a point in space along a particular direction. Any object making contact with the beam can be detected and reported.
+シーンのコライダーに対してレイを飛ばし、接触した全てのコライダーを返す
+Raycast は例えるならば、空間上のある地点から特定方向へ発射されたセンサーのようなものです。センサーと接触した全てのオブジェクトは検知され報告されます。
 
-This function is similar to the Raycast function but instead of detecting just the first collider that is hit, an array of all colliders along the path of the ray is returned. The colliders in the array are sorted in order of distance from the origin point. The ''layerMask'' can be used to detect objects selectively only on certain layers (this allows you to apply the detection only to enemy characters, for example).
+Raycast 関数に似ていますが、ヒットした最初のコライダーを返すだけでなく、レイに沿って接触した全てのコライダーが返されるところが異なります。コライダーは原点からの距離順に並べられます。layerMask を使用することで特定レイヤーのオブジェクトのみ判定できます（例えば敵キャラのみヒットを判定できます）。
 
-Raycasts are useful for determining lines of sight, targets hit by gunfire and for many other purposes in gameplay.
+Raycast は視界の範囲の判定、銃弾によりターゲットの当たり判定、さらに多くのゲーム シーンで役に立ちます。
 
-Additionally, this will also detect Collider(s) at the start of the ray.  In this case the ray is starting inside the Collider and doesn't intersect the Collider surface.  This means that the collision normal cannot be calculated in which case the collision normal returned is set to the inverse of the ray vector being tested.  This can easily be detected because such results are always at a RaycastHit2D fraction of zero.
+さらにこの関数は線の開始地点のコライダーを検知します。この場合線がコライダーの中で開始していてコライダーの表面と交差していません。つまり返された衝突の法線がテストする線のベクトルの反対にセットされた場合、衝突の法線が計算できません。このような結果は RaycastHit2D のゼロ地点で得られるため、これを検知するのは容易です。
 
-SA: LayerMask::ref:: class, RaycastHit2D::ref:: class, ::ref::Raycast, ::ref::Linecast, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
-@param origin The point in 2D space where the ray originates.
-@param direction Vector representing the direction of the ray.
-@param distance Maximum distance over which to cast the ray.
-@param layerMask Filter to detect Colliders only on certain layers.
-@param minDepth Only include objects with a Z coordinate (depth) greater than this value.
-@param maxDepth Only include objects with a Z coordinate (depth) less than this value.
+SA: LayerMask::ref:: クラス, RaycastHit2D::ref:: クラス, ::ref::Raycast, ::ref::Linecast, ::ref::defaultRaycastLayers, ::ref::ignoreRaycastLayer, ::ref::raycastsHitTriggers.
+@param origin 2D 空間上の レイの 原点
+@param direction レイの方向を示すベクトル
+@param distance Raycast を行う最大距離
+@param layerMask 特定レイヤーのオブジェクトを判定するフィルター
+@param minDepth この値より大きい Z 座標（デプス）の場合のみオブジェクトを含める
+@param maxDepth この値より小さい Z 座標（デプス）の場合のみオブジェクトを含める
