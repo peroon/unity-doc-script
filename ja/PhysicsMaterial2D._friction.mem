@@ -1,7 +1,7 @@
 <signature>
 friction
 </signature>
-Coefficient of friction.
-A value of zero indicates a surface with no friction while a value of 1 indicates maximum friction (eg, rubber).
+摩擦係数
+値が 0 の場合は摩擦が存在しない表面を表し、値が 1 の場合は最大の摩擦（例．ゴム）を表します。
 
-SA: PhysicMaterial::ref::staticFriction.
+SA: PhysicMaterial::ref::staticFriction

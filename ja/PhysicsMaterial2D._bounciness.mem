@@ -1,7 +1,7 @@
 <signature>
 bounciness
 </signature>
-The degree of elasticity during collisions.
-A value of zero indicates no elasticity (ie, no bounce at all) while a value of one indicates perfect elasticity.
+衝突における反発係数
+値が 0 の場合は弾性がないこと（すなわち、はねかえりがない）を表し、値が 1 の場合は完全弾性を表します。
 
-SA: PhysicMaterial::ref::bounciness.
+SA: PhysicMaterial::ref::bounciness
