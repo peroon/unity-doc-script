@@ -1,4 +1,4 @@
-Information returned about an object detected by a raycast in 2D physics.
-A ''raycast'' is used to detect objects that lie along the path of a ''ray'' and is conceptually like firing a laser beam into the scene and observing which objects are hit by it. The RaycastHit2D class is used by Physics2D::ref::Raycast and other functions to return information about the objects detected by raycasts.
+2D 物理挙動の Raycast により検知されたオブジェクトについて返される情報
+Raycast は例えるならば、空間上のある地点から特定方向へ発射されたセンサーのようなものです。Raycast2D クラスは Physics2D::ref::Raycast および他の関数により Raycast で検知されたオブジェクトに関する情報を返します。
 
-SA: Physics2D::ref::Raycast, [[Ray2D]] class.
+SA: Physics2D::ref::Raycast, [[Ray2D]] クラス

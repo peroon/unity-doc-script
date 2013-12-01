@@ -1,5 +1,5 @@
 <signature>
 rigidbody
 </signature>
-The Rigidbody2D attached to the object that was hit.
-SA: [[Rigidbody2D]] class.
+衝突されたオブジェクトにアタッチされた Rigidbody2D
+SA: [[Rigidbody2D]] クラス
