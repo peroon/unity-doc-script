@@ -1,7 +1,7 @@
 <signature>
 point
 </signature>
-The point in world space where the ray hit the collider's surface.
-The exact point of contact can be useful for positioning graphic effects (such as explosion or blood splatters) and for determining which specific part of an object was hit.
+レイがコライダーの表面に衝突したワールド座標での地点
+衝突が発生した正確な地点はグラフィック エフェクト（爆発や血しぶき）の配置およびオブジェクトのどの部分が衝突されたか判定するのに役に立ちます。
 
-SA: ::ref::fraction.
+SA: ::ref::fraction

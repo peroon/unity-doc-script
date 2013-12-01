@@ -1,7 +1,7 @@
 <signature>
 fraction
 </signature>
-Fraction of the distance along the ray that the hit occurred.
-If the ray's direction vector is normalised then this value is simply the distance between the origin and the hit point. If the direction is not normalised then this distance is expressed as a "fraction" (which could be greater than 1) of the vector's magnitude.
+レイで衝突が発生した地点の、距離に対する百分率
+もし direction ベクトルが正規化されている場合、この値は単に原点と衝突地点の距離と等しくなります。もし direction ベクトルが正規化されてない場合、距離はベクトルの大きさに対する百分率（ただし 1 より大きくなることもある）となります。
 
-SA: ::ref::point.
+SA: ::ref::point
