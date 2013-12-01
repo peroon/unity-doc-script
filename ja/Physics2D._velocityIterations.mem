@@ -1,7 +1,7 @@
 <signature>
 velocityIterations
 </signature>
-The number of iterations of the physics solver when considering objects' velocities.
-A higher number of interations will improve accuracy at the expense of processing overhead.
+オブジェクトの速度を考慮する際の物理エンジンのソルバー反復回数
+反復回数が大きいほど正確性が増す反面、処理オーバーヘッドが増えます。
 
-SA: ::ref::positionIterations.
+SA: ::ref::positionIterations

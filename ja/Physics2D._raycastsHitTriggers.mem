@@ -1,7 +1,7 @@
 <signature>
 raycastsHitTriggers
 </signature>
-Do raycasts detect Colliders configured as triggers?
-A Collider can be set up to act as a ''trigger'' which will detect other Colliders entering its volume but won't physically collide with them. Often, it is desirable to avoid detecting trigger Colliders with raycasts because they don't represent solid objects. This property lets you choose whether or not raycasts should detect triggers.
+トリガーとして設定されたコライダーを Raycast が検知するか
+コライダーをトリガーとしてセットアップすることで、その領域内に他のコライダーが侵入したとき、物理的な衝突なしに検知させることが出来ます。多くの場合、固体のオブジェクトを表さないため Raycast でトリガーでのコライダーを検知しないことが望ましいことになります。このプロパティにより Raycast がトリガーを検知すべきか選択できます。
 
-SA: Collider2D::ref::isTrigger, ::ref::Raycast.
+SA: Collider2D::ref::isTrigger, ::ref::Raycast
