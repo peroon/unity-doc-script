@@ -1,7 +1,7 @@
 <signature>
 pathCount
 </signature>
-The number of paths in the polygon.
-A ''path'' is cyclic sequence of line segments between points that define the outline of the polygon. Since the polygon can have holes and discontinuous parts, its shape is not necessarily defined by a single path.
+ポリゴンに含まれるパスの数
+パスとはポリゴンの形を特徴づける点間に挟まれた線分の連番です。ポリゴンは凹みや不連続部分も持ちうるため、一つのパスのみで定義されるとは限りません。
 
-SA: ::ref::GetPath, ::ref::SetPath.
+SA: ::ref::GetPath, ::ref::SetPath
