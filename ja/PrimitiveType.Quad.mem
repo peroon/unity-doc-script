@@ -1,8 +1,8 @@
-A Quad primitive.
+四角形のプリミティブ
 SA: GameObject.CreatePrimitive.
 CONVERTEXAMPLE
 BEGIN EX
-	// Creates a plane primitive
+	// 平面のプリミティブを作成
 	function Start () {
 		var plane : GameObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
 	}

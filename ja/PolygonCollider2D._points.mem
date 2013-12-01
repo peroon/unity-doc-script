@@ -1,4 +1,4 @@
 <signature>
 points
 </signature>
-Corner points that define the collider's shape in local space.
+ローカル座標のコライダーの形状を定義する隅の点

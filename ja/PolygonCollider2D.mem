@@ -1,2 +1,2 @@
-Collider for 2D physics representing an arbitrary polygon defined by its vertices.
-SA: [[BoxCollider2D]] class, [[CircleCollider2D]] class.
+頂点により定義される任意のポリゴンを表す 2D 物理挙動のコライダー
+SA: [[BoxCollider2D]] クラス, [[CircleCollider2D]] クラス
