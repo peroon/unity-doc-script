@@ -1,4 +1,4 @@
 <signature>
 RebuildTextures()
 </signature>
-Triggers an asynchronous rebuild of this ProceduralMaterial's dirty textures.
+ProceduralMaterial におけるダーティになったテクスチャの非同期リビルドをトリガーする

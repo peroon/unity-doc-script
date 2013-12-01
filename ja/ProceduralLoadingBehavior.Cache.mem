@@ -1,1 +1,1 @@
-Generate the textures when loading and cache them to disk/flash to speed up subsequent game/application startups.
+ロード時にテキストを生成し、ディスク/フラッシュメモリにキャッシュして、後続のゲーム/アプリケーションのスタートアップを高速化します。
