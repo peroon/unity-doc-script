@@ -1,4 +1,4 @@
 <signature>
 StopRebuilds()
 </signature>
-Discard all the queued ProceduralMaterial rendering operations that have not started yet.
+未開始である ProceduralMaterial のレンダリング処理を全て破棄します。

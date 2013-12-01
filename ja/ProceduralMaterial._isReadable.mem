@@ -1,6 +1,6 @@
 <signature>
 isReadable
 </signature>
-Set or get the "Readable" flag for a ProceduralMaterial.
-ProceduralTexture.GetPixels32 can ONLY be used with textures generated from a "Readable" ProceduralMaterial whose texture format is set to RAW.
-SA: [[ProceduralTexture.GetPixels32]].
+ProceduralMaterial の "Readable" フラグをセットまたは取得
+ProceduralTexture.GetPixels32 は "Readable" フラグをセットされ、テクスチャ形式が RAW にセットされた ProceduralMaterial から生成されたテクスチャでのみ使用できます。
+SA: [[ProceduralTexture.GetPixels32]]
