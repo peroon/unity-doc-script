@@ -1,2 +1,2 @@
-The label of the ProceduralProperty. Can contain space and be overall more user-friendly than the 'name' member.
-Used in the Inspector to display the ProceduralProperty.
+ProceduralProperty のラベル。スペースを含むことが出来て 'name' メンバーより全体的に使い勝手が高いです。
+インスペクタ上で ProceduralProperty を表示するのに使用されてます。

@@ -1,5 +1,5 @@
 <signature>
 preset
 </signature>
-Set or get an XML string of "input/value" pairs (settings the preset rebuilds the textures).
-This allows to quickly save the set of a ProceduralMaterial's settings and to export them or to re-apply them later on.
+入力 / 値のペアのXML 文字列をセットまたは取得（プリセットをセットすることでテクスチャはリビルドされます）
+これにより ProceduralMaterial の設定全体をクイックにセーブ、エクスポートし、後ほど再適用できます。
