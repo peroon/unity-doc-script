@@ -1,8 +1,8 @@
 <signature>
 GetPoint(float)
 </signature>
-Get a point that lies a given distance along a ray.
-The distance is measured away from the ray's origin along its direction.
+レイの位置から設定した距離だけ進んだ点の座標を返す。
+距離はレイの原点から指定された向きに沿って測定されます。
 
 SA: ::ref::origin, ::ref::direction.
-@param distance Distance of the desired point along the path of the ray.
+@param distance レイの位置から設定した距離

@@ -1,7 +1,7 @@
 <signature>
 collider
 </signature>
-The collider hit by the ray.
-This can be useful if the hit object has more than one collider - this property can be used to determine the specific collider rather than just the object.
+衝突したオブジェクトのコライダー情報を返す。
+衝突したオブジェクトがひとつ以上のコライダーがある場合に役に立ちます。このプロパティを使用して、オブジェクトだけでなく特定のコライダーを判定できます。
 
-Note that some functions that return a single RaycastHit2D will leave the collider as NULL which indicates nothing hit.  RaycastHit2D implements an implicit conversion operator converting to bool which checks this property allowing it to be used as a simple condition check for whether a hit occurred or not.
+RaycastHit2D を返すいくつかの関数はコライダーを Null としたままにすることに留意して下さい。これは何も衝突してないことを示します。RaycastHit2D は明示的な変換の演算子を実装しているため、このプロパティをチェックして衝突があったかどうかを boolean で返します。

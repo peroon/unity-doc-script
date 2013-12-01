@@ -1,5 +1,5 @@
 <signature>
 fieldInfo
 </signature>
-The reflection FieldInfo for the member this property represents. (RO)
-For advanced uses, this allows you to get information about the member the property represents using reflection, such as the type of the property and which attributes it might have. Most PropertyDrawers will not need to make use of the FieldInfo.
+このプロパティが表すメンバーのリフレクション FieldInfo （読み取り専用）
+上級者ユーザにとって、プロパティが表すメンバーに関する情報、例えばプロパティの型および持ちうる属性について、リフレクションを使用して取得できます。ほとんどの PropertyDrawers は FieldInfo を使用する必要がありません。
