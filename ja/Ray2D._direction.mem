@@ -1,5 +1,5 @@
 <signature>
 direction
 </signature>
-The direction of the ray in world space.
-SA: ::ref::origin.
+ワールド座標でのレイの向き
+SA: ::ref::origin

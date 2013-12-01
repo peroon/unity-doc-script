@@ -1,5 +1,5 @@
 <signature>
 origin
 </signature>
-The starting point of the ray in world space.
-SA: ::ref::direction.
+ワールド座標でのレイの開始地点
+SA: ::ref::direction
