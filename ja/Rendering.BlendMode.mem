@@ -1,2 +1,2 @@
-Blend mode for controlling the blending.
-The blend mode is set separately for source and destination, and it controls the blend factor of each component going into the blend eqquation. It is also possible to set the blend mode for color and alpha components separately. Note: the blend modes are ignored if logical blend operations are in use.
+ブレンドを制御するブレンドモード
+ブレンドモードは加算元と加算先で別にセットされ、ブレンド演算に入る各々のコンポーネントのブレンド要素を制御します。ブレンドモードのカラーとアルファを別々にセットすることも出来ます。注意: ブレンドモードは論理的なブレンド処理が使用されている場合は無視されます。

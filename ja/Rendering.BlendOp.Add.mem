@@ -1,2 +1,2 @@
-Add (s + d).
-Add source and destination together, with specified blend modes.
+(s + d) を加算
+加算元と加算先を指定されたブレンドモードで加算
