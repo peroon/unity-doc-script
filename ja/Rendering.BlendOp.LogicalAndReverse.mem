@@ -1,2 +1,2 @@
-Logical reverse AND (s & !d) (D3D11.1 only).
-Performs logical reverse AND (src & !dest) operation. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.
+AND の論理反転 (s & !d) (D3D11.1 のみ)
+AND の論理反転 (加算元 & !加算先) 処理の実行。現在このモードは DX11.1 クラス ハードウェアおよび DX ランタイムの D3D11 レンダラでのみ利用可能です。
