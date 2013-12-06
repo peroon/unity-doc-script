@@ -1,9 +1,9 @@
 <signature>
 flareFadeSpeed
 </signature>
-The fade speed of all flares in the scene.
+シーン上の全てのフレアがフェードする速度。
 CONVERTEXAMPLE
 BEGIN EX
 	RenderSettings.flareFadeSpeed = 0.5;
 END EX
-SA: [[wiki:class-RenderSettings|Render Settings manager]], [[wiki:class-LensFlare|LensFlare component]].
+SA: [[wiki:class-RenderSettings|Render Settings manager]], [[wiki:class-LensFlare|LensFlare コンポーネント]]
