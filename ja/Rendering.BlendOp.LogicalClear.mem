@@ -1,2 +1,3 @@
-Logical Clear (0).
-Clears all bits in the target to 0. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.
+論理クリア（0）
+ターゲットのビットを全て 0 にクリアします。現在このモードは DX11.1 クラス ハードウェアおよび DX ランタイムの D3D11 レンダラでのみ利用可能です。
+ssss
