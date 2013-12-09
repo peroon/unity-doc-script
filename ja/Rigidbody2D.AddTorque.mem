@@ -1,10 +1,9 @@
 <signature>
 AddTorque(float)
 </signature>
-Apply a torque at the rigidbody's centre of mass.
-A torque is conceptually a force being applied at the end of an imaginary lever, with the fulcrum at the centre of mass. A torque of five units could thus be equivalent to a force of five units pushing on the end of a lever one unit long, or a force of one unit on a lever five units long. Unity's units are arbitrary but the principle that ''torque = force x lever length'' still applies.
+Rigidbody の重心にトルクを適用します。
+トルクとは概念的に空想上のテコの端にあり、テコの位置が重心上にあったときなどに適用される力です。5 ユニットのトルクは結果的に長さが 1 ユニットのテコ、または 5 ユニットの長さで 1 ユニットの力と同等となります。Unity のユニットは任意ですが、トルク = 力×テコの長さは以前として適用されます。
+3D Rigidbody と異なり Rigidbody2D はひとつの軸でしか回転できず、トルクはベクトルでなく float の値となります。
 
-Note that unlike a 3D Rigidbody, a Rigidbody2D can only rotate in one axis and so torque is a float value rather than a vector.
-
-SA: ::ref::AddForce, ::ref::AddForceAtPosition, Rigidbody::ref::AddTorque.
-@param torque Value of torque to apply.
+SA: ::ref::AddForce, ::ref::AddForceAtPosition, Rigidbody::ref::AddTorque
+@param torque 適用するトルクの値
