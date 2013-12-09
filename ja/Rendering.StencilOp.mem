@@ -1,1 +1,1 @@
-Specifies the operation that's performed on the stencil buffer when rendering.
+レンダリングするときのステンシルバッファで実行される処理を指定します。

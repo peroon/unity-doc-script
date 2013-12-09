@@ -1,7 +1,7 @@
 <signature>
 IsSleeping()
 </signature>
-Is the rigidbody "sleeping"?
-''Sleeping'' is an optimisation that is used to temporarily remove an object from physics simulation when it is at rest. This function tells if the rigidbody is currently sleeping.
+Rigidbody がスリープ態であるか判定
+スリープ状態はオブジェクトが休眠状態のときに物理シミュレーションから一時的に外すのに使用する最適化手法です。この関数によりオブジェクトが現在スリープ状態であるか判定します。
 
-SA: ::ref::Sleep, ::ref::WakeUp, ::ref::IsAwake.
+SA: ::ref::Sleep, ::ref::WakeUp, ::ref::IsAwake
