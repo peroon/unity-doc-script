@@ -1,2 +1,2 @@
-Logical XOR (s XOR d) (D3D11.1 only).
-Performs logical XOR (src XOR dest) operation. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.
+論理 XOR (s XOR d) (D3D11.1 のみ)
+論理 XOR (ソース XOR ターゲット) 処理を実行します。現在このモードは DX11.1 クラス ハードウェアおよび DX ランタイムの D3D11 レンダラでのみ利用可能です。
