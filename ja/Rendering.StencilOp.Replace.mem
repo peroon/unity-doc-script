@@ -1,1 +1,1 @@
-Replace the stencil buffer value with reference value (specified in the shader).
+ステンシル バッファ値を（シェーダで指定された）参照値で置換します
