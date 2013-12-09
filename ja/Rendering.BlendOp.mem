@@ -1,2 +1,2 @@
-Blend operation.
-The blend operation that is used to combine the pixel shader output with the render target. Note that the logical operations are only supported in Gamma (non-sRGB) colorspace, on DX11.1 hardware running on DirectX 11.1 runtime.
+ブレンド処理
+ピクセル シェーダ出力をレンダリングターゲットと合成するブレンド処理。論理演算はガンマ（non-sRGB）カラー空間、DX11.1 ハードウェアおよび DX ランタイムの Direct X 11.1 ランタイムでのみサポートされていることに留意して下さい。
