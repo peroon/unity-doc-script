@@ -1,7 +1,7 @@
 <signature>
 angularVelocity
 </signature>
-Angular velocity in degrees per second.
-Unlike a 3D Rigidbody, a Rigidbody2D can only rotate around one axis (perpendicular to the plane) so the angular velocity is just a float value rather than a vector. Typically, the value of this property is not set directly but rather by applying /torques/ to the rigidbody. The angular velocity will also decrease automatically under the effect of ''angular drag''.
+角度 / 秒で示される角速度です。
+3D Rigidbody と異なり、Rigidbody2D は（平面に垂直な）一つの軸の周りでしか回転できず、角速度はベクトルでなく float 値となります。通常このプロパティの値は直接セットされず、 Rigidbody に対して  /torque/ （トルク）を加えることでセットされます。角速度は ''Angular Drag'' の効果により自動的に値が減少します。
 
-SA: ::ref::velocity, ::ref::AddTorque, ::ref::AddForceAtPosition, ::ref::angularDrag, Rigidbody::ref::angularVelocity.
+SA: ::ref::velocity, ::ref::AddTorque, ::ref::AddForceAtPosition, ::ref::angularDrag, Rigidbody::ref::angularVelocity
