@@ -1,2 +1,2 @@
-Logical Equivalence !(s XOR d) (D3D11.1 only).
-This operation performs !(s XOR d). This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.
+論理等価!(s XOR d) (D3D11.1 のみ)
+この処理は !(ソース XOR ターゲット) を実行します。現在このモードは DX11.1 クラス ハードウェアおよび DX ランタイムの D3D11 レンダラでのみ利用可能です。
