@@ -1,1 +1,1 @@
-Decrements the current stencil buffer value. Clamps to 0.
+現在のステンシル バッファ値を減分します。最小は 0 に制限します。

@@ -1,1 +1,1 @@
-Increments the current stencil buffer value. Clamps to the maximum representable unsigned value.
+現在のステンシル バッファ値を増分。表現可能な最大の符号なし数値に制限します。
