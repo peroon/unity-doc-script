@@ -1,7 +1,7 @@
 <signature>
 fixedAngle
 </signature>
-Should the rigidbody be prevented from rotating?
-If this property is set to true, the rigidbody will not rotate in response to collisions and torques. This is useful when you want an object to have restricted rectilinear movement but still be controlled by physics in other aspects.
+Rigidbody の回転をさせず固定させるか
+このプロパティを true にセットすると、衝突やトルクに対して回転しなくなります。これはオブジェクトに制限された直線的動作を期待する一方で、他の側面では物理挙動で制御したいときに役に立ちます。
 
-SA: Rigidbody::ref::freezeRotation.
+SA: Rigidbody::ref::freezeRotation

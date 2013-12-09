@@ -1,7 +1,7 @@
 <signature>
 interpolation
 </signature>
-Physics interpolation used between updates.
-Interpolation is used to estimate the position of the Rigidbody between physics updates. It can be useful to switch this on when the graphics update is much more frequent than the physics update because the object can appear to move along in jerky "hops" rather than having smooth motion. With ''interpolate'' mode, motion is smoothed based on the object's positions in previous frames. ''Extrapolate'' mode smooths motion based on an estimate of its position in the next frame. The choice of mode depends of the dynamics of the object during gameplay.
+物理挙動の Update の間で使用される補間
+補間は Update の間の Rigidbody の位置を推定するのに使用されます。グラフィックスの Update が 物理挙動の Update より頻繁である場合にこれを有効にすることで役に立ち、オブジェクトがスムーズに移動するでなく不自然に跳ねる動作を防止できます。''interpolate'' （内部補間）モードにより、動作はオブジェクトの前フレームの位置にもとづいてスムージングされます。''Extrapolate'' （外部補間）モードにより、動作は推定される次のフレームの位置にもとづいてスムージングされます。オブジェクトのゲームプレイにおけるダイナミクスにもとづいてどちらを使用すべきかの判断が行なわれます。
 
-SA: Rigidbody::ref::interpolation.
+SA: Rigidbody::ref::interpolation

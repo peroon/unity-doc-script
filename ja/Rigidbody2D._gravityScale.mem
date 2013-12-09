@@ -1,7 +1,7 @@
 <signature>
 gravityScale
 </signature>
-The degree to which this object is affected by gravity.
-In 2D physics, the gravity is a global setting in the Physics2D class but you can also control the proportion of that gravity applied to each object individually using ''gravityScale''. For example, it may be easier to implement a flying character by turning off its gravity rather than simulating the forces that keep it aloft.
+オブジェクトが重力により影響を受ける度合い
+2D 物理挙動では、重力は Physics2D クラスのグローバル設定ですが、 ''gravityScale'' を使用して各々のオブジェクトに適用される重力の割合を個別に制御できます。例えば、重力を無効にするほうが浮遊させる力を再現しようとするよりも容易です。
 
-SA: Physics2D::ref::gravity.
+SA: Physics2D::ref::gravity
