@@ -1,1 +1,1 @@
-Increments the current stencil buffer value. Wraps stencil buffer value to zero when incrementing the maximum representable unsigned value.
+現在のステンシル バッファ値を増分します。ステンシル バッファ値が最大で表現可能な符号なし数値の場合に増分するときはステンシル バッファ値をゼロに折り返します。

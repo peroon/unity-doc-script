@@ -1,1 +1,1 @@
-Decrements the current stencil buffer value. Wraps stencil buffer value to the maximum representable unsigned value when decrementing a stencil buffer value of zero.
+現在のステンシル バッファ値を減分します。ステンシル バッファ値がゼロの場合に減分するときはステンシル バッファ値を最大で表現可能な符号なし数値に折り返します。
