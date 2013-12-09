@@ -1,2 +1,2 @@
-Logical SET (1) (D3D11.1 only).
-Performs logical SET (1) operation, effectively setting all bits in the render target. This mode is currently only available with D3D11 renderer on DX11.1 class hardware and DX runtime.
+論理 SET (1) (D3D11.1 のみ)
+論理 SET (1) 処理を実行して、結果的にレンダリング ターゲットの全てのビットをセットします。現在このモードは DX11.1 クラス ハードウェアおよび DX ランタイムの D3D11 レンダラでのみ利用可能です。
