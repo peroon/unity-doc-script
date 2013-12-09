@@ -1,7 +1,6 @@
 <signature>
 drag
 </signature>
-Coefficient of drag.
-''Drag'' is the tendency of an object to slow down due to friction with the air or water that surrounds it. The ''linear drag'' applies to positional movement and is set up separately from the ''angular drag'' that affects rotational movement. A higher value of  drag will cause an object's rotation to come to rest more quickly following a collision or force.
-
-SA: ::ref::velocity, ::ref::AddForce, ::ref::angularDrag, Rigidbody::ref::drag.
+Drag 係数
+''Drag'' とはオブジェクトの周りを囲む空気または水との摩擦によるオブジェクトの減速の度合いを示します。''Linear Drag'' は位置の変化を適用し、回転動作に影響する ''Angular Drag'' とは別にセットアップされます。大きな値の Drag によりオブジェクトの回転が衝突またはトルクの直後により速く減速します。
+SA: ::ref::velocity, ::ref::AddForce, ::ref::angularDrag, Rigidbody::ref::drag

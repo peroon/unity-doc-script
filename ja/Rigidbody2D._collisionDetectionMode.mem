@@ -1,4 +1,4 @@
 <signature>
 collisionDetectionMode
 </signature>
-The method used by the physics engine to check if two objects have collided.
+二つのオブジェクトが衝突したかチェックするのに物理エンジンが使用するメソッド
