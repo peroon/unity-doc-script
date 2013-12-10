@@ -1,1 +1,1 @@
-Smooth an object's movement based on an estimate of its position in the next frame.
+オブジェクトの動作を、次のフレームの位置の推測にもとづいてスムージング
