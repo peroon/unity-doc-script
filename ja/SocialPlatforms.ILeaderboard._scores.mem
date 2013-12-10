@@ -1,4 +1,4 @@
 <signature>
 scores
 </signature>
-The leaderboard scores returned by a query.
+クエリにより返される Leaderboard のスコア
