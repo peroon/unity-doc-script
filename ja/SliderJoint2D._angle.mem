@@ -1,7 +1,7 @@
 <signature>
 angle
 </signature>
-The angle of the line in space.
-The line along which the joint can slide is specified by its angle (relative to the coordinate system) and optionally by endpoint limits along its length.
+空間上の直線の角度
+ジョイントがスライドできる直線は角度により指定され（座標系に対して相対的に）、任意で長さに沿った終了地点の境界も指定できます。
 
-SA: ::ref::limits.
+SA: ::ref::limits
