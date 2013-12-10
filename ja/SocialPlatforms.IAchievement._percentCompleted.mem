@@ -1,5 +1,5 @@
 <signature>
 percentCompleted
 </signature>
-Progress for this achievement.
-Progress towards an achievement can be reported, when this reaches 100.0 it is considered complete.
+この Achievement の完了状況
+Achievement の完了状況の報告をを行なうことが出来、 100.0 に到達したときに完了とみなされます。

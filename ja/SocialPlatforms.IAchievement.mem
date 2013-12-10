@@ -1,5 +1,3 @@
-Information for a users achievement.
-This defines the relation between a particular achievement (described by
-[[IAchievementDescription|IAchievementDescription]]) and the local user, what progress he has, last date he reported progress and so on.
-
-Use [[Social.CreateAchievement]] to create an instance of this object.
+ユーザの Achievement に関する情報
+特定の Achievement （ [[IAchievementDescription|IAchievementDescription]] により表現）およびローカルユーザ、完了状況、完了の最新日、等々との関係を定義します。
+このオブジェクトのインスタンスを作成するときは [[Social.CreateAchievement]] を使用します。
