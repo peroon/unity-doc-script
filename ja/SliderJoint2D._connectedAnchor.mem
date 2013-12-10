@@ -1,5 +1,5 @@
 <signature>
 connectedAnchor
 </signature>
-The joint's anchor point on the second object (ie, the one which doesn't have the component).
-SA: ::ref::anchor.
+二つめのオブジェクト（すなわちコンポーネントがない方）でのジョイントのアンカー地点
+SA: ::ref::anchor

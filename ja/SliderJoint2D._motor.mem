@@ -1,5 +1,5 @@
 <signature>
 motor
 </signature>
-Parameters for a motor force that is applied automatically to the Rigibody2D along the line.
-SA: ::ref::useMotor.
+直線に沿って Rigibody2D に自動的に適用されるモーターの力を示すパラメータ
+SA: ::ref::useMotor
