@@ -1,7 +1,7 @@
 <signature>
 isKinematic
 </signature>
-Should this rigidbody be taken out of physics control?
-If this property is set to true then the rigidbody will stop reacting to collisions and applied forces. This can be useful when an object should usually be controlled "kinematically" (ie, non-physically) but then sometimes needs physics for realism. For example, a human character is usually not implemented using physics but may sometimes be thrown through the air and collide with objects as the result of an impact or explosion.
+Rigidbody が物理挙動の影響を受けるか
+このプロパティを true にセットすると Rigidbody は衝突や適用された力の影響を受けなくなります。これはオブジェクトが Kinematic （すなわち物理挙動の影響を受けることなく）制御したい場合に役に立ちますが、リアリティを追求する場合に物理挙動が必要な場合があります。例えば、人間のキャラクターは通常、物理挙動を用いて実装されませんが、ときには衝撃または爆発の影響により宙に舞ってオブジェクトと衝突させたい、というケースの場合などに考えられます。
 
-SA: Rigidbody::ref::isKinematic.
+SA: Rigidbody::ref::isKinematic

@@ -1,7 +1,7 @@
 <signature>
 mass
 </signature>
-Mass of the rigidbody.
-The mass is given in arbitrary units but the basic physical principles of mass apply. From Newton's classic equation force = mass x accelelation, it is apparent that the larger an object's mass, the more force it requires to accelerate it to a given velocity. Also, mass affects momentum, which is significant during collisions; an object with large mass will be moved less by a collision than an object with lower mass.
+Rigidbody の重さ
+重さの単位は任ですが、重さに関する物理法則が適用されます。ニュートンの法則から力 = 重さ × 加速度 であり、オブジェクトの重さが大きいほど特定の速度まで加速するのに必要な力が必要となります。さらに、重さは運動量に影響し、衝突のときに重要な意味を持ちます。重さが大きいオブジェクトのほうが、重さが小さいオブジェクトと比べて衝突による移動が小さくなります。
 
-SA: ::ref::AddForce, Rigidbody::ref::mass.
+SA: ::ref::AddForce, Rigidbody::ref::mass
