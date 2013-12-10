@@ -1,17 +1,17 @@
 <signature>
 ResetAllAchievements(Action<bool>)
 </signature>
-Reset all the achievements for the local user.
-Only affects the currently running game.
-Javascript code example:
+ローカルユーザの Achievement を全てリセット
+現在実行されているゲームのみ影響します。
+Javascript コードサンプル
 BEGIN EX
 		function Start () {
 			GameCenterPlatform.ResetAllAchievements( function(resetResult) {
-				Debug.Log( (resetResult) ? "Reset done." : "Reset failed." );
+				Debug.Log( (resetResult) ? "リセットが完了しました。" : "リセットに失敗しました。" );
 			});
 		}
 END EX
-C# example:
+C# コードサンプル:
 BEGIN EX
 		using UnityEngine;
 		using UnityEngine.SocialPlatforms.GameCenter;
@@ -19,7 +19,7 @@ BEGIN EX
 		public class Reset : MonoBehaviour {
 			void Start () {
 				GameCenterPlatform.ResetAllAchievements( (resetResult) => {
-					Debug.Log( (resetResult) ? "Reset done." : "Reset failed." );
+					Debug.Log( (resetResult) ? "リセットが完了しました。" : "リセットに失敗しました。" );
 				});
 			}
 		}

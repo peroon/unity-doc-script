@@ -1,4 +1,4 @@
 <signature>
 ShowLeaderboardUI(string,TimeScope)
 </signature>
-Show the leaderboard UI with a specific leaderboard shown initially with a specific time scope selected.
+Leaderboard UI を指定した Leaderboard にて、初期状態では指定されたタイムスコープで表示します。

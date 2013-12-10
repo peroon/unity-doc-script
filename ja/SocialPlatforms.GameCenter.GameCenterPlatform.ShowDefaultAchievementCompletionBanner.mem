@@ -1,9 +1,9 @@
 <signature>
 ShowDefaultAchievementCompletionBanner(bool)
 </signature>
-Show the default iOS banner when achievements are completed.
-This only works on iOS 5.0+ and does nothing on older versions.
-Javascript code example:
+Achievement が完了したときにデフォルトの iOS バナーを表示
+これは iOS 5.0 以上でのみ動作し、それより前のバージョンでは何もしません。
+Javascript コードサンプル:
 BEGIN EX
 		function Start () {
 			GameCenterPlatform.ShowDefaultAchievementCompletionBanner(true);
@@ -11,17 +11,17 @@ BEGIN EX
 				if (success)
 					ReportAchievement();
 				else
-					Debug.Log ("Failed to authenticate");
+					Debug.Log ("認証に失敗しました。");
 			});
 		}
 		
 		function ReportAchievement() {
 			Social.ReportProgress( "Achievement01", 100, function(result) {
-				Debug.Log ( result ? "Reported achievement" : "Failed to report achievement");
+				Debug.Log ( result ? "Achievement を報告しました。" : "Achievement の報告に失敗しました。");
 			});
 		}
 END EX
-C# example:
+C# コードサンプル:
 BEGIN EX
 		using UnityEngine;
 		using UnityEngine.SocialPlatforms.GameCenter;
@@ -33,13 +33,13 @@ BEGIN EX
 					if (success)
 						ReportAchievement();
 					else
-						Debug.Log ("Failed to authenticate");
+						Debug.Log ("認証に失敗しました。");
 				});
 			}
 			
 			void ReportAchievement() {
 				Social.ReportProgress( "Achievement01", 100, (result) => {
-					Debug.Log ( result ? "Reported achievement" : "Failed to report achievement");
+					Debug.Log ( result ? "Achievement を報告しました。" : "Achievement の報告に失敗しました。");
 				});
 		
 			}	
