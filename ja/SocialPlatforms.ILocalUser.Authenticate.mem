@@ -1,33 +1,33 @@
 <signature>
 Authenticate(Action<bool>)
 </signature>
-Authenticate the local user to the current active Social API implementation and fetch his profile data.
-This should be done before any other calls into the API. Depending on the platform this might trigger a blocking dialog for providing login details.
+現在のアクティブな Social API 実装に対してローカルユーザを認証しそのプロファイルデータをフェッチ
+これは他の API コールを行なう前に行なわれるべきです。プラットフォームによって、これはログインの詳細を表示するブロックのダイアログをトリガーする場合があります。
 BEGIN EX
 // JavaScript
 	Social.localUser.Authenticate (function (success) {
         if (success) {
-            Debug.Log ("Authentication successful");
+            Debug.Log ("認証が成功しました。");
             var userInfo : String = "Username: " + Social.localUser.userName + 
                 "\nUser ID: " + Social.localUser.id + 
                 "\nIsUnderage: " + Social.localUser.underage;
             Debug.Log (userInfo);
         }
         else
-            Debug.Log ("Authentication failed");
+            Debug.Log ("認証が失敗しました。");
     });
 END EX
 BEGIN EX
 // C#
 Social.localUser.Authenticate (success => {
 		if (success) {
-			Debug.Log ("Authentication successful");
+			Debug.Log ("認証が成功しました。");
 			string userInfo = "Username: " + Social.localUser.userName + 
 				"\nUser ID: " + Social.localUser.id + 
 				"\nIsUnderage: " + Social.localUser.underage;
 			Debug.Log (userInfo);
 		}
 		else
-			Debug.Log ("Authentication failed");
+			Debug.Log ("認証が失敗しました。");
 	});
 END EX
