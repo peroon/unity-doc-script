@@ -1,4 +1,4 @@
 <signature>
 completed
 </signature>
-Set to true when percentCompleted is 100.0.
+percentCompleted （完了率）が 100 % のとき、 true がセットされます。
