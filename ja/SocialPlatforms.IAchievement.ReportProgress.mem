@@ -1,4 +1,4 @@
 <signature>
 ReportProgress(Action<bool>)
 </signature>
-Send notification about progress on this achievement.
+当該 Achievement に関する完了状況の通知を送信します。
