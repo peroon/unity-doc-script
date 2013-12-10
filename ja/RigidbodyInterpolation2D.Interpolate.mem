@@ -1,1 +1,1 @@
-Smooth movement based on the object's positions in previous frames.
+過去のフレームでのオブジェクト位置にもとづいて動作をスムージング
