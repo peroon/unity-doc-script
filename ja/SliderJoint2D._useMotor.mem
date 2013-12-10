@@ -1,5 +1,5 @@
 <signature>
 useMotor
 </signature>
-Should a motor force be applied automatically to the Rigidbody2D?
-SA: ::ref::motor.
+Rigidbody2D に自動的にモーターの力を適用するか
+SA: ::ref::motor

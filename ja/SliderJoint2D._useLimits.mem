@@ -1,5 +1,5 @@
 <signature>
 useLimits
 </signature>
-Should motion limits be used?
-SA: ::ref::limits.
+モーションの制限を使用するか
+SA: ::ref::limits
