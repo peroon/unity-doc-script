@@ -2,4 +2,4 @@
 LoadScores(string,Action<IScore[]>)
 LoadScores(ILeaderboard,Action<bool>)
 </signature>
-See [[Social.LoadScores]].
+[[Social.LoadScores]] を参照

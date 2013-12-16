@@ -1,4 +1,4 @@
 <signature>
 LoadAchievements(Action<IAchievement[]>)
 </signature>
-See [[Social.LoadAchievements]].
+[[Social.LoadAchievements]] を参照
