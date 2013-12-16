@@ -1,2 +1,2 @@
-The generic Social API interface which implementations must inherit.
-See [[Social]] for details on usage.
+実装が継承すべきジェネリックな Social API インタフェース
+使用方法の詳細については [[Social]] を参照して下さい。
