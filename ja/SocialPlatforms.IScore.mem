@@ -1,2 +1,2 @@
-A game score.
-It can be received from a ILeaderboard instance or using the Social.LoadScores call which uses the default leaderboard filters.
+ゲームのスコア
+ILeaderboard インスタンス、またはデフォルトの Leaderboard フィルタを使用した Social.LoadScores 呼び出しを使用して取得できます。
