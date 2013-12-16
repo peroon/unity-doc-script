@@ -1,4 +1,4 @@
 <signature>
 ReportScore(Action<bool>)
 </signature>
-Report this score instance.
+スコア インスタンスをレポート
