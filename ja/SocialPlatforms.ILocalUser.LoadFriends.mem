@@ -1,9 +1,9 @@
 <signature>
 LoadFriends(Action<bool>)
 </signature>
-Fetches the friends list of the logged in user. The friends list on the [[ISocialPlatform.localUser|Social.localUser]] instance is populated if this call succeeds.
+ログイン ユーザのフレンド リストをフェッチ。この呼び出しが成功すると [[ISocialPlatform.localUser|Social.localUser]] インスタンスのフレンド リストが生成されます。
 BEGIN EX
 Social.localUser.LoadFriends (success => {
-		Debug.Log (success ? "Loaded " + Social.localUser.friends.Length + " friends" : "Loading friends failed");
+		Debug.Log (success ? "フレンドのロードに成功: " + Social.localUser.friends.Length + " フレンド件数" : "フレンド のロードが失敗しました。");
 	});
 END EX

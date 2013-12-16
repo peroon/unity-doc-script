@@ -1,5 +1,5 @@
 <signature>
 authenticated
 </signature>
-Checks if the current user has been authenticated.
-If not then he will need to log on.
+現在のユーザが認証済みかチェックします。
+認証済みでなければログインする必要があります。
