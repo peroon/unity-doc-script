@@ -1,5 +1,5 @@
 <signature>
 userID
 </signature>
-The user who owns this score.
- You can load the users information using Social.LoadUsers.
+スコアのオーナーであるユーザ
+ユーザ情報のロードは Social.LoadUsers を使用できます。

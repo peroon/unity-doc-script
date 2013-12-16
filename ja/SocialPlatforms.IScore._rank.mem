@@ -1,5 +1,5 @@
 <signature>
 rank
 </signature>
-The rank or position of the score in the leaderboard. 
-Only valid when the score is retreived from a server.
+Leaderboard のランクまたはスコア順位
+サーバからスコアが取得されたときのみ有効
