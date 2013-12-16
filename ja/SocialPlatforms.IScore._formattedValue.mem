@@ -1,5 +1,5 @@
 <signature>
 formattedValue
 </signature>
-The correctly formatted value of the score, like X points or X kills.
-You should not use the value parameter directly but this string instead.
+スコアを適切にフォーマットした値、例えば X 点、または倒した敵の数 X など。
+value パラメータを直接使用せずにこの文字列を代わりに使用すべきです。 
