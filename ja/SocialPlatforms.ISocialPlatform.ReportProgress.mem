@@ -1,4 +1,4 @@
 <signature>
 ReportProgress(string,double,Action<bool>)
 </signature>
-See [[Social.ReportProgress]].
+[[Social.ReportProgress]] を参照

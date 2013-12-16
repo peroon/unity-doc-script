@@ -1,4 +1,4 @@
 <signature>
 ReportScore(long,string,Action<bool>)
 </signature>
-See [[Social.ReportScore]].
+[[Social.ReportScore]] を参照
