@@ -1,0 +1,13 @@
+<signature>
+CrossFade(string,float,int,float)
+CrossFade(int,float,int,float)
+</signature>
+Create a dynamic transition between the current state and the destination state.
+Both state as to be on the same layer.
+
+You cannot change the current state on a synchronized layer, you need to change it on the referenced layer.
+@param stateName The name of the destination state.
+@param transitionDuration The duration of the transition. Value is in source state normalized time.
+@param normalizedTime Start time of the current destination state. Value is in source state normalized time, should be between 0 and 1.
+@param layer Layer index containing the destination state.
+@param stateNameHash State hash of the destination state.

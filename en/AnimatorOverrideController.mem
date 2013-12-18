@@ -1,3 +1,9 @@
-Interface to control AnimationSet.
-AnimationSet are used to override clips from a controller to specialize some animation for a given avatar.
-SA: Animator.animationSet.
+Interface to control AnimatorOverrideController.
+AnimatorOverrideController are used to override clips from a controller to specialize some animations for a given avatar.
+BEGIN EX
+Animator animator = GetComponent<Animator>();
+
+AnimatorOverrideController overrideController = new AnimatorOverrideController();
+
+animator.runtimeAnimatorController = overrideController;
+END EX

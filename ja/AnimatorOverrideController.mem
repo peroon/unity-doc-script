@@ -1,3 +1,9 @@
-アニメーションセットを制御するインタフェース
-アニメーションセットは与えられたアバターで何らかのアニメーションを専用に加工してアニメーションクリップを上書きするためにコントローラから使用されます。
-SA: Animator.animationSet.
+Interface to control AnimatorOverrideController.
+AnimatorOverrideController are used to override clips from a controller to specialize some animations for a given avatar.
+BEGIN EX
+Animator animator = GetComponent<Animator>();
+
+AnimatorOverrideController overrideController = new AnimatorOverrideController();
+
+animator.runtimeAnimatorController = overrideController;
+END EX

@@ -1,6 +1,4 @@
 <signature>
 deltaPosition
 </signature>
-最後に評価されたフレームについて、アバターの delta position を取得します。
-@TODO: 
-Delta position はアバターの回転（Rotation）を事前に乗算しておくべきです。
+Gets the avatar delta position for the last evaluated frame.

@@ -1,0 +1,10 @@
+<signature>
+Play(string,int,float)
+Play(int,int,float)
+</signature>
+Plays a state.
+This could be used to synchronize your animation with audio or synchronize an Animator over the network.
+@param stateName The name of the state the will be played.
+@param layer The layer where the state is.
+@param normalizedTime The normalized time at which the state will play.
+@param stateNameHash The  hash of the state.
