@@ -1,4 +1,4 @@
 <signature>
 packingRotation
 </signature>
-If Sprite is packed (see [[Sprite.packed]]), returns its SpritePackingRotation.
+スプライトがパックされている場合 ( [[Sprite.packed]] を参照)、SpritePackingRotation を返す

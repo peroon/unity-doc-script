@@ -1,4 +1,3 @@
-Represents a Sprite object for use in 2D gameplay.
-''Sprites'' are 2D graphic objects used for characters, props, projectiles and other elments of 2D gameplay. The graphics are obtained from bitmap images - [[Texture2D]]. The Sprite class primarily identifies the section of the image that should be used for a specific sprite. This information can then be used by a SpriteRenderer component on a GameObject to actually display the graphic.
-
-SA: [[SpriteRenderer]] class.
+2D ゲームプレイにおけるスプライト オブジェクトを示す
+''Sprites'' とは キャラクター、アイテム、発射物および他の 2D ゲーム要素として使用される 2D グラフィックス オブジェクトです。グラフィックスはビットマップ、すなわち [[Texture2D]] から適用します。 Sprite クラスは特定のスプライトで用いられるべき画像イメージの箇所を主に示します。この情報は GameObject 上の SpriteRenderer で使用して実際にグラフィックスを表示できます。。
+SA: [[SpriteRenderer]] クラス
