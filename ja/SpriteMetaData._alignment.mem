@@ -1,6 +1,6 @@
-Edge-relative alignment of the sprite graphic.
-The possible values relate to the SpriteAlignment enum as follows:
+エッジに相対的なスプライト グラフィックスの並べ方
+取りうる値は SpriteAlignment 列挙体にもとづき次の通りです:
 
-Center = 0, TopLeft = 1, TopCenter = 2, TopRight = 3, LeftCenter = 4, RightCenter = 5, BottomLeft = 6, BottomCenter = 7, BottomRight = 8, Custom = 9.
+Center = 0, TopLeft = 1, TopCenter = 2, TopRight = 3, LeftCenter = 4, RightCenter = 5, BottomLeft = 6, BottomCenter = 7, BottomRight = 8, Custom = 9
 
-SA: [[SpriteAlignment]] enum.
+SA: [[SpriteAlignment]] 列挙体
