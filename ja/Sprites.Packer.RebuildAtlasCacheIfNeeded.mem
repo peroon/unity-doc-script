@@ -1,5 +1,5 @@
 <signature>
 RebuildAtlasCacheIfNeeded(BuildTarget,bool,Execution)
 </signature>
-Rebuilds the Sprite atlas cache.
-If Sprite atlas files are available, they will be remapped.
+スプライト アトラス キャッシュを再作成
+もしスプライト アトラスのファイルが利用可能である場合、再マップされます。
