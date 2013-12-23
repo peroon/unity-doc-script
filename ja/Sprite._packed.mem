@@ -1,4 +1,4 @@
 <signature>
 packed
 </signature>
-Returns true if this Sprite is packed in an atlas.
+スプライトがアトラスでパックされている場合、 true を返す

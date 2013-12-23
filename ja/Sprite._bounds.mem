@@ -1,5 +1,5 @@
 <signature>
 bounds
 </signature>
-Bounds of the Sprite, specified by its center and extents in world space units.
-SA: ::ref::rect, ::ref::size.
+スプライトの境界を、その中心と範囲をワールド座標単位で示したもの
+SA: ::ref::rect, ::ref::size

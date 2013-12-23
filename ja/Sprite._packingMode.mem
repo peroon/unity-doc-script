@@ -1,4 +1,4 @@
 <signature>
 packingMode
 </signature>
-If Sprite is packed (see [[Sprite.packed]]), returns its SpritePackingMode.
+スプライトがパックされている場合 ( [[Sprite.packed]] を参照)、SpritePackingMode を返す
