@@ -1,4 +1,4 @@
 <signature>
 GetVersion()
 </signature>
-Return the version of your policy. Sprite Packer needs to know if atlas grouping logic changed.
+ポリシーのバージョンを返す。スプライトパッカーはアトラスのグルーピング ロジックが変更されたか知る必要があります。

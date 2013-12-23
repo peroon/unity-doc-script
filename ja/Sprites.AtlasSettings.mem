@@ -1,2 +1,2 @@
-Describes the final atlas texture.
-Note that if not all Sprites can be fit to an area defined by maxWidth and maxHeight, multiple atlas pages will be generated.
+最終のアトラス テクスチャを表現
+全てのスプライトが maxWidth および maxHeight で定義された領域に当てはまらない場合、複数のアトラス ページが生成されることに注意して下さい
