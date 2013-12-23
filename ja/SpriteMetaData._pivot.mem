@@ -1,1 +1,1 @@
-Pivot point of the Sprite relative to its bounding rectangle.
+境界となる Rect に相対的なスプライトのピボット位置
