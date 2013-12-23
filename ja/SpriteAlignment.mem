@@ -1,2 +1,2 @@
-How a Sprite's graphic rectangle is aligned with its pivot point.
-SA: [[Sprite]] class.
+スプライトのグラフィックス Rect が整列するピボット位置としてどこを指定するか
+SA: [[Sprite]] クラス
