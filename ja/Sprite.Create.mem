@@ -1,9 +1,9 @@
 <signature>
 Create(Texture2D,Rect,Vector2,float)
 </signature>
-Create a new Sprite object.
-SA: [[SpriteRenderer]] class.
-@param texture Texture from which to obtain the sprite graphic.
-@param rect Rectangular section of the texture to use for the sprite.
-@param pivot Sprite's pivot point relative to its graphic rectangle.
-@param pixelsToUnits Scaling to map pixels in the image to world space units.
+Sprite オブジェクトを新規作成
+SA: [[SpriteRenderer]] クラス
+@param texture Sprite のグラフィックスとして適用させるテクスチャ
+@param rect Sprite に適用させるテクスチャの Rect 領域
+@param pivot グラフィックスの Rect に対するピボット地点の相対位置
+@param pixelsToUnits 画像イメージのピクセルのワールド座標単位に対するスケーリング

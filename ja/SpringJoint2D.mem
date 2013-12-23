@@ -1,4 +1,4 @@
-Joint that attempts to keep two Rigidbody2D objects a set distance apart by applying a force between them.
-Note that unlike DistanceJoint2D, the length of the joint can stretch and oscillate.
+二つの Rigidbody2D に力を適用することで一定距離だけ離れた位置を保つジョイント
+DistanceJoint2D と異なり、ジョイントの長さは伸びたり振動したりします。
 
-SA: [[DistanceJoint2D]] class, [[HingeJoint2D]] class, [[SliderJoint2D]] class.
+SA: [[DistanceJoint2D]] クラス, [[HingeJoint2D]] クラス, [[SliderJoint2D]] クラス

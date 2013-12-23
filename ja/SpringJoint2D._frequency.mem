@@ -1,7 +1,7 @@
 <signature>
 frequency
 </signature>
-The frequency at which the spring oscillates around the distance distance between the objects.
-The spring will oscillate with a certain frequency as it attempts to reestablish the desired distance between the objects. A ''damping ratio'' can be set to cause this oscillation to die down over time.
+バネがオブジェクト間を振動する周期
+バネはオブジェクトと特定の距離を維持しようとして一定周期で振動します。Damping Ratio （減衰率）をセットすることで時間の経過とともにこの振動を減衰させることが出来ます。
 
-SA: ::ref::dampingRatio.
+SA: ::ref::dampingRatio
