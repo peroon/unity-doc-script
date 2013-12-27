@@ -1,5 +1,6 @@
 <signature>
 spriteImportMode
 </signature>
-Selects Single or Manual import mode for Sprite textures.
-SA: [[SpriteImportMode]] enum.
+Spriteテクスチャのインポートモードを設定します。
+
+SA: [[SpriteImportMode]]

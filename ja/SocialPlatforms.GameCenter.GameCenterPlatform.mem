@@ -1,39 +1,24 @@
-iOS GameCenter implementation for network services.
-An application bundle ID must be registered on iTunes Connect
-before it can access GameCenter. This ID must be properly set in
-the iOS player properties in Unity. When debugging you can use the GameCenter
-sandbox (a text displaying this is shown when logging on). You
-must log on in the application to get into sandbox mode, logging
-on in the GameCenter application will always use the production version.
+ネットワークサービスのiOSゲームセンターを実装するためのクラスです。
+ゲームセンターにアクセするにはアプリケーションのバンドルIDをiTunes Connectで登録する必要があります。
+このバンドルIDはUnity上のプロパティに設定されているはずなのでデバッグ時にはゲームセンターのサンドボックスを使用することが出来ます。そのときは必ずログオンを行う必要があります。（ログオン時にサンドボックスである表示がされます）
+このサンドボックスはアプリが製品版でも使用することが可能です。
 
-When using the GameCenterPlatform class in C# you need to include the 
-UnityEngine.SocialPlatforms.GameCenter namespace.
+C#でGameCenterPlatformクラスを使用する場合はUnityEngine.SocialPlatforms.GameCenterのネームスペースを含める必要があります。
 
-Some things to be aware of when using the generic API:
+
+このAPIを使用する上で注意するべき点がいくつかあります: 
 
 __Authenticate()__ \\
-If the user is not logged in, a standard GameKit UI is shown 
-where he can log on or create a new user. It is recommended
-this is done as early as possible.
+もしユーザーがログインしていない場合GameKitのUIが表示されログインするか新しくユーザーを作成を行います。
+このAPIの呼び出しはゲーム開始直後のようなできるだけ早めに行うことをおすすめします。
 
-__Achievement descriptions and Leaderboards__ \\
-The achivements descriptions and leaderboard configurations can be configured in the 
-iTunes Connect portal. Achievements get unique identifiers and the
-leaderboards use category names as identifiers.
+
+__Achievementの説明とLeaderboards__ \\
+Achievementの説明とLeaderboardの構成を設定するにはiTunes Connectのポータルから行います。
+AchievementはユニークなID、Leaderboardはユニークなカテゴリ名を使用します。
 
 __GameCenter Sandbox__ \\
-Development applications use the GameCenter Sandbox. This is a seperate GameCenter
-than the live one, nothing is shared between them. It is recommended that you
-create a seperate user for testing with the GameCenter Sandbox, you should not use
-your real Apple ID for this. You can only log on to the sandbox through a development
-application, make sure you are not logged into GameCenter using the GameCenter app before
-testing begins. You should see ''*** Sandbox ***'' in the login dialog, if you don't see this
-then you are logging on to the real one. Sometime it happens that the OS forgets that the
-application is using the sandbox and you will be logged on to the real one. If the application
-has not be submitted to Apple already then this will probably result in an error. To fix this
-all that needs to be done is to delete the app and redeploy with Xcode. To make another apple 
-ID a friend of a sandbox user it needs to be a sandbox user as well.
+開発時のアプリケーションはゲームセンターのサンドボックスを使用します。これは実際のGameCenterとは切り離されており、互いの情報の共有は行われません。サンドボックスでテストのために新しくユーザーを作成する必要があり、決して自分のAppleIDを使用しないでください。開発時のアプリケーションでテストを始める前にGameCenterに自分のAppleIDでログインしていないことを確認して下さい。ログインダイアログに ''*** Sandbox ***'' の表示がない場合は自分のAppleIDでログインしています。
+いつかOSがサンドボックスを使用するか実際のアカウントでログインするかの情報を忘れてしまうことがあります。もしアプリケーションがまだAppleに提出していない場合、恐らくエラーを返します。修正を行うには一旦アプリケーションを削除し、再度Xcodeからデプロイを行います。他のAppleIDを作成し、サンドボックスユーザーとフレンドになるには同じくサンドボックスユーザーでなくてはいけません。
 
-If you start getting errors when accessing GameCenter stating that the
-application is not recognized you'll need to delete the application complately and re-deploy.
-Make sure you are not logged on when starting the newly installed application again.
+ゲームセンターを起動してアクセスした時にエラーが出た場合、アプリケーションは一度アプリケーションを完全に削除し再度デプロイする必要があります。そしてアプリケーションをインストールして起動する時にゲームセンターにログオンしていないことを確認して下さい。

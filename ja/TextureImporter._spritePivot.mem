@@ -1,4 +1,4 @@
 <signature>
 spritePivot
 </signature>
-The point in the Sprite object's coordinate space where the graphic is located.
+Spriteオブジェクトの座標空間の中心点の位置を設定します。

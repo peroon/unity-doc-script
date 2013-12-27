@@ -1,5 +1,5 @@
 <signature>
 ReadTextureImportInstructions(TextureImportInstructions)
 </signature>
-Reads the active texture output instructions of this [[TextureImporter]].
-This can be used for [[ISpritePackerPolicy]] grouping.
+この [[TextureImporter]] のアクティブなテクスチャの情報を読み込みます。
+これは [[ISpritePackerPolicy]] のグループ化で使用することが出来ます。

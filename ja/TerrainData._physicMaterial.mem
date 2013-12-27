@@ -1,4 +1,4 @@
 <signature>
 physicMaterial
 </signature>
-The physic material used by  TerrainCollider using this Terrain.
+PhysicsMaterialはTerrainで使用しているTerrainColliderで使用されます

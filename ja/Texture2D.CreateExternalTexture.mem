@@ -1,8 +1,10 @@
 <signature>
 CreateExternalTexture(int,int,TextureFormat,bool,bool,IntPtr)
 </signature>
-Creates Unity Texture on top of already inited native texture object.
-You should make sure that params specified here are the same as the ones used for creation of native texture.
-Native texture object on Direct3D-like devices is a pointer to the base type, from which a texture can be created
-(IDirect3DBaseTexture9 on D3D9, ID3D11ShaderResourceView on D3D11). On OpenGL/OpenGL ES it is GLuint.
-@param nativeTex Native texture object.
+ネイティブテクスチャオブジェクトが既に初期化されている場合、Unityテクスチャ上にネイティブテクスチャを作成します。
+
+ネイティブテクスチャの作成にパラメータに使用されるものと同じものが作成されるか確認すべきです。
+
+Direct3Dのようなデバイス上のネイティブテクスチャはベース型のポインタでそこからテクスチャを作成することが出来ます。
+(D3D9上ではIDirect3DBaseTexture9, D3D11上ではID3D11ShaderResourceView). OpenGL/OpenGL ES ではGLuintです。
+@param nativeTex ネイティブテクスチャ

@@ -1,5 +1,5 @@
 <signature>
 qualifiesForSpritePacking
 </signature>
-Returns true if this [[TextureImporter]] is setup for Sprite packing.
-If it returns true, texture is imported uncompressed for Sprite packing.
+もしこの [[TextureImporter]] がSprite Packingのためにセットアップが行われていたらtrueを返します。
+もしtrueを返した時、テクスチャはSprite Packingのために非圧縮でインポートされます。

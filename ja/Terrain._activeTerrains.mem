@@ -1,4 +1,4 @@
 <signature>
 activeTerrains
 </signature>
-The active terrains in the scene.
+シーン内でアクティブになっている全ての地形を返す
