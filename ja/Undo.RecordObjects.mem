@@ -1,5 +1,5 @@
 <signature>
 RecordObjects(Object[],string)
 </signature>
-Records multiple undoable objects in a single call. This is the same as calling Undo.RecordObject multiple times.
+１回の呼び出しで複数のオブジェクトを記録します。これは複数回にわけてUndo.RecordObjectを呼び出した時と同じです。
 SA: Undo.RecordObject.

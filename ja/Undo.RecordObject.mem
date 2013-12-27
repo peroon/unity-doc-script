@@ -1,10 +1,11 @@
 <signature>
 RecordObject(Object,string)
 </signature>
-Records any changes done on the object after the RecordObject function.
-Almost all property changes can be recorded with this function. The transform parent, AddComponent, object destruction  can not be recorded with this function, for that you should use the dedicated functions. 
+RecordObjectが呼び出された後の変更点を記録します。
+ほぼ全てのプロパティの変更点はこの関数で記録することが出来ます。しかし、Transformの親の変更、コンポーネントの追加、オブジェクトの破棄はこの関数で記録することが出来ないので専用の関数を使用してください。
 
-Internally this will create a temporary copy of the objects state and at the end of the frame Unity will diff the state and thus detect what exactly has changed. The changed properties are then recorded on the undo stack. If nothing has actually changed (Binary exact comparison is used for all properties), no undo operation will be stored on the stack.
+内部的にはオブジェクトの状態を一時的にコピーしフレームの最後で差分を取り、正確に何が変更されたかを検出します。変更されたプロパティはUndoスタックに保持されます。もし変更点がなにもない場合（バイナリの正確な比較は全てのプロパティで行われます）Undoスタックには保持されません。
+
 CONVERTEXAMPLE
 BEGIN EX
 Undo.RecordObject (Selection.activeTransform, "Edit Transform");

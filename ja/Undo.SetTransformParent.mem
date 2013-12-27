@@ -1,5 +1,5 @@
 <signature>
 SetTransformParent(Transform,Transform,string)
 </signature>
-Sets the parent of transform to the new parent and records an undo operation.
-This is equivalent to calling transform.parent = newParent, but it additionally records the undo operation.
+新しくTransformの親を設定しUndo操作を記録します。
+これは transform.parent = newParent と同じ動作をしますが、Undo操作を行うことが出来ます。

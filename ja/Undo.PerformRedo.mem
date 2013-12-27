@@ -1,6 +1,5 @@
 <signature>
 PerformRedo()
 </signature>
-Perform an Redo operation.
-This performs a redo operation. It is the same as clicking on the Edit->Redo menu.
+Redo操作を行います。この動作はメニューの「Edit->Redo」をクリックした時と同じです。
 SA: ::ref::PerformUndo.

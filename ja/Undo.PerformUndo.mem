@@ -1,6 +1,5 @@
 <signature>
 PerformUndo()
 </signature>
-Perform an Redo operation.
-This performs a undo operation. It is the same as clicking on the Edit->Undo menu.
+Undo操作を行います。この動作はメニューの「Edit->Undo」をクリックした時と同じです。
 SA: ::ref::PerformRedo.

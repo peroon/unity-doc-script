@@ -1,5 +1,5 @@
 <signature>
 IncrementCurrentGroup()
 </signature>
-Unity automatically groups undo operations by the current group index.
-The current group is automatically incremented based on events eg. mouse down events, executing a menu item increments the current group. But sometimes it is necessary to manually group undo operations.
+Unityが自動的にUndo操作をグループ化したもので現在のグループインデックスを取得します。
+現在のグループは様々なイベントをベースとして自動的に増加されていきます。マウスダウンやメニューアイテムで現在のグループインデックスは増加します。しかしこのAPIを使用する場合、手動でグループインデックスの操作を元に戻す必要が出る時もあります。

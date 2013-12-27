@@ -1,5 +1,5 @@
 <signature>
 RevertAllInCurrentGroup()
 </signature>
-Performs the last undo operation but does not record a redo operation.
-This is useful when you want to simply revert the last performed action. In Unity the escape is commonly used to execute this function.
+Undo操作は実行されますがRedo操作は行うことは出来ません。
+これは最後に実行されたアクションを取り消す場合に使用すると大変便利です。UnityではEscapeを押した時にこの関数を使用しています。

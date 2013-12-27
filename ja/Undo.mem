@@ -1,28 +1,29 @@
-Lets you register undo operations on specific objects you are about to perform changes on.
-The Undo system stores delta changes in the undo stack. Undo operations are automatically combined together based on events Eg. mouse down events will split undo groups.
+特定のオブジェクトに対する変更点をUndoクラスによってもとに戻すことが出来ます。
+UndoシステムはUndoスタック内の差分を保持しています。Undo操作はイベント（マウスダウンなど）をベースとして自動的に分割され追加されていきます。
 
-Undo operations store either per property or per object state. This way they scale well with any scene size.
-The most important operations are outlined below.
+Udno操作はプロパティやオブジェクトの状態ごとに保持されます。この方法はあらゆるシーンサイズにスケールされます。
 
-__Modifying a single property:__
+重要なUndo操作の方法は以下の通りです。
+
+__１つのプロパティを修正:__
 BEGIN EX NOCHECK
 Undo.RecordObject (myGameObject.light, "Set Light Range");
 myGameObject.light.range = 5;
 END EX
-__Adding a component :__
+__コンポーネントを追加 :__
 BEGIN EX
 Undo.AddComponent<RigidBody> (myGameObject);
 END EX
-__Creating a new game object:__
+__新しくゲームオブジェクトを生成:__
 BEGIN EX NOCHECK
 var go = new GameObject ();
 Undo.RegisterCreatedObjectUndo (go, "Created go");
 END EX
-__Destroying a game object or component:__
+__ゲームオブジェクトまたはコンポーネントを破棄:__
 BEGIN EX NOCHECK
 Undo.DestroyObjectImmediate (myGameObject);
 END EX
-__Changing transform parenting:__
+__Transformの親を変更:__
 BEGIN EX NOCHECK
 Undo.SetTransformParent (myGameObject.transform, newTransformParent);
 END EX
