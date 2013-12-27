@@ -1,5 +1,6 @@
 <signature>
 spritesheet
 </signature>
-Array representing the sections of the atlas corresponding to individual sprite graphics.
-SA: [[SpriteMetaData]] class.
+個々のSpriteグラフィックスに対応したAtlasのセクション配列を取得します。
+
+SA: [[SpriteMetaData]]

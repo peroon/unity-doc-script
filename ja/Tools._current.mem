@@ -1,7 +1,7 @@
 <signature>
 current
 </signature>
-The tool that is currently selected for the Scene View.
-This refers to the View, Move, Rotate and Scale tools available in the toolbar for the main editor window.
+Sceneビューで現在選択されているToolを取得します。
+これは左上のトールバーで使用できるView, Move, Rotate, Scaleのことを指します。
 
 SA: viewTool.

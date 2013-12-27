@@ -1,8 +1,8 @@
 <signature>
 spriteAlignment
 </signature>
-Edge-relative alignment of the sprite graphic.
-The possible values relate to the SpriteAlignment enum as follows:
+Spriteグラフィックスの相対的なエッジの位置を設定します。
+指定可能なものはSpriteAlignmentで使用できるものです。
 
 Center = 0, TopLeft = 1, TopCenter = 2, TopRight = 3, LeftCenter = 4, RightCenter = 5, BottomLeft = 6, BottomCenter = 7, BottomRight = 8, Custom = 9.
 

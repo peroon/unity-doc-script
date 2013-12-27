@@ -1,4 +1,4 @@
 <signature>
 spritePixelsToUnits
 </signature>
-Scale factor between pixels in the sprite graphic and world space units.
+Spriteのグラフィックのピクセルとワールド空間のUnits間のスケールファクターを設定します。

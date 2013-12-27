@@ -1,4 +1,4 @@
 <signature>
 spritePivot
 </signature>
-Pivot point of the Sprite relative to its graphic's rectangle.
+グラフィックのRectに相対的なSpriteのピボット位置を設定します。

@@ -1,4 +1,4 @@
 <signature>
 spriteExtrude
 </signature>
-The number of blank pixels to leave between the edge of the graphic and the mesh.
+グラフィックとメッシュのエッジの間に空白スペースを入れます。0-32の間で設定することが可能です。

@@ -1,2 +1,2 @@
-ASTC compressed RGBA texture format, 4x4 block size.
+ASTC圧縮されたRGBAテクスチャフォーマット。4x4のブロックサイズ。
 SA: TextureImporter.textureFormat.
