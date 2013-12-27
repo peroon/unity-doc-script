@@ -1,5 +1,5 @@
 <signature>
 isOnAppTrial
 </signature>
-Checks whether the application is installed in trial mode.
-__Note:__ this API is supported only on Windows Phone 8 and Windows Store Apps.
+アプリケーションがトライアルモードでインストールされているかどうかを確認します。
+__Note:__ このAPIはWindows Phone 8とWindows Store Appsでのみサポートされています。
