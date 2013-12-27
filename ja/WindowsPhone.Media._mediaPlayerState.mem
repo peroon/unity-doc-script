@@ -1,4 +1,4 @@
 <signature>
 mediaPlayerState
 </signature>
-Gets the current media playback state, [[Media.MediaState]].
+現在のメディアプレイバックステートを取得します。 [[Media.MediaState]].
