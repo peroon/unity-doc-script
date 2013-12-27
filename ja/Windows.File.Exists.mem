@@ -1,5 +1,5 @@
 <signature>
 Exists(string)
 </signature>
-Determines whether the specified file exists.
-@param path The file to check.
+ファイルが存在するかどうかをチェックします
+@param path チェックしたいファイルのパス

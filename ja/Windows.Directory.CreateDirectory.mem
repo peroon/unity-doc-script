@@ -1,5 +1,5 @@
 <signature>
 CreateDirectory(string)
 </signature>
-Creates directory in the specified path.
-@param path The directory path to create.
+パスからディレクトリを作成します
+@param path 作成するディレクトリのパス

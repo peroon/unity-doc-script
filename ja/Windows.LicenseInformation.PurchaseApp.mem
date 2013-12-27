@@ -1,12 +1,16 @@
 <signature>
 PurchaseApp()
 </signature>
-Attempts to purchase the app if it is in installed in trial mode. This API is supported only on Windows Phone 8 and Windows Store Apps.
-Behaviour on Windows Phone 8:
-Redirects the user to application page on the Store. Returns an empty string. You can use ::ref::isOnAppTrial afterwards to find out whether the user bought the application.
 
-Behaviour on Windows Store Apps:
-Pops up a dialog for a user asking whether he wants to buy the application. If use buys an app, returns a valid purchase receipt string. Otherwise, returns an empty string.
+トライアルモードでインストールされている場合、アプリを購入します。このAPIはWindows Phone 8とWindows Store Appsでのみサポートされています。
+
+Windows Phone 8での挙動:
+ユーザーをStore上のアプリケーションページにリダイレクトさせます。その時の戻り値は空文字です。
+Redirects the user to application page on the Store. Returns an empty string.  ::ref::isOnAppTrial を使用してユーザーがアプリケーションを購入したかどうかをチェックすることが出来ます。
+
+Windows Store Appsでの挙動:
+アプリケーションを購入するかどうかのポップアップダイアログが表示されます。もしユーザーがアプリケーションを購入した場合、戻り値として購入レシートを取得します。それ以外は空文字を返します。
+
 CONVERTEXAMPLE
 BEGIN EX
 var m_Receipt : string;

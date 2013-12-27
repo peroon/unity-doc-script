@@ -1,6 +1,6 @@
 <signature>
 temporaryFolder
 </signature>
-Returns a path to temporary folder.
-On Windows Store Apps, it will be <main drive>:\Users\<user name>\AppData\Local\Packages\<package id>\TempState, directory is writeable, so you can create, read and write files to it.
-In Editor, it will be <your project path>\TempState.
+Temporaryフォルダのパスを返します。
+Windows Store Appsでは <main drive>:\Users\<user name>\AppData\Local\Packages\<package id>\TempState を返します。 このディレクトリは書き込み可能なのでディレクトリを作成したりファイルの読み書きが可能です。
+エディタ上では <your project path>\TempState となります。
