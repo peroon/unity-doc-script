@@ -1,5 +1,6 @@
 <signature>
 FromByteArray(IntPtr)
 </signature>
-Convert a Java array of <tt>byte</tt> to a managed array of System.Byte.
-SA: [[AndroidJNI.GetByteArrayElement]], [[AndroidJNI.GetArrayLength]].
+Java の <tt>byte</tt> 配列を System.Byte のマネージド配列に変換します。
+SA: [[AndroidJNI.GetByteArrayElement]], [[AndroidJNI.GetArrayLength]]
+

@@ -1,5 +1,5 @@
 <signature>
 FromBooleanArray(IntPtr)
 </signature>
-Convert a Java array of <tt>boolean</tt> to a managed array of System.Boolean.
-SA: [[AndroidJNI.GetBooleanArrayElement]], [[AndroidJNI.GetArrayLength]].
+Javaの <tt>boolean</tt> 配列を System.Boolean のマネージド配列に変換する。
+SA: [[AndroidJNI.GetBooleanArrayElement]], [[AndroidJNI.GetArrayLength]]

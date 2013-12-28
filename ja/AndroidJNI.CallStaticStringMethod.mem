@@ -1,7 +1,7 @@
 <signature>
 CallStaticStringMethod(IntPtr,IntPtr,jvalue[])
 </signature>
-Invokes a static method on a Java object, according to the specified <tt>methodID</tt>, optionally passing an array of arguments (<tt>args</tt>) to the method.
-This is a convenience function that calls CallStaticObjectMethod() with the same parameters, but creates a managed string from the result.
+指定された <tt>methodID</tt>を使い、任意で戻り値がString型のstaticのJava  オブジェクト上のメソッド呼び出し、任意で引数(<tt>args</tt>)を設定する。
+これは CallStaticObjectMethod() を同様のパラメータで呼び出しつつ結果から Managed String を作成する便利な関数です。
 
-SA: [[AndroidJNI.CallStaticObjectMethod]].
+SA: [[AndroidJNI.CallStaticObjectMethod]]
