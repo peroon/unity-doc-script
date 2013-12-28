@@ -1,12 +1,12 @@
 <signature>
 visible
 </signature>
-Banner visibility. Initially banner is not visible.
-Please note that if you hide banner, ads might not be reloaded with time, so if you no longer need banner it is better to delete it completely.
+バナーが表示されているか。初期設定ではバナーは非表示です。
+もしバナーを非表示にすると、広告は時間が経つとリロードされない場合があるため、バナーが不要となったときは完全に削除すべきです。
 BEGIN EX
 void OnBannerClicked()
 {
-	Debug.Log("Clicked!\n");
+	Debug.Log("クリックされました!\n");
 	banner.visible = false;
 	banner = null;
 }
@@ -14,7 +14,7 @@ END EX
 BEGIN EX
 void OnBannerLoaded()
 {
-	Debug.Log("Loaded!\n");
+	Debug.Log("ロードされました!\n");
 	banner.visible = true;
 }
 END EX
