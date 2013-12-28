@@ -1,6 +1,6 @@
 <signature>
 ConvertToJNIArray(Array)
 </signature>
-Creates a Java array from a managed array.
-SA: [[AndroidJNIHelper.ConvertFromJNIArray]].
-@param array Managed array to be converted into a Java array object.
+マネージド配列から Java 配列を作成します。
+SA: [[AndroidJNIHelper.ConvertFromJNIArray]]
+@param array Java 配列オブジェクトに変換するマネージド配列

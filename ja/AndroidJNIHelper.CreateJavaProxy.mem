@@ -1,6 +1,6 @@
 <signature>
 CreateJavaProxy(AndroidJavaProxy)
 </signature>
-Creates a java proxy object which connects to the supplied proxy implementation.
+指定したプロキシ実装に接続する Java プロキシオブジェクトを作成します。
 SA: [[AndroidJavaProxy]].
-@param proxy An implementatinon of a java interface in c#.
+@param proxy C# における Java インタフェースの実装。

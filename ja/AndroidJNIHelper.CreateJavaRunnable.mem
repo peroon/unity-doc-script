@@ -1,6 +1,6 @@
 <signature>
 CreateJavaRunnable(AndroidJavaRunnable)
 </signature>
-Creates a UnityJavaRunnable object (implements java.lang.Runnable).
-SA: [[AndroidJavaRunnable]].
-@param runnable A delegate representing the java.lang.Runnable.
+（java.lang.Runnableインタフェースを実装した）UnityJavaRunnableオブジェクトを作成する
+SA: [[AndroidJavaRunnable]]
+@param runnable java.lang.Runnableを表すデリゲートを設定する
