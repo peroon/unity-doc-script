@@ -1,5 +1,5 @@
 <signature>
 FromFloatArray(IntPtr)
 </signature>
-Convert a Java array of <tt>float</tt> to a managed array of System.Single.
-SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]].
+Java の <tt>float</tt> 配列を System.Single のマネージド配列に変換する。
+SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]]
