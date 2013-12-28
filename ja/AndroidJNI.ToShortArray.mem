@@ -1,5 +1,5 @@
 <signature>
 ToShortArray(short[])
 </signature>
-Convert a managed array of System.Int16 to a Java array of <tt>short</tt>.
-SA: [[AndroidJNI.NewShortArray]], [[AndroidJNI.SetShortArrayElement]].
+System.Int16 のマネージド配列を Java の <tt>short</tt> 配列に変換する。
+SA: [[AndroidJNI.NewShortArray]], [[AndroidJNI.SetShortArrayElement]]

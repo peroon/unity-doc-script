@@ -1,5 +1,5 @@
 <signature>
 ToObjectArray(IntPtr[])
 </signature>
-Convert a managed array of System.IntPtr, representing Java objects, to a Java array of <tt>java.lang.Object</tt>.
-SA: [[AndroidJNI.NewObjectArray]], [[AndroidJNI.SetObjectArrayElement]].
+Java オブジェクトを表す System.IntPtr のマネージド配列を Java の <tt>java.lang.Object</tt> 配列に変換する。
+SA: [[AndroidJNI.NewObjectArray]], [[AndroidJNI.SetObjectArrayElement]]
