@@ -1,7 +1,8 @@
 <signature>
 SetStaticStringField(IntPtr,IntPtr,string)
 </signature>
-This function ets the value of a static field of an object.
-This is a convenience function that calls SetStaticObjectField() with the same parameters, but performs the necessary marshalling of the string value.
+この関数によりオブジェクトの static フィールドの値をセットします。
+
+これは SetObjectField() を同様のパラメータで呼び出しする便利な関数であり、さらに string 値の必要なマーシャリングを実行します。
 
 SA: [[AndroidJNI.SetStaticObjectField]].
