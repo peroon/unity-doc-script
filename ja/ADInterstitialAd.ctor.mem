@@ -2,4 +2,4 @@
 ctor()
 ctor(bool)
 </signature>
-Creates an interstitial ad.
+インターステーシャル広告を作成
