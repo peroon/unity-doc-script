@@ -1,5 +1,5 @@
 <signature>
 ToDoubleArray(double[])
 </signature>
-Convert a managed array of System.Double to a Java array of <tt>double</tt>.
-SA: [[AndroidJNI.NewDoubleArray]], [[AndroidJNI.SetDoubleArrayElement]].
+System.Double のマネージド配列を Java の <tt>double</tt> 配列に変換します。
+SA: [[AndroidJNI.NewDoubleArray]], [[AndroidJNI.SetDoubleArrayElement]]
