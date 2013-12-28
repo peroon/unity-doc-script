@@ -1,2 +1,2 @@
-Don't override texture compression.
-SA: [[EditorUserBuildSettings.androidBuildSubtarget]].
+テクスチャ圧縮を上書きしない
+SA: [[EditorUserBuildSettings.androidBuildSubtarget]]
