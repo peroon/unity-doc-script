@@ -1,2 +1,2 @@
-ATI texture compression. Available on devices running Adreno GPU, including HTC Nexus One, Droid Incredible, EVO, and others.
-SA: [[EditorUserBuildSettings.androidBuildSubtarget]].
+ATI 圧縮を行ないます。HTC Nexus One, Droid Incredible, EVO, や他の Adreno GPU で動作するデバイスのみで利用可能です。
+SA: [[EditorUserBuildSettings.androidBuildSubtarget]]
