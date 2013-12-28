@@ -1,5 +1,5 @@
 <signature>
 ToFloatArray(float[])
 </signature>
-Convert a managed array of System.Single to a Java array of <tt>float</tt>.
-SA: [[AndroidJNI.NewFloatArray]], [[AndroidJNI.SetFloatArrayElement]].
+System.Single のマネージド配列を Java の <tt>float</tt> 配列に変換します。
+SA: [[AndroidJNI.NewFloatArray]], [[AndroidJNI.SetFloatArrayElement]]

@@ -1,5 +1,5 @@
 <signature>
 ToLongArray(long[])
 </signature>
-Convert a managed array of System.Int64 to a Java array of <tt>long</tt>.
-SA: [[AndroidJNI.NewLongArray]], [[AndroidJNI.SetLongArrayElement]].
+System.Int64 のマネージド配列を Java の <tt>long</tt> 配列に変換します。
+SA: [[AndroidJNI.NewLongArray]], [[AndroidJNI.SetLongArrayElement]]
