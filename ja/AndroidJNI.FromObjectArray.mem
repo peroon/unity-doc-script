@@ -1,5 +1,5 @@
 <signature>
 FromObjectArray(IntPtr)
 </signature>
-Convert a Java array of <tt>java.lang.Object</tt> to a managed array of System.IntPtr, representing Java objects.
-SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]].
+Java の <tt>java.lang.Object</tt> 配列をJava オブジェクトを表す System.IntPtr のマネージド配列に変換する。
+SA: [[AndroidJNI.GetFloatArrayElement]], [[AndroidJNI.GetArrayLength]]

@@ -1,5 +1,5 @@
 <signature>
 FromIntArray(IntPtr)
 </signature>
-Convert a Java array of <tt>int</tt> to a managed array of System.Int32.
-SA: [[AndroidJNI.GetIntArrayElement]], [[AndroidJNI.GetArrayLength]].
+Java の <tt>int</tt> 配列を System.Int32 のマネージド配列に変換します。
+SA: [[AndroidJNI.GetIntArrayElement]], [[AndroidJNI.GetArrayLength]]
