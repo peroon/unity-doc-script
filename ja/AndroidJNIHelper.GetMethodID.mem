@@ -3,34 +3,34 @@ GetMethodID(IntPtr,string)
 GetMethodID(IntPtr,string,string)
 GetMethodID(IntPtr,string,string,bool)
 </signature>
-Scans a particular Java class for a method matching a name and a signature.
-The signature comparison is done to allow sub-/base-classes of a class types.
-If no signature is provided the first method with the correct name will be returned.
+特定のシグネチャと名前に一致するメソッドのJava クラスを読み込む。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+もしシグネチャが提供されない場合、正しい名前を持った最初のフィールドが返されます。
 
 SA: [[AndroidJNIHelper.GetSignature]], [[AndroidJNIHelper.GetConstructorID]], [[AndroidJNIHelper.GetFieldID]].
-@param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
-@param methodName Name of the method as declared in Java.
-@param signature Method signature (e.g. obtained by calling AndroidJNIHelper.GetSignature).
-@param isStatic Set to <tt>true</tt> for static methods; <tt>false</tt> for instance (nonstatic) methods.
+@param javaClass Raw JNI Java クラスオブジェクト（AndroidJNI.FindClass 呼び出しにより取得できる）
+@param methodName Java で宣言されたメソッド名
+@param signature メソッドのシグニチャ（例えば AndroidJNIHelper.GetSignatureにより取得されたもの）
+@param isStatic static メソッドでは <tt>true</tt> がセットされ、インスタンス（static でない）メソッドでは <tt>false</tt> がセットされます。
 <signature>
 GetMethodID(IntPtr,string,object[],bool)
 </signature>
-Get a JNI method ID based on calling arguments.
-Generic parameter represents the method return type, and the regular method assumes 'void' return type.
-Scans a particular Java class for a method matching a signature based on passed arguments.
-The signature comparison is done to allow for sub-/base-classes of the class types.
-@param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
-@param methodName Name of the method as declared in Java.
-@param args Array with parameters to be passed to the method when invoked.
-@param isStatic Set to <tt>true</tt> for static methods; <tt>false</tt> for instance (nonstatic) methods.
+呼び出しの引数にもとづいて JNI メソッド ID を取得します。
+ジェネリック引数はメソッドの戻り型を表し、通常のメソッドは void の戻り型を前提とします。
+渡された引数にもとづくシグネチャに一致するメソッドがないか特定の Java クラスをスキャンします。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+@param javaClass Raw JNI Java クラスオブジェクト（AndroidJNI.FindClass 呼び出しにより取得できる）
+@param methodName Java で宣言されたメソッド名
+@param args 実行されたときメソッドに引数として渡される値の配列
+@param isStatic static メソッドでは <tt>true</tt> がセットされ、インスタンス（static でない）メソッドでは <tt>false</tt> がセットされます。
 <signature>
 GetMethodID<ReturnType>(IntPtr,string,object[],bool)
 </signature>
-Get a JNI method ID based on calling arguments.
-Generic parameter represents the method return type, and the regular method assumes 'void' return type.
-Scans a particular Java class for a method matching a signature based on passed arguments.
-The signature comparison is done to allow for sub-/base-classes of the class types.
-@param javaClass Raw JNI Java class object (obtained by calling AndroidJNI.FindClass).
-@param methodName Name of the method as declared in Java.
-@param args Array with parameters to be passed to the method when invoked.
-@param isStatic Set to <tt>true</tt> for static methods; <tt>false</tt> for instance (nonstatic) methods.
+呼び出しの引数にもとづいて JNI メソッド ID を取得します。
+ジェネリック引数はメソッドの戻り型を表し、通常のメソッドは void の戻り型を前提とします。
+渡された引数にもとづくシグネチャに一致するメソッドがないか特定の Java クラスをスキャンします。
+クラス型のサブ/ベースクラスを許可するためにシグネチャの比較が実施されます。
+@param javaClass Raw JNI Java クラスオブジェクト（AndroidJNI.FindClass 呼び出しにより取得できる）
+@param methodName Java で宣言されたメソッド名
+@param args 実行されたときメソッドに引数として渡される値の配列
+@param isStatic static メソッドでは <tt>true</tt> がセットされ、インスタンス（static でない）メソッドでは <tt>false</tt> がセットされます。
