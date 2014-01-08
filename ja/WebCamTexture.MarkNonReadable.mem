@@ -1,5 +1,5 @@
 <signature>
 MarkNonReadable()
 </signature>
-Marks WebCamTexture as unreadable (no GetPixel* functions will be available (iOS only)).
-This might allow unity to do some optimizations. On the other hand, as we skip almost all processing of WebCam data, you need to check videoVerticallyMirrored property for possible mirroring.
+読み込みを行わないWebCamTextureをマークします。（GetPixel系が使用できなくなります（iOSのみ））
+これを使用することでいくつかの最適化を行うことが可能です。一方で、ほぼ全てのWebcamデータの処理をスキップするため、videoVerticallyMirroredプロパティでミラーリング可能かをチェックする必要があります。

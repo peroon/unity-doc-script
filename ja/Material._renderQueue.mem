@@ -1,11 +1,10 @@
 <signature>
 renderQueue
 </signature>
-Render queue of this material.
-By default materials use [[wiki:comp:SL-SubshaderTags|render queue]] of the shader it uses. You can override
-the render queue used using this variable. Note that once render queue is set on the material,
-it stays at that value, even if shader is later changed to be different.
+このマテリアルのキューをレンダリングします。
+これはシェーダーの [[wiki:comp:SL-SubshaderTags|render queue]] でデフォルトのシェーダーによって使用しています。この変数を使用してキューの上書きを行うことが可能です。一度マテリアルのキューを設定すると、
+あとで異なる値を設定しても変更されないことに注意してください。
 
-Render queue number should be positive to work properly.
+正しく動作するにはキュー番号が正の値でなければいけません。
 
 SA: Shader.renderQueue, [[wiki:comp:SL-SubshaderTags|RenderQueue tag]].

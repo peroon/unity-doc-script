@@ -6,15 +6,14 @@ ctor(string)
 ctor(string,int,int)
 ctor(string,int,int,int)
 </signature>
-Create a WebCamTexture.
-Use [[WebCamTexture.devices]] to get a list of the names of available camera devices. If no device name is supplied to the constructor or is passed as a null string, the first device found will be used.
+WebCamTextureを作成します。
+利用可能なカメラデバイスの名前のリストを取得するには [[WebCamTexture.devices]] を使用します。デバイス名はコンストラクタやnullとして渡された場合、差書に検出されたデバイスを使用します。
 
-The requested width, height and framerate specified by the parameters may not be supported by the chosen camera. In such cases, the closest available values will be used.
+パラメーターによって指定された幅、高さ、フレームレートは選択したカメラデバイスによってはサポートされていない可能性があります。このような場合は最も近い利用可能な値が自動的に選択されます。
 
-Note that if you want to use WebCamTextures in the web player, you need to get the user's
-permission to do so. Call [[Application.RequestUserAuthorization]] before creating a
-WebCamTexture.
-@param deviceName The name of the video input device to be used.
-@param requestedWidth The requested width of the texture.
-@param requestedHeight The requested height of the texture.
-@param requestedFPS The requested frame rate of the texture.
+もしWebPlayerでWebCamTexturesを使用したい場合はユーザーのパーミッションを取得しなければいけないことに注意してください。
+そのばあいはWebCamTextureの前に [[Application.RequestUserAuthorization]] を呼び出します。
+@param deviceName 使用するカメラデバイス
+@param requestedWidth リクエストするテクスチャの幅
+@param requestedHeight リクエストするテクスチャの高さ
+@param requestedFPS リクエストするテクスチャのフレームレート

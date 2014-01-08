@@ -1,10 +1,9 @@
 <signature>
 Stop()
 </signature>
-Stops the camera.
-Note that if you want to use WebCamTextures in the web player, you need to get the user's
-permission to do so. Call [[Application.RequestUserAuthorization]] before creating a
-WebCamTexture.
+カメラを停止します。
+もしWebPlayerでWebCamTexturesを使用したい場合はユーザーのパーミッションを取得しなければいけないことに注意してください。
+そのばあいはWebCamTextureの前に [[Application.RequestUserAuthorization]] を呼び出します。
 CONVERTEXAMPLE
 BEGIN EX
 	// Starts a camera and assigns the texture to the current renderer.

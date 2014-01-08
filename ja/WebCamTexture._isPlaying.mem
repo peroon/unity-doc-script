@@ -1,7 +1,7 @@
 <signature>
 isPlaying
 </signature>
-Returns if the camera is currently playing.
+カメラが現在再生中かどうか。
 CONVERTEXAMPLE
 BEGIN EX
 	// Tries to start the camera and outputs to the console if is was sucessful or not.

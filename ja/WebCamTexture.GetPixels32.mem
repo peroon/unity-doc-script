@@ -2,13 +2,12 @@
 GetPixels32()
 GetPixels32(Color32[])
 </signature>
-Returns the pixels data in raw format.
-This can be faster then calling /GetPixels/, as pixel data does not have to be converted to color structs,
-so you may want to use it if you need to do continuous processing on the video feed.
-You can optionally pass in an array of Color32s to use in /colors/ to avoid allocating new memory each frame,
-which is faster when you are continuously reading data from the camera.
-The array needs to be initialized to a length matching width * height of the texture. If you don't pass an 
-array, GetPixels32 will allocate one for you and return it.
+生フォーマットのピクセルデータを取得します。
+これはColor構造体に変換する必要が無いため /GetPixels/ を呼び出すよりも高速です。
+なのでビデオフィード上で連続処理を行う場合はこの関数を使用することをおすすめします。
+毎フレーム新しくメモリを割り当てるのを避けるため、必要に応じてColor32の配列を引数として渡すことが出来ます。
+これはカメラからデータを継続的に読み込んでいる場合に高速になります。
+配列の長さはテクスチャの幅x高さに合わせなければいけません。もし配列の長さが一致しなかった場合、メモリを割り当て直します。
 CONVERTEXAMPLE
 BEGIN EX
 	var webcamTexture : WebCamTexture;
@@ -26,4 +25,4 @@ BEGIN EX
 		// Do processing of data here.
 	}
 END EX
-@param colors Optional array to receive pixel data.
+@param colors ピクセルデータを受取るための配列

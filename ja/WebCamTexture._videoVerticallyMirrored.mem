@@ -1,7 +1,7 @@
 <signature>
 videoVerticallyMirrored
 </signature>
-Returns if the texture image is vertically flipped.
+テクスチャが反転しているかどうかを返します。
 BEGIN EX
 scaleY = webcam.videoVerticallyMirrored ? -1.0 : 1.0;
 texture.transform.localScale = new Vector3(width, scaleY * height, 0.0);

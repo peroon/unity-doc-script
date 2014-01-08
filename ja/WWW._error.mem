@@ -1,11 +1,12 @@
 <signature>
 error
 </signature>
-Returns an error message if there was an error during the download (RO).
-If there was no error, /error/ will return /null/ or an empty string (this is because some platforms don't allow nulls for string values). We recommend that you use String.IsNullOrEmpty to check for the presence of an error so that both cases are covered.
+ダウンロード中にエラーが発生した場合はエラーメッセージを返します (RO)。
+もしエラーがない場合は /error/ は /null/ または空文字（空文字は一部のプラットフォームがstring値としてnullを許可していないため）を返します。
+ですので、エラーのチェックを行う場合は両方に対応するためにString.IsNullOrEmptyを使用することをお勧めします。
 
-If the object has not finished downloading the data, it will block until the download has finished.
-Use ::ref::isDone or /yield/ to see if the data is available.
+WWWオブジェクトはデータのダウンロードが完了するまでブロックされています。
+データが利用可能かどうかは ::ref::isDone や /yield/ を使用して確認して下さい。
 CONVERTEXAMPLE
 BEGIN EX
 	// Get a texture with an invalid url

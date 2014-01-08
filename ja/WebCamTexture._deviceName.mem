@@ -1,8 +1,8 @@
 <signature>
 deviceName
 </signature>
-Set this to specify the name of the device to use.
-This only has an effect when set while the camera is not running.
+使用するデバイスの名前を設定します。
+カメラが動作していない時のみ設定することが可能です。
 CONVERTEXAMPLE
 BEGIN EX
 	// Sets the device of the WebCamTexture to the first one available and starts playing it

@@ -1,10 +1,9 @@
 <signature>
 didUpdateThisFrame
 </signature>
-Did the video buffer update this frame?
-Use this to check if the video buffer has changed since the last frame. When setting a low frame rate,
-it is likely that the video updates slower then the game, so it does not make sense to do expensive video
-processing in each Update call, so check this value before doing any processing.
+ビデオバッファが現在のフレームで更新したかどうか。
+ビデオバッファが最後のフレームから変更されているかどうかをチェックするために使用されます。低フレームレートで設定している時、
+ゲームに適した遅さでカメラの方も更新をしたほうが良いため、何らかの処理を行う場合は必ずUpdate内で毎回この変数を呼び出してチェックをしてください。
 CONVERTEXAMPLE
 BEGIN EX
 	var webcamTexture : WebCamTexture;
