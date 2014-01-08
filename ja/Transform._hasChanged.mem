@@ -1,8 +1,10 @@
 <signature>
 hasChanged
 </signature>
-Has the transform changed since the last time the flag was set to 'false'?
-A change to the transform can be anything that can cause its matrix to be recalculated: any adjustment to its position, rotation or scale. Note that operations which can change the transform will not actually check if the old and new value are different before setting this flag. So setting, for instance, transform.position will always set hasChanged on the transform, regardless of there being any actual change.
+このフラグが 'false' にセットされた時からTransformに変更がありましたか？
+これはtransformに行列の再計算:位置、角度、スケールの修正などの原因として何らかの変更があった場合に変更されます。
+このフラグが設定される前に古い値と新しい値が異なる場合は実際にはtransformの変更をチェックしないことに注意してください。
+なのでtransform.positionのような気にかけない何らかの変更でも常にhasChangedをセットすることをおすすめします。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnUpdate () {

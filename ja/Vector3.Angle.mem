@@ -1,8 +1,8 @@
 <signature>
 Angle(Vector3,Vector3)
 </signature>
-Returns the angle in degrees between /from/ and /to/.
-The angle returned is always the ''acute'' angle between the two vector (ie, the smaller of the two possible angles between them and never greater than 180 degrees).
+ /from/ から /to/ の間の角度を取得します。
+ 返される角度は常に2つのベクトル間の ''鋭角'' です。（角度の小さい方、つまり決して１８０度以上にはなりません。）
 CONVERTEXAMPLE
 BEGIN EX
 	// prints "close" if the z-axis of this transform looks
@@ -17,5 +17,5 @@ BEGIN EX
 			print("close");
 	}
 END EX
-@param from The angle extends round from this vector.
-@param to The angle extends round to this vector.
+@param from ベクターの始点
+@param to ベクターの終点

@@ -2,16 +2,17 @@
 LoadFromCacheOrDownload(string,int)
 LoadFromCacheOrDownload(string,int,uint)
 </signature>
-Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
-LoadFromCacheOrDownload() must be used in place of "new WWW (url)" in order to utilize caching functionality.
+キャッシュからバージョンで指定されたアセットバンドルをロードします。もしアセットバンドルがキャッシュされていない場合は自動的にダウンロードされローカルストレージから復旧できるためにキャッシュに保存されます。
+LoadFromCacheOrDownload() はキャッシングを使用するために "new WWW (url)" の代わりに使用するようにしてください。
 
-Cached AssetBundles are uniquely identified solely by the filename and version number; all domain and path information in /url/ is ignored by Caching. Since cached AssetBundles are identified by filename instead of the full URL, you can change the directory from where the asset bundle is downloaded at any time. This is useful for pushing out new versions of the game and ensuring that files are not cached incorrectly by the browser or by a CDN. For WebPlayer applications that use the shared cache, Caching adds unique identifying information to identically-named AssetBundles in order to prevent name collisions between applications.
+キャッシュされたアセットバンドルはファイル名とバージョン番号で管理されています。 /URL/ の全てのドメインやパスはキャッシングでは無視されます。キャッシュされたアセットバンドルはURLの代わりにファイル名で管理しているのでサーバー側のURL構成（ディレクトリ構成）は自由に変更することが出来ます。これは新しいバージョンを出した時ブラウザやCDNにキャッシュされないようにするために便利です。キャッシュを共有するWebPlayerの場合、アプリケーションの間でキャッシュが衝突してしまうのを防ぐためにユニークな識別子を追加して保持します。
 
-If the cache folder does not have any space for caching additional files, LoadFromCacheOrDownload will iteratively delete the least-recently-used AssetBundles from the Cache until sufficient space is available to store the new AssetBundle. If making space is not possible (because the hard disk is full, or all files in the cache are currently in use), LoadFromCacheOrDownload() will bypass Caching and stream the file into memory like a normal "new WWW()" call.
+もし、キャッシュフォルダに追加できるファイル領域がない場合はキャッシュしようとしているファイルの領域が空くまでLoadFromCacheOrDownloadで追加された最も使用頻度の低いアセットバンドルから削除していきます。もし利用可能なファイル領域を確保できない場合（キャッシュされているアセットバンドルを全て使用している場合や、HDDの要領がいっぱいな場合）はLoadFromCacheOrDownloadは "new WWW()" の呼び出しと同じようにメモリ上に展開しストリーミングします。
 
-This function can only be used to access AssetBundles. No other types or content are cacheable.
+この関数はAssetBundleのアクセスのみに使用することが出来ます。それ以外のタイプやコンテンツはキャッシュ出来ません。
 
-__''Note:''__ URL must be '%' escaped.
+
+__''Note:''__ URLは '%' をエスケープしなければいけません。
 BEGIN EX
 	function Start ()
 	{
@@ -30,7 +31,8 @@ BEGIN EX
 	}
 END EX
 SA: BuildPipeline.BuildAssetBundle, BuildPipeline.BuildStreamedSceneAssetBundle.
-@param url The URL to download the AssetBundle from, if it is not present in the cache. Must be '%' escaped.
-@param version Version of the AssetBundle. The file will only be loaded from the disk cache if it has previously been downloaded with the same /version/ parameter. By incrementing the version number requested by your application, you can force Caching to download a new copy of the AssetBunlde from /url/.
-@param crc An optional CRC-32 Checksum of the uncompressed contents. If this is non-zero, then the content will be compared against the checksum before loading it, and give an error if it does not match. You can use this to avoid data corruption from bad downloads or users tampering with the cached files on disk. If the CRC does not match, Unity will try to redownload the data, and if the CRC on the server does not match it will fail with an error. Look at the error string returned to see the correct CRC value to use for an AssetBundle.
-@return A WWW instance, which can be used to access the data once the load/download operation is completed.
+@param url キャッシュされていない場合にアセットバンドルをダウンロードするためのURL。 '%'　はエスケープしなければいけません。
+@param version アセットバンドルのバージョン。以前に同じ /version/ パラメータでダウンロードを行っている場合、キャッシュされたデータをロードします。アプリケーションによってインクリメントされたバージョンをリクエストすることによって強制的に /url/ から最新のアセットバンドルをキャッシングすることが出来ます。
+
+@param crc 非圧縮コンテンツのCRC-32チェックサム。もしパラメータが0出ない場合はコンテンツをロードする前にチェックサムの比較が行われ一致しない場合はエラーを返します。これはキャッシュされたデータのユーザーによる改竄や改悪、データの破損を避けるために利用されます。CRCが一致しない場合はUnityは再度ダウンロードを試みます。そしてCRCがサーバー側で一致しない場合はエラーを返します。今のCRC値がアセットバンドルに一致しているかはエラー内容から判断することが出来ます。
+@return アセットバンドルのロード/ダウンロードが完了した時にデータにアクセスするためのWWWインスタンスを返します。
