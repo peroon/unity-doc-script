@@ -1,5 +1,5 @@
 <signature>
 globalMaximumLOD
 </signature>
-Shader LOD level for all shaders.
+全てのシェーダーのLODレベル
 SA: [[wiki:SL-ShaderLOD|Shader Level of Detail]], ::ref::maximumLOD.

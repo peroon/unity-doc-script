@@ -1,4 +1,4 @@
 <signature>
 ResetMaterial(ProceduralMaterial)
 </signature>
-Reset the ProceduralMaterial to its default values.
+ProceduralMaterialをデフォルト値にリセットします。

@@ -1,12 +1,12 @@
 <signature>
 GetPlatformTextureSettings(string,string,int,int,int,int)
 </signature>
-Get the import settings for a given ProceduralMaterial for a given platform (width and height, RAW/Compressed format, loading behavior).
-Returns a default set of settings (512x512, compressed outputs, "Generate at load" behavior) if no settings are found for the input materialName or for the input platform.
-@param materialName The name of the ProceduralMaterial.
-@param platform The name of the platform (can be empty).
-@param maxTextureWidth The maximum texture width for this ProceduralMaterial (output value).
-@param maxTextureHeight The maximum texture height for this ProceduralMaterial (output value).
-@param textureFormat The texture format (0=Compressed, 1=RAW) for this ProceduralMaterial (output value).
-@param loadBehavior The load behavior for this ProceduralMaterial (output value).
-Values match the ProceduralMaterial::ProceduralLoadingBehavior enum.
+特定のプラットフォーム（幅や高さ、生/圧縮フォーマット,ロードの動作）のためのProceduralMaterialインポート設定を取得します。
+プラットフォーム、またはmaterialNameから設定が見つからない場合はデフォルトの設定（512x512、圧縮出力、"Generate at load"）を取得します。
+@param materialName ProceduralMaterialの名前
+@param platform プラットフォーム名（空文字でも可能）
+@param maxTextureWidth ProceduralMaterialの最大幅 (出力値)
+@param maxTextureHeight ProceduralMaterialの最大の高さ (出力値)
+@param textureFormat ProceduralMaterialのテクスチャフォーマット (0=圧縮, 1=生) (出力値)
+@param loadBehavior ProceduralMaterialのロードの動作 (出力値).
+値は ProceduralMaterial::ProceduralLoadingBehavior に一致します。
