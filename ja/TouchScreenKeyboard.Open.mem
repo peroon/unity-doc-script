@@ -7,19 +7,12 @@ Open(string,TouchScreenKeyboardType,bool,bool,bool)
 Open(string,TouchScreenKeyboardType,bool,bool,bool,bool)
 Open(string,TouchScreenKeyboardType,bool,bool,bool,bool,string)
 </signature>
-Opens the native keyboard provided by OS on the screen.
-The /autocorrection/ determines whether the input tracks unknown words
-and suggests a more suitable replacement candidate to the user,
-replacing the typed text automatically unless the user explicitly
-overrides the action.
-The /multiline/ determines if user can input more than one line of
-text.
-The /secure/ identifies whether the keyboard is used for password. Text
-in the input field will be hidden from the user except the recently
-typed character.
-The keyboard can be opened in the /alert/ mode too.
-The /placeholder/ string will be displayed when there is no other text
-in the input field of the keyboard.
+スクリーン上にOSが提供しているネイティブのキーボードを表示します。
+/autocorrection/ は入力している未知のワードや修正すべきワードをユーザーに提示し、テキストを明示的に上書きしない限り自動で置き換えることが出来ます。
+/multiline/ はテキストを１行以上入力する場合に使用されます。
+/secure/ はパスワード入力のために使用します。 入力された文字は最後の文字以外は隠されて表示されます。
+/alert/ モードで開くことも可能です。
+/placeholder/ は入力フィールドに何も入力されていない場合に使用される文字列です。
 CONVERTEXAMPLE
 BEGIN EX
 	var inputURL : String = "http://www.unity3d.com";
@@ -33,10 +26,10 @@ BEGIN EX
 			inputURL = keyboard.text;
 		}
 END EX
-@param text Text to edit.
-@param keyboardType Type of keyboard (eg, any text, numbers only, etc).
-@param autocorrection Is autocorrection applied?
-@param multiline Can more than one line of text be entered?
-@param secure Is the text masked (for passwords, etc)?
-@param alert Is the keyboard opened in alert mode?
-@param textPlaceholder Text to be used if no other text is present.
+@param text 編集するテキスト
+@param keyboardType キーボードの種類 (例: テキスト, 数字のみ, 等).
+@param autocorrection 自動補完を行いますか？
+@param multiline １行以上文字を入力しますか？
+@param secure テキストをマスクしますか？ (パスワード等)
+@param alert アラートモードで起動しますか？
+@param textPlaceholder 何も入力されていない時に使用する文字列

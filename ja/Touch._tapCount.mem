@@ -1,5 +1,5 @@
 <signature>
 tapCount
 </signature>
-Number of taps.
-This is intended as a way to detect "double-clicks", etc, from the finger in a particular position. In some circumstances, two fingers may be tapped alternately and this may incorrectly register as a single finger tapping and simultaneously moving.
+タップした数を取得します。
+これは特定の位置で "ダブルタップ" を検出する方法ということを意味しています。状況によっては２つの指を交互にタップしたり、1つの指がタップ中に移動してしまって "ダブルタップ" となるご検出を防ぐのにも使用されます。

@@ -1,4 +1,4 @@
 <signature>
 position
 </signature>
-The position of the touch in pixel coordinates.
+タッチしたピクセル座標を取得します。
