@@ -1,5 +1,5 @@
 <signature>
 fingerId
 </signature>
-The unique index for the touch.
-All current touches are reported in the Input::ref::touches array or by using the Input::ref::GetTouch function with the equivalent array index. However, the array index is not guaranteed to be the same from one frame to the next. The /fingerID/ value, however, consistently refers to the same touch across frames. This ID value is very useful when analysing gestures and is more reliable than identifying fingers by their proximity to previous position, etc.
+タッチのユニークなインデックス。
+現在の全てのタッチは Input::ref::touches の配列、または Input::ref::GetTouch 関数で配列のインデックスに相当するものを渡すことで情報を取得します。しかし配列のインデックスはフレーム間で必ずしも同じであることは保証されていません。 /fingerID/ はフレーム間でも同じ指であれば値は変わりません。このIDは指の動きの分析に使用したり、また、前フレームの位置の差分から指を特定するよりも信頼性が高いのです。

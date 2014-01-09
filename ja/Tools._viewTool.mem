@@ -1,7 +1,7 @@
 <signature>
 viewTool
 </signature>
-The option that is currently active for the View tool in the Scene view.
-The View tool has options for Orbit, Pan, Zoom and FPS, depending on which combination mouse buttons and modifier keys is used. This property reports which option is currently active.
+シーンビューで表示するツール群でアクティブ状態のモードを選択します。
+ビューツールはOrbit、Pan、Zoom、FPSの機能がありマウスと修飾キーの組み合わせで変更することが出来ます。このプロパティでは現在アクティブ状態のモードを取得することが可能です。
 
 SA: current.

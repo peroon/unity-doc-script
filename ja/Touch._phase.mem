@@ -1,8 +1,8 @@
 <signature>
 phase
 </signature>
-Describes the phase of the touch.
-The touch /phase/ refers to the action the finger has taken on the most recent frame update. Since a touch is tracked over its "lifetime" by the device, the start and end of a touch and movements in between can be reported on the frames they occur. The /phase/ property can be used as the basis of a "switch' statement or as part of a more sophisitcated state handling system.
+タッチの状態を取得します。
+最新のフレームで指が行った行動をタッチ情報として取得します。デバイスによって "ライフタイム"にわたってトラッキングされるのでその間のタッチの開始と終了及び動きはタッチが発生した時から報告されます。 /phase/ プロパティは "switch" 文を使用することにより、より洗練されたハンドリングシステムになります。
 CONVERTEXAMPLE
 BEGIN EX
 var startPos: Vector2;
