@@ -1,2 +1,2 @@
-Runtime reprentation of the AnimationController. It can be used to change the Animator's AnimationSource during runtime.
-This class is deprecated, RuntimeAnimationController should be used.
+AnimationControllerをランタイム時に扱うためのクラスです。これはAnimatorのAnimationSourceをランタイムで変更する時に使用されます。
+RuntimeAnimationControllerを使用すべきであり、このクラスは推奨されていません。

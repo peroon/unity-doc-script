@@ -3,15 +3,15 @@ AddExplosionForce(float,Vector3,float)
 AddExplosionForce(float,Vector3,float,float)
 AddExplosionForce(float,Vector3,float,float,ForceMode)
 </signature>
-Applies a force to the rigidbody that simulates explosion effects. The explosion force will fall off linearly with distance to the rigidbody.
-The function also plays nicely with ragdolls.
+爆発のエフェクトをシミュレートするためにRigidbodyに力を適用させます。爆発力はRigidbodyからの距離に応じて直線的に減少していきます。
+この関数はラグドールととても相性が良いです。
 
-If /radius/ is 0, the full force will be applied no matter how far away /position/ is from the rigidbody.
-/upwardsModifier/ applies the force as if it was applied from beneath the object.
-This is useful since explosions that throw things up instead of pushing things to the side look cooler.
-A value of 2 will apply a force as if it is applied from 2 meters below while not changing the actual explosion position.
-/explosionPosition/	is the position from which the explosion force is to be applied.
-/explosionRadius/ is the radius of the explosion. Rigidbodies further away than /explosionRadius/ will not be affected.
+もし /radius/ が0の場合、Rigidbodyからどんなにから遠い /position/ にあっても減衰しない全ての力が適用されます。
+/upwardsModifier/ は下から押し上げるように力を適用します。
+側面を押す代わりに爆発で持ち上げるようにするとクールな感じに見えますので役に立ちます。
+値が2の時は爆発の位置は変えずに２メートルしたから押し上げられたような力を適用します。
+/explosionPosition/	は爆発を加える力の位置です。
+/explosionRadius/ は爆発の半径です。Rigidbodyは /explosionRadius/ よりも遠くにある場合、影響を受けません。
 CONVERTEXAMPLE
 BEGIN EX
 	var radius = 5.0;

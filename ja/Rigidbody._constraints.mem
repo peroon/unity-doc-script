@@ -1,11 +1,9 @@
 <signature>
 constraints
 </signature>
-Controls which degrees of freedom are allowed for the simulation of this Rigidbody.
-By default this is set to RigidbodyConstraints.None, allowing rotation and movement along all axes.
-In some cases, you may want to constrain a Rigidbody to only move or rotate along some axes, for 
-example when developing 2D games. You can use the bitwise OR operator to combine multiple
-constraints.
+Rigidbodyのシミュレーションに許可される角度をコントロールします。
+デフォルトでは全ての軸に沿って回転や移動を行うRigidbodyConstraints.Noneの設定になっています。
+2Dゲームを作成する時に場合によっては、移動のみやいくつかの軸のみを制限したいこともあります。OR演算子を使用して複数の制限を行うことが可能です。
 CONVERTEXAMPLE
 BEGIN EX
 // Freeze the rotation around x-Axis
