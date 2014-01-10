@@ -1,5 +1,5 @@
-Derive from this class to create an editor wizard.
-Editor wizards are typically opened using a menu item.
+エディターウィザードの生成はこのクラスから派生しています。
+エディターウィザードは一般的にメニューから開きます。
 BEGIN EX NOCHECK
 // C#
 // Creates a simple wizard that lets you create a Light GameObject

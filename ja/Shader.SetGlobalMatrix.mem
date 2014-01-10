@@ -2,9 +2,7 @@
 SetGlobalMatrix(string,Matrix4x4)
 SetGlobalMatrix(int,Matrix4x4)
 </signature>
-Sets a global matrix property for all shaders.
-Global properties are used if a shader needs them but the material does
-not have them defined (for example, if the shader does not expose them
-in /Properties/ block).
+全てのシェーダーのグローバルな行列プロパティを設定します。
+シェーダーが明確なマテリアルを持たない（ /Properties/ ブロックが定義されていない）場合、グローバルなプロパティが使用されます。
 
 SA: ::ref::SetGlobalColor, ::ref::SetGlobalFloat; [[Material]] class, [[wiki:Shaders|ShaderLab documentation]].

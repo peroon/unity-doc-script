@@ -2,14 +2,10 @@
 SetGlobalVector(string,Vector4)
 SetGlobalVector(int,Vector4)
 </signature>
-Sets a global vector property for all shaders.
-Global properties are used if a shader needs them but the material does
-not have them defined (for example, if the shader does not expose them
-in /Properties/ block).
+全てのシェーダーのグローバルなベクタープロパティを設定します。
+シェーダーが明確なマテリアルを持たない（ /Properties/ ブロックが定義されていない）場合、グローバルなプロパティが使用されます。
 
-Usually this is used if you have a set of custom shaders that all use
-the same "global" vector (for example, wind direction). Then you can
-set the global property from script and don't have to setup the same vector
-in all materials.
+全て同じ "グローバル" なベクター（例えば風の向き） を使用する一連のカスタムシェーダーを持つ場合に、この関数は使用されます。
+グローバルなプロパティをスクリプトから設定することが出来るし、全てのマテリアルに同じプロパティを設定する必要はありません。
 
 SA: ::ref::SetGlobalFloat, ::ref::SetGlobalColor, ::ref::SetGlobalTexture; [[Material]] class, [[wiki:Shaders|ShaderLab documentation]].

@@ -2,14 +2,11 @@
 SetGlobalColor(string,Color)
 SetGlobalColor(int,Color)
 </signature>
-Sets a global color property for all shaders.
-Global properties are used if a shader needs them but the material does
-not have them defined (for example, if the shader does not expose them
-in /Properties/ block).
+全てのシェーダーのグローバルなColorプロパティを設定します。
+シェーダーが明確なマテリアルを持たない（ /Properties/ ブロックが定義されていない）場合、グローバルなプロパティが使用されます。
 
-Usually this is used if you have a set of custom shaders that all use
-the same "global" color (for example, color of the sun). Then you can
-set the global property from script and don't have to setup the same color
-in all materials.
+全て同じ "グローバル" なColor（例えば太陽の色） を使用する一連のカスタムシェーダーを持つ場合に、この関数は使用されます。
+グローバルなプロパティをスクリプトから設定することが出来るし、全てのマテリアルに同じプロパティを設定する必要はありません。
+
 
 SA: ::ref::SetGlobalFloat, ::ref::SetGlobalVector, ::ref::SetGlobalTexture; [[Material]] class, [[wiki:Shaders|ShaderLab documentation]].

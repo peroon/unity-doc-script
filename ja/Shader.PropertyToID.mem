@@ -1,10 +1,9 @@
 <signature>
 PropertyToID(string)
 </signature>
-Gets unique identifier for a shader property name.
-Using property identifiers is more efficient than passing strings to all material property functions. For example if you are calling Material.SetColor a lot, or using [[MaterialPropertyBlock]], then it is better to get the identifiers of the properties you need just once.
+プロパティ名からユニークID を取得します。
+全てのマテリアルプロパティ関数にプロパティ名を渡すよりもユニークIDを使用したほうが効率的です。例えばもしMaterial.SetColorを何度も呼び出したり [[MaterialPropertyBlock]] を使用する場合は最初の一度だけこの関数を使用してユニークIDを取得し使用することをおすすめします。
 
-Each name of shader property (for example, @@_MainTex@@ or @@_Color@@) is assigned an unique
-integer number in Unity, that stays the same for the whole game. The numbers will not be the same between different runs of the game or between machines, so do not store them or send them over network.
+シェーダーのプロパティ名（例えば @@_MainTex@@ や @@_Color@@）はUnityでのユニークIDとして割り当てられているため同じゲーム内では繰り返し使用することが出来ます。ただしこのIDは別の端末で起動したり異なるマシンの間では一致しませんので共有は行わないでください。
 
 SA: [[Material]], [[MaterialPropertyBlock]].

@@ -2,14 +2,11 @@
 SetGlobalTexture(string,Texture)
 SetGlobalTexture(int,Texture)
 </signature>
-Sets a global texture property for all shaders.
-Global properties are used if a shader needs them but the material does
-not have them defined (for example, if the shader does not expose them
-in /Properties/ block).
+全てのシェーダーのグローバルなテクスチャプロパティを設定します。
+シェーダーが明確なマテリアルを持たない（ /Properties/ ブロックが定義されていない）場合、グローバルなプロパティが使用されます。
 
-Usually this is used if you have a set of custom shaders that all use
-the same "global" texture (for example, custom diffuse-lighting cubemap).
-Then you can set the global property from script and don't have to setup
-the same texture in all materials.
+全て同じ "グローバル" なテクスチャ（例えばカスタマイズしたDiffuse-LightingのCubemap） を使用する一連のカスタムシェーダーを持つ場合に、この関数は使用されます。
+グローバルなプロパティをスクリプトから設定することが出来るし、全てのマテリアルに同じプロパティを設定する必要はありません。
+
 
 SA: ::ref::SetGlobalColor, ::ref::SetGlobalFloat; [[Material]] class, [[wiki:Shaders|ShaderLab documentation]].
