@@ -1,5 +1,5 @@
 <signature>
 RunningOnUIThread()
 </signature>
-Returns true if you're running on UI thread.
-More information on UI and application threads can be found [wiki:man:windowsstore-appcallbacks|here]].
+UI スレッドで実行している場合 true を返す
+UI およびアプリケーションスレッドについての詳細は [wiki:man:windowsstore-appcallbacks|ここ]] を参照して下さい。
