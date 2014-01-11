@@ -1,2 +1,2 @@
-Defines, whether backgroundColor should be used.
-When false (default), backgroundColor is ignored and background is defined by the system.
+backgroundColor を使用するか定義する
+デフォルトどおり false である場合、backgroundColor は無視されてシステムにより背景は定義されます。

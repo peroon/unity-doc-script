@@ -1,3 +1,3 @@
-Defines background color for secondary tile.
-When assigned, sets backgroundColorSet to true.
-Not used, when backgroundColorSet is false.
+セカンダリ タイルのための背景色を定義
+割り当てされると、backgroundColorSet を true にセットします。
+backgroundColorSet が false の場合、使用されません。
