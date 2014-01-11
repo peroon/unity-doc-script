@@ -1,5 +1,5 @@
 <signature>
 id
 </signature>
-Version control specific ID of a changeset.
-E.g. Perforce changetset have unique IDs, while sibversion has no ID at all in which case it is simply -1.
+チェンジセットに対するバージョン管理ごとの ID
+例として、Perforce チェンジセット は一意の ID があるが、Subversion は ID を持たず、その場合は -1 となります。
