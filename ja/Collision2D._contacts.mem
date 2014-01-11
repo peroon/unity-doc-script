@@ -1,5 +1,5 @@
 <signature>
 contacts
 </signature>
-The specific points of contact with the incoming Collider2D.
-SA: [[Collider2D]] class.
+Collider2D との具体的な衝突地点
+SA: [[Collider2D]] クラス

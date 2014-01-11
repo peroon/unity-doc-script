@@ -1,5 +1,5 @@
 <signature>
 Edit()
 </signature>
-Opens the assets in an associated editor.
-Will try to open the asset in an associated editor. Eg. if png files are associated to Photoshop the png file will be loaded in photoshop.
+関連付けされたエディタでアセットを開く
+アセットを関連付けされたエディタで開こうとします。例えば、png ファイルが Photoshop に関連付けされている場合、png ファイルは Photoshop でロードされます。

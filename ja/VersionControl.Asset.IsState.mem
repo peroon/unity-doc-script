@@ -1,5 +1,5 @@
 <signature>
 IsState(States)
 </signature>
-Returns true if the version control state of the asset exactly matches the input state.
-@param state State to check for.
+もしアセットのバージョン管理ステートが引数のステートと完全一致する場合に true を返す
+@param state 検索文字列とするステート
