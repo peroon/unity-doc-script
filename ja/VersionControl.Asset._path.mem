@@ -1,4 +1,4 @@
 <signature>
 path
 </signature>
-Gets the path of the asset.
+アセットのパスを返す

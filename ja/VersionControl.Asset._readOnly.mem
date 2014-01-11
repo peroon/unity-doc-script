@@ -1,4 +1,4 @@
 <signature>
 readOnly
 </signature>
-Returns true is the asset is read only.
+アセットが読み取り専用の場合に true を返す
