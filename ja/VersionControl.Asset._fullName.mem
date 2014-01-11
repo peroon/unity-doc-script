@@ -1,4 +1,4 @@
 <signature>
 fullName
 </signature>
-Gets the full name of the asset including extension.
+アセットの拡張子を含めたフルネームを返す

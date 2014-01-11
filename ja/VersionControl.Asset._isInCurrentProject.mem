@@ -1,5 +1,5 @@
 <signature>
 isInCurrentProject
 </signature>
-Returns true if the assets is in the current project.
-If you have multiple projects or other files in the version controls repository. The window showing the incoming changes will display all changes incoming from the remote repository. Some of these changes might be to other projects or files not part of the currently open project. In that case this will return false.
+現在のプロジェクトにアセットが含まれる場合に true を返す
+複数のプロジェクトや他のファイルがバージョン管理レポジトリにある場合、リモートレポジトリから反映された全ての変更が、ウィンドウに表示されます。これらの変更のうちのいくつかは、現在開かれているプロジェクトとは別の、他のプロジェクトやファイルに対する変更の場合があります。その場合false を返します。
