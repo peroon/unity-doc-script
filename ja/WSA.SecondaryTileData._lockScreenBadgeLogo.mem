@@ -1,2 +1,2 @@
-Uri to logo, shown for secondary tile on lock screen.
-Only used if lockScreenDisplayBadgeAndTileText is true.
+ログへの URI。ロックスクリーンでのセカンダリ タイルとして表示。
+lockScreenDisplayBadgeAndTileText が true の場合のみ使用されます。

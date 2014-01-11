@@ -1,2 +1,2 @@
-Defines the style for foreground text on a secondary tile.
-Default value is TileForegroundText.Default.
+セカンダリ タイルのフォアグラウンド テキストのスタイルを定義
+デフォルトの値は TileForegroundText.Default
