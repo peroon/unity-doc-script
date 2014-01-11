@@ -1,4 +1,4 @@
 <signature>
 state
 </signature>
-Gets the version control state of the asset.
+アセットのバージョン管理ステートを取得
