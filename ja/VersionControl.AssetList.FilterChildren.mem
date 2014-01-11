@@ -1,4 +1,4 @@
 <signature>
 FilterChildren()
 </signature>
-Create an optimised list of assets by removing children of folders in the same list.
+同じリストの中のサブフォルダを削除することで、アセットの最適化されたリストを作成する

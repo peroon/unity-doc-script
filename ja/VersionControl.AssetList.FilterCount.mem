@@ -1,6 +1,6 @@
 <signature>
 FilterCount(bool,States[])
 </signature>
-Count the list of assets by given a set of states.
-@param includeFolder Whether or not to include folders.
-@param states Which states to include in the count.
+引数とした複数のステートに一致するアセットのリスト数をカウントする
+@param includeFolder フォルダをカウントするかどうか
+@param states カウントする際に検索対象とする複数のステート
