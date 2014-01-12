@@ -1,4 +1,4 @@
 <signature>
 StopPeriodicBadgeUpdate()
 </signature>
-Stops previously started periodic update of a tile.
+過去に開始したタイルの定期更新を停止

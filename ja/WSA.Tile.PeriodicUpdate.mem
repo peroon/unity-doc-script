@@ -1,7 +1,7 @@
 <signature>
 PeriodicUpdate(string,float)
 </signature>
-Starts periodic update of a tile.
-A remote uri will be checked periodically to retrieve an update for a tile.
-@param uri a remote location fromwhere to retrieve tile update
-@param interval a time interval in minutes, will be rounded to a value, supported by the system
+タイルの定期通知を開始
+リモートの URI を定期的にチェックしてタイルに対する更新を取得します。
+@param uri タイルの更新を取得するリモートのロケーション
+@param 分単位で示すインターバル間隔、システムによりサポートされる値に丸められます。
