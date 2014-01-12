@@ -1,7 +1,7 @@
 <signature>
 GetTemplate(ToastTemplate)
 </signature>
-�g�[�X�g�ʒm�̃e���v���[�g XML ���擾
-������g�p���ăg�[�X�g�̎��O��`���ꂽ�X�^�C���̂ЂƂ̃e���v���[�g���擾�ł��܂��B
-@param templ �e���v���[�g�̎��ʎq
-@return �������Ԃ��A��� XML �h�L�������g�𖄂߂ăg�[�X�g�ʒm�Ɏg�p�o���܂��B
+トースト通知のテンプレート XML を取得
+これを使用してトーストの事前定義されたスタイルのひとつのテンプレートを取得できます。
+@param templ テンプレートの識別子
+@return 文字列を返り値として、空の XML ドキュメントにより埋めてタイル通知に使用できます。
