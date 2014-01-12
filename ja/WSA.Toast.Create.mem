@@ -2,10 +2,9 @@
 Create(string)
 Create(string,string)
 </signature>
-Create toast notification.
-Toast notification is created by providing XML document with it's data.
-A second variant is a convenience method to show simple toast with text, optionally with image on it.
-@param xml XML document with tile data.
-@param image Uri to image to show on a toast, can be empty, in that case text-only notification will be shown.
-@param text A text to display on a toast notification.
-@return A toast object for further work with created notification or null, if creation of toast failed.
+トースト通知を作成
+トースト通知はデータ付きの XML ドキュメントを指定することで作成できます。二つめのバリエーションとして、簡易的なトーストを任意の画像つきのテキストで表示する便利なメソッドがあります。
+@param xml タイルデータつきの XML ドキュメント
+@param image トーストで表示する画像への URI 。空とすることも出来、その場合はテキストのみの通知を表示
+@param text トースト通知で表示するテキスト
+@return トーストオブジェクトを返り値であり、作成した通知に対するさらなる作業を行なうことが出来る。あるいはトースト作成が失敗した場合 null を返す。

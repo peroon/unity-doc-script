@@ -1,4 +1,4 @@
-Templates for various tile styles.
-Each template represents an XML document for updating tile. Note that availability of templates depends on version of Microsoft Windows.
-For more detailed information, see:
+様々なタイルのスタイルに対するテンプレート
+各々のテンプレートはタイルを更新する XML ドキュメントを表す。テンプレートが利用できるかは Windows バージョンに依存することに留意して下さい。
+詳細については以下を参照して下さい：
 http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx
