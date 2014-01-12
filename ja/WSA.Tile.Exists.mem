@@ -1,7 +1,7 @@
 <signature>
 Exists(string)
 </signature>
-Whether secondary tile is pinned to start screen.
-When hasUserConsent is /true/, this property determines, whether tile is present on start screen.
-Always true for the main tile.
-@param tileId An identifier for secondary tile.
+スタート画面にセカンダリタイルがピン留めされるかどうか
+hasUserConsent が /true/ の時、タイルがスタート画面にあるかこのプロパティで判定します。
+メインタイルでは常に true
+@param tileId セカンダリタイルの識別子

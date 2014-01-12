@@ -1,6 +1,6 @@
 <signature>
 GetSecondaries()
 </signature>
-Gets all secondary tiles.
-Secondary tile exists if it's pinned to start screen or a request to pin it is not yet complete.
-@return An array of Tile objects.
+全てのセカンダリタイルを返す
+スタート画面にピン留めされるか、またはピン留めのリクエストが未完了の場合、セカンダリタイルが存在します。
+@return タイルオブジェクトの配列を返す
