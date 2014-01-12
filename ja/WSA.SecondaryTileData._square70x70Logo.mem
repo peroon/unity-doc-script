@@ -1,2 +1,2 @@
-Uri to the logo for small size tile.
-If not provided, medium size tile is scaled down.
+小サイズのタイルのロゴへの URI
+指定しない場合、中サイズタイルがスケールダウンされます。

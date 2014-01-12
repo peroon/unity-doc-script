@@ -1,5 +1,5 @@
 <signature>
 arguments
 </signature>
-Arguments passed to application.
-Arguments can be passed by secondary tiles and toast notifications. Note, that arguments are only available in XAML builds.
+アプリケーションに渡される引数
+セカンダリタイルおよびとトースト通知に引数を渡すこが出来ます。引数は XAML ビルドでのみ利用可能であることに留意して下さい。
