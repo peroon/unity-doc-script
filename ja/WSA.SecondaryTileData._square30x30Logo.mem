@@ -1,2 +1,2 @@
-Uri to the logo shown on tile
-If not provided, relevant applications logo is used.
+タイルで表示するロゴへの URL
+指定がない場合、関連するアプリケーションのロゴが使用されます。

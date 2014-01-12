@@ -1,2 +1,2 @@
-Defines whether the displayName should be shown on a wide secondary tile.
-Defaults to false.
+横長のセカンダリタイルに表示名 displayName を表示するか定義
+デフォルトは false
