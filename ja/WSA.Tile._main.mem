@@ -1,2 +1,2 @@
-Returns applications main tile
-This object always exists, regardless whether tile is pinned to start screen or not.
+アプリケーションのメインタイルを返す。
+タイルがスタート画面にピン留めされているかどうかに関わらず、このオブジェクトは常に存在します。

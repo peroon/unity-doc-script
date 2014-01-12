@@ -1,2 +1,2 @@
-Represents tile on Windows start screen
-This class can be used to create or update secondary tiles on start screen and get instances of tiles to send notifications to them.
+Windows スタート画面のタイルを表します。
+このクラスを使用してスタート画面のセカンダリタイルを作成または更新してタイルのインスタンスを取得して、それらに通知を送信できます。
