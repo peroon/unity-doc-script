@@ -1,7 +1,7 @@
 <signature>
 UpdateBadgeNumber(float)
 </signature>
-Set or update a badge on a tile to a number.
-Number must be supported by the system, see:
+数字に対してタイルのバッジをセットまたは更新
+数字はシステムでサポートされるものである必要があり、詳細は以下で参照して下さい：
 http://msdn.microsoft.com/en-us/library/windows/apps/hh779719.aspx.
-@param number Number to be shown on a badge.
+@param number バッジで表示する数字

@@ -1,4 +1,4 @@
 <signature>
 StopPeriodicUpdate()
 </signature>
-Stops previously started periodic update of a tile.
+過去に開始されたタイル定期通知を停止します。

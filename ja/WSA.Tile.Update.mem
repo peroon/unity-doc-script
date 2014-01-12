@@ -2,12 +2,12 @@
 Update(string)
 Update(string,string,string,string)
 </signature>
-Send a notification for tile (update tiles look).
-A tile is updated by providing and XML document with new look.
-The second version is a convenience method to make tile display image, text or both. At least one of medium and text argumets must be provided, and these two are used to determine whether this is image-only, text-only or image-and-text tile.
-Uris ms-appx:/// and ms-appdata:///local/ can be used to access local application resources. If uri points to network resource, internet access capability must be enabled in applications manifest.
-@param xml A string containing XML document for new tile look.
-@param medium An /uri/ to 150x150 image, shown on medium tile.
-@param wide An /uri/ to a 310x150 image to be shown on a wide tile (if such issupported).
-@param large An /uri/ to a 310x310 image to be shown on a large tile (if such is supported).
-@param text A text to shown on a tile.
+タイルの通知を送信（タイルの外見を更新）
+タイルを更新するには新しい外見の XML ドキュメントを提供します。
+二つめのバージョンはタイルの表示画像、テキストまたは両方を作成する便利なメソッドです。少なくとも medium または text 引数のひとつを指定する必要があり、これらの二つは画像のみ、テキストのみ、あるいは画像およびテキストのタイルか判定するのに使用されます。
+URI として ms-appx:/// および ms-appdata:///local/ を使用してローカルアプリケーション リソースにアクセス出来ます。もし URI がネットワーク資源を指す場合、インターネットアクセス利用がアプリケーション マニフェストで有効化される必要があります。
+@param xml 新しいタイルの外見を含む XML ドキュメント
+@param medium 中サイズのタイルで表示する 150x150 画像への /uri/ 
+@param wide 横幅タイルで表示する 310x150 画像への /uri/ （サポートが必要であれば）
+@param large 大サイズのタイルで表示する 310x310 画像への /uri/ （サポートが必要であれば）
+@param text タイルで表示するテキスト
