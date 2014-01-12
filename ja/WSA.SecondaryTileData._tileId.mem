@@ -1,2 +1,2 @@
-Unique identifier within application for a secondary tile.
-Must be non-empty.
+セカンダリタイルのアプリケーション内の一意の識別子
+必ず空白以外とする必要があります。
