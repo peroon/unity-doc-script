@@ -1,2 +1,2 @@
-Defines whether the displayName should be shown on a medium secondary tile.
-Defaults to true.
+中サイズのセカンダリタイルで表示名 displayName を表示するか
+デフォルトは true
