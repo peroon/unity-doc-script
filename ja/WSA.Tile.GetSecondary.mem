@@ -1,6 +1,6 @@
 <signature>
 GetSecondary(string)
 </signature>
-Returns the secondary tile, identified by tile id.
-@param tileId A tile identifier.
-@return A Tile object or null if secondary tile does not exist (not pinned to start screen and user request is complete).
+タイル ID を指定してセカンダリタイルを返す
+@param tileId タイルの識別子
+@return タイルオブジェクトを返すか、セカンダリタイルが存在しない場合は null （スタート画面にピン留めされてないかユーザリクエストが未完了）

@@ -1,7 +1,7 @@
 <signature>
 GetTemplate(TileTemplate)
 </signature>
-Get template XML for tile notification.
-This can be used to retrieve a template for one of the predefined styles for tiles.
-@param templ A template identifier.
-@return String, which is an empty XML document to be filled and used for tile notification.
+タイル通知のテンプレート XML を返す
+これはタイルの事前定義されたスタイルのひとつでテンプレートを取得するために使用出来ます。
+@param templ テンプレートの識別子
+@return 文字列を返り値として、空の XML ドキュメントにより埋めてタイル通知に使用できます。
