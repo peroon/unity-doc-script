@@ -3,10 +3,10 @@ CreateOrUpdateSecondary(SecondaryTileData)
 CreateOrUpdateSecondary(SecondaryTileData,Vector2)
 CreateOrUpdateSecondary(SecondaryTileData,Rect)
 </signature>
-Creates new or updates existing secondary tile.
-TileId is required to be set in data, displayName is required when creating and can not be updated.
-When used to create new tile, this function displays a request on the screen. Tile will be created if user agrees to pin it to start screen.
-@param data The data used to create or update secondary tile.
-@param pos The coordinates for a request to create new tile.
-@param area The area on the screen above which the request to create new tile will be displayed.
-@return New Tile object, that can be used for further work with the tile.
+既存のセカンダリタイルを新規作成または更新
+TileId をデータ上でセットする必要があり、displayName が作成時に必要であり、後から更新できません。
+新規のタイルを作成する時に使用されると、この関数は画面にリクエストを表示します。ユーザがスタート画面にピン留めすることに同意した場合にタイルが作成されます。
+@param data セカンダリタイルを作成または更新するのに使用されるデータ
+@param pos 新規のタイルを作成するリクエストを表示する座標
+@param area 新規のタイルを作成するリクエストを表示する画面領域
+@return 新規のタイルオブジェクトが返り値となり、これを使用してそのタイルで作業できます。
