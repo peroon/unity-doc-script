@@ -2,16 +2,15 @@
 FixedUpdate()
 </signature>
 フレームに依存せず、一定の間隔で呼び出される。
-物理演算など正確な値を取得したい場合は、処理の重さに左右されるUpdate関数ではなく、FixedUpdate関数を使用するようにしましょう。For example when adding a force to a rigidbody, you have to apply the force every fixed 
-frame inside FixedUpdate instead of every frame inside Update.
+物理演算など正確な値を取得したい場合は、処理の重さに左右されるUpdate関数ではなく、FixedUpdate関数を使用するようにしましょう。例えば Rigidbody に力を加える場合、Update ではなく、毎フレームごとの FixedUpdate の中で力を適用する必要があります。
 CONVERTEXAMPLE
 BEGIN EX
-	// Apply a upwards force to the rigid body every frame
+	// 毎フレーム Rigidbody に上方向の力を加える
 
 	function FixedUpdate () {
 		rigidbody.AddForce (Vector3.up);
 	}
 END EX
-In order to get the elapsed time since last call to Update, use Time.deltaTime
-This function is only called if the [[Behaviour]] is enabled.
-Override this function in order to provide your component's functionality.
+FixedUpdate を最後に呼び出ししたタイミングからの経過時間を取得するには Time.deltaTime を使用します。
+この関数は [[Behaviour]] が有効化されている場合のみ呼び出しされます。
+独自にコンポーネントの機能を加える場合、この関数をオーバーライドして下さい。

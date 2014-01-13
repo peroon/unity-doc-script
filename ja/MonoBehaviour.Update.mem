@@ -2,15 +2,15 @@
 Update()
 </signature>
 毎フレーム呼び出される。
-Update is the most commonly used function to implement any kind of game behaviour.
+Update はあらゆるゲーム動作を実装するうえで最も頻繁に使用される関数です。
 CONVERTEXAMPLE
 BEGIN EX
-	// Moves the object forward 1 meter a second
+	// オブジェクトを 1 メートル/秒の速度で前方向に移動させます
 
 	function Update () {
 		transform.Translate(0, 0, Time.deltaTime * 1);
 	}
 END EX
-In order to get the elapsed time since last call to Update, use Time.deltaTime.
-This function is only called if the [[Behaviour]] is enabled.
-Override this function in order to provide your component's functionality.
+Update を最後に呼び出ししたタイミングからの経過時間を取得するには Time.deltaTime を使用します。
+この関数は [[Behaviour]] が有効化されている場合のみ呼び出しされます。
+独自にコンポーネントの機能を加える場合、この関数をオーバーライドして下さい。
