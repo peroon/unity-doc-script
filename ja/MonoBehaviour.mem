@@ -1,9 +1,9 @@
-MonoBehaviour is the base class every script derives from.
-Using Javascript every script automatically derives from MonoBehaviour.
-When using C# or Boo you have to explicitly derive from MonoBehaviour.
+MonoBehaviour は全てのスクリプトが派生する元となるベースクラスです。
+Javascript を使用するとき全てのスクリプトは自働的に MonoBehaviour から派生します。
+C# または Boo を使用するときは明示的に MonoBehaviour から派生する必要があります。
 
-__Note:__ The checkbox for disabling a MonoBehavior (on the editor) will only 
-prevent Start(), Awake(), Update(), FixedUpdate(), and OnGUI() from executing. 
-If none of these functions are present, the checkbox is not displayed.
+__注意:__ MonoBehaviour を無効化するチェックボックス（エディタ上）により
+Start(), Awake(), Update(), FixedUpdate(), および OnGUI() が実行されなくなります。
+もし、これらのいずれも存在しない場合はチェックボックス自体が表示されません。
 
-SA: The [[wiki:Scripting42|chapter on scripting]] in the manual.
+SA: Unity マニュアルの [[wiki:Scripting42|スクリプティング]]

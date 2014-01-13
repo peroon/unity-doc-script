@@ -4,16 +4,16 @@ Start()
 <txttag>
 CSNONE
 </txttag>
-Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
-Like the Awake function, Start is called exactly once in the lifetime of the script. However, Awake is called when the script object is initialised, regardless of whether or not the script is enabled. Start may not be called on the same frame as Awake if the script is not enabled at initialisation time.
+Start はスクリプトが実行されたときのフレームから呼び出しされ、タイミングは Update メソッドの内容が最初に呼び出しされる直前です。
+Awake 関数と同様に、Start 関数はスクリプトの生存期間中に一回のみ呼び出しされます。しかし Awake はスクリプトが有効化されているかどうかに関わらず、スクリプトオブジェクトが初期化されるときに呼び出しされます。もし初期化のタイミングでスクリプトが有効化されてない場合、Start は Awake と同じフレームで呼び出しされない場合があります。
 
-The Awake function is called on all objects in the scene before any object's Start function is called. This fact is useful in cases where object A's initialisation code needs to rely on object B's already being initialised; B's initialisation should be done in Awake while A's should be done in Start.
+Awake 関数はどのオブジェクトの Start 関数が呼び出しされるよりも前に、シーン上の全てのオブジェクトで呼び出しされます。これはオブジェクト A の初期化コードがオブジェクト B の初期化コードが実行されていることに依存する必要がある場合に便利です。B の初期化コードは Awake で行い、 A の初期化コードは Start で行なうべきです。
 
-Where objects are instantiated during gameplay, their Awake function will naturally be called after the Start functions of scene objects have already completed.
+オブジェクトがゲームプレイの最中にインスタンス化された場合、 必然的に Awake 関数はシーンオブジェクトの Start 関数が完了した後に呼び出しされます。
 CONVERTEXAMPLE
 BEGIN EX
-	// Initializes the target variable.
-	// target is private and thus not editable in the inspector
+	// ターゲット変数を初期化
+	// ターゲットはプライベートであるためインスペクタでは編集できません
 
 	private var target : GameObject;
 
