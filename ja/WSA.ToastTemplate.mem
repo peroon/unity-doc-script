@@ -1,4 +1,4 @@
-Templates for various toast styles.
-Each template represents an XML document for presenting toast notification.
-For more detailed information, see:
+様々なトーストのスタイルのテンプレート
+各々のテンプレートはトースト通知を表現する XMLドキュメントを示します。
+詳細については以下を参照して下さい：
 http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx

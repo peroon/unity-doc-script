@@ -1,2 +1,2 @@
-Represents a toast notification in Windows Store Apps.
-Application must be declared "Toast capable" in manifest for toast notifications to work.
+Windows ストア アプリでのトースト通知を表します。
+トースト通知が動作すらめにはアプリケーションで "Toast capable" (トースト利用可能)とマニフェストで宣言する必要があります。
