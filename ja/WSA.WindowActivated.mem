@@ -1,2 +1,2 @@
-This event occurs when window completes activation or deactivation, it also fires up when you snap and unsnap the application.
-See http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.activated for more information.
+ウィンドウが有効化または無効化を完了するとこのイベントが発生し、アプリケーションをスナップまたはスナップ解除するときに発行される
+詳細については http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.activated を参照して下さい。
