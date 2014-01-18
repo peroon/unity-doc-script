@@ -1,6 +1,6 @@
 <signature>
 roamingFolder
 </signature>
-Returns a path to roaming folder.
-On Windows Store Apps, it will be <main drive>:\Users\<user name>\AppData\Local\Packages\<package id>\RoamingState, directory is writeable, so you can create, read and write files to it.
-In Editor, it will be <your project path>\RoamingState.
+ローミング フォルダへのパスを返す
+Windows ストア アプリケーションでは <メインドライブ>:\Users\<ユーザ名>\AppData\Local\Packages\<パッケージ ID>\RoamingState であり、ディレクトリは書き込み可能であるため、ファイルを作成、読み取り、書き込みが出来ます。
+エディタでは <プロジェクトパス>\RoamingState となります。

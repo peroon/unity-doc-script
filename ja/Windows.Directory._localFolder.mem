@@ -1,6 +1,6 @@
 <signature>
 localFolder
 </signature>
-Returns a path to local folder.
-On Windows Store Apps, it will be <main drive>:\Users\<user name>\AppData\Local\Packages\<package id>\LocalState, directory is writeable, so you can create, read and write files to it.
-In Editor, it will be <your project path>\LocalState.
+ローカルフォルダへのパスを返す
+Windows ストア アプリケーションでは <メインドライブ>:\Users\<ユーザ名>\AppData\Local\Packages\<パッケージ ID>\LocalState であり、ディレクトリは書き込み可能であるため、ファイルを作成、読み取り、書き込みが出来ます。
+エディタでは <プロジェクトパス>\LocalState となります。
