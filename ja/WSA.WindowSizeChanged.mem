@@ -1,3 +1,3 @@
-This event occurs when window rendering size changes.
-For ex., when you snap the application.
-See http://ppe.msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.sizechanged for more information.
+ウィンドウのレンダリング サイズが変更されたときにこのイベントが発生
+例としては、アプリケーションをスナップした時など。
+詳細については http://ppe.msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.sizechanged を参照して下さい。
