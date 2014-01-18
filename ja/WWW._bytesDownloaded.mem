@@ -1,5 +1,5 @@
 <signature>
 bytesDownloaded
 </signature>
-The number of bytes downloaded by this WWW query (read only).
-Returns the number of bytes downloaded when fetching content from a WWW source.
+WWW クエリによりダウンロードされたバイト数（読み取り専用）。
+WWW ソースからコンテンツをフェッチした時のダウンロードされたバイト数を返す

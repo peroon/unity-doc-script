@@ -1,5 +1,5 @@
 <signature>
 ComputeSHA1Hash(byte[])
 </signature>
-Computes SHA1 hash value for the specified byte array.
-@param buffer The input to compute the hash code for.
+指定された SHA1 ハッシュ値を算出。
+@param buffer ハッシュコードを算出する入力値

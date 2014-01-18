@@ -1,5 +1,5 @@
 <signature>
 ComputeMD5Hash(byte[])
 </signature>
-Computes MD5 hash value for the specified byte array.
-@param buffer The input to compute the hash code for.
+指定された MD5 ハッシュ値を算出。
+@param buffer ハッシュコードを算出する入力値
