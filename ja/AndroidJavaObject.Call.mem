@@ -1,31 +1,32 @@
 <signature>
 Call(string,object[])
 </signature>
-Calls a Java method on an object (non-static).
-To call a method with return type 'void', use the regular version.
+static でない Java メソッドを呼び出す。
+戻り値の型が void のメソッド呼び出しをする場合は通常のメソッドを使用します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a android.content.res.Configuration object and call setToDefaults.
+	// android.content.res.Configuration を作成し setToDefaults を呼び出します。
 	function Start() {
 		var jo = new AndroidJavaObject("android.content.res.Configuration");
 		jo.Call("setToDefaults");
 	}
 END EX
-@param methodName Specifies which method to call.
-@param args An array of parameters passed to the method.
+@param methodName 呼び出しするメソッド名を指定
+@param args メソッドに渡す引数の配列
 <signature>
 Call<ReturnType>(string,object[])
 </signature>
+Java メソッドを呼び出す。
 Call a Java method on an object.
-To call a Java method with a non-void return type, use the generic version.
+戻り値の型が void でないメソッド呼び出しをする場合はジェネリックであるメソッドを使用します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a java.lang.String object holding the string "some string",
-	// and retrieve it's hash code.
+    //  "some string" (何らかの文字列)を持つ java.lang.String object を作成し
+    // そのハッシュコードを取得
 	function Start() {
 		var jo = new AndroidJavaObject("java.lang.String", "some string");
 		var hash = jo.Call.<int>("hashCode");
 	}
 END EX
-@param methodName Specifies which method to call.
-@param args An array of parameters passed to the method.
+@param methodName 呼び出しするメソッド名を指定
+@param args メソッドに渡す引数の配列

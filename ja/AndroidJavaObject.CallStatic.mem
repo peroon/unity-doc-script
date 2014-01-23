@@ -1,30 +1,30 @@
 <signature>
 CallStatic(string,object[])
 </signature>
-Call a static Java method on a class.
-To call a static method with return type 'void', use the regular version.
+staticのJava メソッドを呼び出す
+戻り値の型が void のメソッド呼び出しをする場合は通常のメソッドを使用します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a android.os.Binder object and call statich method flushPendingCommands().
+	// android.os.Binder object を作成し、static メソッドの flushPendingCommands() を呼び出します。
 	function Start() {
 		var jo = new AndroidJavaObject("android.os.Binder");
 		jo.CallStatic("flushPendingCommands");
 	}
 END EX
-@param methodName Specifies which method to call.
-@param args An array of parameters passed to the method.
+@param methodName 呼び出しするメソッド名を指定
+@param args 引数として渡す値
 <signature>
 CallStatic<ReturnType>(string,object[])
 </signature>
 Call a static Java method on a class.
-To call a static method with a non-void return type, use the generic version.
+戻り値が void でない static の Java メソッドを呼び出す場合、ジェネリックであるメソッドを使用して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a java.lang.String object, and call static method valueOf(float value).
+	// java.lang.String object を作成し、static メソッドの valueOf(float 値) を呼び出します。
 	function Start() {
 		var jo = new AndroidJavaObject("java.lang.String");
 		var valueString = jo.CallStatic.<string>("valueOf", 42.f);
 	}
 END EX
-@param methodName Specifies which method to call.
-@param args An array of parameters passed to the method.
+@param methodName 呼び出しするメソッド名を指定
+@param args 引数として渡す値
