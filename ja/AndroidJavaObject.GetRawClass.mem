@@ -1,4 +1,4 @@
 <signature>
 GetRawClass()
 </signature>
-生の jclass ポイントを Java クラスに取得する。
+Java クラスに対する生の jclass ポインタを取得する。

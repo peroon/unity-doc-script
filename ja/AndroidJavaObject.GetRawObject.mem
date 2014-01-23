@@ -1,4 +1,4 @@
 <signature>
 GetRawObject()
 </signature>
-Retrieve the ''raw'' jobject pointer to the Java object.
+Java クラスに対する 生の jobject ポインタを取得する。

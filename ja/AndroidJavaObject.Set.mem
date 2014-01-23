@@ -1,15 +1,16 @@
 <signature>
 Set<FieldType>(string,FieldType)
 </signature>
-Set the value of a field in an object (non-static).
-The generic parameter determines the field type.
+static でないオブジェクトのフィールド値をセットする
+ジェネリック引数によりフィールドの型は決定されます。
+
 CONVERTEXAMPLE
 BEGIN EX
-	// Create a android.text.format.Time object, and set the 'allDay' field to true.
+	// android.text.format.Time object を作成し、'allDay' フィールドを true にセット
 	function Start() {
 		var jo = new AndroidJavaObject("android.text.format.Time");
 		var valueString = jo.Set.<bool>("allDay", true);
 	}
 END EX
-@param fieldName The name of the field (e.g. ''int counter;'' would have fieldName = "counter").
-@param val The value to assign to the field. It has to match the field type.
+@param fieldName フィールド名 (例 int counter; の場合、 fieldName は counter となる)
+@param val フィールドに割り当てる値。フィールド型と一致する必要がある。
