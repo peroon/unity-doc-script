@@ -1,14 +1,13 @@
 <signature>
 Get<FieldType>(string)
 </signature>
-Get the value of a field in an object (non-static).
-The generic parameter determines the field type.
-CONVERTEXAMPLE
+staticでないフィールドの値を取得する。
+ジェネリック 引数により フィールドの型が決定されます。。
 BEGIN EX
-	// Create a android.os.Message object, and retrieve the default value of the field 'what'.
-	function Start() {
-		var jo = new AndroidJavaObject("android.os.Message");
-		var valueString = jo.Get.<int>("what");
-	}
+        // android.os.Message object を作成し、what のデフォルト値を取得
+        function Start() {
+                var jo = new AndroidJavaObject("android.os.Message");
+                var valueString = jo.Get.<int>("what");
+        }
 END EX
-@param fieldName The name of the field (e.g. ''int counter;'' would have fieldName = "counter").
+@param fieldName フィールド名 (例 int counter; の場合、 fieldName は counter となる)

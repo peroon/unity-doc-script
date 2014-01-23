@@ -1,4 +1,4 @@
 <signature>
 GetRawClass()
 </signature>
-Retrieve the ''raw'' jclass pointer to the Java class.
+生の jclass ポイントを Java クラスに取得する。

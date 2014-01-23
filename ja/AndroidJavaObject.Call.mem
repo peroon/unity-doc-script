@@ -17,7 +17,6 @@ END EX
 Call<ReturnType>(string,object[])
 </signature>
 Java メソッドを呼び出す。
-Call a Java method on an object.
 戻り値の型が void でないメソッド呼び出しをする場合はジェネリックであるメソッドを使用します。
 CONVERTEXAMPLE
 BEGIN EX
