@@ -1,8 +1,7 @@
 <signature>
 SetPropertyBlock(MaterialPropertyBlock)
 </signature>
-Lets you add per-renderer material parameters without duplicating a material.
-This is recommended when changing material properties often. With multithreaded rendering,
-it is more efficient than setting properties directly on the material.
+マテリアルを複製せずにマテリアルのparameterを変更することが出来ます。
+これは頻繁にマテリアルのプロパティを変更する時に使用することをおすすめします。これはマルチスレッドレンダリングで直接マテリアルのプロパティを書き換えることよりも効率的です。
 
 SA: [[MaterialPropertyBlock]].

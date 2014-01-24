@@ -1,11 +1,12 @@
 <signature>
 FindObjectsOfTypeAll(Type)
 </signature>
-Returns a list of all objects of Type /type/.
-This function can return any type of Unity object that is loaded, including game objects, prefabs, materials, meshes, textures, etc. It will also list internal stuff, therefore please be ''extra'' careful the way you handle the returned objects.
-Contrary to Object::ref::FindObjectsOfType this function will also list disabled objects.
+/type/ で指定した型の全てのオブジェクトを取得します。
+この関数はUnityオブジェクトとしてロードされているものを対象として取得します。例えばゲームオブジェクト、プレハブ、マテリアル、メッシュ、テクスチャなどです。また、通常は触れない内部的なオブジェクトも取得することが出来ます。したがって十分に注意して扱うようにしてください。
+この関数は Object::ref::FindObjectsOfType と比べて更に無効となっているオブジェクトの取得まで出来てしまいます。
 
-Please note that this function is very slow and is not recommended to be used every frame.
+この関数はとても処理が遅いので枚フレーム使用するのは推奨されません。
+
 CONVERTEXAMPLE
 BEGIN EX
 	// This script displays the number of allocated Unity objects by type.
@@ -44,16 +45,18 @@ function GetAllObjectsInScene(): List.<GameObject> {
     return objectsInScene;
 }
 END EX
-@param type Type of the class to match while searching.
-@return An array of objects whose class is ''type'' or is derived from ''type''.
+@param type 検索するオブジェクトの型
+@return ''type'' から検索して取得したオブジェクトの配列
 <signature>
 FindObjectsOfTypeAll<T>()
 </signature>
-Returns a list of all objects of Type /T/.
-This function can return any type of Unity object that is loaded, including game objects, prefabs, materials, meshes, textures, etc. It will also list internal stuff, therefore please be ''extra'' careful the way you handle the returned objects.
-Contrary to Object::ref::FindObjectsOfType this function will also list disabled objects.
+/T/ で指定した型から全てのオブジェクトを取得します。
 
-Please note that this function is very slow and is not recommended to be used every frame.
+この関数はUnityオブジェクトとしてロードされているものを対象として取得します。例えばゲームオブジェクト、プレハブ、マテリアル、メッシュ、テクスチャなどです。また、通常は触れない内部的なオブジェクトも取得することが出来ます。したがって十分に注意して扱うようにしてください。
+この関数は Object::ref::FindObjectsOfType と比べて更に無効となっているオブジェクトの取得まで出来てしまいます。
+
+この関数はとても処理が遅いので枚フレーム使用するのは推奨されません。
+
 CONVERTEXAMPLE
 BEGIN EX
 	// This script displays the number of allocated Unity objects by type.

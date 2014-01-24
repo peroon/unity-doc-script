@@ -1,12 +1,13 @@
 <signature>
 LoadAssetAtPath(string,Type)
 </signature>
-Returns a resource at an asset path (Editor Only).
-This function always return null in the standalone player or web player.
-This is useful for quickly accessing an asset for use in the editor only.
+アセットのパスからリソースのを取得します。（エディタのみ）
+この関数はWeb PlayerやStandaloneでは必ずnullを返します。
+エディタのみの使用ですがすばやくにアセットにアクセスできるようになります。
+
 
 __Note:__\\
-__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
+Unityでは __全ての__ アセット名とパスはスラッシュ（”/”）を使用します。バックスラッシュ（”\”）は動きませんので注意してください。
 CONVERTEXAMPLE
 BEGIN EX
 	var prefab : GameObject;
@@ -15,17 +16,17 @@ BEGIN EX
 		prefab = Resources.LoadAssetAtPath("Assets/Artwork/mymodel.fbx", GameObject);
 	}
 END EX
-@param assetPath Pathname of the target asset.
-@param type Type filter for objects returned.
+@param assetPath 対象のアセットパス
+@param type 取得するアセットの型
 <signature>
 LoadAssetAtPath<T>(string)
 </signature>
-Returns a resource at an asset path (Editor Only).
-This function always return null in the standalone player or web player.
-This is useful for quickly accessing an asset for use in the editor only.
+アセットのパスからリソースのを取得します。（エディタのみ）
+この関数はWeb PlayerやStandaloneでは必ずnullを返します。
+エディタのみの使用ですがすばやくにアセットにアクセスできるようになります。
 
 __Note:__\\
-__All__ asset names & paths in Unity use forward slashes, paths using backslashes will __not__ work.
+Unityでは __全ての__ アセット名とパスはスラッシュ（”/”）を使用します。バックスラッシュ（”\”）は動きませんので注意してください。
 CONVERTEXAMPLE
 BEGIN EX
 	var prefab : GameObject;
@@ -34,4 +35,4 @@ BEGIN EX
 		prefab = Resources.LoadAssetAtPath.<GameObject>("Assets/Artwork/mymodel.fbx");
 	}
 END EX
-@param assetPath Pathname of the target asset.
+@param assetPath 対象のアセットパス

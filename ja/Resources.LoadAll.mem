@@ -47,8 +47,8 @@ BEGIN EX
 		go.renderer.material.mainTexture = texture;
 	}
 END EX
-@param path Pathname of the target folder.
-@param systemTypeInstance Type filter for objects returned.
+@param path ターゲットフォルダのパス名
+@param systemTypeInstance 取得するアセットのパス
 <signature>
 LoadAll<T>(string)
 </signature>
