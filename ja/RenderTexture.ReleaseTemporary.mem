@@ -1,8 +1,8 @@
 <signature>
 ReleaseTemporary(RenderTexture)
 </signature>
-Release a temporary texture allocated with ::ref::GetTemporary.
-Later calls to ::ref::GetTemporary will reuse the RenderTexture created earlier if possible.
-When no one has requested the temporary RenderTexture for a few frames it will be destroyed.
+GetTemporary関数で割り当てられた一時的なテクスチャをリリースする。
+後続の ::ref::GetTemporary 呼び出しは過去に作成されたレンダーテクスチャを可能な場合に再利用します。
+もし一時的な RenderTexture に対するリクエストが数フレームなかった場合、破棄されます。
 
-SA: ::ref::GetTemporary function.
+SA: ::ref::GetTemporary 関数

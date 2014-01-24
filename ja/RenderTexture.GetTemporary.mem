@@ -5,26 +5,24 @@ GetTemporary(int,int,int,RenderTextureFormat)
 GetTemporary(int,int,int,RenderTextureFormat,RenderTextureReadWrite)
 GetTemporary(int,int,int,RenderTextureFormat,RenderTextureReadWrite,int)
 </signature>
-Allocate a temporary render texture.
-This function is optimized for when you need a quick RenderTexture to do some temporary calculations.
-Release it using ::ref::ReleaseTemporary as soon as you're done with it, so another call can
-start reusing it if needed.
+一時的なレンダリングテクスチャを割り当てる。
+迅速にレンダーテクスチャの表示を行いたい場合に使用します。
+使い終わった場合には、ReleaseTemporary関数で解放することで、別の呼び出しにより再利用することが出来ます。
 
-Internally Unity keeps a pool of temporary render textures, so a call to GetTemporary most often
-just returns an already created one (if the size and format matches). These temporary render textures
-are actually destroyed when they aren't used for a couple of frames.
+Unity は内部的に一時的なレンダーテクスチャのプールを保持し、GetTemporary 呼び出しは通常
+作成済みのものを返すのみです（サイズおよびフォーマットが一致した場合）これらの一時的なレンダーテクスチャは
+数フレーム使用されなかった場合は実際に破棄されます。
 
-If you are doing a series of post-processing "blits", it's best for performance to get and release
-a temporary render texture for each blit, instead of getting one or two render textures upfront and reusing
-them. This is mostly beneficial for mobile (tile-based) and multi-GPU systems: GetTemporary will internally
-do a ::ref::DiscardContents call which helps to avoid costly restore operations on the previous
-render texture contents.
+複数回の処理を連続的に行なう場合、パフォーマンスの観点で一時的なレンダーテクスチャを個々の処理ごとに割り当ておよび解放
+することが望ましく、代わりに最初に 1 つまたは 2 つのレンダーテクスチャを取得して再利用するべきでありません。これはモバイル
+（タイルベース）およびマルチ GPU システムでもっともメリットが大きくなります。 GetTemporary により内部的に ::ref::DiscardContents
+呼び出しをして過去のレンダーテクスチャ コンテンツでの高価なリストア処理を回避するのに役立ちます。
 
-You can not depend on any particular contents of the RenderTexture you get from GetTemporary function.
-It might be garbage, or it might be cleared to some color, depending on the platform.
-@param width Width in pixels.
-@param height Height in pixels.
-@param depthBuffer Depth buffer bits (0, 16 or 24).
-@param format Render texture format.
-@param readWrite sRGB handling mode.
-@param antiAliasing Anti-aliasing (1,2,4,8).
+GetTemporary 関数により取得するレンダーテクスチャの特定のコンテンツに依存することは出来ません。
+プラットフォーム次第で汚れたデータか、あるいは特定の色としてクリアされているかもしれません。
+@param width ピクセル単位での幅
+@param height ピクセル単位での高さ
+@param depthBuffer デプスバッファのビット (0, 16 または 24)
+@param format レンダーテクスチャのフォーマット
+@param readWrite sRGB ハンドリング モード
+@param antiAliasing アンチエイリアス (1,2,4,8)
