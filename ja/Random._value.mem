@@ -1,8 +1,8 @@
 <signature>
 value
 </signature>
-Returns a random number between 0.0 [inclusive] and 1.0 [inclusive] (RO).
-Both 0.0 and 1.0 may be returned by this property. This behaviour is different to that of many other random number generators which return a value less than but never exactly equal to 1.0.
+0~1(0と1も含みます)からランダムな値を取得します。（読み込み専用）
+このプロパティは0.0と1.0を返すことがあります。この動作は他の1.0未満のランダムな値を生成するAPIとは異なることに注意してください。
 CONVERTEXAMPLE
 BEGIN EX
 // Generate a random color value.

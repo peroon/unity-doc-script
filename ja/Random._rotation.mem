@@ -1,7 +1,7 @@
 <signature>
 rotation
 </signature>
-Returns a random rotation (RO).
+ランダムな角度を取得します（読み込み専用）
 CONVERTEXAMPLE
 BEGIN EX
 // Sets a random orientation for the object.

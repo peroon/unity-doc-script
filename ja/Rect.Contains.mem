@@ -3,7 +3,7 @@ Contains(Vector2)
 Contains(Vector3)
 Contains(Vector3,bool)
 </signature>
-Returns true if the /x/ and /y/ components of /point/ is a point inside this rectangle. If /allowInverse/ is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+XとYの /point/ がRect内にある場合はtrueを返します。もし /allowInverse/ がtrueの場合、Rectのwidthとheightが負の値でも動作するようになります。（例えば最小値が最大を超えてしまう場合）
 CONVERTEXAMPLE
 BEGIN EX
 	// prints inside when mouse is in lower left corner
@@ -14,5 +14,5 @@ BEGIN EX
 			print("Inside");
 	}
 END EX
-@param point Point to test.
-@param allowInverse Does the test allow the Rect's width and height to be negative?
+@param point テストするポイント
+@param allowInverse Rectのwidthとheightが負の値でも許可するかどうか

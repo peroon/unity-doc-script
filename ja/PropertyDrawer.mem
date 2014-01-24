@@ -1,10 +1,12 @@
-Base class to derive custom property drawers from. Use this to create custom drawers for your own [[Serializable]] classes or for script variables with custom [[PropertyAttribute]]s.
-PropertyDrawers have two uses:\\
-- Customize the GUI of every instance of a [[Serializable]] class.\\
-- Customize the GUI of script members with custom [[PropertyAttribute]]s.
+カスタムプロパティドローワーのベースクラスです。自身で作成した [[Serializable]] クラスや [[PropertyAttribute]] 変数のカスタムドローワーを作成して使用することが出来ます。
 
-If you have a custom [[Serializable]] class, you can use a PropertyDrawer to control how it looks in the Inspector.
-Consider the Serializable class Ingredient in the script below:
+PropertyDrawersは２つの使い方があります:\\
+- [[Serializable]] クラスのGUIをカスタマイズ\\
+- [[PropertyAttribute]] の付いたスクリプトメンバーのGUIをカスタマイズ
+
+自身で作成した [[Serializable]] クラスを持つ場合、Inspectorの見た目を変更できるPropertyDrawerを使用することが出来ます。
+
+SerializableクラスのIngredientクラスを考慮したスクリプトが以下になります:
 CONVERTEXAMPLE
 BEGIN EX
 // Recipe.js
@@ -26,13 +28,13 @@ function Update () {
 	// Update logic here...
 }
 END EX
-Using a custom PropertyDrawer, every appearance of the Ingredient class in the Inspector can be changed.
-Compare the look of the Ingredient properties in the Inspector without and with a custom PropertyDrawer:
+PropertyDrawerを使用すると、Ingredientクラスの状況によってInspectorを変更することが可能です。
+PropertyDrawerを使った場合と使っていない時のIngredientクラスのInspectorを比較してみてください:
 
 {img CustomPropertyDrawer_Class.png}\\
-''Class in the Inspector without (left) and with (right) custom PropertyDrawer.''
+''PropertyDrawerを使用していない (left) 時と使用している (right) 時のクラスのInspectorの表示''
 
-You can attach the PropertyDrawer to a Serializable class by using the [[CustomPropertyDrawer]] attribute and pass in the type of the Serializable class that it's a drawer for.
+PropertyDrawerは [[CustomPropertyDrawer]] アトリビュートとドローワーを使用するSerializableクラスの型をアタッチします。
 CONVERTEXAMPLE
 BEGIN EX
 // IngredientDrawer.js
@@ -69,17 +71,18 @@ class IngredientDrawer extends PropertyDrawer {
 	}
 }
 END EX
-The other use of PropertyDrawer is to alter the appearance of members in a script that have custom [[PropertyAttribute]]s.
-Say you want to limit floats or integers in your script to a certain range and show them as sliders in the Inspector.
-Using the built-in [[PropertyAttribute]] called [[RangeAttribute]] you can do just that:
+PropertyDrawerの他の使い方は [[PropertyAttribute]] の付いたメンバーの外観を変更することが出来ます。
+
+例えば整数で特定の範囲内で値を設定したい場合に、Inspectorにはスライダーとして表示することが出来ます。
+これは [[RangeAttribute]] としてビルドインされている機能でこのように使用します:
 CONVERTEXAMPLE
 BEGIN EX
 // Show this float in the Inspector as a slider between 0 and 10
 @Range (0.0, 10.0)
 var myFloat = 0.0;
 END EX
-You can make your own [[PropertyAttribute]] as well. We'll use the code for the [[RangeAttribute]] as an example.
-The attribute must extend the PropertyAttribute class. If you want, your property can take parameters and store them as public member variables.
+自分で [[PropertyAttribute]] を作成することも出来ます。 [[RangeAttribute]] を実装例として参考にしてください。
+このアトリビュートはPropertyAttributeクラスを継承する必要があります。必要であればこのアトリビュートクラスにパラメータや変数の値を保持しておくことが出来ます。
 BEGIN EX
 // This is not an editor script. The property attribute class should be placed in a regular script file.
 class RangeAttribute extends PropertyAttribute {
@@ -92,8 +95,8 @@ class RangeAttribute extends PropertyAttribute {
 	}
 }
 END EX
-Now that you have the attribute, you need to make a PropertyDrawer that draws properties that have that attribute.
-The drawer must extend the PropertyDrawer class, and it must have a [[CustomPropertyDrawer]] attribute to tell it which attribute it's a drawer for.
+アトリビュートを作成したら次はアトリビュートを持つプロパティの描画のためにPropertyDrawerを作成する必要があります。
+このドローワークラスはPropertyDrawerを継承することと、 [[CustomPropertyDrawer]] アトリビュートを付ける必要があります。
 CONVERTEXAMPLE
 BEGIN EX
 // The property drawer class should be placed in an editor script, inside a folder called Editor.
@@ -118,6 +121,6 @@ class RangeDrawer extends PropertyDrawer {
 	}
 }
 END EX
-Note that for performance reasons, EditorGUILayout functions are not usable with PropertyDrawers.
+パフォーマンス上の理由からEditorGUILayoutクラスはPropertyDrawerでは使用できないことに注意してください。
 
 SA: [[PropertyAttribute]] class, [[CustomPropertyDrawer]] class.

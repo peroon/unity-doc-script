@@ -1,1 +1,1 @@
-Procedural Color property without alpha. Use with [[ProceduralMaterial.GetProceduralColor]].
+アルファなしのColorプロパティに手続きします。 [[ProceduralMaterial.GetProceduralColor]] を使用してください。

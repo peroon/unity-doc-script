@@ -1,4 +1,4 @@
 <signature>
 GetProceduralOutputType()
 </signature>
-The output type of this ProceduralTexture.
+ProceduralTextureのアウトプットタイプを取得します。
