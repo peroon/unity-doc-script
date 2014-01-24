@@ -1,7 +1,7 @@
 <signature>
 sRGB
 </signature>
-Does this render texture use sRGB read / write (RO).
-The value of this property is fixed for the life of the RenderTexture but it can be set using the ''readWrite'' parameter of the RenderTexture constructor function.
+レンダーテクスチャ が sRGB 読み取り / 書き込み (読み取り専用）を使用するか
+このプロパティの値はレンダーテクスチャの生存期間中は固定されるが、RenderTexture コンストラクタ 関数の ''readWrite'' 引数を使用してセットできる。
 
-SA: [[ColorSpace]].
+SA: [[ColorSpace]]
