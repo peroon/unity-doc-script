@@ -1,4 +1,4 @@
-The global Substance engine processor usage (as used for the ProceduralMaterial.substanceProcessorUsage property).
-The values refer to the number of physical processor cores used for ProceduralMaterial generation.
+(ProceduralMaterial.substanceProcessorUsage プロパティに使用される) global な Substance エンジンプロセッサー使用状況。
+この値はプロシージャルマテリアル生成に使用される物理プロセッサーの数を示します。
 
-SA: [[ProceduralMaterial.substanceProcessorUsage]].
+SA: [[ProceduralMaterial.substanceProcessorUsage]]
