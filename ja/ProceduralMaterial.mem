@@ -1,5 +1,5 @@
-Class for ProceduralMaterial handling.
-A reference to a ProceduralMaterial is usually assigned using "renderer.sharedMaterial as ProceduralMaterial".
+プロシージャル マテリアルのハンドリングのためのクラス。
+プロシージャル マテリアル に対する参照は通常 "renderer.sharedMaterial as ProceduralMaterial" と指定して割り当てを行なう。
 CONVERTEXAMPLE
 BEGIN EX
 var floatRangeProperty : String = "Saturation";
@@ -8,11 +8,11 @@ var cycleTime : float = 10;
 function Update () {
 	var substance : ProceduralMaterial = renderer.sharedMaterial as ProceduralMaterial;
 	if (substance) {
-		// Make the property go up and down over time
+		// 時間とともにプロパティの値を大きくしたり小さくしたりする
 		var lerp = Mathf.PingPong (Time.time * 2 / cycleTime, 1);
 		substance.SetProceduralFloat (floatRangeProperty, lerp);
 		substance.RebuildTextures ();
 	}
 }
 END EX
-Note that accessing a ProceduralMaterial via renderer.material will create a runtime clone of the original ProceduralMaterial and can negatively impact performance.
+renderer.material を経由して プロシージャル マテリアル にアクセスすることで実行時に元のプロシージャル マテリアル の複製が作成され、パフォーマンスに悪影響を与える場合があることに留意して下さい。
