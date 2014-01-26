@@ -1,26 +1,20 @@
-Stores and accesses player preferences between game sessions.
-__Editor/Standalone__
+ゲームデータのセーブ、ロードなどを行います。
+__エディタ/スタンドアローン__
 
-On Mac OS X PlayerPrefs are stored in ~/Library/Preferences folder,
-in a file named unity.[company name].[product name].plist, where company and product names are the names set up in Project Settings.
-The same .plist file is used for both Projects run in the Editor and
-standalone players.
+スタンドアローンの Mac OS X で PlayerPrefs は、~/Library/Preferencesフォルダにunity.[company name].[product name].plistという形で保存されます。company name および product name は Project Settings でセットアップします。.plistファイル
+は、Unityのエディター上およびスタンドアローンプレイヤーでも読み込むことができます。
+Windows 上で PlayerPrefs は、HKCU\Software\[company name]\[product name]に保存されます。company name および product name は Project Settings でセットアップします。
 
-On Windows, PlayerPrefs are stored in the registry under
-HKCU\Software\[company name]\[product name] key, where company and product names are
-the names set up in Project Settings.
-
-On Linux, PlayerPrefs can be found in ~/.config/unity3d/[CompanyName]/[ProductName] again using the company and product names specified in the Project Settings.
+Linux 上で PlayerPrefs は、 ~/.config/unity3d/[CompanyName]/[ProductName] に保存されます。company name および product name は Project Settings でセットアップします。
 
 
-__WebPlayer__
+__Web Player__
 
-On Web players, PlayerPrefs are stored in binary files in the following locations:
+Web Player で PlayerPrefs はバイナリ形式のファイルで次の場所に保存されます:
 
 __Mac OS X:__ ~/Library/Preferences/Unity/WebPlayerPrefs
 
 __Windows:__ %APPDATA%\Unity\WebPlayerPrefs
 
-There is one preference file per Web player URL
-and the file size is limited to 1 megabyte. If this limit is exceeded, SetInt, SetFloat and SetString
-will not store the value and throw a [[PlayerPrefsException]].
+Web Player URL ごとにひとつの設定ファイルがあり、Web Player でのファイルサイズは、1Mまでと制限されているので注意しましょう。1M以上
+保存しようとすると、SetInt, SetFloat and SetString で [[PlayerPrefsException]] エラーをスローします。
