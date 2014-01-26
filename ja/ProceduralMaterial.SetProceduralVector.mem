@@ -1,7 +1,7 @@
 <signature>
 SetProceduralVector(string,Vector4)
 </signature>
-Set a named Procedural vector property.
-Used for ProceduralProperties of types Vector2, Vector3, and Vector4.
+名前つきのプロシージャル ベクトル プロパティをセット
+Vector2, Vector3, および Vector4 の型のプロシージャル プロパティで使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralVector.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralVector

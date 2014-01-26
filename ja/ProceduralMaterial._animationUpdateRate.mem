@@ -1,5 +1,5 @@
 <signature>
 animationUpdateRate
 </signature>
-Set or get the update rate in millisecond of the animated substance.
-An animated substance is a ProceduralMaterial containing a $time input which is automatically generated.
+アニメーション化された Substance の更新レートをミリ秒単位で取得またはセット
+アニメーション化された Substance とは $time 入力値により自動的に生成されるプロシージャルマテリアルです。

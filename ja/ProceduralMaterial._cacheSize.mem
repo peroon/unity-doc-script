@@ -1,4 +1,4 @@
 <signature>
 cacheSize
 </signature>
-Set or get the Procedural cache budget.
+プロシージャル キャッシュ の許容値を取得またはセット
