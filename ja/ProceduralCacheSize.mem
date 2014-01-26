@@ -1,2 +1,2 @@
-Substance memory budget.
-This also affects the amount of working memory for the generation of the ProceduralMaterial.
+Substance メモリの許容量。
+これはプロシージャル マテリアルの生成時の作業メモリ量にも影響します。

@@ -1,7 +1,7 @@
 <signature>
 ClearCache()
 </signature>
-Clear the Procedural cache.
+プロシージャル キャッシュをクリア
 This frees up all memory used by the cache and sets all properties to not be cached anymore.
 Use this when you don't expect to make anymore changes to the ProceduralProperties for now.
 

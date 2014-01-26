@@ -1,2 +1,3 @@
-Do not generate the textures. RebuildTextures() or RebuildTexturesImmediately() must be called to generate the textures.
-SA: [[ProceduralMaterial.RebuildTextures]], [[ProceduralMaterial.RebuildTexturesImmediately]].
+テクスチャを生成せず、カスタムのロードを許可します。
+テクスチャを生成するには RebuildTextures() または RebuildTexturesImmediately() を呼び出しする必要があります。
+SA: [[ProceduralMaterial.RebuildTextures]], [[ProceduralMaterial.RebuildTexturesImmediately]]
