@@ -4,8 +4,8 @@ OnAnimatorIK(int)
 <txttag>
 CSNONE
 </txttag>
-Callback for setting up animation IK (inverse kinematics).
-OnAnimatorIK() is called by the Animator Component immediately before it updates its internal IK system. This callback can be used to set the positions of the IK goals and their respective weights.
+アニメーション IK （インバース キネマティクス）をセットアップするときのコールバック
+OnAnimatorIK() は Animator コンポーネントが内部 IK システムを更新する直前により呼び出しされます。このコールバックは IK Goal のポジションおよび関連する Weight（重み付け) をセットするために使用することが出来ます。
 CONVERTEXAMPLE
 BEGIN EX
 var leftFootPositionWeight: float;
@@ -28,4 +28,4 @@ function OnAnimatorIK(layerIndex: int) {
 }
 END EX
 SA: Animator::ref::SetIKPosition, Animator::ref::SetIKPositionWeight, Animator::ref::SetIKRotation, Animator::ref::SetIKRotationWeight.
-@param layerIndex The index of the layer on which the IK solver is called.
+@param layerIndex IK ソルバーが呼び出しされたレイヤーのインデックス

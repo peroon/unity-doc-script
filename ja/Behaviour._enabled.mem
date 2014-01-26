@@ -1,5 +1,5 @@
 <signature>
 enabled
 </signature>
-Enabled Behaviours are Updated, disabled Behaviours are not.
-This is shown as the small checkbox in the inspector of the behaviour.
+有効化された Behaviour は Update 呼び出しされ、無効化された Behaviour は Update 呼び出しされません。
+インスペクタ上の Behaviour の右上の小さなチェックボックスで有効かどうか示されます。

@@ -4,18 +4,19 @@ OnApplicationQuit()
 <txttag>
 CSNONE
 </txttag>
-Sent to all game objects before the application is quit.
-In the editor this is called when the user stops playmode.
-In the web player it is called when the web view is closed.
+アプリケーションが終了する前に全てのゲームオブジェクトで呼び出される。
+エディタにおいて、ユーザが再生モードを停止したとき呼び出しされます。
+ウェブプレイヤーにおいて、ウェブ ビューが閉じられたとき呼び出しされます。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnApplicationQuit() {
-		// Make sure prefs are saved before quitting.
+		// 終了前に設定を保存する
 		PlayerPrefs.Save();
 	}
 END EX
-Note that iOS applications are usually suspended and do not quit.
-You should tick "Exit on Suspend" in Player settings for iOS builds
-to cause the game to quit and not suspend, otherwise you may not
-see this call.  If "Exit on Suspend" is not ticked then you will
-see calls to ::ref::OnApplicationPause instead.
+iOS アプリケーションでは通常サスペンドされ、終了されないことに留意して下さい。
+iOS ビルドにおいては Player settings で "Exit on Suspend" をチェックして、
+ゲームをサスペンドせずに終了させることが出来る。そうしない場合、この呼び出し
+がなされない場合があります。
+もし "Exit on Suspend" がチェックされてない場合、代わりに
+::ref::OnApplicationPause が呼び出しされます。

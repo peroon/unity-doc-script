@@ -4,18 +4,17 @@ OnMouseDown()
 <txttag>
 CSNONE
 </txttag>
-OnMouseDown is called when the user has pressed the mouse button while over the [[GUIElement]] or [[Collider]].
-This event is sent to all scripts of the [[Collider]] or [[GUIElement]].
+ユーザが [[GUIElement]] または [[Collider]] のうえでマウスのボタンを押したときに OnMouseDown が呼び出しされる
+このイベントは [[Collider]] または [[GUIElement]] の全てのスクリプトに送信される。
 CONVERTEXAMPLE
 BEGIN EX
-	// Loads the level named "SomeLevel" as a response
-	// to the user clicking on the object
+	// ユーザがオブジェクトにクリックしたときに
+	// "SomeLevel" というレベルをロード
 
 	function OnMouseDown () {
 		Application.LoadLevel ("SomeLevel");
 	}
 END EX
-This function is not called on objects that belong to Ignore Raycast layer.
-
-OnMouseDown can be a co-routine, simply use the yield statement in the function.
-This event is sent to all scripts attached to the [[Collider]] or [[GUIElement]].
+この関数は Ignore Raycast （Raycast を無視）というレイヤーに属するオブジェクトでは呼び出しされません。
+OnMouseDown はコルーチンとすることも出来て、関数で yield を使うことで使用できます。
+このイベントは [[Collider]] または [[GUIElement]] にアタッチされた全てのスクリプトに送信されます。

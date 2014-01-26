@@ -4,16 +4,16 @@ OnDrawGizmos()
 <txttag>
 CSNONE
 </txttag>
-Implement OnDrawGizmos if you want to draw gizmos that are also pickable and always drawn.
-This allows you to quickly pick important objects in your scene.
+Gizmo を描画する際に、選択可能としたり常に表示したりする場合は OnDrawGizmos で実装する。
+これによりシーン上で重要なオブジェクトを素早く選択出来ます。
 
-Note that OnDrawGizmos will use a mouse position that is relative to the Scene View.
+OnDrawGizmos がシーンビューに対して相対的なマウス位置を使用することに留意して下さい。
 
-This function does ''not'' get called if the component is collapsed in the inspector.
+この関数はインスペクタ上でコンポーネントが展開されている場合、呼び出し ''されません'' 。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnDrawGizmos() {
-		// Draw a yellow sphere at the transform's position
+		// transform.position の位置に黄色の球を描画
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawSphere (transform.position, 1);
 	}
