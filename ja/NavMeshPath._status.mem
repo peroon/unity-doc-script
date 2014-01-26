@@ -1,5 +1,5 @@
 <signature>
 status
 </signature>
-Status of the path. (RO)
-This reports whether the path reaches to the target, partway to the target or is completely invalid.
+パスのステータス(読み取り専用)
+パスがターゲットに到達したか、まだ中間地点にあるか、全く無効であるか、など判定します。
