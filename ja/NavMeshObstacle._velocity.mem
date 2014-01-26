@@ -1,11 +1,11 @@
 <signature>
 velocity
 </signature>
-Velocity at which the obstacle moves around the NavMesh.
+障害物がナビメッシュの周りを移動する速度
 CONVERTEXAMPLE
 BEGIN EX
-// Simple behaviour to block the player who we assume is controlled
-// by a NavMeshAgent.
+// ナビメッシュ エージェントにより制御されたプレイヤーを
+// 妨害する単純な Behavior スクリプト
 var obs: NavMeshObstacle;
 var player: Transform;
 var moveSpeed: float;
@@ -15,11 +15,11 @@ function Start () {
 }
 
 function Update() {
-	// Find the heading to a target point five units in front of the player.
+	// プレイヤーに対して 5 ユニット前のターゲット位置に対する heading （方向）を探索
 	var targetPoint = player.TransformPoint(Vector3.forward * 5.0);
 	var heading = (player.position - transform.position).normalized;
 	
-	// Set the obstacle to move to the target at a predetermined speed.
+	// 障害物が事前設定された速度でターゲットに向かうようにセット
 	obs.velocity = heading * moveSpeed;
 }
 END EX
