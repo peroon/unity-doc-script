@@ -1,36 +1,35 @@
-Interface into the Input system.
-Use this class to read the axes set up in the [[wiki:Input|Input Manager]], and to access
-multi-touch/accelerometer data on mobile devices.
+入力システムのインタフェースです。
+[[wiki:Input|Input Manager]]で設定した軸を読み込んだり、モバイル
+のマルチタッチや加速度センサーにアクセスするにはこのクラスを使用します。
 
-To read an axis use Input.GetAxis with one of the following default axes:
-"Horizontal" and "Vertical" are mapped to joystick, /A/, /W/, /S/, /D/ and the arrow keys.
-"Mouse X" and "Mouse Y" are mapped to the mouse delta.
-"Fire1", "Fire2" "Fire3" are mapped to /Ctrl/, /Alt/, /Cmd/ keys and three mouse or joystick buttons.
-New input axes can be added in the [[wiki:Input|Input Manager]].
+Axis を読み込む Input.GetAxis を次のデフォルト Axis のいずれかとともに使用します:
+"Horizontal" および "Vertical"  はジョイスティック, /A/, /W/, /S/, /D/, および矢印キーにマッピングされます。
+"Mouse X" および "Mouse Y" マウスの差分にマッピングされます。
+"Fire1", "Fire2" "Fire3" は /Ctrl/, /Alt/, /Cmd/ キーおよび三つのマウスまたはジョイスティックボタンににマッピングされます。
+新規の入力 Axis は [[wiki:Input|Input Manager]] に追加できます。
 
-If you are using input for any kind of movement behaviour use Input.GetAxis.
-It gives you smoothed and configurable input that can be mapped to keyboard, joystick or mouse.
-Use Input.GetButton for action like events only. Don't use it for movement, Input.GetAxis will make the script code smaller and simpler.
+もし何らかの動作スクリプトを Input に使用している場合、Input.GetAxis を使用して下さい。
+これによりスムージングおよび編集できる Input をキーボード、ジョイスティック、またはマウスにマッピングできます。
+Input.GetButton をアクション風のイベントのみに使用して下さい。動作には使用せず、Input.GetAxis によりスクリプトのコード量を抑え、シンプルに出来ます。
 
-Note also that the Input flags are not reset until "Update()", so its suggested you make all the Input Calls in the Update Loop.
+入力フラグが完了するまでリセットされないので、Update関数の中に記述することをお勧めします。
 
-__Mobile Devices:__
+__モバイルデバイス:__
 
-iOS and Android devices are capable of tracking multiple fingers touching the screen simultaneously.
-You can access data on the status of each finger touching screen during the last frame by accessing the Input.touches property array.
+iOSやAndroidでは、マルチタッチ機能を利用でき、複数の指を認識することが可能です。
+最終フレームにおけるスクリーンに対する各々のフィンガータッチのステータスのデータにアクセスするには、Input.touches プロパティ配列を使用します。
 
-As a device moves, its accelerometer hardware reports linear acceleration changes along the three primary axes in three-dimensional space.
-You can use this data to detect both the current orientation of the device (relative to the ground) and any immediate changes to that orientation.
+デバイスの動きに合わせて、加速度センサのハードウェアにより三次元空間における三つの主要軸に沿った加速度の線形変化が報告されます。
+このデータを使用して現在のデバイスの向き（地面に対する相対的な）およびその向きに対する急な変化の両方を検知します。
 
-Acceleration along each axis is reported directly by the hardware as G-force values.
-A value of 1.0 represents a load of about +1g along a given axis while a value of -1.0 represents -1g.
-If you hold the device upright (with the home button at the bottom) in front of you, the X axis is positive along the right,
-the Y axis is positive directly up, and the Z axis is positive pointing toward you.
+各軸に沿った加速が重力の値としてハードウェアにより直接報告されます。
+値が 1.0 の場合、与えられた軸に対する +1 G の力を示し、 -1.0 の値は -1 G を示します。
+目の前にデバイスを垂直に持ち（ホームボタンが下）、X 軸は右向きが正の値を示し、Y 軸は上向きが正の値を示し、Z軸は自身に向かう向きが正の値を示します。
 
-You can read the Input.acceleration property to get the accelerometer reading.
-You can also use the Input.deviceOrientation property to get a discrete evaluation of the device's orientation in three-dimensional space.
-Detecting a change in orientation can be useful if you want to create game behaviors when the user rotates the device to hold it differently.
+Input.acceleration プロパティを読み取ることで、加速度センサの値を取得できます。
+さらに Input.deviceOrientation プロパティを使用して三次元空間でのデバイスの向きを離散的な値を取得できます。
+向きの変化を検知することは、ゲームの中でユーザがデバイスを持ち換えるためにデバイスを回転させたときのゲーム動作を作るうえで役に立ちます。
 
-Note that the accelerometer hardware can be polled more than once per frame.
-To access all accelerometer samples since the last frame, you can read the Input.accelerationEvents property array.
-This can be useful when reconstructing player motions, feeding acceleration data into a predictor, or implementing other precise motion analysis.
+加速度センサはフレームごとに 1 回以上ポーリングできることに注意して下さい。
+最終フレーム以降の全ての加速度センサのサンプリングをアクセスするときは Input.accelerationEvents プロパティ配列を読み取ります。
+これはプレイヤー動作を再作成するとき、予測に加速データをフィードしたり、精緻なモーション分析などに役に立ちます。
