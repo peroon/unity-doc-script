@@ -1,8 +1,8 @@
 <signature>
 isLoadTimeGenerated
 </signature>
-Should the ProceduralMaterial be generated at load time?
-If enabled, the ProceduralMaterial will be generated when the scene loads.
-If disabled, the ProceduralMaterial will not be generated until RebuildTextures or RebuildTexturesImmediately is called.
+プロシージャルマテリアルをロード時に生成するか
+もし有効化すると、プロシージャルマテリアルはシーンのロード時に生成されます。
+もし無効化すると、プロシージャルマテリアルは RebuildTextures または RebuildTexturesImmediately が呼び出しされるまで生成されません。
 
-SA: ::ref::RebuildTextures, ::ref::RebuildTexturesImmediately.
+SA: ::ref::RebuildTextures, ::ref::RebuildTexturesImmediately

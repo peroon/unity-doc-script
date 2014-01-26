@@ -1,4 +1,4 @@
 <signature>
 isSupported
 </signature>
-Check if ProceduralMaterials are supported on the current platform.
+プロシージャルマテリアルが現在のプラットフォームでサポートされているか判定

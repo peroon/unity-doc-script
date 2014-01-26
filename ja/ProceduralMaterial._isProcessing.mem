@@ -1,4 +1,4 @@
 <signature>
 isProcessing
 </signature>
-Check if the ProceduralTextures from this ProceduralMaterial are currently being rebuilt.
+プロシージャルマテリアルの ProceduralTextures が現在、再作成中であるか判定
