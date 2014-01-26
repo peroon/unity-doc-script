@@ -1,5 +1,5 @@
 <signature>
 IsProceduralPropertyCached(string)
 </signature>
-Checks if a named ProceduralProperty is cached for efficient runtime tweaking.
-SA: ::ref::CacheProceduralProperty, ::ref::ClearCache.
+名前付きのプロシージャル プロパティが実行時に効率的に調整できるようキャッシュされているか判定
+SA: ::ref::CacheProceduralProperty, ::ref::ClearCache

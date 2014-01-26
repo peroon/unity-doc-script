@@ -1,9 +1,9 @@
 <signature>
 SetProceduralEnum(string,int)
 </signature>
-Set a named Procedural enum property.
-Used for ProceduralProperties of type Enum.
-The function does not take an actual enum but an integer specifying the index of the selected option.
-The available options are contained in the array [[ProceduralPropertyDescription.enumOptions]].
+名前つきのプロシージャルの enum プロパティをセット
+enum 型のプロシージャル プロパティ で使用されます。
+この関数は実際の enum 値でなく、選択されたオプション値を示す integer をセットします。
+利用可能なオプションは [[ProceduralPropertyDescription.enumOptions]] 配列に格納されています。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralEnum.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralEnum
