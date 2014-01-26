@@ -7,7 +7,7 @@ Instantiate(Object)
 
 [[GameObject]] または [[Component]] をクローンするとき、全ての子オブジェクトおよびコンポーネントは元のオブジェクトと同様のプロパティの値でさらにクローンします。しかし新規オブジェクトの ''parent'' は null となるため、元のオブジェクトの "子" とはなりません。しかし、必要であれば明示的に親を指定することは可能です。さらにクローンするときのゲームオブジェクトの有効状態は次に渡されるため、もし元が無効だった場合、クローンもまた無効状態となります。
 
-SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
+SA: [[wiki:Instantiating Prefabs|詳細なプレハブ インスタンス化の説明]]
 CONVERTEXAMPLE
 BEGIN EX
 	// 互いに 2 ユニット離してプレハブを 10 個複製してインスタンス化
@@ -71,9 +71,10 @@ UNDOC
 これは Unity で Cmd + D による複製コマンドと同等です。
 [[GameObject]] または [[Component]] をクローンするとき、ゲームオブジェクト全体および全てのコンポーネントをクローンします。
 もしゲームオブジェクトに Transform がある場合、全ての子もまたクローンされます。さらにクローンするときのゲームオブジェクトの有効状態は次に渡されるため、もし元が無効だった場合、クローンもまた無効状態となることに留意して下さい。
-This is essentially the same as using duplicate command (cmd-d) in Unity.
+要するに Unity の複製コマンド (Cmd + d) と同じです。
 
-SA: [[wiki:Instantiating Prefabs|In depth Prefab Instantiate discussion]].
+
+SA: [[wiki:Instantiating Prefabs|詳細なプレハブ インスタンス化の説明]]
 CONVERTEXAMPLE
 BEGIN EX
 	// 任意の Rigidbody がトリガーに入ったときプレハブをインスタンス化
