@@ -12,18 +12,18 @@ END EX
 Log(object)
 Log(object,Object)
 </signature>
-Logs /message/ to the Unity Console.
-When you select the message in the console a connection to the context object will be drawn.
-This can be useful for locating the object on which an error occurs.
+Unity Console に /message/ を記録
+コンソール上でメッセージを選択すると、コンテキスト オブジェクトに対する線が描画されます。
+これはエラー発生したオブジェクトを発見するのに役に立ちます。
 
-When the message is a string, rich text markup can be used to add emphasis. See the manual page about [[wiki:StyledText|rich text]] for details of the different markup tags available.
+メッセージが文字列であるとき、リッチテキスト マークアップを使用して強調することが出来ます。利用可能である様々なマークアップ タグについてはマニュアルの [[wiki:StyledText|リッチテキスト]] を参照して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-// Message with a link to an object.
-Debug.Log ("Hello", gameObject);
+// オブジェクトに対してリンクされているメッセージ
+Debug.Log ("こんにちは", gameObject);
 
-// Message using rich text.
-Debug.Log("<color=red>Fatal error:</color> AssetBundle not found");
+// リッチテキストを使用したメッセージ
+Debug.Log("<color=red>Fatal error:</color> AssetBundle は見つかりませんでした");
 END EX
-@param message String or object to be converted to string representation for display.
-@param context Object to which the message applies.
+@param message 表示の際に文字列として変換対象となる文字列またはオブジェクト
+@param context メッセージが適用されるオブジェクト
