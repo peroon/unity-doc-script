@@ -1,6 +1,8 @@
 <signature>
 GetProceduralPropertyDescriptions()
 </signature>
+指定した名前のプロパティがキャッシュされているかを確
+認する
 Get an array of descriptions of all the ProceduralProperties this ProceduralMaterial has.
 This can be used to build generic GUI that can be used to edit the properties of any ProceduralMaterial
 without knowing its properties in advance.

@@ -1,7 +1,7 @@
 <signature>
 GetProceduralTexture(string)
 </signature>
-Get a named Procedural texture property.
-Used for ProceduralProperties of type Texture.
+名前付きのプロシージャル テクスチャ プロパティを取得する
+テクスチャ型のプロシージャル プロパティで使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralTexture.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralTexture

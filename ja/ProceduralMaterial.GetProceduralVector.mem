@@ -1,7 +1,7 @@
 <signature>
 GetProceduralVector(string)
 </signature>
-Get a named Procedural vector property.
-Used for ProceduralProperties of types Vector2, Vector3, and Vector4.
+名前付きのプロシージャル ベクトル プロパティを取得する
+Vector2、Vector3、Vector4型 のプロシージャル プロパティで使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralVector.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralVector
