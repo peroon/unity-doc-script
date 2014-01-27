@@ -1,15 +1,16 @@
 平面の表現です。
 原点から平面への法線ベクトルとの距離によって定義されます。
-A plane is an infinitely large, flat surface that exists in 3D space and divides the space into two halves known as ''half-spaces''. It is easy to determine which of the two half-spaces a particular point is in and also how far the point is from the plane. Walls, floors and other flat surfaces are common in games, so a plane is sometimes useful for mathematical calculations with these objects. Also, there are cases where a real surface does not exist but it is useful to imagine that one is there. For example, in sports, a goal line or out-of-bounds line is often assumed to extend into the air, effectively defining a plane.
+平面は無限に大きな、3次元空間にある平らな平面であり、空間を二つの半空間と呼ばれるものに分割します。特定の地点がどちらの半空間に存在するか、また平面からどれだけ判定することが容易にできます。壁、床、および他の平らな平面はゲームでよく登場するため、これらのオブジェクトでの数値計算が必要な場合にしばしば役に立ちます。さらに現実には空間が存在しないけれども、あると仮定したほうが便利な場合があります。例えば、スポーツではゴールラインやサイドラインは地上から離れた空間にも存在するものと仮定されるため、要は平面でそのラインを表現できます。
 
-When a plane passes through the <0,0,0> point in world space, it is defined simply by a normal vector that determines which way it faces. It is easy to visualise this if you imagine looking at the plane edge-on.
+平面が ワールド座標の <0,0,0> 地点を通過する場合、平面が面する方向を定める法線で定義されます。真正面から平面を見ることを想像すると、可視化することが容易です。
 
 {img PlaneNormalOrigin.png}
 
-Note that the side from which the normal vector points is important since it is used to identify which half-space a point is in (ie, on the positive or "normal" side of the plane or the other side). When the plane doesn't pass through <0,0,0> it can be defined by the normal vector along with a distance from <0,0,0>
+法線がどの向きであるかは重要であり、どの半空間に存在するかを決定づけることに留意して下さい（すなわち、平面の正の側にあるか反対側にあるか）。
+平面が <0,0,0> 地点を通過しない場合、法線ベクトルに加えて <0,0,0> からの距離により定義できます。
 
 {img PlaneNormalOffset.png}
 
-A plane can also be defined by the three corner points of a triangle that lies within the plane. In this case, the normal vector points toward you if the corner points go around clockwise as you look at the triangle face-on.
+平面を表現する際に、平面上にある三角形の三つの頂点によって定義することも出来ます。その場合、三角形を正面から見て三角形の頂点を反時計周りにみた場合、法線ベクトルの向きは自分の方に向きます。
 
-{img Plane3Points.png}.
+{img Plane3Points.png}
