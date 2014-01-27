@@ -1,7 +1,7 @@
 <signature>
 GetProceduralFloat(string)
 </signature>
-Get a named Procedural float property.
-Used for ProceduralProperties of type Float.
+プロパティ名を指定して float 型のプロパティを取得する
+float 型のプロシージャル プロパティで使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralFloat.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralFloat

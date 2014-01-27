@@ -1,9 +1,8 @@
 <signature>
 GetProceduralEnum(string)
 </signature>
-Get a named Procedural enum property.
-Used for ProceduralProperties of type Enum.
-The function does not return an actual enum but an integer specifying the index of the selected option.
-The available options are contained in the array [[ProceduralPropertyDescription.enumOptions]].
+プロパティ名を指定してEnum型のプロパティを取得する
+この関数は実際の enum を返さずに、選択したオプションのインデックスを示す integer を返します。
+Enum型として扱う値を [[ProceduralPropertyDescription.enumOptions]] 変数に登録して使用します。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralEnum.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralEnum

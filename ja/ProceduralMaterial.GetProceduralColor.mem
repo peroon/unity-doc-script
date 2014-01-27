@@ -1,7 +1,7 @@
 <signature>
 GetProceduralColor(string)
 </signature>
-Get a named Procedural color property.
-Used for ProceduralProperties of types Color3 and Color4.
+名前付きのプロシージャル カラー プロパティを取得する
+Color3 および Color4 型のプロシージャル プロパティで使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralColor.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::GetProceduralColor
