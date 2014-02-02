@@ -6,30 +6,28 @@ BuildAssetBundle(Object,Object[],string,uint)
 BuildAssetBundle(Object,Object[],string,BuildAssetBundleOptions,BuildTarget)
 BuildAssetBundle(Object,Object[],string,uint,BuildAssetBundleOptions,BuildTarget)
 </signature>
-Builds an asset bundle __(Unity Pro only)__.
-Creates a compressed unity3d file that contains a collection of /assets/. AssetBundles can contain any asset found in the project folder.
+アセットバンドルを作成します __(Unity Pro のみ)__.
+/assets/ のコレクションを含む圧縮した unity3d ファイルを作成します。アセットバンドルはプロジェクトフォルダにある任意のアセットを含めることが出来ます。
 
-This lets you stream resource data of any type, fully setup prefabs, textures, meshes, animations, any type of asset shown in the project window.
+アセットバンドル化できるのは、任意の型のリソースデータ、フルセットアップされたプレハブ、テクスチャ、メッシュ、アニメーション、およびプロジェクトウィンドウで表示される任意の型のアセットであり、これらをストリーミングすることが出来ます。
 
-/mainAsset/ lets you specify a specific object that can be conveniently retrieved using AssetBundle.mainAsset.
+/mainAsset/ により AssetBundle.mainAsset を使用して簡便に取得したいオブジェクトを指定できます。
 
-The compressed asset bundle file will be saved at /pathName/.
-/options/ allows you to automatically include dependencies or always include complete assets instead of just the exact referenced objects.
+圧縮されたアセットバンドル ファイルは /pathName/ に保存されます。
+/options/ により自動的に依存関係を含めたり、ただ参照されたオブジェクトのみだけでなく常に完全なアセットを含めることが出来ます。
 
-All paths are relative to the project folder. Like: "Assets/MyTextures/hello.png". The optional /crc/ output parameter can be used to get a CRC checksum for the generated AssetBundle, which can be used to verify content when downloading AssetBundles using WWW.LoadFromCacheOrDownload.
+全てのパスはプロジェクトフォルダに対する相対パス指定になります： "Assets/MyTextures/hello.png"。オプションである /crc/ 出力引数により生成されたアセットバンドルに対して CRC チェックサムを取得できます。これは WWW.LoadFromCacheOrDownload を使用してアセットバンドルをダウンロードするときにコンテンツを確認できます。
 
-Note that asset bundles built for standalone or webplayer targets cannot be loaded by
-applications built for mobile platforms and vice versa. Furthermore, bundles are not
-compatible between iOS and Android platforms.
+スタンドアローンまたはウェブプレイヤー向けのターゲットでビルドされたアセットバンドルはモバイルプラットフォーム向けにビルドされたアプリケーションではロード出来ませんし、その逆もまた然りです。さらにアセットバンドルは iOS と Android プラットフォームで互換性がありません。
 
-The function returns a boolean value which is true if the build succeeded and false otherwise.
+関数の戻り値は boolean 型であり、ビルドが成功した場合は true、そうでなければ false です。
 
-SA: [[AssetBundle]] class, WWW.assetBundle.
+SA: [[AssetBundle]] クラス, WWW.assetBundle
 BEGIN EX
-	// C# Example
-	// Builds an asset bundle from the selected objects in the project view.
-	// Once compiled go to "Menu" -> "Assets" and select one of the choices
-	// to build the Asset Bundle
+	// C# の例
+	// プロジェクト ウィンドウの選択されたオブジェクトからアセットバンドルを作成
+	// コンパイルした後は "Menu" -> "Assets" へ移動して選択肢から一つを選択して
+	// アセットバンドルをビルド
 	
 	using UnityEngine;
 	using UnityEditor;
@@ -37,10 +35,10 @@ BEGIN EX
 	public class ExportAssetBundles {
 		[MenuItem("Assets/Build AssetBundle From Selection - Track dependencies")]
 		static void ExportResource () {
-			// Bring up save panel
+			// 保存ウィンドウのパネルを表示
 			string path = EditorUtility.SaveFilePanel ("Save Resource", "", "New Resource", "unity3d");
 			if (path.Length != 0) {
-				// Build the resource file from the active selection.
+				// アクティブなセレクションに対してリソースファイルをビルド
 				Object[] selection = Selection.GetFiltered(typeof(Object), SelectionMode.DeepAssets);
 				BuildPipeline.BuildAssetBundle(Selection.activeObject, selection, path, 
                                   BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets);
@@ -49,10 +47,10 @@ BEGIN EX
 		}
 		[MenuItem("Assets/Build AssetBundle From Selection - No dependency tracking")]
 		static void ExportResourceNoTrack () {
-			// Bring up save panel
+			// 保存ウィンドウのパネルを表示
 			string path = EditorUtility.SaveFilePanel ("Save Resource", "", "New Resource", "unity3d");
 			if (path.Length != 0) {
-				// Build the resource file from the active selection.
+				// アクティブなセレクションに対してリソースファイルをビルド
 				BuildPipeline.BuildAssetBundle(Selection.activeObject, Selection.objects, path);
 			}
 		}

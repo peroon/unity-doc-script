@@ -2,21 +2,21 @@
 targetFrameRate
 </signature>
 ゲームのフレームレートを設定する（エディター上では無効となる）（デフォルトは-1）
-Setting /targetFrameRate/ to -1 (the default) makes standalone games render
-as fast as they can, and web player games to render at 50-60 frames/second depending on the platform.
+/targetFrameRate/ を -1 （デフォルト）にセットするとスタンドアローンのゲームは出来るかぎり早くレンダリングされ、
+ウェブプレイヤーのゲームはプラットフォーム次第で 50-60 フレーム/秒でレンダリングされます。
 
-Note that setting /targetFrameRate/ does not guarantee that frame rate. There can be fluctuations
-due to platform specifics, or the game might not achieve the frame rate because the computer is too slow.
+/targetFrameRate/ をセットすることはそのフレームレートが実現されることは保証しません。プラットフォームの詳細設定により次第で
+大きなバラツキがあるかもしれません。またコンピュータが遅すぎるためにゲームにおいて目標のフレームレートは達成できないかもしれません。
 
-If vsync is set in quality setting, the target framerate is ignored, and the vblank interval is used instead.
-The /vBlankCount/ property on qualitysettings can be used to limit the framerate to half of the screens
-refresh rate (60 fps screen can be limited to 30 fps by setting vBlankCount to 2)
+もし Quality Settings で vsync (垂直同期) がセットされている場合、ターゲットのフレームレートは無視され、 vblank インターバルが代わりに使用されます。
+Quality Settings の /vBlankCount/ プロパティによりフレームレートをスクリーンのリフレッシュレートの半分まで制限することが出来ます
+60 fps の画面は vBlankCount を 2 にセットすることで 30 fps に制限できます。）
 
-/targetFrameRate/ is ignored in the editor.
+/targetFrameRate/ はエディタ上で無視されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Awake () {
-		// Make the game run as fast as possible in the web player
+		// ウェブプレイヤー上でゲームを出来るかぎり早く動作させる
 		Application.targetFrameRate = 300;
 	}
 END EX
