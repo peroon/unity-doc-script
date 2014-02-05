@@ -1,16 +1,16 @@
 <signature>
 SetStatic<FieldType>(string,FieldType)
 </signature>
-Set the value of a static field in an object type.
-The generic parameter determines the field type.
+オブジェクト型の static フィールドの値をセット
+ジェネリックな引数によりフィールドを決定します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Create an object of user provided class org.example.StaticFields,
-	// and set the value of field 'globalName'.
+	// ユーザ指定のクラス org.example.StaticFields に対するオブジェクトを作成し
+	// 'globalName' フィールドの値をセット
 	function Start() {
 		var jo = new AndroidJavaObject("org.example.StaticFields");
 		jo.Set.<string>("globalName", "this_is_the_name");
 	}
 END EX
-@param fieldName The name of the field (e.g. ''int counter;'' would have fieldName = "counter").
-@param val The value to assign to the field. It has to match the field type.
+@param fieldName フィールドの名前（例えば ''int counter;''の場合 fieldName = "counter"）
+@param val フィールドに割り当てる値。フィールド型に合う必要あります。

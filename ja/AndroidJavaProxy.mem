@@ -1,6 +1,6 @@
-This class can be used to implement any java interface. Any java vm method invocation matching the interface on the proxy object will automatically be passed to the c# implementation.
+このクラスを使用して任意の Java インタフェースの実装できます。プロキシオブジェクト上のインタフェースに一致する任意の Java VM メソッド実行は C# 実装に自動的に渡されます。
 BEGIN EX
-// Opens an android date picker dialog and grabs the result using a callback.
+// Android 日付選択ダイアログを開きコールバックを使用して結果をつかみます。
 
 private static DateTime selectedDate = DateTime.Now;
 
