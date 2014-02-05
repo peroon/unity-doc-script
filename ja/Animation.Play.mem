@@ -4,30 +4,29 @@ Play(string)
 Play(PlayMode)
 Play(string,PlayMode)
 </signature>
-Plays animation without any blending.
-Play() will start animation with name /animation/, or play the default animation.
-The animation will be played abruptly without any blending.
+ブレンドなしでアニメーションを再生する。
+Play() により /animation/ という名前のアニメーションを再生するか、あるいはデフォルトのアニメーションを再生します。
+ブレンディングなしに直ちにアニメーションを再生します。
 
-If mode is PlayMode.StopSameLayer then all animations in the same layer will be stopped.
-If mode is PlayMode.StopAll then all animations currently playing will be stopped.
+mode が PlayMode.StopSameLayer の場合、同じレイヤーにある全てのアニメーションが停止されます。
+mode が PlayMode.StopAll の場合、現在再生されている全てのアニメーションは停止されます。
 
-If the animation is already playing, other animations will be stopped but the animation
-will not rewind to the beginning.
+すでに再生中のアニメーションの場合は先頭に巻き戻らずに、他のアニメーションが停止されます。
 
-If the animation is not set to be looping it will be stopped and rewinded after playing.
+ループ設定されてないアニメーションは停止され、再生後に巻き戻しされます。
 
-Play() will return false if animation can't be played (no animation clip or no default animation).
+アニメーションが再生できない場合（アニメーション クリップがない、またはデフォルトのアニメーションがない場合） Play() は false を返します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Plays the default animation
+	// デフォルトのアニメーションを再生
 	animation.Play();
 END EX
-For a specific animation, you can call the animation with play as well.
+特定のアニメーションの場合、Play によりアニメーションを呼び出しできます
 CONVERTEXAMPLE
 BEGIN EX
-	// Plays the walk animation - stops all other animations in the same layer
+	// walk アニメーションを再生 - 同じレイヤーの他のアニメーションを停止
 	animation.Play("walk");
-	// Plays the walk animation - stops all other animations
+	// walk アニメーションを再生 - 他のアニメーションを全て停止
 	animation.Play("walk", PlayMode.StopAll);
 END EX
 <signature>
