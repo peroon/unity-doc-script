@@ -1,10 +1,12 @@
 <signature>
 GetIKRotationWeight(AvatarIKGoal)
 </signature>
-Gets the rotational weight of an IK goal (0 = rotation before IK, 1 = rotation at the IK goal).
-An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+<signature>
+GetIKRotationWeight(AvatarIKGoal)
+</signature>
+IK ゴールの回転 (Rotation) によるウェイトを取得します（0 = IK 前の回転、1 = IKゴールでの回転）。
 
-The rotation calculated by the IK is also influenced by a weight value in the range 0..1 that determines how far between the start and the goal to aim. This function returns the current weight value for the rotation of the goal.
+IK により計算された回転は、スタートからゴールの間のどこを目指すかを示す 0 から 1 の範囲のウェイト値によっても影響を受けます。この関数によりゴールの回転の現在のウェイトの値を返します。
 
 SA: ::ref::GetIKRotation, ::ref::SetIKRotation.
-@param goal The AvatarIKGoal that is queried.
+@param goal 照会された AvatarIKGoal

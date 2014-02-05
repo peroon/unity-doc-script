@@ -1,10 +1,13 @@
 <signature>
 SetIKPosition(AvatarIKGoal,Vector3)
 </signature>
-Sets the position of an IK goal.
-An IK goal is a target position and rotation for a specific body part. Unity can calculate how to move the part toward the target from the starting point (ie, the current position and rotation obtained from the animation).
+IK ゴールの位置をセットする
+IK ゴールは特定のボディパーツのターゲット位置および回転です。Unity により開始位置からパーツをターゲットに向けて移動する方法を計算できます（すなわちアニメーションから取得された現在の位置および回転）。
 
-This function sets the position of the ultimate goal in world space; the actual point in space where the body part ends up is also influenced by a weight parameter that specifies how far between the start and the goal the IK should aim (a value in the range 0..1).
+この関数によりワールド座標での究極のゴールをセットします。空間上でボディパーツが実際に辿りつく場所は、IK がスタートからゴールの間のどこを目指すか 0 から 1 の間の値で示すウェイトパラメータによっても影響を受けます。
+
+IK により計算された回転は、スタートからゴールの間のどこを目指すかを示す 0 から 1 の範囲のウェイト値によっても影響を受けます。この関数によりゴールの回転の現在のウェイトの値を返します。
+
 CONVERTEXAMPLE
 BEGIN EX
 var objToPickUp: Transform;
@@ -24,5 +27,5 @@ function OnAnimatorIK(layerIndex: int) {
 }
 END EX
 SA: ::ref::SetIKPositionWeight, ::ref::SetIKRotation.
-@param goal The AvatarIKGoal that is set.
-@param goalPosition The position in world space.
+@param goal セットした AvatarIKGoal。
+@param goalPosition ワールド空間座標での位置。
