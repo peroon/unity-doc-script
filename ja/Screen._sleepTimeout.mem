@@ -1,23 +1,23 @@
 <signature>
 sleepTimeout
 </signature>
-省電力設定。スクリーンが暗くなるまでのタイムアウトを設定する
-Most useful for handheld devices,
-allowing OS to preserve battery life in most efficient ways. Does
-nothing on non-handheld devices.
+省電力設定。スクリーンが暗くなるまでのタイムアウトを設定
+する
+モバイルのデバイスの場合に最も役に立ち、
+OS 上で最も効果的にバッテリーを保持します。モバイル以外では
+何もしません。
 
-sleepTimeout is measured in seconds. The default value varies from
-platform to platform, generally being non-zero.
+sleepTimeout は秒単位で測定されます。デフォルト値はプラットフォームにより異なり、
+通常ゼロではありません。
 
-On mobile devices it would be useful to set sleepTimeout to
-[SleepTimeout.NeverSleep] for games using accelerometer as the main
-source of input. However, such games should allow screen dimming while
-in menu or paused. Currently you will only be able to set this property
-to one of the values predefined in [SleepTimeout] class. A get
-will return either one of the predefined values, or the actual number
-of seconds until screen gets dimmed, as specified in system preferences
-of the device.
+モバイルデバイスで加速度計を主な入力として用いる場合、 sleepTimeout に
+[SleepTimeout.NeverSleep] をセットすると便利です。
+しかし、そういうゲームではメニュー上または停止時にスクリーンの明るさ調整を
+可能にするべきです。現時点で [SleepTimeout] クラスで事前定義された値から
+選択してプロパティをセットする必要があります。呼び出しすると、デバイスの
+システム設定で指定したとおりに、事前定義された値、あるいはスクリーンが暗く
+なるまでの実際の秒数、のいずれかが返されます。
 BEGIN EX
-	// Disable screen dimming
+	// スクリーンが暗くなる設定を無効化
 	Screen.sleepTimeout = SleepTimeout.NeverSleep;
 END EX
