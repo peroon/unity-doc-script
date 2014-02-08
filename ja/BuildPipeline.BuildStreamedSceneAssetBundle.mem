@@ -4,14 +4,15 @@ BuildStreamedSceneAssetBundle(string[],string,BuildTarget,uint)
 BuildStreamedSceneAssetBundle(string[],string,BuildTarget,BuildOptions)
 BuildStreamedSceneAssetBundle(string[],string,BuildTarget,uint,BuildOptions)
 </signature>
-Builds one or more scenes and all their dependencies into a compressed asset bundle.
-The scene AssetBundle can be built for any target platform and always creates a single compressed unity3d file.
+シーンをWWWクラスでロードして使用するためにアセットバンドルとして作成します（Unity Pro のみ）
+シーンのアセットバンドルは任意のターゲットプラットフォームで使用でき、常にひとつの圧縮 unity3d ファイルを生成します。
 
-The scene can be downloaded and loaded using the WWW class.
-You can use WWW.LoadFromCacheOrDownload to cache the downloaded scene after it has been downloaded. The optional /crc/ output parameter can be used to get a CRC checksum for the generated AssetBundle, which can be used to verify content when downloading AssetBundles using WWW.LoadFromCacheOrDownload.
+この際にロードしたシーンを呼び出すにはWWW.assetBundleを一度呼び出す必要があります。
+またWWW.LoadFromCacheOrDownloadを利用してキャッシュとして残すことが出来ます。任意の  /crc/ 出力パラメータをしようして生成されたアセットバンドルの CRC チェックサムを取得出来ます。これは WWW.LoadFromCacheOrDownload によるダウンロードしたコンテンツのチェックに使用できます。
+
 BEGIN EX
-	// Build a streamed unity3d file. This contain one scene that can be downloaded
-	// on demand and loaded once its asset bundle has been loaded.
+	// ストリーミング unity3d ファイルをビルド。これにはオンデマンドでダウンロードできる
+	// シーンがひとつ含まれ、アセットバンドルがロードされた後に、シーンがロードできます。
 
 	@MenuItem ("Build/BuildWebplayerStreamed")
 	static function MyBuild(){
@@ -19,32 +20,32 @@ BEGIN EX
 		BuildPipeline.BuildStreamedSceneAssetBundle( levels, "Streamed-Level1.unity3d", BuildTarget.WebPlayer); 
 	}
 END EX
-When downloading the built compressed file, you need to call WWW.assetBundle in order to make the scene available to the Application.LoadLevel() and Application.LoadLevelAdditive() functions.
+ビルドされた圧縮ファイルをダウンロードするとき、 Application.LoadLevel() および Application.LoadLevelAdditive() 関数でシーンを利用可能とするには WWW.assetBundle を呼び出しする必要があります。
 BEGIN EX
 	function Start () {
-		// Download compressed scene. If version 5 of the file named "Streamed-Level1.unity3d" was previously downloaded and cached.
-		// Then Unity will completely skip the download and load the decompressed scene directly from disk.
+		// もし "Streamed-Level1.unity3d" と名前の付いたファイルのバージョン 5 がすでにダウンロードされてキャッシュされた場合、圧縮シーンをダウンロード。
+		// 次に Unity はダウンロードを完全にスキップして展開されたシーンをディスクから直接ロードします。
 		var download = WWW.LoadFromCacheOrDownload ("http://myWebSite.com/Streamed-Level1.unity3d", 5);
 		yield download;
 		
-		// Handle error
+		// エラーのハンドリング
 		if (download.error != null)
 		{
 			Debug.LogError(download.error);
 			return;
 		}
 		
-		// In order to make the scene available from LoadLevel, we have to load the asset bundle.
-		// The AssetBundle class also lets you force unload all assets and file storage once it is no longer needed.
+		// LoadLevel からシーンを利用可能とするため、アセットバンドルをロードする必要があります。
+		// AssetBundle クラスにより、不要になったときに全てのアセットおよびファイルストレージを強制的にアンロード出来ます。
 		var bundle = download.assetBundle;
 		
-		// Load the level we have just downloaded
+		// ダウンロードしたばかりのレベルをロードします
 		Application.LoadLevel ("Level1");
 	}
 END EX
-@param levels Pathnames of levels to include in the asset bundle.
-@param locationPath Pathname for the output asset bundle.
-@param target Runtime platform on which the asset bundle will be used.
-@param crc Output parameter to receive CRC checksum of generated assetbundle.
-@param options Build options. See /BuildOptions/ for possible values.
-@return String with an error message, empty on success.
+@param levels シーンアセットパスの配列
+@param locationPath AssetBundleの保存先
+@param target ビルドターゲット
+@param crc 生成されたアセットバンドルの CRC チェックサムを受け取るための出力パラメータ
+@param options ビルドオプション。選択できる値の一覧については  /BuildOptions/  を参照して下さい。
+@return 何らかのエラーが出た場合、戻り値としてエラー文字を返します。成功したときは空文字になります
