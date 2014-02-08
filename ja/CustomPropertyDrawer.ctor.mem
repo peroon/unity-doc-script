@@ -2,9 +2,9 @@
 ctor(Type)
 ctor(Type,bool)
 </signature>
-Tells a PropertyDrawer class which run-time class or attribute it's a drawer for.
-When you make a custom drawer, you need put this attribute on the drawer class.
+PropertyDrawer クラスがどのランタイム クラスまたは属性に対する Drawer であるか指定する
+カスタム Drawer を作成するとき、この属性を Drawer クラスにつける必要があります。
 
-SA: [[PropertyDrawer]] class.
-@param type If the drawer is for a custom [[Serializable]] class, the type should be that class. If the drawer is for script variables with a specific [[PropertyAttribute]], the type should be that attribute.
-@param useForChildren If true, the drawer will be used for any children of the specified class unless they define their own drawer.
+SA: [[PropertyDrawer]] クラス
+@param type もし Drawer がカスタムの [[Serializable]] クラスに対応する場合、型はそのクラスと一致させます。もし Drawer が特定の [[PropertyAttribute]] スクリプト変数に対応する場合、型はその属性と一致させます。
+@param useForChildren true である場合、 Drawer に自身のものを定義しないかぎり、指定されたクラスの任意の子オブジェクトに使用されます。
