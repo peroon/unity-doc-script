@@ -1,25 +1,25 @@
 <signature>
 dataPath
 </signature>
-Contains the path to the game data folder (RO).
-The value depends on which platform you are running on:
+ゲームデータのフォルダパスを返す（読み取り専用）。
+実行プラットフォームによって返る値が変化します。
 
-__Unity Editor:__ <''path to project folder''>/Assets
+__Unity Editor:__ <''プロジェクトフォルダのパス''>/Assets
 
-__Mac player:__ <''path to player app bundle''>/Contents
+__Mac player:__ <''プレイヤーアプリのバンドルへのパス''>/Contents
 
-__iPhone player:__ <''path to player app bundle''>/<''AppName.app''>/Data
+__iPhone player:__ <''プレイヤーアプリのバンドルへのパス''>/<''AppName.app''>/Data
 
-__Win player:__ <''path to executablename_Data folder''>
+__Win player:__ <''実行可能な Data フォルダへのパス''>
 
-__Web player:__ The absolute url to the player data file folder (without the actual data file name)
+__Web player:__ プレイヤーデータ ファイル フォルダへの絶対パス URL（実際のデータファイル名は除く）
 
-__Flash:__ The absolute url to the player data file folder (without the actual data file name)
+__Flash:__ プレイヤーデータ ファイル フォルダへの絶対パス URL（実際のデータファイル名は除く）
 
 
-Note that the string returned on a PC will use a forward slash as a folder separator.
+PC で返す文字列において、フォルダ セパレータとして / が使用されることに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// print the path to the data folder
+	// データフォルダへのパスを表示
 	print (Application.dataPath);
 END EX

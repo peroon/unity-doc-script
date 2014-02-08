@@ -1,27 +1,32 @@
 <signature>
 AddObjectToAsset(Object,string)
 </signature>
-Adds /objectToAdd/ to an existing asset at /path/.
-Please note that you should only add assets to '.asset' assets, imported models or texture assets for example will lose their data.
+オブジェクトを下の階層（子）へ追加します
+これは自作したデータを扱う際に最適です
+追加されたObjectは削除を行うことは出来ません
+再度全てを生成することになります
+削除を行うとインスタンスIDも変更されてしまい、参照が外れてしまうので気をつけてください
 
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
+アセットは '.assets' つきのアセットに対してのみ追加すべきです。インポートされたモデルやテクスチャアセットに追加するとデータが失われることに留意して下さい。
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば "Assets/MyTextures/hello.png" です。
+
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {
-		// Create a simple material asset
+		// 簡単なマテリアルアセットを作成
 		var material = new Material (Shader.Find("Specular"));
 		AssetDatabase.CreateAsset(material, "Assets/MyMaterial.mat");
 
-		// Add an animation clip to it
+		// これにアニメーションクリップを追加
 		var animationClip = new AnimationClip ();
 		animationClip.name = "My Clip";
 		AssetDatabase.AddObjectToAsset(animationClip, material);
 
-		// Reimport the asset after adding an object.
-		// Otherwise the change only shows up when saving the project
+		// オブジェクトを追加後にアセットを再インポート
+		// そうしない場合、プロジェクト保存時にのみ変更が表示される
 		AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(animationClip));
 
-		// Print the path of the created asset
+		// 作成されたアセットのパスを表示
 		Debug.Log(AssetDatabase.GetAssetPath(material));
 	}
 END EX
@@ -30,25 +35,30 @@ END EX
 <signature>
 AddObjectToAsset(Object,Object)
 </signature>
-Adds /objectToAdd/ to an existing asset identified by /assetObject/.
-Please note that you should only add assets to '.asset' files, imported models or texture assets for example will lose their data when reimporting or quitting Unity.
+オブジェクトを下の階層（子）へ追加します
+これは自作したデータを扱う際に最適です
+追加されたObjectは削除を行うことは出来ません
+再度全てを生成することになります
+削除を行うとインスタンスIDも変更されてしまい、参照が外れてしまうので気をつけてください。
+アセットは '.assets' つきのアセットに対してのみ追加すべきです。インポートされたモデルやテクスチャアセットに追加すると再インポートあるいは Unity 終了時にデータが失われることに留意して下さい。
+
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {
-		// Create a simple material asset
+		// 簡単なマテリアルアセットを作成
 		var material = new Material (Shader.Find("Specular"));
 		AssetDatabase.CreateAsset(material, "Assets/MyMaterial.mat");
 
-		// Add an animation clip to it
+		// これにアニメーションクリップを追加
 		var animationClip = new AnimationClip ();
 		animationClip.name = "My Clip";
 		AssetDatabase.AddObjectToAsset(animationClip, material);
 
-		// Reimport the asset after adding an object.
-		// Otherwise the change only shows up when saving the project
+		// オブジェクトを追加後にアセットを再インポート
+		// そうしない場合、プロジェクト保存時にのみ変更が表示される
 		AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(animationClip));
 
-		// Print the path of the created asset
+		// 作成されたアセットのパスを表示
 		Debug.Log(AssetDatabase.GetAssetPath(material));
 	}
 END EX
