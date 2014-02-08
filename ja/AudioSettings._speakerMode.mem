@@ -1,14 +1,14 @@
 <signature>
 speakerMode
 </signature>
-Sets or gets the current speaker mode. Default is 2 channel stereo.
-Be aware that the audio system is restarted when a new speaker mode is set.
-This means that playback on all [[class-AudioSource|AudioSources]] is stopped; any sounds that should be continuous (such as music) will need to be started again after the speaker mode is changed.
-If a speaker mode is set beyond the drivers capability, the audio behaviour is undefined.
-Use [[AudioSettings.driverCaps]] to get the capabilities of the current driver.
+スピーカーのモードを設定／取得する（デフォルトは2チャンネルのステレオ）。
+新規のスピーカーのモードを設定するときオーディオシステムが再起動されることに留意してください。
+つまり全ての [[class-AudioSource|AudioSources]] が停止され、継続すべき音声（ミュージックなど）はスピーカーのモードを変更した後に再び開始する必要があります。
+もしスピーカーモードの設定がドライバーで実施できるものでない場合、音声の動作は未定義となります。
+[[AudioSettings.driverCaps]] を使用して現在のドライバーの実施できる範囲を取得します。
 CONVERTEXAMPLE
 BEGIN EX
-	// To set the speaker mode to that of the system settings.
+	// システム設定にスピーカーモード設定する
 
 	AudioSettings.speakerMode = AudioSettings.driverCaps;
 END EX
