@@ -1,7 +1,8 @@
 <signature>
 CopyAsset(string,string)
 </signature>
-Duplicates the asset at /path/ and stores it at /newPath/.
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
-@param path Filesystem path of the source asset.
-@param newPath Filesystem path of the new asset to create.
+アセットをコピーする
+コピーに成功した場合はtrueを返します。
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
+@param path ソース アセットのファイルシステム上のパス
+@param newPath 作成する新規アセットのファイルシステム上のパス
