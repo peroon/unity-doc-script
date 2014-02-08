@@ -2,10 +2,9 @@
 logFile
 </signature>
 ログファイルを作成する
-Use it with Profiler.enabled to produce profiling information
-outside of the Unity Editor.
-Setting this property is not supported in the WebPlayer. The WebPlayer will output the profiling information next to your webplayer logfile.
-This produces a file with framerate
+Profiler.enabled と共に使用することで Unity Editor の外でプロファイル情報を生成します。
+このプロパティをセットすることはウェブプレイヤー対応していません。ウェブプレイヤーによりウェブプレイヤー ログファイルの隣にプロファイル情報を出力します。
+フレームレートに関するファイルを生成します。
 SA: Profiler.enabled.
 CONVERTEXAMPLE
 BEGIN EX
