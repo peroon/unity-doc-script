@@ -1,4 +1,4 @@
-Generate online version of webplayer.
-Generate HTML for the webplayer which references the Unity-hosted version of UnityObject2.js.  When this option is not used the HTML will reference a copy of UnityObject2.js which will be dropped into the build folder alongside the HTML.  This version of UnityObject2.js is easier to work with, and allows you to debug Javascript locally.
+ウェブプレイヤーのオンラインバージョンを生成します。
+ウェブプレイヤーの HTML を生成すると、Unity によりホストされた UnityObject2.js を参照します。このオプションを使用しない場合、HTML は HTML フォルダとともにビルドにドロップされる UnityObject2.js のコピーを参照す。この UnityObject2.js の場合は作業がより容易であり、ローカルで Javascript デバッグが出来ます。
 
-SA: BuildPipeline.BuildPlayer.
+SA: BuildPipeline.BuildPlayer

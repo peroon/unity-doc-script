@@ -1,6 +1,6 @@
-Used when building XCode (iPhone) or Eclipse (Android) projects.
-On iPhone, this setting will append an existing XCode project. Existing XCode project setting changes will be preserved.
+XCode (iPhone) または Eclipse (Android) プロジェクトのビルドに使用します。
+iPhone 上でこの設定により既存の XCode プロジェクトに追加します。既存のプロジェクト設定は保持されます。
 
-On Android, this setting will create a new Eclipse project. Existing Eclipse project setting changes will be discarded.
+Android上でこの設定により新規の Eclipse プロジェクトが作成されます。既存のプロジェクト設定は破棄されます。
 
-SA: BuildPipeline.BuildPlayer.
+SA: BuildPipeline.BuildPlayer

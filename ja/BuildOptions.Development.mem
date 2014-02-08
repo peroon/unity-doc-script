@@ -1,6 +1,6 @@
-Build a development version of the player.
-A development build includes debug symbols and enablesthe  [[Profiler]]. (To profile a webplayer you need to have the development version of the web player installed.  The unity3d file can be profiled only when the development webplayer is active.)
+開発バージョンとしてビルドします
+[[Profiler]] を使用する場合にも選択します（ウェブプレイヤーのプロファイルを得るためには、ウェブプレイヤー の開発バージョンがインストールされている必要があります。unity3d ファイルのプロファイルは開発バージョンのウェブプレイヤーが有効な場合のみプロファイルが得られます）
 
-Note that a development build of a webplayer means that the unity3d file created is not LZMA compressed.
+開発バージョンのウェブプレイヤーであるというこｔは unity3d ファイルが LZMA 圧縮されてないことを意味することに留意して下さい。
 
-SA: BuildPipeline.BuildPlayer.
+SA: BuildPipeline.BuildPlayer

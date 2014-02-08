@@ -1,4 +1,4 @@
-Allow script debuggers to attach to the player remotely.
-Note that script debugging is not supported on the webplayer.
+スクリプトデバッガを有効にしてリモートでプレイヤーにアタッチします。
+スクリプトデバッガはウエブプレイヤー対応していないことに留意して下さい。
 
-SA: BuildPipeline.BuildPlayer.
+SA: BuildPipeline.BuildPlayer
