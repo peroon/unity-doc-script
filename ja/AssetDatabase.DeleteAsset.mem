@@ -1,10 +1,10 @@
 <signature>
 DeleteAsset(string)
 </signature>
-Deletes the asset file at path.
-Returns true if the asset has been successfully deleted, false if it doesn't exit or couldn't be removed.
+アセットを完全に削除します
+正常に行われた場合は true を返し、終了できないか削除できない場合は false を返す。
 
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
 
 SA: AssetDatabase.MoveAssetToTrash.
-@param path Filesystem path of the asset to be deleted.
+@param path 削除するアセットのファイルシステム上のパス

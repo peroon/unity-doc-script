@@ -1,28 +1,28 @@
 <signature>
 CreateAsset(Object,string)
 </signature>
-Creates a new asset at path.
-You must ensure that the path uses a supported extension ('.mat' for materials, '.cubemap' for cubemaps,
-'.GUISkin' for skins, '.anim' for animations and '.asset' for arbitrary other assets.)
+オブジェクトを指定したパスに作成します。
+パスが拡張子に対応していることを確認して下さい（マテリアルは .mat、キューブマップは .cubemap、スキンは .GUISkin、アニメーションは .anim、他の任意のアセットは .asset）。
 
-You can add more assets to the file using AssetDatabase.AddObjectToAsset after the asset has been created.
-If an asset already exists at /path/ it will be deleted prior to creating a new asset.
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
+アセット作成後に AssetDatabase.AddObjectToAsset を使用してさらにアセットをファイルに追加出来ます。
+もしアセットが /path/ にすでに存在する場合、新規のアセットを作成する前に削除されます。
 
-Be aware that if adding multiple objects to an asset, the order in which the objects are added does not
-really matter.  In other words, /asset/ will not be special within the asset and not be any form of "root"
-to objects added later.  The object displayed as the asset's main object in the project view is the one
-that is considered most important (decided based on type) within the collection of objects.
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
+
+もしアセットに複数オブジェクトを追加する場合、オブジェクトが
+追加された順序は何も影響しません。
+すなわち、追加されたアセットは元のアセットに対しての違いはなく、後に追加するオブジェクトに対する元オブジェクトとなるようなことはありません。
+プロジェクトビューでアセットのメインオブジェクトとして表示されたオブジェクトは、オブジェクトのコレクションの中でもっとも重要とみなされたものです（型により判定）。
 BEGIN EX
 	@MenuItem("GameObject/Create Material")
 	static function CreateMaterial () {
-		// Create a simple material asset
+		// 簡単なマテリアルアセットを作成
 		var material = new Material (Shader.Find("Specular"));
 		AssetDatabase.CreateAsset(material, "Assets/MyMaterial.mat");
 
-		// Print the path of the created asset
+		// 作成されたアセットのパスを表示
 		Debug.Log(AssetDatabase.GetAssetPath(material));
 	}
 END EX
-@param asset Object to use in creating the asset.
-@param path Filesystem path for the new asset.
+@param asset アセット作成する際に使用するオブジェクト
+@param path 新規のアセットのファイルシステム上のパス
