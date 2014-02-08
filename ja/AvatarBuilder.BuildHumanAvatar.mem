@@ -1,9 +1,9 @@
 <signature>
 BuildHumanAvatar(GameObject,HumanDescription)
 </signature>
-Create a humanoid avatar.
-The avatar is created using the supplied HumanDescription object which specifies the muscle space range limits and retargeting parameters like arm/leg twist and arm/leg stretch.
+ヒューマノイド型アバターを作成します。
+ヒューマノイド型アバターの作成には、指定された HumanDescription オブジェクトを使用するため、それによってマッスル スペース（Muscle Space）の可動域および腕/脚のひねりや腕/脚の伸びといったリターゲットのパラメータが指定されます。
 
-SA: HumanDescription.
-@param go Root object of your transform hierachy.
-@param monoHumanDescription Description of the avatar.
+SA: HumanDescription
+@param go Transform 階層のルートオブジェクト
+@param monoHumanDescription アバターのの説明。
