@@ -2,13 +2,15 @@
 Vector3Field(Rect,string,Vector3)
 Vector3Field(Rect,GUIContent,Vector3)
 </signature>
+[[Vector3]] 型のフィールドを作成します
+X,Y,Zのラベル部分をドラッグして数値を変動させることも出来ます
 Make an X, Y & Z field for entering a [[Vector3]].
 {img EditorGUIVector3Field.png}\\
-''Vector3 field in an Editor Window.''
+''エディタ ウィンドウの Vector3 フィールド''
 BEGIN EX
-	// Editor window that shows the detailed rotation (X,Y,Z and W components), 
-	// the position in 3D space and position in Screen space of the selected 
-	// transform.
+	// 詳細な回転（X,Y,Z および W 成分）、
+	// 3D 空間の位置および選択された Transform の画面上の位置を表示するエディタ
+	// ウィンドウ
 	
 	class CustomTransformInspector extends EditorWindow {
 		var showing : boolean = true;
@@ -29,26 +31,26 @@ BEGIN EX
 			if(showing) {
 				if(currObj) {
 					currObj.position = EditorGUI.Vector3Field(Rect(3,15,position.width-6,20),
-							"Position in 3D Space:",
+							"3D 空間の位置:",
 							currObj.position);
 					
 					EditorGUI.Vector2Field(Rect(3,50,position.width-6,20),
-							"Position in Screen Space:",
+							"画面空間の位置:",
 							Camera.main.WorldToScreenPoint(currObj.position));
 					
 					rotationComp = EditorGUI.Vector4Field(Rect(3, 85, position.width-6, 20),
-									"Detailed Rotation:",
+									"詳細な回転:",
 									QuaternionToVector4(currObj.localRotation));
 					currObj.localRotation = ConvertToQuaternion(rotationComp);
 									
 					currObj.localScale = EditorGUI.Vector3Field(Rect(3,120,position.width-6,20),
-									"Scale:",
+									"スケール:",
 									currObj.localScale);
 					
 				} else {
 					EditorGUI.DropShadowLabel(
 						Rect(3,15,position.width,20),
-						"Select an Object to inspect");
+						"確認したいオブジェクトを選択して下さい");
 				}		
 			}
 		}
@@ -61,7 +63,7 @@ BEGIN EX
 		}	
 	}
 END EX
-@param position Rectangle on the screen to use for the field.
-@param label Label to display above the field.
-@param value The value to edit.
-@return The value entered by the user.
+@param position 表示位置
+@param label 左側に表示する文字列
+@param value 現在値
+@return ユーザにより入力された値。

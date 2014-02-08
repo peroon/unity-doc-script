@@ -2,24 +2,26 @@
 PrefixLabel(Rect,GUIContent)
 PrefixLabel(Rect,int,GUIContent)
 </signature>
-Make a label in front of some control.
+各フィールドの前にラベルを表示するために使用されます
+フィールドが表示されるべき位置のRect情報を返します
 {img EditorGUIPrefixLabel.png}\\
-''Prefix Label in an Editor Window.''
+''エディタ ウィンドウにおける Prefix Label''
 
-Note that most editor controls already have built-in optional labels that can be specified as one of the parameters. PrefixLabel can be used when there is no such built-in label available, or when you're creating your own editor control from scratch. 
+ほとんどのエディタコントロールはすでにビルトインのオプションで使用できるラベルがあり、引数の一つとして指定できます。PrefixLabel はそのようなビルトインのラベルが利用可能でない場合、またはゼロから自身のエディタ コントロールを作成する場合に使用出来ます。
 
-PrefixLabel takes a rect that's the rect for the entire control, including the label, and returns a rect that's for just the control itself, without the label.
+PrefixLabel はラベルを含むコントロール全体の Rect を使って、ラベルを含まないコントロール自身のための Rect を返します。
 
-PrefixLabel also ensures that when the label is clicked, the linked control will get keyboard focus (if the control supports keyboard focus). The ID of the linked control can optionally be specified, or if no ID is given, the label is automatically linked to the following control coming after it.
+さらに PrefixLabel はラベルがクリックされたときにリンクされたコントロールがキーボードのフォーカスを取得することを保証します（コントロールがキーボードのフォーカスをサポートする場合）。リンクされたコントロールの ID はオプションにより指定するか、または ID が指定されてない場合ラベルは自動的にその後に続くコントロールに自動的にリンクされます。
 
 BEGIN EX
-	// Inflates a mesh
+	// メッシュを膨らまします
 	//
-	// Usage: Select a mesh and drag it to the object field.
-	// Press calculate and after finishing just press play and see your mesh growing.
+	// 使用方法：メッシュを選択してオブジェクトフィールドにドラッグ
+	// Calculate （計算）をクリックして完了した後は再生してメッシュが膨らむのがみれる
 	//
-	// Note: To control the ratio of inflation just change the increaseRatio 
-	// var in the "InflateMesh.js" sript
+	// 注意：膨張の度合いを制御するには increaseRatio を変更
+ 
+	// var は "InflateMesh.js" にある
 	
 	class InflateMeshEditor extends EditorWindow {
 	
@@ -71,13 +73,13 @@ BEGIN EX
 	
 			finalNormals = normals;
 			calculated = 0.5;
-			// Calcualte average normals		
-			// counter is the highest vertexID, now go through all the groups and collect normal data
+			// 平均の法線を計算
+			// counter はもっとも高い vertexID 、次に全てのグループを通して法線データを収集
 			for (var k = 1; k <= counter; k++) { 
 				var curAvgNormal : Vector3 = Vector3.zero;
 				for (var l = 0; l < vertexIDs.length; l++)
 		 			if (vertexIDs[l] == k) {
-		 				// Add up all the normals of the vertices with identical positions
+		 				// 同じ位置にある全ての頂点の法線を加算して累積
 	  					curAvgNormal += normals[l]; 
 					}
 				curAvgNormal.Normalize(); //Normalize the result
@@ -86,11 +88,11 @@ BEGIN EX
 	 					finalNormals[m] = curAvgNormal;
 			}
 			object.gameObject.AddComponent ("InflateMesh").fNormals = finalNormals;
-			Debug.Log ("Done Adding Component, press play and see your mesh being inflated!");
+			Debug.Log ("コンポーネントの追加完了、再生してメッシュの膨張を確認して下さい!");
 		}
 	}
 END EX
-And the script attached to the editor script:
+エディタスクリプトにアタッチされたスクリプト：
 BEGIN EX
 	// InflateMesh.js
 	private var mesh : Mesh;
@@ -111,7 +113,7 @@ BEGIN EX
 		mesh.vertices = vertices;
 	}
 END EX
-@param totalPosition Rectangle on the screen to use in total for both the label and the control.
-@param id The unique ID of the control. If none specified, the ID of the following control is used.
-@param label Label to show in front of the control.
-@return Rectangle on the screen to use just for the control itself.
+@param totalPosition ラベルおよびコントロールの両方で使用する画面の Rect
+@param id コントロールの一意の ID 。指定しない場合、次のコントロールの ID が使用される
+@param label コントロールの前に表示するラベル
+@return コントロール自身のみに使用する画面の Rect
