@@ -2,7 +2,7 @@
 ImportAsset(string)
 ImportAsset(string,ImportAssetOptions)
 </signature>
-Import asset at path.
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
-
+アセットをパス名からインポートすることが出来ます
+アセットに何らかの変更が加えられた時に更新目的で使用します
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
 SA: [[ImportAssetOptions]].

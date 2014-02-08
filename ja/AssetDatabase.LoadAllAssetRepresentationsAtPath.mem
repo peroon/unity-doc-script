@@ -1,8 +1,9 @@
 <signature>
 LoadAllAssetRepresentationsAtPath(string)
 </signature>
-Returns all asset representations at /assetPath/.
-Asset representations are objects in the asset that are visible in the Project view.
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
+アセットの子にあたるすべてのオブジェクトを取得します
+指定したパス自身のオブジェクトは含まれません
+Asset Representation とはプロジェクト ビュー で表示されている全てのアセットです。
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
 
-SA: AssetDatabase:LoadMainAssetAtPath, AssetDatabase.LoadAssetAtPath, AssetDatabase.LoadAllAssetsAtPath.
+SA: AssetDatabase:LoadMainAssetAtPath, AssetDatabase.LoadAssetAtPath, AssetDatabase.LoadAllAssetsAtPath

@@ -2,7 +2,9 @@
 IsSubAsset(Object)
 IsSubAsset(int)
 </signature>
-Does the asset form part of another asset?
-Some assets may form part of another asset (for example, a procedural material can be part of a material package). This function tells if an asset is subordinated in this way.
-@param obj The asset Object to query.
-@param instanceID Instance ID of the asset Object to query.
+アセットがルートではなく、子にあたるものかどうかを判断します
+（例えばプロシージャルマテリアルはマテリアル パッケージの一部の場合があります）
+子である場合はtrueを返します
+いくつかのアセットは他のアセットの一部を構成する場合があります。
+@param obj 照会するアセット オブジェクト
+@param instanceID 照会するアセットオブジェクトのインスタンス ID
