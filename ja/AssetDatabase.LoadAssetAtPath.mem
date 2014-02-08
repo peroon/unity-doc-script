@@ -1,13 +1,15 @@
 <signature>
 LoadAssetAtPath(string,Type)
 </signature>
-Returns the first asset object of type __type__ at given path __assetPath__.
-Some asset files may contain multiple objects. (such as a Maya file which may contain multiple Meshes and GameObjects).
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".
+アセットのパスとタイプを指定してオブジェクトを取得します
+これはMayaファイルのような1つのアセットに複数のメッシュやゲームオブジェクトを含む場合にも使用されます
+その際にはパス名はおなじになってしまいますがTypeを指定することである程度の選別は可能です
 
-__Note:__\\
-The __assetPath__ parameter is not case sensitive.\\
-__ALL__ asset names & paths in Unity use forward slashes, even on Windows.
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
+
+__注意:__\\
+__アセットパス__ の引数は大文字小文字かは影響ありません。\\
+Unity における __全ての__ アセット名およびパスは Windows 上でも / を使用します。
 BEGIN EX
 @MenuItem("AssetDatabase/LoadAssetExample")
 static function ImportExample()
@@ -16,5 +18,5 @@ static function ImportExample()
 }
 END EX
 SA: AssetDatabase.LoadMainAssetAtPath, AssetDatabase.LoadAllAssetsAtPath.
-@param assetPath Filesystem path of the asset to load.
-@param type Data type of the asset.
+@param assetPath ロードするアセットのファイルシステム上のパス
+@param type アセットのデータ型

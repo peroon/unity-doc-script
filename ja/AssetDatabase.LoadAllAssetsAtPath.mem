@@ -1,9 +1,10 @@
 <signature>
 LoadAllAssetsAtPath(string)
 </signature>
-Returns an array of all asset objects at /assetPath/.
-Some asset files may contain multiple objects (such as a Maya file which may contain multiple Meshes and GameObjects).
-All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png"
+親子関係すべてのアセットを取得します
+これはTransform、MeshFilterなどGameObjectにアタッチされている全てのComponentを取得することに注意して下さい。
+いくつかのアセットファイルは複数のオブジェクトを含みます（例えば Maya ファイルは複数のメッシュやゲームオブジェクトを含むかもしれません）。
+全てのパスはプロジェクトフォルダに対する相対指定とします。例えば  "Assets/MyTextures/hello.png" です。
 
-SA: AssetDatabase.LoadAssetAtPath.
-@param assetPath Filesystem path to the asset.
+SA: AssetDatabase.LoadAssetAtPath
+@param assetPath アセットのファイルシステム上のパス
