@@ -1,7 +1,7 @@
-A UnityGUI event.
-Events correspond to user input (key presses, mouse actions), or are UnityGUI layout or rendering events.
+UnityGUI イベントです。
+イベントは入力デバイスのアクション（キー入力、マウスアクション）または UnityGUI レイアウトまたはレンダリング イベントをを表します。
 
-For each event MonoBehaviour::pref::OnGUI is called in the scripts; so OnGUI is potentially
-called multiple times per frame. Event.current corresponds to "current" event inside OnGUI call.
+スクリプトの MonoBehaviour::pref::OnGUI 関数内で呼び出され、フレームごとにイベントは複数回呼び出される場合があります。
+Event.current は OnGUI における current イベントに対応しています。
 
-SA: [[wiki:comp:GUI Scripting Guide|GUI Scripting Guide]], [[EventType]].
+SA: [[wiki:comp:GUI Scripting Guide|GUI スクリプティング ガイド]], [[EventType]]

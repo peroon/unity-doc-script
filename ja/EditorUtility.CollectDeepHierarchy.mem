@@ -1,25 +1,26 @@
 <signature>
 CollectDeepHierarchy(Object[])
 </signature>
-Collect all objects in the hierarchy rooted at each of the given objects. This is most useful for linearizing entire GameObject hierarchies including all their components.
-Note that the traversal will not include assets referenced from within the hierarchy. For example, having a MeshFilter component in the hierarchy will not cause the referenced Mesh to be included in the resulting list.
+オブジェクトの子も含めたアセットの配列を返します。これは依存関係にあるものすべてを取得します。これはゲームオブジェクトの階層全体を全てのコンポーネントを含めて直線化するのにもっとも役に立ちます。
+ディレクトリを跨いでアセットから参照されたオブジェクトのみは含まれないことに留意して下さい（階層にあるオブジェクトのみを取得します）。例えば MeshFilter コンポーネントが階層にあっても、参照されたメッシュは必ずしも結果リストに含まれません。
+
 BEGIN EX
 function Start () {
 
-    // Create two GameObjects.
+    // 二つのゲームオブジェクトを作成
     var parent = new GameObject(); parent.name = "Parent";
     var child = new GameObject(); child.name = "Child";
 
-    // Make one a child of the other.
+    // 一方を他方の子オブジェクトとする
     child.transform.parent = parent.transform;
 
-    // Collect entire hierarchy.
+    // 階層全体を取得する
     var result = EditorUtility.CollectDeepHierarchy([parent]);
 
-    // Dump results.  Will log four objects to the console;
-    // two GameObjects ("Parent" and "Child") and two Transform
-    // components (one belonging to "Parent" and one belonging to
-    // "Child").
+    // 結果をダンプすると 4 角オブジェクトがコンソール出力される：
+    // 二つのゲームオブジェクト（親 Parent および子 Child )および二つの Transform
+    // コンポーネント (ひとつは 親 Parent に属して、ひとつは子 Childに
+    // 属します)
     for (var obj in result) {
         Debug.Log(obj);
     }

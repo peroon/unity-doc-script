@@ -2,8 +2,8 @@
 DisplayDialog(string,string,string)
 DisplayDialog(string,string,string,string)
 </signature>
-Displays a modal dialog.
-Use it for displaying message boxes in the editor.
+2つボタンのあるダイアログを表示します
+戻り値として、OKを押すとtrue、キャンセルを押すとfalseを返します
 
 /ok/ and /cancel/ are labels to be displayed on the dialog buttons. If /cancel/ is empty (the default), then only
 one button is displayed. DisplayDialog returns /true/ if /ok/ button is pressed.
@@ -13,8 +13,8 @@ SA: ::ref::DisplayDialogComplex function.
 {img PlaceSelectionOnSurface.png}\\
 ''Dialog box that shows info on the number of objects to be placed on the surface.''
 BEGIN EX
-	// C# Example
-	// Places the selected Objects on the surface of a terrain.
+	// C# サンプル
+	// 選択されたオブジェクトを地形の表面に配置
 
 	using UnityEngine;
 	using UnityEditor;
@@ -42,7 +42,7 @@ BEGIN EX
 		}
 	}
 END EX
-@param title The title of the message box.
-@param message The text of the message.
-@param ok Label displayed on the OK dialog button.
-@param cancel Label displayed on the Cancel dialog button.
+@param title ダイアログウィンドウのタイトル
+@param message ダイアログに表示されるメッセージ
+@param ok OK（許可）ボタンに表示する文字列
+@param cancel キャンセルボタンに表示する文字列
