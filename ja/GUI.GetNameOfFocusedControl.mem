@@ -1,8 +1,8 @@
 <signature>
 GetNameOfFocusedControl()
 </signature>
-Get the name of named control that has focus.
-Control names are set up by using ::ref::SetNextControlName. When a named control has focus, this function will return its name. If no control has focus or the focused control has no name set, an empty string will be returned instead.
+フォーカスを持つGUI要素のコントロール名を取得する
+::ref::SetNextControlName を使用してコントロール名をセットします。名前のついたコントロールがフォーカスを持ったとき、この関数によりその名前を返します。もしフォーカスを持つコントロールがないか、あるいはフォーカスを持つコントロールに名前がセットされてない場合、空文字が代わりに返されます。
 CONVERTEXAMPLE
 BEGIN EX
 	var login : String = "username";
