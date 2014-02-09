@@ -1,5 +1,3 @@
-Scale the movie until the movie fills the entire screen.
+ムービーを画面いっぱいまで拡大させる。
 
-Content at the edges of the larger of the two dimensions is clipped so that the
-other dimension fits the screen exactly. The aspect ratio of the movie is
-preserved.
+縦横のうち短い方にあわせて画面いっぱいに合わせるため、長い方が映らない部分があります。アスペクト比を保ったまま、画面いっぱいに拡大されます。

@@ -1,5 +1,5 @@
-Scale the movie until one dimension fits on the screen exactly.
+ムービーの縦横いずれかを画面いっぱいまで拡大する。
 
-In the other dimension, the region between the edge of the movie and the
-edge of the screen is filled with a black bar. The aspect ratio of the
-movie is preserved.
+画面いっぱいまで拡大しなかった側はムービーと画面の間が
+黒く塗りつぶされます。アスペクト比を保ったまま、画面
+いっぱいに拡大されます。
