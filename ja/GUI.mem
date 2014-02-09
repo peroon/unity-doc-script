@@ -1,2 +1,2 @@
-The GUI class is the interface for Unity's GUI with manual positioning.
-\\SA: [[wiki:comp:GUI Scripting Guide|GUI tutorial]].
+手動で配置ができる Unityの GUI インタフェースです
+\\SA: [[wiki:comp:GUI Scripting Guide|GUI チュートリアル]]
