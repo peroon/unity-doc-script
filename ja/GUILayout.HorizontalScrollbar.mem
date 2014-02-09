@@ -2,11 +2,11 @@
 HorizontalScrollbar(float,float,float,float,GUILayoutOption[])
 HorizontalScrollbar(float,float,float,float,GUIStyle,GUILayoutOption[])
 </signature>
-Make a horiztonal scrollbar.
-A scrollbar control returns a float value that represents the position of the draggable "thumb" withtin the bar. You can use the value to adjust another GUI element to reflect the scroll position. However, most scrollable views can be handled more easily using a ''scroll view'' control.
+水平のスクロールバーを作成します。
+スクロールバー コントロールによりドラッグバーのつまみ位置を表す float 値を返す。この値を使用して別の GUI 要素がスクロール位置を反映できます。しかしスクロールビュー コントロールを代わりに使用したほうがハンドリングが容易な場合が多いです。
 
 {img GUILayoutHorizontalScrollBar.png}\\
-''Horizontal Scrollbar in the Game View.''
+''ゲームビューの Horizontal Scrollbar''
 CONVERTEXAMPLE
 BEGIN EX
 	var hSbarValue : float;
@@ -16,8 +16,9 @@ BEGIN EX
                 GUILayout.Label("This is a text that makes space");
 	}
 END EX
-The styles of the scroll buttons at the end of the bar can be located in the current skin by adding "leftbutton" and "rightbutton" to the style name. 
-The name of the scrollbar thumb (the thing you drag) is found by appending "thumb" to the style name.
+
+現在のスキンにおいてスクロールバーの端のボタンのスタイルを検索するにはスタイル名に "leftbutton" および "rightbutton" を追加します。
+スクロールバーのつまみ（ドラッグする部分）の名前を検索するにはスタイル名に "thumb" を追加します。
 BEGIN EX
 	var scrollPos : float = 0.5;
 	// This will use the following style names to determine the size / placement of the buttons
@@ -29,10 +30,10 @@ BEGIN EX
 	}
 END EX
 SA: ::ref::BeginScrollView, ::ref::VerticalScrollbar.
-@param value The position between min and max.
-@param size How much can we see?
-@param leftValue The value at the left end of the scrollbar.
-@param rightValue The value at the right end of the scrollbar.
-@param style The style to use for the scrollbar background. If left out, the /horizontalScrollbar/ style from the current [[GUISkin]] is used.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.
-@return The modified value. This can be changed by the user by dragging the scrollbar, or clicking the arrows at the end.
+@param value 現在値
+@param size バーの長さ
+@param leftValue 最小値
+@param rightValue 最大値
+@param style スタイル。空とした場合は現在の [[GUISkin]] から /horizontalScrollbar/ スタイルが使用されます。
+@param options 追加でレイアウトプロパティで指定できるオプションリスト。ここに渡された値により /style/ により定義された設定を上書きします。
+@return 修正後の値。これはユーザによりスクロールバーをドラッグするか、あるいは端の矢印をクリックすることで変更されます。
