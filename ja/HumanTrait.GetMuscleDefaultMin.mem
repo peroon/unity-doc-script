@@ -1,8 +1,8 @@
 <signature>
 GetMuscleDefaultMin(int)
 </signature>
-Get the default minimum value of rotation for a muscle in degrees.
-The default minimum applies to all three axes of rotation for the muscle. The indexing order for the muscles is the same as that of the ::ref::MuscleName array.
+マッスルの可動域のデフォルトの最小値を返す（単位は角度）
+デフォルトの最小値はマッスルの可動域の三つの軸（X, Y, Z）の全てに適用されます。マッスルのインデックス値の順番は ::ref::MuscleName と同じです。
 CONVERTEXAMPLE
 BEGIN EX
 function Start() {
@@ -14,4 +14,4 @@ function Start() {
 }
 END EX
 SA: HumanLimit.min, GetMuscleDefaultMax.
-@param i Muscle index.
+@param i マッスルのインデックス値

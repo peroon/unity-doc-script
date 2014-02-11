@@ -1,5 +1,5 @@
 <signature>
 MuscleCount
 </signature>
-The number of human muscle types defined by Mecanim.
-SA: MuscleName.
+メカニムで定義されたヒューマノイドのマッスル数
+SA: MuscleName

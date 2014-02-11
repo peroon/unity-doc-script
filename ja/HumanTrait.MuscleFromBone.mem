@@ -1,9 +1,9 @@
 <signature>
 MuscleFromBone(int,int)
 </signature>
-Obtain the muscle index for a particular bone index and "degree of freedom".
-The indexing order of the bones is the same as that of the ::ref::BoneName array.
+ボーンのインデックス値および自由度にもとづき、マッスルのインデックス値を返す
+ボーンのインデックス値の順番は ::ref::BoneName 配列と同じです。
 
 SA: BoneName, BoneCount, MuscleName, MuscleCount.
-@param i Bone index.
-@param dofIndex Number representing a "degree of freedom": 0 for X-Axis, 1 for Y-Axis, 2 for Z-Axis.
+@param i ボーンのインデックス
+@param dofIndex 自由度を表す数字: X軸 の場合 0, Y軸の場合 1, Z軸の場合 2

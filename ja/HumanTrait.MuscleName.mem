@@ -1,7 +1,7 @@
 <signature>
 MuscleName
 </signature>
-Array of the names of all human muscle types defined by Mecanim.
+メカニムで定義された全てのヒューマノイド マッスル名の配列
 CONVERTEXAMPLE
 BEGIN EX
 function Start() {
