@@ -1,5 +1,5 @@
 <signature>
 feetSpacing
 </signature>
-Modification to the minimum distance between the feet of a humanoid model.
-When a humanoid model has unusually large feet (a cartoon-like character, say) the meshes for the feet can sometimes interpenetrate during IK movement. The default value for /feetSpacing/ is zero, but using a larger value will increase the minimum distance that is maintained between the feet and avoid interpenetration.
+ヒューマノイド モデルの両足間の幅（デフォルトはゼロ）
+ヒューマノイド モデルが例外的に大きな足（例えばアニメのキャラクター）の場合、IK 動作の際に両足が相互反発する場合があります。 /feetSpacing/ のデフォルトはゼロですが、大きな足がある場合は相互反発をさけるだけの幅を確保できます。

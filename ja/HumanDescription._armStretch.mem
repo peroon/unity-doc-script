@@ -1,11 +1,11 @@
 <signature>
 armStretch
 </signature>
-Amount by which the arm's length is allowed to stretch when using IK.
-Inverse Kinematics (IK) can often be handled more smoothly if a small amount of "slack" is allowed in the positions of bones relative to each other. This property controls how much slack is available in the arm joints. 
+IK 使用のときに許容する腕の伸び幅。
+ボーンの相対位置に "緩み" が許容されるとインバース キネマティクス (IK) の計算がスムーズになります。このプロパティにより腕のジョイントにより許容する腕の伸び幅を制御します。
 
-The value is given in world distance units in the range 0..1. For example, with the default setting of 0.05, the arm will begin to stretch when the IK goal is at 95% of the target and will stretch by 5%. The stretch is carried out by translating both the elbow and wrist transforms.
+値の範囲はワールド座標で 0 から 1。デフォルトの値である 0.05 の場合、IK ゴールがターゲットの 95% まで到達したとき腕は伸び始め、5% 伸びます。伸びは肘および手首の Transform を移動させることにより実現されます。
 
-The ideal value will depend on the rig and the animation but in general, a larger value will make for a smoother IK computation at the expense of more unrealistic stretching of the arm.
+理想的な値はリグおよびアニメーションに依存しますが、一般的にはより大きな値にすることで IK 計算がスムーズになる代わりに腕の伸び幅がより非現実的になります。
 
-SA: legStretch.
+SA: legStretch

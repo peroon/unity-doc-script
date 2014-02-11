@@ -1,4 +1,4 @@
-Mapping between Mecanim bone names and bone names in the rig.
-Each item in the array is a HumanBone object that contains a Mecanim avatar bone name, a bone name in the model (to which the Mecanim bone is mapped) and a "muscle" that specifies the bone's limits of motion. The bones can be listed in any order but there are a certain number of bones that Mecanim requires you to define; use HumanTrait::ref::RequiredBone to get a list of all required bones.
+メカニムのボーン名と、リグのボーン名のマッピング情報を返す
+ヒューマノイド ボーン オブジェクトの各アイテムは、メカニム アバター ボーン名、モデルのボーン名（メカニムボーンのマッピング元）、およびボーンの可動域を示すマッスルから構成されます。ボーン名の順番は任意ですが、メカニムで必須な最小のボーン数は決まっています。必須なボーンの一覧を取得するには HumanTrait::ref::RequiredBone を使用して下さい。
 
-SA: HumanTrait.BoneName, HumanTrait.RequiredBone.
+SA: HumanTrait.BoneName, HumanTrait.RequiredBone
