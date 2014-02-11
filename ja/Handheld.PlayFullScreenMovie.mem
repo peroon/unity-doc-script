@@ -4,7 +4,7 @@ PlayFullScreenMovie(string,Color)
 PlayFullScreenMovie(string,Color,FullScreenMovieControlMode)
 PlayFullScreenMovie(string,Color,FullScreenMovieControlMode,FullScreenMovieScalingMode)
 </signature>
-Plays a full-screen movie (pro only feature).
+ムービーをフルスクリーンで再生する (Unity Pro のみ)
 Note that player will stream movie directly
 from the device storage, therefore you have to provide movie as a
 separate files and not as a usual asset. You will have to create a

@@ -1,12 +1,12 @@
 <signature>
 limits
 </signature>
-Limit of angular rotation on the hinge joint.
-The joint will be limited so that the angle is always between /limits.min/ and /limits.max/.
-The joint angle is in degrees relative to the rest angle. The rest angle between the bodies is always zero at the beginning of the simulation.
+ヒンジ ジョイントの回転角度 (Angular Rotation) の限界値を返す
+ジョイントの角度が最小値と最大値の間に制限されます。(/limits.min/ および /limits.max/ の間)
+ジョイントの角度は残りの角度に対して相対指定します。シミュレーション開始時点ではボディ間の残りの角度はつねにゼロです。
 CONVERTEXAMPLE
 BEGIN EX
-	// Make hinge limit for a door.
+	// ドアのヒンジの限界値を作成
 	var limits = hingeJoint.limits;
 	limits.min = 0;
 	limits.minBounce = 0;
