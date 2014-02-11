@@ -1,9 +1,9 @@
 <signature>
 center
 </signature>
-The default orientation of a bone when no muscle action is applied.
-The vector value represents the bone's rotation in degrees around the X, Y and Z axes relative to the initial position of the bone in the skeleton. Any muscle rotation subsequently applied to the bone will be relative to this value.
+ボーンに対してマッスルが全く作用していないときのデフォルトの回転方向。
+スケルトン上のボーン初期位置に対するX, Y, Z軸の相対の回転方向をベクトル値により示します。マッスルの作用を加える際はこの center に対して適用します。
 
-If ::ref::useDefaultValues is enabled, the value of /center/ will be [0, 0, 0].
+デフォルトの値は ::ref::useDefaultValues が有効のとき [0, 0, 0] です。
 
-SA: HumanLimit.useDefaultValues.
+SA: HumanLimit.useDefaultValues
