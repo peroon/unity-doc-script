@@ -1,8 +1,8 @@
 <signature>
 RequiredBone(int)
 </signature>
-Is the bone a member of the minimal set of bones that Mecanim requires for a human model?
-The indexing order of the bones is the same as that used for the ::ref::BoneName array.
+メカニムで必須なヒューマノイド ボーンである場合は true を返す
+ボーンのインデックス値の順番は ::ref::BoneName 配列と同じです。
 CONVERTEXAMPLE
 BEGIN EX
 function Start() {
@@ -14,4 +14,4 @@ function Start() {
 	}
 }
 END EX
-@param i Index of the bone to test.
+@param i 対象となるボーンのインデックス値
