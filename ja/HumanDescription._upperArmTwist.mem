@@ -1,7 +1,7 @@
 <signature>
 upperArmTwist
 </signature>
-Defines how the lower arm's roll/twisting is distributed between the shoulder and elbow joints.
-When the upper arm needs to twist or "roll" for the IK, the rotation can be applied at the shoulder or elbow joints or some twist can be applied at both. The /upperArmTwist/ is a weighting value in the range 0..1 that determines the fraction of the twist applied at the shoulder and elbow. For example, a value of zero means the twist should be handled entirely at the shoulder, while a value of one means it should be applied entirely at the elbow. The default value of 0.5 distributes the twisting evenly between shoulder and elbow.
+回転/ひねりを肩および肘にどの割合で反映するか定義する
+IK のために腕の回転やひねりが必要な場合、肘または肩に回転を加えるかひねりを反映します。値の範囲は 0 から 1 であり、肩および肘に反映するひねりの割合を示します。値が 0 の場合は肩のみにひねりを反映し、値が 1 の場合は肘のみにひねりを反映します。デフォルトの値は 0.5であり、肩および肘に同じ割合だけひねりを反映します。
 
-SA: lowerArmTwist, lowerLegTwist, upperLegTwist.
+SA: lowerArmTwist, lowerLegTwist, upperLegTwist

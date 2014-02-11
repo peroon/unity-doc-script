@@ -1,4 +1,5 @@
-List of bone Transforms to include in the model.
-This list define which transforms to include in the final avatar skeleton. Strange results can occur if a parent transform (ie, one with children in the hierarchy) is omitted from the list.
+モデルに含めるボーン Transform のリストを返す
 
-SA: SkeletonBone.
+この一覧はどの Transform を最終アバター スケルトンに含む/含まないかを定義します。もし抜けのある階層を (すなわち子オブジェクトがあるのに親オブジェクトを外すなど) 定義してしまうと予想外の結果が得られる場合があります
+
+SA: SkeletonBone
