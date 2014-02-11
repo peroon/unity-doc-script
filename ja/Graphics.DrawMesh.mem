@@ -8,7 +8,7 @@ DrawMesh(Mesh,Matrix4x4,Material,int,Camera)
 DrawMesh(Mesh,Matrix4x4,Material,int,Camera,int)
 DrawMesh(Mesh,Matrix4x4,Material,int,Camera,int,MaterialPropertyBlock)
 </signature>
-Draw a mesh.
+メッシュを描画する
 DrawMesh draws a mesh for one frame. The mesh will be affected by the lights, can cast and receive shadows and be
 affected by Projectors - just like it was part of some game object. It can be drawn for all cameras or just for
 some specific camera.
@@ -33,15 +33,15 @@ BEGIN EX
 		Graphics.DrawMesh(aMesh, Vector3.zero, Quaternion.identity, aMaterial, 0);
 	}
 END EX
-@param mesh The [[Mesh]] to draw.
-@param position Position of the mesh.
-@param rotation Rotation of the mesh.
-@param matrix Transformation matrix of the mesh (combines position, rotation and other transformations).
-@param material [[Material]] to use.
-@param layer [[wiki:Layers|Layer]] to use.
-@param camera If /null/ (default), the mesh will be drawn in all cameras. Otherwise it will be rendered in the given camera only.
-@param submeshIndex Which subset of the mesh to draw. This applies only to meshes that are composed of several materials.
-@param properties Additional material properties to apply onto material just before this mesh will be drawn. See [[MaterialPropertyBlock]].
+@param mesh 描画するメッシュ( [[Mesh]] )
+@param position メッシュの位置
+@param rotation メッシュの角度
+@param matrix メッシュの変換行列
+@param material 使用する [[Material]] オブジェクトを設定
+@param layer [[wiki:Layers|レイヤー]] を設定
+@param camera 特定のカメラで描画する場合のみ、設定。デフォルトは /null/で、すべてのカメラで描画される。
+@param submeshIndex 描画するメッシュのサブセット。複数マテリアルの場合のみ適用される
+@param properties マテリアルのプロパティ。メッシュが描画される直前にマテリアルに適用される。 [[MaterialPropertyBlock]] を参照して下さい。
 <signature>
 DrawMesh(Mesh,Vector3,Quaternion,Material,int,Camera,int,MaterialPropertyBlock,bool,bool)
 </signature>
