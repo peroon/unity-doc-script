@@ -2,8 +2,8 @@
 GetControlID(FocusType)
 GetControlID(FocusType,Rect)
 </signature>
-Get a unique ID for a control.
-For Editor GUI, use [[EditorGUIUtility.GetControlID]] instead.
+コントロールの一意 IDを取得する
+エディタ GUI では 代わりに [[EditorGUIUtility.GetControlID]] を使用する
 CONVERTEXAMPLE
 BEGIN EX
 	// Prints a not used ID that can be assigned to a control
@@ -17,9 +17,9 @@ END EX
 GetControlID(int,FocusType)
 GetControlID(int,FocusType,Rect)
 </signature>
-Get a unique ID for a control, using an integer as a hint to help ensure correct matching of IDs to controls.
+コントロールの一意 IDを取得する。コントロールの ID マッチングを正しく行なうヒントとして integer を指定する
 <signature>
 GetControlID(GUIContent,FocusType)
 GetControlID(GUIContent,FocusType,Rect)
 </signature>
-Get a unique ID for a control, using a the label content as a hint to help ensure correct matching of IDs to controls.
+コントロールの一意 IDを取得する。コントロールの ID マッチングを正しく行なうヒントとして ラベルコンテンツ(GUIContent) を指定する

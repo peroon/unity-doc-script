@@ -2,22 +2,23 @@
 VerticalSlider(float,float,float,GUILayoutOption[])
 VerticalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
 </signature>
-A vertical slider the user can drag to change a value between a min and a max.
+垂直のスライダーを作成します。
+最小値と最大値の間をユーザがスライドできるバーです。
 {img GUILayoutVerticalSlider.png}\\
-''Vertical slider in the Game View.''
+''ゲームビュー上の Vertical slider''
 CONVERTEXAMPLE
 BEGIN EX
-	// Draws a vertical slider control that goes from  10 (top) to 0 (bottom)
+	// 最上部から最下部まで値を 10 から 0 まで変化させる垂直スライダーを描画
 	var vSliderValue : float = 0.0;
 
 	function OnGUI () {
 		vSliderValue = GUILayout.VerticalSlider (vSliderValue, 10.0, 0.0);
 	}
 END EX
-@param value The value the slider shows. This determines the position of the draggable thumb.
-@param topValue The value at the top end of the slider.
-@param bottomValue The value at the bottom end of the slider.
-@param slider The [[GUIStyle]] to use for displaying the dragging area. If left out, the /horizontalSlider/ style from the current [[GUISkin]] is used.
-@param thumb The [[GUIStyle]] to use for displaying draggable thumb. If left out, the /horizontalSliderThumb/ style from the current [[GUISkin]] is used.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.
-@return The value that has been set by the user.
+@param value 現在値。スライドさせるバーのつまみ位置を決定する
+@param topValue 最大値。スライドさせるバーが上端にあるときの値
+@param bottomValue 最小値。スライドさせるバーが右端にあるときの値
+@param slider スライドさせるバーのスタイル（ [[GUIStyle]] ）。空とした場合は現在の [[GUISkin]] から /horizontalSlider/ スタイルが使用されます。
+@param thumb スライドさせるバーのつまみ部分のスタイル（ [[GUIStyle]] ）。空とした場合は現在の [[GUISkin]] から /horizontalSliderThumb/ スタイルが使用されます。
+@param options 追加でレイアウトプロパティで指定できるオプションリスト。ここに渡された値により /style/ により定義された設定を上書きします。
+@return ユーザによりセットされた値。
