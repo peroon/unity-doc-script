@@ -1,5 +1,5 @@
 <signature>
 BoneCount
 </signature>
-The number of human bone types defined by Mecanim.
-SA: BoneName.
+メカニムで定義されたヒューマノイド ボーン数
+SA: BoneName
