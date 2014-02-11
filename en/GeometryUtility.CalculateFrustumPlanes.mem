@@ -1,8 +1,9 @@
 <signature>
 CalculateFrustumPlanes(Camera)
 </signature>
-錐台平面を計算する
-この関数では、カメラの View Frustumを指定するとそれを構成する六つの平面を返します。
+Calculates frustum planes.
+This function takes given camera's view frustum and returns six planes
+that form it.
 
 SA: [[Plane]], GeometryUtility.TestPlanesAABB.
 CONVERTEXAMPLE
@@ -27,7 +28,7 @@ END EX
 <signature>
 CalculateFrustumPlanes(Matrix4x4)
 </signature>
-錐台平面を計算する
-この関数では、カメラの View および投影マトリクスを指定するとそれを構成する六つの平面を返します。
+Calculates frustum planes.
+This function returns six planes of a frustum defined by given view & projection matrix.
 
-SA: [[Plane]], GeometryUtility.TestPlanesAABB
+SA: [[Plane]], GeometryUtility.TestPlanesAABB.
