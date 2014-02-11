@@ -1,16 +1,16 @@
-カメラの視野
-This is the vertical field of view; horizontal
-FOV varies depending on the viewport's aspect ratio.
-Field of view is ignored when camera is orthographic (see ::ref::orthographic).
-SA: [[wiki:class-Camera|camera component]].
+カメラの視野角（角度単位）
+これは垂直方向の視野角です。水平方向の視野角は
+ビューポートのアスペクト比に依存します。
+視野角はカメラが Orthographic の場合は無視されます。 ( ::ref::orthographic を参照して下さい)
+SA: [[wiki:class-Camera|カメラ コンポーネント]].
 CONVERTEXAMPLE
 BEGIN EX
-	// Set the camera's FOV attached to the same game object to 60
+	// ゲームオブジェクトにアタッチされたカメラの視野角を 60 度にする
 	camera.fieldOfView = 60;
 END EX
-Another example using specifically the main camera:
+明示的にメインカメラを使用したサンプル
 CONVERTEXAMPLE
 BEGIN EX
-	// Set the main camera's field of view to 80
+	// メインカメラの視野角を 80 度にする
 	Camera.main.fieldOfView = 80;
 END EX
