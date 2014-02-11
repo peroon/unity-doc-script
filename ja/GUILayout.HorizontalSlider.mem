@@ -2,9 +2,10 @@
 HorizontalSlider(float,float,float,GUILayoutOption[])
 HorizontalSlider(float,float,float,GUIStyle,GUIStyle,GUILayoutOption[])
 </signature>
-A horizontal slider the user can drag to change a value between a min and a max.
+水平のスライダーを作成します。
+最小値と最大値の間をユーザがスライドできるバーです。
 {img GUILayoutHorizontalSlider.png}\\
-''Horizontal slider in the GameView.''
+''ゲームビュー上の Horizontal slider''
 CONVERTEXAMPLE
 BEGIN EX
 	var hSliderValue : float = 0.0;
@@ -14,10 +15,10 @@ BEGIN EX
                 GUILayout.Label("This text makes just space");
 	}
 END EX
-@param value The value the slider shows. This determines the position of the draggable thumb.
-@param leftValue The value at the left end of the slider.
-@param rightValue The value at the right end of the slider.
-@param slider The [[GUIStyle]] to use for displaying the dragging area. If left out, the /horizontalSlider/ style from the current [[GUISkin]] is used.
-@param thumb The [[GUIStyle]] to use for displaying draggable thumb. If left out, the /horizontalSliderThumb/ style from the current [[GUISkin]] is used.
-@param options An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the /style/.
-@return The value that has been set by the user.
+@param value 現在値。スライドさせるバーのつまみ位置を決定する
+@param leftValue 最小値。スライドさせるバーが左端にあるときの値
+@param rightValue 最大値。スライドさせるバーが右端にあるときの値
+@param slider スライドさせるバーのスタイル（ [[GUIStyle]] ）。空とした場合は現在の [[GUISkin]] から /horizontalSlider/ スタイルが使用されます。
+@param thumb スライドさせるバーのつまみ部分のスタイル（ [[GUIStyle]] ）。空とした場合は現在の [[GUISkin]] から /horizontalSliderThumb/ スタイルが使用されます。
+@param options 追加でレイアウトプロパティで指定できるオプションリスト。ここに渡された値により /style/ により定義された設定を上書きします。
+@return ユーザによりセットされた値。
