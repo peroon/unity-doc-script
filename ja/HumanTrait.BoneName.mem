@@ -1,7 +1,7 @@
 <signature>
 BoneName
 </signature>
-Array of the names of all human bone types defined by Mecanim.
+メカニムで定義された全てのヒューマノイド ボーン名の配列。
 CONVERTEXAMPLE
 BEGIN EX
 function Start() {
