@@ -1,7 +1,7 @@
 <signature>
 humanName
 </signature>
-The name of the Mecanim human bone to which the bone from the model is mapped.
-To get a list of all the available human bones from code, you should use  HumanTrait::ref::BoneName.
+モデルにおけるボーンのマッピング元となるメカニムのヒューマノイド型ボーン名
+コードから利用可能なヒューマノイド型ボーン名の一覧を取得するには HumanTrait::ref::BoneName を使用して下さい。
 
-SA: boneName.
+SA: boneName

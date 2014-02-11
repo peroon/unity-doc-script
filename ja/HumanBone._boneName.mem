@@ -1,7 +1,7 @@
 <signature>
 boneName
 </signature>
-The name of the bone to which the Mecanim human bone is mapped.
-This is the name of the bone in the original model and also of the Transform that represents it in the Unity GameObject.
+メカニム のヒューマノイド型ボーンがマッピングされたボーン名
+元のモデルのボーン名であるとともに Unity ゲームオブジェクトでの Transform ボーン名です。
 
-SA: humanName.
+SA: humanName
