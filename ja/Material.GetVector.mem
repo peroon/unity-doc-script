@@ -2,9 +2,9 @@
 GetVector(string)
 GetVector(int)
 </signature>
-Get a named vector value.
-Four component vectors and colors are the same in Unity shaders. /GetVector/ does exactly the same
-as ::ref::GetColor just the input data type is different (@@xyzw@@ in the vector becomes @@rgba@@ in the color).
+プロパティ名からVector4型の値を取得します。
+ベクトルの 4 成分および色は Unity シェーダと同様です。 /GetVector/ は ::ref::GetColor と同じですが
+入力のデータ型は異なります（ベクトルでの @@xyzw@@ が色では @@rgba@@ に相当）。
 
 SA: ::ref::GetColor, ::ref::SetVector, Shader::ref::PropertyToID.
 CONVERTEXAMPLE

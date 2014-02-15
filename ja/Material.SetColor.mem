@@ -2,22 +2,22 @@
 SetColor(string,Color)
 SetColor(int,Color)
 </signature>
-Set a named color value.
-Many shaders use more than one color. Use SetColor to change the /propertyName/ color.
+プロパティ名で色をセット
+多くのシェーダでは複数の色を使用します。GetColor によりプロパティ名（ /propertyName/ ）で色をセットします。
 
-Common color names used by Unity's builtin shaders: \\
-@@"_Color"@@ is the main color of a material. This can also be accessed via ::ref::color property. \\
-@@"_SpecColor"@@ is the specular color of a material (used in specular/vertexlit shaders). \\
-@@"_Emission"@@ is the emissive color of a material (used in vertexlit shaders). \\
-@@"_ReflectColor"@@ is the reflection color of the material (used in reflective shaders).
+Unityのビルトインシェーダーでは、色を設定するプロパティは4 つあります。: \\
+@@"_Color"@@ メインとなるプロパティ。::ref::colorでもアクセスすることができる。 \\
+@@"_SpecColor"@@ 鏡面の色を設定する。specular/glossy/vertexlit のシェーダーで使用できる。 \\
+@@"_Emission"@@ 発光する色を設定する。vertexlit のシェーダーで使用できる。 \\
+@@"_ReflectColor"@@ 反射する色を設定する。reflective のシェーダーで使用できる。
 
-SA: ::ref::color property, ::ref::GetColor, Shader.PropertyToID.
+SA: ::ref::color property, ::ref::GetColor, Shader.PropertyToID
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Set specular shader
+		// 鏡面シェーダをセット
 		renderer.material.shader = Shader.Find ("Specular");
-		// Set red specular highlights
+		// 鏡面ハイライトをセット
 		renderer.material.SetColor ("_SpecColor", Color.red);
 	}
 END EX
