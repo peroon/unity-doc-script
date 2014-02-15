@@ -2,13 +2,14 @@
 SetTexture(string,Texture)
 SetTexture(int,Texture)
 </signature>
-Set a named texture.
-Many shaders use more than one texture. Use SetTexture to change the /propertyName/ texture.
+名前付きのテクスチャを設定する。
+多くのシェーダでは複数のテクスチャを使用します。SetTexture によりプロパティ名（ /propertyName/ ）からテクスチャを設定します。
 
-Common texture names used by Unity's builtin shaders: \\
-@@"_MainTex"@@ is the main diffuse texture. This can also be accessed via ::ref::mainTexture property. \\
-@@"_BumpMap"@@ is the normal map. \\
-@@"_Cube"@@ is the reflection cubemap.
+Unityのビルトインシェーダーでは、画像を設定するプロパティ名は3 つあります: \\
+@@"_MainTex"@@ メインとなる画像を設定するときに使用する。::ref::mainTextureでも設定
+できる。 \\
+@@"_BumpMap"@@ ノーマルマップを設定する場合に使用する。 \\
+@@"_Cube"@@ キューブマップを設定する場合に使用する。
 
 SA: ::ref::mainTexture property, ::ref::GetTexture, Shader.PropertyToID.
 CONVERTEXAMPLE

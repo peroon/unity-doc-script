@@ -2,17 +2,17 @@
 SetFloat(string,float)
 SetFloat(int,float)
 </signature>
-Set a named float value.
-SA: ::ref::GetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader.PropertyToID.
+float 値を設定する。
+SA: ::ref::GetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab ドキュメント]], Shader.PropertyToID.
 CONVERTEXAMPLE
 BEGIN EX
 	function Start () {
-		// Use the Specular shader on the material
+		// マテリアルの鏡面シェーダを使用
 		renderer.material.shader = Shader.Find("Specular");
 	}
 
 	function Update () {
-		// Animate the Shininess value
+		// 輝きのアニメーションを Shininess で実現
 		var shininess : float = Mathf.PingPong (Time.time, 1.0);
 		renderer.material.SetFloat( "_Shininess", shininess );
 	}

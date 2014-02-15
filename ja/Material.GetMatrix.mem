@@ -6,6 +6,5 @@ GetMatrix(int)
 行列のパラメータを追加で必要とするカスタム シェーダで主に使用されます。
 行列はマテリアルのインスペクタ上で確認することが出来ません。
 スクリプト上で /SetMatrix/ および /GetMatrix/ により各々更新および照会できます。
-Get a named matrix value from the shader.
 
 SA: ::ref::SetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab ドキュメント]], Shader::ref::PropertyToID

@@ -2,20 +2,21 @@
 SetMatrix(string,Matrix4x4)
 SetMatrix(int,Matrix4x4)
 </signature>
-Set a named matrix for the shader.
-This is mostly used with custom shaders that need extra matrix
-parameters. Matrix parameters are not exposed in the material inspector,
-but can be set and queried with /SetMatrix/ and /GetMatrix/ from scripts.
+シェーダーの行列を設定する。
+シェーダーの行列を取得する。
+行列のパラメータを追加で必要とするカスタム シェーダで主に使用されます。
+行列はマテリアルのインスペクタ上で確認することが出来ません。
+スクリプト上で /SetMatrix/ および /GetMatrix/ により各々更新および照会できます。
 
-SA: ::ref::GetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader.PropertyToID.
+SA: ::ref::GetMatrix, [[wiki:Materials]], [[wiki:Shaders|ShaderLab ドキュメント]], Shader.PropertyToID
 BEGIN EX
 	var rotateSpeed = 30;
 	var texture : Texture;
 
 	function Start() {
-		// Create a new material with a shader
-		// that rotates the texture. Texture rotation
-		// is performed with a _Rotation matrix.
+		// シェーダ付きで新規のマテリアルを作成しテクスチャ
+		// を回転させる。その際にテクスチャの回転は
+		// 回転行列で行なう（ _Rotation)
 		var m : Material = new Material (
 			"Shader \"Rotating Texture\" {" +
 			"Properties { _MainTex (\"Base\", 2D) = \"white\" {} }" +
@@ -36,7 +37,7 @@ BEGIN EX
 	}
 
 	function Update() {
-		// Construct a rotation matrix and set it for the shader
+		// 回転行列を作成しシェーダにセット
 		var rot = Quaternion.Euler (0, 0, Time.time * rotateSpeed);
 		var m = Matrix4x4.TRS (Vector3.zero, rot, Vector3(1,1,1) );
 		renderer.material.SetMatrix ("_Rotation", m);
