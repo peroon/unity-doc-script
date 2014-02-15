@@ -3,6 +3,6 @@ TextureProperty(MaterialProperty,string)
 TextureProperty(MaterialProperty,string,bool)
 TextureProperty(Rect,MaterialProperty,string,bool)
 </signature>
-Draw a property field for a texture shader property.
-@param label Label for the field.
-@param scaleOffset Draw scale / offset.
+テクスチャ シェーダ プロパティのプロパティフィールドを描画する。
+@param label フィールドのラベル。
+@param scaleOffset スケール / オフセットを描画。

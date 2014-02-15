@@ -1,15 +1,15 @@
 <signature>
 Atan2(float,float)
 </signature>
-Returns the angle in radians whose ::ref::Tan is @@y/x@@.
-Return value is the angle between the x-axis and a 2D vector starting at zero and terminating
-at (x,y).
+Atan2 関数
+::ref::Tan 関数で  @@y/x@@ となる角度をラジアン単位で返す
+x 軸と、原点から (x, y) に向かうベクトル、の 2 つの線がなす角を返す。
 
-Note that this function takes account of the cases where x is zero and returns the correct angle rather than throwing a division by zero exception.
+この関数は x が 0 の場合も対応していて、 ゼロ 除算の例外をスローする代わりに但しい角度が返されることに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// Usually you use transform.LookAt for this.
-	// But this can give you more control over the angle
+	// 同じ目的で transform.LookAt を使用することが一般的だが
+	// 角度をより細かく制御できる
 
 	var target : Transform;
 

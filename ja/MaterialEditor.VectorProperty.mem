@@ -2,5 +2,5 @@
 VectorProperty(MaterialProperty,string)
 VectorProperty(Rect,MaterialProperty,string)
 </signature>
-Draw a property field for a vector shader property.
-@param label Label for the field.
+ベクトルシェーダ プロパティのプロパティフィールドを描画する。
+@param label フィールドのラベル。
