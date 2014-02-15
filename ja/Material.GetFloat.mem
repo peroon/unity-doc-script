@@ -2,8 +2,8 @@
 GetFloat(string)
 GetFloat(int)
 </signature>
-Get a named float value.
-SA: ::ref::SetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab documentation]], Shader::ref::PropertyToID.
+float値を取得する
+SA: ::ref::SetFloat, [[wiki:Materials]], [[wiki:Shaders|ShaderLab ドキュメント]], Shader::ref::PropertyToID.
 CONVERTEXAMPLE
 BEGIN EX
 	function Start() {
