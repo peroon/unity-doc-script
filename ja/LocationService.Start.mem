@@ -4,50 +4,50 @@ Start(float)
 Start(float,float)
 </signature>
 ロケーションの更新を開始する。最後のロケーション座標は @@Input.location.lastData@@ により取得できる
-Service does not start to send location data immediately. Code should
-check @@Input.location.status@@ for current service status.
-desiredAccuracyInMeters - desired service accuracy in meters. Using
-higher value like 500 usually does not require to turn GPS chip on and
-thus saves battery power. Values like 5-10 could be used for getting
-best accuracy. Default value is 10 meters.
-updateDistanceInMeters - the minimum distance (measured in meters) a
-device must move laterally before @@Input.location@@ property is
-updated. Higher values like 500 imply less overhead. Default is 10
-meters.
+サービス開始時にロケーションデータは直ちに送信されません。現在のサービスステータスを確認するには
+コード中で @@Input.location.status@@ をチェックして下さい。
+desiredAccuracyInMeters - サービスの精度をメートル単位で指定。500 メートルなど
+より高い値にセっていすることで GPS チップをオンにしておく必要がなくなるため
+バッテリー容量を節約します。5-10 メートルの値にすることでより精度が得られます。
+デフォルトは 10 メートル。
+updateDistanceInMeters -  @@Input.location@@ プロパティが更新されるための最小距離として
+どれだけ横方向に移動する必要があるかをメートル単位で指定します。500 メートルなど
+より高い値にすることでオーバーヘッドが少なくなります。デフォルトは 10 メートル。
+
 CONVERTEXAMPLE
 BEGIN EX
 function Start () {
-        // First, check if user has location service enabled
+        // 最初にユーザがロケーションサービスを有効化にしているかチェック
         if (!Input.location.isEnabledByUser)
             return;
-        // Start service before querying location
+        // ロケーションの照会前にサービス開始
         Input.location.Start ();
-        // Wait until service initializes
+        // サービスの初期化を待機
         var maxWait : int = 20;
         while (Input.location.status
                == LocationServiceStatus.Initializing && maxWait > 0) {
             yield WaitForSeconds (1);
             maxWait--;
         }
-        // Service didn't initialize in 20 seconds
+        // 20 秒で初期化が完了しない場合
         if (maxWait < 1) {
-            print ("Timed out");
+            print ("タイムアウト");
             return;
         }
-        // Connection has failed
+        // 接続が失敗
         if (Input.location.status == LocationServiceStatus.Failed) {
-            print ("Unable to determine device location");
+            print ("デバイスのロケーションが特定できません");
             return;
         }
-        // Access granted and location value could be retrieved
+        // アクセスが許可され、ロケーションの値を取得できた場合
         else {
-            print ("Location: " + Input.location.lastData.latitude + " " +
+            print ("ロケーション: " + Input.location.lastData.latitude + " " +
                    Input.location.lastData.longitude + " " +
                    Input.location.lastData.altitude + " " +
                    Input.location.lastData.horizontalAccuracy + " " +
                    Input.location.lastData.timestamp);
         }
-        // Stop service if there is no need to query location updates continuously
+        // 継続的なロケーションの照会が不要であればサービス停止
         Input.location.Stop ();
     }
 END EX
