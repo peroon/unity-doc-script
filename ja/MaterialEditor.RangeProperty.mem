@@ -2,5 +2,5 @@
 RangeProperty(MaterialProperty,string)
 RangeProperty(Rect,MaterialProperty,string)
 </signature>
-Draw a range slider for a range shader property.
-@param label Label for the property.
+レンジ シェーダプロパティのためのレンジ スライダを描画する
+@param label プロパティのラベル

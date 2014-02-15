@@ -2,9 +2,9 @@
 ShaderProperty(MaterialProperty,string)
 ShaderProperty(Rect,MaterialProperty,string)
 </signature>
-Handes UI for one shader property.
-This function will draw appropriate UI for the given shader property, depending on its type.
+単一シェーダプロパティの UI をハンドリングする
 
-Any custom [[MaterialPropertyDrawer]] objects defined for this property in the shader will also be applied. If you want to draw the "default" UI without any custom drawers, use ::ref::DefaultShaderProperty function.
+この関数は指定したシェーダプロパティに対して、型にもとづき適切な UI を描画します。
+シェーダ プロパティに対して定義された任意のカスタム [[MaterialPropertyDrawer]] オブジェクトもまた適用されます。もしデフォルトの UIをカスタム Drawer なしで描画したい場合、 ::ref::DefaultShaderProperty 関数を使用して下さい。
 
-SA: [[MaterialProperty]], [[MaterialPropertyDrawer]].
+SA: [[MaterialProperty]], [[MaterialPropertyDrawer]]
