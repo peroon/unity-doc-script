@@ -1,5 +1,5 @@
 <signature>
 shaderKeywords
 </signature>
-Additional shader keywords set by this material.
-SA: ::ref::EnableKeyword, ::ref::DisableKeyword.
+このマテリアルによりセットされる追加のシェーダ キーワードです。
+SA: ::ref::EnableKeyword, ::ref::DisableKeyword

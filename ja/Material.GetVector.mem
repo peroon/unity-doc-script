@@ -2,7 +2,7 @@
 GetVector(string)
 GetVector(int)
 </signature>
-プロパティ名からVector4型の値を取得します。
+プロパティ名からVector4型の値を取得する。
 ベクトルの 4 成分および色は Unity シェーダと同様です。 /GetVector/ は ::ref::GetColor と同じですが
 入力のデータ型は異なります（ベクトルでの @@xyzw@@ が色では @@rgba@@ に相当）。
 

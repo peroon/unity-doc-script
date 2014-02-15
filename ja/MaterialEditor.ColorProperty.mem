@@ -2,5 +2,5 @@
 ColorProperty(Rect,MaterialProperty,string)
 ColorProperty(MaterialProperty,string)
 </signature>
-Draw a property field for a color shader property.
-@param label Label for the property.
+カラー シェーダ プロパティのためのプロパティ フィールドを描画します。
+@param label プロパティのラベル。
