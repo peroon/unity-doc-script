@@ -1,6 +1,6 @@
 <signature>
 IsRecording(string)
 </signature>
-Query if a device is currently recording.
-If you pass a null or empty string for the device name then the default microphone will be used. You can get a list of available microphone devices from the ::ref::devices property.
-@param deviceName The name of the device.
+現在デバイスが録音中かどうか。
+デバイス名に空文字 や null を渡した場合、デフォルトのマイクのデバイスが使用されます。::ref::devices プロパティにより利用可能なマイクのデバイス一覧を取得できます。
+@param deviceName マイクのデバイス名
