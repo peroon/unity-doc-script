@@ -1,22 +1,21 @@
 <signature>
 Start(string,bool,int,int)
 </signature>
-Start Recording with device.
-If you pass a null or empty string for the device name then the default microphone will be used. You can get a list of available microphone devices from the ::ref::devices property. You can find the range of sample rates supported by a microphone using the ::ref::GetDeviceCaps property.
+デバイス名を指定して録音を開始する。
+デバイス名に空文字 や null を渡した場合、デフォルトのマイクのデバイスが使用されます。::ref::devices プロパティにより利用可能なマイクのデバイス一覧を取得できます。マイクが対応している周波数の範囲は ::ref::GetDeviceCaps プロパティにより確認できます。
 
-Note that if you want to use the Microphone class in the web player, you need to get the
-user's permission to do so. Call Application::ref::RequestUserAuthorization before calling
-any Microphone methods.
+ウェブプレイヤーで Microphone クラスを使用したい場合、ユーザのパーミッションを取得する必要があることに留意して下さい。任意の Microphone メソッド呼び出しの前に Application::ref::RequestUserAuthorization を
+呼び出しして下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	// Start recording with built-in Microphone and play the recorded audio right away
+	// ビルトインのマイクで録音を開始し、直ちに録音した音声を再生
 	function Start() {
 		audio.clip = Microphone.Start("Built-in Microphone", true, 10, 44100);
 		audio.Play();
 	}
 END EX
-@param deviceName The name of the device.
-@param lengthSec Is the length of the AudioClip produced by the recording.
-@param loop Indicates whether the recording should continue recording if lengthSec is reached, and wrap around and record from the beginning of the AudioClip.
-@param frequency The sample rate of the AudioClip produced by the recording.
-@return The function returns null if the recording fails to start.
+@param deviceName マイクのデバイス名
+@param lengthSec 録音するオーディオクリップの長さ
+@param loop ループ録音を行なうか。行なう場合 lengthSec に到達した時にクリップの最初に戻って録音を継続する
+@param frequency 録音するオーディオクリップの周波数
+@return 録音を開始できなかった場合 false を返す

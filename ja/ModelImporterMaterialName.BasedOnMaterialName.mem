@@ -1,4 +1,4 @@
-Use a material name of the form ''<materialName>.mat''.
-Material names will be accepted in the form ''<materialName>.mat'' when searching for existing materials or creating new ones.
+マテリアル名をそのまま <materialName>.mat の形式で使用する
+既存マテリアルの検索および新規に作成する場合に <materialName>.mat の形式であるかチェックされます。
 
-SA: ModelImporter.materialName.
+SA: ModelImporter.materialName
