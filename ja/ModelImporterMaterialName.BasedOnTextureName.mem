@@ -1,6 +1,6 @@
-Use material names in the form <textureName>.mat.
-Material names will be accepted in the form ''<textureName>.mat'' (ie, the diffuse texture name of the imported material) when searching for existing materials or creating new ones.
+テクスチャ名を <textureName>.mat の形式で使用する
+既存マテリアルの検索および新規に作成する場合に <textureName>.mat （すなわち、インポートしたマテリアルの Diffuse テクスチャ名）の形式であるかチェックされます。
 
-If the imported material doesn't have a diffuse texture assigned then a name in the form ''<materialName>.mat'' will be used instead.
+もしインポートされたマテリアルに Diffuse テクスチャ名が割り当てられてない場合、代わりに <materialName>.mat の形式が使用されます。
 
-SA: ModelImporter.materialName.
+SA: ModelImporter.materialName
