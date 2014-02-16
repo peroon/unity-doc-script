@@ -1,12 +1,12 @@
 <signature>
 Repeat(float,float)
 </signature>
-Loops the value t, so that it is never larger than length and never smaller than 0.
-This is similar to the modulo operator but it works with floating point numbers. For example, using 3.0 for /t/ and 2.5 for /length/, the result would be 0.5. With /t/ = 5 and /length/ = 2.5, the result would be 0.0. Note, however, that the behaviour is not defined for negative numbers as it is for the modulo operator.
+t の値を 0 と length の間でループさせる
+これは Mod 演算子と同様ですが、浮動小数点の計算も可能です。例えば /t/ が 3.0、 /length/ が 2.5 の場合は結果が 0.5 となります。/t/ が 5.0、/length/ が 2.5 の場合は結果が 0.0 となります。負の数の場合は Mod 演算子と同様に結果が未定であることに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
-		// Set the x position to loop between 0 and 3
+		// 0 と 3 の間をループするように x 位置をセット
 		transform.position = Vector3(
 				     Mathf.Repeat(Time.time, 3), transform.position.y, transform.position.z);
 	}

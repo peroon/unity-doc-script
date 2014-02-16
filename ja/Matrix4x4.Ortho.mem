@@ -1,11 +1,9 @@
 <signature>
 Ortho(float,float,float,float,float,float)
 </signature>
-Creates an orthogonal projection matrix.
-The returned matrix is such that views /left/ to /right/, /bottom/ to /top/ area, with
-/zNear/ and /zFar/ depth clipping planes.
+直行射影行列を作成する
+返される行列は /left/ から /right/ 、/bottom/ から /top/ までの領域、 /zNear/ から /zFar/ の深度のクリッピング平面のビューを構成します。
 
-If you want to use orthogonal for pixel-correct rendering, it is better to use GL.LoadPixelMatrix,
-as that would apply proper half-texel offsets for Direct3D renderer.
+もしピクセルどおりのレンダリングを直行射影で使用したい場合は GL.LoadPixelMatrix を使用したほうが良く、 Direct3D レンダラにとって半テクセルだけ分のオフセットが適用されます。
 
-SA: GL::ref::LoadPixelMatrix, GL::ref::LoadProjectionMatrix, GUI::ref::matrix.
+SA: GL::ref::LoadPixelMatrix, GL::ref::LoadProjectionMatrix, GUI::ref::matrix
