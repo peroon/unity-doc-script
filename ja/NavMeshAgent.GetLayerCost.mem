@@ -1,7 +1,7 @@
 <signature>
 GetLayerCost(int)
 </signature>
-Gets the cost for crossing ground of a particular type.
-The cost of a path is the amount of "difficulty" involved in following it - the shortest path may not be the quickest if it passes over difficult ground, such as mud, snow, etc. Different types of ground are denoted by navmesh layers in Unity. The cost of a particular layer is given in cost units per distance unit. Note that the cost of a path applies to the pathfinding only and does not automatically affect the movement speed of the agent when following the path. Indeed, the path's cost may denote other factors such as danger (safe but long path through a minefield) or visibility (long path that keeps a character in the shadows).
-@param layer Layer index.
-@return Current cost of specified layer.
+特定レイヤーの平面地形を横切るためのコストを取得
+経路コストとは、移動することに伴う "難易度" を表します。短い経路だからといって難易度の高い場合、例えば泥、雪、その他を横切る場合は最短時間の経路とはかぎりません。地形の種類は Unity 上では ナビメッシュレイヤーにより記されます。特定レイヤーのコストは距離あたりのコストで指定されます。経路コストは経路探索でのみ使用されることに留意して下さい。自動的にエージェントの移動速度に影響しないということです。経路コストは危険度（安全だが長い距離の地雷原を通る）あるいは表示可否（キャラクターが長い距離の間、影にいる）を示す場合もあります。
+@param layer レイヤーのインデックス
+@return 指定レイヤーの経路コスト

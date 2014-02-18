@@ -1,15 +1,13 @@
 <signature>
 Raycast(Vector3,NavMeshHit)
 </signature>
-Trace a straight path towards a target postion in the NavMesh without moving the agent.
-This function follows the path of a "ray" between the agent's
-position and the specified target position. If an obstruction is 
-encountered along the line then a true value is returned and
-the position and other details of the obstructing object are stored
-in the /hit/ parameter. This can be used to check if there is a clear
-shot or line of sight between a character and a target object.
-This function is preferable to the similar ::ref::Physics.Raycast
-because the line tracing is performed in a simpler way using the navmesh and has a lower processing overhead.
+エージェントからターゲット位置へレイを飛ばし、ヒットしたナビメッシュオブジェクトの情報を返します。
+この関数によりエージェントの位置から指定されたターゲット位置までの経路をレイで辿ります。
+もしレイ上で何かとヒットした場合 true を返し、さらに /hit/ 引数にヒットしたオブジェクトの詳細情報が格納されます。
+キャラクターがターゲットのオブジェクトの間に視界を遮るものがあるか確認するために使用できます
+。この関数は ::ref::Physics.Raycast よりも望ましく、
+理由はナビメッシュをより少ない処理オーバーヘッドで
+実行できるためです
 CONVERTEXAMPLE
 BEGIN EX
 var target: Transform;
@@ -23,12 +21,12 @@ var target: Transform;
 	function Update() {
 		var hit: NavMeshHit;
 		
-		// Note the negative test condition!
+		// 条件式に ! とあることに注意
 		if (!agent.Raycast(target.position, hit)) {
-			// Target is "visible" from our position.
+			// ターゲットは現在位置から見える
 		}
 	}
 END EX
-@param targetPosition The desired end position of movement.
-@param hit Properties of the obstacle detected by the ray (if any).
-@return True if there is an obstacle between the agent and the target position, otherwise false.
+@param targetPosition 移動後のターゲット位置
+@param hit ナビメッシュオブジェクトのヒット情報を格納する（ヒットした場合）
+@return エージェントとターゲット位置との間に障害物がある場合は true、そうでない場合は false
