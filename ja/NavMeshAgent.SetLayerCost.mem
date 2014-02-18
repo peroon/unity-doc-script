@@ -1,7 +1,7 @@
 <signature>
 SetLayerCost(int,float)
 </signature>
-Sets the cost for traversing over geometry of the layer type.
-If you enable or disable the agent then the cost will be reset to the default layer cost.
-@param layer Layer index.
-@param cost New cost for the specified layer.
+特定レイヤーの平面地形を横切るためのコストをセット
+エージェントを有効化または無効化すると経路コストはデフォルトのレイヤーのコストにリセットされます。
+@param layer レイヤーのインデックス
+@param cost 指定したレイヤーの新たなコスト

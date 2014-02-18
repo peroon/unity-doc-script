@@ -1,14 +1,14 @@
 <signature>
 SetDestination(Vector3)
 </signature>
-Sets or updates the destination thus triggering the calculation for a new path.
-Note that the path may not become available until after a few frames later.
-While the path is being computed, ::ref::pathPending will be true.
-If a valid path becomes available then the agent will resume movement.
+移動先の目的地点を新規設定または更新して、新たに経路探索を開始します。
+経路は数フレーム後まで利用可能とならない場合があることに留意して下さい。
+経路が算出されている間、 ::ref::pathPending が true になります。
+もし有効な経路が利用可能となったときエージェントは動作を再開します。
 CONVERTEXAMPLE
 BEGIN EX
-// Script to move a NavMeshAgent to the place where
-// the mouse is clicked.
+// ナビメッシュ エージェントをマウス クリックした地点に
+// 移動させるスクリプト
 	private var agent: NavMeshAgent;
 
 	function Start () {
@@ -18,10 +18,9 @@ BEGIN EX
 	function Update () {
 		var hit: RaycastHit;
 
-		// When the mouse is clicked...	
+		// マウス クリックしたとき
 		if (Input.GetMouseButtonDown(0)) {
-			// If the click was on an object then set the agent's
-			// destination to the point where the click occurred.
+			// もしオブジェクト上でクリックした場合エージェントの目的地点			// をクリックした場所に設定
 			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			
 			if (Physics.Raycast(ray, hit)) {
@@ -30,4 +29,4 @@ BEGIN EX
 		}
 	}
 END EX
-@param target The target point to navigate to.
+@param target 移動先の目的地点

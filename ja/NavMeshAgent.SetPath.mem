@@ -1,8 +1,8 @@
 <signature>
 SetPath(NavMeshPath)
 </signature>
-Assign a new path to this agent.
-If the path is succesfully assigned the agent will resume movement toward the new target.
-If the path cannot be assigned the path will be cleared (see ::ref::ResetPath).
-@param path New path to follow.
-@return True if the path is succesfully assigned.
+エージェントに新たな経路を割り当てる
+もし経路の割り当てが成功すると、エージェントは新たな目的地点に向けて移動を再開します。
+もし経路が割り当てできない場合、経路はクリアされます。（ ::ref::ResetPath を参照して下さい）
+@param path 新たに辿る経路
+@return 経路の割り当てに成功した場合 true
