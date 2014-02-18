@@ -1,8 +1,10 @@
 <signature>
 SamplePathPosition(int,float,NavMeshHit)
 </signature>
-Sample a position along the current path.
-This function looks ahead a specified distance along the current path. Details of the mesh at that position are then returned in a ::ref::NavMeshHit object. This could be used, for example, to check the type of surface that lies ahead before the character gets there - a character could raise his gun above his head if he is about to wade through water, say.
+現在の経路に沿って位置をサンプリングする
+この関数は現在の経路に沿って、指定した距離だけ先の位置を見ます。
+その位置におけるメッシュの詳細が ::ref::NavMeshHit オブジェクトとして返されます。
+これを使用して、例えばキャラクターが辿りつく先の地形の種類を、実際に到達する前に確かめることが出来ます。場面としてはキャラクターがこれから水に入るときに頭上に銃を構えることが出来ます。
 CONVERTEXAMPLE
 BEGIN EX
 	var target: Transform;
@@ -20,15 +22,15 @@ BEGIN EX
 	function Update() {
 		var hit: NavMeshHit;
 		
-		// Check all layers one unit ahead.
+		// ひとつ先のユニット全てのレイヤーをチェック
 		if (!agent.SamplePathPosition(-1, 1.0, hit)) {
 			if (hit.mask & waterLayer) {
-				// Water detected along the path...
+				// 経路上に水のレイヤーを発見
 			}
 		}
 	}
 END EX
-@param passableMask A mask specifying which NavMesh layers can be passed when tracing the path.
-@param maxDistance Terminate scanning the path at this distance.
-@param hit Holds the properties of the resulting location.
-@return True if terminated before reaching the position at maxDistance, false otherwise.
+@param passableMask ナビメッシュレイヤーとして指定できるマスクを設定する
+@param maxDistance パス上のヒット情報を取得する距離
+@param hit ナビメッシュオブジェクトのヒット情報を格納する
+@return ヒット情報を取得する距離までの間にヒットしなければ true、そうでない場合は false
