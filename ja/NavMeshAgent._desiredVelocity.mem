@@ -1,4 +1,4 @@
 <signature>
 desiredVelocity
 </signature>
-The desired velocity of the agent including any potential contribution from avoidance. (RO)
+エージェントの期待速度、回避行動による潜在的な移動も含める（読み取り専用）。
