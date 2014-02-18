@@ -1,7 +1,7 @@
 <signature>
 hasPath
 </signature>
-Does the agent currently have a path? (RO)
-This property will be true if the agent has a path calculated to the desired destination and false otherwise.
+エージェントの移動先の経路が設定されているかどうか(読み取り専用)
+経路が設定されている場合は true、そうでない場合は false です。
 
-SA: pathPending.
+SA: pathPending

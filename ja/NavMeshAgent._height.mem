@@ -1,4 +1,4 @@
 <signature>
 height
 </signature>
-The height of the agent for purposes of passing under obstacles, etc.
+エージェントの高さ。障害物をくぐる場合などに用いる
