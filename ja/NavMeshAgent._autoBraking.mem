@@ -1,5 +1,5 @@
 <signature>
 autoBraking
 </signature>
-Should the agent brake automatically to avoid overshooting the destination point?
-If the agent needs to land close to the destination point then it will typically need to brake to avoid overshooting or endless "orbiting" around the target zone. If this property is set to true, the agent will brake automatically as it nears the destination.
+目的地点を通り越すこと回避するため NavMeshAgent に自動ブレーキをします。
+もしエージェントが目的地点の近くで停止するためには通り越すことを避けるために回避するか、ターゲット地帯の周りをいつまでも回転し続ける必要があります。もしプロパティを true にセットするとエージェントは目的地点に近づくにつれて自動ブレーキをします。

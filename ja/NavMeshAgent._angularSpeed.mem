@@ -1,7 +1,7 @@
 <signature>
 angularSpeed
 </signature>
-Maximum turning speed in (deg/s) while following a path.
-This is the maximum rate at which the agent can turn as it rounds the "corner" defined by a waypoint. The actual turning circle is also influenced by the speed of the agent on approach and also the maximum acceleration.
+経路を辿るときの最大回転速度（度/ 秒）
+エージェントが waypoint により定義されたコーナーを曲がる際の最大量。曲がる際に描く円はエージェントが近づく速度および最大化速度による影響を受けます。
 
-SA: acceleration, velocity.
+SA: acceleration, velocity
