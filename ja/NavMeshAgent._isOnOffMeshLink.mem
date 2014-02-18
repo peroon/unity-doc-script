@@ -1,7 +1,6 @@
 <signature>
 isOnOffMeshLink
 </signature>
-Is the agent currently positioned on an OffMeshLink? (RO)
-This property is used when ::ref::autoTraverseOffMeshLink is false and the script is making its own decision about letting the agent cross the link.
+エージェントが OffMeshLink オブジェクト上に配置されているか(読み取り専用)::ref::autoTraverseOffMeshLink が false の場合にこのプロパティを使用し、スクリプトによりエージェントがオフメッシュリンクを横切って良いか判定します。
 
-See ::ref::CompleteOffMeshLInk for an example that uses this property to allow only certain agents to cross a link.
+特定のエージェントのみオフメッシュリンクを横切って良い場合のサンプルについては ::ref::CompleteOffMeshLInk を参照して下さい。
