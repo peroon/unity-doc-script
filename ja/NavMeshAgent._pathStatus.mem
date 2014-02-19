@@ -1,4 +1,4 @@
 <signature>
 pathStatus
 </signature>
-The status of the current path (complete, partial or invalid).
+現在の経路のステータス（完了、部分的、無効）

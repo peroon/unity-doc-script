@@ -1,4 +1,4 @@
 <signature>
 pathPending
 </signature>
-Is a path in the process of being computed but not yet ready? (RO)
+経路が探索中のため準備未完了か（読み取り専用）

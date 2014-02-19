@@ -1,5 +1,5 @@
 <signature>
 radius
 </signature>
-The avoidance radius for the agent.
-This is the agent's "personal space" within which obstacles and other agents should not pass.
+エージェントの回避半径
+障害物および他のエージェントが通過できないエージェントの "個人領域" を表します。
