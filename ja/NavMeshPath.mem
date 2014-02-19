@@ -1,2 +1,2 @@
-ナビゲーションに使用されるパスクラスです。
-The path is represented as a list of waypoints stored in the ::ref::corners array. These points are not set directly from user scripts but a NavMeshPath with points correctly assigned is returned by the NavMesh::ref::CalculatePath function and the NavMeshAgent::ref::path property.
+ナビゲーションに使用される経路のクラス
+経路とは ::ref::corners 配列に格納された曲がる地点の一覧として現されます。これらの地点はユーザのスクリプトから直接セットされず NavMesh::ref::CalculatePath 関数および NavMeshAgent::ref::path プロパティにより曲がる地点付きの NavMeshPath が正しく割り当てられます。
