@@ -1,5 +1,5 @@
 <signature>
 path
 </signature>
-Property to get and set the current path.
-This property can be useful for GUI, debugging and other purposes to get the points of the path calculated by the navigation system. Additionally, a path created from user code can be set for the agent to follow in the usual way. An example of this might be a patrol route designed for coverage rather than optimal distance between two points.
+現在の経路の取得およびセットするプロパティ
+このプロパティは GUI 、デバッグおよび経路探索により計算された経路を取得するのに役に立ちます。さらにユーザのコードから生成された経路をエージェントにセットすることで通常どおり移動できます。例を挙げると、二つの地点間の最短距離を移動する経路の代わりに、隠れながら少しづつ移動するための経路です。

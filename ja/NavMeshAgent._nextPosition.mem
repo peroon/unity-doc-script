@@ -1,5 +1,5 @@
 <signature>
 nextPosition
 </signature>
-The next position on the path.
-A path consists of waypoints that are aimed for in succession by the agent as it navigates. This property contains the position of the waypoint the agent is currently heading for. When this point is reached, the target will be advanced to the next waypoint, and so on until the agent lands at the destination point.
+経路上の次の位置。
+経路の構成要素は、目指す複数の waypoint と移動するエージェントです。このプロパティにはエージェントが次に目指している waypoint 位置が含まれます。この地点に到達したときターゲットは次の waypoint に移動し、最終的にエージェントが目標地点に到達するまで、これを繰り返します。

@@ -1,5 +1,5 @@
 <signature>
 obstacleAvoidanceType
 </signature>
-The level of quality of avoidance.
-This property lets you trade off the precision of obstacle avoidance againt the processor load required to achieve it. The exact quality/performance values will depend heavily on the complexity of the scene but as a general rule, faster performance can be achieved at the cost of quality and vice versa.
+パフォーマンスの影響を回避するレベル
+このプロパティにより障害物回避の精度とそのために必要なプロセッサー負荷のバランスさせることが出来ます。正確な品質/パフォーマンスの値はシーンの複雑さに深く依存しますが、一般論として品質を犠牲にすることでより速いパフォーマンスが得られ、その逆もまたいえます。
