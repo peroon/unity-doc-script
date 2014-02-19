@@ -1,7 +1,7 @@
 <signature>
 speed
 </signature>
-Maximum movement speed when following a path.
-An agent will typically need to speed up and slow down as it follows a path (eg, it will slow down to make a tight turn). The speed is often limited by the length of a path segment and the time taken to accelerate and brake, but the speed will not exceed the value set by this property even on a long, straight path.
+経路を移動する際の最大移動速度。
+一般にエージェントは経路を移動する際に速度を上げたり下げたりします（例えば急カーブを曲がる際に速度を下げる）。速度は経路セグメントの長さによりしばしば制限を受けますが、長い直線であっても速度はこのプロパティによりセットした値を超えません。
 
-SA: desiredVelocity.
+SA: desiredVelocity

@@ -1,5 +1,5 @@
 <signature>
 remainingDistance
 </signature>
-The distance between the agent's position and the destination on the current path. (RO)
-If the remaining distance is unknown then this will have a value of infinity.
+エージェントの位置および現在の経路での目標地点の間の距離。（読み取り専用）
+残った距離が不明の場合、値は無限大になります。
