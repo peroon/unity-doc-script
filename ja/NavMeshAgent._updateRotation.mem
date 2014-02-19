@@ -1,4 +1,4 @@
 <signature>
 updateRotation
 </signature>
-Should the agent update the transform orientation?
+エージェントの回転を更新すべきかどうか
