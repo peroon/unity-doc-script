@@ -2,12 +2,12 @@
 DiscardContents()
 DiscardContents(bool,bool)
 </signature>
-Discards the contents of the RenderTexture.
-On some platforms, it can be good for performance if you indicate when the
-current contents of a RenderTexture aren't needed anymore. This can save
-copying it from one kind of memory to another when the texture is reused.
-Xbox 360 and many mobile GPUs benefit from this.
+RenderTexture オブジェクトの内容を破棄する。
+いくつかのプラットフォームでは RenderTexture オブジェクトの現在のコンテンツが必要でないタイミング
+を使用することはパフォーマンスによい影響を与えます。
+テクスチャを再利用したときに一種類のメモリから別のものに複製することを回避できます。
+Xbox 360 および多くのモバイル GPU でこのメリットがあります。
 
-Both the colour buffer and depth buffer are discarded by default but either can be selected individually using the optional boolean parameters.
-@param discardColor Should the colour buffer be discarded?
-@param discardDepth Should the depth buffer be discarded?
+カラーバッファおよびデプスバッファはデフォルトでは無視されますが、どちらも個別に任意の boolean 引数を使用して選択できます。
+@param discardColor カラーバッファを無視するか
+@param discardDepth デプスバッファを無視するか

@@ -1,20 +1,20 @@
 <signature>
 seed
 </signature>
-Sets the seed for the random number generator.
-The random number generator is not truly random but produces numbers in a preset sequence (the values in the sequence "jump" around the range in such a way that they appear random for most purposes).
+乱数を生成する初期値を設定する。
+乱数生成は真にランダムでなく事前に決まった順番で番号を生成します（値の順番はほとんどの場合に問題ない形の乱数となります）。
 
-The point in the sequence where a particular run of pseudo-random values begins is selected using an integer called the ''seed'' value. The seed is normally set from some arbitrary value like the system clock before the random number functions are used. This prevents the same run of values from occurring each time a game is played and thus avoids predictable gameplay. However, it is sometimes useful to produce the same run of pseudo-random values on demand by setting the seed yourself.
+乱数の値の選択は ''シード'' と呼ばれる値で選択されます。関数が使用される前のシステム時刻など任意の値からセットされます。これによりゲームが再生される度に同じ値が実行されて毎回同じゲームプレイとなることを避けます。しかし自身でシードをセットすることで同じ乱数の値を生成することが役に立つ場合もあります。
 
-You might set your own seed, for example,  when you generate a game level procedurally. You can use randomly-chosen elements to make the scene look arbitrary and natural but set the seed to a preset value before generating. This will make sure that the same "random" pattern is produced each time the game is played. This can often be an effective way to reduce a game's storage requirements - you can generate as many levels as you like procedurally and store each one using nothing more than an integer seed value.
+自身でシードをセットするのは例えば、ゲームレベルをプロシージャル生成する場合などです。乱数で選ばれた要素を使用することでシーンが任意で自然に見えるようになり、生成前にシードを事前にセットした値とすることが出来ます。これによりゲームが再生されるたびに同じ "ランダム" パターンが生成できます。これはゲームのストレージ要件を削減できます。任意でレベルを生成することが出来て、整数のシード値を使用してプロシージャルにレベルを好きなだけ生成できます。
 CONVERTEXAMPLE
 BEGIN EX
 private var noiseValues: float[];
 
 function Start () {
-	// If you comment out the following line, the sequence of random
-	// values will be different each time you run. However, the sequence
-	// will always be the same for any particular seed value.
+	// 次の行をコメントアウトした場合、ランダム値の順番は
+	// 実行される度に異なります。しかし、順番は特定のシード値の
+	// 場合はつねに使用されます。
 	Random.seed = 42;
 	
 	noiseValues = new float[10];
