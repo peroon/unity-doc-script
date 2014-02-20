@@ -1,8 +1,9 @@
 <signature>
 Set3Points(Vector3,Vector3,Vector3)
 </signature>
-Sets a plane using three points that lie within it.  The points go around clockwise as you look down on the top surface of the plane.
-SA: ::ref::SetNormalAndPosition.
-@param a First point in clockwise order.
-@param b Second point in clockwise order.
-@param c Third point in clockwise order.
+3 点の位置を設定して、平面を作成します。このときの 3 点の位置は、上部から見て時計回
+りで設定されます。
+SA: ::ref::SetNormalAndPosition
+@param a 時計周りで 1 つめの点
+@param b 時計周りで 2 つめの点
+@param c 時計周りで 3 つめの点

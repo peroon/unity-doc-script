@@ -1,5 +1,5 @@
 <signature>
 HasProceduralProperty(string)
 </signature>
-Checks if the ProceduralMaterial has a ProceduralProperty of a given name.
-SA: ::ref::GetProceduralPropertyDescriptions.
+プロシージャルマテリアルについて、指定した名前のプレシージャル プロパティがあるかを返す
+SA: ::ref::GetProceduralPropertyDescriptions

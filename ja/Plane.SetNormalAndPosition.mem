@@ -1,8 +1,8 @@
 <signature>
 SetNormalAndPosition(Vector3,Vector3)
 </signature>
-Sets a plane using a point that lies within it along with a normal to orient it.
-Note that the normal must be a ''normalised'' vector.
+ベクトルの法線と地点により平面を設定する
+法線は ''正規化されたベクトル'' である必要があることに留意して下さい。
 CONVERTEXAMPLE
 BEGIN EX
 var fieldLength: float;
@@ -13,15 +13,15 @@ var leftSideLine: Plane;
 var rightSideLine: Plane;
 
 function Start () {	
-	// Set up goal lines of a playing field.
+	// フィールドのゴールラインをセットアップ
 	goalLine1.SetNormalAndPosition(Vector3.forward, Vector3.forward * fieldLength / 2);
 	goalLine1.SetNormalAndPosition(-Vector3.forward, -Vector3.forward * fieldLength / 2);
 	
-	// Set up side lines.
+	// サイドラインをセットアップ
 	leftSideLine.SetNormalAndPosition(-Vector3.right, -Vector3.right * fieldWidth / 2);
 	leftSideLine.SetNormalAndPosition(Vector3.right, Vector3.right * fieldWidth / 2);
 }
 END EX
 SA: ::ref::Set3Points.
-@param inNormal The plane's normal vector.
-@param inPoint A point that lies on the plane.
+@param inNormal 平面の法線ベクトル
+@param inPoint 平面上の地点

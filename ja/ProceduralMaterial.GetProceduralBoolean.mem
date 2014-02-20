@@ -1,7 +1,7 @@
 <signature>
 GetProceduralBoolean(string)
 </signature>
-Get a named Procedural boolean property.
-Used for ProceduralProperties of type Boolean.
+プロパティ名を指定して boolean 型のプロパティを取得する
+boolean 型のProceduralProperties で使用されます。
 
-SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralBoolean.
+SA: ::ref::GetProceduralPropertyDescriptions, ::ref::SetProceduralBoolean
