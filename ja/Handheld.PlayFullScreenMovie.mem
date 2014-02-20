@@ -4,50 +4,41 @@ PlayFullScreenMovie(string,Color)
 PlayFullScreenMovie(string,Color,FullScreenMovieControlMode)
 PlayFullScreenMovie(string,Color,FullScreenMovieControlMode,FullScreenMovieScalingMode)
 </signature>
-ムービーをフルスクリーンで再生する (Unity Pro のみ)
-Note that player will stream movie directly
-from the device storage, therefore you have to provide movie as a
-separate files and not as a usual asset. You will have to create a
-folder named @@StreamingAssets@@ inside your Unity project (inside your
-Assets folder). Store your movies inside that folder.
-Unity will automatically copy contents of that folder into the
-application bundle.
+動画をフルスクリーンで再生する (Unity Pro のみ)
+プレイヤーは動画を直接デバイスストレージからストリーミングすることに留意して下さい。
+このために動画は通常のアセットでなく別のファイルとして提供します。Unity プロジェクトの中（のAssets フォルダ配下）に @@StreamingAssets@@ というファイルダを作成する必要があります。動画をそのフォルダに格納します。
+Unity は自動的にアプリケーション バンドルの中にそのフォルダのコンテンツを複製します。
 
-Calling this function will pause Unity during movie playback. When
-playback finishes Unity will resume.
+この関数を呼び出しすることで Unity が動画再生の際は Unity がポーズします。
+再生が完了した後、Unity が再開されます。
 
-The first parameter, @@path@@, can be a network-based URL. The function
-will detect that by looking for a "://" substring that follows the
-protocol name.
+最初の引数 @@path@@ はネットワーク ベースの URL とすることが出来ます。この関数は "://" の後にプロトコル名を含む部分的な文字列を検知します。
 
-On iOS, @@Handheld.PlayFullScreenMovie@@ internally uses MPMoviePlayerController
-object to play movies. Therefore, you should expect the same behavior
-and the same supported formats. MPMoviePlayerController supports any
-movie or audio files that already play correctly on an iPod or iPhone.
+iOS 上で @@Handheld.PlayFullScreenMovie@@ は内部的に MPMoviePlayerController オブジェクトを使用します。
+このため同じビヘイビアおよび対応フォーマットは同じとなります。
+MPMoviePlayerController は iPod または iPhone ですでに正しく再生される動画や
+音声ファイルであれば全て対応しています。
 
-For movie files, this typically means files with the extensions .mov,
-.mp4, .mpv, and .3gp and using one of the following compression
-standards:
+一般的に動画ファイルの場合、 .mov, .mp4, .mpv, および .3gp 拡張子つきのファイル
+で次の圧縮標準を使用するパターンのことを示します：
 
-H.264 Baseline Profile Level 3.0 video, up to 640 x 480 at 30 fps.
-Note that B frames are not supported in the Baseline profile.
+H.264 ベースライン プロファイル レベル 3.0 動画、 640 x 480 、30 fps です。
+B フレームは ベースライン プロファイル に対応してないことに留意して下さい。
 
-MPEG-4 Part 2 video (Simple Profile).
+MPEG-4 パート 2 動画（シンプル プロファイル）
 
 
-Calling this function will initiate a transition that fades the screen
-from your current content to the designated background color of the
-player. When playback finishes, the player uses another fade effect to
-transition back to your content.
-
-You can find Apple's MPMoviePlayerController documentation here:
-<a href="http://developer.apple.com/library/ios/#DOCUMENTATION/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html">MPMoviePlayerController Class Reference</a>
+この関数を呼び出しすることで現在のコンテンツについて、画面をプレイヤー専用の背景色へ
+移行させます。再生完了後、プレイヤーは別のフェード エフェクトを使用することで自身の
+コンテンツへ移行します。
+Apple の MPMoviePlayerController ドキュメントを次のリンクから見つけて下さい：
+<a href="http://developer.apple.com/library/ios/#DOCUMENTATION/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html">MPMoviePlayerController クラス リファレンス</a>
 BEGIN EX
 	function Start () {
 		Handheld.PlayFullScreenMovie ("StarWars.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
 	}
 END EX
-@param path Filesystem path to the movie file.
-@param bgColor Background color.
-@param controlMode How the playback controls are to be displayed.
-@param scalingMode How the movie is to be scaled to fit the screen.
+@param path 動画ファイルへのファイルシステムパス
+@param bgColor 背景色
+@param controlMode 再生コントロールの表示方法
+@param scalingMode 画面に合わせて動画を拡大、縮小する方法
