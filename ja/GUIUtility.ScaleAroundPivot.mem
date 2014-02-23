@@ -1,13 +1,13 @@
 <signature>
 ScaleAroundPivot(Vector2,Vector2)
 </signature>
-GUIオブジェクトを拡張させるヘルパー関数
-Modifies GUI.matrix to rotate all GUI elements /angle/ degrees around /pivotPoint/.
+GUI が特定の点の周りにオブジェクトをスケールさせるヘルパー関数
+GUI.matrix が ピボット /pivotPoint/ の周りを /angle/ 角度だけ回転するように変更します。
 
 SA: GUI.matrix, ::ref::RotateAroundPivot.
 CONVERTEXAMPLE
 BEGIN EX
-	// Scale a button by 1.5 times each time is pressed.
+	// ボタンを押すたびに 1.5 倍の大きさにする
 
 	private var scale : Vector2 = Vector2(1,1);
 	private var pivotPoint : Vector2;
@@ -15,7 +15,7 @@ BEGIN EX
 	function OnGUI () {   
 		pivotPoint = Vector2(Screen.width/2,Screen.height/2);
 		GUIUtility.ScaleAroundPivot (scale, pivotPoint); 
-		if(GUI.Button(Rect(Screen.width/2-25, Screen.height/2-25, 50, 50),"Big!")){
+		if(GUI.Button(Rect(Screen.width/2-25, Screen.height/2-25, 50, 50),"大きい!")){
 			scale += Vector2(0.5,0.5);
 		}		
 	}
