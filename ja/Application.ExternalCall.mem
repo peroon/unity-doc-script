@@ -2,31 +2,35 @@
 ExternalCall(string,object[])
 </signature>
 Web ページ内の関数を呼び出す（Web Player のみ）。
-Web Player のみの機能です。Web Player からWeb ページ内のJavaScript へアクセスします。Web ページ内からWeb PlayerへはSendMessage関数を使ってアクセスします。その際に渡せるパラメーターはString型のみになります。ExternalCall関数で送るパラメーターに、コールバック名とコールバック関数の記述されているゲームオブジェクト名を追加しておきます。
+Web Player のみの機能です。Web Player からWeb ページ内のJavaScript へアクセスします。
+Web ページ内からWeb PlayerへはSendMessage関数を使ってアクセスします。その際に渡
+せるパラメーターはString型のみになります。ExternalCall関数で送るパラメーターに、
+コールバック名とコールバック関数の記述されているゲームオブジェクト名を追加しておき
+ます。
 
-The function is called non-blocking, i.e. ExternalCall immediately returns without waiting for the function that was called to complete.
+この関数はノンブロックで呼び出しされます。すなわち ExternalCall は呼び出しした関数が完了することを待つことなく戻り値を返します。
 
-The number of passed arguments can be varying:
+渡す引数の数は様々である：
 CONVERTEXAMPLE
 BEGIN EX
-	// Calls MyFunction1 in web page with no arguments
+	// ウェブページの MyFunction1 を引数なしで呼び出し
 	Application.ExternalCall ("MyFunction1");
 
-	// Calls MyFunction2 in web page with a string
+	// ウェブページの MyFunction2 を文字列の引数で呼び出し
 	Application.ExternalCall ("MyFunction2", "Hello from Unity!");
 
-	// Calls MyFunction3 in web page with several arguments of different types
+	// ウェブページの MyFunction3 を複数の異なる引数で呼び出し
 	Application.ExternalCall ("MyFunction3", "one", 2, 3.0);
 END EX
-The functions to be called are just declared in the HTML page using standard
-syntax, for example:
+呼び出しした関数は HTML ページで標準の構文で宣言します。
+例えば：
 BEGIN EX
-	// This should be contained in the host page in the appropriate <script> element.
-	// Using the above call from Unity, this will receive
-	// "Hello from Unity!" as the argument.
+	// これを適切な <script> 要素の中でホストページに含める
+	// Unity の上記の呼び出しを使用することで、
+	// "Hello from Unity!" を戻り値として受け取る
 	function MyFunction2( arg )
 	{
 		alert( arg );
 	}
 END EX
-SA: [[wiki:Unity Web Player and Browser Communication|Browser to Unity communication]], Application.ExternalEval.
+SA: [[wiki:Unity Web Player and Browser Communication|ブラウザから Unity への通信]], Application.ExternalEval
