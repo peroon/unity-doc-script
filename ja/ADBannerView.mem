@@ -1,5 +1,3 @@
-ADBannerView is a wrapper around the ADBannerView class found in the Apple iAd framework and is only available on iOS.
-It provides a view that displays banner advertisements to the user.
 Apple iAd フレームワークにあるADBannerViewクラスのラッパーであり iOS のみで利用できます。
 バナー広告を表示するために使用されます。
 BEGIN EX
