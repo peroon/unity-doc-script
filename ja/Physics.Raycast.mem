@@ -3,8 +3,7 @@ Raycast(Vector3,Vector3)
 Raycast(Vector3,Vector3,float)
 Raycast(Vector3,Vector3,float,int)
 </signature>
-シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得
-する
+シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得する
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
@@ -19,6 +18,7 @@ __注意:__ この関数は球の中から外に向けて Raycast
 もしスクリプトまたはアニメーションによりコライダを移動すると、少なくとも
 ひとつの FixedUpdate が実行されないと Physics ライブラリは Raycast が
 新規のポジションでコライダにヒットする前にデータ構造を更新できません。
+
 @param origin ワールド座標でのレイの開始地点
 @param direction 方向
 @param distance 距離
@@ -30,7 +30,7 @@ Raycast(Vector3,Vector3,RaycastHit)
 Raycast(Vector3,Vector3,RaycastHit,float)
 Raycast(Vector3,Vector3,RaycastHit,float,int)
 </signature>
-Casts a ray against all colliders in the scene and returns detailed information on what was hit.
+シーン内のコライダーに対してレイを飛ばし、ヒットした情報を取得する
 CONVERTEXAMPLE
 BEGIN EX
 	function Update () {
@@ -40,7 +40,7 @@ BEGIN EX
 		}
 	}
 END EX
-Another example:
+サンプルをもうひとつ:
 CONVERTEXAMPLE
 BEGIN EX
 	// 下方向に100 メートル先まで Raycast
