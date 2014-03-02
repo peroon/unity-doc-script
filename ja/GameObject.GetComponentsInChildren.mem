@@ -2,7 +2,7 @@
 GetComponentsInChildren(Type)
 GetComponentsInChildren(Type,bool)
 </signature>
-Returns all components of Type /type/ in the GameObject or any of its children.
+ゲームオブジェクトおよび子オブジェクトの指定した /type/ と合致する全てのコンポーネントを返す
 CONVERTEXAMPLE
 BEGIN EX
 	// Disable the spring on all HingeJoints 

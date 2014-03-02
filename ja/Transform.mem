@@ -5,7 +5,7 @@ Transformオブジェクトを操作すると、子の関係にあるオブジ�
 になります。
 CONVERTEXAMPLE
 BEGIN EX
-// 全ての子 Transform を上向きに 10 ユニット移動!
+// 全ての子 Transform を上向きに 10 ユニット移動
 
 for (var child : Transform in transform) {
     child.position += Vector3.up * 10.0;
