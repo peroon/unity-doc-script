@@ -1,6 +1,6 @@
 カスタムプロパティドローワーのベースクラスです。自身で作成した [[Serializable]] クラスや [[PropertyAttribute]] 変数のカスタムドローワーを作成して使用することが出来ます。
 
-PropertyDrawersは２つの使い方があります:\\
+PropertyDrawersは 2 つの使い方があります:\\
 - [[Serializable]] クラスのGUIをカスタマイズ\\
 - [[PropertyAttribute]] の付いたスクリプトメンバーのGUIをカスタマイズ
 
@@ -10,11 +10,11 @@ SerializableクラスのIngredientクラスを考慮したスクリプトが以�
 CONVERTEXAMPLE
 BEGIN EX
 // Recipe.js
-// This is not an editor script
+// これはエディタスクリプトではありません
 
 enum IngredientUnit { Spoon, Cup, Bowl, Piece }
 
-// Custom serializable class
+// カスタムの serializable クラス
 class Ingredient extends System.Object {
 	var name : String;
 	var amount : int = 1;
@@ -41,30 +41,30 @@ BEGIN EX
 @CustomPropertyDrawer (Ingredient)
 class IngredientDrawer extends PropertyDrawer {
 	
-	// Draw the property inside the given rect
+	// 指定の rect でプロパティを描画
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
-		// Using BeginProperty / EndProperty on the parent property means that
-		// prefab override logic works on the entire property.
+		// 親プロパティで BeginProperty / EndProperty を使用すると
+		// プロパティ全体で上書きロジックが動作
 		EditorGUI.BeginProperty (position, label, property);
 		
-		// Draw label
+		// ラベルを描画
 		position = EditorGUI.PrefixLabel (position, GUIUtility.GetControlID (FocusType.Passive), label);
 		
-		// Don't make child fields be indented
+		// 子フィールドはインデントしない
 		var indent = EditorGUI.indentLevel;
 		EditorGUI.indentLevel = 0;
 		
-		// Calculate rects
+		// rect を計算
 		var amountRect = new Rect (position.x, position.y, 30, position.height);
 		var unitRect = new Rect (position.x+35, position.y, 50, position.height);
 		var nameRect = new Rect (position.x+90, position.y, position.width-90, position.height);
 		
-		// Draw fields - passs GUIContent.none to each so they are drawn without labels
+		// フィールドの描画。各々に GUIContent.none を渡すことでラベルなしで描画
 		EditorGUI.PropertyField (amountRect, property.FindPropertyRelative ("amount"), GUIContent.none);
 		EditorGUI.PropertyField (unitRect, property.FindPropertyRelative ("unit"), GUIContent.none);
 		EditorGUI.PropertyField (nameRect, property.FindPropertyRelative ("name"), GUIContent.none);
 		
-		// Set indent back to what it was
+		// インデントの設定を元に戻す
 		EditorGUI.indentLevel = indent;
 		
 		EditorGUI.EndProperty ();
@@ -77,14 +77,14 @@ PropertyDrawerの他の使い方は [[PropertyAttribute]] の付いたメンバ�
 これは [[RangeAttribute]] としてビルドインされている機能でこのように使用します:
 CONVERTEXAMPLE
 BEGIN EX
-// Show this float in the Inspector as a slider between 0 and 10
+// インスペクタ上で float を 0 と 10 の間を動くスライダーとして表示
 @Range (0.0, 10.0)
 var myFloat = 0.0;
 END EX
 自分で [[PropertyAttribute]] を作成することも出来ます。 [[RangeAttribute]] を実装例として参考にしてください。
 このアトリビュートはPropertyAttributeクラスを継承する必要があります。必要であればこのアトリビュートクラスにパラメータや変数の値を保持しておくことが出来ます。
 BEGIN EX
-// This is not an editor script. The property attribute class should be placed in a regular script file.
+// これはエディタスクリプトではありません。PropertyAttribute クラスは通常のスクリプト ファイルに配置する必要があります。
 class RangeAttribute extends PropertyAttribute {
 	var min : float;
 	var max : float;
@@ -99,25 +99,25 @@ END EX
 このドローワークラスはPropertyDrawerを継承することと、 [[CustomPropertyDrawer]] アトリビュートを付ける必要があります。
 CONVERTEXAMPLE
 BEGIN EX
-// The property drawer class should be placed in an editor script, inside a folder called Editor.
+// プロパティ ドローワー クラスはエディタ スクリプトに記述して Editor という名前のフォルダの中に配置すべきです。
 
-// Tell the RangeDrawer that it is a drawer for properties with the RangeAttribute.
+// RangeDrawer が RangeAttribute のプロパティのための ドローワー であることを示す
 @CustomPropertyDrawer (RangeAttribute)
 class RangeDrawer extends PropertyDrawer {
 	
-	// Draw the property inside the given rect
+	// 指定の rect でプロパティを描画
 	function OnGUI (position : Rect, property : SerializedProperty, label : GUIContent) {
 		
-		// First get the attribute since it contains the range for the slider
+		// スライダーの移動範囲を含むアトリビュートを最初に取得
 		var range : RangeAttribute = attribute as RangeAttribute;
 		
-		// Now draw the property as a Slider or an IntSlider based on whether it's a float or integer.
+		// float , integer のいずれであるかにより各々 Slider または IntSlider としてプロパティを描画
 		if (property.propertyType == SerializedPropertyType.Float)
 			EditorGUI.Slider (position, property, range.min, range.max, label);
 		else if (property.propertyType == SerializedPropertyType.Integer)
 			EditorGUI.IntSlider (position, property, range.min, range.max, label);
 		else
-			EditorGUI.LabelField (position, label.text, "Use Range with float or int.");
+			EditorGUI.LabelField (position, label.text, "Range の型は float または int の型にして下さい。");
 	}
 }
 END EX
