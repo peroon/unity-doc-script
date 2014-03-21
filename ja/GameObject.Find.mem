@@ -1,40 +1,40 @@
 <signature>
 Find(string)
 </signature>
-設定したゲームオブジェクト名を持つオブジェクトを1 つ検索して取得
-する
-If no game object with /name/ can be found, null is returned.
-If /name/ contains a '/' character it will traverse the hierarchy like a path name.
-This function only returns active gameobjects.
+指定したゲームオブジェクト名を持つオブジェクトを検索して 1 つだけ取得する
+もし /name/ が一致するゲームオブジェクトが見つからない場合、null を返します。
+もし /name/ に "/" 文字が含まれるとパス名と同様に扱い階層を辿ります。
+この関数はアクティブなゲームオブジェクトのみ返します。
 
-For performance reasons it is recommended to not use this function every frame
-Instead cache the result in a member variable at startup or use GameObject.FindWithTag.
+パフォーマンス上の理由により毎フレームこの関数を呼ぶことは推奨しません。
+その代わり起動時にメンバー変数に結果をキャッシュするか、 GameObject.FindWithTag を使用します。
 CONVERTEXAMPLE
 BEGIN EX
 	var hand : GameObject;
-	// This will return the game object named Hand in the scene.
+	// シーン上の Hand という名前のゲームオブジェクトを返す
 	hand = GameObject.Find("Hand");
 
-	// This will return the game object named Hand.
-	// Hand must not have a parent in the hierarchy view!
+	// Hand という名前のゲームオブジェクトを返す
+	// 階層ビュー上で Hand の親オブジェクトが存在してはいけない
 	hand = GameObject.Find("/Hand");
 
-	// This will return the game object named Hand,
-	// which is a child of Arm -> Monster.
-	// Monster must not have a parent in the hierarchy view!
+	// Hand という名前のゲームオブジェクトを返す。
+	// このゲームオブジェクトは子オブジェクトであり /Monster/Arm の階層にある
+	// Monster の親オブジェクトが存在してはいけない
 	hand = GameObject.Find("/Monster/Arm/Hand");
 
 	// This will return the game object named Hand,
-	// which is a child of Arm -> Monster.
-	// Monster may have a parent.
+	// このゲームオブジェクトは子オブジェクトであり /Monster/Arm の階層にある
+	// Monster の親オブジェクトが存在しても良い
+	
 	hand = GameObject.Find("Monster/Arm/Hand");
 END EX
-This function is most useful to automatically connect references to other objects at load time, eg. inside MonoBehaviour.Awake or MonoBehaviour.Start.
-You should avoid calling this function every frame eg. MonoBehaviour.Update for performance reasons.
-A common pattern is to assign a game object to a variable inside MonoBehaviour.Start. And use the variable in MonoBehaviour.Update.
+ロード時、例えば MonoBehaviour.Awake または MonoBehaviour.Start の時に他のオブジェクトに対する参照を自動でつけたい場合に、この関数はもっとも役に立ちます。
+パフォーマンス上の理由により毎フレームこの関数（例えば MonoBehaviour.Update）を呼ぶことは推奨しません。
+MonoBehaviour.Start の中で変数にゲームオブジェクトに割り当てるのが主な使い方です。その後、 MonoBehaviour.Update で変数を使用します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Find the hand inside Start and rotate it every frame
+	// Start の中で Hand を見つけ、毎フレーム回転させる
 	private var hand : GameObject;
 	function Start () {
 		hand = GameObject.Find("/Monster/Arm/Hand");
