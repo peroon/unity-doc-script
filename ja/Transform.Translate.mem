@@ -1,58 +1,58 @@
 <signature>
 Translate(Vector3,Space)
 </signature>
-オブジェクトを相対的に移動させる関数です
-If /relativeTo/ is left out or set to Space.Self the movement is applied relative to the transform's local axes. (the x, y and z axes shown when selecting the object inside the Scene View.)
-If /relativeTo/ is Space.World the movement is applied relative to the world coordinate system.
+オブジェクトを相対的に移動させる
+もし /relativeTo/ を指定しないか Space.Self を指定すると、移動はトランスフォームのローカル軸に対して相対的に適用されます。（シーンビュー上でオブジェクトを選択するとき x, y, z 軸が表示される）
+もし /relativeTo/ に Space.World を指定すると、移動はワールド座標に相対的に適用されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update() {
-		// Move the object forward along its z axis 1 unit/second.
+		// オブジェクトを前方方向に z 軸に沿って 1 メートル/秒で移動させる
 		transform.Translate(Vector3.forward * Time.deltaTime);
 
-		// Move the object upward in world space 1 unit/second.
+		// オブジェクトを上方向に 1 メートル/秒で移動させる
 		transform.Translate(Vector3.up * Time.deltaTime, Space.World);
 	}
 END EX
 <signature>
 Translate(float,float,float,Space)
 </signature>
-Moves the transform by /x/ along the x axis, /y/ along the y axis, and /z/ along the z axis.
-If /relativeTo/ is left out or set to Space.Self the movement is applied relative to the transform's local axes. (the x, y and z axes shown when selecting the object inside the Scene View.)
-If /relativeTo/ is Space.World the movement is applied relative to the world coordinate system.
+トランスフォームを x 軸に沿って /x/ だけ移動、 y 軸に沿って /y/ だけ移動、 z 軸に沿って /z/ だけ移動させる。
+もし /relativeTo/ を指定しないか Space.Self を指定すると、移動はトランスフォームのローカル軸に対して相対的に適用されます。（シーンビュー上でオブジェクトを選択するとき x, y, z 軸が表示される）
+もし /relativeTo/ に Space.World を指定すると、移動はワールド座標に相対的に適用されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update() {
-		// Move the object forward along its z axis 1 unit/second.
+		// オブジェクトを前方方向に z 軸に沿って 1 メートル/秒で移動させる
 		transform.Translate(0, 0, Time.deltaTime);
 
-		// Move the object upward in world space 1 unit/second.
+		// オブジェクトを上方向に 1 メートル/秒で移動させる
 		transform.Translate(0, Time.deltaTime, 0, Space.World);
 	}
 END EX
 <signature>
 Translate(Vector3,Transform)
 </signature>
-オブジェクトを相対的に移動させる関数です。
-The movement is applied relative to /relativeTo/'s local coordinate system. 
-If /relativeTo/ is null, the movement is applied relative to the world coordinate system.
+オブジェクトを相対的に移動させる
+移動は /relativeTo/ のローカル座標に対して相対的に適用されます。
+もし /relativeTo/ に null を指定すると、移動はワールド座標に相対的に適用されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update() {
-		// Move the object to the right relative to the camera 1 unit/second.
+		// オブジェクトをカメラに対して右方向に 1 メートル/秒で移動させる
 		transform.Translate(Vector3.right * Time.deltaTime, Camera.main.transform);
 	}
 END EX
 <signature>
 Translate(float,float,float,Transform)
 </signature>
-Moves the transform by /x/ along the x axis, /y/ along the y axis, and /z/ along the z axis.
-The movement is applied relative to /relativeTo/'s local coordinate system.
-If /relativeTo/ is null, the movement is applied relative to the world coordinate system.
+トランスフォームを x 軸に沿って /x/ だけ移動、 y 軸に沿って /y/ だけ移動、 z 軸に沿って /z/ だけ移動させる。
+移動は /relativeTo/ のローカル座標に対して相対的に適用されます。
+もし /relativeTo/ に null を指定すると、移動はワールド座標に相対的に適用されます。
 CONVERTEXAMPLE
 BEGIN EX
 	function Update() {
-		// Move the object to the right relative to the camera 1 unit/second.
+		// オブジェクトをカメラに対して右方向に 1 メートル/秒で移動させる
 		transform.Translate(Time.deltaTime, 0, 0, Camera.main.transform);
 	}
 END EX
