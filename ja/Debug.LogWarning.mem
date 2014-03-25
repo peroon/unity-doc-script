@@ -6,20 +6,20 @@ UNDOC
 Debug.Log の派生で警告メッセージをコンソール出力
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("Watch out!, this is a warning!");
+	Debug.LogWarning("注意下さい。これは警告です!");
 END EX
 <signature>
 LogWarning(object)
 LogWarning(object,Object)
 </signature>
-A variant of Debug.Log that logs a warning message to the console.
-When you select the message in the console a connection to the context object will be drawn.
-This is very useful if you want know on which object a warning occurs.
+Debug.Log の派生で警告メッセージをコンソール出力
+コンソールでメッセージを選択すると、関連するコンテキスト オブジェクトへの線が描画されます。
+どのオブジェクトで警告が発生したか知りたいときに役に立ちます。
 
-When the message is a string, rich text markup can be used to add emphasis. See the manual page about [[wiki:StyledText|rich text]] for details of the different markup tags available.
+メッセージが文字列のとき、リッチテキスト マークアップで強調文字も出来ます。利用可能なマークアップ タグの詳細については [[wiki:StyledText|リッチテキスト]] のマニュアルを参照して下さい。
 CONVERTEXAMPLE
 BEGIN EX
-	Debug.LogWarning("A warning assigned to this transform!", transform);
+	Debug.LogWarning("次のトランスフォームに対する警告です！ ", transform);
 END EX
-@param message String or object to be converted to string representation for display.
-@param context Object to which the message applies.
+@param message 表示される文字列、または文字列に変換されたオブジェクト
+@param context メッセージが適用されるオブジェクト
