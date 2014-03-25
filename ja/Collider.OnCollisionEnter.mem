@@ -1,20 +1,20 @@
 <signature>
 OnCollisionEnter(Collision)
 </signature>
-オブジェクトに衝突したときに呼び出されます
-In contrast to OnTriggerEnter, OnCollisionEnter is passed the [[Collision]] class and not a Collider.
-The [[Collision]] class contains information about contact points, impact velocity etc.
-If you don't use collisionInfo in the function, leave out the collisionInfo parameter as this avoids unneccessary calculations.
-Note that collision events are only sent if one of the colliders also has a non-kinematic rigidbody attached.
+オブジェクトに衝突したときに呼び出される
+OnTriggerEnter と違って OnCollisionEnter は Collider でなく [[Collision]] クラスに渡されます。
+[[Collision]] クラスは衝突地点、衝突時の速度などの情報を含みます。
+もし関数で collisionInfo を使用しない場合、 collisionInfo 引数は空白にすることで無駄な計算を省けます。
+コライダーのひとつが Kinematic でない Rigidbody がアタッチされている場合にのみ Collision イベントが通知されることに注意してください。
 CONVERTEXAMPLE
 BEGIN EX
 	function OnCollisionEnter(collision : Collision) {
-		// Debug-draw all contact points and normals
+		// デバッグ クラスによりすべての衝突地点および法線を描画
 		for (var contact : ContactPoint in collision.contacts) {
 			Debug.DrawRay(contact.point, contact.normal, Color.white);
 		}
 		
-		// Play a sound if the coliding objects had a big impact.		
+		// 衝突オブジェクトの衝突の力が大きかった場合はサウンドを再生
 		if (collision.relativeVelocity.magnitude > 2)
 			audio.Play();
 	}
@@ -22,19 +22,19 @@ END EX
 Another example:
 CONVERTEXAMPLE
 BEGIN EX
-	// A grenade
-	// - instantiates a explosion prefab when hitting a surface
-	// - then destroys itself
+	// 手榴弾
+	// - 地面に当たったときに爆発のプレハブをインスタンス化
+	// - 自らを破棄
 
 	var explosionPrefab : Transform;
 
 	function OnCollisionEnter(collision : Collision) {
-		// Rotate the object so that the y-axis faces along the normal of the surface
+		// y 軸が表面の法線方向に向くようにオブジェクトを回転
 		var contact : ContactPoint = collision.contacts[0];
 		var rot : Quaternion = Quaternion.FromToRotation(Vector3.up, contact.normal);
 		var pos : Vector3 = contact.point;
 		Instantiate(explosionPrefab, pos, rot);
-		// Destroy the projectile
+		// 発射物のオブジェクトを破棄
 		Destroy (gameObject);
 	}
 END EX

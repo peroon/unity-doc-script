@@ -1,13 +1,13 @@
 <signature>
 OnTriggerEnter(Collider)
 </signature>
-トリガー状態のオブジェクトに衝突したときに呼び出されます。
-This message is sent to the trigger collider and the rigidbody (if any) that the trigger collider belongs
-to, and to the rigidbody (or the collider if there is no rigidbody) that touches the trigger.
-Note that trigger events are only sent if one of the colliders also has a rigidbody attached.
+トリガー状態のオブジェクトに衝突したときに呼び出される
+このメッセージ通知先はトリガー コライダーおよびトリガー コライダーに属するリジッドボディ（存在する場合）、
+トリガーに接触したリジッドボディ（またはリジッドボディがない場合はコライダー）
+もしコライダーのひとつにもリジッドボディがアタッチされている場合のみトリガーイベントが通知されることに留意してください。
 CONVERTEXAMPLE
 BEGIN EX
-	// Destroy everything that enters the trigger
+	// トリガー範囲に入ったオブジェクトをすべて破棄
 
 	function OnTriggerEnter (other : Collider) {
 		Destroy(other.gameObject);
