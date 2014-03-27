@@ -1,4 +1,4 @@
-ミップマップレベルかを返す（読み込み専用）
+テクスチャのミップマップレベル数取得（読み込み専用）
 The returned value includes the base level as well, so it is always 1 or more.
 
 Mipmap count is used if you use ::ref::GetPixels or ::ref::SetPixels to fetch or modify
