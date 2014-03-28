@@ -1,7 +1,7 @@
 <signature>
 Sin(float)
 </signature>
-Sin 関数
+Sin 関数 (引数radian)
 CONVERTEXAMPLE
 BEGIN EX
 	print (Mathf.Sin(3));
