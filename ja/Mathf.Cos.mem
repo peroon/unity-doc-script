@@ -1,7 +1,7 @@
 <signature>
 Cos(float)
 </signature>
-Cos 関数
+Cos 関数 (引数radian)
 CONVERTEXAMPLE
 BEGIN EX
 	print (Mathf.Cos(3));
