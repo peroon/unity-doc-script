@@ -1,15 +1,15 @@
 <signature>
 shift
 </signature>
-「Shift」キーが押されたかを返す（読み込み専用）
-Returns true if any Shift key is held down.
+Shift キーが押されたかを返す（読み込み専用）
+任意の Shift キーが押下されたとき true を返します。
 CONVERTEXAMPLE
 BEGIN EX
-	// Detects if the shift key was pressed
+	// Shift キーが押下されたかを検知
 	function OnGUI() {
 		var e : Event = Event.current;
 		if (e.shift) {
-			Debug.Log("Shift was pressed :O");
+			Debug.Log("Shift キーが押下されました");
 		}
 	}
 END EX
