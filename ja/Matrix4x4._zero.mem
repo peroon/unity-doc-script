@@ -1,12 +1,12 @@
 <signature>
 zero
 </signature>
-全ての要素をゼロにセットしたマトリクスを戻します（読み取り専用）。
-マトリクスは次のようになります：
+全ての要素をゼロにセットした行列を返す（読み取り専用）。
+行列は次のようになります：
 BEGIN EX NOCHECK
 	0  0  0  0
 	0  0  0  0
 	0  0  0  0
 	0  0  0  0
 END EX
-SA: ::ref::identity 変数.
+SA: ::ref::identity 変数
