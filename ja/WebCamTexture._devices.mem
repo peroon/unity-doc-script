@@ -1,15 +1,15 @@
 <signature>
 devices
 </signature>
-Return a list of available devices.
-This queries the system for the list of devices connected and it can be slow.
-You should cache this value by keeping a copy of the result if you want to use it repeatedly.
+利用可能なデバイスの一覧を返す
+システムで接続されたデバイス一覧を検索するため、時間がかかります。
+繰り返し使用した場合、この値をキャッシュするために結果を保持しておくべきです。
 CONVERTEXAMPLE
 BEGIN EX
-	// Gets the list of devices and prints them to the console.
+	// デバイスの一覧を取得してコンソールに出力
 	function Start () {
 		var devices : WebCamDevice[] = WebCamTexture.devices;
-		for( var i = 0 ; i < devices.length ; i++ )
+		for( var i = 0 ; i < devices.Length ; i++ )
 			Debug.Log(devices[i].name);
 	}
 END EX

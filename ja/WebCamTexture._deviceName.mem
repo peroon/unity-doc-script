@@ -5,11 +5,11 @@ deviceName
 カメラが動作していない時のみ設定することが可能です。
 CONVERTEXAMPLE
 BEGIN EX
-	// Sets the device of the WebCamTexture to the first one available and starts playing it
+	// WebCamTexture のデバイスをリスト上の最初のものにセットして再生する
 	function Start () {
 		var devices : WebCamDevice[] = WebCamTexture.devices;
 		var webcamTexture : WebCamTexture = WebCamTexture();
-		if(devices.length > 0){
+		if(devices.Length > 0){
             webcamTexture.deviceName = devices[0].name;
 			webcamTexture.Play();
 		}
