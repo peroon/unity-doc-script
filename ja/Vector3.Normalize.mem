@@ -4,8 +4,7 @@ Normalize(Vector3)
 <signature>
 Normalize()
 </signature>
-１の大きさを返す ::ref::magnitude 変数が１になるように変換されます。
-
+::ref::magnitude が 1 の vector にします。
 規格化されると、方向はそのままで長さだけが1.0になります。
 
 この関数は現在のvectorが変換されてしまうことに気をつけてください。もし現在のvectorをそのまま保持したいのであれば、::ref::normalized を使ってください。
