@@ -1,0 +1,15 @@
+<signature>
+Normalize(Vector3)
+</signature>
+<signature>
+Normalize()
+</signature>
+１の大きさを返す ::ref::magnitude 変数が１になるように変換されます。
+
+規格化されると、方向はそのままで長さだけが1.0になります。
+
+この関数は現在のvectorが変換されてしまうことに気をつけてください。もし現在のvectorをそのまま保持したいのであれば、::ref::normalized を使ってください。
+
+規格化されたvectorの値が小さすぎる場合はゼロになります。
+
+SA: ::ref::normalized variable.
