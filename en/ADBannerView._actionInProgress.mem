@@ -1,4 +1,4 @@
 <signature>
 actionInProgress
 </signature>
-Is the banner currently executing a user-triggered action? (RO)
+ユーザーの行動によって広告が表示中かどうか（読み込み専用）。

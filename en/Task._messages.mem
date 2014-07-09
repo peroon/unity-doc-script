@@ -1,5 +1,5 @@
 <signature>
 messages
 </signature>
-May contain messages from the version control plugins.
-This could be errors or information messages to be displayed in the editor.
+バージョン管理プラグインからのメッセージを含みます。
+これはエディタに表示されるエラーまたは情報メッセージかもしれません。

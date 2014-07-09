@@ -1,4 +1,4 @@
 <signature>
 CancelAction()
 </signature>
-Cancels an executing advertisement.
+実行中の広告をキャンセルする。

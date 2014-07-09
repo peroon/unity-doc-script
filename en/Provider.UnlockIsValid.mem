@@ -2,6 +2,6 @@
 UnlockIsValid(AssetList)
 UnlockIsValid(Asset)
 </signature>
-Returns true if locking the assets is a valid operation.
-@param assets The assets to lock.
-@param asset The asset to lock.
+もしアセットのロックが有効なタスクの場合に true を戻り値とします。
+@param assets ロックするアセットの一覧
+@param asset ロックするアセット

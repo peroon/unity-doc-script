@@ -1,6 +1,6 @@
 <signature>
 Move(string,string)
 </signature>
-Uses the version control plugin to move an asset from one path to another.
-@param from Path to source asset.
-@param to Path to destination.
+バージョン管理プラグインを使用してアセットをひとつのパスからもう一つへと移動します。
+@param from 移動元のアセットが存在するパス
+@param to 移動先のパス

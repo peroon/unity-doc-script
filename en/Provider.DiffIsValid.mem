@@ -1,5 +1,5 @@
 <signature>
 DiffIsValid(AssetList)
 </signature>
-Return true is starting a Diff task is a valid operation.
-@param assets List of assets.
+Diff （差分）タスクの開始が有効なタスクである場合、戻り値を true とします。
+@param assets アセットの一覧。

@@ -1,4 +1,4 @@
 <signature>
 actionInProgress
 </signature>
-Is the ad currently executing an action? (RO)
+現在アクションを起こす広告があるか（読み込み専用）。

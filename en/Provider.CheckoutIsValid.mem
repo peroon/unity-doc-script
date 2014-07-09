@@ -2,6 +2,6 @@
 CheckoutIsValid(AssetList)
 CheckoutIsValid(Asset)
 </signature>
-Given an asset or a  list of assets this function returns true if Checkout is a valid task to perform.
-@param assets List of assets.
-@param asset Single asset.
+与えられたアセットまたはアセットの一覧にもとづき、チェックアウトの実行が有効なタスクである場合に、関数の戻り値を true とします。
+@param assets アセットの一覧
+@param asset 単独のアセット

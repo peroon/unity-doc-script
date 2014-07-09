@@ -1,6 +1,6 @@
 <signature>
 GetVector(string,bool)
 </signature>
-Get the value of a given vector shader property.
-@param propertyName Name of the vector property.
-@param hasMixedValue Does this property have multiple values?
+与えられた ベクトル シェーダ プロパティの値を取得します。
+@param propertyName ベクトル プロパティの名前。
+@param hasMixedValue このプロパティには複数の値があるか？

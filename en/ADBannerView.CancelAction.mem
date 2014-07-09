@@ -1,4 +1,4 @@
 <signature>
 CancelAction()
 </signature>
-Cancels an executing banner view action.
+現在実行中のバナービューの行動をキャンセルする

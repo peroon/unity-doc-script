@@ -1,4 +1,4 @@
 <signature>
 enabled
 </signature>
-Returns true if the version control provider is enabled and a valid Team License was found.
+もしバージョン管理プロバイダが有効化されていて、有効な Team License が発見された場合に戻り値を trueとします。

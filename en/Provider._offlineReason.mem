@@ -1,4 +1,4 @@
 <signature>
 offlineReason
 </signature>
-Returns the reason for the version control provider being offline (if it is offline).
+バージョン管理プロバイダがオフラインである理由を戻り値とします（オフラインの場合）。

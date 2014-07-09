@@ -1,6 +1,6 @@
 <signature>
 SubmitIsValid(ChangeSet,AssetList)
 </signature>
-Returns true if submitting the assets is a valid operation.
-@param changeset The changeset to submit.
-@param assets The asset to submit.
+アセットの提出が有効なタスクである場合、戻り値を true とします。
+@param changeset 提出するチェンジセット
+@param assets 提出するアセット

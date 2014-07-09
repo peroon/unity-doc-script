@@ -1,4 +1,4 @@
 <signature>
 description
 </signature>
-A string containing the description of the error.
+エラー詳細を表示する。

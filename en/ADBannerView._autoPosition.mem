@@ -1,4 +1,4 @@
 <signature>
 autoPosition
 </signature>
-Enables the banner view to be positioned automatically.
+上下どちらかに自動で配置する。デフォルトでは配置されない。

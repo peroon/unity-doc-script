@@ -1,5 +1,5 @@
 <signature>
 CreateSnapshot()
 </signature>
-Save the current state of all objects set with ::ref::SetSnapshotTarget to internal snapshot.
+SetSnapshotTargetで設定されたオブジェクトの状態を保存します
 SA: ::ref::SetSnapshotTarget , ::ref::RegisterSnapshot.

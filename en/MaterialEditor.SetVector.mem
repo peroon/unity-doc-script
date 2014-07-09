@@ -1,6 +1,7 @@
 <signature>
 SetVector(string,Vector4)
 </signature>
-Set the value of a given vector property.
-@param propertyName Name of the vector property.
-@param value Vector to set.
+与えられたベクトル プロパティの値をセットします。
+Set the value of a given float property.
+@param propertyName ベクトル プロパティの名前。
+@param value セットする ベクトル。

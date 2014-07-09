@@ -1,7 +1,7 @@
 <signature>
 Import(string)
 </signature>
-Causes an import directive to be emitted in the ActionScript code generated for the current type.
+パッケージ名からActionScript をインポートする。
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;

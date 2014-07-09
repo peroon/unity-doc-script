@@ -2,6 +2,6 @@
 IncomingChangeSetAssets(ChangeSet)
 IncomingChangeSetAssets(string)
 </signature>
-Given an incoming changeset this will start a task to query the version control server for which assets are part of the changeset.
-@param changeset Incoming changeset.
-@param changesetID Incoming changesetid.
+与えられた入力チェンジセットにもとづき、どのアセットがチェンジセットの一部であるかバージョン管理サーバに照会するタスクを開始します。
+@param changeset 入力チェンジセット
+@param changesetID 入力チェンジセット ID

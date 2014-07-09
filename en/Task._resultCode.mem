@@ -1,5 +1,5 @@
 <signature>
 resultCode
 </signature>
-Some task return result codes, these are stored here.
-Depending on the task the result code will map to either an AssetDeleteResult, AssetMoveResult or SubmitResult.
+いくつかのタスクは結果コードを戻し、ここに格納されます。
+タスクによって、結果コードは AssetDeleteResult, AssetMoveResult または SubmitResult のいずれかにマッピングされます。

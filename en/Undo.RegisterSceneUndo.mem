@@ -1,10 +1,8 @@
 <signature>
 RegisterSceneUndo(string)
 </signature>
-Register the state of the entire scene so the user can later undo back to that state.
-This is the easiest, most robust, but slowest way to store an Undo operation.
-Call this method before performing an operation that it should be possible to undo.
-
+Undoを行うシーンを登録します
+処理速度は遅いですがシーンを丸ごと保存するので最も簡単で確実なものになります
 SA: Undo.RegisterUndo.
 BEGIN EX
 	// Editor Script that lets you change the color of the material of your
@@ -23,4 +21,4 @@ BEGIN EX
 		return Selection.activeTransform != null;
 	}
 END EX
-@param name The name of the action to undo. Think "Undo ...." in the main menu.
+@param name このUndo処理の名前

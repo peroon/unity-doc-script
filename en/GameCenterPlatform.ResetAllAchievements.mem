@@ -1,7 +1,7 @@
 <signature>
 ResetAllAchievements(Action<bool>)
 </signature>
-Reset all the achievements for the local user.
+ローカルユーザーのすべての実績をリセットする
 Only affects the currently running game.
 Javascript code example:
 BEGIN EX

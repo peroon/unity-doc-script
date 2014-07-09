@@ -1,4 +1,4 @@
 <signature>
 autoSize
 </signature>
-If enabled, current banner's size is set automatically according to current screen orientation. It is disabled by default.
+画面の向きに応じてバナーサイズを変更させるか。デフォルトではfalse。

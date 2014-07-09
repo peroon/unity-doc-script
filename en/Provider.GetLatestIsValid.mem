@@ -2,7 +2,7 @@
 GetLatestIsValid(AssetList)
 GetLatestIsValid(Asset)
 </signature>
-Returns true if getting the latest version of an asset is a valid operation.
-For the list version it returns true if is valid for one or more assets.
-@param assets List of assets to test.
-@param asset Asset to test.
+アセットの最新バージョンを取得することが有効なタスクである場合に戻り値を true とします。
+アセット一覧を引数とする場合、ひとつ以上のアセットで有効な場合に戻り値を true とします。
+@param assets テストするアセットの一覧
+@param asset テストするアセット

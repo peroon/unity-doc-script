@@ -1,4 +1,4 @@
 <signature>
 onlineState
 </signature>
-Returns the OnlineState of the version control provider.
+バージョン管理プロバイダのオンライン状態（OnlineState）を戻り値とします。

@@ -4,9 +4,9 @@ ChangeSetMove(Asset,ChangeSet)
 ChangeSetMove(AssetList,string)
 ChangeSetMove(Asset,string)
 </signature>
-Move an asset or list of assets from their current changeset to a new changeset.
-E.g. in Perforce checked out asset can be moved to a changetset other than the default changeset.
-@param assets List of asset to move to changeset.
-@param changeset Changeset to move asset to.
-@param asset Asset to move to changeset.
-@param changesetID ChangesetID to move asset to.
+アセットまたはアセットの一覧を現在のチェンジセットから新規のチェンジセットに移動します。
+例．Perforce ではチェックアウトされたアセットはデフォルトのチェンジセット以外のものに移動できます。
+@param assets チェンジセットに移動するアセットの一覧
+@param changeset アセットの移動先となるチェンジセット
+@param asset チェンジセットに移動するアセット
+@param changesetID アセットの移動先となるチェンジセット ID

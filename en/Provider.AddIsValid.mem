@@ -1,5 +1,5 @@
 <signature>
 AddIsValid(AssetList)
 </signature>
-Given a list of assets this function returns true if Add is a valid task to perform.
-@param assets List of assets to test.
+アセットの一覧を与えると、この関数は Add が有効なタスクである場合に true を戻り値とします。
+@param assets テストするアセットの一覧。

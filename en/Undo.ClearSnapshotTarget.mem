@@ -1,5 +1,5 @@
 <signature>
 ClearSnapshotTarget()
 </signature>
-Clear the snapshot target set with ::ref::SetSnapshotTarget.
-This can be used if the snapshot target is not needed anymore.
+SetSnapshotTargetで設定されている情報を削除します
+主に、オブジェクト操作のキャンセル処理がされた時に使用されます

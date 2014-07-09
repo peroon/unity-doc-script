@@ -1,6 +1,6 @@
 <signature>
 SetTexture(string,Texture)
 </signature>
-Set the value of a given texture property.
-@param propertyName Name of the texture property.
-@param value Texture to set.
+与えられたテクスチャ プロパティの値をセットします。
+@param propertyName テクスチャ プロパティの名前。
+@param value セットするテクスチャ。

@@ -1,4 +1,4 @@
 <signature>
 isFolder
 </signature>
-Returns true if the asset is a folder.
+アセットがフォルダである場合に true を戻します。

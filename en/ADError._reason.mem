@@ -1,4 +1,4 @@
 <signature>
 reason
 </signature>
-A string containing the explanation of the reason for the error.
+エラー理由を表示する。

@@ -2,7 +2,7 @@
 LockIsValid(AssetList)
 LockIsValid(Asset)
 </signature>
-Return true if the task can be executed.
-For the list of assets version it return true if one or more assets meets the requirements.
-@param assets List of assets to test.
-@param asset Asset to test.
+タスクが実行できる場合 true を戻り値とします。
+アセットの一覧を引数とする場合、ひとつ以上のアセットが基準を満たす場合、戻り値を true とします。
+@param assets テストするアセットの一覧
+@param asset テストするアセット

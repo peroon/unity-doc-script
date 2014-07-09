@@ -1,9 +1,9 @@
 <signature>
 Submit(ChangeSet,AssetList,string,bool)
 </signature>
-Start a task that submits the assets to version control.
-In some version control systems submit is known as commit.
-@param changeset The changeset to submit.
-@param list The list of assets to submit.
-@param description The description of the changeset.
-@param saveOnly If true then only save the changeset to be submitted later.
+アセットをバージョン管理に提出するタスクを開始します。
+いくつかのバージョン管理システムでは提出はコミットと呼ばれます。
+@param changeset 提出するチェンジセット
+@param list 提出するアセットの一覧
+@param description チェンジセットの説明
+@param saveOnly true の場合、後ほど提出するためにチェンジセットは保存のみされます

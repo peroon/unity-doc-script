@@ -1,1 +1,1 @@
-No automatic positioning. Use @@ADBannerView.position@@ to set the position of the banner manually. This is the default value.
+自動で位置を設定せず、@@ADBannerView.position@@変数で位置を設定する。

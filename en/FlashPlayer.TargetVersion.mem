@@ -1,7 +1,7 @@
 <signature>
 TargetVersion
 </signature>
-Get a string representing the version of the Flash Player which the current project has been compiled against.
+現在のプロジェクトがコンパイルすべき FlashPlayer バージョンを文字列で取得します。
 CONVERTEXAMPLE
 BEGIN EX
 	import UnityEngine.Flash;

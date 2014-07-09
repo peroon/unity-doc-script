@@ -1,7 +1,7 @@
 <signature>
 Merge(AssetList,MergeMethod)
 </signature>
-This method will initiate a merge task handle merging of the conflicting assets.
-An initial attempt of is made to make a simple merge automatically. If this fails the merge method decide if manual merge too will be spawned of not.
-@param assets The list of conflicting assets to be merged.
-@param method How to merge the assets.
+このメソッドによりマージ タスクが起動され、競合アセットのマージのハンドリングが実行されます。
+単純なマージを自動的に行なう試みが最初に実行されます。それが失敗するとマージ メソッドは手動のマージも生成されるかどうか判断します。
+@param assets マージすべき競合アセットの一覧
+@param method アセットをマージする方法

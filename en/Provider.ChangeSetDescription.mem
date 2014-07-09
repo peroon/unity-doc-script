@@ -1,6 +1,6 @@
 <signature>
 ChangeSetDescription(ChangeSet)
 </signature>
-Given a changeset only containing the changeset ID, this will start a task for quering the description of the changeset.
-Mostly makes sense to use with Perforce.
-@param changeset Changeset to query description of.
+チェンジセット ID のみを含むチェンジセットを与えられるとチェンジセットの説明を照会するタスクを開始します。
+Perforce で使用する場合に意味があります。
+@param changeset どのチェンジセットの説明を照会するか

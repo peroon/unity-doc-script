@@ -1,4 +1,4 @@
 <signature>
 GetSizeFromSizeIdentifier(ADSizeIdentifier)
 </signature>
-Converts a banner content size identifier into its physical size.
+サイズを設定し、バナーサイズを変換する。

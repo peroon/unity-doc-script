@@ -1,4 +1,4 @@
 <signature>
 isActive
 </signature>
-Returns true if a version control plugin has been selected and configured correctly.
+もしバージョン管理プラグインが選択されていて、正しく設定されている場合に戻り値を true とします。

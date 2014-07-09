@@ -1,4 +1,4 @@
 <signature>
 activeTask
 </signature>
-Gets the currently executing task.
+現在実行されているタスクを取得します。

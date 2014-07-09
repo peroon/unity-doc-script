@@ -1,7 +1,7 @@
 <signature>
 ShowDefaultAchievementCompletionBanner(bool)
 </signature>
-Show the default iOS banner when achievements are completed.
+成果が完了したときに、デフォルト設定のバナーを表示する。iOS 5 以上のみ
 This only works on iOS 5.0+ and does nothing on older versions.
 Javascript code example:
 BEGIN EX

@@ -1,6 +1,6 @@
 <signature>
 GetAssetByGUID(string)
 </signature>
-Returns version control information about an asset.
-Returns null if the GUID is not known by the Unity Editor.
-@param guid GUID of asset.
+アセットに関するバージョン管理情報を戻り値とします。
+GUID が Unity エディタにより知られてない場合に戻り値を null とします。
+@param guid アセットの GUID
