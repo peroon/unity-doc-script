@@ -1,4 +1,4 @@
-ローカル座標での回転値
+ワールド座標での回転値
 Unity stores rotations as Quaternions internally. To rotate an object, use Transform.Rotate.
 Use Transform.eulerAngles for setting the rotation as euler angles.
 CONVERTEXAMPLE
